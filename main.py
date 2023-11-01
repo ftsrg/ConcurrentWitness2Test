@@ -1,0 +1,135 @@
+import os
+import re
+import subprocess
+import sys
+import tempfile
+import traceback
+
+from pycparser import parse_file, c_generator
+
+from tweaks import reach_error, fix_inline, fix_struct_def
+from witness2ast import apply_witness
+
+
+def translate_to_c(filename, witness):
+    """ Simply use the c_generator module to emit a parsed AST.
+    """
+    try:
+        ast = parse_file(filename, use_cpp=False)
+    except:
+        print("Verdict: Parsing failed")
+        sys.exit(-1)
+
+    try:
+        apply_witness(ast, filename, witness)
+    except:
+        traceback.print_exc()
+        print("Verdict: Incompatible witness")
+        sys.exit(-1)
+
+    try:
+        fix_inline(ast)
+        fix_struct_def(ast)
+        reach_error(ast)
+        generator = c_generator.CGenerator()
+        with tempfile.NamedTemporaryFile(suffix=".c", delete=False) as tmp:
+            tmp.write(generator.visit(ast).encode())
+            tmp.flush()
+            print(tmp.name)
+            print("Compilation started")
+            result = subprocess.run(['gcc', '-w', tmp.name, os.path.dirname(__file__) + os.sep + 'svcomp.c'],
+                                    stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            if result.stdout:
+                print(result.stdout.decode())
+            if result.stderr:
+                print(result.stderr.decode())
+            print(f"Compilation ended (exit code {result.returncode})")
+            if result.returncode != 0:
+                print("Verdict: Compilation error")
+                sys.exit(-1)
+            codes = {}
+            for i in range(100):
+                try:
+                    result = subprocess.run(['./a.out'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=10)
+                    print("Execution started")
+                    if result.stdout:
+                        print(result.stdout.decode())
+                    if result.stderr:
+                        print(result.stderr.decode())
+                    print(f"Execution ended (exit code {result.returncode})")
+                    codes[0 if result.returncode == 0 else -1] = codes[0 if result.returncode == 0 else -1] + 1 if (0 if result.returncode == 0 else -1) in codes else 1
+                except subprocess.TimeoutExpired:
+                    print(f"Execution ended (timeout)")
+            print(codes)
+            may_not = False
+            may = False
+            if 0 in codes:
+                may_not = True
+            if -1 in codes:
+                may = True
+            if may_not and may:
+                print("Verdict: SOMETIMES")
+            elif may_not:
+                print("Verdict: NEVER")
+            elif may:
+                print("Verdict: ALWAYS")
+            else:
+                print("Verdict: TIMEOUT")
+    except:
+        print("Verdict: Unknown error")
+
+
+def hacks(content):
+    def replace_with_spaces_str(match_str, offset=0):
+        parens = 0
+        for i, c in enumerate(match_str):
+            if c == "(":
+                parens = parens + 1
+            elif c == ")":
+                parens = parens - 1
+                if parens < 0:
+                    return ' ' * (i - offset) + match_str[i:]
+                elif parens == 0:
+                    return ' ' * (i - offset + 1) + match_str[i + 1:]
+        return ' ' * (len(match_str) - offset)
+
+    def replace_with_spaces(match):
+        return replace_with_spaces_str(str(match.group(0)))
+
+    def replace_with_zero_padded(match):
+        return '0' + replace_with_spaces_str(str(match.group(0)), 1)
+
+    last_content = ""
+    while last_content != content:
+        last_content = content
+        content = re.sub(r'//[^\n]*', replace_with_spaces, content)
+        content = re.sub(r'/\*.*\*/', replace_with_spaces, content)
+        content = re.sub(r'__attribute__[ \r\n]*\(.*\)', replace_with_spaces, content)
+        content = re.sub(r'__asm__[ \r\n]*\(.*\)', replace_with_spaces, content)
+        content = re.sub(r'asm volatile[ \r\n]*\(.*\)', replace_with_spaces, content)
+        content = re.sub(r'asm[ \r\n]*\(.*\)', replace_with_spaces, content)
+        content = re.sub(r'__extension__[ \r\n]*\(.*\)', replace_with_zero_padded, content)
+        content = re.sub(r'__extension__', replace_with_spaces, content)
+        content = re.sub(r'__inline', replace_with_spaces, content)
+        content = re.sub(r'__restrict', replace_with_spaces, content)
+        content = re.sub(r'__builtin_va_list', 'int              ', content)
+        content = re.sub(r'__signed__', '  signed  ', content)
+        content = re.sub(r'\([ \r\n]*\{.*}[ \r\n]*\)', replace_with_zero_padded, content)
+    return content
+
+
+def perform_hacks(filename, func):
+    with open(filename, "r") as f:
+        with tempfile.NamedTemporaryFile(suffix=".c", delete=False) as tmp:
+            tmp.write(hacks(f.read()).encode())
+            tmp.flush()
+            func(tmp.name)
+
+
+if __name__ == "__main__":
+    if len(sys.argv) > 2:
+        perform_hacks(sys.argv[1], lambda x: translate_to_c(x, sys.argv[2]))
+    elif len(sys.argv) == 2 and sys.argv[1] == "--version":
+        print("1.0-beta")
+    else:
+        print("Please provide a filename as argument. Provided arguments: " + str(list(sys.argv)))
