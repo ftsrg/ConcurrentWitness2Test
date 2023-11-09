@@ -142,8 +142,8 @@ def perform_hacks(filename, func):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 2:
-        perform_hacks(sys.argv[1], lambda x: translate_to_c(x, sys.argv[2]))
+    if len(sys.argv) > 3:
+        perform_hacks(sys.argv[1], lambda x: translate_to_c(x, sys.argv[3]))
     elif len(sys.argv) == 2 and sys.argv[1] == "--version":
         print("1.0-beta")
     else:
