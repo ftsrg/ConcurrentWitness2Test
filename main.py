@@ -65,7 +65,7 @@ def translate_to_c(filename, witness):
             codes = {}
             for i in range(100):
                 try:
-                    result = subprocess.run(['./a.out'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=10)
+                    result = subprocess.run(['./a.out'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=5)
                     print("Execution started")
                     if result.stdout:
                         print(result.stdout.decode())

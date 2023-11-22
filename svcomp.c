@@ -32,46 +32,46 @@ void reach_error() {
     abort();
 }
 
-atomic_int global_counter = ATOMIC_VAR_INIT(0);
-mtx_t mtx;
-cnd_t cv;
-_Bool init;
+atomic_int c2tt_global_counter = ATOMIC_VAR_INIT(0);
+mtx_t c2tt_mtx;
+cnd_t c2tt_cv;
+_Bool c2tt_init;
 
 void yield(int target_value, int threadid) {
-    if(!init) {
-        init = 1;
-        mtx_init(&mtx, mtx_plain);
-        cnd_init(&cv);
+    if(!c2tt_init) {
+        c2tt_init = 1;
+        mtx_init(&c2tt_mtx, mtx_plain);
+        cnd_init(&c2tt_cv);
         printf("Initialized variables\n");
     }
-    mtx_lock(&mtx);
+    mtx_lock(&c2tt_mtx);
 
-    if (atomic_load(&global_counter) >= target_value) {
-        mtx_unlock(&mtx);
+    if (atomic_load(&c2tt_global_counter) >= target_value) {
+        mtx_unlock(&c2tt_mtx);
         return; // Return immediately if the global counter is greater or equal to the target value.
     }
-    printf("Paused thread %d at %d until %d\n", threadid, atomic_load(&global_counter), target_value);
-    cnd_broadcast(&cv);
+    printf("Paused thread %d at %d until %d\n", threadid, atomic_load(&c2tt_global_counter), target_value);
+    cnd_broadcast(&c2tt_cv);
 
-    while (atomic_load(&global_counter) < target_value) {
-        cnd_wait(&cv, &mtx);
+    while (atomic_load(&c2tt_global_counter) < target_value) {
+        cnd_wait(&c2tt_cv, &c2tt_mtx);
     }
 
-    mtx_unlock(&mtx);
+    mtx_unlock(&c2tt_mtx);
     printf("Resumed thread %d at %d\n", threadid, target_value);
 }
 
 void release(int target_value, int threadid) {
-    mtx_lock(&mtx);
-    if (atomic_load(&global_counter) > target_value) {
-        mtx_unlock(&mtx);
+    mtx_lock(&c2tt_mtx);
+    if (atomic_load(&c2tt_global_counter) > target_value) {
+        mtx_unlock(&c2tt_mtx);
         return; // Return immediately if the global counter is greater than the target value.
     }
 
-    atomic_store(&global_counter, target_value + 1);
-    cnd_broadcast(&cv);
+    atomic_store(&c2tt_global_counter, target_value + 1);
+    cnd_broadcast(&c2tt_cv);
     printf("Released %d\n", target_value + 1);
-    mtx_unlock(&mtx);
+    mtx_unlock(&c2tt_mtx);
 }
 
 
