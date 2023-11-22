@@ -47,11 +47,11 @@ def get_coords(c_file, startline=None, endline=None, startoffset=None, endoffset
 
     if endoffset:
         with open(c_file, "r") as f:
-            f.seek(startoffset)
-            content = f.read(endoffset - startoffset - 1)
-            startline, column = get_line_of_offset(c_file, startoffset)
+            f.seek(int(startoffset))
+            content = f.read(int(endoffset) - int(startoffset) - 1)
+            startline, column = get_line_of_offset(c_file, int(startoffset))
             return {"startline": int(startline), "column": int(column), "endline": int(endline),
-                    "length": int(endoffset - startoffset + 1), "content": content}
+                    "length": int(endoffset) - int(startoffset) + 1, "content": content}
     return None
 
 
@@ -91,6 +91,9 @@ def find_first_statement_on_line(ast, target_line):
 
 def extract_metadata(witnessfile, c_file):
     witness = nx.read_graphml(witnessfile)
+    if witness.graph["witness-type"] != "violation_witness":
+        print("Not validating correctness witness.")
+        exit(-1)
     ret = []
 
     node = list(nx.get_node_attributes(witness, "entry").keys())[0]
