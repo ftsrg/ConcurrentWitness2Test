@@ -70,7 +70,7 @@ def find_first_statement_on_line(ast, target_line):
         def visit_Compound(self, node):
             if self.found:
                 return
-            for stmt in node.block_items:
+            for stmt in (node.block_items if node.block_items else [node]):
                 if hasattr(stmt, 'coord') and stmt.coord:
                     line = stmt.coord.line
                     if line >= self.target_line:
