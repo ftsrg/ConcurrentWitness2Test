@@ -58,7 +58,7 @@ runs:
         name: BenchexecResults
         path: artifacts
     - name: Deploy to GHPages
-      if: github.event_name == 'pull_request'
+      if: github.event_name == 'pull_request' || github.head_ref == 'main'
       uses: JamesIves/github-pages-deploy-action@22a6ee251d6f13c6ab1ecb200d974f1a6feb1b8d # v4.4.2
       with:
         branch: gh-pages
