@@ -50,5 +50,5 @@ runs:
     - name: Upload results
       uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
       with:
-        name: BenchexecResults-${{ inputs.tool }}
+        name: ${{ inputs.tool }}
         path: results

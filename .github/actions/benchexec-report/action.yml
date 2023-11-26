@@ -15,12 +15,9 @@ runs:
       with:
         path: artifacts
     - name: Generate tables
-      id: generate
       shell: bash
       run: |
         cd artifacts
-        EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
-        echo "Message<<$EOF" >> $GITHUB_OUTPUT
         for i in *
         do 
           if (ls $i/*xml.bz2 >/dev/null 2>/dev/null)
@@ -34,19 +31,10 @@ runs:
             correct=$(tail -n9 *.txt | grep '  correct:' | awk ' { print $2 } ')
             incorrect=$(tail -n9 *.txt | grep '  incorrect:' | awk ' { print $2 } ')
             all=$(tail -n9 *.txt | grep 'Statistics:' | awk ' { print $2 } ')
-            emoji=":white_check_mark:"
-            [ $correct -eq 0 ] && emoji=":question:"
-            [ $incorrect -eq 0 ] || emoji=":exclamation:"
-            echo "<details><summary> $emoji ${i#BenchexecResults-} ($correct / $incorrect / $all)</summary>" >> $GITHUB_OUTPUT
-            echo >> $GITHUB_OUTPUT
-            #echo '`table-generator`'" output: [HTML](https://theta.mit.bme.hu/benchmark-results/${{ github.head_ref }}/$i/$(ls *.html))/[CSV](https://theta.mit.bme.hu/benchmark-results/${{ github.head_ref }}/$i/$(ls *.csv))" >> $GITHUB_OUTPUT
-            echo >> $GITHUB_OUTPUT
-            echo '```'  >> $GITHUB_OUTPUT
-            cat *.txt  >> $GITHUB_OUTPUT
-            echo '```'  >> $GITHUB_OUTPUT
-            echo "</details>" >> $GITHUB_OUTPUT
-            echo >> $GITHUB_OUTPUT
-            echo >> $GITHUB_OUTPUT
+            msg="Supported-green"
+            [ $correct -eq 0 ] && [ $incorrect -eq 0 ] && msg="Unsupported-red"
+            label=$(basename $i | sed 's/[- ]/%20/g')
+            wget "https://img.shields.io/badge/$label-$msg" > badge.svg
             popd
           else
             rm -rf $i
@@ -66,13 +54,13 @@ runs:
         folder: artifacts
         target-folder: benchmark-results/${{ github.ref_name }}/
         single-commit: true
-    - name: Comment on PR
-      if: github.event_name == 'pull_request'
-      uses: thollander/actions-comment-pull-request@dadb7667129e23f12ca3925c90dc5cd7121ab57e
-      with: 
-        comment_tag: 'diffcheck'
-        mode: 'recreate'
-        message: |
-          Benchexec test report for a selection of SV-Benchmarks (correct / incorrect / all):
-
-          ${{ steps.generate.outputs.Message }}
+#    - name: Comment on PR
+#      if: github.event_name == 'pull_request'
+#      uses: thollander/actions-comment-pull-request@dadb7667129e23f12ca3925c90dc5cd7121ab57e
+#      with:
+#        comment_tag: 'diffcheck'
+#        mode: 'recreate'
+#        message: |
+#          Benchexec test report for a selection of SV-Benchmarks (correct / incorrect / all):
+#
+#          ${{ steps.generate.outputs.Message }}
