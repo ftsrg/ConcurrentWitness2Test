@@ -13,17 +13,24 @@ runs:
       run: |
         sudo add-apt-repository ppa:sosy-lab/benchmarking
         sudo apt install benchexec python3
-    - name: Get sv-witness-benchmarks
-      shell: bash
-      run: |
-        git clone --depth 1 https://github.com/ftsrg/svcomp23-witness-benchmarks/
     - uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
       name: Get archive
       with:
         name: ConcurrentWitness2Test
         path: tool
-    - name: Cut setfile if too long
-      id: setfile
+    - name: Unzip archive
+      shell: bash
+      run: |
+        unzip tool/ConcurrentWitness2Test.zip
+    - name: Test toolinfo
+      shell: bash
+      run: |
+        python3 -m benchexec.test_tool_info concurrentwitness2test --read-only-dir / --overlay-dir /home --tool-directory ConcurrentWitness2Test --no-container
+    - name: Get sv-witness-benchmarks
+      shell: bash
+      run: |
+        git clone --depth 1 https://github.com/ftsrg/svcomp23-witness-benchmarks/
+    - name: Create xml
       shell: bash
       run: |
         sed 's/tool="print-files"/tool="concurrentwitness2test"/g' svcomp23-witness-benchmarks/example.xml > svcomp23-witness-benchmarks/concurrentwitness2test.xml
@@ -31,7 +38,7 @@ runs:
       shell: bash
       if: steps.setfile.outputs.length != '0'
       run: |
-        benchexec svcomp23-witness-benchmarks/concurrentwitness2test.xml --no-container --tool-directory tool/ConcurrentWitness2Test/ -t ${{ inputs.task }}
+        benchexec svcomp23-witness-benchmarks/concurrentwitness2test.xml --no-container --tool-directory ConcurrentWitness2Test -t ${{ inputs.task }}
     - name: Upload results
       uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
       if: steps.setfile.outputs.length != '0'
