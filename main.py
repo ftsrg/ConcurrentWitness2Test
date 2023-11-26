@@ -59,8 +59,9 @@ def translate_to_c(filename, witness):
             tmp.write(generator.visit(ast).encode())
             tmp.flush()
             print(tmp.name)
+            bin_name = os.path.basename(tmp.name)[:-2]
             print("Compilation started")
-            result = subprocess.run(['gcc', '-w', tmp.name, os.path.dirname(__file__) + os.sep + 'svcomp.c', "-o", tmp.name[:-2]],
+            result = subprocess.run(['gcc', '-w', tmp.name, os.path.dirname(__file__) + os.sep + 'svcomp.c', "-o", bin_name],
                                     stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             if result.stdout:
                 print(result.stdout.decode())
@@ -73,7 +74,7 @@ def translate_to_c(filename, witness):
             codes = {}
             for i in range(100):
                 try:
-                    result = subprocess.run(['./' + tmp.name[:-2]], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=5)
+                    result = subprocess.run(['./' + bin_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=5)
                     print("Execution started")
                     if result.stdout:
                         print(result.stdout.decode())
