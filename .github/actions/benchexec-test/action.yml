@@ -34,6 +34,7 @@ runs:
       shell: bash
       run: |
         echo ${{ inputs.ssh-key }} | base64 -d > private_key
+        chmod 600 private_key
         git -c core.sshCommand="ssh -i private_key" clone --depth 1 git@github.com:ftsrg/svcomp23-witness-benchmarks/
     - name: Create xml
       shell: bash
