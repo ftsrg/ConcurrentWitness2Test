@@ -27,6 +27,7 @@ runs:
           then
             pushd $i
             table-generator -d *xml.bz2
+            sed -i 's/\.\.\/svcomp23-witness-benchmarks\//https:\/\/github\.com\/ftsrg\/svcomp23-witness-benchmarks\/raw\/main\//g' *.html
             unzip *.zip
             rm *.zip
             correct=$(tail -n9 *.txt | grep '  correct:' | awk ' { print $2 } ')
