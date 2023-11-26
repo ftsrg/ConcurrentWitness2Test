@@ -27,7 +27,7 @@ runs:
           then
             pushd $i
             table-generator -d *xml.bz2
-            sed -i 's/\.\.\/svcomp23-witness-benchmarks\//https:\/\/github\.com\/ftsrg\/svcomp23-witness-benchmarks\/raw\/main\//g' *.html
+            sed -i 's/\.\.\/svcomp23-witness-benchmarks\//https:\/\/ftsrg\.mit\.bme\.hu\/svcomp23-witness-benchmarks\//g' *.html
             mv *.html index.html
             unzip *.zip
             rm *.zip
