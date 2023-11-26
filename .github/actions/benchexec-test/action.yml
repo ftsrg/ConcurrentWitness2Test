@@ -1,8 +1,12 @@
 name: 'Run tests using benchexec'
 description: 'Running benchexec tests on ConcurrentWitness2Test'
 inputs:
-    task:
-        required: true
+    tool:
+      description: Tool to test witnesses of
+      required: true
+    ssh-key:
+      description: SSH key to access ftsrg/svcomp23-witness-benchmarks
+      required: true
 runs:
   using: "composite"
   steps:
@@ -29,7 +33,8 @@ runs:
     - name: Get sv-witness-benchmarks
       shell: bash
       run: |
-        git clone --depth 1 https://github.com/ftsrg/svcomp23-witness-benchmarks/
+        echo ${{ inputs.ssh-key }} | base64 -d > private_key
+        git -c core.sshCommand="ssh -i private_key" clone --depth 1 git@github.com:ftsrg/svcomp23-witness-benchmarks/
     - name: Create xml
       shell: bash
       run: |
@@ -38,10 +43,10 @@ runs:
       shell: bash
       if: steps.setfile.outputs.length != '0'
       run: |
-        benchexec svcomp23-witness-benchmarks/concurrentwitness2test.xml --no-container --tool-directory ConcurrentWitness2Test -t ${{ inputs.task }}
+        benchexec svcomp23-witness-benchmarks/concurrentwitness2test.xml --no-container --tool-directory ConcurrentWitness2Test -t ConcurrencySafety-${{ inputs.tool }}
     - name: Upload results
       uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
       if: steps.setfile.outputs.length != '0'
       with:
-        name: BenchexecResults-${{ inputs.task }}
+        name: BenchexecResults-${{ inputs.tool }}
         path: results
