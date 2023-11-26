@@ -29,7 +29,7 @@ jobs:
   test-benchexec:
     strategy:
       matrix:
-        tool: [dartagnan]
+        tool: [bubaak, cbmc, coveriteam-verifier-algo-selection, coveriteam-verifier-parallel-portfolio, cpa-lockator, cpachecker, cseq, dartagnan, deagle, divine, ebf, esbmc-incr, esbmc-kind, goblint, graves-par, graves, infer, lazycseq, lf-checker, pesco, pichecker, symbiotic, theta, uautomizer, ugemcutter, utaipan]
     runs-on: ubuntu-latest
     needs: build
     steps:
