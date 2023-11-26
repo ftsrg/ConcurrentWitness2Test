@@ -99,6 +99,7 @@ def translate_to_c(filename, witness):
             else:
                 print("Verdict: TIMEOUT")
     except:
+        traceback.print_exc()
         print("Verdict: Unknown error")
         sys.exit(-1)
 
