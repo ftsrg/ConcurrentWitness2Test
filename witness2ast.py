@@ -99,7 +99,12 @@ def extract_metadata(witnessfile, c_file):
 
     entry_nodes = list(nx.get_node_attributes(witness, "entry").keys())
     if len(entry_nodes) == 0:
-        raise KnownErrorVerdict("No entry node")
+        entry_nodes = list(set([u for u, deg in witness.in_degree() if not deg]) - set([u for u, deg in witness.out_degree() if not deg]))
+        if len(entry_nodes) == 0:
+            raise KnownErrorVerdict("No entry node")
+
+    if len(entry_nodes) > 1:
+        raise KnownErrorVerdict("Multiple entry nodes")
 
     node = entry_nodes[0]
 
