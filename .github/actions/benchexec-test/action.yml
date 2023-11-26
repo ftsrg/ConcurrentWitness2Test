@@ -40,6 +40,8 @@ runs:
       shell: bash
       run: |
         sed 's/tool="print-files"/tool="concurrentwitness2test"/g' svcomp23-witness-benchmarks/example.xml > svcomp23-witness-benchmarks/concurrentwitness2test.xml
+        sed -i 's/memlimit=".*"//g' svcomp23-witness-benchmarks/concurrentwitness2test.xml
+        sed -i 's/cpuCores=".*"//g' svcomp23-witness-benchmarks/concurrentwitness2test.xml
     - name: Run benchexec
       shell: bash
       run: |
