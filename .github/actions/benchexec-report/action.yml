@@ -32,7 +32,7 @@ runs:
             incorrect=$(tail -n9 *.txt | grep '  incorrect:' | awk ' { print $2 } ')
             all=$(tail -n9 *.txt | grep 'Statistics:' | awk ' { print $2 } ')
             msg="Supported ($((correct+incorrect))/$all)-green"
-            [ $correct -eq 0 ] && [ $incorrect -eq 0 ] && msg="Unsupported-red"
+            [ $correct -eq 0 ] && [ $incorrect -eq 0 ] && msg="Unsupported ($((correct+incorrect))/$all)-red"
             label=$(basename $i | sed 's/[- ]/%20/g')
             wget "https://img.shields.io/badge/$label-$msg" -O badge.svg
             popd
