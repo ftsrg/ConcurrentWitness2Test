@@ -97,7 +97,11 @@ def extract_metadata(witnessfile, c_file):
         raise KnownErrorVerdict("Correctness witness")
     ret = []
 
-    entry_nodes = list(nx.get_node_attributes(witness, "entry").keys())
+    keys = {k for node in witness.nodes for k in witness.nodes[node].keys()}
+    entry_key = "entry" if "entry" in keys else "isEntryNode"
+    sink_key = "sink" if "sink" in keys else "isSinkNode"
+
+    entry_nodes = list(nx.get_node_attributes(witness, entry_key).keys())
     if len(entry_nodes) == 0:
         entry_nodes = list(set([u for u, deg in witness.in_degree() if not deg]) - set([u for u, deg in witness.out_degree() if not deg]))
         if len(entry_nodes) == 0:
@@ -108,8 +112,10 @@ def extract_metadata(witnessfile, c_file):
 
     node = entry_nodes[0]
 
+    sink_nodes = set(nx.get_node_attributes(witness, sink_key).keys())
+
     while len(witness.out_edges(node)) > 0:
-        out_edges = witness.out_edges(node)
+        out_edges = list(filter(lambda x: x[1] not in sink_nodes, witness.out_edges(node)))
         if len(out_edges) > 1:
             raise KnownErrorVerdict("Has branching")
         edge = list(out_edges)[0]
