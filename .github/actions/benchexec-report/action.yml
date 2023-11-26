@@ -24,7 +24,7 @@ runs:
           then
             pushd $i
             table-generator -d *xml.bz2
-            sed -i 's/\.\.\/svcomp23-witness-benchmarks\//ftsrg\.mit\.bme\.hu\/svcomp23-witness-benchmarks\//g' *.html
+            sed -i 's/\.\.\/svcomp23-witness-benchmarks\//https:\/\/ftsrg\.mit\.bme\.hu\/svcomp23-witness-benchmarks\//g' *.html
             sed -E 's/[a-zA-Z0-9]+\(\)\.join\(([a-zA-Z0-9]+)\.props\.link,"\.\.\/"\+([a-zA-Z0-9]+)\)/"" + \1\.props\.link + "\.\.\/" + \2/g' -i *.html
             mv *.html index.html
             unzip *.zip
