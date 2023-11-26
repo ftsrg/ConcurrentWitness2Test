@@ -31,7 +31,7 @@ runs:
             correct=$(tail -n9 *.txt | grep '  correct:' | awk ' { print $2 } ')
             incorrect=$(tail -n9 *.txt | grep '  incorrect:' | awk ' { print $2 } ')
             all=$(tail -n9 *.txt | grep 'Statistics:' | awk ' { print $2 } ')
-            msg="Supported-green"
+            msg="Supported ($((correct+incorrect))/$all)-green"
             [ $correct -eq 0 ] && [ $incorrect -eq 0 ] && msg="Unsupported-red"
             label=$(basename $i | sed 's/[- ]/%20/g')
             wget "https://img.shields.io/badge/$label-$msg" -O badge.svg
@@ -41,11 +41,11 @@ runs:
           fi
         done
         echo "$EOF" >> $GITHUB_OUTPUT
-    - name: Upload results
-      uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
-      with:
-        name: BenchexecResults
-        path: artifacts
+#    - name: Upload results
+#      uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
+#      with:
+#        name: BenchexecResults
+#        path: artifacts
     - name: Deploy to GHPages
       if: github.event_name == 'pull_request' || github.ref_name == 'main'
       uses: JamesIves/github-pages-deploy-action@22a6ee251d6f13c6ab1ecb200d974f1a6feb1b8d # v4.4.2
