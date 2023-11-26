@@ -34,7 +34,7 @@ runs:
             msg="Supported-green"
             [ $correct -eq 0 ] && [ $incorrect -eq 0 ] && msg="Unsupported-red"
             label=$(basename $i | sed 's/[- ]/%20/g')
-            wget "https://img.shields.io/badge/$label-$msg" > badge.svg
+            wget "https://img.shields.io/badge/$label-$msg" -O badge.svg
             popd
           else
             rm -rf $i
