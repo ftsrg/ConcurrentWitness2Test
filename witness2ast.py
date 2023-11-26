@@ -17,6 +17,8 @@ import networkx as nx
 from pycparser.c_ast import Compound, If, While, DoWhile, For, FuncDef, FuncCall, \
     NodeVisitor, ID, ExprList, Constant
 
+from Exceptions import KnownErrorVerdict
+
 
 def get_offset_of_line(c_file, line):
     with open(c_file, "r") as f:
@@ -92,16 +94,19 @@ def find_first_statement_on_line(ast, target_line):
 def extract_metadata(witnessfile, c_file):
     witness = nx.read_graphml(witnessfile)
     if witness.graph["witness-type"] != "violation_witness":
-        print("Not validating correctness witness.")
-        exit(-1)
+        raise KnownErrorVerdict("Correctness witness")
     ret = []
 
-    node = list(nx.get_node_attributes(witness, "entry").keys())[0]
+    entry_nodes = list(nx.get_node_attributes(witness, "entry").keys())
+    if len(entry_nodes) == 0:
+        raise KnownErrorVerdict("No entry node")
+
+    node = entry_nodes[0]
 
     while len(witness.out_edges(node)) > 0:
         out_edges = witness.out_edges(node)
         if len(out_edges) > 1:
-            raise Exception("Too many edges of a node in a violation witness")
+            raise KnownErrorVerdict("Has branching")
         edge = list(out_edges)[0]
         attrs = witness.get_edge_data(edge[0], edge[1])
 

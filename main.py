@@ -22,6 +22,7 @@ import traceback
 
 from pycparser import parse_file, c_generator
 
+from Exceptions import KnownErrorVerdict
 from tweaks import reach_error, fix_inline, fix_struct_def
 from witness2ast import apply_witness
 
@@ -31,12 +32,19 @@ def translate_to_c(filename, witness):
     """
     try:
         ast = parse_file(filename, use_cpp=False)
+    except KnownErrorVerdict as e:
+        print("Verdict: " + e.verdict)
+        sys.exit(-1)
     except:
+        traceback.print_exc()
         print("Verdict: Parsing failed")
         sys.exit(-1)
 
     try:
         apply_witness(ast, filename, witness)
+    except KnownErrorVerdict as e:
+        print("Verdict: " + e.verdict)
+        sys.exit(-1)
     except:
         traceback.print_exc()
         print("Verdict: Incompatible witness")
@@ -92,6 +100,7 @@ def translate_to_c(filename, witness):
                 print("Verdict: TIMEOUT")
     except:
         print("Verdict: Unknown error")
+        sys.exit(-1)
 
 
 def hacks(content):
