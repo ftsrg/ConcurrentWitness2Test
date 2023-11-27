@@ -46,7 +46,7 @@ Run `./start.sh <preprocessed-c-file> <witnessfile>` to validate a violation wit
 [![](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/graves-par/badge.svg)](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/graves-par/)
 [![](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/graves/badge.svg)](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/graves/)
 [![](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/infer/badge.svg)](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/infer/)
-[![](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/lazycseq/badge.svg)](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/lazycseq/)
+[![](https://img.shields.io/badge/lazycseq-Unknown%20(0/0/0)-lightgrey)](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/lazycseq/)
 [![](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/lf-checker/badge.svg)](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/lf-checker/)
 [![](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/pesco/badge.svg)](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/pesco/)
 [![](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/pichecker/badge.svg)](https://ftsrg.mit.bme.hu/ConcurrentWitness2Test/benchmark-results/main/pichecker/)
