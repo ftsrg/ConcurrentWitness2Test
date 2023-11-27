@@ -60,7 +60,7 @@ def translate_to_c(filename, witness, mode):
             tmp.write(generator.visit(ast).encode())
             tmp.flush()
             print(tmp.name)
-            bin_name = os.path.basename(tmp.name)[:-2]
+            bin_name = tmp.name[:-2]
             print("Compilation started")
             result = subprocess.run(['gcc', '-w', tmp.name, os.path.dirname(__file__) + os.sep + 'svcomp.c', "-o", bin_name],
                                     stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -75,10 +75,10 @@ def translate_to_c(filename, witness, mode):
             codes = {}
             for i in range(100):
                 try:
-                    result = subprocess.run(['./' + bin_name], capture_output=True, text=True)
+                    result = subprocess.run([bin_name], capture_output=True, text=True)
                     print("Execution started")
-                    reached_error = False
-                    if result.stdout:
+                    reached_error = result.returncode == 74
+                    if not reached_error and result.stdout:
                         for line in result.stdout.split("\n"):
                             if "Reached error!" in line:
                                 reached_error = True
@@ -86,6 +86,10 @@ def translate_to_c(filename, witness, mode):
                     if result.stderr:
                         print(result.stderr)
                     print(f"Execution ended (exit code {result.returncode})")
+                    try:
+                        os.remove(bin_name)
+                    except:
+                        traceback.print_exc()
                     code = -1 if reached_error else 0
                     codes[code] = codes[code] + 1 if code in codes else 1
                     if mode == "strict" and not reached_error:

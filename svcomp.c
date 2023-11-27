@@ -30,7 +30,7 @@ void __VERIFIER_atomic_end(void) {
 void reach_error() {
     printf("Reached error!\n");
     fflush( stdout );
-    abort();
+    exit(74);
 }
 
 atomic_int c2tt_global_counter = ATOMIC_VAR_INIT(0);
