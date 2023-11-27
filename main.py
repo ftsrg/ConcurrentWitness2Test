@@ -88,10 +88,6 @@ def translate_to_c(filename, witness, mode):
                     if result.stderr:
                         print(result.stderr)
                     print(f"Execution ended (exit code {result.returncode})")
-                    try:
-                        os.remove(bin_name)
-                    except:
-                        traceback.print_exc()
                     code = -1 if reached_error else 0
                     codes[code] = codes[code] + 1 if code in codes else 1
                     if mode == "strict" and not reached_error:
@@ -100,6 +96,12 @@ def translate_to_c(filename, witness, mode):
                         break
                 except subprocess.TimeoutExpired:
                     print(f"Execution ended (timeout)")
+
+            try:
+                os.remove(bin_name)
+            except:
+                traceback.print_exc()
+
             print(codes)
             may_not = False
             may = False
