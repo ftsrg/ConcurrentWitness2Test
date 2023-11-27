@@ -167,7 +167,7 @@ def parse_arguments():
 
     parser.add_argument('--version', action='version', version='ConcurrentWitness2Test 1.0')
     parser.add_argument('input_file', metavar='<input.c>', type=str, help='Input file (.c)')
-    parser.add_argument('--witness', metavar='<witness.graphml>', type=str, required=True, help='Witness file (graphml)')
+    parser.add_argument('--witness', '--graphml-witness', metavar='<witness.graphml>', type=str, required=True, help='Witness file (graphml)')
     parser.add_argument('--mode', choices=['strict', 'normal', 'permissive'], default='normal',
                         help='Mode (default: normal)')
 
