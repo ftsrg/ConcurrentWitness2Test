@@ -13,10 +13,13 @@ runs:
     - name: Checkout repository
       uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
     - name: Install benchexec and dependencies
-      shell: bash
-      run: |
-        sudo add-apt-repository ppa:sosy-lab/benchmarking
-        sudo apt install benchexec python3
+      uses: nick-fields/retry@14672906e672a08bd6eeb15720e9ed3ce869cdd4 # 2.9.0
+      with:
+        timeout_minutes: 10
+        max_attempts: 3
+        command: |
+          sudo add-apt-repository ppa:sosy-lab/benchmarking
+          sudo apt install benchexec python3
     - uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
       name: Get archive
       with:
