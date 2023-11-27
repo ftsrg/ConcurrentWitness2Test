@@ -83,6 +83,8 @@ def translate_to_c(filename, witness, mode):
                             if "Reached error!" in line:
                                 reached_error = True
                                 break
+                    if result.stdout:
+                        print(result.stdout)
                     if result.stderr:
                         print(result.stderr)
                     print(f"Execution ended (exit code {result.returncode})")
