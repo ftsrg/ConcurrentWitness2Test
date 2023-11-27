@@ -19,6 +19,7 @@ import subprocess
 import sys
 import tempfile
 import traceback
+import argparse
 
 from pycparser import parse_file, c_generator
 
@@ -27,7 +28,7 @@ from tweaks import reach_error, fix_inline, fix_struct_def
 from witness2ast import apply_witness
 
 
-def translate_to_c(filename, witness):
+def translate_to_c(filename, witness, mode):
     """ Simply use the c_generator module to emit a parsed AST.
     """
     try:
@@ -74,14 +75,23 @@ def translate_to_c(filename, witness):
             codes = {}
             for i in range(100):
                 try:
-                    result = subprocess.run(['./' + bin_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=5)
+                    result = subprocess.run(['./' + bin_name], capture_output=True, text=True)
                     print("Execution started")
+                    reached_error = False
                     if result.stdout:
-                        print(result.stdout.decode())
+                        for line in result.stdout.split("\n"):
+                            if "Reached error!" in line:
+                                reached_error = True
+                                break
                     if result.stderr:
-                        print(result.stderr.decode())
+                        print(result.stderr)
                     print(f"Execution ended (exit code {result.returncode})")
-                    codes[0 if result.returncode == 0 else -1] = codes[0 if result.returncode == 0 else -1] + 1 if (0 if result.returncode == 0 else -1) in codes else 1
+                    code = -1 if reached_error else 0
+                    codes[code] = codes[code] + 1 if code in codes else 1
+                    if mode == "strict" and not reached_error:
+                        break
+                    if mode == "permissive" and reached_error:
+                        break
                 except subprocess.TimeoutExpired:
                     print(f"Execution ended (timeout)")
             print(codes)
@@ -152,10 +162,29 @@ def perform_hacks(filename, func):
             func(tmp.name)
 
 
+def parse_arguments():
+    parser = argparse.ArgumentParser(description='Parse command line arguments for ConcurrentWitness2Test.py')
+
+    parser.add_argument('--version', action='version', version='ConcurrentWitness2Test 1.0')
+    parser.add_argument('input_file', metavar='<input.c>', type=str, help='Input file (.c)')
+    parser.add_argument('--witness', metavar='<witness.graphml>', type=str, required=True, help='Witness file (graphml)')
+    parser.add_argument('--mode', choices=['strict', 'normal', 'permissive'], default='normal',
+                        help='Mode (default: normal)')
+
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    if len(sys.argv) > 3:
-        perform_hacks(sys.argv[1], lambda x: translate_to_c(x, sys.argv[3]))
-    elif len(sys.argv) == 2 and sys.argv[1] == "--version":
-        print("1.0-beta")
-    else:
-        print("Please provide a filename as argument. Provided arguments: " + str(list(sys.argv)))
+    args = parse_arguments()
+
+    if not args.input_file:
+        print('Please provide input file.')
+        argparse.ArgumentParser().print_help()
+        sys.exit(-1)
+
+    if not args.witness:
+        print('Please provide witness file.')
+        argparse.ArgumentParser().print_help()
+        sys.exit(-1)
+
+    perform_hacks(args.input_file, lambda x: translate_to_c(x, args.witness, args.mode))

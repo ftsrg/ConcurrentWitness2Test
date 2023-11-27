@@ -29,6 +29,7 @@ void __VERIFIER_atomic_end(void) {
 }
 void reach_error() {
     printf("Reached error!\n");
+    fflush( stdout );
     abort();
 }
 
