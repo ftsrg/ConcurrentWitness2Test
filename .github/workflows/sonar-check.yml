@@ -23,7 +23,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: SonarCloud Scan
-        uses: sonarsource/sonarcloud-github-action@master
+        uses: sonarsource/sonarcloud-github-action@c25d2e7e3def96d0d1781000d3c429da22cd6252 #v2.0.2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Required to interact with GitHub API
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
