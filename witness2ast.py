@@ -14,8 +14,19 @@
     limitations under the License.
 """
 import networkx as nx
-from pycparser.c_ast import Compound, If, While, DoWhile, For, FuncDef, FuncCall, \
-    NodeVisitor, ID, ExprList, Constant
+from pycparser.c_ast import (
+    Compound,
+    If,
+    While,
+    DoWhile,
+    For,
+    FuncDef,
+    FuncCall,
+    NodeVisitor,
+    ID,
+    ExprList,
+    Constant,
+)
 
 from Exceptions import KnownErrorVerdict
 
@@ -52,8 +63,13 @@ def get_coords(c_file, startline=None, endline=None, startoffset=None, endoffset
             f.seek(int(startoffset))
             content = f.read(int(endoffset) - int(startoffset) - 1)
             startline, column = get_line_of_offset(c_file, int(startoffset))
-            return {"startline": int(startline), "column": int(column), "endline": int(endline),
-                    "length": int(endoffset) - int(startoffset) + 1, "content": content}
+            return {
+                "startline": int(startline),
+                "column": int(column),
+                "endline": int(endline),
+                "length": int(endoffset) - int(startoffset) + 1,
+                "content": content,
+            }
     return None
 
 
@@ -72,8 +88,8 @@ def find_first_statement_on_line(ast, target_line):
         def visit_Compound(self, node):
             if self.found:
                 return
-            for stmt in (node.block_items if node.block_items else [node]):
-                if hasattr(stmt, 'coord') and stmt.coord:
+            for stmt in node.block_items if node.block_items else [node]:
+                if hasattr(stmt, "coord") and stmt.coord:
                     line = stmt.coord.line
                     if line >= self.target_line:
                         self.statement = stmt
@@ -103,7 +119,10 @@ def extract_metadata(witnessfile, c_file):
 
     entry_nodes = list(nx.get_node_attributes(witness, entry_key).keys())
     if len(entry_nodes) == 0:
-        entry_nodes = list(set([u for u, deg in witness.in_degree() if not deg]) - set([u for u, deg in witness.out_degree() if not deg]))
+        entry_nodes = list(
+            set([u for u, deg in witness.in_degree() if not deg])
+            - set([u for u, deg in witness.out_degree() if not deg])
+        )
         if len(entry_nodes) == 0:
             raise KnownErrorVerdict("No entry node")
 
@@ -115,7 +134,9 @@ def extract_metadata(witnessfile, c_file):
     sink_nodes = set(nx.get_node_attributes(witness, sink_key).keys())
 
     while len(witness.out_edges(node)) > 0:
-        out_edges = list(filter(lambda x: x[1] not in sink_nodes, witness.out_edges(node)))
+        out_edges = list(
+            filter(lambda x: x[1] not in sink_nodes, witness.out_edges(node))
+        )
         if len(out_edges) > 1:
             raise KnownErrorVerdict("Has branching")
         edge = list(out_edges)[0]
@@ -127,7 +148,11 @@ def extract_metadata(witnessfile, c_file):
         endoffset = attrs["endoffset"] if "endoffset" in attrs else None
 
         coords = get_coords(c_file, startline, endline, startoffset, endoffset)
-        metadata = {key: attrs[key] for key in ["assumption", "control", "threadId", "createThread"] if key in attrs}
+        metadata = {
+            key: attrs[key]
+            for key in ["assumption", "control", "threadId", "createThread"]
+            if key in attrs
+        }
         ret.append((coords, metadata))
         node = edge[1]
 
@@ -143,16 +168,34 @@ def apply_witness(ast, c_file, witnessfile):
     threadid = metadata[0][1]["threadId"] if "threadId" in metadata[0][1] else 0
     i = 0
     for coords, data in metadata:
-        if (data["threadId"] if "threadId" in data else threadid) != threadid and coords and "startline" in coords:
+        if (
+            (data["threadId"] if "threadId" in data else threadid) != threadid
+            and coords
+            and "startline" in coords
+        ):
             threadid = data["threadId"] if "threadId" in data else threadid
-            first_node, first_parent = find_first_statement_on_line(ast, coords["startline"])
+            first_node, first_parent = find_first_statement_on_line(
+                ast, coords["startline"]
+            )
 
-            yield_func   = FuncCall(ID("yield"),   ExprList(
-                [Constant(type='int', value=f'{i}'), Constant(type='int', value=f'{threadid}')]
-            ))
-            release_func = FuncCall(ID("release"), ExprList(
-                [Constant(type='int', value=f'{i}'), Constant(type='int', value=f'{threadid}')]
-            ))
+            yield_func = FuncCall(
+                ID("yield"),
+                ExprList(
+                    [
+                        Constant(type="int", value=f"{i}"),
+                        Constant(type="int", value=f"{threadid}"),
+                    ]
+                ),
+            )
+            release_func = FuncCall(
+                ID("release"),
+                ExprList(
+                    [
+                        Constant(type="int", value=f"{i}"),
+                        Constant(type="int", value=f"{threadid}"),
+                    ]
+                ),
+            )
 
             i = i + 1
             first_index = first_parent.block_items.index(first_node)
@@ -161,8 +204,12 @@ def apply_witness(ast, c_file, witnessfile):
                 first_node.stmt = Compound(block_items=[release_func, first_node.stmt])
             elif isinstance(first_node, If):
                 if first_node.iftrue:
-                    first_node.iftrue = Compound(block_items=[release_func, first_node.iftrue])
+                    first_node.iftrue = Compound(
+                        block_items=[release_func, first_node.iftrue]
+                    )
                 if first_node.iffalse:
-                    first_node.iffalse = Compound(block_items=[release_func, first_node.iffalse])
+                    first_node.iffalse = Compound(
+                        block_items=[release_func, first_node.iffalse]
+                    )
             else:
                 first_parent.block_items.insert(first_index + 2, release_func)

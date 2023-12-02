@@ -29,8 +29,7 @@ from witness2ast import apply_witness
 
 
 def translate_to_c(filename, witness, mode):
-    """ Simply use the c_generator module to emit a parsed AST.
-    """
+    """Simply use the c_generator module to emit a parsed AST."""
     try:
         ast = parse_file(filename, use_cpp=False)
     except KnownErrorVerdict as e:
@@ -62,8 +61,18 @@ def translate_to_c(filename, witness, mode):
             print(tmp.name)
             bin_name = tmp.name[:-2]
             print("Compilation started")
-            result = subprocess.run(['gcc', '-w', tmp.name, os.path.dirname(__file__) + os.sep + 'svcomp.c', "-o", bin_name],
-                                    stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            result = subprocess.run(
+                [
+                    "gcc",
+                    "-w",
+                    tmp.name,
+                    os.path.dirname(__file__) + os.sep + "svcomp.c",
+                    "-o",
+                    bin_name,
+                ],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+            )
             if result.stdout:
                 print(result.stdout.decode())
             if result.stderr:
@@ -132,33 +141,37 @@ def hacks(content):
             elif c == ")":
                 parens = parens - 1
                 if parens < 0:
-                    return ' ' * (i - offset) + match_str[i:]
+                    return " " * (i - offset) + match_str[i:]
                 elif parens == 0:
-                    return ' ' * (i - offset + 1) + match_str[i + 1:]
-        return ' ' * (len(match_str) - offset)
+                    return " " * (i - offset + 1) + match_str[i + 1 :]
+        return " " * (len(match_str) - offset)
 
     def replace_with_spaces(match):
         return replace_with_spaces_str(str(match.group(0)))
 
     def replace_with_zero_padded(match):
-        return '0' + replace_with_spaces_str(str(match.group(0)), 1)
+        return "0" + replace_with_spaces_str(str(match.group(0)), 1)
 
     last_content = ""
     while last_content != content:
         last_content = content
-        content = re.sub(r'//[^\n]*', replace_with_spaces, content)
-        content = re.sub(r'/\*.*\*/', replace_with_spaces, content)
-        content = re.sub(r'__attribute__[ \r\n]*\(.*\)', replace_with_spaces, content)
-        content = re.sub(r'__asm__[ \r\n]*\(.*\)', replace_with_spaces, content)
-        content = re.sub(r'asm volatile[ \r\n]*\(.*\)', replace_with_spaces, content)
-        content = re.sub(r'asm[ \r\n]*\(.*\)', replace_with_spaces, content)
-        content = re.sub(r'__extension__[ \r\n]*\(.*\)', replace_with_zero_padded, content)
-        content = re.sub(r'__extension__', replace_with_spaces, content)
-        content = re.sub(r'__inline', replace_with_spaces, content)
-        content = re.sub(r'__restrict', replace_with_spaces, content)
-        content = re.sub(r'__builtin_va_list', 'int              ', content)
-        content = re.sub(r'__signed__', '  signed  ', content)
-        content = re.sub(r'\([ \r\n]*\{.*}[ \r\n]*\)', replace_with_zero_padded, content)
+        content = re.sub(r"//[^\n]*", replace_with_spaces, content)
+        content = re.sub(r"/\*.*\*/", replace_with_spaces, content)
+        content = re.sub(r"__attribute__[ \r\n]*\(.*\)", replace_with_spaces, content)
+        content = re.sub(r"__asm__[ \r\n]*\(.*\)", replace_with_spaces, content)
+        content = re.sub(r"asm volatile[ \r\n]*\(.*\)", replace_with_spaces, content)
+        content = re.sub(r"asm[ \r\n]*\(.*\)", replace_with_spaces, content)
+        content = re.sub(
+            r"__extension__[ \r\n]*\(.*\)", replace_with_zero_padded, content
+        )
+        content = re.sub(r"__extension__", replace_with_spaces, content)
+        content = re.sub(r"__inline", replace_with_spaces, content)
+        content = re.sub(r"__restrict", replace_with_spaces, content)
+        content = re.sub(r"__builtin_va_list", "int              ", content)
+        content = re.sub(r"__signed__", "  signed  ", content)
+        content = re.sub(
+            r"\([ \r\n]*\{.*}[ \r\n]*\)", replace_with_zero_padded, content
+        )
     return content
 
 
@@ -171,13 +184,30 @@ def perform_hacks(filename, func):
 
 
 def parse_arguments():
-    parser = argparse.ArgumentParser(description='Parse command line arguments for ConcurrentWitness2Test.py')
+    parser = argparse.ArgumentParser(
+        description="Parse command line arguments for ConcurrentWitness2Test.py"
+    )
 
-    parser.add_argument('--version', action='version', version='ConcurrentWitness2Test 1.0')
-    parser.add_argument('input_file', metavar='<input.c>', type=str, help='Input file (.c)')
-    parser.add_argument('--witness', '--graphml-witness', metavar='<witness.graphml>', type=str, required=True, help='Witness file (graphml)')
-    parser.add_argument('--mode', choices=['strict', 'normal', 'permissive'], default='normal',
-                        help='Mode (default: normal)')
+    parser.add_argument(
+        "--version", action="version", version="ConcurrentWitness2Test 1.0"
+    )
+    parser.add_argument(
+        "input_file", metavar="<input.c>", type=str, help="Input file (.c)"
+    )
+    parser.add_argument(
+        "--witness",
+        "--graphml-witness",
+        metavar="<witness.graphml>",
+        type=str,
+        required=True,
+        help="Witness file (graphml)",
+    )
+    parser.add_argument(
+        "--mode",
+        choices=["strict", "normal", "permissive"],
+        default="normal",
+        help="Mode (default: normal)",
+    )
 
     return parser.parse_args()
 
@@ -186,12 +216,12 @@ if __name__ == "__main__":
     args = parse_arguments()
 
     if not args.input_file:
-        print('Please provide input file.')
+        print("Please provide input file.")
         argparse.ArgumentParser().print_help()
         sys.exit(-1)
 
     if not args.witness:
-        print('Please provide witness file.')
+        print("Please provide witness file.")
         argparse.ArgumentParser().print_help()
         sys.exit(-1)
 
