@@ -2,6 +2,9 @@ name: Sonar Check
 
 on:
   push:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  merge_group:
 
 jobs:
   black:
