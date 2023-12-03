@@ -1,7 +1,7 @@
 [![Build-Test-Deploy](https://github.com/ftsrg/ConcurrentWitness2Test/actions/workflows/linux-build-test-deploy.yml/badge.svg)](https://github.com/ftsrg/ConcurrentWitness2Test/actions/workflows/linux-build-test-deploy.yml)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ftsrg-github_concurrentwitness2test&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ftsrg-github_concurrentwitness2test)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ftsrg-github_concurrentwitness2test&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ftsrg-github_concurrentwitness2test)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ftsrg_ConcurrentWitness2Test&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ftsrg_ConcurrentWitness2Test)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ftsrg_ConcurrentWitness2Test&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ftsrg_ConcurrentWitness2Test)
 
 
 # ConcurrentWitness2Test 
