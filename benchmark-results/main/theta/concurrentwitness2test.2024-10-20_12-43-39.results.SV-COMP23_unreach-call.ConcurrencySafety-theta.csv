@@ -1,0 +1,40 @@
+tool	ConcurrentWitness2Test ConcurrentWitness2Test 1.0	ConcurrentWitness2Test ConcurrentWitness2Test 1.0	ConcurrentWitness2Test ConcurrentWitness2Test 1.0	ConcurrentWitness2Test ConcurrentWitness2Test 1.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-theta	SV-COMP23_unreach-call.ConcurrencySafety-theta	SV-COMP23_unreach-call.ConcurrencySafety-theta	SV-COMP23_unreach-call.ConcurrencySafety-theta
+../svcomp23-witness-benchmarks/tools/theta/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/theta-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	true	0.638191	3.162611998999978	71.532544
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/theta-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	true	0.623399	3.283169846999982	53.452800
+pthread-atomic/read_write_lock-2.yml/theta-read_write_lock-2.yml	true	0.614861	3.297129967999979	34.852864
+pthread-ext/28_buggy_simple_loop1_vf.yml/theta-28_buggy_simple_loop1_vf.yml	TIMEOUT	14.188285	46.009230981	2844.192768
+pthread-lit/qw2004-2b.yml/theta-qw2004-2b.yml	true	0.579455	3.490227233000013	31.932416
+pthread-wmm/mix011_tso.oepc.yml/theta-mix011_tso.oepc.yml	true	0.845316	30.510721074000003	54.005760
+pthread-wmm/mix019_tso.oepc.yml/theta-mix019_tso.oepc.yml	true	0.783371	30.931480911999984	32.940032
+pthread-wmm/mix022_tso.yml/theta-mix022_tso.yml	true	0.781638	30.417788943000005	32.833536
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/theta-mix028_power.opt_pso.opt_rmo.opt.yml	true	0.783806	30.95317812600001	32.956416
+pthread-wmm/mix028_tso.yml/theta-mix028_tso.yml	true	0.793438	31.151455685000002	32.727040
+pthread-wmm/mix033_tso.oepc.yml/theta-mix033_tso.oepc.yml	true	0.817058	33.992012330999984	32.706560
+pthread-wmm/mix038_tso.oepc.yml/theta-mix038_tso.oepc.yml	true	0.791964	33.03802741000001	32.890880
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	true	0.78785	32.75454513400001	32.358400
+pthread-wmm/mix042.opt.yml/theta-mix042.opt.yml	true	0.801339	33.772090709999986	32.886784
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	true	0.797792	33.167798661000035	32.874496
+pthread-wmm/mix052_tso.oepc.yml/theta-mix052_tso.oepc.yml	true	0.804389	32.71672227399998	32.821248
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	true	0.777979	32.65139056700002	32.632832
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	true	0.786235	32.73543151800001	32.653312
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/theta-rfi000_power.opt_pso.opt_rmo.opt.yml	true	0.767237	32.119065584	32.362496
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	true	0.790969	33.110554451999974	32.305152
+pthread-wmm/rfi005.yml/theta-rfi005.yml	true	0.804193	33.586551644999986	32.350208
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/theta-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	0.82659	33.139449001	33.230848
+pthread-wmm/rfi007_tso.yml/theta-rfi007_tso.yml	true	0.807797	33.20281055500004	32.698368
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/theta-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	true	0.814813	33.02315023199998	32.710656
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/theta-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	true	0.800072	33.94212842600001	32.813056
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/theta-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	true	0.793038	34.374855413000034	32.555008
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/theta-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	true	0.805805	34.11575172800002	32.784384
+pthread-wmm/safe011_power.opt_pso.opt.yml/theta-safe011_power.opt_pso.opt.yml	true	0.798954	34.440211250000004	32.788480
+pthread-wmm/safe015_power.oepc.yml/theta-safe015_power.oepc.yml	false(unreach-call)	0.815556	33.404756917999975	32.579584
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/theta-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	true	0.814886	33.20951429500002	32.571392
+pthread-wmm/safe021_power.opt_pso.opt.yml/theta-safe021_power.opt_pso.opt.yml	true	0.812472	32.86640356099997	32.833536
+pthread-wmm/safe025_power.yml/theta-safe025_power.yml	false(unreach-call)	0.813029	33.07529500100003	32.493568
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/theta-safe029_power.oepc_pso.oepc_rmo.oepc.yml	true	0.788232	32.65080348400005	32.669696
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/theta-safe029_power.opt_pso.opt_rmo.opt.yml	true	0.786667	25.435712945000034	32.661504
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/theta-safe030_power.oepc_pso.oepc_rmo.oepc.yml	true	0.788828	15.90444357299998	32.821248
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/theta-safe030_power.opt_pso.opt_rmo.opt.yml	true	0.771402	15.071978865999995	32.452608
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/theta-safe031_power.opt_pso.opt_rmo.opt.yml	true	0.788528	15.60027635099999	33.419264
