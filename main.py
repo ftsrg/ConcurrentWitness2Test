@@ -189,9 +189,7 @@ def parse_arguments():
         description="Parse command line arguments for ConcurrentWitness2Test.py"
     )
 
-    parser.add_argument(
-        "--version", action="version", version="1.0"
-    )
+    parser.add_argument("--version", action="version", version="1.0")
     parser.add_argument(
         "input_file", metavar="<input.c>", type=str, help="Input file (.c)"
     )
