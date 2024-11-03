@@ -190,7 +190,7 @@ def parse_arguments():
     )
 
     parser.add_argument(
-        "--version", action="version", version="ConcurrentWitness2Test 1.0"
+        "--version", action="version", version="1.0"
     )
     parser.add_argument(
         "input_file", metavar="<input.c>", type=str, help="Input file (.c)"
