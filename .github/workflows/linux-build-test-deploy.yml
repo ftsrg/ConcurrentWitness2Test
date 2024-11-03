@@ -31,7 +31,7 @@ jobs:
     strategy:
       matrix:
         tool: [bubaak, cbmc, coveriteam-verifier-algo-selection, coveriteam-verifier-parallel-portfolio, cpa-lockator, cpachecker, cseq, dartagnan, deagle, divine, ebf, esbmc-incr, esbmc-kind, goblint, graves-par, graves, infer, lazycseq, lf-checker, pesco, pichecker, symbiotic, theta, uautomizer, ugemcutter, utaipan]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: build
     steps:
       - name: Checkout repository
@@ -44,7 +44,7 @@ jobs:
   
   collect-results:
     needs: test-benchexec
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
