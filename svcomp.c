@@ -20,6 +20,7 @@
 #include <stddef.h>
 #include <stdatomic.h>
 #include <threads.h>
+#include <stdlib.h>
 
 void __VERIFIER_atomic_begin() {
 
