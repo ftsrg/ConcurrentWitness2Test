@@ -28,6 +28,7 @@ from pycparser.c_ast import (
     ExprList,
     Constant,
 )
+import re
 
 from Exceptions import KnownErrorVerdict
 
@@ -168,8 +169,26 @@ def apply_witness(ast, c_file, witnessfile):
     metadata = extract_metadata(witnessfile, c_file)
     threadid = metadata[0][1]["threadId"] if "threadId" in metadata[0][1] else 0
     i = 0
+    # TODO not perfect regexes, but hard to solve well for everything ( e.g., assumption: !(var == 1) and variants )
+    assumption_pattern = r"([^\s]*)\s*==\s*([^\s]*)"
+    nondet_assignment_pattern = r"([^\s]*)\s*=\s*__VERIFIER_nondet_[^\s]*"
+
     for coords, data in metadata:
-        if (
+        if ("assumption" in data and "content" in coords and "__VERIFIER_nondet_" in coords["content"]):
+            assumptions = []
+            matches = re.findall(assumption_pattern, data["assumption"])
+            for i, (varname, value) in enumerate(matches, 1):
+                assumptions.append({varname: value})
+
+            matches = re.findall(nondet_assignment_pattern, coords["content"])
+            for i, (varname) in enumerate(matches, 1):
+                if (any(varname in d for d in assumptions)):
+                    first_node, first_parent = find_first_statement_on_line(
+                        ast, coords["startline"]
+                    )
+                    # TODO change nondet call to value
+                    print("asd")
+        elif (
             (data["threadId"] if "threadId" in data else threadid) != threadid
             and coords
             and "startline" in coords
