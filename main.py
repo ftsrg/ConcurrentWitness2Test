@@ -66,6 +66,7 @@ def translate_to_c(filename, witness, mode):
                 [
                     "gcc",
                     "-w",
+                    "-Wno-implicit-function-declaration",
                     tmp.name,
                     os.path.dirname(__file__) + os.sep + "svcomp.c",
                     "-o",

@@ -31,7 +31,7 @@ def reach_error(ast):
                 bitsize=None,
             )
             ast.ext.remove(node)
-            ast.ext.append(extern_decl)
+            ast.ext.insert(0, extern_decl)
 
 
 # This is a problem with some SV-COMP benchmarks
