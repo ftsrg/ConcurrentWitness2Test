@@ -27,6 +27,7 @@ from pycparser.c_ast import (
     ID,
     ExprList,
     Constant,
+    Assignment,
 )
 import re
 
@@ -74,6 +75,38 @@ def get_coords(c_file, startline=None, endline=None, startoffset=None, endoffset
             }
     return None
 
+def find_nondet_assignment_on_line(ast, target_line):
+    class LineVisitor(NodeVisitor):
+        def __init__(self, target_line):
+            self.target_line = target_line
+            self.found = False
+            self.statement = None
+            self.parent = None
+
+        def visit(self, node):
+            if not self.found:
+                super().visit(node)
+
+        def visit_Compound(self, node):
+            if self.found:
+                return
+            for stmt in node.block_items if node.block_items else [node]:
+                if hasattr(stmt, "coord") and stmt.coord:
+                    line = stmt.coord.line
+                    if line >= self.target_line and type(stmt) == Assignment and type(stmt.rvalue) == FuncCall and "__VERIFIER_nondet" in stmt.rvalue.name.name:
+                        self.statement = stmt
+                        self.parent = node
+                        self.found = True
+                        return
+                self.generic_visit(stmt)
+
+    line_visitor = LineVisitor(target_line)
+    line_visitor.visit(ast)
+
+    if line_visitor.statement:
+        return line_visitor.statement, line_visitor.parent
+    else:
+        return None, None
 
 def find_first_statement_on_line(ast, target_line):
     class LineVisitor(NodeVisitor):
@@ -161,6 +194,34 @@ def extract_metadata(witnessfile, c_file):
     return ret
 
 
+nondet_return_types = {
+    "__VERIFIER_nondet_bool": "_Bool",
+    "__VERIFIER_nondet_char": "char",
+    "__VERIFIER_nondet_charp": "char*",
+    "__VERIFIER_nondet_const_char_pointer": "const char*",
+    "__VERIFIER_nondet_double": "double",
+    "__VERIFIER_nondet_float": "float",
+    "__VERIFIER_nondet_int": "int",
+    "__VERIFIER_nondet_long": "long",
+    "__VERIFIER_nondet_longlong": "long long",
+    "__VERIFIER_nondet_pointer": "void*",
+    "__VERIFIER_nondet_short": "short",
+    "__VERIFIER_nondet_size_t": "size_t",
+    "__VERIFIER_nondet_u16": "uint16_t",
+    "__VERIFIER_nondet_u32": "uint32_t",
+    "__VERIFIER_nondet_u8": "uint8_t",
+    "__VERIFIER_nondet_uchar": "unsigned char",
+    "__VERIFIER_nondet_uint": "unsigned int",
+    "__VERIFIER_nondet_uint128": "unsigned __int128",
+    "__VERIFIER_nondet_ulong": "unsigned long",
+    "__VERIFIER_nondet_ulonglong": "unsigned long long",
+    "__VERIFIER_nondet_unsigned": "unsigned",
+    "__VERIFIER_nondet_unsigned_char": "unsigned char",
+    "__VERIFIER_nondet_unsigned_int": "unsigned int",
+    "__VERIFIER_nondet_ushort": "unsigned short"
+}
+
+
 def apply_witness(ast, c_file, witnessfile):
     funcdefs = {}
     for node in ast.ext:
@@ -169,32 +230,37 @@ def apply_witness(ast, c_file, witnessfile):
     metadata = extract_metadata(witnessfile, c_file)
     threadid = metadata[0][1]["threadId"] if "threadId" in metadata[0][1] else 0
     i = 0
-    # TODO not perfect regexes, but hard to solve well for everything ( e.g., assumption: !(var == 1) and variants )
+    # TODO not perfect regex, but hard to solve well for everything ( e.g., assumption: !(var == 1) and variants )
     assumption_pattern = r"([^\s]*)\s*==\s*([^\s]*)"
-    nondet_assignment_pattern = r"([^\s]*)\s*=\s*__VERIFIER_nondet_[^\s]*"
 
     for coords, data in metadata:
-        if ("assumption" in data and "content" in coords and "__VERIFIER_nondet_" in coords["content"]):
-            assumptions = []
-            matches = re.findall(assumption_pattern, data["assumption"])
-            for i, (varname, value) in enumerate(matches, 1):
-                assumptions.append({varname: value})
+        # TODO current implementation is limited: will not work if single assignment executes 1+ time (e.g., in a loop)
+        if ("assumption" in data
+                and "content" in coords
+                and "startline" in coords
+        ):
+            nondet_assign_node, first_parent = find_nondet_assignment_on_line(
+                ast, coords["startline"]
+            )
+            if (nondet_assign_node is not None):
+                assumptions = {}
+                matches = re.findall(assumption_pattern, data["assumption"])
+                for i, (varname, value) in enumerate(matches, 1):
+                    assumptions[varname] = value
 
-            matches = re.findall(nondet_assignment_pattern, coords["content"])
-            for i, (varname) in enumerate(matches, 1):
+                varname = nondet_assign_node.lvalue.name
                 if (any(varname in d for d in assumptions)):
-                    first_node, first_parent = find_first_statement_on_line(
-                        ast, coords["startline"]
-                    )
                     # TODO change nondet call to value
-                    print("asd")
+                    if(nondet_assign_node.rvalue.name.name in nondet_return_types):
+                        ret_type = nondet_return_types[nondet_assign_node.rvalue.name.name]
+                        nondet_assign_node.rvalue = Constant(type=ret_type, value=assumptions[varname])
         elif (
-            (data["threadId"] if "threadId" in data else threadid) != threadid
-            and coords
-            and "startline" in coords
+                (data["threadId"] if "threadId" in data else threadid) != threadid
+                and coords
+                and "startline" in coords
         ):
             threadid = data["threadId"] if "threadId" in data else threadid
-            first_node, first_parent = find_first_statement_on_line(
+            nondet_assign_node, first_parent = find_first_statement_on_line(
                 ast, coords["startline"]
             )
 
@@ -218,18 +284,18 @@ def apply_witness(ast, c_file, witnessfile):
             )
 
             i = i + 1
-            first_index = first_parent.block_items.index(first_node)
+            first_index = first_parent.block_items.index(nondet_assign_node)
             first_parent.block_items.insert(first_index, yield_func)
-            if isinstance(first_node, (Compound, While, DoWhile, For)):
-                first_node.stmt = Compound(block_items=[release_func, first_node.stmt])
-            elif isinstance(first_node, If):
-                if first_node.iftrue:
-                    first_node.iftrue = Compound(
-                        block_items=[release_func, first_node.iftrue]
+            if isinstance(nondet_assign_node, (Compound, While, DoWhile, For)):
+                nondet_assign_node.stmt = Compound(block_items=[release_func, nondet_assign_node.stmt])
+            elif isinstance(nondet_assign_node, If):
+                if nondet_assign_node.iftrue:
+                    nondet_assign_node.iftrue = Compound(
+                        block_items=[release_func, nondet_assign_node.iftrue]
                     )
-                if first_node.iffalse:
-                    first_node.iffalse = Compound(
-                        block_items=[release_func, first_node.iffalse]
+                if nondet_assign_node.iffalse:
+                    nondet_assign_node.iffalse = Compound(
+                        block_items=[release_func, nondet_assign_node.iffalse]
                     )
             else:
                 first_parent.block_items.insert(first_index + 2, release_func)
