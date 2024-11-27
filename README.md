@@ -10,7 +10,7 @@ ConcurrentWitness2Test validates violation witnesses for the ConcurrencySafety c
 
 ## Installation
 
-Minimal necessary packages for Ubuntu 22.04 LTS:
+Minimal necessary packages for Ubuntu 24.04 LTS:
 * python3
 
 ## Contents of the Repository
@@ -27,7 +27,10 @@ witness2ast.py   -- additional source file
 ```
 
 ## Usage
-Run `./start.sh <preprocessed-c-file> <witnessfile>` to validate a violation witness. 
+Run `./start.sh <preprocessed-c-file> --witness <witnessfile> --mode <strict/normal/permissive>` to validate a violation witness. 
+
+## Publications
+For more information on how the validation works, check out our SV-COMP 2023 [tool paper](https://leventebajczi.com/publications/tacas24cwt.pdf) and [slides](https://leventebajczi.com/publications/slides/tacas24cwt.pdf).
 
 ## Tool Support
 
