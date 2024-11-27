@@ -1,0 +1,93 @@
+tool		ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-cpa-lockator	SV-COMP23_unreach-call.ConcurrencySafety-cpa-lockator	SV-COMP23_unreach-call.ConcurrencySafety-cpa-lockator	SV-COMP23_unreach-call.ConcurrencySafety-cpa-lockator
+../svcomp23-witness-benchmarks/tools/cpa-lockator/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_01-priv_nr_true.yml/cpa-lockator-13-privatized_01-priv_nr_true.yml	true	ERROR(ineffective witness)	0.652575	1.632715865999998	58.273792
+goblint-regression/13-privatized_04-priv_multi_true.yml/cpa-lockator-13-privatized_04-priv_multi_true.yml	true	TIMEOUT	0.621737	46.025593619999995	58.327040
+goblint-regression/13-privatized_18-first-reads_true.yml/cpa-lockator-13-privatized_18-first-reads_true.yml	true	ERROR(ineffective witness)	0.659587	1.5689682980000015	63.635456
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/cpa-lockator-13-privatized_18-first-reads_unknown_1_neg.yml	false	false(unreach-call)	0.654003	1.5921714469999984	60.719104
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/cpa-lockator-13-privatized_18-first-reads_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.65897	1.5877038600000049	59.772928
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/cpa-lockator-13-privatized_18-first-reads_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.64975	1.519440091000007	59.875328
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/cpa-lockator-13-privatized_18-first-reads_unknown_2_pos.yml	false	false(unreach-call)	0.565461	1.5797024809999982	37.879808
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/cpa-lockator-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	0.63887	1.5503217700000107	60.342272
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/cpa-lockator-13-privatized_19-publish-precision_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.563461	1.5812947659999992	37.056512
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/cpa-lockator-13-privatized_19-publish-precision_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.57063	1.536485417999998	40.341504
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/cpa-lockator-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	0.547791	1.100528808000007	34.689024
+goblint-regression/13-privatized_20-publish-regression_true.yml/cpa-lockator-13-privatized_20-publish-regression_true.yml	true	ERROR(ineffective witness)	0.577235	1.1367122010000088	34.734080
+goblint-regression/13-privatized_24-multiple-protecting_true.yml/cpa-lockator-13-privatized_24-multiple-protecting_true.yml	true	ERROR(ineffective witness)	0.578165	1.3549614119999944	34.734080
+goblint-regression/13-privatized_25-struct_nr_true.yml/cpa-lockator-13-privatized_25-struct_nr_true.yml	true	ERROR(ineffective witness)	0.586445	1.2961075569999991	34.709504
+goblint-regression/13-privatized_27-multiple-protecting2_true.yml/cpa-lockator-13-privatized_27-multiple-protecting2_true.yml	true	TIMEOUT	0.442524	46.039103620999995	34.713600
+goblint-regression/13-privatized_29-multiple-protecting2-vesal_true.yml/cpa-lockator-13-privatized_29-multiple-protecting2-vesal_true.yml	true	ERROR(ineffective witness)	0.56409	1.3083377049999996	34.668544
+goblint-regression/13-privatized_30-traces-oplus-vs-meet_true.yml/cpa-lockator-13-privatized_30-traces-oplus-vs-meet_true.yml	true	ERROR(ineffective witness)	0.580979	1.1738089570000056	34.742272
+goblint-regression/13-privatized_31-traces-mine-vs-mutex_true.yml/cpa-lockator-13-privatized_31-traces-mine-vs-mutex_true.yml	true	ERROR(ineffective witness)	0.576795	1.166424278000008	34.689024
+goblint-regression/13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml/cpa-lockator-13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml	true	ERROR(ineffective witness)	0.563163	1.2687213700000086	34.709504
+goblint-regression/13-privatized_33-traces-v-matters_true.yml/cpa-lockator-13-privatized_33-traces-v-matters_true.yml	true	ERROR(ineffective witness)	0.580853	1.0351970660000092	34.504704
+goblint-regression/13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml/cpa-lockator-13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml	true	ERROR(ineffective witness)	0.576443	1.124430923999995	34.709504
+goblint-regression/13-privatized_35-traces-ex-2_true.yml/cpa-lockator-13-privatized_35-traces-ex-2_true.yml	true	ERROR(ineffective witness)	0.558689	1.0863094390000043	34.566144
+goblint-regression/13-privatized_36-traces-ex-3_true.yml/cpa-lockator-13-privatized_36-traces-ex-3_true.yml	true	ERROR(ineffective witness)	0.566425	1.1253505260000054	34.693120
+goblint-regression/13-privatized_37-traces-ex-4_true.yml/cpa-lockator-13-privatized_37-traces-ex-4_true.yml	true	ERROR(ineffective witness)	0.568478	1.1578090410000073	34.689024
+goblint-regression/13-privatized_38-traces-ex-4-switch_true.yml/cpa-lockator-13-privatized_38-traces-ex-4-switch_true.yml	true	ERROR(ineffective witness)	0.567057	0.9916640389999998	34.689024
+goblint-regression/13-privatized_40-traces-ex-6_true.yml/cpa-lockator-13-privatized_40-traces-ex-6_true.yml	true	ERROR(ineffective witness)	0.561459	1.0022392569999994	34.689024
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/cpa-lockator-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	false(unreach-call)	0.568358	1.0224833500000017	34.693120
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/cpa-lockator-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	false(unreach-call)	0.575728	1.14129054899999	34.705408
+goblint-regression/13-privatized_42-traces-ex-mini_true.yml/cpa-lockator-13-privatized_42-traces-ex-mini_true.yml	true	ERROR(ineffective witness)	0.572915	1.1454363950000044	34.672640
+goblint-regression/13-privatized_44-traces-mine2_true.yml/cpa-lockator-13-privatized_44-traces-mine2_true.yml	true	ERROR(ineffective witness)	0.560143	1.0249117139999981	34.705408
+goblint-regression/13-privatized_69-refine-protected-loop-interval_true.yml/cpa-lockator-13-privatized_69-refine-protected-loop-interval_true.yml	true	ERROR(ineffective witness)	0.611319	1.0975966579999863	34.750464
+goblint-regression/28-race_reach_45-escape_racing.yml/cpa-lockator-28-race_reach_45-escape_racing.yml	false	ERROR(ineffective witness)	0.58692	1.014267609000001	34.750464
+goblint-regression/28-race_reach_46-escape_racefree.yml/cpa-lockator-28-race_reach_46-escape_racefree.yml	true	ERROR(ineffective witness)	0.586982	1.0894283070000057	34.701312
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/cpa-lockator-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.587188	1.0041161320000072	34.717696
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/cpa-lockator-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	false(unreach-call)	0.580484	1.022999463000005	34.656256
+goblint-regression/36-apron_21-traces-cluster-based_true.yml/cpa-lockator-36-apron_21-traces-cluster-based_true.yml	true	TIMEOUT	0.496301	46.026195618	34.775040
+goblint-regression/36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml/cpa-lockator-36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml	true	ERROR(ineffective witness)	0.623743	1.0375557910000026	35.012608
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/cpa-lockator-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.559319	1.0176445719999947	34.660352
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/cpa-lockator-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	false(unreach-call)	0.551451	0.8397664929999991	34.648064
+ldv-linux-3.14-races/linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.yml/cpa-lockator-linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.yml	false	ERROR(Parsing failed)	0.280867	0.6444865609999937	27.213824
+ldv-linux-3.14-races/linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.yml/cpa-lockator-linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.yml	false	ERROR(Parsing failed)	0.268733	0.6021896749999911	27.074560
+ldv-linux-3.14-races/linux-3.14--drivers--usb--misc--adutux.ko.cil.yml/cpa-lockator-linux-3.14--drivers--usb--misc--adutux.ko.cil.yml	false	ERROR(Parsing failed)	0.270331	0.42315134899999407	27.131904
+ldv-races/race-2_1-container_of.yml/cpa-lockator-race-2_1-container_of.yml	true	ERROR(ineffective witness)	1.216751	14.159042310999993	36.343808
+ldv-races/race-3_1-container_of-global.yml/cpa-lockator-race-3_1-container_of-global.yml	true	ERROR(ineffective witness)	1.205871	16.985687619000004	36.073472
+ldv-races/race-4_1-thread_local_vars.yml/cpa-lockator-race-4_1-thread_local_vars.yml	true	ERROR(ineffective witness)	1.027343	1.5307020860000051	36.372480
+pthread-C-DAC/pthread-demo-datarace-1.yml/cpa-lockator-pthread-demo-datarace-1.yml	true	TIMEOUT	1.366684	46.01474712199999	36.331520
+pthread-atomic/time_var_mutex.yml/cpa-lockator-time_var_mutex.yml	true	TIMEOUT	0.47094	46.03272609	34.779136
+pthread-deagle/circular_buffer_bad.yml/cpa-lockator-circular_buffer_bad.yml	false	TIMEOUT	0.525685	46.024165855999996	34.897920
+pthread-deagle/circular_buffer_ok.yml/cpa-lockator-circular_buffer_ok.yml	true	TIMEOUT	0.515324	46.052104853	34.873344
+pthread-divine/ring_2w1r-1.yml/cpa-lockator-ring_2w1r-1.yml	true	ERROR(ineffective witness)	0.590892	0.5874062649999985	35.762176
+pthread-divine/tls_basic.yml/cpa-lockator-tls_basic.yml	true	ERROR(ineffective witness)	0.4796	0.48311255400000164	34.877440
+pthread-divine/tls_destructor_worker.yml/cpa-lockator-tls_destructor_worker.yml	false	false(unreach-call)	0.501867	0.5039841059999901	34.877440
+pthread-driver-races/char_generic_nvram_read_nvram_write_nvram.yml/cpa-lockator-char_generic_nvram_read_nvram_write_nvram.yml	false	ERROR(Compilation error)	2.566361	2.5785091589999922	56.119296
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml/cpa-lockator-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml	false	ERROR(Compilation error)	14.093421	14.117692955999999	60.346368
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml/cpa-lockator-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml	false	ERROR(Compilation error)	10.702783	10.728863278000006	60.510208
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml/cpa-lockator-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml	false	ERROR(Compilation error)	11.398192	11.536786129000006	60.448768
+pthread-ext/03_incdec.yml/cpa-lockator-03_incdec.yml	true	ERROR(Has branching)	0.219483	0.22678906999999526	27.217920
+pthread-ext/04_incdec_cas.yml/cpa-lockator-04_incdec_cas.yml	true	ERROR(Has branching)	0.311331	0.3193241219999976	26.955776
+pthread-ext/08_rand_cas.yml/cpa-lockator-08_rand_cas.yml	true	ERROR(Has branching)	0.409054	0.41816116999999053	27.021312
+pthread-ext/09_fmaxsym.yml/cpa-lockator-09_fmaxsym.yml	true	ERROR(Has branching)	0.308009	0.31929075799999396	27.250688
+pthread-ext/11_fmaxsymopt.yml/cpa-lockator-11_fmaxsymopt.yml	true	ERROR(Has branching)	0.309691	0.3178140440000021	27.160576
+pthread-ext/14_spin2003.yml/cpa-lockator-14_spin2003.yml	true	ERROR(Has branching)	0.355895	0.3641177000000084	26.873856
+pthread-ext/25_stack.yml/cpa-lockator-25_stack.yml	true	ERROR(Has branching)	0.572557	0.5804898499999922	27.508736
+pthread-ext/25_stack_longer-1.yml/cpa-lockator-25_stack_longer-1.yml	false	ERROR(Has branching)	0.374221	0.3816722580000089	27.373568
+pthread-ext/25_stack_longer-2.yml/cpa-lockator-25_stack_longer-2.yml	true	ERROR(Has branching)	0.420464	0.42901221600000383	27.451392
+pthread-ext/25_stack_longest-1.yml/cpa-lockator-25_stack_longest-1.yml	true	ERROR(Has branching)	0.418104	0.4263065349999948	27.410432
+pthread-ext/25_stack_longest-2.yml/cpa-lockator-25_stack_longest-2.yml	false	ERROR(Has branching)	0.309819	0.3182811490000006	27.435008
+pthread-ext/26_stack_cas.yml/cpa-lockator-26_stack_cas.yml	true	ERROR(Has branching)	0.377714	0.38547810299999696	27.430912
+pthread-ext/26_stack_cas_longer-1.yml/cpa-lockator-26_stack_cas_longer-1.yml	false	ERROR(Has branching)	0.323207	0.33145408099998974	27.418624
+pthread-ext/26_stack_cas_longer-2.yml/cpa-lockator-26_stack_cas_longer-2.yml	true	ERROR(Has branching)	0.540269	0.5869548539999982	27.500544
+pthread-ext/26_stack_cas_longest-1.yml/cpa-lockator-26_stack_cas_longest-1.yml	false	ERROR(Has branching)	0.339052	0.35163525500000503	27.422720
+pthread-ext/26_stack_cas_longest-2.yml/cpa-lockator-26_stack_cas_longest-2.yml	true	ERROR(Has branching)	0.451078	0.4787698610000035	27.484160
+pthread-ext/28_buggy_simple_loop1_vf.yml/cpa-lockator-28_buggy_simple_loop1_vf.yml	false	ERROR(Has branching)	0.322334	0.35550358900000845	27.074560
+pthread-ext/31_simple_loop5_vs.yml/cpa-lockator-31_simple_loop5_vs.yml	true	ERROR(Has branching)	0.305325	0.3187846879999938	27.017216
+pthread-ext/35_double_lock_p3_vs.yml/cpa-lockator-35_double_lock_p3_vs.yml	true	TIMEOUT	46.639411	31.363586683999998	2313.789440
+pthread-ext/36_stack_cas_p0_vs_concur.yml/cpa-lockator-36_stack_cas_p0_vs_concur.yml	true	ERROR(ineffective witness)	0.788819	16.707085007999993	34.861056
+pthread-ext/37_stack_lock_p0_vs_concur.yml/cpa-lockator-37_stack_lock_p0_vs_concur.yml	true	ERROR(ineffective witness)	0.851376	16.682819143999993	34.893824
+pthread-ext/43_NetBSD_sysmon_power_sliced.yml/cpa-lockator-43_NetBSD_sysmon_power_sliced.yml	true	ERROR(ineffective witness)	0.966271	16.24008152099998	35.295232
+pthread/bigshot_s.yml/cpa-lockator-bigshot_s.yml	true	ERROR(Has branching)	0.385097	0.6203820050000104	27.885568
+pthread/bigshot_s2.yml/cpa-lockator-bigshot_s2.yml	true	TIMEOUT	0.542174	46.02433465200002	35.614720
+pthread/lazy01.yml/cpa-lockator-lazy01.yml	false	TIMEOUT	0.440927	46.01209767199998	34.955264
+pthread/singleton.yml/cpa-lockator-singleton.yml	false	false(unreach-call)	0.67552	1.0985931810000125	35.409920
+pthread/stack-1.yml/cpa-lockator-stack-1.yml	true	TIMEOUT	0.606849	46.020406095	35.307520
+pthread/stack-2.yml/cpa-lockator-stack-2.yml	false	TIMEOUT	0.620704	46.013744437000014	35.356672
+pthread/stack_longer-1.yml/cpa-lockator-stack_longer-1.yml	false	TIMEOUT	0.605546	46.02770923599999	35.303424
+pthread/stack_longer-2.yml/cpa-lockator-stack_longer-2.yml	true	TIMEOUT	0.602632	46.042739917000006	35.307520
+pthread/stack_longest-1.yml/cpa-lockator-stack_longest-1.yml	false	TIMEOUT	0.595272	46.03278461899998	35.098624
+pthread/stack_longest-2.yml/cpa-lockator-stack_longest-2.yml	true	TIMEOUT	0.610352	46.05244034100002	35.741696
+pthread/stateful01-1.yml/cpa-lockator-stateful01-1.yml	false	false(unreach-call)	0.492451	0.5101104039999882	34.656256
+pthread/stateful01-2.yml/cpa-lockator-stateful01-2.yml	true	ERROR(ineffective witness)	0.481714	0.4821019519999936	34.893824

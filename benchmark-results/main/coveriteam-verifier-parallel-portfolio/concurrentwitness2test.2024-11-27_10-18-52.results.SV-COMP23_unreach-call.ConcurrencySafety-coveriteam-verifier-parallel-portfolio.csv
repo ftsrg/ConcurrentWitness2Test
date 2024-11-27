@@ -1,0 +1,261 @@
+tool		ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-parallel-portfolio	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-parallel-portfolio	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-parallel-portfolio	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-parallel-portfolio
+../svcomp23-witness-benchmarks/tools/coveriteam-verifier-parallel-portfolio/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/coveriteam-verifier-parallel-portfolio-13-privatized_18-first-reads_unknown_1_neg.yml	false	false(unreach-call)	0.676434	6.755912429000006	59.334656
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/coveriteam-verifier-parallel-portfolio-13-privatized_18-first-reads_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.583788	6.698127077999999	37.797888
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/coveriteam-verifier-parallel-portfolio-13-privatized_18-first-reads_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.59367	6.754712371000011	38.133760
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/coveriteam-verifier-parallel-portfolio-13-privatized_18-first-reads_unknown_2_pos.yml	false	false(unreach-call)	0.581829	6.6720948019999895	37.199872
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/coveriteam-verifier-parallel-portfolio-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	0.562931	6.623442354000005	37.863424
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/coveriteam-verifier-parallel-portfolio-13-privatized_19-publish-precision_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.606952	6.7309139860000045	37.036032
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/coveriteam-verifier-parallel-portfolio-13-privatized_19-publish-precision_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.613615	6.736767690999997	38.285312
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/coveriteam-verifier-parallel-portfolio-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	0.569112	6.635141868000005	36.720640
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/coveriteam-verifier-parallel-portfolio-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	false(unreach-call)	0.581982	6.687250397999989	38.170624
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/coveriteam-verifier-parallel-portfolio-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.616181	6.686010542000005	36.990976
+goblint-regression/13-privatized_68-pfscan_protected_loop_minimal_interval_true.yml/coveriteam-verifier-parallel-portfolio-13-privatized_68-pfscan_protected_loop_minimal_interval_true.yml	true	ERROR(ineffective witness)	0.569866	1.3850678630000033	34.607104
+goblint-regression/13-privatized_69-refine-protected-loop-interval_true.yml/coveriteam-verifier-parallel-portfolio-13-privatized_69-refine-protected-loop-interval_true.yml	true	ERROR(ineffective witness)	0.58942	1.3708611269999977	34.791424
+goblint-regression/28-race_reach_45-escape_racing.yml/coveriteam-verifier-parallel-portfolio-28-race_reach_45-escape_racing.yml	false	ERROR(ineffective witness)	0.628914	1.5564049890000007	34.689024
+goblint-regression/28-race_reach_94-alloc_region_racing.yml/coveriteam-verifier-parallel-portfolio-28-race_reach_94-alloc_region_racing.yml	false	false(unreach-call)	0.802738	1.8229857030000005	35.868672
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/coveriteam-verifier-parallel-portfolio-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.579075	1.589828017000002	34.623488
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/coveriteam-verifier-parallel-portfolio-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	false(unreach-call)	0.593096	1.4484231140000077	34.648064
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/coveriteam-verifier-parallel-portfolio-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.581686	1.6520648850000015	34.660352
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/coveriteam-verifier-parallel-portfolio-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	false(unreach-call)	0.567577	1.449898024999996	34.660352
+ldv-races/race-1_2-join.yml/coveriteam-verifier-parallel-portfolio-race-1_2-join.yml	false	ERROR(ineffective witness)	0.732618	1.6312039939999892	36.102144
+ldv-races/race-1_3-join.yml/coveriteam-verifier-parallel-portfolio-race-1_3-join.yml	false	ERROR(ineffective witness)	0.726518	1.6451205150000021	36.061184
+ldv-races/race-2_3-container_of.yml/coveriteam-verifier-parallel-portfolio-race-2_3-container_of.yml	false	TIMEOUT	1.630764	46.043235029	36.585472
+ldv-races/race-2_4-container_of.yml/coveriteam-verifier-parallel-portfolio-race-2_4-container_of.yml	false	TIMEOUT	1.591218	46.031750331	36.605952
+ldv-races/race-2_5-container_of.yml/coveriteam-verifier-parallel-portfolio-race-2_5-container_of.yml	false	TIMEOUT	1.593697	46.03281158899999	36.601856
+pthread-divine/tls_destructor_worker.yml/coveriteam-verifier-parallel-portfolio-tls_destructor_worker.yml	false	false(unreach-call)	0.594636	1.4547466439999965	34.668544
+pthread-ext/25_stack_longer-1.yml/coveriteam-verifier-parallel-portfolio-25_stack_longer-1.yml	false	false(unreach-call)	0.718523	2.505266161999998	37.777408
+pthread-ext/25_stack_longest-2.yml/coveriteam-verifier-parallel-portfolio-25_stack_longest-2.yml	false	false(unreach-call)	0.751263	2.994794371000012	36.048896
+pthread-ext/26_stack_cas_longer-1.yml/coveriteam-verifier-parallel-portfolio-26_stack_cas_longer-1.yml	false	false(unreach-call)	0.684753	2.5271693800000037	34.705408
+pthread-ext/26_stack_cas_longest-1.yml/coveriteam-verifier-parallel-portfolio-26_stack_cas_longest-1.yml	false	false(unreach-call)	0.757124	2.9009889479999913	34.689024
+pthread-ext/28_buggy_simple_loop1_vf.yml/coveriteam-verifier-parallel-portfolio-28_buggy_simple_loop1_vf.yml	false	TIMEOUT	26.491683	46.06491892899999	2314.096640
+pthread-lit/qw2004-2b.yml/coveriteam-verifier-parallel-portfolio-qw2004-2b.yml	false	ERROR(ineffective witness)	0.569528	1.5279737660000023	34.676736
+pthread-wmm/mix000.oepc.yml/coveriteam-verifier-parallel-portfolio-mix000.oepc.yml	false	TIMEOUT	0.720081	46.06044892700001	36.323328
+pthread-wmm/mix000.opt.yml/coveriteam-verifier-parallel-portfolio-mix000.opt.yml	false	TIMEOUT	0.711282	46.03290807200001	36.073472
+pthread-wmm/mix001.oepc.yml/coveriteam-verifier-parallel-portfolio-mix001.oepc.yml	false	TIMEOUT	0.757179	46.096613521999984	36.679680
+pthread-wmm/mix001.opt.yml/coveriteam-verifier-parallel-portfolio-mix001.opt.yml	false	TIMEOUT	0.741077	46.08301617799998	36.433920
+pthread-wmm/mix002.oepc.yml/coveriteam-verifier-parallel-portfolio-mix002.oepc.yml	false	TIMEOUT	0.737668	46.047567633	36.364288
+pthread-wmm/mix002.opt.yml/coveriteam-verifier-parallel-portfolio-mix002.opt.yml	false	TIMEOUT	0.75021	46.04922417099999	36.450304
+pthread-wmm/mix003.oepc.yml/coveriteam-verifier-parallel-portfolio-mix003.oepc.yml	false	ERROR(ineffective witness)	0.808119	44.146061962000005	36.368384
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.812533	43.661077809000005	36.327424
+pthread-wmm/mix004.oepc.yml/coveriteam-verifier-parallel-portfolio-mix004.oepc.yml	false	ERROR(ineffective witness)	0.808602	44.60684038900001	36.618240
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix005_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.811062	43.652074215	36.614144
+pthread-wmm/mix005_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix005_tso.oepc.yml	false	ERROR(ineffective witness)	0.798303	43.39109403500001	36.724736
+pthread-wmm/mix006.opt.yml/coveriteam-verifier-parallel-portfolio-mix006.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.800047	45.319495821000004	36.368384
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	0.793188	45.763761875	36.360192
+pthread-wmm/mix006_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix006_tso.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	0.880991	45.78668675200001	38.133760
+pthread-wmm/mix007.oepc.yml/coveriteam-verifier-parallel-portfolio-mix007.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	0.843106	46.13862281599998	36.716544
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix008_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	0.829398	45.244551207	36.601856
+pthread-wmm/mix009.oepc.yml/coveriteam-verifier-parallel-portfolio-mix009.oepc.yml	false	ERROR(ineffective witness)	0.77329	43.072643708999976	36.057088
+pthread-wmm/mix009.opt.yml/coveriteam-verifier-parallel-portfolio-mix009.opt.yml	false	ERROR(ineffective witness)	0.758678	42.221907863999974	35.987456
+pthread-wmm/mix010.oepc.yml/coveriteam-verifier-parallel-portfolio-mix010.oepc.yml	false	ERROR(ineffective witness)	0.794358	43.422479228000014	36.413440
+pthread-wmm/mix010.opt.yml/coveriteam-verifier-parallel-portfolio-mix010.opt.yml	false	ERROR(ineffective witness)	0.807008	43.300081198000015	36.487168
+pthread-wmm/mix011.opt.yml/coveriteam-verifier-parallel-portfolio-mix011.opt.yml	false	ERROR(ineffective witness)	0.793102	42.78683843800002	36.372480
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.771589	44.178868473999984	36.306944
+pthread-wmm/mix011_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix011_tso.oepc.yml	false	ERROR(ineffective witness)	0.791635	44.681617287999984	36.569088
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	ERROR(ineffective witness)	0.777501	43.86978384	36.151296
+pthread-wmm/mix012_pso.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix012_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.805343	44.762907313	36.106240
+pthread-wmm/mix013.oepc.yml/coveriteam-verifier-parallel-portfolio-mix013.oepc.yml	false	ERROR(ineffective witness)	0.824834	44.55490590100001	36.651008
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix014_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.775047	43.910031549999985	36.704256
+pthread-wmm/mix015.oepc.yml/coveriteam-verifier-parallel-portfolio-mix015.oepc.yml	false	ERROR(ineffective witness)	0.789251	43.49275767400002	36.290560
+pthread-wmm/mix015.opt.yml/coveriteam-verifier-parallel-portfolio-mix015.opt.yml	false	ERROR(ineffective witness)	0.795802	44.08263484400004	36.405248
+pthread-wmm/mix016.oepc.yml/coveriteam-verifier-parallel-portfolio-mix016.oepc.yml	false	ERROR(ineffective witness)	0.795499	43.51567022199998	36.347904
+pthread-wmm/mix016_power.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix016_power.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.80181	43.491701358	36.335616
+pthread-wmm/mix016_pso.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix016_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.788687	43.21887180800002	36.294656
+pthread-wmm/mix017.oepc.yml/coveriteam-verifier-parallel-portfolio-mix017.oepc.yml	false	ERROR(ineffective witness)	0.790893	42.471804021000025	36.724736
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix018_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.801894	43.34512853199999	36.745216
+pthread-wmm/mix019.opt.yml/coveriteam-verifier-parallel-portfolio-mix019.opt.yml	false	ERROR(ineffective witness)	0.784579	44.09481784400003	36.331520
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix019_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.771329	42.56591604199997	36.200448
+pthread-wmm/mix019_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix019_tso.oepc.yml	false	ERROR(ineffective witness)	0.776295	43.70690413899996	36.278272
+pthread-wmm/mix020.oepc.yml/coveriteam-verifier-parallel-portfolio-mix020.oepc.yml	false	ERROR(ineffective witness)	0.798948	43.616313596	36.675584
+pthread-wmm/mix021.opt.yml/coveriteam-verifier-parallel-portfolio-mix021.opt.yml	false	ERROR(ineffective witness)	0.787914	43.77116059400004	36.487168
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix021_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.823538	44.60418184500003	36.687872
+pthread-wmm/mix021_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix021_tso.oepc.yml	false	ERROR(ineffective witness)	0.812938	43.866070861000026	36.503552
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.756236	42.67914632200001	35.893248
+pthread-wmm/mix022_tso.yml/coveriteam-verifier-parallel-portfolio-mix022_tso.yml	false	ERROR(ineffective witness)	0.776813	42.662418770000045	36.118528
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix023_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.791423	43.46059833100003	36.589568
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.788112	42.92830722000002	36.171776
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix024_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.786693	44.06639535599999	36.065280
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.777268	42.84015647000001	36.315136
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix025_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.761706	43.630011481999986	36.065280
+pthread-wmm/mix026.oepc.yml/coveriteam-verifier-parallel-portfolio-mix026.oepc.yml	false	ERROR(ineffective witness)	0.802136	44.240913750000004	36.663296
+pthread-wmm/mix026_power.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix026_power.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.789049	43.229795379999985	36.245504
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix027_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.806292	43.82136939900005	36.605952
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix027_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.802494	43.836404152	36.286464
+pthread-wmm/mix027_tso.yml/coveriteam-verifier-parallel-portfolio-mix027_tso.yml	false	ERROR(ineffective witness)	0.786575	44.19933154700004	36.491264
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.777518	44.62972299500001	36.184064
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix028_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.787322	42.85091381900003	36.311040
+pthread-wmm/mix028_tso.yml/coveriteam-verifier-parallel-portfolio-mix028_tso.yml	false	ERROR(ineffective witness)	0.777862	43.11141644700001	36.397056
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.77622	42.279907871000034	36.458496
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix030_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.782995	43.30054147699997	36.519936
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix030_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.784595	43.40386463499999	36.474880
+pthread-wmm/mix030_tso.yml/coveriteam-verifier-parallel-portfolio-mix030_tso.yml	false	ERROR(ineffective witness)	0.803161	43.178908356999955	36.499456
+pthread-wmm/mix031.oepc.yml/coveriteam-verifier-parallel-portfolio-mix031.oepc.yml	false	ERROR(ineffective witness)	0.760756	43.32757559099997	35.950592
+pthread-wmm/mix031.opt.yml/coveriteam-verifier-parallel-portfolio-mix031.opt.yml	false	ERROR(ineffective witness)	0.7518	42.73121214500003	35.815424
+pthread-wmm/mix032.oepc.yml/coveriteam-verifier-parallel-portfolio-mix032.oepc.yml	false	ERROR(ineffective witness)	0.796136	43.021373455	36.274176
+pthread-wmm/mix032.opt.yml/coveriteam-verifier-parallel-portfolio-mix032.opt.yml	false	ERROR(ineffective witness)	0.775405	43.19464628899999	36.032512
+pthread-wmm/mix033.opt.yml/coveriteam-verifier-parallel-portfolio-mix033.opt.yml	false	ERROR(ineffective witness)	0.771502	42.87895257500003	35.856384
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.780705	43.56882859299998	36.417536
+pthread-wmm/mix033_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix033_tso.oepc.yml	false	ERROR(ineffective witness)	0.782739	41.60084881099999	36.491264
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	ERROR(ineffective witness)	0.756849	43.400066467000045	36.048896
+pthread-wmm/mix034_pso.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix034_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.754513	43.429326909999986	35.704832
+pthread-wmm/mix035.oepc.yml/coveriteam-verifier-parallel-portfolio-mix035.oepc.yml	false	ERROR(ineffective witness)	0.805077	44.09761999599999	36.274176
+pthread-wmm/mix035_power.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix035_power.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.789751	43.40900150300001	36.016128
+pthread-wmm/mix035_pso.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix035_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.776884	44.76968751200002	35.897344
+pthread-wmm/mix036.oepc.yml/coveriteam-verifier-parallel-portfolio-mix036.oepc.yml	false	ERROR(ineffective witness)	0.799436	44.31538377999999	36.691968
+pthread-wmm/mix036_power.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix036_power.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.794261	44.00538166399997	36.147200
+pthread-wmm/mix036_pso.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix036_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.787528	44.943164018000004	36.028416
+pthread-wmm/mix037.opt.yml/coveriteam-verifier-parallel-portfolio-mix037.opt.yml	false	ERROR(ineffective witness)	0.776447	43.41941676500005	36.249600
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix037_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.7937	43.35738769400001	36.790272
+pthread-wmm/mix037_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix037_tso.oepc.yml	false	ERROR(ineffective witness)	0.79586	43.949760063999975	37.208064
+pthread-wmm/mix038.opt.yml/coveriteam-verifier-parallel-portfolio-mix038.opt.yml	false	ERROR(ineffective witness)	0.764288	44.15322685999996	35.876864
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.778403	42.89880774899996	36.347904
+pthread-wmm/mix038_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix038_tso.oepc.yml	false	ERROR(ineffective witness)	0.791055	44.092472277999946	36.265984
+pthread-wmm/mix039.oepc.yml/coveriteam-verifier-parallel-portfolio-mix039.oepc.yml	false	ERROR(ineffective witness)	0.795278	44.002961898000024	36.667392
+pthread-wmm/mix039.opt.yml/coveriteam-verifier-parallel-portfolio-mix039.opt.yml	false	ERROR(ineffective witness)	0.81339	44.28270310200003	35.938304
+pthread-wmm/mix040.opt.yml/coveriteam-verifier-parallel-portfolio-mix040.opt.yml	false	ERROR(ineffective witness)	0.788028	44.27864472400006	36.184064
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix040_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.793686	44.08884973399995	36.536320
+pthread-wmm/mix040_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix040_tso.oepc.yml	false	ERROR(ineffective witness)	0.79266	43.663133184999936	36.556800
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.763142	43.57226316100002	35.983360
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.756163	42.60251559699998	35.807232
+pthread-wmm/mix042.oepc.yml/coveriteam-verifier-parallel-portfolio-mix042.oepc.yml	false	ERROR(ineffective witness)	0.774305	44.34841105999999	36.200448
+pthread-wmm/mix042.opt.yml/coveriteam-verifier-parallel-portfolio-mix042.opt.yml	false	ERROR(ineffective witness)	0.78174	44.60764558699998	36.040704
+pthread-wmm/mix043.oepc.yml/coveriteam-verifier-parallel-portfolio-mix043.oepc.yml	false	ERROR(ineffective witness)	0.818337	44.33050890599998	36.466688
+pthread-wmm/mix043.opt.yml/coveriteam-verifier-parallel-portfolio-mix043.opt.yml	false	ERROR(ineffective witness)	0.800891	44.07579801899999	36.352000
+pthread-wmm/mix044.opt.yml/coveriteam-verifier-parallel-portfolio-mix044.opt.yml	false	ERROR(ineffective witness)	0.792406	44.29413626999997	36.253696
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix044_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.817495	44.73019276100001	36.597760
+pthread-wmm/mix044_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix044_tso.oepc.yml	false	ERROR(ineffective witness)	0.787467	44.200751519999926	36.691968
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	0.783528	45.03164312599995	36.118528
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.782186	45.07565764599997	36.528128
+pthread-wmm/mix046.oepc.yml/coveriteam-verifier-parallel-portfolio-mix046.oepc.yml	false	ERROR(ineffective witness)	0.797404	43.97684685399997	36.585472
+pthread-wmm/mix046.opt.yml/coveriteam-verifier-parallel-portfolio-mix046.opt.yml	false	ERROR(ineffective witness)	0.790975	44.325618634999955	36.360192
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix047_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.820793	43.461105350000025	36.618240
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.798256	44.612026530000094	36.454400
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.752392	44.38877044800006	35.721216
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.773678	44.74801179799999	36.286464
+pthread-wmm/mix050.yml/coveriteam-verifier-parallel-portfolio-mix050.yml	false	ERROR(ineffective witness)	0.797203	44.577289006	36.569088
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.821685	43.906666045000065	36.597760
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix051_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.783836	45.271481982999944	35.995648
+pthread-wmm/mix051_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix051_tso.oepc.yml	false	ERROR(ineffective witness)	0.794947	42.61594228499996	36.638720
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.76306	43.21808433499996	36.110336
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix052_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.764747	44.53103580499999	35.860480
+pthread-wmm/mix052_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix052_tso.oepc.yml	false	ERROR(ineffective witness)	0.773783	43.59061840600009	36.290560
+pthread-wmm/mix053.opt.yml/coveriteam-verifier-parallel-portfolio-mix053.opt.yml	false	ERROR(ineffective witness)	0.776451	44.8868327539999	36.102144
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix053_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.791366	44.13027059900003	36.585472
+pthread-wmm/mix053_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix053_tso.oepc.yml	false	ERROR(ineffective witness)	0.796293	44.23346492100006	36.372480
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	0.78451	45.176688461000026	35.713024
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.762814	43.34885911399999	35.950592
+pthread-wmm/mix055.opt.yml/coveriteam-verifier-parallel-portfolio-mix055.opt.yml	false	ERROR(ineffective witness)	0.794303	44.893533310000066	36.257792
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix055_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.788409	43.85956897400001	36.663296
+pthread-wmm/mix055_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix055_tso.oepc.yml	false	ERROR(ineffective witness)	0.787783	43.42067082900007	36.585472
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.767575	44.51842823800007	36.098048
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.781201	43.65532702999997	36.118528
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix057_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.791754	43.78549843999997	36.540416
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.783923	43.38102014399999	36.278272
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.785789	42.69967345099997	37.179392
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-rfi000_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.753175	43.73122773099999	36.040704
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.775385	43.41507800800002	36.028416
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.771488	42.900269073000004	35.926016
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.741521	41.92289838599993	35.758080
+pthread-wmm/rfi004.yml/coveriteam-verifier-parallel-portfolio-rfi004.yml	false	ERROR(ineffective witness)	0.751264	41.87742012499996	36.016128
+pthread-wmm/rfi005.yml/coveriteam-verifier-parallel-portfolio-rfi005.yml	false	ERROR(ineffective witness)	0.762683	43.24493230899998	35.188736
+pthread-wmm/rfi006_power.oepc.yml/coveriteam-verifier-parallel-portfolio-rfi006_power.oepc.yml	false	ERROR(ineffective witness)	1.471272	43.397197646999984	36.171776
+pthread-wmm/rfi006_power.opt.yml/coveriteam-verifier-parallel-portfolio-rfi006_power.opt.yml	false	TIMEOUT	1.481464	46.07750180100004	36.364288
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.789393	43.43918076	36.466688
+pthread-wmm/rfi006_rmo.yml/coveriteam-verifier-parallel-portfolio-rfi006_rmo.yml	false	TIMEOUT	1.412997	46.04358942099998	36.081664
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.791189	44.78521745299997	36.085760
+pthread-wmm/rfi007_tso.yml/coveriteam-verifier-parallel-portfolio-rfi007_tso.yml	false	ERROR(ineffective witness)	0.779969	44.022231422000004	36.196352
+pthread-wmm/rfi008.oepc.yml/coveriteam-verifier-parallel-portfolio-rfi008.oepc.yml	false	ERROR(ineffective witness)	0.789327	43.36423915599994	36.384768
+pthread-wmm/rfi008.opt.yml/coveriteam-verifier-parallel-portfolio-rfi008.opt.yml	false	ERROR(ineffective witness)	0.737426	40.233636699000044	36.126720
+pthread-wmm/rfi009_power.oepc.yml/coveriteam-verifier-parallel-portfolio-rfi009_power.oepc.yml	false	ERROR(ineffective witness)	1.447229	42.042622225999935	36.282368
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.762355	40.98225515999991	36.331520
+pthread-wmm/rfi009_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-rfi009_rmo.oepc.yml	false	ERROR(ineffective witness)	1.458445	41.58197347400005	36.216832
+pthread-wmm/rfi010.yml/coveriteam-verifier-parallel-portfolio-rfi010.yml	false	ERROR(ineffective witness)	0.764798	40.118772594000006	36.167680
+pthread-wmm/safe000_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe000_power.oepc.yml	false	TIMEOUT	1.606423	46.04273609500001	36.835328
+pthread-wmm/safe000_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe000_power.opt.yml	false	ERROR(ineffective witness)	1.420733	13.988804512999991	36.417536
+pthread-wmm/safe000_rmo.yml/coveriteam-verifier-parallel-portfolio-safe000_rmo.yml	false	TIMEOUT	1.602758	46.12985262699999	37.056512
+pthread-wmm/safe001_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe001_power.oepc.yml	false	TIMEOUT	1.615755	46.08023535199993	36.818944
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.803846	45.098885610000025	36.454400
+pthread-wmm/safe001_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe001_rmo.oepc.yml	false	ERROR(ineffective witness)	1.611042	44.40312949700001	36.917248
+pthread-wmm/safe002_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe002_power.oepc.yml	false	ERROR(ineffective witness)	1.636677	43.568023270000026	36.995072
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.752589	42.772682956999915	35.921920
+pthread-wmm/safe002_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe002_rmo.oepc.yml	false	TIMEOUT	1.579174	46.075101722	36.683776
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.79779	43.072937946000025	36.962304
+pthread-wmm/safe003_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe003_power.opt.yml	false	ERROR(ineffective witness)	1.452242	11.505413270999952	36.335616
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe004_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.797609	42.49384197999996	36.974592
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe004_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.775992	44.629434530000026	36.188160
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.768362	44.219152323	36.036608
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe006_power.oepc-thin000_power.oepc.yml	false	ERROR(ineffective witness)	1.252695	44.74167555300005	35.852288
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe006_power.opt-thin000_power.opt.yml	false	ERROR(ineffective witness)	1.222397	6.1178882350000094	36.139008
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	1.199298	43.41647025299994	35.917824
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe007_power.oepc-thin001_power.oepc.yml	false	ERROR(ineffective witness)	1.330576	43.31972823000001	36.102144
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe007_power.opt-thin001_power.opt.yml	false	ERROR(ineffective witness)	0.753163	42.019825749999995	36.302848
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	1.317036	44.129376408999974	35.864576
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.776138	43.54586329999995	36.167680
+pthread-wmm/safe008_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe008_power.opt.yml	false	ERROR(ineffective witness)	1.390041	6.348252008000031	36.392960
+pthread-wmm/safe009_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe009_power.oepc.yml	false	TIMEOUT	1.472787	46.024806117000026	36.642816
+pthread-wmm/safe009_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe009_power.opt.yml	false	ERROR(ineffective witness)	1.392142	12.404499787999953	36.532224
+pthread-wmm/safe009_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe009_rmo.oepc.yml	false	TIMEOUT	1.459512	46.040410479	36.446208
+pthread-wmm/safe009_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe009_rmo.opt.yml	false	ERROR(ineffective witness)	1.313724	10.448786370999983	36.208640
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.76827	45.31040174999998	35.868672
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.769501	44.47502509100002	36.016128
+pthread-wmm/safe011_power.opt_pso.opt.yml/coveriteam-verifier-parallel-portfolio-safe011_power.opt_pso.opt.yml	false	ERROR(ineffective witness)	0.769001	44.869183182999905	36.052992
+pthread-wmm/safe012_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe012_power.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	1.338708	45.71826522399999	36.020224
+pthread-wmm/safe012_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe012_power.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.802289	45.17146091199993	36.118528
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe012_pso.oepc_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.779741	43.47558419500001	35.921920
+pthread-wmm/safe012_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe012_rmo.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	1.3398	45.22778176999998	35.815424
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.769275	45.363110567000035	36.106240
+pthread-wmm/safe014_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe014_power.oepc.yml	false	ERROR(ineffective witness)	1.357944	44.291243979	36.020224
+pthread-wmm/safe014_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe014_power.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	1.398588	45.19314779299998	35.987456
+pthread-wmm/safe014_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe014_rmo.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	1.368956	45.38728686899992	36.282368
+pthread-wmm/safe014_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe014_rmo.opt.yml	false	ERROR(ineffective witness)	1.511617	6.9058062440000185	36.900864
+pthread-wmm/safe015_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe015_power.oepc.yml	false	false(unreach-call)	1.037977	21.62801889100001	35.930112
+pthread-wmm/safe015_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe015_power.opt.yml	false	ERROR(ineffective witness)	1.5846	7.962718744000085	36.864000
+pthread-wmm/safe015_rmo.yml/coveriteam-verifier-parallel-portfolio-safe015_rmo.yml	false	ERROR(ineffective witness)	1.580541	8.273740325999938	37.076992
+pthread-wmm/safe016_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe016_power.oepc.yml	false	TIMEOUT	1.568075	46.024280129999966	36.737024
+pthread-wmm/safe016_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe016_rmo.oepc.yml	false	TIMEOUT	1.547768	46.05560224299995	36.593664
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.782315	45.04780498899993	36.196352
+pthread-wmm/safe018_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe018_power.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	1.336506	45.90867659699995	35.987456
+pthread-wmm/safe018_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe018_power.opt.yml	false	ERROR(ineffective witness)	1.449944	5.706934134999983	36.823040
+pthread-wmm/safe018_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe018_rmo.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	1.268764	45.01922180099996	35.901440
+pthread-wmm/safe018_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe018_rmo.opt.yml	false	ERROR(ineffective witness)	1.399415	9.270883287999936	36.311040
+pthread-wmm/safe019_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe019_power.oepc.yml	false	TIMEOUT	1.548918	46.07906457499996	36.831232
+pthread-wmm/safe019_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe019_rmo.oepc.yml	false	ERROR(ineffective witness)	1.581012	44.98034873400002	36.552704
+pthread-wmm/safe019_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe019_rmo.opt.yml	false	ERROR(ineffective witness)	1.517054	4.373900344000049	36.577280
+pthread-wmm/safe020_power.yml/coveriteam-verifier-parallel-portfolio-safe020_power.yml	false	ERROR(ineffective witness)	1.449089	7.610484505000045	36.704256
+pthread-wmm/safe020_rmo.yml/coveriteam-verifier-parallel-portfolio-safe020_rmo.yml	false	ERROR(ineffective witness)	1.390614	4.821159819999934	36.327424
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.78962	45.368612471000006	36.212736
+pthread-wmm/safe021_power.opt_pso.opt.yml/coveriteam-verifier-parallel-portfolio-safe021_power.opt_pso.opt.yml	false	ERROR(ineffective witness)	0.760866	44.12021670199999	36.171776
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.75021	43.96613189599998	35.897344
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.79569	43.97370441800001	36.888576
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.77974	45.10424793499999	35.909632
+pthread-wmm/safe025_power.yml/coveriteam-verifier-parallel-portfolio-safe025_power.yml	false	false(unreach-call)	1.074337	24.819438291000097	36.012032
+pthread-wmm/safe025_rmo.yml/coveriteam-verifier-parallel-portfolio-safe025_rmo.yml	false	ERROR(ineffective witness)	1.523734	5.100635109999985	36.827136
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.776402	45.31535700200004	36.012032
+pthread-wmm/safe027_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe027_power.oepc.yml	false	TIMEOUT	1.489154	46.030698028000074	36.765696
+pthread-wmm/safe027_rmo.yml/coveriteam-verifier-parallel-portfolio-safe027_rmo.yml	false	ERROR(ineffective witness)	1.514646	44.31525805499996	36.556800
+pthread-wmm/safe028_power.yml/coveriteam-verifier-parallel-portfolio-safe028_power.yml	false	ERROR(ineffective witness)	1.483697	8.329505453000024	36.470784
+pthread-wmm/safe028_rmo.yml/coveriteam-verifier-parallel-portfolio-safe028_rmo.yml	false	ERROR(ineffective witness)	1.39171	7.235663356000032	36.372480
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.757877	44.157686712999975	36.122624
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe029_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.760062	44.719788466999944	35.942400
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.779905	44.15040929500003	36.163584
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe030_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.789648	43.09370613999988	36.032512
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.788473	44.44655072099988	35.987456
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe031_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.762333	42.63455629099997	36.134912
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.817712	41.721426748999875	36.913152
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.738134	40.11572154700002	35.790848
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.787398	39.608264755000164	35.885056
+pthread-wmm/thin002_power.oepc.yml/coveriteam-verifier-parallel-portfolio-thin002_power.oepc.yml	false	ERROR(ineffective witness)	1.46299	39.46264343300004	36.159488
+pthread-wmm/thin002_rmo.yml/coveriteam-verifier-parallel-portfolio-thin002_rmo.yml	false	ERROR(ineffective witness)	1.442907	35.401501249000034	35.950592
+pthread/lazy01.yml/coveriteam-verifier-parallel-portfolio-lazy01.yml	false	TIMEOUT	0.518175	46.032345507999935	34.820096
+pthread/stateful01-1.yml/coveriteam-verifier-parallel-portfolio-stateful01-1.yml	false	TIMEOUT	0.555589	46.07134162700004	34.770944
+pthread/triangular-2.yml/coveriteam-verifier-parallel-portfolio-triangular-2.yml	false	ERROR(ineffective witness)	0.572824	1.5984947299998566	34.942976
+pthread/triangular-longer-2.yml/coveriteam-verifier-parallel-portfolio-triangular-longer-2.yml	false	ERROR(ineffective witness)	0.57974	1.1581480739998824	35.434496
+weaver/loop-tiling-eq.wvr.yml/coveriteam-verifier-parallel-portfolio-loop-tiling-eq.wvr.yml	true	ERROR(ineffective witness)	0.716019	33.766461142000026	34.263040
+weaver/mult-comm.wvr.yml/coveriteam-verifier-parallel-portfolio-mult-comm.wvr.yml	true	ERROR(ineffective witness)	0.658339	33.435123804999876	34.131968
+weaver/popl20-figure1-alt.wvr.yml/coveriteam-verifier-parallel-portfolio-popl20-figure1-alt.wvr.yml	true	ERROR(ineffective witness)	0.645248	32.720396918999995	34.025472
+weaver/popl20-nonblocking-cntr-alt.wvr.yml/coveriteam-verifier-parallel-portfolio-popl20-nonblocking-cntr-alt.wvr.yml	true	ERROR(ineffective witness)	0.527096	29.878219059000003	34.181120
+weaver/popl20-simple-queue.wvr.yml/coveriteam-verifier-parallel-portfolio-popl20-simple-queue.wvr.yml	true	ERROR(ineffective witness)	0.658827	26.942017147999877	33.996800
+weaver/test-context1.wvr.yml/coveriteam-verifier-parallel-portfolio-test-context1.wvr.yml	true	ERROR(ineffective witness)	0.639743	23.58320734499989	34.009088
+weaver/test-easy1.wvr.yml/coveriteam-verifier-parallel-portfolio-test-easy1.wvr.yml	true	ERROR(ineffective witness)	0.629775	23.19835953200004	33.968128

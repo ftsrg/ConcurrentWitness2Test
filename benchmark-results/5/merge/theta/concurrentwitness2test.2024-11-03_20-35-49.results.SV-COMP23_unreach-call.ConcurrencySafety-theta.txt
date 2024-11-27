@@ -1,0 +1,79 @@
+   BENCHMARK INFORMATION
+benchmark definition:    svcomp23-witness-benchmarks/concurrentwitness2test.xml
+name:                    concurrentwitness2test
+run sets:                SV-COMP23_unreach-call.ConcurrencySafety-theta
+date:                    Sun, 2024-11-03 20:35:49 UTC
+tool:                    ConcurrentWitness2Test 1.0
+tool executable:         ConcurrentWitness2Test/start.sh
+options:
+parallel runs:           10
+resource limits:
+- time:                  45 s
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    fv-az1042-264
+os:                      Linux-6.8.0-1015-azure-x86_64-with-glibc2.39
+cpu:                     AMD EPYC 7763 64-Core Processor
+- cores:                 4
+- max frequency:         3242.962 MHz
+ram:                     16766.779392 MB
+------------------------------------------------------------
+
+
+
+SV-COMP23_unreach-call.ConcurrencySafety-theta
+Run set 1 of 1 with options '--graphml-witness ${taskdef_path}/witness.graphml' and propertyfile 'None'
+
+inputfile                                                                                                                                                  status                       cpu time   wall time        host
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/theta-36-apron_41-threadenter-no-locals_unknown_1_neg.yml                           true                             0.63        2.02        None
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/theta-36-apron_41-threadenter-no-locals_unknown_1_pos.yml                           false(unreach-call)              0.62        2.10        None
+pthread-atomic/read_write_lock-2.yml/theta-read_write_lock-2.yml                                                                                           true                             0.60        2.92        None
+pthread-ext/28_buggy_simple_loop1_vf.yml/theta-28_buggy_simple_loop1_vf.yml                                                                                TIMEOUT                         23.62       46.04        None
+pthread-lit/qw2004-2b.yml/theta-qw2004-2b.yml                                                                                                              true                             0.64        2.08        None
+pthread-wmm/mix011_tso.oepc.yml/theta-mix011_tso.oepc.yml                                                                                                  TIMEOUT (true)                   0.77       46.08        None
+pthread-wmm/mix019_tso.oepc.yml/theta-mix019_tso.oepc.yml                                                                                                  TIMEOUT (true)                   0.76       45.47        None
+pthread-wmm/mix022_tso.yml/theta-mix022_tso.yml                                                                                                            true                             0.74       43.65        None
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/theta-mix028_power.opt_pso.opt_rmo.opt.yml                                                                TIMEOUT (true)                   0.76       45.30        None
+pthread-wmm/mix028_tso.yml/theta-mix028_tso.yml                                                                                                            true                             0.77       44.50        None
+pthread-wmm/mix033_tso.oepc.yml/theta-mix033_tso.oepc.yml                                                                                                  TIMEOUT (true)                   0.79       45.51        None
+pthread-wmm/mix038_tso.oepc.yml/theta-mix038_tso.oepc.yml                                                                                                  TIMEOUT                          0.74       46.04        None
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml                              TIMEOUT (true)                   0.77       46.03        None
+pthread-wmm/mix042.opt.yml/theta-mix042.opt.yml                                                                                                            TIMEOUT (true)                   0.78       45.47        None
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml                              true                             0.78       40.68        None
+pthread-wmm/mix052_tso.oepc.yml/theta-mix052_tso.oepc.yml                                                                                                  true                             0.79       41.63        None
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml                                                  true                             0.77       42.17        None
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml                              true                             0.81       43.19        None
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/theta-rfi000_power.opt_pso.opt_rmo.opt.yml                                                                true                             0.77       44.07        None
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml                              true                             0.77       43.10        None
+pthread-wmm/rfi005.yml/theta-rfi005.yml                                                                                                                    true                             0.78       44.99        None
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/theta-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml                                                true                             0.81       43.01        None
+pthread-wmm/rfi007_tso.yml/theta-rfi007_tso.yml                                                                                                            true                             0.80       43.36        None
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/theta-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml                                            true                             0.79       43.75        None
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/theta-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml                        true                             0.77       42.29        None
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/theta-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml    true                             0.75       42.03        None
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/theta-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml                                        true                             0.77       42.33        None
+pthread-wmm/safe011_power.opt_pso.opt.yml/theta-safe011_power.opt_pso.opt.yml                                                                              true                             0.76       42.14        None
+pthread-wmm/safe015_power.oepc.yml/theta-safe015_power.oepc.yml                                                                                            false(unreach-call)              0.78       41.83        None
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/theta-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml    true                             0.77       43.41        None
+pthread-wmm/safe021_power.opt_pso.opt.yml/theta-safe021_power.opt_pso.opt.yml                                                                              true                             0.78       42.85        None
+pthread-wmm/safe025_power.yml/theta-safe025_power.yml                                                                                                      false(unreach-call)              0.77       41.71        None
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/theta-safe029_power.oepc_pso.oepc_rmo.oepc.yml                                                        true                             0.76       42.14        None
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/theta-safe029_power.opt_pso.opt_rmo.opt.yml                                                              true                             0.76       41.77        None
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/theta-safe030_power.oepc_pso.oepc_rmo.oepc.yml                                                        true                             0.75       19.69        None
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/theta-safe030_power.opt_pso.opt_rmo.opt.yml                                                              true                             0.74       18.63        None
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/theta-safe031_power.opt_pso.opt_rmo.opt.yml                                                              true                             0.74       17.22        None
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Run set 1                                                                                                                                                  done                            25.46      147.57           -
+
+Statistics:             37 Files
+  correct:               3
+    correct true:        0
+    correct false:       3
+  incorrect:            26
+    incorrect true:     26
+    incorrect false:     0
+  unknown:               8
+  Score:              -829 (max: 37)

@@ -1,0 +1,8 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/pesco/goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/13-privatized_18-first-reads_unknown_2_neg.i --graphml-witness svcomp23-witness-benchmarks/tools/pesco/goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+ConcurrentWitness2Test/venv/bin/python3: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.38' not found (required by ConcurrentWitness2Test/venv/bin/python3)
+ConcurrentWitness2Test/venv/bin/python3: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.38' not found (required by ConcurrentWitness2Test/venv/bin/python3)

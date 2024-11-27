@@ -1,0 +1,21 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 85, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_xzdtspah/tmp/tmpq94e15_o.c
+Compilation started
+/tmp/BenchExec_run_xzdtspah/tmp/tmpq94e15_o.c: In function ‘P0’:
+/tmp/BenchExec_run_xzdtspah/tmp/tmpq94e15_o.c:566:19: error: ‘FALSE’ undeclared (first use in this function)
+  566 |   weak$$choice0 = FALSE;;
+      |                   ^~~~~
+/tmp/BenchExec_run_xzdtspah/tmp/tmpq94e15_o.c:566:19: note: each undeclared identifier is reported only once for each function it appears in
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

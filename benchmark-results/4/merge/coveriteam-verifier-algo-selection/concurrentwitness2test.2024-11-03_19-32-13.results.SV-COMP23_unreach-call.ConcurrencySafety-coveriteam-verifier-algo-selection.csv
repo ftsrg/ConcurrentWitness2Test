@@ -1,0 +1,11 @@
+tool	ConcurrentWitness2Test ConcurrentWitness2Test 1.0	ConcurrentWitness2Test ConcurrentWitness2Test 1.0	ConcurrentWitness2Test ConcurrentWitness2Test 1.0	ConcurrentWitness2Test ConcurrentWitness2Test 1.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-algo-selection	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-algo-selection	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-algo-selection	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-algo-selection
+../svcomp23-witness-benchmarks/tools/coveriteam-verifier-algo-selection/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/coveriteam-verifier-algo-selection-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	true	0.603577	1.4542083530000127	60.637184
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/coveriteam-verifier-algo-selection-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false(unreach-call)	0.600718	1.5442114940001375	71.012352
+ldv-races/race-2_2-container_of.yml/coveriteam-verifier-algo-selection-race-2_2-container_of.yml	true	0.772259	21.60586552399991	35.893248
+ldv-races/race-2_3-container_of.yml/coveriteam-verifier-algo-selection-race-2_3-container_of.yml	true	0.786549	21.46266462299991	36.945920
+ldv-races/race-2_4-container_of.yml/coveriteam-verifier-algo-selection-race-2_4-container_of.yml	true	0.865482	21.42187453800034	57.913344
+ldv-races/race-2_5-container_of.yml/coveriteam-verifier-algo-selection-race-2_5-container_of.yml	true	0.795646	21.337004220999916	39.903232
+ldv-races/race-3_2-container_of-global.yml/coveriteam-verifier-algo-selection-race-3_2-container_of-global.yml	true	0.767382	21.477247992999764	40.079360
+pthread-divine/tls_destructor_worker.yml/coveriteam-verifier-algo-selection-tls_destructor_worker.yml	false(unreach-call)	0.529807	1.688709734999975	37.298176

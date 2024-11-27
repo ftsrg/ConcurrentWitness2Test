@@ -1,0 +1,31 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/deagle/pthread-driver-races/char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml/char_generic_nvram_read_nvram_nvram_unlocked_ioctl.i --graphml-witness svcomp23-witness-benchmarks/tools/deagle/pthread-driver-races/char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 85, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_rqtb10t6/tmp/tmptjvsvffp.c
+Compilation started
+/usr/bin/ld: /tmp/BenchExec_run_rqtb10t6/tmp/cce3XfXq.o: warning: relocation against `x86_platform' in read-only section `.text'
+/usr/bin/ld: /tmp/BenchExec_run_rqtb10t6/tmp/cce3XfXq.o: in function `get_max_mapped':
+tmptjvsvffp.c:(.text+0xc1): undefined reference to `max_pfn_mapped'
+/usr/bin/ld: /tmp/BenchExec_run_rqtb10t6/tmp/cce3XfXq.o: in function `has_persistent_clock':
+tmptjvsvffp.c:(.text+0x156a): undefined reference to `persistent_clock_exist'
+/usr/bin/ld: /tmp/BenchExec_run_rqtb10t6/tmp/cce3XfXq.o: in function `from_kuid_munged':
+tmptjvsvffp.c:(.text+0x194a): undefined reference to `overflowuid'
+/usr/bin/ld: /tmp/BenchExec_run_rqtb10t6/tmp/cce3XfXq.o: in function `from_kgid_munged':
+tmptjvsvffp.c:(.text+0x1985): undefined reference to `overflowgid'
+/usr/bin/ld: /tmp/BenchExec_run_rqtb10t6/tmp/cce3XfXq.o: in function `massage_pgprot':
+tmptjvsvffp.c:(.text+0x3bcc): undefined reference to `__supported_pte_mask'
+/usr/bin/ld: /tmp/BenchExec_run_rqtb10t6/tmp/cce3XfXq.o: in function `is_new_memtype_allowed':
+tmptjvsvffp.c:(.text+0x3d4c): undefined reference to `x86_platform'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

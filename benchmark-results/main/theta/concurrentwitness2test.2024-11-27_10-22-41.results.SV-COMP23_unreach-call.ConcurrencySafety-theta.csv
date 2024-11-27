@@ -1,0 +1,40 @@
+tool	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-theta	SV-COMP23_unreach-call.ConcurrencySafety-theta	SV-COMP23_unreach-call.ConcurrencySafety-theta	SV-COMP23_unreach-call.ConcurrencySafety-theta
+../svcomp23-witness-benchmarks/tools/theta/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/theta-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	ERROR(ineffective witness)	0.625044	2.0506304970000144	73.543680
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/theta-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false(unreach-call)	0.603513	1.9699607499999843	59.420672
+pthread-atomic/read_write_lock-2.yml/theta-read_write_lock-2.yml	ERROR(ineffective witness)	0.659757	2.420067248999999	60.379136
+pthread-ext/28_buggy_simple_loop1_vf.yml/theta-28_buggy_simple_loop1_vf.yml	TIMEOUT	21.287153	46.029862092	2338.426880
+pthread-lit/qw2004-2b.yml/theta-qw2004-2b.yml	ERROR(ineffective witness)	0.625274	2.0580209799999807	58.716160
+pthread-wmm/mix011_tso.oepc.yml/theta-mix011_tso.oepc.yml	ERROR(ineffective witness)	0.844744	42.91020610000001	58.281984
+pthread-wmm/mix019_tso.oepc.yml/theta-mix019_tso.oepc.yml	ERROR(ineffective witness)	0.825159	42.80765379600001	58.511360
+pthread-wmm/mix022_tso.yml/theta-mix022_tso.yml	ERROR(ineffective witness)	0.752423	42.90542160300001	37.486592
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/theta-mix028_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.739559	42.79789046799999	37.715968
+pthread-wmm/mix028_tso.yml/theta-mix028_tso.yml	ERROR(ineffective witness)	0.844897	43.281371627	58.314752
+pthread-wmm/mix033_tso.oepc.yml/theta-mix033_tso.oepc.yml	ERROR(ineffective witness)	0.78942	43.052293136	36.216832
+pthread-wmm/mix038_tso.oepc.yml/theta-mix038_tso.oepc.yml	ERROR(ineffective witness)	0.787302	43.28196287999998	36.044800
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.766063	43.742529907999995	35.876864
+pthread-wmm/mix042.opt.yml/theta-mix042.opt.yml	ERROR(ineffective witness)	0.77201	42.53095685100001	36.233216
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.779197	42.39793376899999	36.036608
+pthread-wmm/mix052_tso.oepc.yml/theta-mix052_tso.oepc.yml	ERROR(ineffective witness)	0.791488	43.55536160700001	35.979264
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.749956	41.36606301300003	35.835904
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.775346	42.48504779200002	36.028416
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/theta-rfi000_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.772461	42.340354558	36.126720
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.779328	43.18350458299997	36.057088
+pthread-wmm/rfi005.yml/theta-rfi005.yml	ERROR(ineffective witness)	0.794026	42.222552044000025	35.782656
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/theta-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.781945	41.32536853499997	36.401152
+pthread-wmm/rfi007_tso.yml/theta-rfi007_tso.yml	ERROR(ineffective witness)	0.803714	43.220055427000005	36.184064
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/theta-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.781529	39.921178069999996	36.102144
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/theta-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.762816	39.73501188199998	36.114432
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/theta-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.759013	41.777027584999985	35.831808
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/theta-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.795607	43.88380533200001	35.893248
+pthread-wmm/safe011_power.opt_pso.opt.yml/theta-safe011_power.opt_pso.opt.yml	ERROR(ineffective witness)	0.782796	43.420527935999985	36.188160
+pthread-wmm/safe015_power.oepc.yml/theta-safe015_power.oepc.yml	false(unreach-call)	0.7824	42.68946519899998	36.040704
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/theta-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.783542	43.085598016999995	36.073472
+pthread-wmm/safe021_power.opt_pso.opt.yml/theta-safe021_power.opt_pso.opt.yml	ERROR(ineffective witness)	0.783193	43.141874317999964	36.417536
+pthread-wmm/safe025_power.yml/theta-safe025_power.yml	false(unreach-call)	0.786894	41.82755801899998	36.126720
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/theta-safe029_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.755422	41.72714994300003	36.220928
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/theta-safe029_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.752619	41.671144524	35.745792
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/theta-safe030_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.753451	17.904502062000006	35.946496
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/theta-safe030_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.736956	16.150039977999995	35.983360
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/theta-safe031_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.742938	15.18788917300003	35.991552

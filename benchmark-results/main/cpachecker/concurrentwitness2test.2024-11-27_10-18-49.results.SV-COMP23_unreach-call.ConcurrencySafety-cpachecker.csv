@@ -1,0 +1,260 @@
+tool	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-cpachecker	SV-COMP23_unreach-call.ConcurrencySafety-cpachecker	SV-COMP23_unreach-call.ConcurrencySafety-cpachecker	SV-COMP23_unreach-call.ConcurrencySafety-cpachecker
+../svcomp23-witness-benchmarks/tools/cpachecker/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/cpachecker-13-privatized_18-first-reads_unknown_1_neg.yml	false(unreach-call)	0.680175	2.3027162939999926	63.700992
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/cpachecker-13-privatized_18-first-reads_unknown_1_pos.yml	ERROR(ineffective witness)	0.607377	2.3356904259999993	39.235584
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/cpachecker-13-privatized_18-first-reads_unknown_2_neg.yml	ERROR(ineffective witness)	0.708244	2.3460421810000014	60.633088
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/cpachecker-13-privatized_18-first-reads_unknown_2_pos.yml	false(unreach-call)	0.675984	2.3204347180000013	58.863616
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/cpachecker-13-privatized_19-publish-precision_unknown_1_neg.yml	false(unreach-call)	0.581668	2.2819518700000003	39.354368
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/cpachecker-13-privatized_19-publish-precision_unknown_1_pos.yml	ERROR(ineffective witness)	0.692104	2.3356471510000034	58.912768
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/cpachecker-13-privatized_19-publish-precision_unknown_2_neg.yml	ERROR(ineffective witness)	0.608399	2.228427447999991	37.699584
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/cpachecker-13-privatized_19-publish-precision_unknown_2_pos.yml	false(unreach-call)	0.673465	2.3174083789999997	59.604992
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/cpachecker-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false(unreach-call)	0.590282	2.1840174750000045	36.208640
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/cpachecker-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false(unreach-call)	0.605753	2.2213042369999982	35.708928
+goblint-regression/28-race_reach_45-escape_racing.yml/cpachecker-28-race_reach_45-escape_racing.yml	ERROR(ineffective witness)	0.590561	1.6353124150000014	34.762752
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/cpachecker-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	ERROR(ineffective witness)	0.640525	1.7554893910000118	34.725888
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/cpachecker-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false(unreach-call)	0.631001	1.5658643630000029	34.725888
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/cpachecker-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	ERROR(ineffective witness)	0.582436	1.7291276670000002	34.689024
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/cpachecker-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false(unreach-call)	0.584478	1.6926091490000061	34.668544
+ldv-races/race-1_2-join.yml/cpachecker-race-1_2-join.yml	TIMEOUT	0.784841	46.02660331199999	36.204544
+ldv-races/race-1_3-join.yml/cpachecker-race-1_3-join.yml	TIMEOUT	0.835763	46.03295109400001	36.233216
+ldv-races/race-2_3-container_of.yml/cpachecker-race-2_3-container_of.yml	ERROR(ineffective witness)	1.663768	37.41326078300001	36.610048
+ldv-races/race-2_4-container_of.yml/cpachecker-race-2_4-container_of.yml	ERROR(ineffective witness)	1.654372	36.435245725	36.683776
+ldv-races/race-2_5-container_of.yml/cpachecker-race-2_5-container_of.yml	ERROR(ineffective witness)	1.674633	37.382519086000016	36.425728
+pthread-wmm/mix000.oepc.yml/cpachecker-mix000.oepc.yml	ERROR(ineffective witness)	0.772548	34.935249657000014	36.331520
+pthread-wmm/mix000.opt.yml/cpachecker-mix000.opt.yml	ERROR(ineffective witness)	0.760514	35.580487794999996	36.175872
+pthread-wmm/mix001.oepc.yml/cpachecker-mix001.oepc.yml	ERROR(ineffective witness)	0.786568	35.49584887900001	36.679680
+pthread-wmm/mix001.opt.yml/cpachecker-mix001.opt.yml	ERROR(ineffective witness)	0.781409	35.571110479	36.397056
+pthread-wmm/mix002.oepc.yml/cpachecker-mix002.oepc.yml	ERROR(ineffective witness)	0.79151	35.56268496999999	36.352000
+pthread-wmm/mix002.opt.yml/cpachecker-mix002.opt.yml	ERROR(ineffective witness)	0.747628	40.876886084999995	36.225024
+pthread-wmm/mix003.oepc.yml/cpachecker-mix003.oepc.yml	ERROR(ineffective witness)	0.760524	40.860973890999986	36.339712
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/cpachecker-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	ERROR(ineffective witness)	0.768207	40.07656263800001	36.536320
+pthread-wmm/mix004.oepc.yml/cpachecker-mix004.oepc.yml	ERROR(ineffective witness)	0.812712	41.58193705899998	36.634624
+pthread-wmm/mix004.opt.yml/cpachecker-mix004.opt.yml	ERROR(ineffective witness)	0.814972	41.47715231999999	36.548608
+pthread-wmm/mix005.opt.yml/cpachecker-mix005.opt.yml	ERROR(ineffective witness)	0.81778	41.69463920800001	36.495360
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix005_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.821551	41.587228975000016	36.659200
+pthread-wmm/mix005_tso.oepc.yml/cpachecker-mix005_tso.oepc.yml	ERROR(ineffective witness)	0.810988	41.68674576000001	36.507648
+pthread-wmm/mix006.opt.yml/cpachecker-mix006.opt.yml	ERROR(ineffective witness)	0.786842	41.70398589300001	36.225024
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix006_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.78019	40.777558579999976	36.347904
+pthread-wmm/mix006_tso.oepc.yml/cpachecker-mix006_tso.oepc.yml	ERROR(ineffective witness)	0.842105	43.52888818700001	37.879808
+pthread-wmm/mix007.oepc.yml/cpachecker-mix007.oepc.yml	ERROR(ineffective witness)	0.799148	42.907018583999985	36.646912
+pthread-wmm/mix007.opt.yml/cpachecker-mix007.opt.yml	ERROR(ineffective witness)	0.81431	43.397468790999994	36.532224
+pthread-wmm/mix008.opt.yml/cpachecker-mix008.opt.yml	ERROR(ineffective witness)	0.810483	44.759765789	36.548608
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix008_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT (ERROR(ineffective witness))	0.824416	45.312246792999986	36.548608
+pthread-wmm/mix009.oepc.yml/cpachecker-mix009.oepc.yml	TIMEOUT (ERROR(ineffective witness))	0.795974	45.659241097000006	36.020224
+pthread-wmm/mix009.opt.yml/cpachecker-mix009.opt.yml	ERROR(ineffective witness)	0.785075	44.892773326	36.044800
+pthread-wmm/mix010.oepc.yml/cpachecker-mix010.oepc.yml	ERROR(ineffective witness)	0.800849	44.943301453000004	36.401152
+pthread-wmm/mix010.opt.yml/cpachecker-mix010.opt.yml	ERROR(ineffective witness)	0.786547	43.568403902	36.356096
+pthread-wmm/mix011.opt.yml/cpachecker-mix011.opt.yml	ERROR(ineffective witness)	0.799779	43.326879434999995	36.311040
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix011_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.778513	43.029150852999976	36.503552
+pthread-wmm/mix011_tso.oepc.yml/cpachecker-mix011_tso.oepc.yml	ERROR(ineffective witness)	0.794664	43.264501438999986	36.335616
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/cpachecker-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	ERROR(ineffective witness)	0.763066	42.94635487300002	35.962880
+pthread-wmm/mix012_pso.opt_tso.opt.yml/cpachecker-mix012_pso.opt_tso.opt.yml	ERROR(ineffective witness)	0.753612	42.08799642600002	36.278272
+pthread-wmm/mix013.oepc.yml/cpachecker-mix013.oepc.yml	TIMEOUT (ERROR(ineffective witness))	0.821318	45.27033988299996	36.691968
+pthread-wmm/mix013.opt.yml/cpachecker-mix013.opt.yml	TIMEOUT (ERROR(ineffective witness))	0.813879	45.476962551000014	36.528128
+pthread-wmm/mix014.opt.yml/cpachecker-mix014.opt.yml	TIMEOUT (ERROR(ineffective witness))	0.798219	46.07324890199999	36.552704
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix014_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.826393	44.782628268000025	36.614144
+pthread-wmm/mix015.oepc.yml/cpachecker-mix015.oepc.yml	ERROR(ineffective witness)	0.775075	42.45651026799999	36.306944
+pthread-wmm/mix015.opt.yml/cpachecker-mix015.opt.yml	ERROR(ineffective witness)	0.787533	43.68543434600002	36.241408
+pthread-wmm/mix016.oepc.yml/cpachecker-mix016.oepc.yml	ERROR(ineffective witness)	0.764295	43.004727699	36.155392
+pthread-wmm/mix016_power.opt_rmo.opt.yml/cpachecker-mix016_power.opt_rmo.opt.yml	ERROR(ineffective witness)	0.774706	42.739087454000014	35.975168
+pthread-wmm/mix016_pso.opt_tso.opt.yml/cpachecker-mix016_pso.opt_tso.opt.yml	ERROR(ineffective witness)	0.789989	43.79978536300001	36.622336
+pthread-wmm/mix017.oepc.yml/cpachecker-mix017.oepc.yml	ERROR(ineffective witness)	0.795259	43.62066751200001	36.642816
+pthread-wmm/mix017_power.opt_rmo.opt.yml/cpachecker-mix017_power.opt_rmo.opt.yml	ERROR(ineffective witness)	0.786247	43.39167589099998	36.171776
+pthread-wmm/mix017_pso.opt_tso.opt.yml/cpachecker-mix017_pso.opt_tso.opt.yml	ERROR(ineffective witness)	0.816181	44.26996018900002	36.458496
+pthread-wmm/mix018.opt.yml/cpachecker-mix018.opt.yml	ERROR(ineffective witness)	0.808772	44.71197638699999	36.507648
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix018_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.80196	43.819248621999975	36.610048
+pthread-wmm/mix018_tso.oepc.yml/cpachecker-mix018_tso.oepc.yml	ERROR(ineffective witness)	0.798916	43.65759215500003	36.495360
+pthread-wmm/mix019.opt.yml/cpachecker-mix019.opt.yml	ERROR(ineffective witness)	0.766357	43.891828652000015	36.233216
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix019_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.755989	42.32635278800001	36.319232
+pthread-wmm/mix019_tso.oepc.yml/cpachecker-mix019_tso.oepc.yml	ERROR(ineffective witness)	0.778128	43.64100782700001	36.261888
+pthread-wmm/mix020.oepc.yml/cpachecker-mix020.oepc.yml	ERROR(ineffective witness)	0.781305	42.60634453799997	36.614144
+pthread-wmm/mix020.opt.yml/cpachecker-mix020.opt.yml	ERROR(ineffective witness)	0.796647	42.06074256800002	36.589568
+pthread-wmm/mix021.opt.yml/cpachecker-mix021.opt.yml	ERROR(ineffective witness)	0.776923	42.843552981000016	36.614144
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix021_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.788192	42.20118499399996	36.720640
+pthread-wmm/mix021_tso.oepc.yml/cpachecker-mix021_tso.oepc.yml	ERROR(ineffective witness)	0.802094	43.664129129	36.519936
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.75239	42.53693681300001	35.917824
+pthread-wmm/mix022_tso.yml/cpachecker-mix022_tso.yml	ERROR(ineffective witness)	0.758509	42.34732096199997	36.388864
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix023_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.790452	42.63743848400003	36.622336
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/cpachecker-mix023_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.769436	42.749659544999986	36.220928
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/cpachecker-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.773794	42.75013189900005	36.392960
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/cpachecker-mix024_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.766278	42.139315203000024	36.065280
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/cpachecker-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.774885	43.456416682999986	36.073472
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/cpachecker-mix025_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.770839	43.083711365	36.171776
+pthread-wmm/mix026.oepc.yml/cpachecker-mix026.oepc.yml	ERROR(ineffective witness)	0.797456	42.367884189999984	36.601856
+pthread-wmm/mix026_power.opt_tso.opt.yml/cpachecker-mix026_power.opt_tso.opt.yml	ERROR(ineffective witness)	0.804798	42.63899175	36.343808
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/cpachecker-mix026_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.785346	43.099844915999995	36.204544
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix027_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.791353	43.070795644999976	36.659200
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/cpachecker-mix027_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.777922	43.27548120299997	36.241408
+pthread-wmm/mix027_tso.yml/cpachecker-mix027_tso.yml	ERROR(ineffective witness)	0.770727	42.439765568999974	36.831232
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix028_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.769018	42.826431281	36.196352
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/cpachecker-mix028_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.763315	42.31473287299997	36.245504
+pthread-wmm/mix028_tso.yml/cpachecker-mix028_tso.yml	ERROR(ineffective witness)	0.774059	41.650130510999986	36.270080
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/cpachecker-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.789583	42.93522891599997	36.573184
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/cpachecker-mix029_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.800238	44.482350731	36.454400
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix030_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.806319	43.56032663799999	36.593664
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/cpachecker-mix030_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.781353	42.00286108700004	36.372480
+pthread-wmm/mix030_tso.yml/cpachecker-mix030_tso.yml	ERROR(ineffective witness)	0.804371	42.413532650000036	36.601856
+pthread-wmm/mix031.oepc.yml/cpachecker-mix031.oepc.yml	ERROR(ineffective witness)	0.748254	41.731332552000026	36.069376
+pthread-wmm/mix031.opt.yml/cpachecker-mix031.opt.yml	ERROR(ineffective witness)	0.72811	41.508252465	35.823616
+pthread-wmm/mix032.oepc.yml/cpachecker-mix032.oepc.yml	ERROR(ineffective witness)	0.767888	42.590990191	36.368384
+pthread-wmm/mix032.opt.yml/cpachecker-mix032.opt.yml	ERROR(ineffective witness)	0.791415	43.06605621900002	36.003840
+pthread-wmm/mix033.opt.yml/cpachecker-mix033.opt.yml	ERROR(ineffective witness)	0.777841	42.164049698999975	35.770368
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix033_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.766412	41.726407385000016	36.487168
+pthread-wmm/mix033_tso.oepc.yml/cpachecker-mix033_tso.oepc.yml	ERROR(ineffective witness)	0.782331	42.50410158599999	36.290560
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/cpachecker-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	ERROR(ineffective witness)	0.756804	43.347597080000014	36.200448
+pthread-wmm/mix034_pso.opt_tso.opt.yml/cpachecker-mix034_pso.opt_tso.opt.yml	ERROR(ineffective witness)	0.76322	44.31551093799999	35.721216
+pthread-wmm/mix035.oepc.yml/cpachecker-mix035.oepc.yml	ERROR(ineffective witness)	0.790627	43.423829972999954	36.286464
+pthread-wmm/mix035_power.opt_rmo.opt.yml/cpachecker-mix035_power.opt_rmo.opt.yml	ERROR(ineffective witness)	0.778567	41.956605062999984	36.139008
+pthread-wmm/mix035_pso.opt_tso.opt.yml/cpachecker-mix035_pso.opt_tso.opt.yml	ERROR(ineffective witness)	0.78925	42.981472310000015	35.872768
+pthread-wmm/mix036.oepc.yml/cpachecker-mix036.oepc.yml	ERROR(ineffective witness)	0.772782	42.515040054999986	36.831232
+pthread-wmm/mix036_power.opt_rmo.opt.yml/cpachecker-mix036_power.opt_rmo.opt.yml	ERROR(ineffective witness)	0.780659	43.19860828999998	36.167680
+pthread-wmm/mix036_pso.opt_tso.opt.yml/cpachecker-mix036_pso.opt_tso.opt.yml	ERROR(ineffective witness)	0.774984	41.97142016600003	36.347904
+pthread-wmm/mix037.opt.yml/cpachecker-mix037.opt.yml	ERROR(ineffective witness)	0.773119	41.88879131300001	36.306944
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix037_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.779696	41.360014276000015	36.716544
+pthread-wmm/mix037_tso.oepc.yml/cpachecker-mix037_tso.oepc.yml	ERROR(ineffective witness)	0.788911	42.97864593600002	36.704256
+pthread-wmm/mix038.opt.yml/cpachecker-mix038.opt.yml	ERROR(ineffective witness)	0.769027	42.95806602299996	36.003840
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix038_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.79484	43.64800789999998	36.339712
+pthread-wmm/mix038_tso.oepc.yml/cpachecker-mix038_tso.oepc.yml	ERROR(ineffective witness)	0.789474	43.147175034999975	36.343808
+pthread-wmm/mix039.oepc.yml/cpachecker-mix039.oepc.yml	ERROR(ineffective witness)	0.782714	41.889262044999896	36.827136
+pthread-wmm/mix039.opt.yml/cpachecker-mix039.opt.yml	ERROR(ineffective witness)	0.777745	43.67781833599997	36.139008
+pthread-wmm/mix040.opt.yml/cpachecker-mix040.opt.yml	ERROR(ineffective witness)	0.770705	42.93154312699994	35.954688
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix040_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.791568	42.737503137999965	36.765696
+pthread-wmm/mix040_tso.oepc.yml/cpachecker-mix040_tso.oepc.yml	ERROR(ineffective witness)	0.781196	42.78474125299999	36.536320
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix041_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.755812	41.330384675000005	36.126720
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cpachecker-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.74559	41.35514653600001	36.163584
+pthread-wmm/mix042.oepc.yml/cpachecker-mix042.oepc.yml	ERROR(ineffective witness)	0.760972	42.778623277000065	36.429824
+pthread-wmm/mix042.opt.yml/cpachecker-mix042.opt.yml	ERROR(ineffective witness)	0.758189	42.66527360099997	36.032512
+pthread-wmm/mix043.oepc.yml/cpachecker-mix043.oepc.yml	ERROR(ineffective witness)	0.782179	42.41610928	36.622336
+pthread-wmm/mix043.opt.yml/cpachecker-mix043.opt.yml	ERROR(ineffective witness)	0.780403	42.13198324999996	36.372480
+pthread-wmm/mix044.opt.yml/cpachecker-mix044.opt.yml	ERROR(ineffective witness)	0.765862	42.48975500400002	36.642816
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix044_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.789716	43.27694176299997	36.519936
+pthread-wmm/mix044_tso.oepc.yml/cpachecker-mix044_tso.oepc.yml	ERROR(ineffective witness)	0.803562	43.70960915399996	36.753408
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix045_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.773081	41.97000389200002	36.397056
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cpachecker-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.761136	42.358845148	36.417536
+pthread-wmm/mix046.oepc.yml/cpachecker-mix046.oepc.yml	ERROR(ineffective witness)	0.781911	42.39984650300005	36.446208
+pthread-wmm/mix046.opt.yml/cpachecker-mix046.opt.yml	ERROR(ineffective witness)	0.768686	41.85376192399997	36.421632
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix047_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.782728	43.32491807500003	36.630528
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cpachecker-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.781007	43.04735374500001	36.360192
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/cpachecker-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.752822	42.968044306000024	35.700736
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/cpachecker-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.760141	42.63352576	36.290560
+pthread-wmm/mix050.yml/cpachecker-mix050.yml	ERROR(ineffective witness)	0.786071	42.69597891500007	36.458496
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/cpachecker-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.796288	43.34971270900007	36.499456
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/cpachecker-mix051_pso.opt_rmo.opt_tso.opt.yml	ERROR(ineffective witness)	0.77216	41.95992804000002	36.286464
+pthread-wmm/mix051_tso.oepc.yml/cpachecker-mix051_tso.oepc.yml	ERROR(ineffective witness)	0.784619	42.94261667000001	36.634624
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/cpachecker-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.763862	42.18856905100006	36.249600
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/cpachecker-mix052_pso.opt_rmo.opt_tso.opt.yml	ERROR(ineffective witness)	0.762898	42.65446401399993	35.713024
+pthread-wmm/mix052_tso.oepc.yml/cpachecker-mix052_tso.oepc.yml	ERROR(ineffective witness)	0.776742	43.243710557999975	36.159488
+pthread-wmm/mix053.opt.yml/cpachecker-mix053.opt.yml	ERROR(ineffective witness)	0.786401	44.766383797	35.848192
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix053_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.777712	43.27175721900005	36.483072
+pthread-wmm/mix053_tso.oepc.yml/cpachecker-mix053_tso.oepc.yml	ERROR(ineffective witness)	0.799396	42.734708702000034	36.446208
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/cpachecker-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.745202	42.380007540000065	35.827712
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cpachecker-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.750597	43.32251276300008	35.954688
+pthread-wmm/mix055.opt.yml/cpachecker-mix055.opt.yml	ERROR(ineffective witness)	0.776834	42.47985924400007	36.265984
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix055_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.798385	42.09113993400001	36.552704
+pthread-wmm/mix055_tso.oepc.yml/cpachecker-mix055_tso.oepc.yml	ERROR(ineffective witness)	0.794779	43.712425465000024	36.507648
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix056_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.765012	42.69730430200002	36.372480
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cpachecker-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.761202	43.825377427000035	36.040704
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-mix057_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.779106	42.19766175899997	36.417536
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cpachecker-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.77088	42.00882849200002	36.216832
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.776902	42.81394882699999	37.019648
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/cpachecker-rfi000_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.755027	42.33929720000003	35.856384
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.74394	42.08379511800001	35.901440
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cpachecker-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.766875	41.82637558300007	35.999744
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.739368	42.34908665399996	35.766272
+pthread-wmm/rfi004.yml/cpachecker-rfi004.yml	ERROR(ineffective witness)	0.752941	41.68150999299996	35.704832
+pthread-wmm/rfi005.yml/cpachecker-rfi005.yml	false(unreach-call)	1.062051	43.41162558399992	35.868672
+pthread-wmm/rfi006_power.oepc.yml/cpachecker-rfi006_power.oepc.yml	ERROR(ineffective witness)	1.461807	43.99028160499995	36.478976
+pthread-wmm/rfi006_power.opt.yml/cpachecker-rfi006_power.opt.yml	TIMEOUT (ERROR(ineffective witness))	1.562502	45.23946344900003	36.425728
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cpachecker-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.776336	42.87924896300001	36.421632
+pthread-wmm/rfi006_rmo.yml/cpachecker-rfi006_rmo.yml	ERROR(ineffective witness)	1.458678	44.78224435100003	36.249600
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.741495	41.52904651899996	35.885056
+pthread-wmm/rfi007_tso.yml/cpachecker-rfi007_tso.yml	ERROR(ineffective witness)	0.776433	44.16175075199999	36.282368
+pthread-wmm/rfi008.oepc.yml/cpachecker-rfi008.oepc.yml	ERROR(ineffective witness)	0.794806	44.40186857599997	36.257792
+pthread-wmm/rfi008.opt.yml/cpachecker-rfi008.opt.yml	ERROR(ineffective witness)	0.75986	42.40567867699997	35.979264
+pthread-wmm/rfi009_power.oepc.yml/cpachecker-rfi009_power.oepc.yml	ERROR(ineffective witness)	1.479983	43.67936094800007	36.237312
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cpachecker-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.778477	40.48221374000002	36.331520
+pthread-wmm/rfi009_rmo.oepc.yml/cpachecker-rfi009_rmo.oepc.yml	ERROR(ineffective witness)	1.452713	42.57878601900006	36.233216
+pthread-wmm/rfi010.yml/cpachecker-rfi010.yml	ERROR(ineffective witness)	0.766695	40.45914849500002	36.175872
+pthread-wmm/safe000_power.oepc.yml/cpachecker-safe000_power.oepc.yml	ERROR(ineffective witness)	1.633593	41.70720260200005	36.745216
+pthread-wmm/safe000_power.opt.yml/cpachecker-safe000_power.opt.yml	ERROR(ineffective witness)	1.378718	5.614972101999911	36.417536
+pthread-wmm/safe000_rmo.yml/cpachecker-safe000_rmo.yml	ERROR(ineffective witness)	1.634928	44.814409909999995	36.847616
+pthread-wmm/safe001_power.oepc.yml/cpachecker-safe001_power.oepc.yml	TIMEOUT	1.604446	46.03045188300007	36.864000
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/cpachecker-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.796632	44.262558822000074	36.216832
+pthread-wmm/safe001_rmo.oepc.yml/cpachecker-safe001_rmo.oepc.yml	TIMEOUT	1.59584	46.03388452899992	36.839424
+pthread-wmm/safe002_power.oepc.yml/cpachecker-safe002_power.oepc.yml	TIMEOUT	1.627119	46.11921685899995	36.802560
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/cpachecker-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	TIMEOUT (ERROR(ineffective witness))	0.809087	45.08835142199996	36.077568
+pthread-wmm/safe002_rmo.oepc.yml/cpachecker-safe002_rmo.oepc.yml	ERROR(ineffective witness)	1.679267	44.995818697000004	36.868096
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.809541	42.490835969000045	37.294080
+pthread-wmm/safe003_power.opt.yml/cpachecker-safe003_power.opt.yml	ERROR(ineffective witness)	1.381465	4.987552322999932	36.601856
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-safe004_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.797747	41.90506049700002	36.925440
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/cpachecker-safe004_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.756662	40.741069398000036	36.036608
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.744773	40.90589284500004	36.126720
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/cpachecker-safe006_power.oepc-thin000_power.oepc.yml	ERROR(ineffective witness)	1.221149	41.86981557399997	35.835904
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/cpachecker-safe006_power.opt-thin000_power.opt.yml	ERROR(ineffective witness)	1.214938	4.3909519960000125	35.991552
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/cpachecker-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	TIMEOUT (ERROR(ineffective witness))	1.209822	45.221604948999925	35.758080
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/cpachecker-safe007_power.oepc-thin001_power.oepc.yml	TIMEOUT	1.304984	46.133953894	35.991552
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/cpachecker-safe007_power.opt-thin001_power.opt.yml	ERROR(ineffective witness)	0.786427	43.69537600500007	36.311040
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/cpachecker-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	TIMEOUT	1.304215	46.095016461	36.032512
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.787915	43.04723632899993	36.274176
+pthread-wmm/safe008_power.opt.yml/cpachecker-safe008_power.opt.yml	ERROR(ineffective witness)	1.388121	6.153308498000001	36.864000
+pthread-wmm/safe009_power.oepc.yml/cpachecker-safe009_power.oepc.yml	ERROR(ineffective witness)	1.498215	43.817807483000024	36.335616
+pthread-wmm/safe009_power.opt.yml/cpachecker-safe009_power.opt.yml	ERROR(ineffective witness)	1.365893	7.289774552999916	36.360192
+pthread-wmm/safe009_rmo.oepc.yml/cpachecker-safe009_rmo.oepc.yml	ERROR(ineffective witness)	1.477283	43.67379984399997	36.397056
+pthread-wmm/safe009_rmo.opt.yml/cpachecker-safe009_rmo.opt.yml	ERROR(ineffective witness)	1.300624	7.89646007500005	36.245504
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.73354	41.99756314600006	35.921920
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/cpachecker-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.763804	41.61965214199995	36.261888
+pthread-wmm/safe011_power.opt_pso.opt.yml/cpachecker-safe011_power.opt_pso.opt.yml	ERROR(ineffective witness)	0.765789	41.45839529400007	36.044800
+pthread-wmm/safe012_power.oepc.yml/cpachecker-safe012_power.oepc.yml	ERROR(ineffective witness)	1.354771	44.93776523899999	35.868672
+pthread-wmm/safe012_power.opt.yml/cpachecker-safe012_power.opt.yml	ERROR(ineffective witness)	0.78864	42.53151424500004	36.081664
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/cpachecker-safe012_pso.oepc_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.79264	43.912742926999954	35.876864
+pthread-wmm/safe012_rmo.oepc.yml/cpachecker-safe012_rmo.oepc.yml	ERROR(ineffective witness)	1.325171	44.29521707499998	35.803136
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.784502	42.40994398199996	35.995648
+pthread-wmm/safe014_power.oepc.yml/cpachecker-safe014_power.oepc.yml	ERROR(ineffective witness)	1.328913	40.307179908999956	35.938304
+pthread-wmm/safe014_power.opt.yml/cpachecker-safe014_power.opt.yml	ERROR(ineffective witness)	1.394753	38.71946901600006	35.934208
+pthread-wmm/safe014_rmo.oepc.yml/cpachecker-safe014_rmo.oepc.yml	ERROR(ineffective witness)	1.308505	37.38881755199998	35.819520
+pthread-wmm/safe014_rmo.opt.yml/cpachecker-safe014_rmo.opt.yml	ERROR(ineffective witness)	1.538533	9.574764946999949	36.904960
+pthread-wmm/safe015_power.oepc.yml/cpachecker-safe015_power.oepc.yml	false(unreach-call)	1.106076	31.595032706999973	35.962880
+pthread-wmm/safe015_power.opt.yml/cpachecker-safe015_power.opt.yml	ERROR(ineffective witness)	1.552021	9.159510686999965	36.982784
+pthread-wmm/safe015_rmo.yml/cpachecker-safe015_rmo.yml	ERROR(ineffective witness)	1.542141	10.031263870999965	36.970496
+pthread-wmm/safe016_power.oepc.yml/cpachecker-safe016_power.oepc.yml	TIMEOUT (ERROR(ineffective witness))	1.610792	45.654561356000045	36.532224
+pthread-wmm/safe016_power.opt.yml/cpachecker-safe016_power.opt.yml	ERROR(ineffective witness)	1.62436	11.337778000999947	37.306368
+pthread-wmm/safe016_rmo.oepc.yml/cpachecker-safe016_rmo.oepc.yml	TIMEOUT (ERROR(ineffective witness))	1.590269	45.70132363000005	36.462592
+pthread-wmm/safe016_rmo.opt.yml/cpachecker-safe016_rmo.opt.yml	ERROR(ineffective witness)	1.615958	9.364536371999975	36.798464
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.784304	41.56957241400005	36.237312
+pthread-wmm/safe018_power.oepc.yml/cpachecker-safe018_power.oepc.yml	ERROR(ineffective witness)	1.337482	44.443423798000026	35.762176
+pthread-wmm/safe018_power.opt.yml/cpachecker-safe018_power.opt.yml	ERROR(ineffective witness)	1.457664	9.33761639599993	36.904960
+pthread-wmm/safe018_rmo.oepc.yml/cpachecker-safe018_rmo.oepc.yml	TIMEOUT	1.279534	46.07969717499998	35.667968
+pthread-wmm/safe018_rmo.opt.yml/cpachecker-safe018_rmo.opt.yml	ERROR(ineffective witness)	1.37043	8.232018111000002	36.302848
+pthread-wmm/safe019_power.oepc.yml/cpachecker-safe019_power.oepc.yml	TIMEOUT	1.563894	46.06131032400003	36.724736
+pthread-wmm/safe019_rmo.oepc.yml/cpachecker-safe019_rmo.oepc.yml	TIMEOUT (ERROR(ineffective witness))	1.586468	45.01776255599998	36.597760
+pthread-wmm/safe019_rmo.opt.yml/cpachecker-safe019_rmo.opt.yml	ERROR(ineffective witness)	1.543252	10.847721482999987	36.605952
+pthread-wmm/safe020_power.yml/cpachecker-safe020_power.yml	ERROR(ineffective witness)	1.451887	6.956436307000104	36.884480
+pthread-wmm/safe020_rmo.yml/cpachecker-safe020_rmo.yml	ERROR(ineffective witness)	1.369925	5.7049829000000045	36.438016
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/cpachecker-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.760513	41.734085029000084	36.425728
+pthread-wmm/safe021_power.opt_pso.opt.yml/cpachecker-safe021_power.opt_pso.opt.yml	ERROR(ineffective witness)	0.770682	42.605308208999986	36.257792
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.757863	42.824456457	35.848192
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.79504	43.21520461700004	37.117952
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.7605	42.20068969299996	36.003840
+pthread-wmm/safe025_power.yml/cpachecker-safe025_power.yml	false(unreach-call)	1.057503	24.848071638999954	36.225024
+pthread-wmm/safe025_rmo.yml/cpachecker-safe025_rmo.yml	ERROR(ineffective witness)	1.523358	9.110966427999983	36.880384
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.751454	41.88282450100007	36.237312
+pthread-wmm/safe027_power.oepc.yml/cpachecker-safe027_power.oepc.yml	ERROR(ineffective witness)	1.546582	44.98351704799995	36.519936
+pthread-wmm/safe027_rmo.yml/cpachecker-safe027_rmo.yml	ERROR(ineffective witness)	1.533633	43.33271504200002	36.237312
+pthread-wmm/safe028_power.yml/cpachecker-safe028_power.yml	ERROR(ineffective witness)	1.467998	7.615498817999992	36.769792
+pthread-wmm/safe028_rmo.yml/cpachecker-safe028_rmo.yml	ERROR(ineffective witness)	1.3836	8.10484089299996	36.372480
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-safe029_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.74829	42.71500323400005	36.143104
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/cpachecker-safe029_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.758318	43.20578825700011	35.696640
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-safe030_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.775632	43.78298760500002	36.233216
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/cpachecker-safe030_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.770514	43.01078339300011	36.065280
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/cpachecker-safe031_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.764874	41.81133576499997	36.114432
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/cpachecker-safe031_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.760287	37.38469039200004	36.061184
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.783504	37.3992797410001	36.892672
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.729477	30.819711697999992	35.631104
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cpachecker-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.7242	27.784225547000005	35.819520
+pthread-wmm/thin002_power.oepc.yml/cpachecker-thin002_power.oepc.yml	ERROR(ineffective witness)	1.43531	28.364333257999988	36.339712
+pthread-wmm/thin002_rmo.yml/cpachecker-thin002_rmo.yml	ERROR(ineffective witness)	1.408337	21.15582897499985	35.913728
+pthread/lazy01.yml/cpachecker-lazy01.yml	TIMEOUT	0.530175	46.04147770600002	34.959360
+pthread/stateful01-1.yml/cpachecker-stateful01-1.yml	TIMEOUT	0.541525	46.03019270200002	34.803712
+pthread/triangular-2.yml/cpachecker-triangular-2.yml	ERROR(ineffective witness)	0.557109	1.552091621000045	34.881536
+pthread/triangular-longer-2.yml/cpachecker-triangular-longer-2.yml	ERROR(ineffective witness)	0.559394	1.2760800170001403	35.430400

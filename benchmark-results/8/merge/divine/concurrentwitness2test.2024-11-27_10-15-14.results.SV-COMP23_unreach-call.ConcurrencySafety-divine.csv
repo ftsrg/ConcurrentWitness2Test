@@ -1,0 +1,377 @@
+tool		ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-divine	SV-COMP23_unreach-call.ConcurrencySafety-divine	SV-COMP23_unreach-call.ConcurrencySafety-divine	SV-COMP23_unreach-call.ConcurrencySafety-divine
+../svcomp23-witness-benchmarks/tools/divine/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/divine-13-privatized_18-first-reads_unknown_1_neg.yml	false	false(unreach-call)	0.62723	1.4514036160000074	72.437760
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/divine-13-privatized_18-first-reads_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.52428	1.401857911999997	38.055936
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/divine-13-privatized_18-first-reads_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.607879	1.3763197309999953	59.691008
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/divine-13-privatized_18-first-reads_unknown_2_pos.yml	false	false(unreach-call)	0.537112	1.4156173490000015	35.864576
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/divine-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	0.522007	1.344451699000004	35.934208
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/divine-13-privatized_19-publish-precision_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.613946	1.419980338000002	58.433536
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/divine-13-privatized_19-publish-precision_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.52444	1.3972363609999974	36.646912
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/divine-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	0.522288	1.3414403539999995	35.475456
+goblint-regression/13-privatized_30-traces-oplus-vs-meet_true.yml/divine-13-privatized_30-traces-oplus-vs-meet_true.yml	true	ERROR(ineffective witness)	0.534634	1.3886626879999966	35.848192
+goblint-regression/13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml/divine-13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml	true	ERROR(ineffective witness)	0.527748	1.271137410999998	36.225024
+goblint-regression/13-privatized_33-traces-v-matters_true.yml/divine-13-privatized_33-traces-v-matters_true.yml	true	ERROR(ineffective witness)	0.524942	1.2254124130000008	34.615296
+goblint-regression/13-privatized_35-traces-ex-2_true.yml/divine-13-privatized_35-traces-ex-2_true.yml	true	ERROR(ineffective witness)	0.513474	1.3047994469999935	34.635776
+goblint-regression/13-privatized_38-traces-ex-4-switch_true.yml/divine-13-privatized_38-traces-ex-4-switch_true.yml	true	ERROR(ineffective witness)	0.526009	1.2323030790000047	34.615296
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/divine-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	false(unreach-call)	0.526024	1.2445635119999992	34.615296
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/divine-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	false(unreach-call)	0.522692	1.2432270660000029	34.615296
+goblint-regression/13-privatized_45-traces-per-global-and-current-lock-mine-incomparable_true.yml/divine-13-privatized_45-traces-per-global-and-current-lock-mine-incomparable_true.yml	true	ERROR(ineffective witness)	0.519481	1.1459065039999956	34.598912
+goblint-regression/13-privatized_67-pthread_cond_wait_true.yml/divine-13-privatized_67-pthread_cond_wait_true.yml	false	TIMEOUT	0.515449	46.04504592799999	35.512320
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_neg.yml/divine-13-privatized_67-pthread_cond_wait_unknown_1_neg.yml	false	TIMEOUT	0.516928	46.05210249299999	35.475456
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_pos.yml/divine-13-privatized_67-pthread_cond_wait_unknown_1_pos.yml	false	TIMEOUT	0.518549	46.035109854	35.508224
+goblint-regression/28-race_reach_45-escape_racing.yml/divine-28-race_reach_45-escape_racing.yml	false	ERROR(ineffective witness)	0.516565	1.1478435329999996	34.697216
+goblint-regression/28-race_reach_74-tricky_address1_racefree.yml/divine-28-race_reach_74-tricky_address1_racefree.yml	true	TIMEOUT	22.098501	46.020185772000005	204.017664
+goblint-regression/28-race_reach_75-tricky_address2_racefree.yml/divine-28-race_reach_75-tricky_address2_racefree.yml	true	TIMEOUT	22.099199	46.016279282	203.849728
+goblint-regression/28-race_reach_76-tricky_address3_racefree.yml/divine-28-race_reach_76-tricky_address3_racefree.yml	true	TIMEOUT	22.33316	46.032049875	203.472896
+goblint-regression/28-race_reach_77-tricky_address4_racing.yml/divine-28-race_reach_77-tricky_address4_racing.yml	false	TIMEOUT	21.990548	46.017986546	203.366400
+goblint-regression/28-race_reach_86-lists_racing.yml/divine-28-race_reach_86-lists_racing.yml	false	TIMEOUT	21.730094	46.061102412999986	378.929152
+goblint-regression/28-race_reach_87-lists_racefree.yml/divine-28-race_reach_87-lists_racefree.yml	true	TIMEOUT	22.077672	46.032663240999995	378.376192
+goblint-regression/28-race_reach_90-arrayloop2_racing.yml/divine-28-race_reach_90-arrayloop2_racing.yml	false	false(unreach-call)	0.66441	1.1609177200000005	35.254272
+goblint-regression/28-race_reach_91-arrayloop2_racefree.yml/divine-28-race_reach_91-arrayloop2_racefree.yml	true	false(unreach-call)	0.703595	1.2108412059999978	35.151872
+goblint-regression/28-race_reach_92-evilcollapse_racing.yml/divine-28-race_reach_92-evilcollapse_racing.yml	false	false(unreach-call)	0.693481	1.3311751669999978	35.246080
+goblint-regression/28-race_reach_93-evilcollapse_racefree.yml/divine-28-race_reach_93-evilcollapse_racefree.yml	true	false(unreach-call)	0.733679	1.3132254860000074	35.225600
+goblint-regression/28-race_reach_94-alloc_region_racing.yml/divine-28-race_reach_94-alloc_region_racing.yml	false	false(unreach-call)	0.720704	1.2737522310000031	35.700736
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/divine-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.548182	0.8875839049999996	34.615296
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/divine-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	false(unreach-call)	0.554938	0.9396682969999972	34.578432
+goblint-regression/36-apron_21-traces-cluster-based_true.yml/divine-36-apron_21-traces-cluster-based_true.yml	true	ERROR(ineffective witness)	0.567899	1.1253619339999972	34.693120
+goblint-regression/36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml/divine-36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml	true	ERROR(ineffective witness)	0.566057	1.0584194179999997	34.775040
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/divine-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.544103	0.8509833170000007	34.623488
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/divine-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	false(unreach-call)	0.545023	1.0198965370000082	34.623488
+ldv-linux-3.14-races/linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-1.yml/divine-linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-1.yml	true	ERROR(Parsing failed)	0.287381	0.39819395800000734	27.377664
+ldv-linux-3.14-races/linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-2.yml/divine-linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-2.yml	false	ERROR(Parsing failed)	0.29399	0.40769378299999914	27.357184
+ldv-linux-3.14-races/linux-3.14--drivers--net--irda--nsc-ircc.ko.cil.yml/divine-linux-3.14--drivers--net--irda--nsc-ircc.ko.cil.yml	false	ERROR(Parsing failed)	0.294264	0.40029690100000437	27.336704
+ldv-linux-3.14-races/linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.yml/divine-linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.yml	false	ERROR(Parsing failed)	0.293936	0.38848950800000637	27.209728
+ldv-linux-3.14-races/linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.yml/divine-linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.yml	false	ERROR(Parsing failed)	0.289597	0.4109448289999875	27.066368
+ldv-linux-3.14-races/linux-3.14--drivers--usb--misc--adutux.ko.cil.yml/divine-linux-3.14--drivers--usb--misc--adutux.ko.cil.yml	false	ERROR(Parsing failed)	0.282467	0.4612705549999987	27.136000
+ldv-races/race-1_2-join.yml/divine-race-1_2-join.yml	false	ERROR(ineffective witness)	0.651723	1.021474432000005	36.069376
+ldv-races/race-1_3-join.yml/divine-race-1_3-join.yml	false	ERROR(ineffective witness)	0.661667	1.0944504460000104	36.069376
+ldv-races/race-2_2-container_of.yml/divine-race-2_2-container_of.yml	false	ERROR(ineffective witness)	0.809252	19.488828479000006	36.052992
+ldv-races/race-2_3-container_of.yml/divine-race-2_3-container_of.yml	false	ERROR(ineffective witness)	0.843356	24.833928756000006	36.081664
+ldv-races/race-2_4-container_of.yml/divine-race-2_4-container_of.yml	false	ERROR(ineffective witness)	0.858842	26.46519714499999	35.917824
+ldv-races/race-2_5-container_of.yml/divine-race-2_5-container_of.yml	false	ERROR(ineffective witness)	0.821235	26.577105309000018	35.885056
+ldv-races/race-3_2-container_of-global.yml/divine-race-3_2-container_of-global.yml	false	ERROR(ineffective witness)	0.804793	26.453790362999996	36.106240
+pthread-C-DAC/pthread-demo-datarace-3.yml/divine-pthread-demo-datarace-3.yml	false	false(unreach-call)	0.671517	4.132053211999988	35.659776
+pthread-C-DAC/pthread-finding-k-matches.yml/divine-pthread-finding-k-matches.yml	true	ERROR(ineffective witness)	0.827465	28.183269502	36.016128
+pthread-C-DAC/pthread-numerical-integration.yml/divine-pthread-numerical-integration.yml	true	ERROR(Parsing failed)	0.460683	2.6637079970000173	28.434432
+pthread-atomic/read_write_lock-1.yml/divine-read_write_lock-1.yml	true	ERROR(ineffective witness)	0.608461	4.259068935000016	34.623488
+pthread-atomic/read_write_lock-2.yml/divine-read_write_lock-2.yml	false	ERROR(ineffective witness)	0.607371	4.189187491000013	34.615296
+pthread-complex/elimination_backoff_stack.yml/divine-elimination_backoff_stack.yml	false	ERROR(ineffective witness)	0.774509	10.31105934499999	35.868672
+pthread-deagle/arithmetic_prog_bad.yml/divine-arithmetic_prog_bad.yml	false	false(unreach-call)	0.626569	2.6533087150000085	34.996224
+pthread-deagle/circular_buffer_bad.yml/divine-circular_buffer_bad.yml	false	ERROR(ineffective witness)	0.579565	2.239797543999998	34.693120
+pthread-divine/tls_destructor_worker.yml/divine-tls_destructor_worker.yml	false	false(unreach-call)	0.591187	3.0906197799999973	34.627584
+pthread-driver-races/char_generic_nvram_nvram_unlocked_ioctl_write_nvram.yml/divine-char_generic_nvram_nvram_unlocked_ioctl_write_nvram.yml	true	ERROR(Compilation error)	1.81779	9.140246364999996	55.611392
+pthread-driver-races/char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml/divine-char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml	true	ERROR(Compilation error)	1.798064	8.276758892999993	55.267328
+pthread-driver-races/char_generic_nvram_read_nvram_write_nvram.yml/divine-char_generic_nvram_read_nvram_write_nvram.yml	false	ERROR(Compilation error)	1.84352	9.664748274000004	55.443456
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_configure.yml/divine-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_configure.yml	true	ERROR(Compilation error)	1.870303	9.429620532000001	58.052608
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml/divine-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml	false	ERROR(Compilation error)	1.870291	8.797629627999981	57.749504
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_get.yml/divine-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	1.855789	8.960181025999987	57.860096
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml/divine-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml	false	ERROR(Compilation error)	1.896256	11.086650977000005	57.769984
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_current.yml/divine-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_current.yml	true	ERROR(Compilation error)	1.872684	9.555797179999985	57.651200
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_get.yml/divine-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	1.854797	9.245498166999994	57.704448
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_set.yml/divine-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_set.yml	true	ERROR(Compilation error)	1.846139	9.011724102999978	57.741312
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_get.yml/divine-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	1.695728	7.063218496000019	57.778176
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml/divine-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml	false	ERROR(Compilation error)	1.772792	6.815751981999995	57.765888
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_get_pc8736x_gpio_set.yml/divine-char_pc8736x_gpio_pc8736x_gpio_get_pc8736x_gpio_set.yml	true	ERROR(Compilation error)	1.726544	4.9493091479999975	57.761792
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_change.yml/divine-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_change.yml	true	ERROR(Compilation error)	1.688124	4.458122462999995	57.757696
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_configure.yml/divine-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_configure.yml	true	ERROR(Compilation error)	1.714318	4.81717122500001	57.704448
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_current.yml/divine-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_current.yml	true	ERROR(Compilation error)	1.674947	3.355383563999993	57.790464
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_get.yml/divine-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	1.646736	4.266694209000008	57.819136
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.yml/divine-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.yml	true	ERROR(Compilation error)	1.648353	4.331107478000007	57.905152
+pthread-ext/02_inc_cas.yml/divine-02_inc_cas.yml	true	TIMEOUT	10.801136	46.03198409400002	2313.564160
+pthread-ext/03_incdec.yml/divine-03_incdec.yml	true	TIMEOUT	9.531898	45.042468162000006	565.735424
+pthread-ext/04_incdec_cas.yml/divine-04_incdec_cas.yml	true	TIMEOUT	10.113036	45.197881064	2312.355840
+pthread-ext/08_rand_cas.yml/divine-08_rand_cas.yml	true	TIMEOUT	32.742624	50.33040875500001	88.887296
+pthread-ext/09_fmaxsym.yml/divine-09_fmaxsym.yml	true	TIMEOUT	7.545658	45.676517356000005	345.825280
+pthread-ext/11_fmaxsymopt.yml/divine-11_fmaxsymopt.yml	true	TIMEOUT	8.363474	45.541380127999986	623.235072
+pthread-ext/18_read_write_lock.yml/divine-18_read_write_lock.yml	true	ERROR(ineffective witness)	0.52316	1.5865518510000243	34.603008
+pthread-ext/25_stack_longer-1.yml/divine-25_stack_longer-1.yml	false	false(unreach-call)	0.633907	2.1531320729999948	34.676736
+pthread-ext/25_stack_longest-2.yml/divine-25_stack_longest-2.yml	false	false(unreach-call)	0.6876	2.149039079000005	34.664448
+pthread-ext/26_stack_cas_longer-1.yml/divine-26_stack_cas_longer-1.yml	false	false(unreach-call)	0.648676	1.995004277999982	34.676736
+pthread-ext/26_stack_cas_longest-1.yml/divine-26_stack_cas_longest-1.yml	false	false(unreach-call)	0.694132	2.4958509759999856	34.676736
+pthread-ext/28_buggy_simple_loop1_vf.yml/divine-28_buggy_simple_loop1_vf.yml	false	TIMEOUT	8.532652	45.54057668499999	2190.901248
+pthread-lit/qw2004-2b.yml/divine-qw2004-2b.yml	false	ERROR(ineffective witness)	0.530609	1.6226802330000112	34.664448
+pthread-lit/sssc12.yml/divine-sssc12.yml	true	ERROR(Compilation error)	0.474965	0.9751398209999991	35.119104
+pthread-lit/sssc12_variant.yml/divine-sssc12_variant.yml	true	ERROR(Compilation error)	0.471863	1.0811066619999963	35.106816
+pthread-wmm/mix000.oepc.yml/divine-mix000.oepc.yml	false	ERROR(ineffective witness)	0.762057	24.879388144000018	35.233792
+pthread-wmm/mix000.opt.yml/divine-mix000.opt.yml	false	ERROR(ineffective witness)	0.744153	23.964533597000013	35.205120
+pthread-wmm/mix001.oepc.yml/divine-mix001.oepc.yml	false	ERROR(ineffective witness)	0.787674	24.539555774999997	35.336192
+pthread-wmm/mix001.opt.yml/divine-mix001.opt.yml	false	ERROR(ineffective witness)	0.760309	26.051508436000006	35.291136
+pthread-wmm/mix002.oepc.yml/divine-mix002.oepc.yml	false	ERROR(ineffective witness)	0.745928	26.467501003999985	35.237888
+pthread-wmm/mix002.opt.yml/divine-mix002.opt.yml	false	ERROR(ineffective witness)	0.781373	32.142339891000006	35.287040
+pthread-wmm/mix003.oepc.yml/divine-mix003.oepc.yml	false	ERROR(ineffective witness)	0.775867	43.297746002000025	35.196928
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/divine-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.804484	42.56707745900002	35.209216
+pthread-wmm/mix006.opt.yml/divine-mix006.opt.yml	false	ERROR(ineffective witness)	0.778574	42.94732721099999	35.258368
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.791381	44.318222607999985	35.115008
+pthread-wmm/mix009.oepc.yml/divine-mix009.oepc.yml	false	ERROR(ineffective witness)	0.762258	42.85770339599998	35.282944
+pthread-wmm/mix009.opt.yml/divine-mix009.opt.yml	false	ERROR(ineffective witness)	0.775755	43.14074048399999	34.967552
+pthread-wmm/mix010.oepc.yml/divine-mix010.oepc.yml	false	ERROR(ineffective witness)	0.769556	42.089513735	35.491840
+pthread-wmm/mix010.opt.yml/divine-mix010.opt.yml	false	ERROR(ineffective witness)	0.797495	43.24638099600003	35.274752
+pthread-wmm/mix011.opt.yml/divine-mix011.opt.yml	false	ERROR(ineffective witness)	0.793668	43.45631329400001	35.106816
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.771872	41.999286987999966	35.192832
+pthread-wmm/mix011_tso.oepc.yml/divine-mix011_tso.oepc.yml	false	ERROR(ineffective witness)	0.76269	42.394348140999966	35.164160
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/divine-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	ERROR(ineffective witness)	0.749087	43.351062845	35.033088
+pthread-wmm/mix012_pso.opt_tso.opt.yml/divine-mix012_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.784169	42.734601741999995	35.233792
+pthread-wmm/mix015.oepc.yml/divine-mix015.oepc.yml	false	ERROR(ineffective witness)	0.780795	42.96291913900001	35.164160
+pthread-wmm/mix015.opt.yml/divine-mix015.opt.yml	false	ERROR(ineffective witness)	0.791668	42.840357212000015	35.209216
+pthread-wmm/mix016.oepc.yml/divine-mix016.oepc.yml	false	ERROR(ineffective witness)	0.763628	42.537022412	35.037184
+pthread-wmm/mix016_power.opt_rmo.opt.yml/divine-mix016_power.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.779196	43.136851233000016	34.906112
+pthread-wmm/mix016_pso.opt_tso.opt.yml/divine-mix016_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.786376	42.47449049900001	35.069952
+pthread-wmm/mix019.opt.yml/divine-mix019.opt.yml	false	ERROR(ineffective witness)	0.7837	42.40457522999998	35.135488
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix019_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.771771	41.35367489600003	35.033088
+pthread-wmm/mix019_tso.oepc.yml/divine-mix019_tso.oepc.yml	false	ERROR(ineffective witness)	0.763312	42.745917443999986	35.123200
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.751253	42.17425072599997	35.110912
+pthread-wmm/mix022_tso.yml/divine-mix022_tso.yml	false	ERROR(ineffective witness)	0.771014	42.62213451399998	35.045376
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/divine-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.777433	42.454806219999966	35.241984
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/divine-mix024_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.761009	43.19055323799995	35.143680
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/divine-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.764363	43.201236037	35.012608
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/divine-mix025_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.767755	42.386493132	34.902016
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.76433	42.47469953199999	35.045376
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/divine-mix028_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.779534	42.83800834600004	35.061760
+pthread-wmm/mix028_tso.yml/divine-mix028_tso.yml	false	ERROR(ineffective witness)	0.7961	41.854947545000016	35.074048
+pthread-wmm/mix031.oepc.yml/divine-mix031.oepc.yml	false	ERROR(ineffective witness)	0.747694	42.86590758400001	35.033088
+pthread-wmm/mix031.opt.yml/divine-mix031.opt.yml	false	ERROR(ineffective witness)	0.749211	43.24954408999997	34.861056
+pthread-wmm/mix032.oepc.yml/divine-mix032.oepc.yml	false	ERROR(ineffective witness)	0.763845	42.04982577999999	35.414016
+pthread-wmm/mix032.opt.yml/divine-mix032.opt.yml	false	ERROR(ineffective witness)	0.76053	41.99006639199996	34.869248
+pthread-wmm/mix033.opt.yml/divine-mix033.opt.yml	false	ERROR(ineffective witness)	0.770648	41.756776129	35.065856
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.778392	43.93364480700001	35.217408
+pthread-wmm/mix033_tso.oepc.yml/divine-mix033_tso.oepc.yml	false	ERROR(ineffective witness)	0.776579	43.06780910499998	35.209216
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/divine-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	ERROR(ineffective witness)	0.741746	42.50487140399997	35.016704
+pthread-wmm/mix034_pso.opt_tso.opt.yml/divine-mix034_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.746515	42.50274764400001	34.758656
+pthread-wmm/mix035.oepc.yml/divine-mix035.oepc.yml	false	ERROR(ineffective witness)	0.765303	41.43757154399998	35.155968
+pthread-wmm/mix035_power.opt_rmo.opt.yml/divine-mix035_power.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.753586	41.718279526	35.008512
+pthread-wmm/mix035_pso.opt_tso.opt.yml/divine-mix035_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.755657	42.86853092000001	34.967552
+pthread-wmm/mix038.opt.yml/divine-mix038.opt.yml	false	ERROR(ineffective witness)	0.773359	43.330391383999995	34.942976
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.785154	42.54889520100005	35.074048
+pthread-wmm/mix038_tso.oepc.yml/divine-mix038_tso.oepc.yml	false	ERROR(ineffective witness)	0.792582	42.77900956799999	35.041280
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.743498	42.14833845499999	34.983936
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/divine-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.761706	42.54907160100004	35.303424
+pthread-wmm/mix042.oepc.yml/divine-mix042.oepc.yml	false	ERROR(ineffective witness)	0.764084	42.04405627900002	35.098624
+pthread-wmm/mix042.opt.yml/divine-mix042.opt.yml	false	ERROR(ineffective witness)	0.774876	41.52851928199999	35.078144
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.772694	42.637460363	35.287040
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/divine-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.760869	42.70132683400004	35.127296
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/divine-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.744836	42.50299966199998	35.065856
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/divine-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.773014	43.011685587000045	35.065856
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/divine-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.79598	43.13801787699998	35.135488
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/divine-mix052_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.766268	42.856579753000005	34.881536
+pthread-wmm/mix052_tso.oepc.yml/divine-mix052_tso.oepc.yml	false	ERROR(ineffective witness)	0.782587	42.38540326399999	35.139584
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/divine-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.747982	43.53460256599999	34.979840
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/divine-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.747994	42.35121772299999	34.947072
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.770646	41.90786637000002	35.246080
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/divine-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.756724	43.04900594899999	35.086336
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/divine-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.801699	42.80766710200004	35.627008
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/divine-rfi000_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.753486	42.91117417499993	35.024896
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/divine-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.749732	42.559481378000044	35.065856
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/divine-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.754001	42.93589431700002	35.008512
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.75445	42.47881652800004	34.877440
+pthread-wmm/rfi004.yml/divine-rfi004.yml	false	ERROR(ineffective witness)	0.761816	41.149517507999974	34.897920
+pthread-wmm/rfi005.yml/divine-rfi005.yml	false	false(unreach-call)	0.757018	42.49248055099997	35.401728
+pthread-wmm/rfi006_power.oepc.yml/divine-rfi006_power.oepc.yml	false	ERROR(ineffective witness)	0.806808	41.55060638900005	35.344384
+pthread-wmm/rfi006_power.opt.yml/divine-rfi006_power.opt.yml	false	ERROR(ineffective witness)	0.819487	42.594899503999955	35.336192
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/divine-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.784661	42.450191781	35.356672
+pthread-wmm/rfi006_rmo.yml/divine-rfi006_rmo.yml	false	ERROR(ineffective witness)	0.786542	42.221068095999954	35.074048
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.740963	41.850142396000024	35.049472
+pthread-wmm/rfi007_tso.yml/divine-rfi007_tso.yml	false	ERROR(ineffective witness)	0.785683	43.48779625899999	35.135488
+pthread-wmm/rfi008.oepc.yml/divine-rfi008.oepc.yml	false	ERROR(ineffective witness)	0.787121	43.01792192800008	35.389440
+pthread-wmm/rfi008.opt.yml/divine-rfi008.opt.yml	false	ERROR(ineffective witness)	0.784565	42.38507581199997	35.196928
+pthread-wmm/rfi009_power.oepc.yml/divine-rfi009_power.oepc.yml	false	ERROR(ineffective witness)	0.832164	43.798440578000054	35.192832
+pthread-wmm/rfi009_rmo.oepc.yml/divine-rfi009_rmo.oepc.yml	false	ERROR(ineffective witness)	0.797617	42.37315039199996	35.229696
+pthread-wmm/rfi010.yml/divine-rfi010.yml	false	ERROR(ineffective witness)	0.776205	42.13971070900004	35.135488
+pthread-wmm/safe000_power.oepc.yml/divine-safe000_power.oepc.yml	false	ERROR(ineffective witness)	0.830342	42.55129801599992	35.680256
+pthread-wmm/safe000_power.opt.yml/divine-safe000_power.opt.yml	false	ERROR(ineffective witness)	0.786742	41.73279773499996	35.340288
+pthread-wmm/safe000_rmo.yml/divine-safe000_rmo.yml	false	ERROR(ineffective witness)	0.817918	42.66994311499991	35.545088
+pthread-wmm/safe001_power.oepc.yml/divine-safe001_power.oepc.yml	false	ERROR(ineffective witness)	0.830303	42.0631247529999	35.475456
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/divine-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.777565	43.03022754400001	35.065856
+pthread-wmm/safe001_rmo.oepc.yml/divine-safe001_rmo.oepc.yml	false	ERROR(ineffective witness)	0.845857	44.04670954200003	35.315712
+pthread-wmm/safe002_power.oepc.yml/divine-safe002_power.oepc.yml	false	ERROR(ineffective witness)	0.858603	43.87582249299999	35.557376
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/divine-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.771694	42.019456418999994	35.082240
+pthread-wmm/safe002_rmo.oepc.yml/divine-safe002_rmo.oepc.yml	false	ERROR(ineffective witness)	0.845273	42.04472388499994	35.532800
+pthread-wmm/safe003_power.opt.yml/divine-safe003_power.opt.yml	false	ERROR(ineffective witness)	0.79542	42.157527996	35.274752
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/divine-safe004_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.778434	41.28618475099995	35.098624
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.763961	42.671612459000016	34.832384
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/divine-safe006_power.oepc-thin000_power.oepc.yml	false	ERROR(ineffective witness)	0.758526	42.363017343000024	34.877440
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/divine-safe006_power.opt-thin000_power.opt.yml	false	ERROR(ineffective witness)	0.762847	42.48430292399996	35.340288
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/divine-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.748229	41.52715055099998	34.795520
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/divine-safe007_power.oepc-thin001_power.oepc.yml	false	ERROR(ineffective witness)	0.790769	43.99294167300002	34.897920
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/divine-safe007_power.opt-thin001_power.opt.yml	false	ERROR(ineffective witness)	0.804448	43.73236174800002	35.315712
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/divine-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.792601	43.38265658299997	34.967552
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.783306	42.80668299699994	35.033088
+pthread-wmm/safe008_power.opt.yml/divine-safe008_power.opt.yml	false	ERROR(ineffective witness)	0.805494	43.27470790899997	35.405824
+pthread-wmm/safe009_power.oepc.yml/divine-safe009_power.oepc.yml	false	ERROR(ineffective witness)	0.831464	42.518503284000076	35.274752
+pthread-wmm/safe009_power.opt.yml/divine-safe009_power.opt.yml	false	ERROR(ineffective witness)	0.78584	42.13442051599998	35.299328
+pthread-wmm/safe009_rmo.oepc.yml/divine-safe009_rmo.oepc.yml	false	ERROR(ineffective witness)	0.798101	42.15461045500001	35.278848
+pthread-wmm/safe009_rmo.opt.yml/divine-safe009_rmo.opt.yml	false	ERROR(ineffective witness)	0.771832	42.132119085	35.164160
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.743096	41.91713835299993	34.902016
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/divine-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.779087	43.15749128999994	35.028992
+pthread-wmm/safe011_power.opt_pso.opt.yml/divine-safe011_power.opt_pso.opt.yml	false	ERROR(ineffective witness)	0.768054	42.107654124999954	34.983936
+pthread-wmm/safe012_power.oepc.yml/divine-safe012_power.oepc.yml	false	ERROR(ineffective witness)	0.808453	44.14915089700003	35.016704
+pthread-wmm/safe012_power.opt.yml/divine-safe012_power.opt.yml	false	ERROR(ineffective witness)	0.800787	41.77309863400001	35.291136
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/divine-safe012_pso.oepc_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.783456	42.23781536899992	34.844672
+pthread-wmm/safe012_rmo.oepc.yml/divine-safe012_rmo.oepc.yml	false	ERROR(ineffective witness)	0.798781	43.35193179099997	35.385344
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.75983	42.865407158999915	34.918400
+pthread-wmm/safe014_power.oepc.yml/divine-safe014_power.oepc.yml	false	ERROR(ineffective witness)	0.767776	42.01580674499996	34.942976
+pthread-wmm/safe014_power.opt.yml/divine-safe014_power.opt.yml	false	ERROR(ineffective witness)	0.778392	41.856048018000024	35.061760
+pthread-wmm/safe014_rmo.oepc.yml/divine-safe014_rmo.oepc.yml	false	ERROR(ineffective witness)	0.760439	42.29296398199995	34.750464
+pthread-wmm/safe014_rmo.opt.yml/divine-safe014_rmo.opt.yml	false	ERROR(ineffective witness)	0.838426	42.64477218100001	35.569664
+pthread-wmm/safe015_power.oepc.yml/divine-safe015_power.oepc.yml	false	false(unreach-call)	0.792948	42.57697989600001	35.524608
+pthread-wmm/safe015_power.opt.yml/divine-safe015_power.opt.yml	false	ERROR(ineffective witness)	0.855612	43.22058125900003	35.667968
+pthread-wmm/safe015_rmo.yml/divine-safe015_rmo.yml	false	ERROR(ineffective witness)	0.828545	43.87729268800001	35.614720
+pthread-wmm/safe016_power.oepc.yml/divine-safe016_power.oepc.yml	false	ERROR(ineffective witness)	0.839901	43.792147194999984	35.373056
+pthread-wmm/safe016_rmo.oepc.yml/divine-safe016_rmo.oepc.yml	false	ERROR(ineffective witness)	0.817872	42.033906466000076	35.495936
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.771939	42.28388724499996	35.045376
+pthread-wmm/safe018_power.oepc.yml/divine-safe018_power.oepc.yml	false	ERROR(ineffective witness)	0.777334	41.63498056699996	34.926592
+pthread-wmm/safe018_power.opt.yml/divine-safe018_power.opt.yml	false	ERROR(ineffective witness)	0.803311	42.59061513200004	35.278848
+pthread-wmm/safe018_rmo.oepc.yml/divine-safe018_rmo.oepc.yml	false	ERROR(ineffective witness)	0.76569	42.739638515000024	35.008512
+pthread-wmm/safe018_rmo.opt.yml/divine-safe018_rmo.opt.yml	false	ERROR(ineffective witness)	0.791711	41.53356444499991	35.430400
+pthread-wmm/safe019_power.oepc.yml/divine-safe019_power.oepc.yml	false	ERROR(ineffective witness)	0.827782	42.08180397600006	35.143680
+pthread-wmm/safe019_rmo.oepc.yml/divine-safe019_rmo.oepc.yml	false	ERROR(ineffective witness)	0.804866	40.99666479799998	35.213312
+pthread-wmm/safe020_power.yml/divine-safe020_power.yml	false	ERROR(ineffective witness)	0.820648	43.714586372999975	35.360768
+pthread-wmm/safe020_rmo.yml/divine-safe020_rmo.yml	false	ERROR(ineffective witness)	0.814167	44.12464157299996	35.143680
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/divine-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.779472	43.950401145	35.053568
+pthread-wmm/safe021_power.opt_pso.opt.yml/divine-safe021_power.opt_pso.opt.yml	false	ERROR(ineffective witness)	0.77281	42.78736689300001	35.196928
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.74973	41.83157389400003	35.127296
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.767761	42.53840147199992	34.902016
+pthread-wmm/safe025_power.yml/divine-safe025_power.yml	false	false(unreach-call)	0.803259	41.71167454500005	35.459072
+pthread-wmm/safe025_rmo.yml/divine-safe025_rmo.yml	false	ERROR(ineffective witness)	0.830942	41.440318879000074	35.360768
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.763442	42.970752885000024	34.926592
+pthread-wmm/safe027_power.oepc.yml/divine-safe027_power.oepc.yml	false	ERROR(ineffective witness)	0.835717	43.90488259699998	35.115008
+pthread-wmm/safe027_rmo.yml/divine-safe027_rmo.yml	false	ERROR(ineffective witness)	0.809473	43.01290754899992	35.168256
+pthread-wmm/safe028_power.yml/divine-safe028_power.yml	false	ERROR(ineffective witness)	0.821889	42.881461744000035	35.258368
+pthread-wmm/safe028_rmo.yml/divine-safe028_rmo.yml	false	ERROR(ineffective witness)	0.822574	43.339573484000084	35.450880
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/divine-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.763343	42.40720466200003	34.877440
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/divine-safe029_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.733904	43.439916693999976	35.004416
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/divine-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.765146	43.23177413799999	35.278848
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/divine-safe030_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.764247	42.24631918099999	35.110912
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/divine-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.754144	42.530529071000046	35.061760
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/divine-safe031_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.753132	42.12090341399994	35.102720
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.74527	41.61284328199997	34.811904
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.750897	42.57737858600001	34.820096
+pthread-wmm/thin002_power.oepc.yml/divine-thin002_power.oepc.yml	false	ERROR(ineffective witness)	0.794933	43.376929913000026	34.914304
+pthread-wmm/thin002_rmo.yml/divine-thin002_rmo.yml	false	ERROR(ineffective witness)	0.774639	43.776766377999934	34.881536
+pthread/fib_unsafe-5.yml/divine-fib_unsafe-5.yml	false	ERROR(ineffective witness)	0.541338	1.000363558999993	34.525184
+pthread/fib_unsafe-6.yml/divine-fib_unsafe-6.yml	false	ERROR(ineffective witness)	0.558413	1.2872255629999927	34.562048
+pthread/fib_unsafe-7.yml/divine-fib_unsafe-7.yml	false	ERROR(ineffective witness)	0.560136	1.3949812619999875	34.533376
+pthread/lazy01.yml/divine-lazy01.yml	false	false(unreach-call)	0.564058	1.1922109340000588	35.274752
+pthread/queue.yml/divine-queue.yml	false	ERROR(ineffective witness)	0.646441	1.3704730059999974	35.102720
+pthread/queue_longer.yml/divine-queue_longer.yml	false	ERROR(ineffective witness)	0.635565	1.1910286990000714	35.065856
+pthread/queue_longest.yml/divine-queue_longest.yml	false	ERROR(ineffective witness)	0.64414	1.189175285000033	35.209216
+pthread/queue_ok_longer.yml/divine-queue_ok_longer.yml	true	ERROR(ineffective witness)	0.629247	1.4984847939999781	35.135488
+pthread/queue_ok_longest.yml/divine-queue_ok_longest.yml	true	ERROR(ineffective witness)	0.625891	1.6667375560000437	35.524608
+pthread/reorder_2.yml/divine-reorder_2.yml	false	ERROR(ineffective witness)	0.671869	1.9637888019999536	35.586048
+pthread/reorder_5.yml/divine-reorder_5.yml	false	ERROR(ineffective witness)	0.672015	1.606471966000072	35.528704
+pthread/singleton.yml/divine-singleton.yml	false	false(unreach-call)	0.652247	1.3934673619999103	35.762176
+pthread/stack-2.yml/divine-stack-2.yml	false	false(unreach-call)	0.644571	1.6222379620000993	35.192832
+pthread/stack_longer-1.yml/divine-stack_longer-1.yml	false	false(unreach-call)	0.643308	1.6027940310000304	35.188736
+pthread/stack_longest-1.yml/divine-stack_longest-1.yml	false	false(unreach-call)	0.624982	1.5144146139999748	35.168256
+pthread/stateful01-1.yml/divine-stateful01-1.yml	false	false(unreach-call)	0.557433	1.080947844000093	34.439168
+pthread/triangular-2.yml/divine-triangular-2.yml	false	ERROR(ineffective witness)	0.557498	1.1347122339999487	34.447360
+pthread/triangular-longer-2.yml/divine-triangular-longer-2.yml	false	ERROR(ineffective witness)	0.572821	1.707033679999995	34.488320
+pthread/triangular-longest-2.yml/divine-triangular-longest-2.yml	false	ERROR(ineffective witness)	0.575579	1.7872378389999994	34.582528
+pthread/twostage_3.yml/divine-twostage_3.yml	false	ERROR(ineffective witness)	0.685914	1.926720236000051	35.692544
+weaver/array-eq-symm.wvr.yml/divine-array-eq-symm.wvr.yml	true	ERROR(ineffective witness)	0.643208	42.45489706600006	33.714176
+weaver/array-eq-trans.wvr.yml/divine-array-eq-trans.wvr.yml	true	ERROR(ineffective witness)	0.659767	43.701695814000004	33.869824
+weaver/chl-array-int-subst.wvr.yml/divine-chl-array-int-subst.wvr.yml	true	ERROR(ineffective witness)	0.658776	42.83127113900002	33.837056
+weaver/chl-array-int-symm.wvr.yml/divine-chl-array-int-symm.wvr.yml	true	ERROR(ineffective witness)	0.65402	42.229932467000026	33.943552
+weaver/chl-array-int-trans.wvr.yml/divine-chl-array-int-trans.wvr.yml	true	ERROR(ineffective witness)	0.644593	42.27005008999993	34.185216
+weaver/chl-collitem-symm.wvr.yml/divine-chl-collitem-symm.wvr.yml	true	ERROR(ineffective witness)	0.641265	42.220754693	33.742848
+weaver/chl-name-comparator-subst.wvr.yml/divine-chl-name-comparator-subst.wvr.yml	true	ERROR(ineffective witness)	0.671091	41.54233004900004	34.045952
+weaver/chl-name-comparator-symm.wvr.yml/divine-chl-name-comparator-symm.wvr.yml	true	ERROR(ineffective witness)	0.65281	42.328510714000004	34.086912
+weaver/chl-name-comparator-trans.wvr.yml/divine-chl-name-comparator-trans.wvr.yml	true	ERROR(ineffective witness)	0.677471	41.94185917899995	34.050048
+weaver/chl-node-subst.wvr.yml/divine-chl-node-subst.wvr.yml	true	ERROR(ineffective witness)	0.671861	41.10194597200007	34.295808
+weaver/chl-node-symm.wvr.yml/divine-chl-node-symm.wvr.yml	true	ERROR(ineffective witness)	0.651417	42.81529226199996	33.837056
+weaver/chl-node-trans.wvr.yml/divine-chl-node-trans.wvr.yml	true	ERROR(ineffective witness)	0.657118	42.65915148599993	34.193408
+weaver/chl-nzb-file-symm.wvr.yml/divine-chl-nzb-file-symm.wvr.yml	true	ERROR(Incompatible witness)	0.316742	0.8288556740000104	26.480640
+weaver/chl-poker-hand-subst.wvr.yml/divine-chl-poker-hand-subst.wvr.yml	true	ERROR(ineffective witness)	0.811185	42.477776371000004	36.007936
+weaver/chl-poker-hand-trans.wvr.yml/divine-chl-poker-hand-trans.wvr.yml	true	ERROR(ineffective witness)	0.822146	43.49125657000002	35.913728
+weaver/chl-time-subst.wvr.yml/divine-chl-time-subst.wvr.yml	true	ERROR(ineffective witness)	0.652302	42.73623934	33.738752
+weaver/chl-time-symm.wvr.yml/divine-chl-time-symm.wvr.yml	true	ERROR(ineffective witness)	0.637312	41.69120196999995	34.246656
+weaver/chl-time-trans.wvr.yml/divine-chl-time-trans.wvr.yml	true	ERROR(ineffective witness)	0.653914	43.38353505700002	33.738752
+weaver/chl-word-subst.wvr.yml/divine-chl-word-subst.wvr.yml	true	ERROR(ineffective witness)	0.647216	43.224402263	33.878016
+weaver/chl-word-symm.wvr.yml/divine-chl-word-symm.wvr.yml	true	ERROR(ineffective witness)	0.652428	43.52791691899995	33.931264
+weaver/chl-word-trans.wvr.yml/divine-chl-word-trans.wvr.yml	true	ERROR(ineffective witness)	0.664213	43.205692112000065	34.004992
+weaver/fibonacci.wvr.yml/divine-fibonacci.wvr.yml	true	ERROR(ineffective witness)	0.64795	41.428332828000066	33.951744
+weaver/loop-tiling-eq.wvr.yml/divine-loop-tiling-eq.wvr.yml	true	ERROR(ineffective witness)	0.646179	41.516752253999925	33.763328
+weaver/parallel-bakery-2.wvr.yml/divine-parallel-bakery-2.wvr.yml	true	ERROR(ineffective witness)	0.653482	42.55977310200001	33.914880
+weaver/parallel-bakery-3.wvr.yml/divine-parallel-bakery-3.wvr.yml	true	ERROR(ineffective witness)	0.677011	42.394634404000044	33.931264
+weaver/parallel-bakery-4.wvr.yml/divine-parallel-bakery-4.wvr.yml	true	ERROR(ineffective witness)	0.714116	42.97251372099993	34.230272
+weaver/parallel-lamport.wvr.yml/divine-parallel-lamport.wvr.yml	true	ERROR(ineffective witness)	0.531459	42.27339467999991	34.017280
+weaver/parallel-min-max-1.wvr.yml/divine-parallel-min-max-1.wvr.yml	true	ERROR(ineffective witness)	0.528605	41.693537085	33.984512
+weaver/parallel-misc-1.wvr.yml/divine-parallel-misc-1.wvr.yml	true	ERROR(ineffective witness)	0.649341	42.36752624099995	33.861632
+weaver/parallel-misc-4.wvr.yml/divine-parallel-misc-4.wvr.yml	true	ERROR(ineffective witness)	0.534898	42.02476594099994	33.886208
+weaver/parallel-misc-5.wvr.yml/divine-parallel-misc-5.wvr.yml	true	ERROR(ineffective witness)	0.531113	43.39285957499999	34.254848
+weaver/parallel-parallel-sum-1-dsl.wvr.yml/divine-parallel-parallel-sum-1-dsl.wvr.yml	true	ERROR(ineffective witness)	0.596267	42.079313388999935	34.062336
+weaver/parallel-parallel-sum-1.wvr.yml/divine-parallel-parallel-sum-1.wvr.yml	true	ERROR(ineffective witness)	0.665865	41.54978099099992	33.796096
+weaver/parallel-parallel-sum-2.wvr.yml/divine-parallel-parallel-sum-2.wvr.yml	true	ERROR(ineffective witness)	0.599388	42.40444296800001	34.209792
+weaver/parallel-parallel-sum-equiv.wvr.yml/divine-parallel-parallel-sum-equiv.wvr.yml	true	ERROR(ineffective witness)	0.574609	42.106999629999905	33.886208
+weaver/popl20-bad-buffer-mult-alt.wvr.yml/divine-popl20-bad-buffer-mult-alt.wvr.yml	false	ERROR(ineffective witness)	0.54583	41.42775986200013	33.845248
+weaver/popl20-bad-buffer-mult-alt2.wvr.yml/divine-popl20-bad-buffer-mult-alt2.wvr.yml	true	ERROR(ineffective witness)	0.53622	42.9354881779999	33.964032
+weaver/popl20-bad-commit-1.wvr-bad.yml/divine-popl20-bad-commit-1.wvr-bad.yml	true	ERROR(ineffective witness)	0.673025	42.67698996499996	34.021376
+weaver/popl20-bad-commit-2.wvr-bad.yml/divine-popl20-bad-commit-2.wvr-bad.yml	true	ERROR(ineffective witness)	0.683633	42.306227193999916	34.324480
+weaver/popl20-bad-counter-queue.wvr.yml/divine-popl20-bad-counter-queue.wvr.yml	false	ERROR(ineffective witness)	0.654882	42.36055136499999	34.062336
+weaver/popl20-bad-counter-queue2.wvr.yml/divine-popl20-bad-counter-queue2.wvr.yml	true	ERROR(ineffective witness)	0.647509	41.94651372800013	33.964032
+weaver/popl20-bad-dot-product-alt.wvr.yml/divine-popl20-bad-dot-product-alt.wvr.yml	true	ERROR(ineffective witness)	0.525573	42.40725389699992	33.878016
+weaver/popl20-bad-dot-product.wvr.yml/divine-popl20-bad-dot-product.wvr.yml	true	ERROR(ineffective witness)	0.518085	42.51360755699989	34.004992
+weaver/popl20-bad-ring-nondet.wvr.yml/divine-popl20-bad-ring-nondet.wvr.yml	true	ERROR(ineffective witness)	0.651817	42.5333167010001	34.185216
+weaver/popl20-bad-ring.wvr.yml/divine-popl20-bad-ring.wvr.yml	true	ERROR(ineffective witness)	0.648585	42.21609169600015	33.980416
+weaver/popl20-bad-threaded-sum-2.wvr.yml/divine-popl20-bad-threaded-sum-2.wvr.yml	true	ERROR(Incompatible witness)	0.281924	0.5982277190000787	26.423296
+weaver/popl20-bad-three-array-sum-alt.wvr.yml/divine-popl20-bad-three-array-sum-alt.wvr.yml	true	ERROR(ineffective witness)	0.645215	42.17142607300002	33.783808
+weaver/popl20-channel-sum.wvr.yml/divine-popl20-channel-sum.wvr.yml	true	ERROR(ineffective witness)	0.644555	42.30068969299987	33.804288
+weaver/popl20-commit-1.wvr.yml/divine-popl20-commit-1.wvr.yml	true	ERROR(ineffective witness)	0.666744	41.52135229800001	34.000896
+weaver/popl20-commit-2.wvr.yml/divine-popl20-commit-2.wvr.yml	true	ERROR(ineffective witness)	0.686347	42.54494732400008	34.058240
+weaver/popl20-counter-fun.wvr.yml/divine-popl20-counter-fun.wvr.yml	true	ERROR(ineffective witness)	0.648665	41.74066028600009	34.074624
+weaver/popl20-figure1-alt.wvr.yml/divine-popl20-figure1-alt.wvr.yml	true	ERROR(ineffective witness)	0.637543	42.11558154199997	33.964032
+weaver/popl20-horseshoe.wvr.yml/divine-popl20-horseshoe.wvr.yml	true	ERROR(ineffective witness)	0.654938	42.274733736000144	33.849344
+weaver/popl20-min-max-dec.wvr.yml/divine-popl20-min-max-dec.wvr.yml	true	ERROR(ineffective witness)	0.516863	41.46260813499998	33.779712
+weaver/popl20-min-max-inc-dec.wvr.yml/divine-popl20-min-max-inc-dec.wvr.yml	true	ERROR(ineffective witness)	0.531923	42.21311421199994	33.988608
+weaver/popl20-min-max-inc.wvr.yml/divine-popl20-min-max-inc.wvr.yml	true	ERROR(ineffective witness)	0.531688	40.65155091500014	33.955840
+weaver/popl20-more-array-sum-alt.wvr.yml/divine-popl20-more-array-sum-alt.wvr.yml	false	ERROR(ineffective witness)	0.641578	41.704532039000014	33.939456
+weaver/popl20-more-array-sum-alt2.wvr.yml/divine-popl20-more-array-sum-alt2.wvr.yml	true	ERROR(ineffective witness)	0.654274	42.340275478000194	33.955840
+weaver/popl20-more-array-sum.wvr.yml/divine-popl20-more-array-sum.wvr.yml	false	ERROR(ineffective witness)	0.53097	42.72838104399989	33.845248
+weaver/popl20-more-array-sum2.wvr.yml/divine-popl20-more-array-sum2.wvr.yml	true	ERROR(ineffective witness)	0.528337	41.64707339000006	33.787904
+weaver/popl20-more-buffer-mult.wvr.yml/divine-popl20-more-buffer-mult.wvr.yml	false	ERROR(ineffective witness)	0.691177	42.78746457600005	34.013184
+weaver/popl20-more-buffer-mult2.wvr.yml/divine-popl20-more-buffer-mult2.wvr.yml	true	ERROR(ineffective witness)	0.676454	42.24461039100015	33.972224
+weaver/popl20-more-buffer-series.wvr.yml/divine-popl20-more-buffer-series.wvr.yml	false	ERROR(ineffective witness)	0.681511	43.5075348270002	33.890304
+weaver/popl20-more-buffer-series2.wvr.yml/divine-popl20-more-buffer-series2.wvr.yml	true	ERROR(ineffective witness)	0.676577	42.746351358000084	33.935360
+weaver/popl20-more-dec-subseq.wvr.yml/divine-popl20-more-dec-subseq.wvr.yml	true	ERROR(ineffective witness)	0.523495	41.66880878899997	34.054144
+weaver/popl20-more-inc-subseq.wvr.yml/divine-popl20-more-inc-subseq.wvr.yml	true	ERROR(ineffective witness)	0.523175	42.126894411999956	33.955840
+weaver/popl20-more-max-array-hom.wvr.yml/divine-popl20-more-max-array-hom.wvr.yml	true	ERROR(ineffective witness)	0.521437	42.28567036100003	34.013184
+weaver/popl20-more-max-array.wvr.yml/divine-popl20-more-max-array.wvr.yml	true	ERROR(ineffective witness)	0.518486	41.38601301699987	34.004992
+weaver/popl20-more-min-array-hom.wvr.yml/divine-popl20-more-min-array-hom.wvr.yml	true	ERROR(ineffective witness)	0.525836	42.332378270999925	33.742848
+weaver/popl20-more-min-array.wvr.yml/divine-popl20-more-min-array.wvr.yml	true	ERROR(ineffective witness)	0.526451	41.29305247699995	33.845248
+weaver/popl20-more-min-le-max.wvr.yml/divine-popl20-more-min-le-max.wvr.yml	true	ERROR(ineffective witness)	0.514935	41.948649552999996	33.964032
+weaver/popl20-more-mts.wvr.yml/divine-popl20-more-mts.wvr.yml	true	ERROR(ineffective witness)	0.534517	42.04017632499995	33.763328
+weaver/popl20-more-multiply-verify.wvr.yml/divine-popl20-more-multiply-verify.wvr.yml	true	ERROR(ineffective witness)	0.651602	41.7429736319998	33.726464
+weaver/popl20-more-queue-add-2-nl.wvr.yml/divine-popl20-more-queue-add-2-nl.wvr.yml	true	ERROR(ineffective witness)	0.645412	42.43561329799991	33.996800
+weaver/popl20-more-queue-add-3-nl.wvr.yml/divine-popl20-more-queue-add-3-nl.wvr.yml	true	ERROR(ineffective witness)	0.660103	42.88767440700008	33.976320
+weaver/popl20-more-sorted.wvr.yml/divine-popl20-more-sorted.wvr.yml	true	ERROR(ineffective witness)	0.530718	41.75001425200003	33.968128
+weaver/popl20-more-sum-array-hom.wvr.yml/divine-popl20-more-sum-array-hom.wvr.yml	true	ERROR(ineffective witness)	0.645678	42.706581070000084	33.918976
+weaver/popl20-more-vector-add.wvr.yml/divine-popl20-more-vector-add.wvr.yml	true	ERROR(ineffective witness)	0.649898	41.64684591100013	33.775616
+weaver/popl20-nonblocking-cntr-alt.wvr.yml/divine-popl20-nonblocking-cntr-alt.wvr.yml	true	ERROR(ineffective witness)	0.509319	41.3296190179999	34.066432
+weaver/popl20-prod-cons-eq.wvr.yml/divine-popl20-prod-cons-eq.wvr.yml	true	ERROR(ineffective witness)	0.66805	42.09783754399996	34.144256
+weaver/popl20-prod-cons.wvr.yml/divine-popl20-prod-cons.wvr.yml	true	ERROR(ineffective witness)	0.655615	42.15224923100004	33.734656
+weaver/popl20-prod-cons3.wvr.yml/divine-popl20-prod-cons3.wvr.yml	true	ERROR(ineffective witness)	0.65763	42.53719141900001	33.853440
+weaver/popl20-queue-add-2.wvr.yml/divine-popl20-queue-add-2.wvr.yml	true	ERROR(ineffective witness)	0.639655	41.92528892700011	33.820672
+weaver/popl20-queue-add-3.wvr.yml/divine-popl20-queue-add-3.wvr.yml	true	ERROR(ineffective witness)	0.650901	42.83953738100013	33.812480
+weaver/popl20-send-receive-alt.wvr.yml/divine-popl20-send-receive-alt.wvr.yml	true	ERROR(ineffective witness)	0.646959	42.166182300999935	34.160640
+weaver/popl20-send-receive.wvr.yml/divine-popl20-send-receive.wvr.yml	true	ERROR(ineffective witness)	0.658806	42.282289884999955	33.931264
+weaver/popl20-simple-array-sum.wvr.yml/divine-popl20-simple-array-sum.wvr.yml	true	ERROR(ineffective witness)	0.652842	42.32587508000006	34.004992
+weaver/popl20-simple-queue.wvr.yml/divine-popl20-simple-queue.wvr.yml	true	ERROR(ineffective witness)	0.643139	41.586121751000064	33.955840
+weaver/popl20-threaded-sum-3.wvr.yml/divine-popl20-threaded-sum-3.wvr.yml	true	ERROR(ineffective witness)	0.522466	42.34458790899998	34.156544
+weaver/popl20-three-array-max.wvr.yml/divine-popl20-three-array-max.wvr.yml	true	ERROR(ineffective witness)	0.529922	42.41252415000008	33.943552
+weaver/popl20-three-array-min.wvr.yml/divine-popl20-three-array-min.wvr.yml	true	ERROR(ineffective witness)	0.526099	42.73961296599987	33.980416
+weaver/popl20-three-array-sum.wvr.yml/divine-popl20-three-array-sum.wvr.yml	true	ERROR(ineffective witness)	0.647554	41.37736841699984	33.775616
+weaver/popl20-two-queue.wvr.yml/divine-popl20-two-queue.wvr.yml	true	ERROR(ineffective witness)	0.636641	41.54684609099991	33.914880
+weaver/spaghetti.wvr.yml/divine-spaghetti.wvr.yml	true	ERROR(ineffective witness)	0.658289	42.295190631000196	33.992704
+weaver/test-context1.wvr.yml/divine-test-context1.wvr.yml	true	ERROR(ineffective witness)	0.641194	42.08979457200007	33.939456
+weaver/test-easy1.wvr.yml/divine-test-easy1.wvr.yml	true	ERROR(ineffective witness)	0.65184	42.55561966999994	34.078720
+weaver/test-easy11.wvr.yml/divine-test-easy11.wvr.yml	true	ERROR(ineffective witness)	0.63586	42.25948677999986	33.980416
+weaver/test-easy6.wvr.yml/divine-test-easy6.wvr.yml	true	ERROR(ineffective witness)	0.643533	41.95614888399996	33.812480
+weaver/test-easy8.wvr.yml/divine-test-easy8.wvr.yml	true	ERROR(ineffective witness)	0.639454	42.29230624599995	33.804288
+weaver/unroll-2.wvr.yml/divine-unroll-2.wvr.yml	true	ERROR(ineffective witness)	0.511817	40.645465265999974	33.804288
+weaver/unroll-3.wvr.yml/divine-unroll-3.wvr.yml	true	ERROR(ineffective witness)	0.521139	40.42690931999982	33.927168
+weaver/unroll-4.wvr.yml/divine-unroll-4.wvr.yml	true	ERROR(ineffective witness)	0.529162	40.89990817099988	33.988608
+weaver/unroll-5.wvr.yml/divine-unroll-5.wvr.yml	true	ERROR(ineffective witness)	0.523897	26.296667778000028	34.017280
+weaver/unroll-cond-2.wvr.yml/divine-unroll-cond-2.wvr.yml	true	ERROR(ineffective witness)	0.522086	24.529471590000185	33.984512
+weaver/unroll-cond-3.wvr.yml/divine-unroll-cond-3.wvr.yml	true	ERROR(ineffective witness)	0.518763	24.75766454099994	33.959936
+weaver/unroll-cond-4.wvr.yml/divine-unroll-cond-4.wvr.yml	true	ERROR(ineffective witness)	0.526368	23.827319361000036	34.066432
+weaver/unroll-cond-5.wvr.yml/divine-unroll-cond-5.wvr.yml	true	ERROR(ineffective witness)	0.499835	22.47271277499999	33.837056

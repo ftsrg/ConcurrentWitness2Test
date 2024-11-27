@@ -1,0 +1,35 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.yml/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 84, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_bf2mzwlz/tmp/tmpogic9zc0.c
+Compilation started
+/usr/bin/ld: /tmp/BenchExec_run_bf2mzwlz/tmp/ccMMSI6W.o: warning: relocation against `x86_platform' in read-only section `.text'
+/usr/bin/ld: /tmp/BenchExec_run_bf2mzwlz/tmp/ccMMSI6W.o: in function `has_persistent_clock':
+tmpogic9zc0.c:(.text+0xb64): undefined reference to `persistent_clock_exist'
+/usr/bin/ld: /tmp/BenchExec_run_bf2mzwlz/tmp/ccMMSI6W.o: in function `from_kuid_munged':
+tmpogic9zc0.c:(.text+0xf44): undefined reference to `overflowuid'
+/usr/bin/ld: /tmp/BenchExec_run_bf2mzwlz/tmp/ccMMSI6W.o: in function `from_kgid_munged':
+tmpogic9zc0.c:(.text+0xf7f): undefined reference to `overflowgid'
+/usr/bin/ld: /tmp/BenchExec_run_bf2mzwlz/tmp/ccMMSI6W.o: in function `get_max_mapped':
+tmpogic9zc0.c:(.text+0x10a0): undefined reference to `max_pfn_mapped'
+/usr/bin/ld: /tmp/BenchExec_run_bf2mzwlz/tmp/ccMMSI6W.o: in function `massage_pgprot':
+tmpogic9zc0.c:(.text+0x3aeb): undefined reference to `__supported_pte_mask'
+/usr/bin/ld: /tmp/BenchExec_run_bf2mzwlz/tmp/ccMMSI6W.o: in function `is_new_memtype_allowed':
+tmpogic9zc0.c:(.text+0x3c6b): undefined reference to `x86_platform'
+/usr/bin/ld: /tmp/BenchExec_run_bf2mzwlz/tmp/ccMMSI6W.o:(.data.rel+0x10): undefined reference to `nsc_gpio_dump'
+/usr/bin/ld: /tmp/BenchExec_run_bf2mzwlz/tmp/ccMMSI6W.o:(.data.rel+0x48): undefined reference to `no_llseek'
+/usr/bin/ld: /tmp/BenchExec_run_bf2mzwlz/tmp/ccMMSI6W.o:(.data.rel+0x50): undefined reference to `nsc_gpio_read'
+/usr/bin/ld: /tmp/BenchExec_run_bf2mzwlz/tmp/ccMMSI6W.o:(.data.rel+0x58): undefined reference to `nsc_gpio_write'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

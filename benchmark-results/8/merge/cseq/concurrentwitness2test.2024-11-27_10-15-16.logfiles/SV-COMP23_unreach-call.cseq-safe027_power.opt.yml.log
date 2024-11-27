@@ -1,0 +1,32 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/safe027_power.opt.yml/safe027_power.opt.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/safe027_power.opt.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 85, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_polj8ecr/tmp/tmp98u41hnz.c
+Compilation started
+/tmp/BenchExec_run_polj8ecr/tmp/tmp98u41hnz.c: In function ‘P0’:
+/tmp/BenchExec_run_polj8ecr/tmp/tmp98u41hnz.c:591:19: error: ‘FALSE’ undeclared (first use in this function)
+  591 |   weak$$choice0 = FALSE;;
+      |                   ^~~~~
+/tmp/BenchExec_run_polj8ecr/tmp/tmp98u41hnz.c:591:19: note: each undeclared identifier is reported only once for each function it appears in
+/tmp/BenchExec_run_polj8ecr/tmp/tmp98u41hnz.c: In function ‘P2’:
+/tmp/BenchExec_run_polj8ecr/tmp/tmp98u41hnz.c:649:19: error: ‘FALSE’ undeclared (first use in this function)
+  649 |   weak$$choice0 = FALSE;;
+      |                   ^~~~~
+/tmp/BenchExec_run_polj8ecr/tmp/tmp98u41hnz.c:650:19: error: ‘TRUE’ undeclared (first use in this function)
+  650 |   weak$$choice2 = TRUE;;
+      |                   ^~~~
+/tmp/BenchExec_run_polj8ecr/tmp/tmp98u41hnz.c: In function ‘main’:
+/tmp/BenchExec_run_polj8ecr/tmp/tmp98u41hnz.c:753:19: error: ‘TRUE’ undeclared (first use in this function)
+  753 |   weak$$choice1 = TRUE;;
+      |                   ^~~~
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

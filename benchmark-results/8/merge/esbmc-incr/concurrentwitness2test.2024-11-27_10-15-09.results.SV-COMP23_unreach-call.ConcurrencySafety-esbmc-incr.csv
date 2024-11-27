@@ -1,0 +1,73 @@
+tool		ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-esbmc-incr	SV-COMP23_unreach-call.ConcurrencySafety-esbmc-incr	SV-COMP23_unreach-call.ConcurrencySafety-esbmc-incr	SV-COMP23_unreach-call.ConcurrencySafety-esbmc-incr
+../svcomp23-witness-benchmarks/tools/esbmc-incr/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/esbmc-incr-13-privatized_18-first-reads_unknown_1_neg.yml	false	false(unreach-call)	0.580685	1.5349474329999993	36.855808
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/esbmc-incr-13-privatized_18-first-reads_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.644889	1.5033907319999997	58.040320
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/esbmc-incr-13-privatized_18-first-reads_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.647549	1.4527704220000004	58.777600
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/esbmc-incr-13-privatized_18-first-reads_unknown_2_pos.yml	false	false(unreach-call)	0.572257	1.5204234819999982	35.266560
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/esbmc-incr-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	0.562348	1.505471252999996	36.425728
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/esbmc-incr-13-privatized_19-publish-precision_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.651649	1.4879916000000009	74.113024
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/esbmc-incr-13-privatized_19-publish-precision_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.650757	1.513467177999999	59.551744
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/esbmc-incr-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	0.557298	1.433262353999993	35.229696
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/esbmc-incr-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	false(unreach-call)	0.550969	1.3957786250000055	38.498304
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/esbmc-incr-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	false(unreach-call)	0.556699	1.4725017279999975	34.840576
+goblint-regression/13-privatized_68-pfscan_protected_loop_minimal_interval_true.yml/esbmc-incr-13-privatized_68-pfscan_protected_loop_minimal_interval_true.yml	true	ERROR(ineffective witness)	0.569119	1.392231042000006	34.684928
+goblint-regression/13-privatized_69-refine-protected-loop-interval_true.yml/esbmc-incr-13-privatized_69-refine-protected-loop-interval_true.yml	true	ERROR(ineffective witness)	0.566567	1.3244681249999957	34.783232
+goblint-regression/28-race_reach_45-escape_racing.yml/esbmc-incr-28-race_reach_45-escape_racing.yml	false	ERROR(ineffective witness)	0.600238	1.5464336609999947	34.672640
+goblint-regression/28-race_reach_94-alloc_region_racing.yml/esbmc-incr-28-race_reach_94-alloc_region_racing.yml	false	false(unreach-call)	0.796188	1.9773103029999959	35.917824
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/esbmc-incr-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.568761	1.3884884870000036	34.627584
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/esbmc-incr-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	false(unreach-call)	0.568271	1.3297321289999928	34.648064
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/esbmc-incr-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.546544	1.3206891180000042	34.639872
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/esbmc-incr-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	false(unreach-call)	0.538079	1.3528146999999962	34.635776
+ldv-races/race-1_2-join.yml/esbmc-incr-race-1_2-join.yml	false	ERROR(ineffective witness)	0.693352	1.579931306000006	36.081664
+ldv-races/race-1_3-join.yml/esbmc-incr-race-1_3-join.yml	false	ERROR(ineffective witness)	0.703264	1.6160352800000055	36.118528
+pthread-complex/elimination_backoff_stack.yml/esbmc-incr-elimination_backoff_stack.yml	false	ERROR(ineffective witness)	2.008492	4.229260730000007	36.315136
+pthread-divine/tls_destructor_worker.yml/esbmc-incr-tls_destructor_worker.yml	false	false(unreach-call)	0.592817	1.5592347820000043	34.611200
+pthread-ext/25_stack_longer-1.yml/esbmc-incr-25_stack_longer-1.yml	false	false(unreach-call)	0.734895	3.000412694000005	36.921344
+pthread-ext/25_stack_longest-2.yml/esbmc-incr-25_stack_longest-2.yml	false	false(unreach-call)	0.841148	4.497518400999994	49.512448
+pthread-ext/26_stack_cas_longer-1.yml/esbmc-incr-26_stack_cas_longer-1.yml	false	false(unreach-call)	0.689796	2.4176990349999983	34.697216
+pthread-ext/26_stack_cas_longest-1.yml/esbmc-incr-26_stack_cas_longest-1.yml	false	false(unreach-call)	0.751618	3.482528614000003	34.709504
+pthread-ext/28_buggy_simple_loop1_vf.yml/esbmc-incr-28_buggy_simple_loop1_vf.yml	false	TIMEOUT	23.748103	46.091753885	2314.166272
+pthread-ext/40_barrier_vf.yml/esbmc-incr-40_barrier_vf.yml	false	ERROR(ineffective witness)	0.804527	44.121566981000015	34.631680
+pthread-lit/qw2004-2b.yml/esbmc-incr-qw2004-2b.yml	false	ERROR(ineffective witness)	0.569671	1.7457894960000004	34.693120
+pthread-wmm/mix000.oepc.yml/esbmc-incr-mix000.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	0.787115	45.36744109900002	35.250176
+pthread-wmm/mix000.opt.yml/esbmc-incr-mix000.opt.yml	false	ERROR(ineffective witness)	0.804553	44.996230581999995	35.217408
+pthread-wmm/mix009.oepc.yml/esbmc-incr-mix009.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	0.767101	45.08868082400001	35.143680
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/esbmc-incr-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT	0.718588	46.073703521	35.098624
+pthread-wmm/mix012_pso.opt_tso.opt.yml/esbmc-incr-mix012_pso.opt_tso.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.806711	46.02910402299999	35.131392
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/esbmc-incr-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.776297	45.21428254600001	35.115008
+pthread-wmm/mix022_tso.yml/esbmc-incr-mix022_tso.yml	false	TIMEOUT (ERROR(ineffective witness))	0.809639	46.099401060000005	35.229696
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/esbmc-incr-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	0.737783	46.13280177199999	35.053568
+pthread-wmm/mix034_pso.opt_tso.opt.yml/esbmc-incr-mix034_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.751468	41.749362029	34.959360
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/esbmc-incr-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.773687	43.00933115699999	35.295232
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/esbmc-incr-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.76928	44.247780301000006	35.102720
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/esbmc-incr-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.779043	43.656276069	35.061760
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/esbmc-incr-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.781775	44.98155748300002	34.852864
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/esbmc-incr-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.780522	45.013705832	35.065856
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/esbmc-incr-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	0.817949	45.871945565999994	35.680256
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/esbmc-incr-rfi000_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.800391	45.547229164000015	35.045376
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/esbmc-incr-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.7856	44.48735663100001	34.975744
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/esbmc-incr-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.767866	44.19382618200001	35.340288
+pthread-wmm/rfi005.yml/esbmc-incr-rfi005.yml	false	ERROR(ineffective witness)	0.789722	43.87359198600001	35.459072
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/esbmc-incr-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.74869	43.30700119400001	35.012608
+pthread-wmm/rfi007_tso.yml/esbmc-incr-rfi007_tso.yml	false	ERROR(ineffective witness)	0.772065	43.72422015499998	35.221504
+pthread-wmm/rfi008.oepc.yml/esbmc-incr-rfi008.oepc.yml	false	ERROR(ineffective witness)	0.806161	44.45556634099998	35.360768
+pthread-wmm/rfi008.opt.yml/esbmc-incr-rfi008.opt.yml	false	ERROR(ineffective witness)	0.788676	44.153895696999996	35.151872
+pthread-wmm/rfi010.yml/esbmc-incr-rfi010.yml	false	ERROR(ineffective witness)	0.807395	44.804742957	35.180544
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/esbmc-incr-safe006_power.oepc-thin000_power.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	0.808724	45.62832745199998	34.934784
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/esbmc-incr-safe006_power.opt-thin000_power.opt.yml	false	ERROR(ineffective witness)	0.811938	43.87183825399998	35.205120
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/esbmc-incr-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.808408	44.415322790999994	34.951168
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/esbmc-incr-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.794502	44.990332738999996	34.938880
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/esbmc-incr-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.749028	42.40431003400002	34.979840
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/esbmc-incr-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.739547	43.20126488299999	35.151872
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/esbmc-incr-safe029_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.742849	42.51787923399999	34.996224
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/esbmc-incr-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.737726	41.658868084999995	34.828288
+pthread/triangular-2.yml/esbmc-incr-triangular-2.yml	false	ERROR(ineffective witness)	0.618274	1.5092870189999985	34.656256
+weaver/chl-chromosome-opt-symm.wvr.yml/esbmc-incr-chl-chromosome-opt-symm.wvr.yml	true	ERROR(ineffective witness)	0.7185	41.95602616300002	34.267136
+weaver/loop-tiling-eq.wvr.yml/esbmc-incr-loop-tiling-eq.wvr.yml	true	ERROR(ineffective witness)	0.719013	42.11305429700002	34.193408
+weaver/mult-comm.wvr.yml/esbmc-incr-mult-comm.wvr.yml	true	ERROR(ineffective witness)	0.66847	42.19069637299998	33.964032
+weaver/popl20-figure1-alt.wvr.yml/esbmc-incr-popl20-figure1-alt.wvr.yml	true	ERROR(ineffective witness)	0.657623	42.03663733500002	33.951744
+weaver/popl20-nonblocking-cntr-alt.wvr.yml/esbmc-incr-popl20-nonblocking-cntr-alt.wvr.yml	true	ERROR(ineffective witness)	0.542997	41.65192183900001	33.968128
+weaver/popl20-simple-queue.wvr.yml/esbmc-incr-popl20-simple-queue.wvr.yml	true	ERROR(ineffective witness)	0.663117	41.58859821500002	33.824768
+weaver/test-context1.wvr.yml/esbmc-incr-test-context1.wvr.yml	true	ERROR(ineffective witness)	0.603651	17.674873840999965	34.144256
+weaver/test-easy1.wvr.yml/esbmc-incr-test-easy1.wvr.yml	true	ERROR(ineffective witness)	0.610336	15.634394883000027	33.955840

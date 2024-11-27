@@ -1,0 +1,7 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/goblint/pthread-ext/39_rand_lock_p0_vs.yml/39_rand_lock_p0_vs.i --graphml-witness svcomp23-witness-benchmarks/tools/goblint/pthread-ext/39_rand_lock_p0_vs.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Verdict: Correctness witness

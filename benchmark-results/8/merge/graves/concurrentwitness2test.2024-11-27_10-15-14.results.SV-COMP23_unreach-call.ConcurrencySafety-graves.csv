@@ -1,0 +1,264 @@
+tool		ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-graves	SV-COMP23_unreach-call.ConcurrencySafety-graves	SV-COMP23_unreach-call.ConcurrencySafety-graves	SV-COMP23_unreach-call.ConcurrencySafety-graves
+../svcomp23-witness-benchmarks/tools/graves/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/graves-13-privatized_18-first-reads_unknown_1_neg.yml	false	false(unreach-call)	0.674667	2.8498027869999873	61.202432
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/graves-13-privatized_18-first-reads_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.597889	2.8474349509999968	37.822464
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/graves-13-privatized_18-first-reads_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.660699	2.8077121989999796	60.071936
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/graves-13-privatized_18-first-reads_unknown_2_pos.yml	false	false(unreach-call)	0.598253	2.851633966999998	37.896192
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/graves-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	0.668502	2.819171028999989	60.944384
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/graves-13-privatized_19-publish-precision_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.660913	2.744685713999985	60.514304
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/graves-13-privatized_19-publish-precision_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.608507	2.8086387509999895	37.175296
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/graves-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	0.589452	2.795050597999989	38.043648
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/graves-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	false(unreach-call)	0.593292	2.7760356949999903	37.552128
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/graves-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	false(unreach-call)	0.612768	2.7530652130000135	36.769792
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_neg.yml/graves-13-privatized_67-pthread_cond_wait_unknown_1_neg.yml	false	TIMEOUT	0.662091	46.01084971899999	35.663872
+goblint-regression/28-race_reach_45-escape_racing.yml/graves-28-race_reach_45-escape_racing.yml	false	ERROR(ineffective witness)	0.590083	1.5115972879999902	34.758656
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/graves-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.635286	1.7226653120000037	34.738176
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/graves-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	false(unreach-call)	0.606456	1.5741979519999916	34.709504
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/graves-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.566189	1.494907932999979	34.676736
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/graves-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	false(unreach-call)	0.569095	1.5229299189999779	34.668544
+ldv-races/race-1_2-join.yml/graves-race-1_2-join.yml	false	TIMEOUT	0.774131	46.025434319	36.233216
+ldv-races/race-1_3-join.yml/graves-race-1_3-join.yml	false	TIMEOUT	0.84598	46.020600535	36.257792
+ldv-races/race-2_1-container_of.yml/graves-race-2_1-container_of.yml	true	ERROR(ineffective witness)	1.410416	30.663654734000005	36.392960
+ldv-races/race-2_2-container_of.yml/graves-race-2_2-container_of.yml	false	ERROR(ineffective witness)	1.435199	30.23332541299999	36.384768
+ldv-races/race-2_3-container_of.yml/graves-race-2_3-container_of.yml	false	ERROR(ineffective witness)	1.685239	32.59293483500002	36.626432
+ldv-races/race-2_4-container_of.yml/graves-race-2_4-container_of.yml	false	ERROR(ineffective witness)	1.713022	33.765001014999996	36.683776
+ldv-races/race-2_5-container_of.yml/graves-race-2_5-container_of.yml	false	ERROR(ineffective witness)	1.66899	33.314345852	36.708352
+pthread-deagle/arithmetic_prog_bad.yml/graves-arithmetic_prog_bad.yml	false	false(unreach-call)	0.591901	1.7566573560000052	35.602432
+pthread-wmm/mix000.oepc.yml/graves-mix000.oepc.yml	false	ERROR(ineffective witness)	0.758726	29.96439762900002	36.327424
+pthread-wmm/mix000.opt.yml/graves-mix000.opt.yml	false	ERROR(ineffective witness)	0.789809	31.813419076999992	36.188160
+pthread-wmm/mix001.oepc.yml/graves-mix001.oepc.yml	false	ERROR(ineffective witness)	0.772762	36.12162609500001	36.876288
+pthread-wmm/mix001.opt.yml/graves-mix001.opt.yml	false	ERROR(ineffective witness)	0.766735	36.929843852999994	36.294656
+pthread-wmm/mix002.oepc.yml/graves-mix002.oepc.yml	false	ERROR(ineffective witness)	0.783678	36.960211251000004	36.270080
+pthread-wmm/mix002.opt.yml/graves-mix002.opt.yml	false	ERROR(ineffective witness)	0.773434	36.77055501700002	36.233216
+pthread-wmm/mix003.oepc.yml/graves-mix003.oepc.yml	false	ERROR(ineffective witness)	0.780032	38.09856650099999	36.364288
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/graves-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.783875	39.46069687299999	36.311040
+pthread-wmm/mix004.oepc.yml/graves-mix004.oepc.yml	false	ERROR(ineffective witness)	0.812066	39.41092573	36.638720
+pthread-wmm/mix004.opt.yml/graves-mix004.opt.yml	false	ERROR(ineffective witness)	0.806002	44.412204728999995	36.560896
+pthread-wmm/mix005.opt.yml/graves-mix005.opt.yml	false	ERROR(ineffective witness)	0.807814	44.90025319899999	36.286464
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix005_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.82563	44.50223656099996	36.659200
+pthread-wmm/mix005_tso.oepc.yml/graves-mix005_tso.oepc.yml	false	ERROR(ineffective witness)	0.791843	42.80854985800002	36.638720
+pthread-wmm/mix006.opt.yml/graves-mix006.opt.yml	false	ERROR(ineffective witness)	0.778214	42.580741273	36.343808
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.770407	42.50074340299997	36.282368
+pthread-wmm/mix006_tso.oepc.yml/graves-mix006_tso.oepc.yml	false	ERROR(ineffective witness)	0.823017	43.35939357800001	37.654528
+pthread-wmm/mix007.oepc.yml/graves-mix007.oepc.yml	false	ERROR(ineffective witness)	0.783572	42.69835930700003	36.601856
+pthread-wmm/mix007.opt.yml/graves-mix007.opt.yml	false	ERROR(ineffective witness)	0.793955	44.013623800999966	36.405248
+pthread-wmm/mix008.opt.yml/graves-mix008.opt.yml	false	ERROR(ineffective witness)	0.806462	44.53640207300003	36.614144
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix008_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.783934	43.026585221999994	36.671488
+pthread-wmm/mix009.oepc.yml/graves-mix009.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	0.756279	45.36143850600001	36.073472
+pthread-wmm/mix009.opt.yml/graves-mix009.opt.yml	false	ERROR(ineffective witness)	0.766717	43.828789246999975	36.413440
+pthread-wmm/mix010.oepc.yml/graves-mix010.oepc.yml	false	ERROR(ineffective witness)	0.758712	43.65609188000002	36.298752
+pthread-wmm/mix010.opt.yml/graves-mix010.opt.yml	false	ERROR(ineffective witness)	0.791535	42.90280505499999	36.175872
+pthread-wmm/mix011.opt.yml/graves-mix011.opt.yml	false	ERROR(ineffective witness)	0.776392	42.98484055299997	36.343808
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.774153	43.249959520999994	36.188160
+pthread-wmm/mix011_tso.oepc.yml/graves-mix011_tso.oepc.yml	false	ERROR(ineffective witness)	0.773454	43.424283253	36.175872
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/graves-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	ERROR(ineffective witness)	0.752295	43.526916640000024	35.987456
+pthread-wmm/mix012_pso.opt_tso.opt.yml/graves-mix012_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.767709	44.35679651500004	36.069376
+pthread-wmm/mix013.oepc.yml/graves-mix013.oepc.yml	false	ERROR(ineffective witness)	0.784702	43.129809411999986	36.577280
+pthread-wmm/mix013.opt.yml/graves-mix013.opt.yml	false	ERROR(ineffective witness)	0.794419	44.37640234999998	36.478976
+pthread-wmm/mix014.opt.yml/graves-mix014.opt.yml	false	ERROR(ineffective witness)	0.791042	44.305267843000024	36.638720
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix014_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.780011	44.223394781000025	36.593664
+pthread-wmm/mix015.oepc.yml/graves-mix015.oepc.yml	false	ERROR(ineffective witness)	0.796723	44.475225676000036	36.302848
+pthread-wmm/mix015.opt.yml/graves-mix015.opt.yml	false	ERROR(ineffective witness)	0.784116	44.13099134700002	36.282368
+pthread-wmm/mix016.oepc.yml/graves-mix016.oepc.yml	false	ERROR(ineffective witness)	0.762211	44.39791886799998	36.167680
+pthread-wmm/mix016_power.opt_rmo.opt.yml/graves-mix016_power.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.768573	43.799469284	35.934208
+pthread-wmm/mix016_pso.opt_tso.opt.yml/graves-mix016_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.773565	43.42595262399999	36.139008
+pthread-wmm/mix017.oepc.yml/graves-mix017.oepc.yml	false	ERROR(ineffective witness)	0.801851	42.98439827000004	36.454400
+pthread-wmm/mix017_power.opt_rmo.opt.yml/graves-mix017_power.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.781455	43.423961512999995	36.118528
+pthread-wmm/mix017_pso.opt_tso.opt.yml/graves-mix017_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.792258	42.429041197000004	36.503552
+pthread-wmm/mix018.opt.yml/graves-mix018.opt.yml	false	ERROR(ineffective witness)	0.790587	43.40690347899999	36.315136
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix018_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.792526	43.34206724100005	36.507648
+pthread-wmm/mix018_tso.oepc.yml/graves-mix018_tso.oepc.yml	false	ERROR(ineffective witness)	0.81244	43.916779553000026	36.659200
+pthread-wmm/mix019.opt.yml/graves-mix019.opt.yml	false	ERROR(ineffective witness)	0.7836	44.806140981	36.327424
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix019_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.771993	44.31031099499995	36.175872
+pthread-wmm/mix019_tso.oepc.yml/graves-mix019_tso.oepc.yml	false	ERROR(ineffective witness)	0.771122	44.423380613999996	36.229120
+pthread-wmm/mix020.oepc.yml/graves-mix020.oepc.yml	false	ERROR(ineffective witness)	0.785716	43.90470037	36.712448
+pthread-wmm/mix020.opt.yml/graves-mix020.opt.yml	false	ERROR(ineffective witness)	0.800129	44.986112788000014	36.458496
+pthread-wmm/mix021.opt.yml/graves-mix021.opt.yml	false	ERROR(ineffective witness)	0.779148	43.048313801999996	36.532224
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix021_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.796548	43.42187217600002	36.491264
+pthread-wmm/mix021_tso.oepc.yml/graves-mix021_tso.oepc.yml	false	ERROR(ineffective witness)	0.785976	44.30272099300004	36.491264
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.752387	43.63757697400001	35.753984
+pthread-wmm/mix022_tso.yml/graves-mix022_tso.yml	false	ERROR(ineffective witness)	0.754986	43.143078366	36.454400
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix023_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.783259	43.190733991	36.605952
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/graves-mix023_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.776759	44.410530956	36.196352
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/graves-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.776925	43.623031491999996	36.499456
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/graves-mix024_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.76593	44.158457270999975	35.983360
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/graves-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.76619	43.10790428199999	36.196352
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/graves-mix025_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.766201	42.77357037500002	36.159488
+pthread-wmm/mix026.oepc.yml/graves-mix026.oepc.yml	false	ERROR(ineffective witness)	0.787026	43.26635659300001	36.773888
+pthread-wmm/mix026_power.opt_tso.opt.yml/graves-mix026_power.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.792732	43.842711355999995	36.331520
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/graves-mix026_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.773999	43.81434624000002	36.265984
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix027_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.78212	43.56447571799998	36.618240
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/graves-mix027_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.778905	42.66150844399999	36.204544
+pthread-wmm/mix027_tso.yml/graves-mix027_tso.yml	false	ERROR(ineffective witness)	0.786944	43.34302166500004	36.651008
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.769959	42.45716739799997	36.245504
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/graves-mix028_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.763662	42.83145945900003	36.245504
+pthread-wmm/mix028_tso.yml/graves-mix028_tso.yml	false	ERROR(ineffective witness)	0.778735	43.27173051300002	36.421632
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/graves-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.788096	43.131903912999974	36.704256
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/graves-mix029_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.801051	43.274914728	36.458496
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix030_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.781389	43.35061913199996	36.847616
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/graves-mix030_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.792552	44.10402318499996	36.614144
+pthread-wmm/mix030_tso.yml/graves-mix030_tso.yml	false	ERROR(ineffective witness)	0.79617	43.57213567900004	36.671488
+pthread-wmm/mix031.oepc.yml/graves-mix031.oepc.yml	false	ERROR(ineffective witness)	0.757347	43.86694781999995	36.028416
+pthread-wmm/mix031.opt.yml/graves-mix031.opt.yml	false	ERROR(ineffective witness)	0.741518	43.232393685999966	35.852288
+pthread-wmm/mix032.oepc.yml/graves-mix032.oepc.yml	false	ERROR(ineffective witness)	0.772741	43.15444050899998	36.233216
+pthread-wmm/mix032.opt.yml/graves-mix032.opt.yml	false	ERROR(ineffective witness)	0.759469	43.33856716499997	35.962880
+pthread-wmm/mix033.opt.yml/graves-mix033.opt.yml	false	ERROR(ineffective witness)	0.775517	42.95787642099998	35.815424
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.759077	43.500567218000015	36.270080
+pthread-wmm/mix033_tso.oepc.yml/graves-mix033_tso.oepc.yml	false	ERROR(ineffective witness)	0.767949	43.35030202600001	36.384768
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/graves-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	ERROR(ineffective witness)	0.74232	42.35196708000001	36.024320
+pthread-wmm/mix034_pso.opt_tso.opt.yml/graves-mix034_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.739873	43.86714686000005	35.745792
+pthread-wmm/mix035.oepc.yml/graves-mix035.oepc.yml	false	ERROR(ineffective witness)	0.780566	43.50512000800006	36.339712
+pthread-wmm/mix035_power.opt_rmo.opt.yml/graves-mix035_power.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.781991	43.572719681999956	36.171776
+pthread-wmm/mix035_pso.opt_tso.opt.yml/graves-mix035_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.755448	42.867465269000036	35.905536
+pthread-wmm/mix036.oepc.yml/graves-mix036.oepc.yml	false	ERROR(ineffective witness)	0.799166	44.89820336599996	36.691968
+pthread-wmm/mix036_power.opt_rmo.opt.yml/graves-mix036_power.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.790797	44.139932293000015	36.311040
+pthread-wmm/mix036_pso.opt_tso.opt.yml/graves-mix036_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.774753	43.20375857300007	36.126720
+pthread-wmm/mix037.opt.yml/graves-mix037.opt.yml	false	ERROR(ineffective witness)	0.766247	44.18405443200004	35.983360
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix037_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.78451	43.44368013500002	36.454400
+pthread-wmm/mix037_tso.oepc.yml/graves-mix037_tso.oepc.yml	false	ERROR(ineffective witness)	0.782871	42.76096044099995	36.511744
+pthread-wmm/mix038.opt.yml/graves-mix038.opt.yml	false	ERROR(ineffective witness)	0.760555	43.41101934699998	35.782656
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.772319	43.08414202899996	36.081664
+pthread-wmm/mix038_tso.oepc.yml/graves-mix038_tso.oepc.yml	false	ERROR(ineffective witness)	0.779428	42.92847841499997	36.163584
+pthread-wmm/mix039.oepc.yml/graves-mix039.oepc.yml	false	ERROR(ineffective witness)	0.793615	43.41661552599999	36.528128
+pthread-wmm/mix039.opt.yml/graves-mix039.opt.yml	false	ERROR(ineffective witness)	0.7683	42.541320761000065	36.241408
+pthread-wmm/mix040.opt.yml/graves-mix040.opt.yml	false	ERROR(ineffective witness)	0.774783	43.68956690699997	36.171776
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix040_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.791841	43.77958438500002	36.564992
+pthread-wmm/mix040_tso.oepc.yml/graves-mix040_tso.oepc.yml	false	ERROR(ineffective witness)	0.785186	43.786466909999945	36.331520
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.761908	43.06513846000007	35.827712
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.761415	43.421993133	35.848192
+pthread-wmm/mix042.oepc.yml/graves-mix042.oepc.yml	false	ERROR(ineffective witness)	0.76677	43.36929682699997	36.622336
+pthread-wmm/mix042.opt.yml/graves-mix042.opt.yml	false	ERROR(ineffective witness)	0.771447	43.519087988000024	36.147200
+pthread-wmm/mix043.oepc.yml/graves-mix043.oepc.yml	false	ERROR(ineffective witness)	0.802597	44.55426800200007	36.794368
+pthread-wmm/mix043.opt.yml/graves-mix043.opt.yml	false	ERROR(ineffective witness)	0.791925	42.036845946000085	36.401152
+pthread-wmm/mix044.opt.yml/graves-mix044.opt.yml	false	ERROR(ineffective witness)	0.78814	43.83417534500006	36.208640
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix044_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.777439	42.687320451999994	36.655104
+pthread-wmm/mix044_tso.oepc.yml/graves-mix044_tso.oepc.yml	false	ERROR(ineffective witness)	0.783805	43.84124331400005	36.655104
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.7619	42.693722826	36.257792
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.763136	43.14938799600009	36.184064
+pthread-wmm/mix046.oepc.yml/graves-mix046.oepc.yml	false	ERROR(ineffective witness)	0.779215	43.49563401099999	36.569088
+pthread-wmm/mix046.opt.yml/graves-mix046.opt.yml	false	ERROR(ineffective witness)	0.760627	42.09484575499994	36.241408
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix047_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.796208	43.41499865000003	36.536320
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.78634	43.297814335	36.253696
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/graves-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.747301	43.733341436000046	35.823616
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/graves-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.772039	43.78009036800006	36.151296
+pthread-wmm/mix050.yml/graves-mix050.yml	false	ERROR(ineffective witness)	0.781256	43.27846748699994	36.425728
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/graves-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.778482	43.09342275400002	36.556800
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/graves-mix051_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.76863	43.54151454800001	36.134912
+pthread-wmm/mix051_tso.oepc.yml/graves-mix051_tso.oepc.yml	false	ERROR(ineffective witness)	0.799164	43.614630133000105	36.413440
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/graves-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.764166	42.56762018699999	36.179968
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/graves-mix052_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.752176	43.83700881700008	35.717120
+pthread-wmm/mix052_tso.oepc.yml/graves-mix052_tso.oepc.yml	false	ERROR(ineffective witness)	0.771537	43.33057258200006	36.212736
+pthread-wmm/mix053.opt.yml/graves-mix053.opt.yml	false	ERROR(ineffective witness)	0.780286	44.07941421600003	36.036608
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix053_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.793469	43.96580574800009	36.630528
+pthread-wmm/mix053_tso.oepc.yml/graves-mix053_tso.oepc.yml	false	ERROR(ineffective witness)	0.779533	44.15949381899998	36.491264
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/graves-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.749786	42.97977953499992	35.844096
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.753669	43.57079643700001	35.725312
+pthread-wmm/mix055.opt.yml/graves-mix055.opt.yml	false	ERROR(ineffective witness)	0.767786	42.70320306200006	36.225024
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix055_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.785979	43.33661800900006	36.679680
+pthread-wmm/mix055_tso.oepc.yml/graves-mix055_tso.oepc.yml	false	ERROR(ineffective witness)	0.795808	43.388595013999975	36.466688
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.765757	42.67289695200009	36.265984
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.775571	43.16547819999994	36.057088
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix057_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.782786	44.225961329999905	36.519936
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.775129	44.03505502999997	36.274176
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/graves-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.77475	42.984205378999945	36.900864
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/graves-rfi000_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.750294	43.50000936099991	36.155392
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/graves-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.761875	41.91655763000006	35.926016
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.745338	43.07555842099998	35.983360
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.743635	42.692246865000016	35.680256
+pthread-wmm/rfi004.yml/graves-rfi004.yml	false	ERROR(ineffective witness)	0.735714	43.44601149599998	35.708928
+pthread-wmm/rfi005.yml/graves-rfi005.yml	false	false(unreach-call)	1.079792	43.063041096000006	36.130816
+pthread-wmm/rfi006_power.oepc.yml/graves-rfi006_power.oepc.yml	false	ERROR(ineffective witness)	1.461118	44.090460907999955	36.114432
+pthread-wmm/rfi006_power.opt.yml/graves-rfi006_power.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	1.516703	45.62828051100007	36.343808
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/graves-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.79154	43.00955530600004	36.438016
+pthread-wmm/rfi006_rmo.yml/graves-rfi006_rmo.yml	false	TIMEOUT	1.411939	46.04604867399996	36.126720
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	0.776082	45.15726767500007	35.999744
+pthread-wmm/rfi007_tso.yml/graves-rfi007_tso.yml	false	ERROR(ineffective witness)	0.790188	44.93949869200003	36.294656
+pthread-wmm/rfi008.oepc.yml/graves-rfi008.oepc.yml	false	ERROR(ineffective witness)	0.752422	42.81744587000003	36.356096
+pthread-wmm/rfi008.opt.yml/graves-rfi008.opt.yml	false	ERROR(ineffective witness)	0.757132	42.50001810800006	36.102144
+pthread-wmm/rfi009_power.oepc.yml/graves-rfi009_power.oepc.yml	false	ERROR(ineffective witness)	1.448882	43.207582320999904	36.233216
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.773676	43.51818071699995	36.405248
+pthread-wmm/rfi009_rmo.oepc.yml/graves-rfi009_rmo.oepc.yml	false	ERROR(ineffective witness)	1.436955	44.867158227999994	36.487168
+pthread-wmm/rfi010.yml/graves-rfi010.yml	false	ERROR(ineffective witness)	0.756759	42.66544062000003	36.012032
+pthread-wmm/safe000_power.oepc.yml/graves-safe000_power.oepc.yml	false	ERROR(ineffective witness)	1.625894	43.25501207399998	37.187584
+pthread-wmm/safe000_power.opt.yml/graves-safe000_power.opt.yml	false	ERROR(ineffective witness)	1.412049	10.768304124999986	36.683776
+pthread-wmm/safe000_rmo.yml/graves-safe000_rmo.yml	false	TIMEOUT	1.596924	46.07167330200002	36.818944
+pthread-wmm/safe001_power.oepc.yml/graves-safe001_power.oepc.yml	false	TIMEOUT	1.604024	46.02598393599999	36.749312
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/graves-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.776954	44.505115212999954	36.102144
+pthread-wmm/safe001_rmo.oepc.yml/graves-safe001_rmo.oepc.yml	false	TIMEOUT	1.594748	46.04741727999999	36.835328
+pthread-wmm/safe002_power.oepc.yml/graves-safe002_power.oepc.yml	false	TIMEOUT	1.61888	46.13348327999995	36.872192
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/graves-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.769442	43.658211349	35.889152
+pthread-wmm/safe002_rmo.oepc.yml/graves-safe002_rmo.oepc.yml	false	ERROR(ineffective witness)	1.634	44.90200270799994	37.101568
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.795082	42.79585848700003	36.823040
+pthread-wmm/safe003_power.opt.yml/graves-safe003_power.opt.yml	false	ERROR(ineffective witness)	1.370101	3.9302231380000876	36.552704
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/graves-safe004_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.794436	43.330664552999906	36.958208
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/graves-safe004_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.776895	43.02688631900003	36.249600
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.771776	43.6669968330001	35.991552
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/graves-safe006_power.oepc-thin000_power.oepc.yml	false	ERROR(ineffective witness)	1.240386	44.640016617000015	35.655680
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/graves-safe006_power.opt-thin000_power.opt.yml	false	ERROR(ineffective witness)	1.227075	4.684622336999951	36.265984
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/graves-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	1.213624	44.98639592699999	35.794944
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/graves-safe007_power.oepc-thin001_power.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	1.341836	46.04708184599997	36.012032
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/graves-safe007_power.opt-thin001_power.opt.yml	false	TIMEOUT	0.764284	46.092253263999964	36.282368
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/graves-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.297825	46.04438921600001	35.893248
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.765607	44.897389961000044	36.245504
+pthread-wmm/safe008_power.opt.yml/graves-safe008_power.opt.yml	false	ERROR(ineffective witness)	1.382531	4.85162101700007	36.401152
+pthread-wmm/safe009_power.oepc.yml/graves-safe009_power.oepc.yml	false	ERROR(ineffective witness)	1.492344	44.76869127400005	36.474880
+pthread-wmm/safe009_power.opt.yml/graves-safe009_power.opt.yml	false	ERROR(ineffective witness)	1.391613	10.11771200499993	36.339712
+pthread-wmm/safe009_rmo.oepc.yml/graves-safe009_rmo.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	1.505083	45.10958232199994	36.917248
+pthread-wmm/safe009_rmo.opt.yml/graves-safe009_rmo.opt.yml	false	ERROR(ineffective witness)	1.321919	6.76952608900001	36.294656
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.751319	42.75156894299994	35.958784
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/graves-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.786525	44.14266038800008	36.438016
+pthread-wmm/safe011_power.opt_pso.opt.yml/graves-safe011_power.opt_pso.opt.yml	false	ERROR(ineffective witness)	0.779471	44.13570483399997	36.028416
+pthread-wmm/safe012_power.oepc.yml/graves-safe012_power.oepc.yml	false	ERROR(ineffective witness)	1.319588	44.82454252100001	36.216832
+pthread-wmm/safe012_power.opt.yml/graves-safe012_power.opt.yml	false	ERROR(ineffective witness)	0.790671	43.448237570999936	36.245504
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/graves-safe012_pso.oepc_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.790633	44.47452702399994	36.052992
+pthread-wmm/safe012_rmo.oepc.yml/graves-safe012_rmo.oepc.yml	false	TIMEOUT (ERROR(ineffective witness))	1.345615	45.048291363999965	36.040704
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.771471	42.701077947000044	36.036608
+pthread-wmm/safe014_power.oepc.yml/graves-safe014_power.oepc.yml	false	ERROR(ineffective witness)	1.335415	44.06053751800005	35.909632
+pthread-wmm/safe014_power.opt.yml/graves-safe014_power.opt.yml	false	ERROR(ineffective witness)	1.396429	43.93766259999995	36.179968
+pthread-wmm/safe014_rmo.oepc.yml/graves-safe014_rmo.oepc.yml	false	ERROR(ineffective witness)	1.330825	42.748817153000005	35.962880
+pthread-wmm/safe014_rmo.opt.yml/graves-safe014_rmo.opt.yml	false	ERROR(ineffective witness)	1.522106	9.684597352999958	36.675584
+pthread-wmm/safe015_power.oepc.yml/graves-safe015_power.oepc.yml	false	false(unreach-call)	1.086887	30.98523957899988	35.971072
+pthread-wmm/safe015_power.opt.yml/graves-safe015_power.opt.yml	false	ERROR(ineffective witness)	1.528061	9.261215344999982	37.183488
+pthread-wmm/safe015_rmo.yml/graves-safe015_rmo.yml	false	ERROR(ineffective witness)	1.552353	9.322419350000018	36.892672
+pthread-wmm/safe016_power.oepc.yml/graves-safe016_power.oepc.yml	false	TIMEOUT	1.558906	46.046751125000014	36.536320
+pthread-wmm/safe016_power.opt.yml/graves-safe016_power.opt.yml	false	ERROR(ineffective witness)	1.623568	11.70025260400007	37.187584
+pthread-wmm/safe016_rmo.oepc.yml/graves-safe016_rmo.oepc.yml	false	TIMEOUT	1.544039	46.07139101600001	36.651008
+pthread-wmm/safe016_rmo.opt.yml/graves-safe016_rmo.opt.yml	false	ERROR(ineffective witness)	1.609744	12.204444985999999	37.052416
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.774948	42.39012564400002	35.987456
+pthread-wmm/safe018_power.oepc.yml/graves-safe018_power.oepc.yml	false	ERROR(ineffective witness)	1.313795	43.411576128999855	35.979264
+pthread-wmm/safe018_power.opt.yml/graves-safe018_power.opt.yml	false	ERROR(ineffective witness)	1.458508	7.3157787539998935	36.507648
+pthread-wmm/safe018_rmo.oepc.yml/graves-safe018_rmo.oepc.yml	false	ERROR(ineffective witness)	1.312513	42.54664238700002	35.938304
+pthread-wmm/safe018_rmo.opt.yml/graves-safe018_rmo.opt.yml	false	ERROR(ineffective witness)	1.379627	9.091283901999986	36.429824
+pthread-wmm/safe019_power.oepc.yml/graves-safe019_power.oepc.yml	false	TIMEOUT	1.5491	46.0293971000001	36.601856
+pthread-wmm/safe019_rmo.oepc.yml/graves-safe019_rmo.oepc.yml	false	TIMEOUT	1.530985	46.05559510499984	36.638720
+pthread-wmm/safe019_rmo.opt.yml/graves-safe019_rmo.opt.yml	false	ERROR(ineffective witness)	1.551293	12.861957276999874	36.937728
+pthread-wmm/safe020_power.yml/graves-safe020_power.yml	false	ERROR(ineffective witness)	1.453277	7.166430665000007	36.696064
+pthread-wmm/safe020_rmo.yml/graves-safe020_rmo.yml	false	ERROR(ineffective witness)	1.386832	6.17574295999998	36.466688
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/graves-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.76931	43.311178276999954	36.384768
+pthread-wmm/safe021_power.opt_pso.opt.yml/graves-safe021_power.opt_pso.opt.yml	false	ERROR(ineffective witness)	0.7949	44.03492129599999	36.208640
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.770611	43.86498961899997	35.966976
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.799191	44.20380157799991	36.995072
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.773799	44.10490730799984	35.946496
+pthread-wmm/safe025_power.yml/graves-safe025_power.yml	false	false(unreach-call)	1.069149	26.099699980999958	36.261888
+pthread-wmm/safe025_rmo.yml/graves-safe025_rmo.yml	false	ERROR(ineffective witness)	1.528208	7.825054603999888	36.773888
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.756307	43.59411444500006	36.134912
+pthread-wmm/safe027_power.oepc.yml/graves-safe027_power.oepc.yml	false	ERROR(ineffective witness)	1.536493	44.21059511500016	36.315136
+pthread-wmm/safe027_rmo.yml/graves-safe027_rmo.yml	false	TIMEOUT (ERROR(ineffective witness))	1.511596	45.30308452200006	36.319232
+pthread-wmm/safe028_power.yml/graves-safe028_power.yml	false	ERROR(ineffective witness)	1.460106	10.050066594999862	36.847616
+pthread-wmm/safe028_rmo.yml/graves-safe028_rmo.yml	false	ERROR(ineffective witness)	1.375385	4.355614535000086	36.503552
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/graves-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.748991	43.23295613999994	36.134912
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/graves-safe029_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.745618	42.650315538000086	35.860480
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/graves-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.797412	44.44483562900018	36.270080
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/graves-safe030_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.787648	44.00538288300004	36.204544
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/graves-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	0.785883	44.118203397000116	36.048896
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/graves-safe031_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.777847	40.849494679000145	35.999744
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.786314	39.0175910439998	36.868096
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.74314	30.904562217000148	35.913728
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.758869	29.884927654999956	35.962880
+pthread-wmm/thin002_power.oepc.yml/graves-thin002_power.oepc.yml	false	ERROR(ineffective witness)	1.405998	25.25213424599997	36.024320
+pthread-wmm/thin002_rmo.yml/graves-thin002_rmo.yml	false	ERROR(ineffective witness)	1.407944	19.998652939000067	36.151296
+pthread/lazy01.yml/graves-lazy01.yml	false	TIMEOUT	0.51436	46.03459418900002	34.836480
+pthread/stateful01-1.yml/graves-stateful01-1.yml	false	TIMEOUT	0.555443	46.05498349599998	34.832384
+pthread/triangular-2.yml/graves-triangular-2.yml	false	ERROR(ineffective witness)	0.577468	1.8742673130000185	35.115008
+pthread/triangular-longer-2.yml/graves-triangular-longer-2.yml	false	ERROR(ineffective witness)	0.589882	2.129214563000005	35.516416
