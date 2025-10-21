@@ -34,7 +34,7 @@ void reach_error() {
     exit(74);
 }
 
-atomic_int c2tt_global_counter = ATOMIC_VAR_INIT(0);
+atomic_int c2tt_global_counter = 0;
 mtx_t c2tt_mtx;
 cnd_t c2tt_cv;
 _Bool c2tt_init;
