@@ -1,0 +1,25 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/deagle/pthread-ext/14_spin2003.yml/14_spin2003.i --graphml-witness svcomp23-witness-benchmarks/tools/deagle/pthread-ext/14_spin2003.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 88, in translate_to_c
+    result = subprocess.run([bin_name], capture_output=True, text=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1885, in _execute_child
+    self.pid = _fork_exec(
+               ^^^^^^^^^^^
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+/tmp/BenchExec_run_0cajc8cg/tmp/tmpug8jydzl.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Verdict: Unknown error

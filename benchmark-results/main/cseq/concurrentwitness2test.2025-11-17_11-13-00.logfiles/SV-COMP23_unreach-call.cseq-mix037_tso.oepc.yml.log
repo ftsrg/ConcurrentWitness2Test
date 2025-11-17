@@ -1,0 +1,21 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/mix037_tso.oepc.yml/mix037_tso.oepc.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/mix037_tso.oepc.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 85, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_l432dlnr/tmp/tmpuzoqx_x9.c
+Compilation started
+/tmp/BenchExec_run_l432dlnr/tmp/tmpuzoqx_x9.c: In function ‘main’:
+/tmp/BenchExec_run_l432dlnr/tmp/tmpuzoqx_x9.c:725:19: error: ‘FALSE’ undeclared (first use in this function)
+  725 |   weak$$choice0 = FALSE;;
+      |                   ^~~~~
+/tmp/BenchExec_run_l432dlnr/tmp/tmpuzoqx_x9.c:725:19: note: each undeclared identifier is reported only once for each function it appears in
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

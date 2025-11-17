@@ -1,0 +1,217 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/esbmc-kind/pthread-wmm/rfi008.oepc.yml/rfi008.oepc.i --graphml-witness svcomp23-witness-benchmarks/tools/esbmc-kind/pthread-wmm/rfi008.oepc.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/tmp/BenchExec_run_8hk1pn7j/tmp/tmpgje_w8wr.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Released 1
+Resumed thread 2 at 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+{0: 100}
+Verdict: NEVER

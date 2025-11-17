@@ -1,0 +1,44 @@
+   BENCHMARK INFORMATION
+benchmark definition:    svcomp23-witness-benchmarks/concurrentwitness2test.xml
+name:                    concurrentwitness2test
+run sets:                SV-COMP23_unreach-call.ConcurrencySafety-bubaak
+date:                    Mon, 2025-11-17 11:12:47 UTC
+tool:                    ConcurrentWitness2Test 1.0
+tool executable:         ConcurrentWitness2Test/start.sh
+options:
+parallel runs:           10
+resource limits:
+- time:                  45 s
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    runnervmg1sw1
+os:                      Linux-6.11.0-1018-azure-x86_64-with-glibc2.39
+cpu:                     Intel Xeon Platinum 8370C CPU @ 2.80GHz
+- cores:                 4
+- max frequency:         2800.0 MHz
+- turbo boost enabled:   True
+ram:                     16771.538944 MB
+------------------------------------------------------------
+
+
+
+SV-COMP23_unreach-call.ConcurrencySafety-bubaak
+Run set 1 of 1 with options '--graphml-witness ${taskdef_path}/witness.graphml' and propertyfile 'None'
+
+inputfile                                   status                       cpu time   wall time        host
+---------------------------------------------------------------------------------------------------------
+bubaak-pthread-numerical-integration.yml    ERROR(Parsing failed)            0.26        0.26        None
+---------------------------------------------------------------------------------------------------------
+Run set 1                                   done                             0.26        0.37           -
+
+Statistics:              1 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               1
+  Score:                 0 (max: 2)

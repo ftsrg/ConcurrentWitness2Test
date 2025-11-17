@@ -1,0 +1,213 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/infer/pthread/fib_unsafe-7.yml/fib_unsafe-7.i --graphml-witness svcomp23-witness-benchmarks/tools/infer/pthread/fib_unsafe-7.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id creationtime. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/tmp/BenchExec_run_4va5_a4i/tmp/tmp3lhgeuwy.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+{0: 100}
+Verdict: NEVER

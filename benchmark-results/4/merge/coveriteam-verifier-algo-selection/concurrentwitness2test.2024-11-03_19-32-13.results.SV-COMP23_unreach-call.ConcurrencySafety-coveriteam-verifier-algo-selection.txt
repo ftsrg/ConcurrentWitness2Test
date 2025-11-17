@@ -1,0 +1,50 @@
+   BENCHMARK INFORMATION
+benchmark definition:    svcomp23-witness-benchmarks/concurrentwitness2test.xml
+name:                    concurrentwitness2test
+run sets:                SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-algo-selection
+date:                    Sun, 2024-11-03 19:32:13 UTC
+tool:                    ConcurrentWitness2Test ConcurrentWitness2Test 1.0
+tool executable:         ConcurrentWitness2Test/start.sh
+options:
+parallel runs:           10
+resource limits:
+- time:                  45 s
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    fv-az1914-237
+os:                      Linux-6.8.0-1015-azure-x86_64-with-glibc2.39
+cpu:                     AMD EPYC 7763 64-Core Processor
+- cores:                 4
+- max frequency:         2445.427 MHz
+ram:                     16766.779392 MB
+------------------------------------------------------------
+
+
+
+SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-algo-selection
+Run set 1 of 1 with options '--graphml-witness ${taskdef_path}/witness.graphml' and propertyfile 'None'
+
+inputfile                                                                                                                                                        status                       cpu time   wall time        host
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/coveriteam-verifier-algo-selection-36-apron_41-threadenter-no-locals_unknown_1_neg.yml    true                             0.60        1.45        None
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/coveriteam-verifier-algo-selection-36-apron_41-threadenter-no-locals_unknown_1_pos.yml    false(unreach-call)              0.60        1.54        None
+ldv-races/race-2_2-container_of.yml/coveriteam-verifier-algo-selection-race-2_2-container_of.yml                                                                 true                             0.77       21.61        None
+ldv-races/race-2_3-container_of.yml/coveriteam-verifier-algo-selection-race-2_3-container_of.yml                                                                 true                             0.79       21.46        None
+ldv-races/race-2_4-container_of.yml/coveriteam-verifier-algo-selection-race-2_4-container_of.yml                                                                 true                             0.87       21.42        None
+ldv-races/race-2_5-container_of.yml/coveriteam-verifier-algo-selection-race-2_5-container_of.yml                                                                 true                             0.80       21.34        None
+ldv-races/race-3_2-container_of-global.yml/coveriteam-verifier-algo-selection-race-3_2-container_of-global.yml                                                   true                             0.77       21.48        None
+pthread-divine/tls_destructor_worker.yml/coveriteam-verifier-algo-selection-tls_destructor_worker.yml                                                            false(unreach-call)              0.53        1.69        None
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Run set 1                                                                                                                                                        done                             5.69       21.72           -
+
+Statistics:              8 Files
+  correct:               2
+    correct true:        0
+    correct false:       2
+  incorrect:             6
+    incorrect true:      6
+    incorrect false:     0
+  unknown:               0
+  Score:              -190 (max: 8)

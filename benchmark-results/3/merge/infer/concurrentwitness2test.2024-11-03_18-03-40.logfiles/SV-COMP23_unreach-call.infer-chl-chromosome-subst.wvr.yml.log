@@ -1,0 +1,16 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/infer/weaver/chl-chromosome-subst.wvr.yml/chl-chromosome-subst.wvr.c --graphml-witness svcomp23-witness-benchmarks/tools/infer/weaver/chl-chromosome-subst.wvr.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id creationtime. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 57, in translate_to_c
+    reach_error(ast)
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/tweaks.py", line 24, in reach_error
+    extern_decl = Decl(
+                  ^^^^^
+TypeError: Decl.__init__() missing 1 required positional argument: 'align'
+Verdict: Unknown error

@@ -1,0 +1,214 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/ebf/pthread/stack-2.yml/stack-2.i --graphml-witness svcomp23-witness-benchmarks/tools/ebf/pthread/stack-2.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/tmp/BenchExec_run_clng0nz1/tmp/tmp4kfii1b8.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+stack underflow
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+{0: 99, -1: 1}
+Verdict: SOMETIMES

@@ -1,0 +1,19 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/lf-checker/pthread-driver-races/char_generic_nvram_read_nvram_write_nvram.yml/char_generic_nvram_read_nvram_write_nvram.i --graphml-witness svcomp23-witness-benchmarks/tools/lf-checker/pthread-driver-races/char_generic_nvram_read_nvram_write_nvram.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 65, in translate_to_c
+    result = subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1796, in _execute_child
+    self.pid = _posixsubprocess.fork_exec(
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+/tmp/BenchExec_run_asfbiv01/tmp/tmpju4rnz4l.c
+Compilation started
+Verdict: Unknown error

@@ -1,0 +1,31 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/bubaak/pthread-C-DAC/pthread-numerical-integration.yml/pthread-numerical-integration.i --graphml-witness svcomp23-witness-benchmarks/tools/bubaak/pthread-C-DAC/pthread-numerical-integration.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 35, in translate_to_c
+    ast = parse_file(filename, use_cpp=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/pycparser/__init__.py", line 90, in parse_file
+    return parser.parse(text, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/pycparser/c_parser.py", line 149, in parse
+    return self.cparser.parse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/pycparser/ply/yacc.py", line 331, in parse
+    return self.parseopt_notrack(input, lexer, debug, tracking, tokenfunc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/pycparser/ply/yacc.py", line 1199, in parseopt_notrack
+    tok = call_errorfunc(self.errorfunc, errtoken, self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/pycparser/ply/yacc.py", line 193, in call_errorfunc
+    r = errorfunc(token)
+        ^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/pycparser/c_parser.py", line 1858, in p_error
+    self._parse_error(
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/pycparser/plyparser.py", line 67, in _parse_error
+    raise ParseError("%s: %s" % (coord, msg))
+pycparser.plyparser.ParseError: /tmp/BenchExec_run_l4wxpdfr/tmp/tmp_ked17iq.c:1380:5: before: /
+Verdict: Parsing failed

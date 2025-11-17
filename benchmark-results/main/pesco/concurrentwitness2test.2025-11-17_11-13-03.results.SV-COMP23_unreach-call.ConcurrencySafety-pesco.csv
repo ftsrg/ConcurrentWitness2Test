@@ -1,0 +1,259 @@
+tool	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-pesco	SV-COMP23_unreach-call.ConcurrencySafety-pesco	SV-COMP23_unreach-call.ConcurrencySafety-pesco	SV-COMP23_unreach-call.ConcurrencySafety-pesco
+../svcomp23-witness-benchmarks/tools/pesco/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/pesco-13-privatized_18-first-reads_unknown_1_neg.yml	false(unreach-call)	0.659648	1.7091843799999964	58.306560
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/pesco-13-privatized_18-first-reads_unknown_1_pos.yml	ERROR(ineffective witness)	0.661092	1.6899482120000044	60.194816
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/pesco-13-privatized_18-first-reads_unknown_2_neg.yml	ERROR(ineffective witness)	0.657528	1.7172969029999905	58.298368
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/pesco-13-privatized_18-first-reads_unknown_2_pos.yml	false(unreach-call)	0.673839	1.6908056549999912	61.992960
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/pesco-13-privatized_19-publish-precision_unknown_1_neg.yml	false(unreach-call)	0.645059	1.6773936769999978	59.613184
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/pesco-13-privatized_19-publish-precision_unknown_1_pos.yml	ERROR(ineffective witness)	0.658701	1.576569114999998	59.121664
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/pesco-13-privatized_19-publish-precision_unknown_2_neg.yml	ERROR(ineffective witness)	0.578351	1.6201516320000025	35.667968
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/pesco-13-privatized_19-publish-precision_unknown_2_pos.yml	false(unreach-call)	0.654615	1.6313542660000024	59.981824
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/pesco-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false(unreach-call)	0.570181	1.517478287000003	43.151360
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/pesco-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false(unreach-call)	0.592424	1.6203772150000049	35.688448
+goblint-regression/28-race_reach_45-escape_racing.yml/pesco-28-race_reach_45-escape_racing.yml	ERROR(ineffective witness)	0.572121	1.4285177550000014	34.680832
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/pesco-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	ERROR(ineffective witness)	0.608506	1.6811444420000043	34.754560
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/pesco-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false(unreach-call)	0.624567	1.7686770720000027	34.783232
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/pesco-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	ERROR(ineffective witness)	0.578383	1.7617797129999957	34.631680
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/pesco-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false(unreach-call)	0.580986	1.7282942739999925	34.643968
+ldv-races/race-1_2-join.yml/pesco-race-1_2-join.yml	TIMEOUT	0.765242	46.04660038499999	36.048896
+ldv-races/race-1_3-join.yml/pesco-race-1_3-join.yml	TIMEOUT	0.810622	46.01725390200001	36.118528
+ldv-races/race-2_3-container_of.yml/pesco-race-2_3-container_of.yml	TIMEOUT	1.623796	46.03172263100001	36.425728
+ldv-races/race-2_4-container_of.yml/pesco-race-2_4-container_of.yml	TIMEOUT	1.603484	46.05384166099999	36.605952
+ldv-races/race-2_5-container_of.yml/pesco-race-2_5-container_of.yml	TIMEOUT	1.520122	46.061811567999996	36.896768
+pthread-wmm/mix000.oepc.yml/pesco-mix000.oepc.yml	TIMEOUT	0.945291	46.032327366000004	36.405248
+pthread-wmm/mix000.opt.yml/pesco-mix000.opt.yml	TIMEOUT	0.859066	46.02576648399999	36.171776
+pthread-wmm/mix001.oepc.yml/pesco-mix001.oepc.yml	TIMEOUT	1.34262	46.03236982599999	36.585472
+pthread-wmm/mix001.opt.yml/pesco-mix001.opt.yml	TIMEOUT	1.262403	46.054681319	36.380672
+pthread-wmm/mix002.oepc.yml/pesco-mix002.oepc.yml	TIMEOUT	1.141878	46.07102037999999	36.421632
+pthread-wmm/mix002.opt.yml/pesco-mix002.opt.yml	TIMEOUT	0.777966	46.02673089700002	36.433920
+pthread-wmm/mix003.oepc.yml/pesco-mix003.oepc.yml	TIMEOUT	0.700215	46.014118806	36.192256
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/pesco-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	TIMEOUT	0.691784	46.06277392199999	36.335616
+pthread-wmm/mix004.oepc.yml/pesco-mix004.oepc.yml	TIMEOUT	0.777985	46.04408219300001	36.691968
+pthread-wmm/mix004.opt.yml/pesco-mix004.opt.yml	TIMEOUT	0.743631	46.02967829400001	36.515840
+pthread-wmm/mix005.opt.yml/pesco-mix005.opt.yml	TIMEOUT	0.808114	46.020745094000006	36.446208
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix005_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.892901	46.041512841000014	36.655104
+pthread-wmm/mix005_tso.oepc.yml/pesco-mix005_tso.oepc.yml	TIMEOUT	0.737773	46.02758738899999	36.683776
+pthread-wmm/mix006.opt.yml/pesco-mix006.opt.yml	TIMEOUT	0.893514	46.04989031900001	36.229120
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix006_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.679141	46.03913592399999	36.290560
+pthread-wmm/mix006_tso.oepc.yml/pesco-mix006_tso.oepc.yml	TIMEOUT	0.676314	46.031342697000014	37.834752
+pthread-wmm/mix007.oepc.yml/pesco-mix007.oepc.yml	TIMEOUT	0.766371	46.04432370399999	36.749312
+pthread-wmm/mix007.opt.yml/pesco-mix007.opt.yml	TIMEOUT	0.756519	46.03740641899998	36.524032
+pthread-wmm/mix008.opt.yml/pesco-mix008.opt.yml	TIMEOUT	0.780449	46.023260436000015	36.450304
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix008_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.792077	46.019385967000005	36.564992
+pthread-wmm/mix009.oepc.yml/pesco-mix009.oepc.yml	TIMEOUT	0.581936	46.03888679299999	36.040704
+pthread-wmm/mix009.opt.yml/pesco-mix009.opt.yml	TIMEOUT	0.684803	46.03324792900003	36.229120
+pthread-wmm/mix010.oepc.yml/pesco-mix010.oepc.yml	TIMEOUT	0.646009	46.03887574699999	36.126720
+pthread-wmm/mix010.opt.yml/pesco-mix010.opt.yml	TIMEOUT	0.878374	46.030649372	36.327424
+pthread-wmm/mix011.opt.yml/pesco-mix011.opt.yml	TIMEOUT	0.731613	46.034614078000004	36.335616
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix011_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.704435	46.01633959899999	36.384768
+pthread-wmm/mix011_tso.oepc.yml/pesco-mix011_tso.oepc.yml	TIMEOUT	0.743154	46.028069980000026	36.335616
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/pesco-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	TIMEOUT	0.543291	46.02532974600001	35.946496
+pthread-wmm/mix012_pso.opt_tso.opt.yml/pesco-mix012_pso.opt_tso.opt.yml	TIMEOUT	0.588639	46.035192158	36.052992
+pthread-wmm/mix013.oepc.yml/pesco-mix013.oepc.yml	TIMEOUT	0.78217	46.070183243	36.589568
+pthread-wmm/mix013.opt.yml/pesco-mix013.opt.yml	TIMEOUT	0.873919	46.14242984499998	36.446208
+pthread-wmm/mix014.opt.yml/pesco-mix014.opt.yml	TIMEOUT	0.773883	46.18988884099997	36.421632
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix014_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.768559	46.35430304099998	36.720640
+pthread-wmm/mix015.oepc.yml/pesco-mix015.oepc.yml	TIMEOUT	0.655165	46.28208117099999	36.274176
+pthread-wmm/mix015.opt.yml/pesco-mix015.opt.yml	TIMEOUT	0.489438	46.15173522400002	36.388864
+pthread-wmm/mix016.oepc.yml/pesco-mix016.oepc.yml	TIMEOUT	0.868452	46.01479484499998	36.229120
+pthread-wmm/mix016_power.opt_rmo.opt.yml/pesco-mix016_power.opt_rmo.opt.yml	TIMEOUT	0.612676	46.03039644099999	35.946496
+pthread-wmm/mix016_pso.opt_tso.opt.yml/pesco-mix016_pso.opt_tso.opt.yml	TIMEOUT	0.794824	46.032269618999976	36.081664
+pthread-wmm/mix017.oepc.yml/pesco-mix017.oepc.yml	TIMEOUT	0.732931	46.020221349999986	36.642816
+pthread-wmm/mix017_power.opt_rmo.opt.yml/pesco-mix017_power.opt_rmo.opt.yml	TIMEOUT	0.74824	46.03606304700003	36.229120
+pthread-wmm/mix017_pso.opt_tso.opt.yml/pesco-mix017_pso.opt_tso.opt.yml	TIMEOUT	0.586616	46.03071551099998	36.425728
+pthread-wmm/mix018.opt.yml/pesco-mix018.opt.yml	TIMEOUT	0.560484	46.029429999	36.499456
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix018_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.956865	46.044914436	36.569088
+pthread-wmm/mix018_tso.oepc.yml/pesco-mix018_tso.oepc.yml	ERROR(ineffective witness)	0.739661	5.699037088000011	36.454400
+pthread-wmm/mix019.opt.yml/pesco-mix019.opt.yml	TIMEOUT	0.642637	46.0250451	36.294656
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix019_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.896418	46.01963133999999	36.208640
+pthread-wmm/mix019_tso.oepc.yml/pesco-mix019_tso.oepc.yml	TIMEOUT	0.716743	46.01409681800004	36.249600
+pthread-wmm/mix020.oepc.yml/pesco-mix020.oepc.yml	TIMEOUT	0.693528	46.02829814199998	36.515840
+pthread-wmm/mix020.opt.yml/pesco-mix020.opt.yml	TIMEOUT	0.885893	46.02296675600002	36.503552
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix021_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.899273	46.03249124299998	36.659200
+pthread-wmm/mix021_tso.oepc.yml/pesco-mix021_tso.oepc.yml	TIMEOUT	0.640505	46.049353682	36.487168
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.567329	46.01417851499997	35.827712
+pthread-wmm/mix022_tso.yml/pesco-mix022_tso.yml	TIMEOUT	0.620049	46.014755641999955	36.237312
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix023_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.88554	46.030137146000015	36.651008
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/pesco-mix023_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	0.80934	46.02071472899996	36.274176
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/pesco-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	TIMEOUT	0.753198	46.01589201600001	36.298752
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/pesco-mix024_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	0.594844	46.04955529399996	36.093952
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/pesco-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	TIMEOUT	0.68417	46.08093593900003	36.233216
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/pesco-mix025_pso.opt_rmo.opt.yml	TIMEOUT	0.776295	46.02759623099996	35.950592
+pthread-wmm/mix026.oepc.yml/pesco-mix026.oepc.yml	TIMEOUT	0.802639	46.01686913200001	36.540416
+pthread-wmm/mix026_power.opt_tso.opt.yml/pesco-mix026_power.opt_tso.opt.yml	TIMEOUT	0.82625	46.047561400000006	36.208640
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/pesco-mix026_pso.opt_rmo.opt.yml	TIMEOUT	0.79274	46.012835602999985	36.089856
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix027_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.693533	46.016699722	36.507648
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/pesco-mix027_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	0.537842	46.027713609000045	36.265984
+pthread-wmm/mix027_tso.yml/pesco-mix027_tso.yml	TIMEOUT	0.748985	46.01787726800001	36.491264
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix028_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.701578	46.017081681000036	36.143104
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/pesco-mix028_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	0.643355	46.013743524000006	36.233216
+pthread-wmm/mix028_tso.yml/pesco-mix028_tso.yml	TIMEOUT	0.712553	46.01970377700002	36.405248
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/pesco-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	TIMEOUT	0.875615	46.02422745299998	36.589568
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/pesco-mix029_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	0.923733	46.041284356000006	36.343808
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix030_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.553866	46.04165713100002	36.642816
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/pesco-mix030_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	0.796031	46.028226023	36.380672
+pthread-wmm/mix030_tso.yml/pesco-mix030_tso.yml	TIMEOUT	1.049663	46.020135568	36.642816
+pthread-wmm/mix031.oepc.yml/pesco-mix031.oepc.yml	ERROR(ineffective witness)	0.906024	39.97062471800001	35.897344
+pthread-wmm/mix031.opt.yml/pesco-mix031.opt.yml	TIMEOUT	0.694677	46.01856404799997	35.786752
+pthread-wmm/mix032.oepc.yml/pesco-mix032.oepc.yml	TIMEOUT	0.663912	46.02079934899996	36.302848
+pthread-wmm/mix032.opt.yml/pesco-mix032.opt.yml	TIMEOUT	0.744537	46.00787349199999	35.745792
+pthread-wmm/mix033.opt.yml/pesco-mix033.opt.yml	TIMEOUT	0.664226	46.01777150899994	35.987456
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix033_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.766249	46.02884215199998	36.397056
+pthread-wmm/mix033_tso.oepc.yml/pesco-mix033_tso.oepc.yml	TIMEOUT	0.686898	46.045892570000035	36.331520
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/pesco-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	TIMEOUT	0.539094	46.043099041999994	35.999744
+pthread-wmm/mix034_pso.opt_tso.opt.yml/pesco-mix034_pso.opt_tso.opt.yml	TIMEOUT	0.619122	46.03643358900001	35.631104
+pthread-wmm/mix035.oepc.yml/pesco-mix035.oepc.yml	TIMEOUT	0.569528	46.020482318000006	36.265984
+pthread-wmm/mix035_power.opt_rmo.opt.yml/pesco-mix035_power.opt_rmo.opt.yml	TIMEOUT	0.60345	46.016926773999955	35.966976
+pthread-wmm/mix035_pso.opt_tso.opt.yml/pesco-mix035_pso.opt_tso.opt.yml	TIMEOUT	0.621981	46.01653603600005	35.753984
+pthread-wmm/mix036.oepc.yml/pesco-mix036.oepc.yml	TIMEOUT	0.870596	46.02703382399994	36.577280
+pthread-wmm/mix036_power.opt_rmo.opt.yml/pesco-mix036_power.opt_rmo.opt.yml	TIMEOUT	0.863507	46.02091053100003	36.241408
+pthread-wmm/mix036_pso.opt_tso.opt.yml/pesco-mix036_pso.opt_tso.opt.yml	TIMEOUT	0.702424	46.016154133999976	36.147200
+pthread-wmm/mix037.opt.yml/pesco-mix037.opt.yml	TIMEOUT	0.836248	46.02804306200005	36.069376
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix037_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.644247	46.03039955100007	36.548608
+pthread-wmm/mix037_tso.oepc.yml/pesco-mix037_tso.oepc.yml	TIMEOUT	0.619732	46.054859014000044	36.700160
+pthread-wmm/mix038.opt.yml/pesco-mix038.opt.yml	TIMEOUT	0.669864	46.04223970099997	35.872768
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix038_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.700861	46.02188993699997	36.319232
+pthread-wmm/mix038_tso.oepc.yml/pesco-mix038_tso.oepc.yml	TIMEOUT	0.750299	46.02003706300002	36.073472
+pthread-wmm/mix039.oepc.yml/pesco-mix039.oepc.yml	ERROR(ineffective witness)	0.764012	4.949313454999924	36.519936
+pthread-wmm/mix039.opt.yml/pesco-mix039.opt.yml	TIMEOUT	0.736614	46.027104796	36.065280
+pthread-wmm/mix040.opt.yml/pesco-mix040.opt.yml	TIMEOUT	0.880057	46.083442762000004	35.954688
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix040_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.765127	46.01861344700001	36.597760
+pthread-wmm/mix040_tso.oepc.yml/pesco-mix040_tso.oepc.yml	TIMEOUT	0.618233	46.01989564600001	36.421632
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix041_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.590311	46.03017685999998	35.930112
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	0.697114	46.0285383260001	35.958784
+pthread-wmm/mix042.oepc.yml/pesco-mix042.oepc.yml	TIMEOUT	0.702199	46.03050417600002	36.233216
+pthread-wmm/mix042.opt.yml/pesco-mix042.opt.yml	TIMEOUT	0.591759	46.04321298399998	36.151296
+pthread-wmm/mix043.oepc.yml/pesco-mix043.oepc.yml	TIMEOUT	0.675872	46.014323060999914	36.491264
+pthread-wmm/mix043.opt.yml/pesco-mix043.opt.yml	TIMEOUT	0.728067	46.186078305000024	36.397056
+pthread-wmm/mix044.opt.yml/pesco-mix044.opt.yml	TIMEOUT	0.503142	46.181888886000024	36.360192
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix044_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.843504	46.20785261399999	36.667392
+pthread-wmm/mix044_tso.oepc.yml/pesco-mix044_tso.oepc.yml	TIMEOUT	0.712349	46.01568052499999	36.515840
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix045_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.723269	46.01768386699996	36.261888
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	0.623917	46.021739243999946	36.147200
+pthread-wmm/mix046.oepc.yml/pesco-mix046.oepc.yml	TIMEOUT	0.794067	46.024174474999995	36.589568
+pthread-wmm/mix046.opt.yml/pesco-mix046.opt.yml	TIMEOUT	0.668156	46.025727812000014	36.384768
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix047_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.97373	46.021312834000014	36.696064
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	0.552625	46.027350845	36.364288
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	0.492796	46.01673766800002	35.864576
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	0.591271	46.01386994300003	36.163584
+pthread-wmm/mix050.yml/pesco-mix050.yml	TIMEOUT	0.689396	46.02195404200006	36.364288
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/pesco-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	TIMEOUT	0.700282	46.01625504200001	36.511744
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/pesco-mix051_pso.opt_rmo.opt_tso.opt.yml	TIMEOUT	0.792842	46.01592442200001	36.040704
+pthread-wmm/mix051_tso.oepc.yml/pesco-mix051_tso.oepc.yml	TIMEOUT	0.806014	46.023803019999946	36.581376
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/pesco-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	TIMEOUT	0.562364	46.03399223099996	36.220928
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/pesco-mix052_pso.opt_rmo.opt_tso.opt.yml	TIMEOUT	0.609037	46.03811887000006	35.762176
+pthread-wmm/mix052_tso.oepc.yml/pesco-mix052_tso.oepc.yml	TIMEOUT	0.539653	46.02557131399999	36.085760
+pthread-wmm/mix053.opt.yml/pesco-mix053.opt.yml	TIMEOUT	0.781094	46.02475331099993	36.028416
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix053_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.802123	46.017912283999976	36.564992
+pthread-wmm/mix053_tso.oepc.yml/pesco-mix053_tso.oepc.yml	TIMEOUT	0.656783	46.01796613399995	36.401152
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/pesco-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	TIMEOUT	0.545702	46.02023227300003	35.946496
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	0.77092	46.01223749799999	35.880960
+pthread-wmm/mix055.opt.yml/pesco-mix055.opt.yml	TIMEOUT	0.58357	46.01161743400007	36.290560
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix055_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.760763	46.02168857100003	36.323328
+pthread-wmm/mix055_tso.oepc.yml/pesco-mix055_tso.oepc.yml	TIMEOUT	0.838253	46.02755455400006	36.483072
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix056_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.681276	46.025568674000056	36.237312
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	0.655609	46.03485385200008	36.007936
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix057_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.813938	46.02760796200005	36.380672
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	0.608544	46.03397019299996	36.073472
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/pesco-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.616135	46.01529782600005	36.892672
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/pesco-rfi000_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	0.539797	46.034614370999975	35.852288
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/pesco-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.61089	46.020165106000036	35.864576
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	0.578655	46.01725489199998	35.905536
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.488305	46.027316369999994	35.684352
+pthread-wmm/rfi004.yml/pesco-rfi004.yml	TIMEOUT	0.573139	46.02550884000004	35.741696
+pthread-wmm/rfi005.yml/pesco-rfi005.yml	TIMEOUT	0.85595	46.0332620559999	35.913728
+pthread-wmm/rfi006_power.oepc.yml/pesco-rfi006_power.oepc.yml	TIMEOUT	1.38735	46.02624378899998	36.323328
+pthread-wmm/rfi006_power.opt.yml/pesco-rfi006_power.opt.yml	TIMEOUT	1.356441	46.026767399999926	36.433920
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/pesco-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	TIMEOUT	0.802932	46.02519151000001	36.417536
+pthread-wmm/rfi006_rmo.yml/pesco-rfi006_rmo.yml	TIMEOUT	1.236251	46.014792468999985	36.089856
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.478597	46.02040222700009	35.737600
+pthread-wmm/rfi007_tso.yml/pesco-rfi007_tso.yml	TIMEOUT	0.583297	46.0423691310001	36.257792
+pthread-wmm/rfi008.oepc.yml/pesco-rfi008.oepc.yml	TIMEOUT	0.606638	46.011522070999945	36.220928
+pthread-wmm/rfi008.opt.yml/pesco-rfi008.opt.yml	TIMEOUT	0.6598	46.02136339000003	36.106240
+pthread-wmm/rfi009_power.oepc.yml/pesco-rfi009_power.oepc.yml	TIMEOUT	1.379023	46.03241765600001	36.315136
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	0.67054	46.053632163999964	36.372480
+pthread-wmm/rfi009_rmo.oepc.yml/pesco-rfi009_rmo.oepc.yml	TIMEOUT	1.154711	46.04137070500008	36.126720
+pthread-wmm/rfi010.yml/pesco-rfi010.yml	TIMEOUT	0.567616	46.02255774699995	36.044800
+pthread-wmm/safe000_power.oepc.yml/pesco-safe000_power.oepc.yml	TIMEOUT	1.31297	46.031413061999956	36.917248
+pthread-wmm/safe000_power.opt.yml/pesco-safe000_power.opt.yml	TIMEOUT	1.294741	46.01423183400004	36.405248
+pthread-wmm/safe000_rmo.yml/pesco-safe000_rmo.yml	TIMEOUT	1.314368	46.02377319999994	36.737024
+pthread-wmm/safe001_power.oepc.yml/pesco-safe001_power.oepc.yml	TIMEOUT	1.402888	46.014246282000045	36.941824
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/pesco-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	TIMEOUT	0.762904	46.01691159300003	36.007936
+pthread-wmm/safe001_rmo.oepc.yml/pesco-safe001_rmo.oepc.yml	TIMEOUT	1.46037	46.027214069000024	36.872192
+pthread-wmm/safe002_power.oepc.yml/pesco-safe002_power.oepc.yml	TIMEOUT	1.58596	46.02184240700001	36.909056
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/pesco-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	TIMEOUT	0.659994	46.02971500499996	35.917824
+pthread-wmm/safe002_rmo.oepc.yml/pesco-safe002_rmo.oepc.yml	TIMEOUT	1.406072	46.035543819000054	36.847616
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.626768	46.03783978299998	37.036032
+pthread-wmm/safe003_power.opt.yml/pesco-safe003_power.opt.yml	TIMEOUT	1.502149	46.03246116799994	36.327424
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/pesco-safe004_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.881855	46.015825597	36.970496
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/pesco-safe004_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	0.538138	46.02579139399995	36.069376
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.561053	46.017000755000026	35.889152
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/pesco-safe006_power.oepc-thin000_power.oepc.yml	TIMEOUT	1.065772	46.009599084	35.840000
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/pesco-safe006_power.opt-thin000_power.opt.yml	ERROR(ineffective witness)	1.235273	39.35506843199994	36.057088
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/pesco-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	TIMEOUT	1.016541	46.018091529	35.700736
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/pesco-safe007_power.oepc-thin001_power.oepc.yml	TIMEOUT	1.144174	46.19841456100005	35.913728
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/pesco-safe007_power.opt-thin001_power.opt.yml	TIMEOUT	0.587547	46.03911608400006	36.274176
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/pesco-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	TIMEOUT	1.280072	46.043303483000045	35.758080
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.738958	46.02352231200007	36.229120
+pthread-wmm/safe008_power.opt.yml/pesco-safe008_power.opt.yml	TIMEOUT	1.338267	46.02240951700003	36.388864
+pthread-wmm/safe009_power.oepc.yml/pesco-safe009_power.oepc.yml	TIMEOUT	1.147432	46.01316911699996	36.356096
+pthread-wmm/safe009_power.opt.yml/pesco-safe009_power.opt.yml	ERROR(ineffective witness)	1.425682	32.04879851299995	36.302848
+pthread-wmm/safe009_rmo.oepc.yml/pesco-safe009_rmo.oepc.yml	TIMEOUT	1.206784	46.016263235	36.335616
+pthread-wmm/safe009_rmo.opt.yml/pesco-safe009_rmo.opt.yml	ERROR(ineffective witness)	1.260804	20.120437774000038	36.257792
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.553979	46.02089440599991	35.856384
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/pesco-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	TIMEOUT	0.724934	46.036022112999945	36.225024
+pthread-wmm/safe011_power.opt_pso.opt.yml/pesco-safe011_power.opt_pso.opt.yml	TIMEOUT	0.546054	46.02678129399999	36.216832
+pthread-wmm/safe012_power.oepc.yml/pesco-safe012_power.oepc.yml	TIMEOUT	1.065205	46.03009057300005	35.893248
+pthread-wmm/safe012_power.opt.yml/pesco-safe012_power.opt.yml	TIMEOUT	0.684327	46.03963041500003	36.188160
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/pesco-safe012_pso.oepc_pso.opt_rmo.opt.yml	TIMEOUT	0.628775	46.01816196999994	35.962880
+pthread-wmm/safe012_rmo.oepc.yml/pesco-safe012_rmo.oepc.yml	TIMEOUT	1.124909	46.01491193300001	36.061184
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.672156	46.021017218	35.889152
+pthread-wmm/safe014_power.oepc.yml/pesco-safe014_power.oepc.yml	TIMEOUT	1.126971	46.017833173999975	35.774464
+pthread-wmm/safe014_power.opt.yml/pesco-safe014_power.opt.yml	TIMEOUT	1.046764	46.01588365400005	36.106240
+pthread-wmm/safe014_rmo.oepc.yml/pesco-safe014_rmo.oepc.yml	TIMEOUT	1.16597	46.01879522900015	35.758080
+pthread-wmm/safe014_rmo.opt.yml/pesco-safe014_rmo.opt.yml	TIMEOUT	1.482215	46.01792372900002	36.659200
+pthread-wmm/safe015_power.oepc.yml/pesco-safe015_power.oepc.yml	TIMEOUT	0.955999	46.03110888000003	35.926016
+pthread-wmm/safe015_power.opt.yml/pesco-safe015_power.opt.yml	ERROR(ineffective witness)	1.622192	29.14461338199999	36.933632
+pthread-wmm/safe015_rmo.yml/pesco-safe015_rmo.yml	ERROR(ineffective witness)	1.509248	25.620947825999906	36.737024
+pthread-wmm/safe016_power.oepc.yml/pesco-safe016_power.oepc.yml	TIMEOUT	1.283396	46.021978342000125	36.610048
+pthread-wmm/safe016_power.opt.yml/pesco-safe016_power.opt.yml	TIMEOUT	1.647555	46.02029067299998	37.044224
+pthread-wmm/safe016_rmo.oepc.yml/pesco-safe016_rmo.oepc.yml	TIMEOUT	1.384207	46.08768566700007	36.491264
+pthread-wmm/safe016_rmo.opt.yml/pesco-safe016_rmo.opt.yml	ERROR(ineffective witness)	1.544249	6.285335830999998	36.765696
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.664221	46.01604927899996	36.077568
+pthread-wmm/safe018_power.oepc.yml/pesco-safe018_power.oepc.yml	TIMEOUT	1.262415	46.01786328700007	35.725312
+pthread-wmm/safe018_power.opt.yml/pesco-safe018_power.opt.yml	TIMEOUT	1.428	46.017432688999975	36.556800
+pthread-wmm/safe018_rmo.oepc.yml/pesco-safe018_rmo.oepc.yml	TIMEOUT	0.947133	46.02191740699993	35.864576
+pthread-wmm/safe018_rmo.opt.yml/pesco-safe018_rmo.opt.yml	ERROR(ineffective witness)	1.398784	28.335660455000152	36.421632
+pthread-wmm/safe019_power.oepc.yml/pesco-safe019_power.oepc.yml	TIMEOUT	1.429074	46.02533592000009	36.737024
+pthread-wmm/safe019_rmo.oepc.yml/pesco-safe019_rmo.oepc.yml	TIMEOUT	1.382703	46.02894705099993	36.495360
+pthread-wmm/safe019_rmo.opt.yml/pesco-safe019_rmo.opt.yml	TIMEOUT	1.567396	46.659895973000175	36.540416
+pthread-wmm/safe020_power.yml/pesco-safe020_power.yml	ERROR(ineffective witness)	1.454243	43.53766588900021	36.573184
+pthread-wmm/safe020_rmo.yml/pesco-safe020_rmo.yml	ERROR(ineffective witness)	1.209333	2.179290091999974	36.429824
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/pesco-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	TIMEOUT	0.689195	46.04118059899997	36.212736
+pthread-wmm/safe021_power.opt_pso.opt.yml/pesco-safe021_power.opt_pso.opt.yml	TIMEOUT	0.547431	46.012101953999945	36.212736
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.668847	46.01707079699986	35.864576
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.709427	46.01462134500002	37.031936
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.691325	46.019125325999994	35.913728
+pthread-wmm/safe025_power.yml/pesco-safe025_power.yml	TIMEOUT	0.957868	46.01553746700006	36.225024
+pthread-wmm/safe025_rmo.yml/pesco-safe025_rmo.yml	ERROR(ineffective witness)	1.554872	42.24519253100016	36.884480
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.769366	46.02096347499992	36.179968
+pthread-wmm/safe027_power.oepc.yml/pesco-safe027_power.oepc.yml	TIMEOUT	1.215003	46.015504715999896	36.229120
+pthread-wmm/safe027_rmo.yml/pesco-safe027_rmo.yml	TIMEOUT	1.163301	46.02079364600013	36.229120
+pthread-wmm/safe028_power.yml/pesco-safe028_power.yml	TIMEOUT	1.441964	46.019823578999876	36.687872
+pthread-wmm/safe028_rmo.yml/pesco-safe028_rmo.yml	TIMEOUT	1.443127	46.01535357400007	36.343808
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/pesco-safe029_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.638983	46.03441849000001	35.737600
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/pesco-safe029_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	0.498218	46.027686166999956	35.835904
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/pesco-safe030_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.760206	46.021657441000116	36.184064
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/pesco-safe030_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	0.880963	46.017610859000115	36.061184
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/pesco-safe031_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	0.461361	46.040447046000054	35.995648
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/pesco-safe031_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	0.63224	46.123654664000014	36.098048
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.807337	46.01383785500002	36.986880
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.628754	46.01534131000017	35.557376
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	0.97088	46.020603360999985	35.852288
+pthread-wmm/thin002_power.oepc.yml/pesco-thin002_power.oepc.yml	TIMEOUT	1.612025	46.01774804500019	36.130816
+pthread-wmm/thin002_rmo.yml/pesco-thin002_rmo.yml	TIMEOUT	1.749092	46.028040659	36.028416
+pthread/lazy01.yml/pesco-lazy01.yml	TIMEOUT	0.45816	46.22205777299996	34.848768
+pthread/stateful01-1.yml/pesco-stateful01-1.yml	TIMEOUT	0.486954	46.01922710600002	34.795520
+pthread/triangular-2.yml/pesco-triangular-2.yml	ERROR(ineffective witness)	0.5323	0.7071852640001453	34.869248
+pthread/triangular-longer-2.yml/pesco-triangular-longer-2.yml	ERROR(ineffective witness)	0.534968	0.7288998159999664	35.401728

@@ -1,0 +1,7 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cpa-lockator/pthread-ext/26_stack_cas_longer-1.yml/26_stack_cas_longer-1.i --graphml-witness svcomp23-witness-benchmarks/tools/cpa-lockator/pthread-ext/26_stack_cas_longer-1.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Verdict: Has branching

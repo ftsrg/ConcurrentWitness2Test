@@ -1,0 +1,19 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/pthread-lit/sssc12.yml/sssc12.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/pthread-lit/sssc12.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 85, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_7_9gh799/tmp/tmpf6xmgmzt.c
+Compilation started
+/usr/bin/ld: /tmp/BenchExec_run_7_9gh799/tmp/ccV6WYoo.o: in function `release':
+svcomp.c:(.text+0x1a7): multiple definition of `release'; /tmp/BenchExec_run_7_9gh799/tmp/ccJjilKj.o:tmpf6xmgmzt.c:(.text+0xe0): first defined here
+collect2: error: ld returned 1 exit status
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

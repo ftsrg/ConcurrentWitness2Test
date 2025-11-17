@@ -1,0 +1,287 @@
+tool		ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-ebf	SV-COMP23_unreach-call.ConcurrencySafety-ebf	SV-COMP23_unreach-call.ConcurrencySafety-ebf	SV-COMP23_unreach-call.ConcurrencySafety-ebf
+../svcomp23-witness-benchmarks/tools/ebf/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/ebf-13-privatized_18-first-reads_unknown_1_pos.yml	false	true	0.644951	1.6144367800000055	62.529536
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/ebf-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	0.63576	1.6710969540000065	61.485056
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/ebf-13-privatized_19-publish-precision_unknown_1_pos.yml	false	true	0.562927	1.6652429239999833	37.171200
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/ebf-13-privatized_19-publish-precision_unknown_2_neg.yml	false	true	0.645346	1.634810270999992	58.818560
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/ebf-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	0.627436	1.5555967730000475	63.881216
+goblint-regression/13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml/ebf-13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml	true	true	0.639966	1.6519479499999647	59.203584
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/ebf-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	false(unreach-call)	0.626335	1.5823753370000304	60.022784
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/ebf-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	true	0.633526	1.6069089569999733	60.297216
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_neg.yml/ebf-13-privatized_67-pthread_cond_wait_unknown_1_neg.yml	false	TIMEOUT	0.535449	46.04043265400003	36.724736
+goblint-regression/28-race_reach_01-simple_racing.yml/ebf-28-race_reach_01-simple_racing.yml	false	TIMEOUT	18.538615	46.07386077000001	206.237696
+goblint-regression/28-race_reach_06-cond_racing1.yml/ebf-28-race_reach_06-cond_racing1.yml	false	TIMEOUT	18.153552	46.090273446000026	203.485184
+goblint-regression/28-race_reach_07-cond_racing2.yml/ebf-28-race_reach_07-cond_racing2.yml	false	TIMEOUT	18.397204	46.01923898199999	203.325440
+goblint-regression/28-race_reach_11-ptr_racing.yml/ebf-28-race_reach_11-ptr_racing.yml	false	TIMEOUT	18.332812	46.01623135400001	202.866688
+goblint-regression/28-race_reach_21-deref_read_racing.yml/ebf-28-race_reach_21-deref_read_racing.yml	false	TIMEOUT	17.854412	46.028909143999954	202.952704
+goblint-regression/28-race_reach_23-sound_unlock_racing.yml/ebf-28-race_reach_23-sound_unlock_racing.yml	false	TIMEOUT	18.564483	46.013013305000015	203.051008
+goblint-regression/28-race_reach_24-sound_lock_racing.yml/ebf-28-race_reach_24-sound_lock_racing.yml	false	TIMEOUT	18.563543	46.01737328200005	202.772480
+goblint-regression/28-race_reach_37-indirect_racing.yml/ebf-28-race_reach_37-indirect_racing.yml	false	TIMEOUT	18.219984	46.02885996700002	203.251712
+goblint-regression/28-race_reach_40-trylock_racing.yml/ebf-28-race_reach_40-trylock_racing.yml	false	TIMEOUT	18.461454	46.008601305999946	202.924032
+goblint-regression/28-race_reach_45-escape_racing.yml/ebf-28-race_reach_45-escape_racing.yml	false	true	0.596724	1.2292642730000125	34.639872
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/ebf-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	false	true	0.562513	1.1718600920000881	34.643968
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/ebf-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	false(unreach-call)	0.412693	0.43157162499994683	34.672640
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/ebf-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	true	0.416471	0.45516943500001616	34.430976
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/ebf-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	false(unreach-call)	0.581937	1.4229213610000215	34.615296
+ldv-races/race-1_2-join.yml/ebf-race-1_2-join.yml	false	true	0.707469	2.444431963999932	36.089856
+ldv-races/race-1_3-join.yml/ebf-race-1_3-join.yml	false	true	0.706008	2.1133660189999546	36.061184
+ldv-races/race-2_2-container_of.yml/ebf-race-2_2-container_of.yml	false	TIMEOUT (true)	0.832697	45.03241977799996	36.065280
+ldv-races/race-2_3-container_of.yml/ebf-race-2_3-container_of.yml	false	TIMEOUT (true)	0.874547	45.66731818099993	36.085760
+ldv-races/race-2_4-container_of.yml/ebf-race-2_4-container_of.yml	false	TIMEOUT (true)	0.852807	45.06980313700001	36.044800
+ldv-races/race-2_5-container_of.yml/ebf-race-2_5-container_of.yml	false	TIMEOUT (true)	0.844299	46.02199266800005	36.085760
+ldv-races/race-3_2-container_of-global.yml/ebf-race-3_2-container_of-global.yml	false	TIMEOUT	0.783988	46.09894948099998	36.098048
+pthread-C-DAC/pthread-demo-datarace-3.yml/ebf-pthread-demo-datarace-3.yml	false	false(unreach-call)	0.661871	2.0198464619999186	35.614720
+pthread-complex/bounded_buffer.yml/ebf-bounded_buffer.yml	false	true	0.773817	2.5610770219999495	36.298752
+pthread-deagle/circular_buffer_bad.yml/ebf-circular_buffer_bad.yml	false	true	0.635266	2.799284860000057	34.668544
+pthread-divine/tls_destructor_worker.yml/ebf-tls_destructor_worker.yml	false	false(unreach-call)	0.631153	3.3444972880000705	34.656256
+pthread-ext/28_buggy_simple_loop1_vf.yml/ebf-28_buggy_simple_loop1_vf.yml	false	TIMEOUT	25.241256	46.064686082000094	2312.900608
+pthread-lit/qw2004-2b.yml/ebf-qw2004-2b.yml	false	true	0.604402	2.817584934000024	34.684928
+pthread-wmm/mix000.oepc.yml/ebf-mix000.oepc.yml	false	TIMEOUT	0.738062	46.05758498199998	35.213312
+pthread-wmm/mix000.opt.yml/ebf-mix000.opt.yml	false	TIMEOUT	0.72707	46.10284709599989	35.397632
+pthread-wmm/mix001.oepc.yml/ebf-mix001.oepc.yml	false	TIMEOUT (true)	0.736818	46.055944952999994	35.266560
+pthread-wmm/mix001.opt.yml/ebf-mix001.opt.yml	false	TIMEOUT (true)	0.779273	45.711302203999935	35.266560
+pthread-wmm/mix002.oepc.yml/ebf-mix002.oepc.yml	false	TIMEOUT (true)	0.809911	45.283109499000034	35.131392
+pthread-wmm/mix002.opt.yml/ebf-mix002.opt.yml	false	true	0.790058	44.78876608399992	35.504128
+pthread-wmm/mix003.oepc.yml/ebf-mix003.oepc.yml	false	true	0.792897	44.671066824000036	35.139584
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/ebf-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	false	true	0.79294	44.881145224999955	35.237888
+pthread-wmm/mix004.oepc.yml/ebf-mix004.oepc.yml	false	TIMEOUT (true)	0.814633	45.28843795800003	35.213312
+pthread-wmm/mix004.opt.yml/ebf-mix004.opt.yml	false	true	0.80239	44.17866533899996	35.356672
+pthread-wmm/mix005.opt.yml/ebf-mix005.opt.yml	false	true	0.818289	44.33981484399999	35.241984
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix005_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.816013	45.18307106899999	35.557376
+pthread-wmm/mix005_tso.oepc.yml/ebf-mix005_tso.oepc.yml	false	TIMEOUT (true)	0.80426	45.34889478299999	35.332096
+pthread-wmm/mix006.opt.yml/ebf-mix006.opt.yml	false	true	0.790446	44.707955716000015	35.069952
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.761617	44.88260120899997	35.098624
+pthread-wmm/mix006_tso.oepc.yml/ebf-mix006_tso.oepc.yml	false	TIMEOUT (true)	0.831023	45.309155334000025	35.987456
+pthread-wmm/mix007.oepc.yml/ebf-mix007.oepc.yml	false	TIMEOUT (true)	0.796663	45.43174074199999	35.282944
+pthread-wmm/mix007.opt.yml/ebf-mix007.opt.yml	false	TIMEOUT (true)	0.79778	45.118256265000014	35.319808
+pthread-wmm/mix008.opt.yml/ebf-mix008.opt.yml	false	true	0.795176	44.58159867300003	35.270656
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix008_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.792221	44.34062756100002	35.246080
+pthread-wmm/mix008_tso.oepc.yml/ebf-mix008_tso.oepc.yml	false	TIMEOUT (true)	0.831064	45.11479234800004	36.286464
+pthread-wmm/mix009.oepc.yml/ebf-mix009.oepc.yml	false	true	0.736129	44.42582119800011	35.139584
+pthread-wmm/mix009.opt.yml/ebf-mix009.opt.yml	false	TIMEOUT (true)	0.775515	45.12703618399996	35.209216
+pthread-wmm/mix010.oepc.yml/ebf-mix010.oepc.yml	false	true	0.797827	44.36447121499998	35.139584
+pthread-wmm/mix010.opt.yml/ebf-mix010.opt.yml	false	true	0.768076	44.00353848899999	35.213312
+pthread-wmm/mix011.opt.yml/ebf-mix011.opt.yml	false	TIMEOUT (true)	0.773899	45.693802173999984	35.303424
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.759042	45.453671172999975	35.201024
+pthread-wmm/mix011_tso.oepc.yml/ebf-mix011_tso.oepc.yml	false	true	0.782559	44.653711552999994	35.176448
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/ebf-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT (true)	0.762393	45.38997081700006	35.057664
+pthread-wmm/mix012_pso.opt_tso.opt.yml/ebf-mix012_pso.opt_tso.opt.yml	false	true	0.772639	44.536061317000076	35.352576
+pthread-wmm/mix013.oepc.yml/ebf-mix013.oepc.yml	false	true	0.794195	44.92395243300007	35.278848
+pthread-wmm/mix013.opt.yml/ebf-mix013.opt.yml	false	true	0.786287	44.78627079099999	35.201024
+pthread-wmm/mix014.opt.yml/ebf-mix014.opt.yml	false	true	0.804646	43.516739666000035	35.389440
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix014_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.817997	44.324813253	35.319808
+pthread-wmm/mix015.oepc.yml/ebf-mix015.oepc.yml	false	true	0.757804	42.562434585999995	35.033088
+pthread-wmm/mix015.opt.yml/ebf-mix015.opt.yml	false	TIMEOUT (true)	0.783762	45.920914709000044	35.508224
+pthread-wmm/mix016.oepc.yml/ebf-mix016.oepc.yml	false	TIMEOUT	0.749838	46.07341325699997	35.143680
+pthread-wmm/mix016_power.opt_rmo.opt.yml/ebf-mix016_power.opt_rmo.opt.yml	false	true	0.776123	44.111769281999955	34.942976
+pthread-wmm/mix016_pso.opt_tso.opt.yml/ebf-mix016_pso.opt_tso.opt.yml	false	TIMEOUT (true)	0.785593	45.444248824000056	35.201024
+pthread-wmm/mix017.oepc.yml/ebf-mix017.oepc.yml	false	true	0.808212	44.93043254200006	35.172352
+pthread-wmm/mix017_power.opt_rmo.opt.yml/ebf-mix017_power.opt_rmo.opt.yml	false	true	0.809508	43.857997701000045	35.188736
+pthread-wmm/mix017_pso.opt_tso.opt.yml/ebf-mix017_pso.opt_tso.opt.yml	false	true	0.827347	44.27306408000004	35.282944
+pthread-wmm/mix018.opt.yml/ebf-mix018.opt.yml	false	true	0.836829	44.72893467999995	35.049472
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix018_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.820866	43.80034013799991	35.221504
+pthread-wmm/mix018_tso.oepc.yml/ebf-mix018_tso.oepc.yml	false	true	0.785061	43.861867460999974	35.278848
+pthread-wmm/mix019.opt.yml/ebf-mix019.opt.yml	false	true	0.758402	43.34173777399997	35.135488
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix019_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.77256	45.62045651100004	35.147776
+pthread-wmm/mix019_tso.oepc.yml/ebf-mix019_tso.oepc.yml	false	TIMEOUT	0.741631	46.09161184799996	35.123200
+pthread-wmm/mix020.oepc.yml/ebf-mix020.oepc.yml	false	TIMEOUT (true)	0.792771	45.6635260999999	35.262464
+pthread-wmm/mix020.opt.yml/ebf-mix020.opt.yml	false	true	0.799474	44.630173625	35.045376
+pthread-wmm/mix021.opt.yml/ebf-mix021.opt.yml	false	TIMEOUT (true)	0.82461	46.003908386000035	35.192832
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix021_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.805772	45.985183688999996	35.246080
+pthread-wmm/mix021_tso.oepc.yml/ebf-mix021_tso.oepc.yml	false	TIMEOUT (true)	0.795812	45.733296661000054	35.368960
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (true)	0.812322	46.072836188999986	35.082240
+pthread-wmm/mix022_tso.yml/ebf-mix022_tso.yml	false	true	0.763322	44.42786564400001	35.028992
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix023_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.778491	43.97379302599995	35.074048
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/ebf-mix023_power.opt_pso.opt_rmo.opt.yml	false	true	0.768604	44.67813932800004	34.979840
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/ebf-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	true	0.786038	44.65012396700001	35.209216
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/ebf-mix024_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT (true)	0.76265	45.4423641840001	34.877440
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/ebf-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT (true)	0.773621	45.23519614299994	34.988032
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/ebf-mix025_pso.opt_rmo.opt.yml	false	true	0.772684	44.83162633799998	34.832384
+pthread-wmm/mix026.oepc.yml/ebf-mix026.oepc.yml	false	TIMEOUT (true)	0.812345	45.20029187700004	35.278848
+pthread-wmm/mix026_power.opt_tso.opt.yml/ebf-mix026_power.opt_tso.opt.yml	false	true	0.813447	44.71581128799994	35.078144
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/ebf-mix026_pso.opt_rmo.opt.yml	false	TIMEOUT (true)	0.808168	45.47330375800004	35.004416
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix027_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.795291	44.602857173000075	35.160064
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/ebf-mix027_power.opt_pso.opt_rmo.opt.yml	false	true	0.778843	44.25796337400004	35.078144
+pthread-wmm/mix027_tso.yml/ebf-mix027_tso.yml	false	true	0.78444	44.713400568	35.438592
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.786428	45.20441091400005	35.123200
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/ebf-mix028_power.opt_pso.opt_rmo.opt.yml	false	true	0.753749	44.244438659000025	35.147776
+pthread-wmm/mix028_tso.yml/ebf-mix028_tso.yml	false	true	0.772597	44.88760085499996	35.180544
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/ebf-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	true	0.788198	44.139171104999946	35.246080
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/ebf-mix029_power.opt_pso.opt_rmo.opt.yml	false	true	0.801561	44.492646203999925	35.069952
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix030_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.816115	45.408497971999964	35.221504
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/ebf-mix030_power.opt_pso.opt_rmo.opt.yml	false	true	0.804943	44.17530313300006	35.168256
+pthread-wmm/mix030_tso.yml/ebf-mix030_tso.yml	false	true	0.786096	44.32249845199999	35.336192
+pthread-wmm/mix031.oepc.yml/ebf-mix031.oepc.yml	false	true	0.754448	44.82533455199996	35.274752
+pthread-wmm/mix031.opt.yml/ebf-mix031.opt.yml	false	true	0.73699	43.96359751900002	34.689024
+pthread-wmm/mix032.oepc.yml/ebf-mix032.oepc.yml	false	TIMEOUT (true)	0.775837	45.34920733899992	35.090432
+pthread-wmm/mix032.opt.yml/ebf-mix032.opt.yml	false	true	0.753763	44.37631000900001	35.135488
+pthread-wmm/mix033.opt.yml/ebf-mix033.opt.yml	false	TIMEOUT (true)	0.783308	45.43647510199992	34.975744
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.802893	45.34404193099999	35.282944
+pthread-wmm/mix033_tso.oepc.yml/ebf-mix033_tso.oepc.yml	false	true	0.781589	44.922378035000065	35.045376
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/ebf-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	true	0.765647	44.287047409000024	35.024896
+pthread-wmm/mix034_pso.opt_tso.opt.yml/ebf-mix034_pso.opt_tso.opt.yml	false	TIMEOUT (true)	0.77104	45.040613961000076	34.693120
+pthread-wmm/mix035.oepc.yml/ebf-mix035.oepc.yml	false	true	0.774533	44.788408513000036	34.922496
+pthread-wmm/mix035_power.opt_rmo.opt.yml/ebf-mix035_power.opt_rmo.opt.yml	false	true	0.761158	42.68523973699996	34.799616
+pthread-wmm/mix035_pso.opt_tso.opt.yml/ebf-mix035_pso.opt_tso.opt.yml	false	true	0.76962	44.79549534199998	34.861056
+pthread-wmm/mix036.oepc.yml/ebf-mix036.oepc.yml	false	TIMEOUT (true)	0.789532	45.4164845439999	35.414016
+pthread-wmm/mix036_power.opt_rmo.opt.yml/ebf-mix036_power.opt_rmo.opt.yml	false	true	0.792137	43.56842351499995	35.078144
+pthread-wmm/mix036_pso.opt_tso.opt.yml/ebf-mix036_pso.opt_tso.opt.yml	false	true	0.766457	44.253903390999994	35.000320
+pthread-wmm/mix037.opt.yml/ebf-mix037.opt.yml	false	TIMEOUT (true)	0.792063	46.06443954400004	34.869248
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix037_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.805008	45.58858320600007	35.098624
+pthread-wmm/mix037_tso.oepc.yml/ebf-mix037_tso.oepc.yml	false	TIMEOUT (true)	0.794292	45.18934966899997	35.299328
+pthread-wmm/mix038.opt.yml/ebf-mix038.opt.yml	false	true	0.783653	44.72893287699992	35.229696
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.766097	43.99074057899986	35.119104
+pthread-wmm/mix038_tso.oepc.yml/ebf-mix038_tso.oepc.yml	false	true	0.781581	44.40930352399994	34.955264
+pthread-wmm/mix039.oepc.yml/ebf-mix039.oepc.yml	false	true	0.793274	44.0743513540001	35.299328
+pthread-wmm/mix039.opt.yml/ebf-mix039.opt.yml	false	true	0.779254	44.3751339559999	35.016704
+pthread-wmm/mix040.opt.yml/ebf-mix040.opt.yml	false	true	0.795624	44.51195465500007	34.799616
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix040_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.803587	44.435169499999915	35.512320
+pthread-wmm/mix040_tso.oepc.yml/ebf-mix040_tso.oepc.yml	false	true	0.784847	44.30829638499995	35.201024
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.734045	46.030426163000016	35.090432
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ebf-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT (true)	0.798984	45.87072612700001	35.053568
+pthread-wmm/mix042.oepc.yml/ebf-mix042.oepc.yml	false	true	0.790006	44.709970426000154	35.131392
+pthread-wmm/mix042.opt.yml/ebf-mix042.opt.yml	false	TIMEOUT (true)	0.761524	45.21158004500012	34.988032
+pthread-wmm/mix043.oepc.yml/ebf-mix043.oepc.yml	false	true	0.778353	43.81692055100007	35.233792
+pthread-wmm/mix043.opt.yml/ebf-mix043.opt.yml	false	true	0.78191	44.017902899999854	35.123200
+pthread-wmm/mix044.opt.yml/ebf-mix044.opt.yml	false	true	0.77796	44.74083706500005	35.004416
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix044_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.804606	43.890148701999806	35.291136
+pthread-wmm/mix044_tso.oepc.yml/ebf-mix044_tso.oepc.yml	false	true	0.7993	44.35553989499999	35.295232
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.768105	43.8960246109998	35.229696
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ebf-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT (true)	0.771287	45.26136617600014	35.110912
+pthread-wmm/mix046.oepc.yml/ebf-mix046.oepc.yml	false	true	0.780855	44.41036129400004	35.184640
+pthread-wmm/mix046.opt.yml/ebf-mix046.opt.yml	false	true	0.787864	44.99281288300017	35.176448
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix047_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.799841	45.60028855399992	35.164160
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ebf-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	true	0.781442	44.73376981000001	35.454976
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/ebf-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	true	0.749216	43.827670863000094	34.971648
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/ebf-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	true	0.770451	43.56955901200013	35.053568
+pthread-wmm/mix050.yml/ebf-mix050.yml	false	true	0.789913	44.35776515899988	35.282944
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/ebf-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	true	0.791172	44.526178845000004	35.328000
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/ebf-mix051_pso.opt_rmo.opt_tso.opt.yml	false	true	0.774234	43.124255545000096	34.856960
+pthread-wmm/mix051_tso.oepc.yml/ebf-mix051_tso.oepc.yml	false	true	0.790768	44.88491175499985	35.229696
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/ebf-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.789697	45.418534190999935	35.258368
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/ebf-mix052_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT (true)	0.773243	45.33406355300008	34.787328
+pthread-wmm/mix052_tso.oepc.yml/ebf-mix052_tso.oepc.yml	false	true	0.764846	44.2122496070001	34.963456
+pthread-wmm/mix053.opt.yml/ebf-mix053.opt.yml	false	true	0.774092	43.13044845500008	34.885632
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix053_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.772101	43.90385853199996	35.237888
+pthread-wmm/mix053_tso.oepc.yml/ebf-mix053_tso.oepc.yml	false	TIMEOUT (true)	0.771575	45.22745395600009	34.967552
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/ebf-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	true	0.733207	43.59370938400002	35.217408
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ebf-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	true	0.754962	43.96329195300018	34.910208
+pthread-wmm/mix055.opt.yml/ebf-mix055.opt.yml	false	true	0.77241	44.83857082700001	35.086336
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix055_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.788544	43.85861628199996	35.160064
+pthread-wmm/mix055_tso.oepc.yml/ebf-mix055_tso.oepc.yml	false	true	0.792059	44.247878922000154	35.229696
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.784951	44.0648807340001	35.115008
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ebf-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT (true)	0.772639	45.14437738499987	34.955264
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/ebf-mix057_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.803555	45.315786831000196	35.295232
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ebf-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	true	0.780345	44.514044196999976	35.282944
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/ebf-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.760507	45.299734628999886	35.766272
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/ebf-rfi000_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT (true)	0.750271	45.023659823000116	35.012608
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/ebf-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.761106	45.07784471600007	35.098624
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ebf-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	true	0.758045	44.78227760000004	35.110912
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.747744	43.51996628300003	34.787328
+pthread-wmm/rfi004.yml/ebf-rfi004.yml	false	true	0.740923	44.59439426500012	34.791424
+pthread-wmm/rfi005.yml/ebf-rfi005.yml	false	true	0.779605	44.35752017899995	35.151872
+pthread-wmm/rfi006_power.oepc.yml/ebf-rfi006_power.oepc.yml	false	true	0.762153	44.81431887400004	35.377152
+pthread-wmm/rfi006_power.opt.yml/ebf-rfi006_power.opt.yml	false	TIMEOUT (true)	0.792881	45.623178997000196	35.225600
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/ebf-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	false	true	0.775505	44.410596048000116	35.135488
+pthread-wmm/rfi006_rmo.yml/ebf-rfi006_rmo.yml	false	true	0.768669	44.55436748600005	34.992128
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (true)	0.794191	46.12454791000005	35.000320
+pthread-wmm/rfi007_tso.yml/ebf-rfi007_tso.yml	false	true	0.783418	43.762305622999975	35.229696
+pthread-wmm/rfi008.oepc.yml/ebf-rfi008.oepc.yml	false	true	0.774032	43.96374914699982	35.192832
+pthread-wmm/rfi008.opt.yml/ebf-rfi008.opt.yml	false	true	0.770733	44.441574787000036	35.094528
+pthread-wmm/rfi009_power.oepc.yml/ebf-rfi009_power.oepc.yml	false	true	0.771828	44.02080861500008	35.393536
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ebf-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	true	0.778403	44.24715519799997	35.209216
+pthread-wmm/rfi009_rmo.oepc.yml/ebf-rfi009_rmo.oepc.yml	false	true	0.764502	44.278486604000136	34.955264
+pthread-wmm/rfi010.yml/ebf-rfi010.yml	false	true	0.745885	44.23266307899985	35.020800
+pthread-wmm/safe000_power.oepc.yml/ebf-safe000_power.oepc.yml	false	true	0.776088	44.771277285999986	35.557376
+pthread-wmm/safe000_power.opt.yml/ebf-safe000_power.opt.yml	false	true	0.772651	44.92959007200011	35.168256
+pthread-wmm/safe000_rmo.yml/ebf-safe000_rmo.yml	false	true	0.793214	44.80239296699983	35.348480
+pthread-wmm/safe001_power.oepc.yml/ebf-safe001_power.oepc.yml	false	true	0.813529	44.78282251099995	35.414016
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/ebf-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	true	0.776321	44.061771875999966	35.135488
+pthread-wmm/safe001_rmo.oepc.yml/ebf-safe001_rmo.oepc.yml	false	true	0.771307	44.15367119200005	35.659776
+pthread-wmm/safe002_power.oepc.yml/ebf-safe002_power.oepc.yml	false	true	0.785569	44.159747928000115	35.676160
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/ebf-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	true	0.781967	44.77741593299993	34.840576
+pthread-wmm/safe002_rmo.oepc.yml/ebf-safe002_rmo.oepc.yml	false	true	0.786713	44.88540915700014	35.381248
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.779903	43.98986094799989	35.508224
+pthread-wmm/safe003_power.opt.yml/ebf-safe003_power.opt.yml	false	true	0.765672	43.75992156899997	35.508224
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/ebf-safe004_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.783934	43.86415648399998	35.520512
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/ebf-safe004_power.opt_pso.opt_rmo.opt.yml	false	true	0.784317	44.990497459999915	35.188736
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.7783	44.71429212899989	34.897920
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/ebf-safe006_power.oepc-thin000_power.oepc.yml	false	true	0.796341	44.89269869199984	35.074048
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/ebf-safe006_power.opt-thin000_power.opt.yml	false	true	0.783044	43.69379529699995	35.028992
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/ebf-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	true	0.747944	43.294239484999935	34.807808
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/ebf-safe007_power.oepc-thin001_power.oepc.yml	false	TIMEOUT (true)	0.759809	45.11592762699979	34.947072
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/ebf-safe007_power.opt-thin001_power.opt.yml	false	true	0.767885	44.55488130399999	35.180544
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/ebf-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	false	true	0.777692	44.0366568500001	35.057664
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.768883	43.81521705	35.069952
+pthread-wmm/safe008_power.opt.yml/ebf-safe008_power.opt.yml	false	true	0.779144	43.653913385999886	35.442688
+pthread-wmm/safe009_power.oepc.yml/ebf-safe009_power.oepc.yml	false	TIMEOUT (true)	0.781382	45.06191961799982	35.377152
+pthread-wmm/safe009_power.opt.yml/ebf-safe009_power.opt.yml	false	true	0.797976	44.70880244	35.323904
+pthread-wmm/safe009_rmo.oepc.yml/ebf-safe009_rmo.oepc.yml	false	TIMEOUT (true)	0.810689	45.0922544460002	35.278848
+pthread-wmm/safe009_rmo.opt.yml/ebf-safe009_rmo.opt.yml	false	true	0.775771	44.494620394999856	35.254272
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.754818	44.447924950000015	35.106816
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/ebf-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	true	0.768252	44.52468163200001	35.299328
+pthread-wmm/safe011_power.opt_pso.opt.yml/ebf-safe011_power.opt_pso.opt.yml	false	true	0.764509	44.538852473999896	35.049472
+pthread-wmm/safe012_power.oepc.yml/ebf-safe012_power.oepc.yml	false	true	0.766369	44.87765967099995	35.053568
+pthread-wmm/safe012_power.opt.yml/ebf-safe012_power.opt.yml	false	true	0.772932	44.31728221499998	35.205120
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/ebf-safe012_pso.oepc_pso.opt_rmo.opt.yml	false	true	0.764996	44.77688892800006	34.873344
+pthread-wmm/safe012_rmo.oepc.yml/ebf-safe012_rmo.oepc.yml	false	true	0.759186	43.879941144999975	34.959360
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.769142	44.125318017999916	34.893824
+pthread-wmm/safe014_power.oepc.yml/ebf-safe014_power.oepc.yml	false	true	0.783438	44.4591763840001	34.951168
+pthread-wmm/safe014_power.opt.yml/ebf-safe014_power.opt.yml	false	TIMEOUT (true)	0.774401	45.48376878699992	35.213312
+pthread-wmm/safe014_rmo.oepc.yml/ebf-safe014_rmo.oepc.yml	false	true	0.762001	44.235149457000034	35.020800
+pthread-wmm/safe014_rmo.opt.yml/ebf-safe014_rmo.opt.yml	false	true	0.808541	44.64380444000017	35.844096
+pthread-wmm/safe015_power.oepc.yml/ebf-safe015_power.oepc.yml	false	false(unreach-call)	0.804674	44.649848465000105	35.590144
+pthread-wmm/safe015_power.opt.yml/ebf-safe015_power.opt.yml	false	TIMEOUT (true)	0.795424	45.11574444100006	35.450880
+pthread-wmm/safe015_rmo.yml/ebf-safe015_rmo.yml	false	true	0.793154	44.928509475000055	35.434496
+pthread-wmm/safe016_power.oepc.yml/ebf-safe016_power.oepc.yml	false	TIMEOUT (true)	0.794734	45.347153272000014	35.123200
+pthread-wmm/safe016_power.opt.yml/ebf-safe016_power.opt.yml	false	TIMEOUT (true)	0.80374	45.36501155999986	35.680256
+pthread-wmm/safe016_rmo.oepc.yml/ebf-safe016_rmo.oepc.yml	false	true	0.800861	44.27642487899993	35.442688
+pthread-wmm/safe016_rmo.opt.yml/ebf-safe016_rmo.opt.yml	false	true	0.793171	44.57766452499982	35.454976
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.790646	44.84232246900001	35.020800
+pthread-wmm/safe018_power.oepc.yml/ebf-safe018_power.oepc.yml	false	true	0.778234	44.55995259600013	34.840576
+pthread-wmm/safe018_power.opt.yml/ebf-safe018_power.opt.yml	false	true	0.796167	44.885593555000014	35.270656
+pthread-wmm/safe018_rmo.oepc.yml/ebf-safe018_rmo.oepc.yml	false	TIMEOUT (true)	0.755697	45.07517751399996	34.852864
+pthread-wmm/safe018_rmo.opt.yml/ebf-safe018_rmo.opt.yml	false	TIMEOUT (true)	0.766806	45.298591677000104	35.229696
+pthread-wmm/safe019_power.oepc.yml/ebf-safe019_power.oepc.yml	false	true	0.798545	44.597336209000105	35.332096
+pthread-wmm/safe019_power.opt.yml/ebf-safe019_power.opt.yml	false	TIMEOUT (true)	0.798061	45.055622044000074	35.577856
+pthread-wmm/safe019_rmo.oepc.yml/ebf-safe019_rmo.oepc.yml	false	true	0.808654	44.56401279700003	35.295232
+pthread-wmm/safe019_rmo.opt.yml/ebf-safe019_rmo.opt.yml	false	true	0.814041	44.78192365700011	35.446784
+pthread-wmm/safe020_power.yml/ebf-safe020_power.yml	false	TIMEOUT (true)	0.803931	45.124986861000025	35.209216
+pthread-wmm/safe020_rmo.yml/ebf-safe020_rmo.yml	false	TIMEOUT (true)	0.772858	45.08688253399987	35.172352
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/ebf-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	true	0.783661	44.938086431999864	35.045376
+pthread-wmm/safe021_power.opt_pso.opt.yml/ebf-safe021_power.opt_pso.opt.yml	false	TIMEOUT (true)	0.796007	45.622852943	34.955264
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.769949	44.786162990999856	35.028992
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.786085	44.7898911929999	35.602432
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.723907	46.080656309999995	34.877440
+pthread-wmm/safe025_power.yml/ebf-safe025_power.yml	false	false(unreach-call)	0.810379	44.12211815499995	35.921920
+pthread-wmm/safe025_rmo.yml/ebf-safe025_rmo.yml	false	TIMEOUT (true)	0.781485	45.7510923599998	35.524608
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (true)	0.767898	45.416599714000085	35.045376
+pthread-wmm/safe027_power.oepc.yml/ebf-safe027_power.oepc.yml	false	TIMEOUT (true)	0.791339	45.415367451000066	35.131392
+pthread-wmm/safe027_power.opt.yml/ebf-safe027_power.opt.yml	false	TIMEOUT	0.759607	46.06380087599996	35.364864
+pthread-wmm/safe027_rmo.yml/ebf-safe027_rmo.yml	false	TIMEOUT (true)	0.797494	45.234041783000066	35.135488
+pthread-wmm/safe028_power.yml/ebf-safe028_power.yml	false	true	0.773547	43.91647881199992	35.196928
+pthread-wmm/safe028_rmo.yml/ebf-safe028_rmo.yml	false	TIMEOUT (true)	0.790686	45.42636156200001	35.184640
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/ebf-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.74221	45.314360120999936	35.004416
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/ebf-safe029_power.opt_pso.opt_rmo.opt.yml	false	true	0.756105	44.304718974000025	35.086336
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/ebf-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.772269	44.06294065099996	35.106816
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/ebf-safe030_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT (true)	0.768231	45.10545789999992	35.102720
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/ebf-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.797872	45.75517608799987	34.897920
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/ebf-safe031_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT (true)	0.797757	45.115478766000024	34.959360
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.804959	44.55173061400001	35.532800
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.769895	44.25775700600002	35.033088
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ebf-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.781159	43.647806585000126	34.988032
+pthread-wmm/thin002_power.oepc.yml/ebf-thin002_power.oepc.yml	false	true	0.751545	23.592795469999828	35.057664
+pthread-wmm/thin002_power.opt.yml/ebf-thin002_power.opt.yml	false	true	0.759855	22.705477270999836	35.495936
+pthread-wmm/thin002_rmo.yml/ebf-thin002_rmo.yml	false	true	0.754742	20.678706691000116	35.102720
+pthread/fib_unsafe-10.yml/ebf-fib_unsafe-10.yml	false	true	0.575026	1.058577385000035	34.820096
+pthread/fib_unsafe-11.yml/ebf-fib_unsafe-11.yml	false	true	0.594256	1.3499508539998715	34.529280
+pthread/fib_unsafe-12.yml/ebf-fib_unsafe-12.yml	false	true	0.571321	1.1361541339999803	34.713600
+pthread/fib_unsafe-5.yml/ebf-fib_unsafe-5.yml	false	true	0.570911	1.5134034799998517	34.680832
+pthread/fib_unsafe-6.yml/ebf-fib_unsafe-6.yml	false	true	0.560634	1.1923892669999532	34.574336
+pthread/fib_unsafe-7.yml/ebf-fib_unsafe-7.yml	false	true	0.59754	2.606293824999966	34.611200
+pthread/lazy01.yml/ebf-lazy01.yml	false	false(unreach-call)	0.618958	3.013543180999932	34.676736
+pthread/singleton.yml/ebf-singleton.yml	false	false(unreach-call)	0.713729	3.1869933800001036	35.401728
+pthread/stack-2.yml/ebf-stack-2.yml	false	true	0.664909	2.888861295999959	35.168256
+pthread/triangular-2.yml/ebf-triangular-2.yml	false	true	0.595834	2.68021418599983	34.639872
+pthread/triangular-longer-2.yml/ebf-triangular-longer-2.yml	false	true	0.597678	1.7717742319998706	34.643968

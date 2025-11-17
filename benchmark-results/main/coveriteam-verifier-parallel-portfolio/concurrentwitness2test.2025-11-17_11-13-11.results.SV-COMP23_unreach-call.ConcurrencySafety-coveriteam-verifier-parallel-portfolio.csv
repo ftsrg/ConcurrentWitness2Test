@@ -1,0 +1,261 @@
+tool		ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-parallel-portfolio	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-parallel-portfolio	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-parallel-portfolio	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-parallel-portfolio
+../svcomp23-witness-benchmarks/tools/coveriteam-verifier-parallel-portfolio/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/coveriteam-verifier-parallel-portfolio-13-privatized_18-first-reads_unknown_1_neg.yml	false	false(unreach-call)	0.619446	1.6049556129999871	60.616704
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/coveriteam-verifier-parallel-portfolio-13-privatized_18-first-reads_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.620117	1.6370087399999989	60.882944
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/coveriteam-verifier-parallel-portfolio-13-privatized_18-first-reads_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.623491	1.6220823600000074	60.227584
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/coveriteam-verifier-parallel-portfolio-13-privatized_18-first-reads_unknown_2_pos.yml	false	false(unreach-call)	0.623044	1.6143057310000017	59.932672
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/coveriteam-verifier-parallel-portfolio-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	0.611234	1.6146268980000116	59.346944
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/coveriteam-verifier-parallel-portfolio-13-privatized_19-publish-precision_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.641481	1.5719817199999966	58.617856
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/coveriteam-verifier-parallel-portfolio-13-privatized_19-publish-precision_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.641311	1.5644198079999967	59.252736
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/coveriteam-verifier-parallel-portfolio-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	0.609519	1.5335298999999907	61.685760
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/coveriteam-verifier-parallel-portfolio-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	false(unreach-call)	0.522806	1.4989313939999818	38.842368
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/coveriteam-verifier-parallel-portfolio-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.5682	1.4437833640000122	35.454976
+goblint-regression/13-privatized_68-pfscan_protected_loop_minimal_interval_true.yml/coveriteam-verifier-parallel-portfolio-13-privatized_68-pfscan_protected_loop_minimal_interval_true.yml	true	ERROR(ineffective witness)	0.544716	1.405894236999984	34.709504
+goblint-regression/13-privatized_69-refine-protected-loop-interval_true.yml/coveriteam-verifier-parallel-portfolio-13-privatized_69-refine-protected-loop-interval_true.yml	true	ERROR(ineffective witness)	0.531292	1.2439555689999793	34.668544
+goblint-regression/28-race_reach_45-escape_racing.yml/coveriteam-verifier-parallel-portfolio-28-race_reach_45-escape_racing.yml	false	ERROR(ineffective witness)	0.5691	1.2015388660000212	34.721792
+goblint-regression/28-race_reach_94-alloc_region_racing.yml/coveriteam-verifier-parallel-portfolio-28-race_reach_94-alloc_region_racing.yml	false	false(unreach-call)	0.749633	1.796952062999992	36.044800
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/coveriteam-verifier-parallel-portfolio-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.540365	1.4743791610000017	34.697216
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/coveriteam-verifier-parallel-portfolio-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	false(unreach-call)	0.54056	1.3534433799999874	34.717696
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/coveriteam-verifier-parallel-portfolio-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.526639	1.4482552259999864	34.635776
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/coveriteam-verifier-parallel-portfolio-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	false(unreach-call)	0.521731	1.3819139720000067	34.668544
+ldv-races/race-1_2-join.yml/coveriteam-verifier-parallel-portfolio-race-1_2-join.yml	false	ERROR(ineffective witness)	0.656664	1.4419456389999823	36.077568
+ldv-races/race-1_3-join.yml/coveriteam-verifier-parallel-portfolio-race-1_3-join.yml	false	ERROR(ineffective witness)	0.654495	1.382977100000005	36.089856
+ldv-races/race-2_3-container_of.yml/coveriteam-verifier-parallel-portfolio-race-2_3-container_of.yml	false	TIMEOUT	1.542826	46.01992085400002	36.564992
+ldv-races/race-2_4-container_of.yml/coveriteam-verifier-parallel-portfolio-race-2_4-container_of.yml	false	TIMEOUT	1.516271	46.023622880000005	36.605952
+ldv-races/race-2_5-container_of.yml/coveriteam-verifier-parallel-portfolio-race-2_5-container_of.yml	false	TIMEOUT	1.526354	46.03341270500002	36.581376
+pthread-divine/tls_destructor_worker.yml/coveriteam-verifier-parallel-portfolio-tls_destructor_worker.yml	false	false(unreach-call)	0.559495	1.5774274110000022	34.807808
+pthread-ext/25_stack_longer-1.yml/coveriteam-verifier-parallel-portfolio-25_stack_longer-1.yml	false	false(unreach-call)	0.717935	2.6829311890000156	34.689024
+pthread-ext/25_stack_longest-2.yml/coveriteam-verifier-parallel-portfolio-25_stack_longest-2.yml	false	false(unreach-call)	0.644924	2.0493271299999947	34.664448
+pthread-ext/26_stack_cas_longer-1.yml/coveriteam-verifier-parallel-portfolio-26_stack_cas_longer-1.yml	false	false(unreach-call)	0.646132	2.2909431730000165	34.717696
+pthread-ext/26_stack_cas_longest-1.yml/coveriteam-verifier-parallel-portfolio-26_stack_cas_longest-1.yml	false	false(unreach-call)	0.733776	3.462188685000001	34.734080
+pthread-ext/28_buggy_simple_loop1_vf.yml/coveriteam-verifier-parallel-portfolio-28_buggy_simple_loop1_vf.yml	false	TIMEOUT	37.495989	46.06442448300001	1773.920256
+pthread-lit/qw2004-2b.yml/coveriteam-verifier-parallel-portfolio-qw2004-2b.yml	false	ERROR(ineffective witness)	0.539067	1.6487685360000057	34.623488
+pthread-wmm/mix000.oepc.yml/coveriteam-verifier-parallel-portfolio-mix000.oepc.yml	false	TIMEOUT	0.895372	46.02405661200001	36.438016
+pthread-wmm/mix000.opt.yml/coveriteam-verifier-parallel-portfolio-mix000.opt.yml	false	TIMEOUT	0.822396	46.02537712099999	36.171776
+pthread-wmm/mix001.oepc.yml/coveriteam-verifier-parallel-portfolio-mix001.oepc.yml	false	TIMEOUT	0.913258	46.02811761699999	36.663296
+pthread-wmm/mix001.opt.yml/coveriteam-verifier-parallel-portfolio-mix001.opt.yml	false	TIMEOUT	0.87962	46.030921285999995	36.364288
+pthread-wmm/mix002.oepc.yml/coveriteam-verifier-parallel-portfolio-mix002.oepc.yml	false	TIMEOUT	1.113064	46.05165232899998	36.442112
+pthread-wmm/mix002.opt.yml/coveriteam-verifier-parallel-portfolio-mix002.opt.yml	false	TIMEOUT	0.734877	46.022779735	36.257792
+pthread-wmm/mix003.oepc.yml/coveriteam-verifier-parallel-portfolio-mix003.oepc.yml	false	TIMEOUT	0.674464	46.028241046000005	36.282368
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT	0.592481	46.027235174	36.130816
+pthread-wmm/mix004.oepc.yml/coveriteam-verifier-parallel-portfolio-mix004.oepc.yml	false	TIMEOUT	0.891907	46.02470265100001	36.704256
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix005_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.801962	46.02221558599999	36.577280
+pthread-wmm/mix005_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix005_tso.oepc.yml	false	TIMEOUT	0.759905	46.015316555	36.646912
+pthread-wmm/mix006.opt.yml/coveriteam-verifier-parallel-portfolio-mix006.opt.yml	false	TIMEOUT	0.634715	46.01829189	36.352000
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.725486	46.01923317699999	36.331520
+pthread-wmm/mix006_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix006_tso.oepc.yml	false	TIMEOUT	0.628951	46.01923985000002	37.859328
+pthread-wmm/mix007.oepc.yml/coveriteam-verifier-parallel-portfolio-mix007.oepc.yml	false	TIMEOUT	0.865703	46.02551510399999	36.589568
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix008_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.720426	46.02082915	36.515840
+pthread-wmm/mix009.oepc.yml/coveriteam-verifier-parallel-portfolio-mix009.oepc.yml	false	TIMEOUT	0.583272	46.01422285600003	35.971072
+pthread-wmm/mix009.opt.yml/coveriteam-verifier-parallel-portfolio-mix009.opt.yml	false	TIMEOUT	0.547106	46.02857514599998	36.216832
+pthread-wmm/mix010.oepc.yml/coveriteam-verifier-parallel-portfolio-mix010.oepc.yml	false	TIMEOUT	0.688664	46.02330740100001	36.220928
+pthread-wmm/mix010.opt.yml/coveriteam-verifier-parallel-portfolio-mix010.opt.yml	false	TIMEOUT	0.785093	46.028546731999995	36.204544
+pthread-wmm/mix011.opt.yml/coveriteam-verifier-parallel-portfolio-mix011.opt.yml	false	TIMEOUT	0.727879	46.01903440999996	36.147200
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.806792	46.01678362300001	36.384768
+pthread-wmm/mix011_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix011_tso.oepc.yml	false	TIMEOUT	0.67088	46.02427752899999	36.331520
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT	0.502285	46.024712238999996	35.971072
+pthread-wmm/mix012_pso.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix012_pso.opt_tso.opt.yml	false	TIMEOUT	0.566274	46.030586003000025	36.061184
+pthread-wmm/mix013.oepc.yml/coveriteam-verifier-parallel-portfolio-mix013.oepc.yml	false	TIMEOUT	0.936876	46.02254257900003	36.675584
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix014_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.708202	46.015306538999994	36.589568
+pthread-wmm/mix015.oepc.yml/coveriteam-verifier-parallel-portfolio-mix015.oepc.yml	false	TIMEOUT	0.611985	46.01380221900001	36.372480
+pthread-wmm/mix015.opt.yml/coveriteam-verifier-parallel-portfolio-mix015.opt.yml	false	TIMEOUT	0.599797	46.01674829699999	36.257792
+pthread-wmm/mix016.oepc.yml/coveriteam-verifier-parallel-portfolio-mix016.oepc.yml	false	TIMEOUT	0.737141	46.016988451999964	36.278272
+pthread-wmm/mix016_power.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix016_power.opt_rmo.opt.yml	false	TIMEOUT	0.573571	46.020989945999986	35.917824
+pthread-wmm/mix016_pso.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix016_pso.opt_tso.opt.yml	false	TIMEOUT	0.806474	46.01279078500005	36.282368
+pthread-wmm/mix017.oepc.yml/coveriteam-verifier-parallel-portfolio-mix017.oepc.yml	false	TIMEOUT	0.689692	46.019855807	36.638720
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix018_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.734036	46.020961573999955	36.544512
+pthread-wmm/mix019.opt.yml/coveriteam-verifier-parallel-portfolio-mix019.opt.yml	false	TIMEOUT	0.721605	46.03356533199997	36.302848
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix019_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.688656	46.018766009000046	36.184064
+pthread-wmm/mix019_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix019_tso.oepc.yml	false	TIMEOUT	0.576359	46.02227022699998	36.208640
+pthread-wmm/mix020.oepc.yml/coveriteam-verifier-parallel-portfolio-mix020.oepc.yml	false	TIMEOUT	0.70247	46.02530939899998	36.597760
+pthread-wmm/mix021.opt.yml/coveriteam-verifier-parallel-portfolio-mix021.opt.yml	false	TIMEOUT	0.820445	46.026872974000014	36.286464
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix021_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.013865	46.02048152399999	36.651008
+pthread-wmm/mix021_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix021_tso.oepc.yml	false	TIMEOUT	0.694746	46.013799139000014	36.450304
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.648079	46.01193015399997	35.799040
+pthread-wmm/mix022_tso.yml/coveriteam-verifier-parallel-portfolio-mix022_tso.yml	false	TIMEOUT	0.681006	46.01570831700002	36.147200
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix023_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.7919	46.01988890199999	36.589568
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT	0.874285	46.03868647200005	36.364288
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix024_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	0.56232	46.02422503599996	36.003840
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT	0.760872	46.134539734999976	36.163584
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix025_pso.opt_rmo.opt.yml	false	TIMEOUT	0.718509	46.063811895000015	36.024320
+pthread-wmm/mix026.oepc.yml/coveriteam-verifier-parallel-portfolio-mix026.oepc.yml	false	TIMEOUT	0.846893	46.221539113999995	36.655104
+pthread-wmm/mix026_power.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix026_power.opt_tso.opt.yml	false	TIMEOUT	0.798423	46.10950443500002	36.204544
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix027_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.88471	46.01766640599999	36.581376
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix027_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	0.861424	46.22735012100003	36.171776
+pthread-wmm/mix027_tso.yml/coveriteam-verifier-parallel-portfolio-mix027_tso.yml	false	TIMEOUT	0.907541	46.045200480999995	36.577280
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.738678	46.440842266000004	36.315136
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix028_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	0.889561	46.25037891900001	36.225024
+pthread-wmm/mix028_tso.yml/coveriteam-verifier-parallel-portfolio-mix028_tso.yml	false	TIMEOUT	0.884219	46.049220589000015	36.446208
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT	0.879202	46.25825352300001	36.589568
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix030_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.976855	47.10889402700002	36.651008
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix030_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	0.810779	46.34294547100001	36.450304
+pthread-wmm/mix030_tso.yml/coveriteam-verifier-parallel-portfolio-mix030_tso.yml	false	TIMEOUT	0.835394	46.47226071099999	36.646912
+pthread-wmm/mix031.oepc.yml/coveriteam-verifier-parallel-portfolio-mix031.oepc.yml	false	TIMEOUT	0.647419	46.42766665099998	36.044800
+pthread-wmm/mix031.opt.yml/coveriteam-verifier-parallel-portfolio-mix031.opt.yml	false	TIMEOUT	0.620902	46.422120699000004	35.778560
+pthread-wmm/mix032.oepc.yml/coveriteam-verifier-parallel-portfolio-mix032.oepc.yml	false	TIMEOUT	0.829338	46.433039097999995	36.425728
+pthread-wmm/mix032.opt.yml/coveriteam-verifier-parallel-portfolio-mix032.opt.yml	false	TIMEOUT	0.760191	46.23598354699999	35.901440
+pthread-wmm/mix033.opt.yml/coveriteam-verifier-parallel-portfolio-mix033.opt.yml	false	TIMEOUT	0.807588	46.639492630999996	35.954688
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.747553	46.64067992299999	36.339712
+pthread-wmm/mix033_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix033_tso.oepc.yml	false	TIMEOUT	0.77249	46.73351183599999	36.335616
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT	0.686406	46.75850430899999	35.995648
+pthread-wmm/mix034_pso.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix034_pso.opt_tso.opt.yml	false	TIMEOUT	0.642667	46.82432852399995	35.651584
+pthread-wmm/mix035.oepc.yml/coveriteam-verifier-parallel-portfolio-mix035.oepc.yml	false	TIMEOUT	0.6052	46.28271004499993	36.360192
+pthread-wmm/mix035_power.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix035_power.opt_rmo.opt.yml	false	TIMEOUT	0.729146	46.467200315999946	35.991552
+pthread-wmm/mix035_pso.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix035_pso.opt_tso.opt.yml	false	TIMEOUT	0.714013	46.43439698999998	35.774464
+pthread-wmm/mix036.oepc.yml/coveriteam-verifier-parallel-portfolio-mix036.oepc.yml	false	TIMEOUT	0.914881	46.28133220400008	36.651008
+pthread-wmm/mix036_power.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-mix036_power.opt_rmo.opt.yml	false	TIMEOUT	0.885933	46.49141711300001	36.270080
+pthread-wmm/mix036_pso.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix036_pso.opt_tso.opt.yml	false	TIMEOUT	0.752251	46.29630354300002	36.028416
+pthread-wmm/mix037.opt.yml/coveriteam-verifier-parallel-portfolio-mix037.opt.yml	false	TIMEOUT	0.838536	46.670159930999944	35.950592
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix037_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.764221	46.01535556300007	36.626432
+pthread-wmm/mix037_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix037_tso.oepc.yml	false	TIMEOUT	0.678547	46.01650545000007	36.696064
+pthread-wmm/mix038.opt.yml/coveriteam-verifier-parallel-portfolio-mix038.opt.yml	false	TIMEOUT	0.68704	46.024500133999936	35.758080
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.631863	46.01925600000004	36.253696
+pthread-wmm/mix038_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix038_tso.oepc.yml	false	TIMEOUT	0.755464	46.033528897999986	36.331520
+pthread-wmm/mix039.oepc.yml/coveriteam-verifier-parallel-portfolio-mix039.oepc.yml	false	TIMEOUT	0.653841	46.02614585399999	36.511744
+pthread-wmm/mix039.opt.yml/coveriteam-verifier-parallel-portfolio-mix039.opt.yml	false	TIMEOUT	0.759659	46.02857277600003	36.003840
+pthread-wmm/mix040.opt.yml/coveriteam-verifier-parallel-portfolio-mix040.opt.yml	false	TIMEOUT	0.85708	46.02438555900005	36.102144
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix040_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.785191	46.032156569999984	36.458496
+pthread-wmm/mix040_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix040_tso.oepc.yml	false	TIMEOUT	0.590574	46.02017846199999	36.347904
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.650652	46.00696688599999	35.823616
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	0.757684	46.03426501000001	35.926016
+pthread-wmm/mix042.oepc.yml/coveriteam-verifier-parallel-portfolio-mix042.oepc.yml	false	TIMEOUT	0.725665	46.017616867000015	36.347904
+pthread-wmm/mix042.opt.yml/coveriteam-verifier-parallel-portfolio-mix042.opt.yml	false	TIMEOUT	0.653355	46.038577203000045	36.155392
+pthread-wmm/mix043.oepc.yml/coveriteam-verifier-parallel-portfolio-mix043.oepc.yml	false	TIMEOUT	0.666938	46.030101172999935	36.581376
+pthread-wmm/mix043.opt.yml/coveriteam-verifier-parallel-portfolio-mix043.opt.yml	false	TIMEOUT	0.8226	46.020565838999914	36.245504
+pthread-wmm/mix044.opt.yml/coveriteam-verifier-parallel-portfolio-mix044.opt.yml	false	TIMEOUT	0.744678	46.02075516399998	36.352000
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix044_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.701395	46.031781349000084	36.618240
+pthread-wmm/mix044_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix044_tso.oepc.yml	false	TIMEOUT	0.854309	46.02865338699996	36.487168
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.728735	46.01952219399993	36.339712
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	0.682277	46.01481938400002	36.085760
+pthread-wmm/mix046.oepc.yml/coveriteam-verifier-parallel-portfolio-mix046.oepc.yml	false	TIMEOUT	0.668259	46.01752804299997	36.667392
+pthread-wmm/mix046.opt.yml/coveriteam-verifier-parallel-portfolio-mix046.opt.yml	false	TIMEOUT	1.065704	46.01489910200007	36.397056
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix047_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.699128	46.12120089700011	36.519936
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	0.969543	46.02450132900003	36.380672
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	0.59317	46.03737827400005	35.852288
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	0.686445	46.03155248799999	36.253696
+pthread-wmm/mix050.yml/coveriteam-verifier-parallel-portfolio-mix050.yml	false	ERROR(ineffective witness)	0.758514	4.872864048999986	36.585472
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.755438	46.030048474999944	36.503552
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix051_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT	0.846014	46.10802945299997	35.905536
+pthread-wmm/mix051_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix051_tso.oepc.yml	false	TIMEOUT	1.077989	46.016559435999966	36.397056
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.759954	46.14898294599993	36.196352
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix052_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT	0.7216	46.096951194999974	35.745792
+pthread-wmm/mix052_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix052_tso.oepc.yml	false	TIMEOUT	0.73935	46.10827730400001	36.143104
+pthread-wmm/mix053.opt.yml/coveriteam-verifier-parallel-portfolio-mix053.opt.yml	false	TIMEOUT	0.905239	46.394780197000046	35.991552
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix053_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.857359	46.102170183	36.610048
+pthread-wmm/mix053_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix053_tso.oepc.yml	false	TIMEOUT	0.762218	46.061929264000014	36.483072
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.65851	46.08046593300003	35.815424
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	0.622859	46.0933316579999	35.713024
+pthread-wmm/mix055.opt.yml/coveriteam-verifier-parallel-portfolio-mix055.opt.yml	false	TIMEOUT	0.905994	46.34585135999998	36.233216
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix055_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.798753	46.05231651700001	36.442112
+pthread-wmm/mix055_tso.oepc.yml/coveriteam-verifier-parallel-portfolio-mix055_tso.oepc.yml	false	TIMEOUT	0.789308	46.717918129000054	36.511744
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.688702	46.37054200500006	36.257792
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	0.76318	46.40421963599999	35.958784
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-mix057_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.727454	46.72727565999992	36.577280
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	0.660735	46.87661476200003	36.167680
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.569694	46.504045409000014	36.745216
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-rfi000_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	0.672366	46.51706117399999	36.016128
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.620083	46.711530127999936	35.794944
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	0.583879	46.552507756999944	35.835904
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.555196	46.16062123400002	35.749888
+pthread-wmm/rfi004.yml/coveriteam-verifier-parallel-portfolio-rfi004.yml	false	TIMEOUT	0.523912	46.02080882900009	35.680256
+pthread-wmm/rfi005.yml/coveriteam-verifier-parallel-portfolio-rfi005.yml	false	TIMEOUT	0.692027	46.01689364399999	35.377152
+pthread-wmm/rfi006_power.oepc.yml/coveriteam-verifier-parallel-portfolio-rfi006_power.oepc.yml	false	TIMEOUT	1.238516	46.02299616799996	36.306944
+pthread-wmm/rfi006_power.opt.yml/coveriteam-verifier-parallel-portfolio-rfi006_power.opt.yml	false	TIMEOUT	1.227356	46.02994533000003	36.466688
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	0.756953	46.02056315300001	36.515840
+pthread-wmm/rfi006_rmo.yml/coveriteam-verifier-parallel-portfolio-rfi006_rmo.yml	false	TIMEOUT	1.256095	46.031310633999965	36.225024
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.637492	46.04022111699999	35.966976
+pthread-wmm/rfi007_tso.yml/coveriteam-verifier-parallel-portfolio-rfi007_tso.yml	false	TIMEOUT	0.513538	46.042007234999915	36.114432
+pthread-wmm/rfi008.oepc.yml/coveriteam-verifier-parallel-portfolio-rfi008.oepc.yml	false	TIMEOUT	0.572853	46.02932110400002	36.167680
+pthread-wmm/rfi008.opt.yml/coveriteam-verifier-parallel-portfolio-rfi008.opt.yml	false	TIMEOUT	0.626489	46.01582304200008	36.122624
+pthread-wmm/rfi009_power.oepc.yml/coveriteam-verifier-parallel-portfolio-rfi009_power.oepc.yml	false	TIMEOUT	1.164156	46.01367072100004	36.249600
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/coveriteam-verifier-parallel-portfolio-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	0.625359	46.022217350000005	36.442112
+pthread-wmm/rfi009_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-rfi009_rmo.oepc.yml	false	TIMEOUT	1.448167	46.021925324999984	36.257792
+pthread-wmm/rfi010.yml/coveriteam-verifier-parallel-portfolio-rfi010.yml	false	TIMEOUT	0.565271	46.03831916299998	36.069376
+pthread-wmm/safe000_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe000_power.oepc.yml	false	TIMEOUT	1.4144	46.02900067099995	36.933632
+pthread-wmm/safe000_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe000_power.opt.yml	false	ERROR(ineffective witness)	1.413045	23.233611688999986	36.507648
+pthread-wmm/safe000_rmo.yml/coveriteam-verifier-parallel-portfolio-safe000_rmo.yml	false	TIMEOUT	1.389062	46.027293221000036	36.761600
+pthread-wmm/safe001_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe001_power.oepc.yml	false	TIMEOUT	1.456369	46.04439677200003	36.818944
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT	0.701406	46.017356972000016	36.139008
+pthread-wmm/safe001_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe001_rmo.oepc.yml	false	TIMEOUT	1.308127	46.019498708000015	36.843520
+pthread-wmm/safe002_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe002_power.oepc.yml	false	TIMEOUT	1.385883	46.01593146099992	36.872192
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT	0.672767	46.02081359900001	35.897344
+pthread-wmm/safe002_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe002_rmo.oepc.yml	false	TIMEOUT	1.3416	46.02511038900002	36.732928
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.669789	46.03534675800006	37.068800
+pthread-wmm/safe003_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe003_power.opt.yml	false	ERROR(ineffective witness)	1.4085	38.13956551399997	36.413440
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe004_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.589067	46.019253983	37.052416
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe004_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	0.831576	46.02617324200003	36.229120
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.661624	46.040416789000005	35.872768
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe006_power.oepc-thin000_power.oepc.yml	false	TIMEOUT	0.983486	46.016466474000026	35.823616
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe006_power.opt-thin000_power.opt.yml	false	ERROR(ineffective witness)	1.115532	30.631918364000057	36.216832
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.04262	46.02657801700002	35.647488
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe007_power.oepc-thin001_power.oepc.yml	false	TIMEOUT	1.08271	46.018116848999966	35.905536
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe007_power.opt-thin001_power.opt.yml	false	TIMEOUT	0.602031	46.029968806000056	36.159488
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.372418	46.02082666299998	35.790848
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.589069	46.02513911799997	36.245504
+pthread-wmm/safe008_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe008_power.opt.yml	false	TIMEOUT	1.307862	46.021016453000016	36.532224
+pthread-wmm/safe009_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe009_power.oepc.yml	false	TIMEOUT	1.224426	46.024853972000074	36.470784
+pthread-wmm/safe009_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe009_power.opt.yml	false	TIMEOUT	1.430103	46.03063015700002	36.499456
+pthread-wmm/safe009_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe009_rmo.oepc.yml	false	TIMEOUT	1.181814	46.02564444200004	36.429824
+pthread-wmm/safe009_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe009_rmo.opt.yml	false	ERROR(ineffective witness)	1.253461	34.89836177400002	36.294656
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.591685	46.018571619	35.713024
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.589962	46.016801547	36.175872
+pthread-wmm/safe011_power.opt_pso.opt.yml/coveriteam-verifier-parallel-portfolio-safe011_power.opt_pso.opt.yml	false	TIMEOUT	0.668605	46.01029969900003	36.184064
+pthread-wmm/safe012_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe012_power.oepc.yml	false	TIMEOUT	0.990905	46.019736008999985	35.889152
+pthread-wmm/safe012_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe012_power.opt.yml	false	TIMEOUT	0.662285	46.021836592	36.245504
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe012_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT	0.66695	46.02727132100006	35.946496
+pthread-wmm/safe012_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe012_rmo.oepc.yml	false	TIMEOUT	0.976028	46.01534207199995	35.856384
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.839959	46.02889724099998	35.872768
+pthread-wmm/safe014_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe014_power.oepc.yml	false	TIMEOUT	1.32411	46.04152166100005	36.003840
+pthread-wmm/safe014_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe014_power.opt.yml	false	TIMEOUT	1.396392	46.021100311000055	36.081664
+pthread-wmm/safe014_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe014_rmo.oepc.yml	false	TIMEOUT	1.108934	46.018426590000104	35.782656
+pthread-wmm/safe014_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe014_rmo.opt.yml	false	TIMEOUT	1.51407	46.01231521099999	36.806656
+pthread-wmm/safe015_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe015_power.oepc.yml	false	TIMEOUT	1.242572	46.020461658000045	36.065280
+pthread-wmm/safe015_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe015_power.opt.yml	false	ERROR(ineffective witness)	1.587035	38.48687080500008	36.904960
+pthread-wmm/safe015_rmo.yml/coveriteam-verifier-parallel-portfolio-safe015_rmo.yml	false	TIMEOUT	1.331261	46.01863872099989	36.917248
+pthread-wmm/safe016_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe016_power.oepc.yml	false	TIMEOUT	1.350547	46.01802750899992	36.614144
+pthread-wmm/safe016_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe016_rmo.oepc.yml	false	TIMEOUT	1.297281	46.048856508000085	36.507648
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.700588	46.02773630200011	36.134912
+pthread-wmm/safe018_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe018_power.oepc.yml	false	TIMEOUT	1.288966	46.020047331	35.831808
+pthread-wmm/safe018_power.opt.yml/coveriteam-verifier-parallel-portfolio-safe018_power.opt.yml	false	TIMEOUT	1.419729	46.02964392600006	36.564992
+pthread-wmm/safe018_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe018_rmo.oepc.yml	false	TIMEOUT	1.085553	46.01775289300008	35.885056
+pthread-wmm/safe018_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe018_rmo.opt.yml	false	ERROR(ineffective witness)	1.379525	26.5393327889999	36.433920
+pthread-wmm/safe019_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe019_power.oepc.yml	false	TIMEOUT	1.344324	46.016550955999946	36.507648
+pthread-wmm/safe019_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe019_rmo.oepc.yml	false	TIMEOUT	1.458939	46.01836917399987	36.659200
+pthread-wmm/safe019_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe019_rmo.opt.yml	false	TIMEOUT	1.593033	46.02132446299993	36.597760
+pthread-wmm/safe020_power.yml/coveriteam-verifier-parallel-portfolio-safe020_power.yml	false	ERROR(ineffective witness)	1.457917	23.469742190000034	36.622336
+pthread-wmm/safe020_rmo.yml/coveriteam-verifier-parallel-portfolio-safe020_rmo.yml	false	ERROR(ineffective witness)	1.334258	17.200046445999988	36.376576
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.689277	46.01551297900005	36.270080
+pthread-wmm/safe021_power.opt_pso.opt.yml/coveriteam-verifier-parallel-portfolio-safe021_power.opt_pso.opt.yml	false	TIMEOUT	0.596752	46.01757834199998	36.339712
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.486104	46.043352236000146	35.835904
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.75325	46.016782696000064	37.113856
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.688712	46.02072170800011	36.016128
+pthread-wmm/safe025_power.yml/coveriteam-verifier-parallel-portfolio-safe025_power.yml	false	TIMEOUT	1.184612	46.01386317499987	36.139008
+pthread-wmm/safe025_rmo.yml/coveriteam-verifier-parallel-portfolio-safe025_rmo.yml	false	ERROR(ineffective witness)	1.397273	25.805750114000148	36.909056
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.6779	46.017772272	36.093952
+pthread-wmm/safe027_power.oepc.yml/coveriteam-verifier-parallel-portfolio-safe027_power.oepc.yml	false	TIMEOUT	1.383154	46.01666491800006	36.392960
+pthread-wmm/safe027_rmo.yml/coveriteam-verifier-parallel-portfolio-safe027_rmo.yml	false	TIMEOUT	1.396518	46.01539549899985	36.237312
+pthread-wmm/safe028_power.yml/coveriteam-verifier-parallel-portfolio-safe028_power.yml	false	TIMEOUT	1.566761	46.018563376999964	36.474880
+pthread-wmm/safe028_rmo.yml/coveriteam-verifier-parallel-portfolio-safe028_rmo.yml	false	TIMEOUT	1.484989	46.017011679999996	36.347904
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.572847	46.0253871299999	35.876864
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe029_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	0.600456	46.01589436699987	35.844096
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.671554	46.01611726700003	36.048896
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe030_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	0.742498	46.03678142800004	36.085760
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/coveriteam-verifier-parallel-portfolio-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.722035	46.018227904000014	36.012032
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe031_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	0.759032	46.01433665500008	35.938304
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.718554	46.0161386809998	36.990976
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.577372	46.010777512000004	35.594240
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/coveriteam-verifier-parallel-portfolio-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	0.614842	46.02875398399988	35.844096
+pthread-wmm/thin002_power.oepc.yml/coveriteam-verifier-parallel-portfolio-thin002_power.oepc.yml	false	TIMEOUT	1.503398	46.02670682000007	36.147200
+pthread-wmm/thin002_rmo.yml/coveriteam-verifier-parallel-portfolio-thin002_rmo.yml	false	TIMEOUT	1.262576	46.030960466999886	36.065280
+pthread/lazy01.yml/coveriteam-verifier-parallel-portfolio-lazy01.yml	false	TIMEOUT	0.464533	46.02052471900015	34.852864
+pthread/stateful01-1.yml/coveriteam-verifier-parallel-portfolio-stateful01-1.yml	false	TIMEOUT	0.485757	46.01580089899994	34.725888
+pthread/triangular-2.yml/coveriteam-verifier-parallel-portfolio-triangular-2.yml	false	ERROR(ineffective witness)	0.518152	0.7021843099998932	35.045376
+pthread/triangular-longer-2.yml/coveriteam-verifier-parallel-portfolio-triangular-longer-2.yml	false	ERROR(ineffective witness)	0.527902	0.6508872130000327	35.430400
+weaver/loop-tiling-eq.wvr.yml/coveriteam-verifier-parallel-portfolio-loop-tiling-eq.wvr.yml	true	TIMEOUT	0.534149	46.0170038629999	34.283520
+weaver/mult-comm.wvr.yml/coveriteam-verifier-parallel-portfolio-mult-comm.wvr.yml	true	TIMEOUT	0.472036	46.01778862000015	33.935360
+weaver/popl20-figure1-alt.wvr.yml/coveriteam-verifier-parallel-portfolio-popl20-figure1-alt.wvr.yml	true	TIMEOUT	0.700741	46.01878773600015	33.959936
+weaver/popl20-nonblocking-cntr-alt.wvr.yml/coveriteam-verifier-parallel-portfolio-popl20-nonblocking-cntr-alt.wvr.yml	true	TIMEOUT	0.329625	46.01273114900005	33.783808
+weaver/popl20-simple-queue.wvr.yml/coveriteam-verifier-parallel-portfolio-popl20-simple-queue.wvr.yml	true	TIMEOUT	0.6946	46.01553487299998	34.000896
+weaver/test-context1.wvr.yml/coveriteam-verifier-parallel-portfolio-test-context1.wvr.yml	true	TIMEOUT	0.803904	46.02849996400005	33.988608
+weaver/test-easy1.wvr.yml/coveriteam-verifier-parallel-portfolio-test-easy1.wvr.yml	true	TIMEOUT	0.645286	46.019464239999934	33.845248

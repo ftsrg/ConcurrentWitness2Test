@@ -1,0 +1,231 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/infer/pthread/singleton.yml/singleton.i --graphml-witness svcomp23-witness-benchmarks/tools/infer/pthread/singleton.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id creationtime. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/tmp/BenchExec_run_18n16hle/tmp/tmpgkpsj60d.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+{0: 91, -1: 9}
+Verdict: SOMETIMES

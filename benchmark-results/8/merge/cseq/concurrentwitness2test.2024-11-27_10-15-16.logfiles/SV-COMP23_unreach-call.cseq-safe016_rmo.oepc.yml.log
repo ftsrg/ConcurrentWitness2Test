@@ -1,0 +1,28 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/safe016_rmo.oepc.yml/safe016_rmo.oepc.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/safe016_rmo.oepc.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 85, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_y6fu033r/tmp/tmpqfjvylru.c
+Compilation started
+/tmp/BenchExec_run_y6fu033r/tmp/tmpqfjvylru.c: In function ‘P0’:
+/tmp/BenchExec_run_y6fu033r/tmp/tmpqfjvylru.c:584:19: error: ‘FALSE’ undeclared (first use in this function)
+  584 |   weak$$choice0 = FALSE;;
+      |                   ^~~~~
+/tmp/BenchExec_run_y6fu033r/tmp/tmpqfjvylru.c:584:19: note: each undeclared identifier is reported only once for each function it appears in
+/tmp/BenchExec_run_y6fu033r/tmp/tmpqfjvylru.c: In function ‘main’:
+/tmp/BenchExec_run_y6fu033r/tmp/tmpqfjvylru.c:720:19: error: ‘FALSE’ undeclared (first use in this function)
+  720 |   weak$$choice0 = FALSE;;
+      |                   ^~~~~
+/tmp/BenchExec_run_y6fu033r/tmp/tmpqfjvylru.c:731:19: error: ‘TRUE’ undeclared (first use in this function)
+  731 |   weak$$choice1 = TRUE;;
+      |                   ^~~~
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

@@ -1,0 +1,14 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/lf-checker/pthread-ext/25_stack_longer-1.yml/25_stack_longer-1.i --graphml-witness svcomp23-witness-benchmarks/tools/lf-checker/pthread-ext/25_stack_longer-1.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 45, in translate_to_c
+    apply_witness(ast, filename, witness)
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/witness2ast.py", line 245, in apply_witness
+    if "assumption" in data and "content" in coords and "startline" in coords:
+                                ^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'NoneType' is not iterable
+Verdict: Incompatible witness

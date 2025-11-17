@@ -1,0 +1,287 @@
+tool	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-uautomizer	SV-COMP23_unreach-call.ConcurrencySafety-uautomizer	SV-COMP23_unreach-call.ConcurrencySafety-uautomizer	SV-COMP23_unreach-call.ConcurrencySafety-uautomizer
+../svcomp23-witness-benchmarks/tools/uautomizer/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/uautomizer-13-privatized_18-first-reads_unknown_1_neg.yml	false(unreach-call)	0.66094	2.429558841000002	59.850752
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/uautomizer-13-privatized_18-first-reads_unknown_1_pos.yml	ERROR(ineffective witness)	0.659315	2.436339329000006	59.387904
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/uautomizer-13-privatized_18-first-reads_unknown_2_neg.yml	ERROR(ineffective witness)	0.656989	2.4404660670000027	59.305984
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/uautomizer-13-privatized_18-first-reads_unknown_2_pos.yml	false(unreach-call)	0.656904	2.4457332070000035	59.990016
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/uautomizer-13-privatized_19-publish-precision_unknown_1_neg.yml	false(unreach-call)	0.553006	2.323795610999994	36.839424
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/uautomizer-13-privatized_19-publish-precision_unknown_1_pos.yml	ERROR(ineffective witness)	0.569596	2.360514946000009	36.265984
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/uautomizer-13-privatized_19-publish-precision_unknown_2_neg.yml	ERROR(ineffective witness)	0.572349	2.386096894000005	36.433920
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/uautomizer-13-privatized_19-publish-precision_unknown_2_pos.yml	false(unreach-call)	0.564306	2.4019447900000017	38.416384
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/uautomizer-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false(unreach-call)	0.558798	2.3041614330000044	38.797312
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/uautomizer-13-privatized_41-traces-ex-7_unknown_1_pos.yml	TIMEOUT	0.426911	46.030048045	38.006784
+goblint-regression/13-privatized_67-pthread_cond_wait_true.yml/uautomizer-13-privatized_67-pthread_cond_wait_true.yml	TIMEOUT	0.563225	46.029049167	35.647488
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_neg.yml/uautomizer-13-privatized_67-pthread_cond_wait_unknown_1_neg.yml	TIMEOUT	0.588973	46.005539428999995	35.631104
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_pos.yml/uautomizer-13-privatized_67-pthread_cond_wait_unknown_1_pos.yml	TIMEOUT	0.599759	46.01740451500001	35.676160
+goblint-regression/28-race_reach_45-escape_racing.yml/uautomizer-28-race_reach_45-escape_racing.yml	ERROR(ineffective witness)	0.585215	1.2594982829999992	34.566144
+goblint-regression/28-race_reach_94-alloc_region_racing.yml/uautomizer-28-race_reach_94-alloc_region_racing.yml	false(unreach-call)	0.786232	1.378684413000002	36.204544
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/uautomizer-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	ERROR(ineffective witness)	0.565387	1.2899468780000092	34.762752
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/uautomizer-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false(unreach-call)	0.565766	1.2558049560000057	34.725888
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/uautomizer-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	ERROR(ineffective witness)	0.53252	1.2588618399999945	34.643968
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/uautomizer-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false(unreach-call)	0.543507	1.1952272080000057	34.713600
+ldv-races/race-1_2-join.yml/uautomizer-race-1_2-join.yml	TIMEOUT	0.646006	46.01312835900001	36.249600
+ldv-races/race-1_3-join.yml/uautomizer-race-1_3-join.yml	ERROR(ineffective witness)	0.820953	1.2221747589999978	36.290560
+ldv-races/race-2_2-container_of.yml/uautomizer-race-2_2-container_of.yml	TIMEOUT	0.968278	46.016612384	36.265984
+ldv-races/race-2_3-container_of.yml/uautomizer-race-2_3-container_of.yml	TIMEOUT	2.867478	46.02194782699999	36.319232
+ldv-races/race-2_4-container_of.yml/uautomizer-race-2_4-container_of.yml	TIMEOUT	3.223924	46.02357953800001	36.298752
+ldv-races/race-2_5-container_of.yml/uautomizer-race-2_5-container_of.yml	TIMEOUT	0.8995	46.045689377	36.212736
+ldv-races/race-3_2-container_of-global.yml/uautomizer-race-3_2-container_of-global.yml	TIMEOUT	0.989722	46.021234871000004	36.335616
+pthread-C-DAC/pthread-demo-datarace-3.yml/uautomizer-pthread-demo-datarace-3.yml	TIMEOUT	1.749533	46.020734340999994	36.425728
+pthread-atomic/read_write_lock-2.yml/uautomizer-read_write_lock-2.yml	TIMEOUT	0.610145	46.10504956199999	35.188736
+pthread-deagle/arithmetic_prog_bad.yml/uautomizer-arithmetic_prog_bad.yml	TIMEOUT	0.779375	46.10831898500001	35.508224
+pthread-deagle/circular_buffer_bad.yml/uautomizer-circular_buffer_bad.yml	ERROR(ineffective witness)	0.802529	1.8881074760000018	35.192832
+pthread-ext/28_buggy_simple_loop1_vf.yml/uautomizer-28_buggy_simple_loop1_vf.yml	TIMEOUT	10.646787	45.07770248700001	1772.548096
+pthread-lit/qw2004-2b.yml/uautomizer-qw2004-2b.yml	TIMEOUT	0.613829	46.03833494599999	34.979840
+pthread-wmm/mix000.oepc.yml/uautomizer-mix000.oepc.yml	ERROR(Incompatible witness)	0.830154	1.9131101270000102	27.873280
+pthread-wmm/mix000.opt.yml/uautomizer-mix000.opt.yml	ERROR(Incompatible witness)	0.823483	2.3316414759999873	27.840512
+pthread-wmm/mix001.oepc.yml/uautomizer-mix001.oepc.yml	ERROR(Incompatible witness)	0.925555	3.0148367600000086	28.020736
+pthread-wmm/mix001.opt.yml/uautomizer-mix001.opt.yml	ERROR(Incompatible witness)	0.891069	2.957030482999997	27.930624
+pthread-wmm/mix002.oepc.yml/uautomizer-mix002.oepc.yml	ERROR(Incompatible witness)	0.899288	3.050906777999998	27.918336
+pthread-wmm/mix002.opt.yml/uautomizer-mix002.opt.yml	ERROR(Incompatible witness)	0.896387	2.6276881779999997	27.959296
+pthread-wmm/mix003.oepc.yml/uautomizer-mix003.oepc.yml	ERROR(Incompatible witness)	0.858298	2.361197992000001	27.877376
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/uautomizer-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	ERROR(Incompatible witness)	0.871837	2.341586327000016	27.934720
+pthread-wmm/mix004.oepc.yml/uautomizer-mix004.oepc.yml	ERROR(Incompatible witness)	0.949644	2.749125549000013	28.033024
+pthread-wmm/mix004.opt.yml/uautomizer-mix004.opt.yml	ERROR(Incompatible witness)	0.918592	2.743671740999986	28.008448
+pthread-wmm/mix005.opt.yml/uautomizer-mix005.opt.yml	ERROR(Incompatible witness)	0.92857	2.5692051689999857	28.004352
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix005_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.940744	2.669322670000014	28.020736
+pthread-wmm/mix005_tso.oepc.yml/uautomizer-mix005_tso.oepc.yml	ERROR(Incompatible witness)	0.940316	2.9070499389999895	28.008448
+pthread-wmm/mix006.opt.yml/uautomizer-mix006.opt.yml	ERROR(Incompatible witness)	0.875493	2.127081701999998	27.910144
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix006_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.868675	2.752388157000013	27.885568
+pthread-wmm/mix006_tso.oepc.yml/uautomizer-mix006_tso.oepc.yml	ERROR(Incompatible witness)	1.217939	3.461508803000015	28.463104
+pthread-wmm/mix007.oepc.yml/uautomizer-mix007.oepc.yml	ERROR(Incompatible witness)	0.900568	2.0586854630000175	28.016640
+pthread-wmm/mix007.opt.yml/uautomizer-mix007.opt.yml	ERROR(Incompatible witness)	0.919742	2.2332836969999903	28.024832
+pthread-wmm/mix008.opt.yml/uautomizer-mix008.opt.yml	ERROR(Incompatible witness)	0.915399	2.404962845	27.992064
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix008_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.916048	2.8899823440000034	28.008448
+pthread-wmm/mix008_tso.oepc.yml/uautomizer-mix008_tso.oepc.yml	ERROR(Incompatible witness)	1.248099	3.0017680820000123	28.545024
+pthread-wmm/mix009.oepc.yml/uautomizer-mix009.oepc.yml	ERROR(Incompatible witness)	0.769523	2.203583184999985	27.754496
+pthread-wmm/mix009.opt.yml/uautomizer-mix009.opt.yml	ERROR(Incompatible witness)	0.802011	2.340123398000003	27.856896
+pthread-wmm/mix010.oepc.yml/uautomizer-mix010.oepc.yml	ERROR(Incompatible witness)	0.841519	2.63045980199999	27.889664
+pthread-wmm/mix010.opt.yml/uautomizer-mix010.opt.yml	ERROR(Incompatible witness)	0.859813	2.3971178289999955	27.930624
+pthread-wmm/mix011.opt.yml/uautomizer-mix011.opt.yml	ERROR(Incompatible witness)	0.853162	2.049159755000005	27.930624
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix011_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.861938	3.009267561999991	27.918336
+pthread-wmm/mix011_tso.oepc.yml/uautomizer-mix011_tso.oepc.yml	ERROR(Incompatible witness)	0.82454	2.363824655000002	27.889664
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/uautomizer-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	ERROR(Incompatible witness)	0.736418	2.256478259000005	27.750400
+pthread-wmm/mix012_pso.opt_tso.opt.yml/uautomizer-mix012_pso.opt_tso.opt.yml	ERROR(Incompatible witness)	0.776402	2.3288077580000106	27.811840
+pthread-wmm/mix013.oepc.yml/uautomizer-mix013.oepc.yml	ERROR(Incompatible witness)	0.949273	2.3603882099999964	28.028928
+pthread-wmm/mix013.opt.yml/uautomizer-mix013.opt.yml	ERROR(Incompatible witness)	0.920265	2.328965358000005	28.000256
+pthread-wmm/mix014.opt.yml/uautomizer-mix014.opt.yml	ERROR(Incompatible witness)	0.928503	2.5211273050000216	28.000256
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix014_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.910514	2.876682914999975	28.037120
+pthread-wmm/mix014_tso.oepc.yml/uautomizer-mix014_tso.oepc.yml	ERROR(Incompatible witness)	1.270682	3.579911635000002	28.520448
+pthread-wmm/mix015.oepc.yml/uautomizer-mix015.oepc.yml	ERROR(Incompatible witness)	0.855789	2.1959539059999997	27.881472
+pthread-wmm/mix015.opt.yml/uautomizer-mix015.opt.yml	ERROR(Incompatible witness)	0.886281	2.459484773000014	27.947008
+pthread-wmm/mix016.oepc.yml/uautomizer-mix016.oepc.yml	ERROR(Incompatible witness)	0.815899	2.3131549069999835	27.865088
+pthread-wmm/mix016_power.opt_rmo.opt.yml/uautomizer-mix016_power.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.822845	1.6125346890000003	27.840512
+pthread-wmm/mix016_pso.opt_tso.opt.yml/uautomizer-mix016_pso.opt_tso.opt.yml	ERROR(Incompatible witness)	0.873003	2.5227171850000047	27.885568
+pthread-wmm/mix017.oepc.yml/uautomizer-mix017.oepc.yml	ERROR(Incompatible witness)	0.903018	2.534774051999989	28.020736
+pthread-wmm/mix017_power.opt_rmo.opt.yml/uautomizer-mix017_power.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.907648	2.5793514160000086	27.910144
+pthread-wmm/mix017_pso.opt_tso.opt.yml/uautomizer-mix017_pso.opt_tso.opt.yml	ERROR(Incompatible witness)	0.892825	2.5621071310000048	27.987968
+pthread-wmm/mix018.opt.yml/uautomizer-mix018.opt.yml	ERROR(Incompatible witness)	0.88385	2.5510845910000057	27.996160
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix018_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.944167	2.2699003980000043	27.992064
+pthread-wmm/mix018_tso.oepc.yml/uautomizer-mix018_tso.oepc.yml	ERROR(Incompatible witness)	0.935724	2.5655652449999877	28.004352
+pthread-wmm/mix019.opt.yml/uautomizer-mix019.opt.yml	ERROR(Incompatible witness)	0.831903	2.2085530459999916	27.893760
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix019_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.857373	2.4610030039999913	27.881472
+pthread-wmm/mix019_tso.oepc.yml/uautomizer-mix019_tso.oepc.yml	ERROR(Incompatible witness)	0.82544	2.3463962970000125	27.873280
+pthread-wmm/mix020.oepc.yml/uautomizer-mix020.oepc.yml	ERROR(Incompatible witness)	0.920402	2.3271992879999743	28.000256
+pthread-wmm/mix020.opt.yml/uautomizer-mix020.opt.yml	ERROR(Incompatible witness)	0.933808	2.4501955140000007	27.996160
+pthread-wmm/mix021.opt.yml/uautomizer-mix021.opt.yml	ERROR(Incompatible witness)	0.903793	2.5831683199999986	27.967488
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix021_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.902363	2.9079406689999985	28.012544
+pthread-wmm/mix021_tso.oepc.yml/uautomizer-mix021_tso.oepc.yml	ERROR(Incompatible witness)	0.88131	2.4020924870000044	27.942912
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.74708	1.8773797149999893	27.746304
+pthread-wmm/mix022_tso.yml/uautomizer-mix022_tso.yml	ERROR(Incompatible witness)	0.830818	1.9836531340000079	27.832320
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix023_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.926102	1.869082074000005	28.004352
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/uautomizer-mix023_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.906588	2.9449138730000186	27.918336
+pthread-wmm/mix023_tso.yml/uautomizer-mix023_tso.yml	ERROR(Incompatible witness)	1.370573	4.19220031399999	28.622848
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/uautomizer-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.852648	2.6470564660000093	27.906048
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/uautomizer-mix024_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.846275	2.240185758999985	27.869184
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/uautomizer-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.829659	2.188247219999994	27.893760
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/uautomizer-mix025_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.838164	2.4350526630000218	27.832320
+pthread-wmm/mix026.oepc.yml/uautomizer-mix026.oepc.yml	ERROR(Incompatible witness)	0.918919	2.2203303170000197	28.004352
+pthread-wmm/mix026_power.opt_tso.opt.yml/uautomizer-mix026_power.opt_tso.opt.yml	ERROR(Incompatible witness)	0.938714	2.7360884269999985	27.975680
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/uautomizer-mix026_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.869196	2.3492848360000096	27.897856
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix027_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.902223	2.49272105	27.996160
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/uautomizer-mix027_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.900579	2.8401108819999763	27.910144
+pthread-wmm/mix027_tso.yml/uautomizer-mix027_tso.yml	ERROR(Incompatible witness)	0.911378	2.122202141999992	27.987968
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix028_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.824447	2.3626644339999814	27.865088
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/uautomizer-mix028_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.824975	2.2926874210000108	27.852800
+pthread-wmm/mix028_tso.yml/uautomizer-mix028_tso.yml	ERROR(Incompatible witness)	0.845091	2.246828626999985	27.947008
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/uautomizer-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.904138	2.5518306900000027	27.992064
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/uautomizer-mix029_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.876138	2.371253254999999	27.938816
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix030_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.899866	2.802768385999997	27.975680
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/uautomizer-mix030_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.872797	2.5488531369999805	27.934720
+pthread-wmm/mix030_tso.yml/uautomizer-mix030_tso.yml	ERROR(Incompatible witness)	0.929156	2.8957538049999982	28.028928
+pthread-wmm/mix031.oepc.yml/uautomizer-mix031.oepc.yml	ERROR(Incompatible witness)	0.755052	1.8674915449999787	27.779072
+pthread-wmm/mix031.opt.yml/uautomizer-mix031.opt.yml	ERROR(Incompatible witness)	0.783147	2.302950839999994	27.762688
+pthread-wmm/mix032.oepc.yml/uautomizer-mix032.oepc.yml	ERROR(Incompatible witness)	0.860703	1.670241959000009	27.910144
+pthread-wmm/mix032.opt.yml/uautomizer-mix032.opt.yml	ERROR(Incompatible witness)	0.831699	2.746932504	27.828224
+pthread-wmm/mix033.opt.yml/uautomizer-mix033.opt.yml	ERROR(Incompatible witness)	0.858956	3.0482237360000113	27.832320
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix033_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.88445	2.931171237000001	27.934720
+pthread-wmm/mix033_tso.oepc.yml/uautomizer-mix033_tso.oepc.yml	ERROR(Incompatible witness)	0.877167	3.1676437019999923	27.910144
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/uautomizer-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	ERROR(Incompatible witness)	0.780902	2.8416906909999966	27.779072
+pthread-wmm/mix034_pso.opt_tso.opt.yml/uautomizer-mix034_pso.opt_tso.opt.yml	ERROR(Incompatible witness)	0.775784	2.802199605999988	27.713536
+pthread-wmm/mix035.oepc.yml/uautomizer-mix035.oepc.yml	ERROR(Incompatible witness)	0.866043	3.6011874719999923	27.885568
+pthread-wmm/mix035_power.opt_rmo.opt.yml/uautomizer-mix035_power.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.872725	3.9791720690000147	27.844608
+pthread-wmm/mix035_pso.opt_tso.opt.yml/uautomizer-mix035_pso.opt_tso.opt.yml	ERROR(Incompatible witness)	0.833438	4.112755675999978	27.795456
+pthread-wmm/mix036.oepc.yml/uautomizer-mix036.oepc.yml	ERROR(Incompatible witness)	0.975196	4.577060460000013	28.012544
+pthread-wmm/mix036_power.opt_rmo.opt.yml/uautomizer-mix036_power.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.932031	4.548531942000011	27.926528
+pthread-wmm/mix036_pso.opt_tso.opt.yml/uautomizer-mix036_pso.opt_tso.opt.yml	ERROR(Incompatible witness)	0.894337	4.3130733950000035	27.885568
+pthread-wmm/mix037.opt.yml/uautomizer-mix037.opt.yml	ERROR(Incompatible witness)	0.888657	4.2322223859999895	27.873280
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix037_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.966538	4.915067171000004	28.024832
+pthread-wmm/mix037_tso.oepc.yml/uautomizer-mix037_tso.oepc.yml	ERROR(Incompatible witness)	0.937819	4.422275224000003	28.012544
+pthread-wmm/mix038.opt.yml/uautomizer-mix038.opt.yml	ERROR(Incompatible witness)	0.841488	4.226778581000019	27.791360
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix038_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.867013	4.3298560530000145	27.897856
+pthread-wmm/mix038_tso.oepc.yml/uautomizer-mix038_tso.oepc.yml	ERROR(Incompatible witness)	0.886556	4.088808290000003	27.873280
+pthread-wmm/mix039.oepc.yml/uautomizer-mix039.oepc.yml	ERROR(Incompatible witness)	0.954891	4.722316252000013	28.016640
+pthread-wmm/mix039.opt.yml/uautomizer-mix039.opt.yml	ERROR(Incompatible witness)	0.886083	4.566329491999994	27.869184
+pthread-wmm/mix040.opt.yml/uautomizer-mix040.opt.yml	ERROR(Incompatible witness)	0.907982	4.295196497999996	27.873280
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix040_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.949546	4.875841151000003	28.008448
+pthread-wmm/mix040_tso.oepc.yml/uautomizer-mix040_tso.oepc.yml	ERROR(Incompatible witness)	0.918466	4.688205578999998	27.942912
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix041_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.777758	3.927212139000005	27.746304
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.778949	3.895812974000023	27.754496
+pthread-wmm/mix042.oepc.yml/uautomizer-mix042.oepc.yml	ERROR(Incompatible witness)	0.880917	4.305930072999985	27.873280
+pthread-wmm/mix042.opt.yml/uautomizer-mix042.opt.yml	ERROR(Incompatible witness)	0.844006	4.347977413999985	27.844608
+pthread-wmm/mix043.oepc.yml/uautomizer-mix043.oepc.yml	ERROR(Incompatible witness)	0.967123	4.743713675999999	28.020736
+pthread-wmm/mix043.opt.yml/uautomizer-mix043.opt.yml	ERROR(Incompatible witness)	0.899089	4.355621189000004	27.930624
+pthread-wmm/mix044.opt.yml/uautomizer-mix044.opt.yml	ERROR(Incompatible witness)	0.903259	4.433098021000006	27.914240
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix044_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.957177	4.6526803989999905	28.008448
+pthread-wmm/mix044_tso.oepc.yml/uautomizer-mix044_tso.oepc.yml	ERROR(Incompatible witness)	0.962558	4.527192006000007	27.996160
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix045_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.867255	4.433343828999995	27.889664
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.829769	4.263078180000008	27.844608
+pthread-wmm/mix046.oepc.yml/uautomizer-mix046.oepc.yml	ERROR(Incompatible witness)	0.932944	4.335170662000024	27.987968
+pthread-wmm/mix046.opt.yml/uautomizer-mix046.opt.yml	ERROR(Incompatible witness)	0.909139	4.501414716999989	27.922432
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix047_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.969689	4.98049881999998	28.000256
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.887665	4.400783631999985	27.906048
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.768471	3.8474334409999926	27.754496
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.868868	4.315574139000006	27.906048
+pthread-wmm/mix050.yml/uautomizer-mix050.yml	ERROR(Incompatible witness)	0.936949	4.682200015999996	27.992064
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/uautomizer-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.944782	4.498748675000002	27.975680
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/uautomizer-mix051_pso.opt_rmo.opt_tso.opt.yml	ERROR(Incompatible witness)	0.867607	4.375735171999992	27.844608
+pthread-wmm/mix051_tso.oepc.yml/uautomizer-mix051_tso.oepc.yml	ERROR(Incompatible witness)	0.947607	4.517602805999985	27.987968
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/uautomizer-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.874333	4.288627453000004	27.852800
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/uautomizer-mix052_pso.opt_rmo.opt_tso.opt.yml	ERROR(Incompatible witness)	0.810635	3.9115527810000117	27.762688
+pthread-wmm/mix052_tso.oepc.yml/uautomizer-mix052_tso.oepc.yml	ERROR(Incompatible witness)	0.833994	4.123771197000025	27.824128
+pthread-wmm/mix053.opt.yml/uautomizer-mix053.opt.yml	ERROR(Incompatible witness)	0.860174	4.221265974999994	27.840512
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix053_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.9468	4.804220203	27.992064
+pthread-wmm/mix053_tso.oepc.yml/uautomizer-mix053_tso.oepc.yml	ERROR(Incompatible witness)	0.904267	4.395291316000026	27.918336
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/uautomizer-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.77146	3.8260574760000168	27.705344
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.762114	3.742014949999998	27.709440
+pthread-wmm/mix055.opt.yml/uautomizer-mix055.opt.yml	ERROR(Incompatible witness)	0.865698	4.31827138700001	27.881472
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix055_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.94429	4.710791182999998	27.983872
+pthread-wmm/mix055_tso.oepc.yml/uautomizer-mix055_tso.oepc.yml	ERROR(Incompatible witness)	0.938377	4.602927601000005	27.987968
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix056_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.851822	4.326210294999981	27.844608
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.839383	4.15623884499999	27.803648
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix057_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.929941	4.73423728100002	27.975680
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.876812	4.350572086999989	27.873280
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.916081	4.540264188999998	27.967488
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/uautomizer-rfi000_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.781693	3.9089768839999977	27.729920
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.79072	3.9518894959999784	27.762688
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.787964	3.9806785889999787	27.758592
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.773835	3.718228001	27.709440
+pthread-wmm/rfi004.yml/uautomizer-rfi004.yml	ERROR(Incompatible witness)	0.784442	3.764168883999986	27.721728
+pthread-wmm/rfi005.yml/uautomizer-rfi005.yml	ERROR(Incompatible witness)	0.64037	3.2160747690000164	27.570176
+pthread-wmm/rfi006_power.oepc.yml/uautomizer-rfi006_power.oepc.yml	ERROR(Incompatible witness)	0.923575	4.724514946000028	27.996160
+pthread-wmm/rfi006_power.opt.yml/uautomizer-rfi006_power.opt.yml	ERROR(Incompatible witness)	0.961797	4.8127659629999755	28.065792
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/uautomizer-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.924803	4.609789056000011	27.987968
+pthread-wmm/rfi006_rmo.yml/uautomizer-rfi006_rmo.yml	ERROR(Incompatible witness)	0.927095	4.595240157999996	27.971584
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.794656	3.946499335999988	27.729920
+pthread-wmm/rfi007_tso.yml/uautomizer-rfi007_tso.yml	ERROR(Incompatible witness)	0.856185	4.170327897000021	27.848704
+pthread-wmm/rfi008.oepc.yml/uautomizer-rfi008.oepc.yml	ERROR(Incompatible witness)	0.869413	4.178953839999991	27.873280
+pthread-wmm/rfi008.opt.yml/uautomizer-rfi008.opt.yml	ERROR(Incompatible witness)	0.82427	4.0829590399999915	27.840512
+pthread-wmm/rfi009_power.oepc.yml/uautomizer-rfi009_power.oepc.yml	ERROR(Incompatible witness)	0.938864	4.62337510499998	27.996160
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.91188	4.46326683800001	27.947008
+pthread-wmm/rfi009_rmo.oepc.yml/uautomizer-rfi009_rmo.oepc.yml	ERROR(Incompatible witness)	0.933816	4.8261855310000215	27.971584
+pthread-wmm/rfi010.yml/uautomizer-rfi010.yml	ERROR(Incompatible witness)	0.818659	4.029881473999978	27.820032
+pthread-wmm/safe000_power.oepc.yml/uautomizer-safe000_power.oepc.yml	ERROR(Incompatible witness)	1.046368	5.059952519999996	28.139520
+pthread-wmm/safe000_power.opt.yml/uautomizer-safe000_power.opt.yml	ERROR(Incompatible witness)	0.975331	4.84497385100002	28.012544
+pthread-wmm/safe000_rmo.yml/uautomizer-safe000_rmo.yml	ERROR(Incompatible witness)	1.030391	4.988461078	28.106752
+pthread-wmm/safe001_power.oepc.yml/uautomizer-safe001_power.oepc.yml	ERROR(Incompatible witness)	1.017347	4.998893100999993	28.151808
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/uautomizer-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.854989	4.365638808	27.844608
+pthread-wmm/safe001_rmo.oepc.yml/uautomizer-safe001_rmo.oepc.yml	ERROR(Incompatible witness)	1.010132	5.023636718999995	28.094464
+pthread-wmm/safe002_power.oepc.yml/uautomizer-safe002_power.oepc.yml	ERROR(Incompatible witness)	1.027359	5.097467816999995	28.155904
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/uautomizer-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.846729	4.251982418000011	27.828224
+pthread-wmm/safe002_rmo.oepc.yml/uautomizer-safe002_rmo.oepc.yml	ERROR(Incompatible witness)	1.027555	5.199836772999987	28.106752
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.997859	5.022383371000018	28.086272
+pthread-wmm/safe003_power.opt.yml/uautomizer-safe003_power.opt.yml	ERROR(Incompatible witness)	0.951316	4.681534099999993	28.028928
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-safe004_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	1.005675	4.939571476999987	28.082176
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/uautomizer-safe004_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.830856	4.082683672000002	27.852800
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.850087	4.223320002999998	27.844608
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/uautomizer-safe006_power.oepc-thin000_power.oepc.yml	ERROR(Incompatible witness)	0.78012	3.923089344999994	27.766784
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/uautomizer-safe006_power.opt-thin000_power.opt.yml	ERROR(Incompatible witness)	0.869876	4.417466270999995	27.897856
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/uautomizer-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.808965	4.081958576000005	27.762688
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/uautomizer-safe007_power.oepc-thin001_power.oepc.yml	ERROR(Incompatible witness)	0.861592	4.036424084000004	27.885568
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/uautomizer-safe007_power.opt-thin001_power.opt.yml	ERROR(Incompatible witness)	0.946755	4.784824403999977	28.004352
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/uautomizer-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.842439	4.245787527999994	27.856896
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.849875	4.196585819999996	27.844608
+pthread-wmm/safe008_power.opt.yml/uautomizer-safe008_power.opt.yml	ERROR(Incompatible witness)	0.968876	4.476528680000001	28.028928
+pthread-wmm/safe009_power.oepc.yml/uautomizer-safe009_power.oepc.yml	ERROR(Incompatible witness)	0.968016	4.718700112999983	28.020736
+pthread-wmm/safe009_power.opt.yml/uautomizer-safe009_power.opt.yml	ERROR(Incompatible witness)	0.949181	4.720173077999988	28.004352
+pthread-wmm/safe009_rmo.oepc.yml/uautomizer-safe009_rmo.oepc.yml	ERROR(Incompatible witness)	0.93184	4.759131322999991	27.996160
+pthread-wmm/safe009_rmo.opt.yml/uautomizer-safe009_rmo.opt.yml	ERROR(Incompatible witness)	0.879441	4.434771636999983	27.897856
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.759333	3.884352213999989	27.725824
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/uautomizer-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.835582	4.262672123999977	27.848704
+pthread-wmm/safe011_power.opt_pso.opt.yml/uautomizer-safe011_power.opt_pso.opt.yml	ERROR(Incompatible witness)	0.839107	4.211944846000023	27.836416
+pthread-wmm/safe012_power.oepc.yml/uautomizer-safe012_power.oepc.yml	ERROR(Incompatible witness)	0.852692	4.329994429999999	27.885568
+pthread-wmm/safe012_power.opt.yml/uautomizer-safe012_power.opt.yml	ERROR(Incompatible witness)	0.948813	4.5572347310000225	27.992064
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/uautomizer-safe012_pso.oepc_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.855347	4.294303543000012	27.824128
+pthread-wmm/safe012_rmo.oepc.yml/uautomizer-safe012_rmo.oepc.yml	ERROR(Incompatible witness)	0.860121	4.200378463000021	27.836416
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.855291	4.150495251999985	27.820032
+pthread-wmm/safe014_power.oepc.yml/uautomizer-safe014_power.oepc.yml	ERROR(Incompatible witness)	0.84831	4.215377402000001	27.869184
+pthread-wmm/safe014_power.opt.yml/uautomizer-safe014_power.opt.yml	ERROR(Incompatible witness)	0.908265	4.316491739000014	27.934720
+pthread-wmm/safe014_rmo.oepc.yml/uautomizer-safe014_rmo.oepc.yml	ERROR(Incompatible witness)	0.852387	4.381338139999997	27.848704
+pthread-wmm/safe014_rmo.opt.yml/uautomizer-safe014_rmo.opt.yml	ERROR(Incompatible witness)	1.015791	4.878747497999996	28.106752
+pthread-wmm/safe015_power.oepc.yml/uautomizer-safe015_power.oepc.yml	ERROR(Incompatible witness)	0.726642	3.632255541999996	27.762688
+pthread-wmm/safe015_power.opt.yml/uautomizer-safe015_power.opt.yml	ERROR(Incompatible witness)	1.038677	5.30014951199999	28.147712
+pthread-wmm/safe015_rmo.yml/uautomizer-safe015_rmo.yml	ERROR(Incompatible witness)	1.017236	4.911600688999982	28.090368
+pthread-wmm/safe016_power.oepc.yml/uautomizer-safe016_power.oepc.yml	ERROR(Incompatible witness)	0.998174	5.014928382999983	28.086272
+pthread-wmm/safe016_power.opt.yml/uautomizer-safe016_power.opt.yml	ERROR(Incompatible witness)	1.039697	5.290091650999983	28.168192
+pthread-wmm/safe016_rmo.oepc.yml/uautomizer-safe016_rmo.oepc.yml	ERROR(Incompatible witness)	0.986015	5.005327501000011	28.049408
+pthread-wmm/safe016_rmo.opt.yml/uautomizer-safe016_rmo.opt.yml	ERROR(Incompatible witness)	1.031194	5.099276524000004	28.114944
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.838426	4.274041418999985	27.836416
+pthread-wmm/safe018_power.oepc.yml/uautomizer-safe018_power.oepc.yml	ERROR(Incompatible witness)	0.855474	4.374494204999991	27.865088
+pthread-wmm/safe018_power.opt.yml/uautomizer-safe018_power.opt.yml	ERROR(Incompatible witness)	1.000704	4.840239161999989	28.094464
+pthread-wmm/safe018_rmo.oepc.yml/uautomizer-safe018_rmo.oepc.yml	ERROR(Incompatible witness)	0.828436	4.030861073000011	27.815936
+pthread-wmm/safe018_rmo.opt.yml/uautomizer-safe018_rmo.opt.yml	ERROR(Incompatible witness)	0.932964	3.45341848999999	27.992064
+pthread-wmm/safe019_power.oepc.yml/uautomizer-safe019_power.oepc.yml	ERROR(Incompatible witness)	0.970549	3.4127895430000024	28.336128
+pthread-wmm/safe019_power.opt.yml/uautomizer-safe019_power.opt.yml	ERROR(Incompatible witness)	1.04846	3.441601294999998	28.205056
+pthread-wmm/safe019_rmo.oepc.yml/uautomizer-safe019_rmo.oepc.yml	ERROR(Incompatible witness)	0.964226	3.123435115999996	28.053504
+pthread-wmm/safe019_rmo.opt.yml/uautomizer-safe019_rmo.opt.yml	ERROR(Incompatible witness)	0.998419	3.3468182260000106	28.110848
+pthread-wmm/safe020_power.yml/uautomizer-safe020_power.yml	ERROR(Incompatible witness)	0.960412	3.3345513989999915	28.098560
+pthread-wmm/safe020_rmo.yml/uautomizer-safe020_rmo.yml	ERROR(Incompatible witness)	0.890929	2.880278553000011	27.992064
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/uautomizer-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.836184	2.8409579290000124	27.856896
+pthread-wmm/safe021_power.opt_pso.opt.yml/uautomizer-safe021_power.opt_pso.opt.yml	ERROR(Incompatible witness)	0.797877	2.2807773629999986	27.852800
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.729066	1.829270371000007	27.783168
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.95095	1.8682407610000098	28.151808
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.783178	1.6337311460000024	27.881472
+pthread-wmm/safe025_power.yml/uautomizer-safe025_power.yml	ERROR(Incompatible witness)	0.657991	1.7050215060000085	27.750400
+pthread-wmm/safe025_rmo.yml/uautomizer-safe025_rmo.yml	ERROR(Incompatible witness)	0.978239	2.59677083699998	28.106752
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.791185	1.920825982000025	27.852800
+pthread-wmm/safe027_power.oepc.yml/uautomizer-safe027_power.oepc.yml	ERROR(Incompatible witness)	0.928869	2.5723857350000117	28.065792
+pthread-wmm/safe027_power.opt.yml/uautomizer-safe027_power.opt.yml	ERROR(Incompatible witness)	1.031804	2.8627229849999765	28.205056
+pthread-wmm/safe027_rmo.yml/uautomizer-safe027_rmo.yml	ERROR(Incompatible witness)	0.921616	2.5585906350000016	28.151808
+pthread-wmm/safe028_power.yml/uautomizer-safe028_power.yml	ERROR(Incompatible witness)	0.926706	1.5394076289999816	28.090368
+pthread-wmm/safe028_rmo.yml/uautomizer-safe028_rmo.yml	ERROR(Incompatible witness)	0.880984	1.9054374459999792	28.184576
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-safe029_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.7118	1.6803326680000055	27.713536
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/uautomizer-safe029_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.704402	1.601311934999984	27.705344
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-safe030_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.780177	2.0578186560000233	27.828224
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/uautomizer-safe030_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.764028	1.821794390000008	27.787264
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-safe031_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.789981	1.7613929800000108	27.815936
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/uautomizer-safe031_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.779761	1.7779237770000123	27.799552
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.940425	2.6380756000000076	28.090368
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.696594	1.554254233000023	27.693056
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.765516	1.8187308469999834	27.787264
+pthread-wmm/thin002_power.oepc.yml/uautomizer-thin002_power.oepc.yml	ERROR(Incompatible witness)	0.87709	1.8429661459999807	28.000256
+pthread-wmm/thin002_power.opt.yml/uautomizer-thin002_power.opt.yml	ERROR(Incompatible witness)	0.975322	2.4686299090000148	28.090368
+pthread-wmm/thin002_rmo.yml/uautomizer-thin002_rmo.yml	ERROR(Incompatible witness)	0.881828	2.07904726000001	27.951104
+pthread/lazy01.yml/uautomizer-lazy01.yml	TIMEOUT	0.467036	46.02452203300001	34.816000
+pthread/reorder_2.yml/uautomizer-reorder_2.yml	ERROR(ineffective witness)	0.851269	2.288653498000002	35.811328
+pthread/reorder_5.yml/uautomizer-reorder_5.yml	ERROR(ineffective witness)	0.856292	2.5816062250000016	35.741696
+pthread/singleton.yml/uautomizer-singleton.yml	TIMEOUT	0.699069	46.03000768200002	35.622912
+pthread/stack-2.yml/uautomizer-stack-2.yml	ERROR(Incompatible witness)	0.714026	1.574252935000004	27.860992
+pthread/stack_longer-1.yml/uautomizer-stack_longer-1.yml	ERROR(Incompatible witness)	0.698706	1.1041235399999891	27.881472
+pthread/stack_longest-1.yml/uautomizer-stack_longest-1.yml	ERROR(Incompatible witness)	0.73141	1.452168716000017	27.906048
+pthread/stateful01-1.yml/uautomizer-stateful01-1.yml	TIMEOUT	0.492841	46.02989692	34.803712
+pthread/triangular-2.yml/uautomizer-triangular-2.yml	TIMEOUT	0.602607	46.02331426899997	34.734080
+pthread/triangular-longer-2.yml/uautomizer-triangular-longer-2.yml	TIMEOUT	0.712483	46.02017565999998	35.287040
+pthread/triangular-longest-2.yml/uautomizer-triangular-longest-2.yml	TIMEOUT	0.885886	46.03461582899999	35.655680
+weaver/parallel-barrier-loop.wvr.yml/uautomizer-parallel-barrier-loop.wvr.yml	ERROR(Incompatible witness)	0.362699	0.5707223959999794	26.853376
+weaver/popl20-bad-counter-queue.wvr.yml/uautomizer-popl20-bad-counter-queue.wvr.yml	ERROR(Incompatible witness)	0.299078	0.44051067800000965	26.697728

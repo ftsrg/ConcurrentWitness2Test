@@ -1,0 +1,2956 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/dartagnan/pthread-wmm/mix039.opt.yml/mix039.opt.i --graphml-witness svcomp23-witness-benchmarks/tools/dartagnan/pthread-wmm/mix039.opt.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/tmp/BenchExec_run_n90jbe5o/tmp/tmplj5_vfy6.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Paused thread 2 at 1 until 3
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Paused thread 4 at 3 until 5
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Resumed thread 4 at 5
+Released 6
+Paused thread 3 at 6 until 8
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 3
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 3 at 1 until 4
+Released 2
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Released 3
+Paused thread 1 at 3 until 7
+Released 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Paused thread 2 at 2 until 3
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 3
+Paused thread 0 at 1 until 9
+Paused thread 3 at 1 until 4
+Paused thread 1 at 1 until 2
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 0 at 1 until 9
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 0 at 1 until 9
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 0 at 1 until 9
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Paused thread 2 at 5 until 6
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 3
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 0 at 1 until 9
+Paused thread 3 at 1 until 4
+Released 2
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Released 3
+Paused thread 1 at 3 until 7
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Paused thread 2 at 5 until 6
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 0 at 1 until 9
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Paused thread 2 at 5 until 6
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 0 at 1 until 9
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Paused thread 2 at 2 until 3
+Resumed thread 1 at 2
+Released 3
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Paused thread 1 at 4 until 7
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Resumed thread 2 at 3
+Paused thread 1 at 3 until 7
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 0 at 1 until 9
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Paused thread 3 at 7 until 8
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 3
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Paused thread 3 at 2 until 4
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Resumed thread 2 at 3
+Paused thread 1 at 3 until 7
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 2 at 5 until 6
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 0 at 1 until 9
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 0 at 1 until 9
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 0 at 1 until 9
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 0 at 1 until 9
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 0 at 1 until 9
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 0 at 1 until 9
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 3
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 2
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 2 at 1 until 3
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Paused thread 3 at 3 until 4
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Paused thread 0 at 1 until 9
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 3
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 2
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 2 at 1 until 3
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Paused thread 3 at 3 until 4
+Resumed thread 2 at 3
+Released 4
+Paused thread 2 at 4 until 6
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Resumed thread 2 at 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Paused thread 0 at 1 until 9
+Paused thread 1 at 1 until 2
+Paused thread 2 at 1 until 3
+Paused thread 3 at 1 until 4
+Released 2
+Paused thread 4 at 2 until 5
+Resumed thread 1 at 2
+Released 3
+Paused thread 1 at 3 until 7
+Resumed thread 2 at 3
+Released 4
+Resumed thread 3 at 4
+Released 5
+Paused thread 3 at 5 until 8
+Resumed thread 4 at 5
+Released 6
+Released 7
+Resumed thread 1 at 7
+Released 8
+Resumed thread 3 at 8
+Released 9
+Resumed thread 0 at 9
+Released 10
+
+Execution ended (exit code 0)
+{-1: 51, 0: 49}
+Verdict: SOMETIMES

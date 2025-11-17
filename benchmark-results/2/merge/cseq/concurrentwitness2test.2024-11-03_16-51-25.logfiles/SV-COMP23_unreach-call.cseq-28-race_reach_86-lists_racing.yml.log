@@ -1,0 +1,8 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/goblint-regression/28-race_reach_86-lists_racing.yml/28-race_reach_86-lists_racing.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/goblint-regression/28-race_reach_86-lists_racing.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+ConcurrentWitness2Test/venv/bin/python3: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.38' not found (required by ConcurrentWitness2Test/venv/bin/python3)
+ConcurrentWitness2Test/venv/bin/python3: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.38' not found (required by ConcurrentWitness2Test/venv/bin/python3)

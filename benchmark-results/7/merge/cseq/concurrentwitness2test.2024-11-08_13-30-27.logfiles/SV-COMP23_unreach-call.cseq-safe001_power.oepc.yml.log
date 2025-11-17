@@ -1,0 +1,32 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/safe001_power.oepc.yml/safe001_power.oepc.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/safe001_power.oepc.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 85, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_ai6segye/tmp/tmpzlg_rusp.c
+Compilation started
+/tmp/BenchExec_run_ai6segye/tmp/tmpzlg_rusp.c: In function ‘P0’:
+/tmp/BenchExec_run_ai6segye/tmp/tmpzlg_rusp.c:579:19: error: ‘FALSE’ undeclared (first use in this function)
+  579 |   weak$$choice0 = FALSE;;
+      |                   ^~~~~
+/tmp/BenchExec_run_ai6segye/tmp/tmpzlg_rusp.c:579:19: note: each undeclared identifier is reported only once for each function it appears in
+/tmp/BenchExec_run_ai6segye/tmp/tmpzlg_rusp.c: In function ‘P2’:
+/tmp/BenchExec_run_ai6segye/tmp/tmpzlg_rusp.c:636:19: error: ‘FALSE’ undeclared (first use in this function)
+  636 |   weak$$choice0 = FALSE;;
+      |                   ^~~~~
+/tmp/BenchExec_run_ai6segye/tmp/tmpzlg_rusp.c: In function ‘main’:
+/tmp/BenchExec_run_ai6segye/tmp/tmpzlg_rusp.c:711:19: error: ‘FALSE’ undeclared (first use in this function)
+  711 |   weak$$choice0 = FALSE;;
+      |                   ^~~~~
+/tmp/BenchExec_run_ai6segye/tmp/tmpzlg_rusp.c:722:19: error: ‘TRUE’ undeclared (first use in this function)
+  722 |   weak$$choice1 = TRUE;;
+      |                   ^~~~
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

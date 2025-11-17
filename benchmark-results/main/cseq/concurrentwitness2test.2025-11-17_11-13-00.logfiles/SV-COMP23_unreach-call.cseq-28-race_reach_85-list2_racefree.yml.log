@@ -1,0 +1,22 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/goblint-regression/28-race_reach_85-list2_racefree.yml/28-race_reach_85-list2_racefree.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/goblint-regression/28-race_reach_85-list2_racefree.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 85, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_9qm2rggl/tmp/tmp9u0d92q8.c
+Compilation started
+/tmp/BenchExec_run_9qm2rggl/tmp/tmp9u0d92q8.c:716:8: error: redefinition of ‘struct s’
+  716 | struct s
+      |        ^
+/tmp/BenchExec_run_9qm2rggl/tmp/tmp9u0d92q8.c:711:8: note: originally defined here
+  711 | struct s
+      |        ^
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error
