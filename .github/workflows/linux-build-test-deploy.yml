@@ -50,8 +50,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref_name }}
-          name: ConcurrentWitness2Test.zip
-          asset_path: ./ConcurrentWitness2Test.zip
+          name: ConcurrentWitness2Test
+          files: ./ConcurrentWitness2Test.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create zenodo release and deploy tools
