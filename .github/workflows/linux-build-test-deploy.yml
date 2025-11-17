@@ -29,7 +29,7 @@ jobs:
   release:
     needs: build
     runs-on: ubuntu-24.04
-    if: "${{ github.event.inputs.message != '' &&  github.ref == 'refs/heads/master' && github.event_name != 'pull_request' }}"
+    if: "${{ github.event.inputs.message != '' &&  github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}"
     steps:
       - name: Checkout repository
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
