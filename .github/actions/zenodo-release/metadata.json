@@ -1,0 +1,33 @@
+{
+    "metadata": {
+        "title": "__TOOL__ - Verifier Archive",
+        "publication_date": "__TODAY__",
+        "access_right": "open",
+        "creators": [
+            {
+                "name": "\u00c1d\u00e1m, Zs\u00f3fia",
+                "affiliation": "Budapest University of Technology and Economics",
+                "orcid": "0000-0003-2354-1750"
+            },
+            {
+                "name": "Bajczi, Levente",
+                "affiliation": "Budapest University of Technology and Economics",
+                "orcid": "0000-0002-6551-5860"
+            }
+        ],
+        "custom": {
+            "code:codeRepository": "https://github.com/ftsrg/ConcurrentWitness2Test",
+            "code:programmingLanguage": [
+                {
+                    "id": "python",
+                    "title": {
+                        "en": "Python"
+                    }
+                }
+            ]
+        },
+        "license": "apache2.0",
+        "imprint_publisher": "Zenodo",
+        "upload_type": "software"
+    }
+}

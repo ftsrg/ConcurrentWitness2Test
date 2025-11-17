@@ -1,0 +1,31 @@
+name: 'Create zenodo release'
+description: 'Create release and deploy tool to Zenodo'
+inputs:
+    tool:
+        required: true
+    prevrecord:
+        required: true
+    token:
+        required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install Python dependencies
+      run: pip install -r ${{github.action_path}}/requirements.txt
+      shell: bash
+
+    - name: Create Zenodo release
+      run: |
+        python3 ${{github.action_path}}/zenodo_release.py \
+          --token '${{inputs.token}}' \
+          --record-id '${{inputs.prevrecord}}' \
+          --tool '${{inputs.tool}}' \
+          --file 'upload/${{inputs.tool}}.zip' \
+          --metadata '${{github.action_path}}/metadata.json' \
+          --cleanup-drafts
+      shell: bash
