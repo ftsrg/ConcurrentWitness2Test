@@ -26,6 +26,41 @@ jobs:
       - name: Build
         uses: ./.github/actions/create-archive
 
+  release:
+    needs: build
+    runs-on: ubuntu-24.04
+    if: "${{ github.event.inputs.message != '' &&  github.ref == 'refs/heads/master' && github.event_name != 'pull_request' }}"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+      - name: Download Artifact
+        uses: actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16 # v3.0.2
+        with:
+          name: ConcurrentWitness2Test
+          path: ./ConcurrentWitness2Test.zip
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          body: ${{ github.event.inputs.message }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload Release Asset
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ConcurrentWitness2Test.zip
+          asset_path: ./ConcurrentWitness2Test.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create zenodo release and deploy tools
+        uses: ./.github/actions/zenodo-release
+        with:
+          tool: ConcurrentWitness2Test
+          prevrecord: 17407869
+          token: ${{secrets.zenodo_token}}
+
 
   test-benchexec:
     strategy:
