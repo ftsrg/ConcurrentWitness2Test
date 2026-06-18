@@ -1,0 +1,65 @@
+# Violation witness (format 2.2) for example/concurrent-data-race.i using the
+# concurrency extension for the no-data-race property: the two racing
+# accesses are the two target waypoints of the final multi-follow segment.
+# Sharing one segment keeps them unordered by happens-before -- which is
+# exactly what makes them a data race.
+
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.2"
+    uuid: "c2d3e4f5-a6b7-4890-bcde-f01234567890"
+    creation_time: "2026-06-12T12:00:00Z"
+    producer:
+      name: "Handcrafted"
+      version: "1.0"
+    task:
+      input_files:
+        - "example/concurrent-data-race.i"
+      input_file_hashes:
+        "example/concurrent-data-race.i": "e3ed107653ea2609d77af560750d091c354bbca7c79c80d532b95cb2496ce26e"
+      specification: "G ! data-race"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        # registers t1_func as thread 1 (1st thread-creating function_enter)
+        type: function_enter
+        action: follow
+        thread_id: 0
+        location:
+          file_name: "example/concurrent-data-race.i"
+          line: 25
+          column: 19
+          function: "main"
+  - segment:
+    - waypoint:
+        # registers t2_func as thread 2 (2nd thread-creating function_enter)
+        type: function_enter
+        action: follow
+        thread_id: 0
+        location:
+          file_name: "example/concurrent-data-race.i"
+          line: 26
+          column: 19
+          function: "main"
+  - segment:
+    # multi-follow final segment: the two conflicting accesses (both targets)
+    - waypoint:
+        type: target
+        action: follow
+        thread_id: 1
+        location:
+          file_name: "example/concurrent-data-race.i"
+          line: 14
+          column: 5
+          function: "t1_func"
+    - waypoint:
+        type: target
+        action: follow
+        thread_id: 2
+        location:
+          file_name: "example/concurrent-data-race.i"
+          line: 19
+          column: 5
+          function: "t2_func"
