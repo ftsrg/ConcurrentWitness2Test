@@ -29,8 +29,8 @@ from tweaks import reach_error, fix_inline, fix_struct_def
 from witness2ast import apply_witness
 
 
-def translate_to_c(filename, witness, mode):
-    """Simply use the c_generator module to emit a parsed AST."""
+def translate_to_c(filename, witness, mode, timeout):
+    """Apply the witness to the parsed AST, then compile and run the result."""
     try:
         ast = parse_file(filename, use_cpp=False)
     except KnownErrorVerdict as e:
@@ -42,7 +42,7 @@ def translate_to_c(filename, witness, mode):
         sys.exit(-1)
 
     try:
-        apply_witness(ast, filename, witness)
+        parsed_witness = apply_witness(ast, filename, witness)
     except KnownErrorVerdict as e:
         print("Verdict: " + e.verdict)
         sys.exit(-1)
@@ -50,6 +50,12 @@ def translate_to_c(filename, witness, mode):
         traceback.print_exc()
         print("Verdict: Incompatible witness")
         sys.exit(-1)
+
+    # For a no-data-race witness the violation is observed by the thread
+    # sanitizer at runtime instead of a reach_error() call.
+    data_race = parsed_witness.data_race
+    if data_race:
+        print("Data race witness: compiling with ThreadSanitizer")
 
     try:
         fix_inline(ast)
@@ -67,6 +73,10 @@ def translate_to_c(filename, witness, mode):
                     "gcc",
                     "-w",
                     "-Wno-implicit-function-declaration",
+                    "-pthread",
+                ]
+                + (["-fsanitize=thread", "-g"] if data_race else [])
+                + [
                     tmp.name,
                     os.path.dirname(__file__) + os.sep + "svcomp.c",
                     "-o",
@@ -83,17 +93,35 @@ def translate_to_c(filename, witness, mode):
             if result.returncode != 0:
                 print("Verdict: Compilation error")
                 sys.exit(-1)
+            env = os.environ.copy()
+            if data_race:
+                # Stop at the first race and reuse the reach_error() exit
+                # code, so race detection follows the same path below.
+                env["TSAN_OPTIONS"] = "halt_on_error=1 exitcode=74"
             codes = {}
             for i in range(100):
                 try:
-                    result = subprocess.run([bin_name], capture_output=True, text=True)
                     print("Execution started")
+                    result = subprocess.run(
+                        [bin_name],
+                        capture_output=True,
+                        text=True,
+                        timeout=timeout,
+                        env=env,
+                    )
                     reached_error = result.returncode == 74
                     if not reached_error and result.stdout:
                         for line in result.stdout.split("\n"):
                             if "Reached error!" in line:
                                 reached_error = True
                                 break
+                    if (
+                        not reached_error
+                        and data_race
+                        and result.stderr
+                        and "ThreadSanitizer: data race" in result.stderr
+                    ):
+                        reached_error = True
                     if result.stdout:
                         print(result.stdout)
                     if result.stderr:
@@ -190,23 +218,34 @@ def parse_arguments():
         description="Parse command line arguments for ConcurrentWitness2Test.py"
     )
 
-    parser.add_argument("--version", action="version", version="1.0")
+    parser.add_argument("--version", action="version", version="2.0")
     parser.add_argument(
         "input_file", metavar="<input.c>", type=str, help="Input file (.c)"
     )
     parser.add_argument(
         "--witness",
         "--graphml-witness",
-        metavar="<witness.graphml>",
+        "--yaml-witness",
+        metavar="<witness.graphml|witness.yml>",
         type=str,
         required=True,
-        help="Witness file (graphml)",
+        help="Witness file; GraphML (format 1.0) and YAML (format 2.x) "
+        "violation witnesses are detected automatically",
     )
     parser.add_argument(
         "--mode",
         choices=["strict", "normal", "permissive"],
         default="normal",
-        help="Mode (default: normal)",
+        help="Mode (default: normal): strict stops at the first execution "
+        "missing the error, permissive at the first one reaching it, "
+        "normal runs all repetitions",
+    )
+    parser.add_argument(
+        "--timeout",
+        metavar="<seconds>",
+        type=float,
+        default=10.0,
+        help="Timeout for a single execution of the test in seconds " "(default: 10)",
     )
 
     return parser.parse_args()
@@ -225,4 +264,7 @@ if __name__ == "__main__":
         argparse.ArgumentParser().print_help()
         sys.exit(-1)
 
-    perform_hacks(args.input_file, lambda x: translate_to_c(x, args.witness, args.mode))
+    perform_hacks(
+        args.input_file,
+        lambda x: translate_to_c(x, args.witness, args.mode, args.timeout),
+    )

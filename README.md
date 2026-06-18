@@ -6,28 +6,55 @@
 
 # ConcurrentWitness2Test 
 
-ConcurrentWitness2Test validates violation witnesses for the ConcurrencySafety category at [SV-COMP](https://sv-comp.sosy-lab.org/).
+ConcurrentWitness2Test validates violation witnesses for the ConcurrencySafety category at [SV-COMP](https://sv-comp.sosy-lab.org/) by *executing* them: the witness is compiled into the program as source-level instrumentation that steers the schedule (and fixes nondeterministic values), and the resulting test is run repeatedly to see whether the claimed violation is reached.
+
+Both witness formats of SV-COMP are supported and detected automatically:
+
+* **GraphML** (witness format 1.0): the single non-branching path of the witness automaton is replayed; `threadId` changes along the path become schedule points.
+* **YAML** (witness format 2.0–2.2, `violation_sequence` entries): the `follow` waypoints are replayed in segment order. The format 2.2 concurrency extension is supported: the optional `thread_id` field on waypoints identifies the executing thread, and the segment order is enforced as the cross-thread (happens-before) order.
+
+Two kinds of properties are supported:
+
+* **Reachability** (`unreach-call` and similar): the violation is observed when the instrumented program calls `reach_error()`.
+* **Data races** (`no-data-race`, YAML witnesses): the program is compiled with [ThreadSanitizer](https://github.com/google/sanitizers/wiki/ThreadSanitizerCppManual) (`gcc -fsanitize=thread`) and the violation is observed when the sanitizer reports a data race. The racing pair — the two `target` waypoints of the witness' final multi-follow segment — is deliberately *not* synchronized by the instrumentation (the accesses only wait for the preceding segments), since any synchronization between them would establish a happens-before edge and hide the very race the witness claims.
 
 ## Installation
 
 Minimal necessary packages for Ubuntu 24.04 LTS:
 * python3
+* gcc (with `libtsan` for data race validation)
+
+The python dependencies in `requirements.txt` are expected in a virtualenv at `./venv` (used by `start.sh`):
+```sh
+python3 -m venv venv && ./venv/bin/pip install -r requirements.txt
+```
 
 ## Contents of the Repository
 ```
 CONTRIBUTORS.md  -- code contributors to the project
 LICENSE          -- apache 2.0 license
 README.md        -- this README
-main.py          -- main python entrypoint
+example/         -- example programs and witnesses (see example/README.md)
+main.py          -- main python entrypoint: compiles and runs the test, derives the verdict
 requirements.txt -- python dependencies (included in venv)
+smoketest.sh     -- runs the bundled examples
 start.sh         -- script to start the validation process
-svcomp.c         -- test harness
-tweaks.py        -- additional source file
-witness2ast.py   -- additional source file
+svcomp.c         -- test harness (yield/release scheduler, SV-COMP stubs)
+tweaks.py        -- AST fixes for pycparser/SV-COMP quirks
+witnessparser.py -- parses GraphML and YAML witnesses into a common step sequence
+witness2ast.py   -- applies the parsed witness to the program AST
 ```
 
 ## Usage
-Run `./start.sh <preprocessed-c-file> --witness <witnessfile> --mode <strict/normal/permissive>` to validate a violation witness. 
+Run `./start.sh <preprocessed-c-file> --witness <witnessfile> [--mode <strict/normal/permissive>] [--timeout <seconds>]` to validate a violation witness (GraphML or YAML).
+
+The instrumented test is executed up to 100 times (each run limited to `--timeout` seconds, 10 by default), and the mode decides when to stop:
+
+* `strict`: stop at the first execution that does **not** reach the violation,
+* `permissive`: stop at the first execution that **does** reach the violation,
+* `normal`: run all repetitions.
+
+The verdict summarizes the observed executions: `ALWAYS` (every execution reached the violation), `SOMETIMES`, `NEVER`, or `TIMEOUT` (no execution finished in time).
 
 ## Publications
 For more information on how the validation works, check out our SV-COMP 2023 [tool paper](https://leventebajczi.com/publications/tacas24cwt.pdf) and [slides](https://leventebajczi.com/publications/slides/tacas24cwt.pdf).

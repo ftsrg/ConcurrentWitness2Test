@@ -1,0 +1,73 @@
+# Violation witness (format 2.2) for example/concurrent-unreach.i using the
+# concurrency extension: waypoints carry a thread_id (0 = main thread, k =
+# thread registered by the k-th thread-creating function_enter waypoint), and
+# the segment order is the cross-thread (happens-before) order.
+
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.2"
+    uuid: "b1c2d3e4-f5a6-4789-abcd-ef0123456789"
+    creation_time: "2026-06-12T12:00:00Z"
+    producer:
+      name: "Handcrafted"
+      version: "1.0"
+    task:
+      input_files:
+        - "example/concurrent-unreach.i"
+      input_file_hashes:
+        "example/concurrent-unreach.i": "9605b865c7025954d80f25945b8d5db2d9c1212d0f43329c706c7b954f1914c9"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        # registers writer as thread 1 (1st thread-creating function_enter)
+        type: function_enter
+        action: follow
+        thread_id: 0
+        location:
+          file_name: "example/concurrent-unreach.i"
+          line: 22
+          column: 19
+          function: "main"
+  - segment:
+    - waypoint:
+        # thread 1 has performed its write: at the sequence point before its
+        # `return`, x is 1. Placing this in an earlier segment than main's
+        # read orders the write happens-before the read.
+        type: assumption
+        action: follow
+        thread_id: 1
+        constraint:
+          value: "x == 1"
+          format: c_expression
+        location:
+          file_name: "example/concurrent-unreach.i"
+          line: 17
+          column: 5
+          function: "writer"
+  - segment:
+    - waypoint:
+        # main observes x == 1, so the branch `if (x == 1)` is taken
+        type: assumption
+        action: follow
+        thread_id: 0
+        constraint:
+          value: "x == 1"
+          format: c_expression
+        location:
+          file_name: "example/concurrent-unreach.i"
+          line: 23
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: target
+        action: follow
+        thread_id: 0
+        location:
+          file_name: "example/concurrent-unreach.i"
+          line: 24
+          column: 9
+          function: "main"

@@ -12,16 +12,36 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+Application of a parsed witness to the program AST.
+
+The witness (of either format, see ``witnessparser``) is reduced to a
+sequence of steps; this module turns those steps into source-level
+instrumentation:
+
+* steps carrying an ``assumption`` over a ``__VERIFIER_nondet_*()``
+  assignment replace the nondeterministic call with the assumed constant;
+* steps where the executing thread changes become *schedule points*: a
+  ``yield(slot, tid)``/``release(slot, tid)`` pair (implemented in
+  ``svcomp.c``) that blocks the thread until all earlier schedule points
+  have been passed, realizing the witness' cross-thread ordering.
+
+For a ``no-data-race`` witness the racing accesses (the ``target``
+waypoints of the final multi-follow segment) are special: they must stay
+unsynchronized, so they share a single slot and only ``yield`` on it --
+a ``release`` between them would create a happens-before edge that hides
+the race from the thread sanitizer.
 """
 
-import networkx as nx
+import re
+
 from pycparser.c_ast import (
     Compound,
     If,
     While,
     DoWhile,
     For,
-    FuncDef,
+    Return,
     FuncCall,
     NodeVisitor,
     ID,
@@ -29,51 +49,9 @@ from pycparser.c_ast import (
     Constant,
     Assignment,
 )
-import re
 
 from Exceptions import KnownErrorVerdict
-
-
-def get_offset_of_line(c_file, line):
-    with open(c_file, "r") as f:
-        for i in range(1, line):
-            f.readline()
-        return f.tell()
-
-
-def get_line_of_offset(c_file, offset):
-    with open(c_file, "r") as f:
-        i = 0
-        line = ""
-        while f.tell() <= offset:
-            line = f.readline()
-            i = i + 1
-        return i, len(line) - (f.tell() - offset)
-
-
-def get_coords(c_file, startline=None, endline=None, startoffset=None, endoffset=None):
-    if not endline and startline:
-        endline = startline
-
-    if not startoffset and startline:
-        startoffset = get_offset_of_line(c_file, int(startline))
-
-    if not endoffset and endline:
-        endoffset = get_offset_of_line(c_file, int(endline) + 1)
-
-    if endoffset:
-        with open(c_file, "r") as f:
-            f.seek(int(startoffset))
-            content = f.read(int(endoffset) - int(startoffset) - 1)
-            startline, column = get_line_of_offset(c_file, int(startoffset))
-            return {
-                "startline": int(startline),
-                "column": int(column),
-                "endline": int(endline),
-                "length": int(endoffset) - int(startoffset) + 1,
-                "content": content,
-            }
-    return None
+from witnessparser import parse_witness, FORMAT_YAML
 
 
 def find_nondet_assignment_on_line(ast, target_line):
@@ -115,6 +93,33 @@ def find_nondet_assignment_on_line(ast, target_line):
         return None, None
 
 
+def find_last_nondet_assignment_before_line(ast, target_line, varnames):
+    """Find the last `var = __VERIFIER_nondet_*()` with var in `varnames`
+    at or before `target_line`."""
+
+    class LineVisitor(NodeVisitor):
+        def __init__(self):
+            self.statement = None
+            self.line = -1
+
+        def visit_Assignment(self, node):
+            if (
+                node.coord
+                and self.line < node.coord.line <= target_line
+                and type(node.rvalue) == FuncCall
+                and type(node.rvalue.name) == ID
+                and "__VERIFIER_nondet" in node.rvalue.name.name
+                and getattr(node.lvalue, "name", None) in varnames
+            ):
+                self.statement = node
+                self.line = node.coord.line
+            self.generic_visit(node)
+
+    line_visitor = LineVisitor()
+    line_visitor.visit(ast)
+    return line_visitor.statement
+
+
 def find_first_statement_on_line(ast, target_line):
     class LineVisitor(NodeVisitor):
         def __init__(self, target_line):
@@ -149,58 +154,6 @@ def find_first_statement_on_line(ast, target_line):
         return None, None
 
 
-def extract_metadata(witnessfile, c_file):
-    witness = nx.read_graphml(witnessfile)
-    if witness.graph["witness-type"] != "violation_witness":
-        raise KnownErrorVerdict("Correctness witness")
-    ret = []
-
-    keys = {k for node in witness.nodes for k in witness.nodes[node].keys()}
-    entry_key = "entry" if "entry" in keys else "isEntryNode"
-    sink_key = "sink" if "sink" in keys else "isSinkNode"
-
-    entry_nodes = list(nx.get_node_attributes(witness, entry_key).keys())
-    if len(entry_nodes) == 0:
-        entry_nodes = list(
-            set([u for u, deg in witness.in_degree() if not deg])
-            - set([u for u, deg in witness.out_degree() if not deg])
-        )
-        if len(entry_nodes) == 0:
-            raise KnownErrorVerdict("No entry node")
-
-    if len(entry_nodes) > 1:
-        raise KnownErrorVerdict("Multiple entry nodes")
-
-    node = entry_nodes[0]
-
-    sink_nodes = set(nx.get_node_attributes(witness, sink_key).keys())
-
-    while len(witness.out_edges(node)) > 0:
-        out_edges = list(
-            filter(lambda x: x[1] not in sink_nodes, witness.out_edges(node))
-        )
-        if len(out_edges) > 1:
-            raise KnownErrorVerdict("Has branching")
-        edge = list(out_edges)[0]
-        attrs = witness.get_edge_data(edge[0], edge[1])
-
-        startline = attrs["startline"] if "startline" in attrs else None
-        endline = attrs["endline"] if "endline" in attrs else None
-        startoffset = attrs["startoffset"] if "startoffset" in attrs else None
-        endoffset = attrs["endoffset"] if "endoffset" in attrs else None
-
-        coords = get_coords(c_file, startline, endline, startoffset, endoffset)
-        metadata = {
-            key: attrs[key]
-            for key in ["assumption", "control", "threadId", "createThread"]
-            if key in attrs
-        }
-        ret.append((coords, metadata))
-        node = edge[1]
-
-    return ret
-
-
 nondet_return_types = {
     "__VERIFIER_nondet_bool": "_Bool",
     "__VERIFIER_nondet_char": "char",
@@ -228,84 +181,121 @@ nondet_return_types = {
     "__VERIFIER_nondet_ushort": "unsigned short",
 }
 
+# TODO not perfect regex, but hard to solve well for everything ( e.g., assumption: !(var == 1) and variants )
+assumption_pattern = r"([^\s]*)\s*==\s*([^\s]*)"
+
+
+def apply_assumption(ast, line, assumption, anchored_after=False):
+    """Fix the value of a __VERIFIER_nondet_*() assignment near `line`.
+
+    If the assumption constrains the assigned variable to a constant
+    (`var == value`), the nondeterministic call is replaced by that
+    constant. Assumptions of any other shape are ignored.
+
+    The two witness formats anchor assumptions differently: a GraphML edge
+    carries the assumption on the assigning statement itself, while a YAML
+    assumption waypoint holds at the sequence point *before* its location,
+    i.e., it follows the assignment (anchored_after=True).
+    """
+    # TODO current implementation is limited: will not work if single assignment executes 1+ time (e.g., in a loop)
+    assumptions = dict(re.findall(assumption_pattern, assumption))
+    if anchored_after:
+        nondet_assign_node = find_last_nondet_assignment_before_line(
+            ast, line, set(assumptions)
+        )
+    else:
+        nondet_assign_node, _ = find_nondet_assignment_on_line(ast, line)
+    if nondet_assign_node is None:
+        return
+
+    varname = nondet_assign_node.lvalue.name
+    if varname in assumptions:
+        if nondet_assign_node.rvalue.name.name in nondet_return_types:
+            ret_type = nondet_return_types[nondet_assign_node.rvalue.name.name]
+            nondet_assign_node.rvalue = Constant(
+                type=ret_type, value=assumptions[varname]
+            )
+
+
+def make_schedule_call(name, slot, threadid):
+    return FuncCall(
+        ID(name),
+        ExprList(
+            [
+                Constant(type="int", value=f"{slot}"),
+                Constant(type="int", value=f"{threadid}"),
+            ]
+        ),
+    )
+
+
+def insert_schedule_point(ast, line, slot, threadid, release=True):
+    """Instrument the statement at (or first after) `line` as a schedule point.
+
+    A yield(slot, threadid) call before the statement blocks the thread
+    until all earlier schedule points have released their slot; a
+    release(slot, threadid) call afterwards lets the next schedule point
+    proceed. For control statements the release goes to the start of the
+    body/branches (so it happens only once the statement is really being
+    executed), and for a return statement it goes before the statement
+    (code after a return would never run).
+
+    With release=False only the yield is inserted and the slot is not
+    consumed; this keeps racing accesses of a data-race witness free of
+    synchronization between one another.
+
+    Returns the slot the next schedule point should use.
+    """
+    statement, parent = find_first_statement_on_line(ast, line)
+
+    yield_func = make_schedule_call("yield", slot, threadid)
+    first_index = parent.block_items.index(statement)
+    parent.block_items.insert(first_index, yield_func)
+
+    if not release:
+        return slot
+
+    release_func = make_schedule_call("release", slot, threadid)
+    if isinstance(statement, Return):
+        parent.block_items.insert(first_index + 1, release_func)
+    elif isinstance(statement, Compound):
+        statement.block_items = [release_func] + (statement.block_items or [])
+    elif isinstance(statement, (While, DoWhile, For)):
+        statement.stmt = Compound(block_items=[release_func, statement.stmt])
+    elif isinstance(statement, If):
+        if statement.iftrue:
+            statement.iftrue = Compound(block_items=[release_func, statement.iftrue])
+        if statement.iffalse:
+            statement.iffalse = Compound(block_items=[release_func, statement.iffalse])
+    else:
+        parent.block_items.insert(first_index + 2, release_func)
+    return slot + 1
+
 
 def apply_witness(ast, c_file, witnessfile):
-    funcdefs = {}
-    for node in ast.ext:
-        if isinstance(node, FuncDef):
-            funcdefs[node.decl.name] = node.body
-    metadata = extract_metadata(witnessfile, c_file)
-    threadid = metadata[0][1]["threadId"] if "threadId" in metadata[0][1] else 0
-    i = 0
-    # TODO not perfect regex, but hard to solve well for everything ( e.g., assumption: !(var == 1) and variants )
-    assumption_pattern = r"([^\s]*)\s*==\s*([^\s]*)"
+    """Instrument `ast` according to the witness; returns the ParsedWitness."""
+    witness = parse_witness(witnessfile, c_file)
+    if not witness.steps:
+        raise KnownErrorVerdict("Empty witness")
 
-    for coords, data in metadata:
-        # TODO current implementation is limited: will not work if single assignment executes 1+ time (e.g., in a loop)
-        if "assumption" in data and "content" in coords and "startline" in coords:
-            nondet_assign_node, first_parent = find_nondet_assignment_on_line(
-                ast, coords["startline"]
-            )
-            if nondet_assign_node is not None:
-                assumptions = {}
-                matches = re.findall(assumption_pattern, data["assumption"])
-                for i, (varname, value) in enumerate(matches, 1):
-                    assumptions[varname] = value
+    first_metadata = witness.steps[0][1]
+    threadid = first_metadata["threadId"] if "threadId" in first_metadata else 0
 
-                varname = nondet_assign_node.lvalue.name
-                if any(varname in d for d in assumptions):
-                    # TODO change nondet call to value
-                    if nondet_assign_node.rvalue.name.name in nondet_return_types:
-                        ret_type = nondet_return_types[
-                            nondet_assign_node.rvalue.name.name
-                        ]
-                        nondet_assign_node.rvalue = Constant(
-                            type=ret_type, value=assumptions[varname]
-                        )
-        elif (
-            (data["threadId"] if "threadId" in data else threadid) != threadid
-            and coords
-            and "startline" in coords
-        ):
-            threadid = data["threadId"] if "threadId" in data else threadid
-            nondet_assign_node, first_parent = find_first_statement_on_line(
-                ast, coords["startline"]
+    slot = 0
+    anchored_after = witness.format == FORMAT_YAML
+    for coords, data in witness.steps:
+        usable_coords = coords and "startline" in coords
+        if "assumption" in data and usable_coords:
+            apply_assumption(
+                ast, coords["startline"], data["assumption"], anchored_after
             )
 
-            yield_func = FuncCall(
-                ID("yield"),
-                ExprList(
-                    [
-                        Constant(type="int", value=f"{i}"),
-                        Constant(type="int", value=f"{threadid}"),
-                    ]
-                ),
-            )
-            release_func = FuncCall(
-                ID("release"),
-                ExprList(
-                    [
-                        Constant(type="int", value=f"{i}"),
-                        Constant(type="int", value=f"{threadid}"),
-                    ]
-                ),
+        step_threadid = data["threadId"] if "threadId" in data else threadid
+        if step_threadid != threadid and usable_coords:
+            threadid = step_threadid
+            release = not (witness.data_race and data.get("type") == "target")
+            slot = insert_schedule_point(
+                ast, coords["startline"], slot, threadid, release
             )
 
-            i = i + 1
-            first_index = first_parent.block_items.index(nondet_assign_node)
-            first_parent.block_items.insert(first_index, yield_func)
-            if isinstance(nondet_assign_node, (Compound, While, DoWhile, For)):
-                nondet_assign_node.stmt = Compound(
-                    block_items=[release_func, nondet_assign_node.stmt]
-                )
-            elif isinstance(nondet_assign_node, If):
-                if nondet_assign_node.iftrue:
-                    nondet_assign_node.iftrue = Compound(
-                        block_items=[release_func, nondet_assign_node.iftrue]
-                    )
-                if nondet_assign_node.iffalse:
-                    nondet_assign_node.iffalse = Compound(
-                        block_items=[release_func, nondet_assign_node.iffalse]
-                    )
-            else:
-                first_parent.block_items.insert(first_index + 2, release_func)
+    return witness

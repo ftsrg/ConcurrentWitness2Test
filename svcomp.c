@@ -37,15 +37,18 @@ void reach_error() {
 atomic_int c2tt_global_counter = 0;
 mtx_t c2tt_mtx;
 cnd_t c2tt_cv;
-_Bool c2tt_init;
+once_flag c2tt_once = ONCE_FLAG_INIT;
+
+/* call_once keeps the initialization race-free: a plain initialized-flag
+ * would itself be reported as a data race by the thread sanitizer. */
+static void c2tt_initialize(void) {
+    mtx_init(&c2tt_mtx, mtx_plain);
+    cnd_init(&c2tt_cv);
+    printf("Initialized variables\n");
+}
 
 void yield(int target_value, int threadid) {
-    if(!c2tt_init) {
-        c2tt_init = 1;
-        mtx_init(&c2tt_mtx, mtx_plain);
-        cnd_init(&c2tt_cv);
-        printf("Initialized variables\n");
-    }
+    call_once(&c2tt_once, c2tt_initialize);
     mtx_lock(&c2tt_mtx);
 
     if (atomic_load(&c2tt_global_counter) >= target_value) {
@@ -64,6 +67,7 @@ void yield(int target_value, int threadid) {
 }
 
 void release(int target_value, int threadid) {
+    call_once(&c2tt_once, c2tt_initialize);
     mtx_lock(&c2tt_mtx);
     if (atomic_load(&c2tt_global_counter) > target_value) {
         mtx_unlock(&c2tt_mtx);
