@@ -17,9 +17,9 @@ python3 -m zipapp build -o ConcurrentWitness2Test.pyz -p "/usr/bin/env python3"
 rm -rf build
 
 mkdir ConcurrentWitness2Test
-cp ConcurrentWitness2Test.pyz *.md LICENSE svcomp.c example ConcurrentWitness2Test/ -r
+cp ConcurrentWitness2Test.pyz *.md LICENSE svcomp.c example smoketest.sh ConcurrentWitness2Test/ -r
 printf '#!/bin/bash\nscriptdir=$(dirname "$0")\npython3 "$scriptdir"/ConcurrentWitness2Test.pyz "$@"\n' > ConcurrentWitness2Test/start.sh
-chmod +x ConcurrentWitness2Test/start.sh
+chmod +x ConcurrentWitness2Test/start.sh ConcurrentWitness2Test/smoketest.sh
 zip ConcurrentWitness2Test.zip ConcurrentWitness2Test -r
 
 echo "Created $scriptdir/ConcurrentWitness2Test.zip"
