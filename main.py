@@ -78,7 +78,7 @@ def translate_to_c(filename, witness, mode, timeout):
                 + (["-fsanitize=thread", "-g"] if data_race else [])
                 + [
                     tmp.name,
-                    os.path.dirname(__file__) + os.sep + "svcomp.c",
+                    os.path.dirname(os.path.abspath(sys.argv[0])) + os.sep + "svcomp.c",
                     "-o",
                     bin_name,
                 ],
