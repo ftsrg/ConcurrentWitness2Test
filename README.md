@@ -35,6 +35,7 @@ CONTRIBUTORS.md  -- code contributors to the project
 LICENSE          -- apache 2.0 license
 README.md        -- this README
 example/         -- example programs and witnesses (see example/README.md)
+headers/         -- minimal stub system headers used to preprocess input files (see headers/NOTICE.md)
 main.py          -- main python entrypoint: compiles and runs the test, derives the verdict
 requirements.txt -- python dependencies (included in venv)
 smoketest.sh     -- runs the bundled examples
@@ -46,7 +47,7 @@ witness2ast.py   -- applies the parsed witness to the program AST
 ```
 
 ## Usage
-Run `./start.sh <preprocessed-c-file> --witness <witnessfile> [--mode <strict/normal/permissive>] [--timeout <seconds>]` to validate a violation witness (GraphML or YAML).
+Run `./start.sh <c-file> --witness <witnessfile> [--mode <strict/normal/permissive>] [--timeout <seconds>]` to validate a violation witness (GraphML or YAML). The C file is preprocessed automatically (against a minimal set of stub system headers in `headers/`, since pycparser cannot handle the GNU extensions present in real glibc headers); files using system headers outside that stub set (e.g. `<stdatomic.h>`) or GCC inline assembly are not supported.
 
 The instrumented test is executed up to 100 times (each run limited to `--timeout` seconds, 10 by default), and the mode decides when to stop:
 

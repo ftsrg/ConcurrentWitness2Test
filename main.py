@@ -28,11 +28,35 @@ from Exceptions import KnownErrorVerdict
 from tweaks import reach_error, fix_inline, fix_struct_def
 from witness2ast import apply_witness
 
+HEADERS_DIR = os.path.dirname(os.path.abspath(sys.argv[0])) + os.sep + "headers"
+
+# pycparser only understands standard C, so GNU extensions used by the stub
+# headers (and by real system headers, for anything the stubs don't cover)
+# are preprocessed away rather than parsed.
+CPP_GNU_COMPAT_ARGS = [
+    "-D__attribute__(x)=",
+    "-D__extension__=",
+    "-D__restrict=",
+    "-D__restrict__=",
+    "-D__inline=inline",
+    "-D__inline__=inline",
+    "-D__const=const",
+    "-D__signed__=signed",
+    "-D__volatile__=volatile",
+    "-D__typeof__(x)=void*",
+    "-D__builtin_va_list=void*",
+]
+
 
 def translate_to_c(filename, witness, mode, timeout):
     """Apply the witness to the parsed AST, then compile and run the result."""
     try:
-        ast = parse_file(filename, use_cpp=False)
+        ast = parse_file(
+            filename,
+            use_cpp=True,
+            cpp_path="cpp",
+            cpp_args=["-I" + HEADERS_DIR] + CPP_GNU_COMPAT_ARGS,
+        )
     except KnownErrorVerdict as e:
         print("Verdict: " + e.verdict)
         sys.exit(-1)
