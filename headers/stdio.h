@@ -2,10 +2,13 @@
 typedef long int ptrdiff_t;
 typedef long unsigned int size_t;
 typedef int wchar_t;
+#ifndef __CW2T_MAX_ALIGN_T_DEFINED
+#define __CW2T_MAX_ALIGN_T_DEFINED
 typedef struct {
   long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
   long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
 } max_align_t;
+#endif
   typedef __typeof__(nullptr) nullptr_t;
 typedef __builtin_va_list __gnuc_va_list;
 typedef __gnuc_va_list va_list;

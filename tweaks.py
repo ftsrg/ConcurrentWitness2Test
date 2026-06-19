@@ -44,7 +44,8 @@ def fix_inline(ast):
         and "static" not in node.decl.storage
     ]
     for inline_def in inline_defs:
-        inline_def.decl.funcspec = ["extern", "inline"]
+        inline_def.decl.storage = ["extern"]
+        inline_def.decl.funcspec = ["inline"]
 
 
 # This is a problem with pycparser
@@ -55,6 +56,7 @@ def fix_struct_def(ast):
             isinstance(node, Decl)
             and isinstance(node.type, TypeDecl)
             and isinstance(node.type.type, Struct)
+            and node.type.type.name is not None  # anonymous structs are never repeats
         ):
             if node.type.type.name in struct_decls:
                 node.type.type = Struct(node.type.type.name, decls=None)

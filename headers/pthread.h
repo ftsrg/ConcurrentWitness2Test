@@ -78,7 +78,7 @@ __uint64_identity (__uint64_t __x)
 {
   return __x;
 }
-typedef unsigned int size_t;
+typedef long unsigned int size_t;
 typedef __time_t time_t;
 struct timespec
 {
@@ -279,6 +279,7 @@ typedef union
 } pthread_condattr_t;
 typedef unsigned int pthread_key_t;
 typedef int pthread_once_t;
+#define PTHREAD_ONCE_INIT 0
 union pthread_attr_t
 {
   char __size[36];
@@ -303,6 +304,11 @@ typedef union
   char __size[32];
   long int __align;
 } pthread_rwlock_t;
+#define PTHREAD_MUTEX_INITIALIZER { 0 }
+#define PTHREAD_RECURSIVE_MUTEX_INITIALIZER_NP { 0 }
+#define PTHREAD_ERRORCHECK_MUTEX_INITIALIZER_NP { 0 }
+#define PTHREAD_COND_INITIALIZER { 0 }
+#define PTHREAD_RWLOCK_INITIALIZER { 0 }
 typedef union
 {
   char __size[8];

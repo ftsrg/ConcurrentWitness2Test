@@ -22,7 +22,7 @@ import tempfile
 import traceback
 import argparse
 
-from pycparser import parse_file, c_generator
+from pycparser import preprocess_file, CParser, c_generator
 
 from Exceptions import KnownErrorVerdict
 from tweaks import reach_error, fix_inline, fix_struct_def
@@ -51,12 +51,10 @@ CPP_GNU_COMPAT_ARGS = [
 def translate_to_c(filename, witness, mode, timeout):
     """Apply the witness to the parsed AST, then compile and run the result."""
     try:
-        ast = parse_file(
-            filename,
-            use_cpp=True,
-            cpp_path="cpp",
-            cpp_args=["-I" + HEADERS_DIR] + CPP_GNU_COMPAT_ARGS,
+        text = preprocess_file(
+            filename, cpp_path="cpp", cpp_args=["-I" + HEADERS_DIR] + CPP_GNU_COMPAT_ARGS
         )
+        ast = CParser().parse(text, filename)
     except KnownErrorVerdict as e:
         print("Verdict: " + e.verdict)
         sys.exit(-1)
