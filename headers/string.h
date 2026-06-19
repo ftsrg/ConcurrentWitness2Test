@@ -2,10 +2,13 @@
 typedef long int ptrdiff_t;
 typedef long unsigned int size_t;
 typedef int wchar_t;
+#ifndef __CW2T_MAX_ALIGN_T_DEFINED
+#define __CW2T_MAX_ALIGN_T_DEFINED
 typedef struct {
   long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
   long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
 } max_align_t;
+#endif
   typedef __typeof__(nullptr) nullptr_t;
 extern void *memcpy(void * s1, const void * s2, size_t n);
 extern void *memmove(void *s1, const void *s2, size_t n);
