@@ -1,0 +1,31 @@
+#define NULL ((void *)0)
+typedef long int ptrdiff_t;
+typedef long unsigned int size_t;
+typedef int wchar_t;
+typedef struct {
+  long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
+  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
+} max_align_t;
+  typedef __typeof__(nullptr) nullptr_t;
+struct tm {
+    int tm_sec;
+    int tm_min;
+    int tm_hour;
+    int tm_mday;
+    int tm_mon;
+    int tm_year;
+    int tm_wday;
+    int tm_yday;
+    int tm_isdst;
+};
+typedef long time_t;
+typedef long clock_t;
+extern clock_t clock(void);
+extern double difftime(time_t time1, time_t time0);
+extern time_t mktime(struct tm *timeptr);
+extern time_t time(time_t *timer);
+extern char *asctime(const struct tm *timeptr);
+extern char *ctime(const time_t *timer);
+extern struct tm *gmtime(const time_t *timer);
+extern struct tm *localtime(const time_t *timer);
+extern size_t strftime(char * s, size_t maxsize, const char * format, const struct tm * timeptr);
