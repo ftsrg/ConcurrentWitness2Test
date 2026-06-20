@@ -52,7 +52,9 @@ def translate_to_c(filename, witness, mode, timeout):
     """Apply the witness to the parsed AST, then compile and run the result."""
     try:
         text = preprocess_file(
-            filename, cpp_path="cpp", cpp_args=["-I" + HEADERS_DIR] + CPP_GNU_COMPAT_ARGS
+            filename,
+            cpp_path="cpp",
+            cpp_args=["-I" + HEADERS_DIR] + CPP_GNU_COMPAT_ARGS,
         )
         ast = CParser().parse(text, filename)
     except KnownErrorVerdict as e:
