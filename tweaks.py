@@ -26,10 +26,14 @@ def declare_schedule_functions(ast):
     separately), which relies on implicit-function-declaration being
     tolerated by the compiler.
     """
-    prototypes = CParser().parse(
-        "void __concurrentwit2test_yield(int, int);\n"
-        "void __concurrentwit2test_release(int, int);\n"
-    ).ext
+    prototypes = (
+        CParser()
+        .parse(
+            "void __concurrentwit2test_yield(int, int);\n"
+            "void __concurrentwit2test_release(int, int);\n"
+        )
+        .ext
+    )
     ast.ext[0:0] = prototypes
 
 
