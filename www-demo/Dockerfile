@@ -54,7 +54,7 @@ RUN find . -name "__pycache__" -type d -exec rm -rf {} + 2>/dev/null; \
 # --- Final image: nginx serving the static site ---
 FROM nginx:alpine
 COPY www-demo/nginx.conf /etc/nginx/conf.d/default.conf
-COPY www-demo/index.html www-demo/style.css www-demo/app.js www-demo/pyodide-worker.js www-demo/wasmer-run.js /usr/share/nginx/html/
+COPY www-demo/index.html www-demo/style.css www-demo/app.js www-demo/pyodide-worker.js www-demo/wasmer-run.js www-demo/coi-serviceworker.js /usr/share/nginx/html/
 COPY svcomp.c /usr/share/nginx/html/svcomp.c
 COPY --from=pytree /py.zip /usr/share/nginx/html/py.zip
 COPY --from=monaco /build/node_modules/monaco-editor/min/vs /usr/share/nginx/html/vendor/monaco/vs

@@ -127,6 +127,9 @@
     </div>
   </section>
 
+  <!-- Cross-origin isolation for GitHub Pages (no-op when nginx already sets
+       the headers; activates service-worker workaround on static hosting). -->
+  <script src="coi-serviceworker.js"></script>
   <script src="vendor/monaco/vs/loader.js"></script>
   <script type="module" src="app.js"></script>
 </body>
