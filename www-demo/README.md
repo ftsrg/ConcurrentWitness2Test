@@ -103,6 +103,25 @@ directory (user-editable via the "Branch/tag" field).
   approach itself — Wasmer's threading model targets the browser (Web
   Workers + `SharedArrayBuffer`), which is also this feature's actual
   runtime, not Node. This needs real-browser testing to confirm.
+- On the GitHub Pages deployment (`.github/workflows/gh-pages.yml`),
+  "Compile & Run" loses real multithreading: `SharedArrayBuffer` needs the
+  page to be cross-origin isolated, which needs the
+  `Cross-Origin-Opener-Policy`/`Cross-Origin-Embedder-Policy` response
+  headers `nginx.conf` sets for the Docker deployment -- and GitHub Pages
+  has no mechanism to set custom response headers at all (no `_headers`
+  file support like Netlify/Cloudflare Pages). Everything else (linting,
+  instrumentation) is unaffected, since it doesn't depend on
+  cross-origin isolation. Self-host via Docker for full Compile & Run.
+
+## Deploying
+
+`.github/workflows/gh-pages.yml` builds the same Dockerfile used locally,
+extracts the resulting static tree (`docker create` + `docker cp`, no
+re-implementation of the vendoring steps), and publishes it via GitHub's
+official Pages actions. It runs on every push to `main` that touches
+`www-demo/` or the Python modules it vendors, plus manual dispatch. The
+repo's Pages source must be set to "GitHub Actions" once, under Settings →
+Pages → Build and deployment → Source.
 
 ## Bugs found and fixed upstream while building this
 

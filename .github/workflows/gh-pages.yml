@@ -1,0 +1,64 @@
+name: Deploy www-demo to GitHub Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'www-demo/**'
+      - 'witnessparser.py'
+      - 'witness2ast.py'
+      - 'tweaks.py'
+      - 'Exceptions.py'
+      - 'hacks.py'
+      - 'headers/**'
+      - 'svcomp.c'
+      - '.github/workflows/gh-pages.yml'
+  workflow_dispatch:
+
+# Only one Pages deployment at a time; a newer push supersedes an in-flight one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+
+      # The Dockerfile is the single source of truth for assembling the
+      # static site (vendoring Monaco/Wasmer SDK, cloning sv-witnesses'
+      # linter+schemas+examples, building py.zip, etc.) -- build it here and
+      # extract the result rather than re-implementing those steps in YAML.
+      - name: Build www-demo image
+        run: docker build -f www-demo/Dockerfile -t cwt-demo .
+
+      - name: Extract static site from image
+        run: |
+          docker create --name cwt-demo-extract cwt-demo
+          mkdir -p ./pages-dist
+          docker cp cwt-demo-extract:/usr/share/nginx/html/. ./pages-dist/
+          docker rm cwt-demo-extract
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: ./pages-dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
