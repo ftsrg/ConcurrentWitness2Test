@@ -47,7 +47,7 @@ static void c2tt_initialize(void) {
     printf("Initialized variables\n");
 }
 
-void yield(int target_value, int threadid) {
+void __concurrentwit2test_yield(int target_value, int threadid) {
     call_once(&c2tt_once, c2tt_initialize);
     mtx_lock(&c2tt_mtx);
 
@@ -66,7 +66,7 @@ void yield(int target_value, int threadid) {
     printf("Resumed thread %d at %d\n", threadid, target_value);
 }
 
-void release(int target_value, int threadid) {
+void __concurrentwit2test_release(int target_value, int threadid) {
     call_once(&c2tt_once, c2tt_initialize);
     mtx_lock(&c2tt_mtx);
     if (atomic_load(&c2tt_global_counter) > target_value) {

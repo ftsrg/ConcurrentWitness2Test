@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ConcurrentWitness2Test / sv-witnesses playground</title>
+<link rel="stylesheet" href="style.css" />
+<script>
+  // Applied before first paint to avoid a flash of the wrong theme.
+  document.documentElement.dataset.theme = localStorage.getItem("cwt-theme") || "dark";
+</script>
+</head>
+<body>
+  <header id="topbar">
+    <div class="topbar-left">
+      <button id="sidebar-hamburger" class="hamburger-btn" title="Toggle sidebar" aria-label="Toggle sidebar">
+        <span></span><span></span><span></span>
+      </button>
+      <h1>Concurrent Violation Witness Playground</h1>
+    </div>
+    <div class="topbar-right">
+      <span id="pyodide-status" class="status status-loading">Loading Python runtime&hellip;</span>
+      <a class="guide-link"
+         href="https://gitlab.com/sosy-lab/benchmarking/sv-witnesses/-/blob/concurrent-sc-violation-witnesses/user-guide/Witness-Format.md"
+         target="_blank" rel="noopener">Witness Format Guide &#8599;</a>
+      <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode" aria-label="Toggle dark/light mode">&#9789;</button>
+    </div>
+  </header>
+
+  <div id="layout">
+    <nav id="sidebar">
+      <section>
+        <h2>sv-witnesses examples (live, GitLab)</h2>
+        <p class="hint">All YAML witness examples from
+          <a href="https://gitlab.com/sosy-lab/benchmarking/sv-witnesses/-/tree/concurrent-sc-violation-witnesses/examples" target="_blank" rel="noopener">sv-witnesses</a>'
+          <code>examples/</code> directory. Clicking one loads the witness and
+          resolves its own <code>task.input_files</code> to load the matching program.</p>
+        <div class="ref-picker">
+          <label for="sv-witnesses-ref">Branch/tag:</label>
+          <input type="text" id="sv-witnesses-ref" value="concurrent-sc-violation-witnesses" spellcheck="false" />
+        </div>
+        <ul id="sv-witnesses-examples" class="example-list">
+          <li class="loading">Loading examples&hellip;</li>
+        </ul>
+      </section>
+      <section>
+        <h2>sv-benchmarks (live, GitLab)</h2>
+        <p class="hint">All categories under <code>c/</code> in
+          <a href="https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks" target="_blank" rel="noopener">sv-benchmarks</a>.
+          Lists each category's task (.yml) files; clicking one resolves its
+          <code>input_files</code> and loads that program. No witness exists
+          upstream for these.</p>
+        <div class="ref-picker">
+          <label for="sv-benchmarks-ref">Branch/tag:</label>
+          <input type="text" id="sv-benchmarks-ref" value="main" spellcheck="false" />
+        </div>
+        <ul id="sv-benchmarks-categories" class="example-list">
+          <li class="loading">Loading categories&hellip;</li>
+        </ul>
+      </section>
+    </nav>
+    <div id="sidebar-resizer" class="resizer resizer-v"></div>
+
+    <main id="editors">
+      <div class="pane" id="c-pane">
+        <div class="pane-toolbar">
+          <span class="pane-title">C program</span>
+          <span id="c-filename" class="filename"></span>
+          <span id="cursor-pos" class="cursor-pos">Ln 1, Col 1</span>
+          <button id="add-waypoint-btn" title="Insert a witness waypoint stub at the cursor's line/column (also available via right-click)">+ Waypoint</button>
+          <select id="spec-select" title="Property; changes the witness's task.specification to match">
+            <option value="unreach-call">unreach-call</option>
+            <option value="no-data-race">no-data-race</option>
+            <option value="no-overflow">no-overflow</option>
+          </select>
+          <div class="split-button" id="instrument-split">
+            <button id="instrument-btn" disabled title="Run ConcurrentWitness2Test's instrumentation pipeline in-browser">Instrument in-place</button>
+            <button id="instrument-caret" disabled title="Choose instrument action">&#9662;</button>
+            <div class="split-menu" id="instrument-menu" hidden>
+              <button type="button" data-mode="inplace">Instrument in-place</button>
+              <button type="button" data-mode="download">Download instrumented program</button>
+            </div>
+          </div>
+          <button id="compile-run-btn" disabled title="unreach-call only: compiles the editor's current C source (unmodified) with svcomp.c via clang/WASIX and runs it with real multithreading, in-browser">Compile &amp; Run</button>
+        </div>
+        <div id="c-editor" class="monaco-container"></div>
+      </div>
+      <div id="pane-resizer" class="resizer resizer-v"></div>
+      <div class="pane" id="yaml-pane">
+        <div class="pane-toolbar">
+          <span class="pane-title">Violation witness (YAML 2.2)</span>
+          <span id="lint-status" class="status status-idle">Lint: idle</span>
+        </div>
+        <div id="yaml-editor" class="monaco-container"></div>
+      </div>
+    </main>
+  </div>
+
+  <div id="output-resizer" class="resizer resizer-h"></div>
+  <section id="output-panel">
+    <div class="output-toolbar">
+      <span>Output</span>
+      <button id="output-toggle">Hide</button>
+    </div>
+    <div id="output-panes">
+      <div class="output-pane">
+        <div class="output-pane-header">
+          <span>Linter</span>
+          <button class="output-clear-btn" data-target="linter">Clear</button>
+        </div>
+        <pre class="output-content" id="output-linter"></pre>
+      </div>
+      <div class="output-pane">
+        <div class="output-pane-header">
+          <span>ConcurrentWitness2Test</span>
+          <button class="output-clear-btn" data-target="instrument">Clear</button>
+        </div>
+        <pre class="output-content" id="output-instrument"></pre>
+      </div>
+      <div class="output-pane">
+        <div class="output-pane-header">
+          <span>Clang / Compile &amp; Run</span>
+          <button class="output-clear-btn" data-target="clang">Clear</button>
+        </div>
+        <pre class="output-content" id="output-clang"></pre>
+      </div>
+    </div>
+  </section>
+
+  <script src="vendor/monaco/vs/loader.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

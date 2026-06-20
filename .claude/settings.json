@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import pycparser, os; print\\(pycparser.__file__\\)\")",
+      "Bash(find / -iname \"fake_libc_include\" -maxdepth 8)",
+      "Bash(./smoketest.sh)",
+      "Bash(python3 -)",
+      "Bash(*)",
+      "Bash(gcc -w -Wno-implicit-function-declaration -pthread /tmp/regen.c svcomp.c -o /tmp/regen_bin)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(cpp -I headers -D'__attribute__\\(x\\)=' /home/levente/Documents/University/sv-benchmarks/c/goblint-coreutils/instrumented_dd_comb.c)",
+      "Bash(echo \"smoketest exit: $?\")",
+      "Bash(./package.sh)",
+      "Bash(sed -n '760,770p' /usr/include/pthread.h)",
+      "Read(//usr/include/**)",
+      "Bash(python3 -c \"from pycparser import preprocess_file, CParser; print\\('ok'\\)\")",
+      "Bash(cd /home/levente/Documents/University/concurrency-witnesses/concurrentwitness2test *)",
+      "Bash(gcc -w -Wno-implicit-function-declaration -pthread /tmp/szymanski_regen.c svcomp.c -o /tmp/szymanski_bin)",
+      "Bash(grep -c '\\\\$' /home/levente/Documents/University/theta/subprojects/frontends/c-frontend/src/main/java/hu/bme/mit/theta/frontend/stdlib/stdatomic.h.kt)",
+      "Bash(grep -n \"typedef.*mode_t\\\\|mode_t.*;$\" /home/levente/Documents/University/sv-benchmarks/c/goblint-coreutils/instrumented_dd_comb.c)",
+      "Bash(gcc -w -Wno-implicit-function-declaration -pthread /tmp/dd_comb_regen.c svcomp.c -o /tmp/dd_comb_bin)",
+      "Bash(gcc -w -Wno-implicit-function-declaration -pthread /tmp/dd_comb_regen2.c svcomp.c -o /tmp/dd_comb_bin2)",
+      "Bash(curl -s --max-time 10 \"https://api.github.com/repos/sosy-lab/sv-benchmarks/contents/c\")",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); [print\\(x['name']\\) for x in d if x['type']=='dir' and \\('pthread' in x['name'].lower\\(\\) or 'thread' in x['name'].lower\\(\\) or 'concur' in x['name'].lower\\(\\)\\)]\")",
+      "Bash(curl -s --max-time 10 -I \"https://api.github.com/repos/sosy-lab/sv-benchmarks/contents/c/pthread\")",
+      "WebSearch",
+      "WebFetch(domain:wasmer.io)",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ],
+    "additionalDirectories": [
+      "/tmp",
+      "/home/levente/Documents/University/theta/subprojects/frontends/c-frontend/src/main/java/hu/bme/mit/theta/frontend/stdlib"
+    ]
+  }
+}
