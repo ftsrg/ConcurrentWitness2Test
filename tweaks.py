@@ -14,7 +14,23 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
+from pycparser import CParser
 from pycparser.c_ast import FuncDef, Decl, Struct, TypeDecl
+
+
+def declare_schedule_functions(ast):
+    """Add explicit prototypes for the schedule-point functions.
+
+    They are otherwise called without ever being declared in the
+    instrumented file (their definition only exists in svcomp.c, compiled
+    separately), which relies on implicit-function-declaration being
+    tolerated by the compiler.
+    """
+    prototypes = CParser().parse(
+        "void __concurrentwit2test_yield(int, int);\n"
+        "void __concurrentwit2test_release(int, int);\n"
+    ).ext
+    ast.ext[0:0] = prototypes
 
 
 def reach_error(ast):
@@ -24,6 +40,7 @@ def reach_error(ast):
             extern_decl = Decl(
                 name=func_name,
                 quals=[],
+                align=[],
                 storage=["extern"],
                 funcspec=[],
                 type=node.decl.type,

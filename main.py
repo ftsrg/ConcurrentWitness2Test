@@ -15,7 +15,6 @@ limitations under the License.
 """
 
 import os
-import re
 import subprocess
 import sys
 import tempfile
@@ -25,7 +24,8 @@ import argparse
 from pycparser import preprocess_file, CParser, c_generator
 
 from Exceptions import KnownErrorVerdict
-from tweaks import reach_error, fix_inline, fix_struct_def
+from hacks import hacks
+from tweaks import reach_error, fix_inline, fix_struct_def, declare_schedule_functions
 from witness2ast import apply_witness
 
 HEADERS_DIR = os.path.dirname(os.path.abspath(sys.argv[0])) + os.sep + "headers"
@@ -83,6 +83,7 @@ def translate_to_c(filename, witness, mode, timeout):
         fix_inline(ast)
         fix_struct_def(ast)
         reach_error(ast)
+        declare_schedule_functions(ast)
         generator = c_generator.CGenerator()
         with tempfile.NamedTemporaryFile(suffix=".c", delete=False) as tmp:
             tmp.write(generator.visit(ast).encode())
@@ -182,49 +183,6 @@ def translate_to_c(filename, witness, mode, timeout):
         traceback.print_exc()
         print("Verdict: Unknown error")
         sys.exit(-1)
-
-
-def hacks(content):
-    def replace_with_spaces_str(match_str, offset=0):
-        parens = 0
-        for i, c in enumerate(match_str):
-            if c == "(":
-                parens = parens + 1
-            elif c == ")":
-                parens = parens - 1
-                if parens < 0:
-                    return " " * (i - offset) + match_str[i:]
-                elif parens == 0:
-                    return " " * (i - offset + 1) + match_str[i + 1 :]
-        return " " * (len(match_str) - offset)
-
-    def replace_with_spaces(match):
-        return replace_with_spaces_str(str(match.group(0)))
-
-    def replace_with_zero_padded(match):
-        return "0" + replace_with_spaces_str(str(match.group(0)), 1)
-
-    last_content = ""
-    while last_content != content:
-        last_content = content
-        content = re.sub(r"//[^\n]*", replace_with_spaces, content)
-        content = re.sub(r"/\*.*\*/", replace_with_spaces, content)
-        content = re.sub(r"__attribute__[ \r\n]*\(.*\)", replace_with_spaces, content)
-        content = re.sub(r"__asm__[ \r\n]*\(.*\)", replace_with_spaces, content)
-        content = re.sub(r"asm volatile[ \r\n]*\(.*\)", replace_with_spaces, content)
-        content = re.sub(r"asm[ \r\n]*\(.*\)", replace_with_spaces, content)
-        content = re.sub(
-            r"__extension__[ \r\n]*\(.*\)", replace_with_zero_padded, content
-        )
-        content = re.sub(r"__extension__", replace_with_spaces, content)
-        content = re.sub(r"__inline", replace_with_spaces, content)
-        content = re.sub(r"__restrict", replace_with_spaces, content)
-        content = re.sub(r"__builtin_va_list", "int              ", content)
-        content = re.sub(r"__signed__", "  signed  ", content)
-        content = re.sub(
-            r"\([ \r\n]*\{.*}[ \r\n]*\)", replace_with_zero_padded, content
-        )
-    return content
 
 
 def perform_hacks(filename, func):

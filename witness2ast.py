@@ -22,15 +22,17 @@ instrumentation:
 * steps carrying an ``assumption`` over a ``__VERIFIER_nondet_*()``
   assignment replace the nondeterministic call with the assumed constant;
 * steps where the executing thread changes become *schedule points*: a
-  ``yield(slot, tid)``/``release(slot, tid)`` pair (implemented in
-  ``svcomp.c``) that blocks the thread until all earlier schedule points
-  have been passed, realizing the witness' cross-thread ordering.
+  ``__concurrentwit2test_yield(slot, tid)``/``__concurrentwit2test_release(slot, tid)``
+  pair (implemented in ``svcomp.c``) that blocks the thread until all
+  earlier schedule points have been passed, realizing the witness' cross-thread
+  ordering. The functions are prefixed to avoid accidentally colliding with
+  identifiers in the instrumented program.
 
 For a ``no-data-race`` witness the racing accesses (the ``target``
 waypoints of the final multi-follow segment) are special: they must stay
-unsynchronized, so they share a single slot and only ``yield`` on it --
-a ``release`` between them would create a happens-before edge that hides
-the race from the thread sanitizer.
+unsynchronized, so they share a single slot and only ``__concurrentwit2test_yield``
+on it -- a ``__concurrentwit2test_release`` between them would create a
+happens-before edge that hides the race from the thread sanitizer.
 """
 
 import re
@@ -54,10 +56,11 @@ from Exceptions import KnownErrorVerdict
 from witnessparser import parse_witness, FORMAT_YAML
 
 
-def find_nondet_assignment_on_line(ast, target_line):
+def find_nondet_assignment_on_line(ast, target_line, target_file):
     class LineVisitor(NodeVisitor):
-        def __init__(self, target_line):
+        def __init__(self, target_line, target_file):
             self.target_line = target_line
+            self.target_file = target_file
             self.found = False
             self.statement = None
             self.parent = None
@@ -74,6 +77,7 @@ def find_nondet_assignment_on_line(ast, target_line):
                     line = stmt.coord.line
                     if (
                         line >= self.target_line
+                        and stmt.coord.file == self.target_file
                         and type(stmt) == Assignment
                         and type(stmt.rvalue) == FuncCall
                         and "__VERIFIER_nondet" in stmt.rvalue.name.name
@@ -84,7 +88,7 @@ def find_nondet_assignment_on_line(ast, target_line):
                         return
                 self.generic_visit(stmt)
 
-    line_visitor = LineVisitor(target_line)
+    line_visitor = LineVisitor(target_line, target_file)
     line_visitor.visit(ast)
 
     if line_visitor.statement:
@@ -93,7 +97,7 @@ def find_nondet_assignment_on_line(ast, target_line):
         return None, None
 
 
-def find_last_nondet_assignment_before_line(ast, target_line, varnames):
+def find_last_nondet_assignment_before_line(ast, target_line, varnames, target_file):
     """Find the last `var = __VERIFIER_nondet_*()` with var in `varnames`
     at or before `target_line`."""
 
@@ -105,6 +109,7 @@ def find_last_nondet_assignment_before_line(ast, target_line, varnames):
         def visit_Assignment(self, node):
             if (
                 node.coord
+                and node.coord.file == target_file
                 and self.line < node.coord.line <= target_line
                 and type(node.rvalue) == FuncCall
                 and type(node.rvalue.name) == ID
@@ -120,10 +125,11 @@ def find_last_nondet_assignment_before_line(ast, target_line, varnames):
     return line_visitor.statement
 
 
-def find_first_statement_on_line(ast, target_line):
+def find_first_statement_on_line(ast, target_line, target_file):
     class LineVisitor(NodeVisitor):
-        def __init__(self, target_line):
+        def __init__(self, target_line, target_file):
             self.target_line = target_line
+            self.target_file = target_file
             self.found = False
             self.statement = None
             self.parent = None
@@ -138,14 +144,14 @@ def find_first_statement_on_line(ast, target_line):
             for stmt in node.block_items if node.block_items else [node]:
                 if hasattr(stmt, "coord") and stmt.coord:
                     line = stmt.coord.line
-                    if line >= self.target_line:
+                    if line >= self.target_line and stmt.coord.file == self.target_file:
                         self.statement = stmt
                         self.parent = node
                         self.found = True
                         return
                 self.generic_visit(stmt)
 
-    line_visitor = LineVisitor(target_line)
+    line_visitor = LineVisitor(target_line, target_file)
     line_visitor.visit(ast)
 
     if line_visitor.statement:
@@ -185,7 +191,7 @@ nondet_return_types = {
 assumption_pattern = r"([^\s]*)\s*==\s*([^\s]*)"
 
 
-def apply_assumption(ast, line, assumption, anchored_after=False):
+def apply_assumption(ast, line, assumption, target_file, anchored_after=False):
     """Fix the value of a __VERIFIER_nondet_*() assignment near `line`.
 
     If the assumption constrains the assigned variable to a constant
@@ -201,10 +207,10 @@ def apply_assumption(ast, line, assumption, anchored_after=False):
     assumptions = dict(re.findall(assumption_pattern, assumption))
     if anchored_after:
         nondet_assign_node = find_last_nondet_assignment_before_line(
-            ast, line, set(assumptions)
+            ast, line, set(assumptions), target_file
         )
     else:
-        nondet_assign_node, _ = find_nondet_assignment_on_line(ast, line)
+        nondet_assign_node, _ = find_nondet_assignment_on_line(ast, line, target_file)
     if nondet_assign_node is None:
         return
 
@@ -229,16 +235,16 @@ def make_schedule_call(name, slot, threadid):
     )
 
 
-def insert_schedule_point(ast, line, slot, threadid, release=True):
+def insert_schedule_point(ast, line, slot, threadid, target_file, release=True):
     """Instrument the statement at (or first after) `line` as a schedule point.
 
-    A yield(slot, threadid) call before the statement blocks the thread
-    until all earlier schedule points have released their slot; a
-    release(slot, threadid) call afterwards lets the next schedule point
-    proceed. For control statements the release goes to the start of the
-    body/branches (so it happens only once the statement is really being
-    executed), and for a return statement it goes before the statement
-    (code after a return would never run).
+    A __concurrentwit2test_yield(slot, threadid) call before the statement
+    blocks the thread until all earlier schedule points have released their
+    slot; a __concurrentwit2test_release(slot, threadid) call afterwards lets
+    the next schedule point proceed. For control statements the release goes
+    to the start of the body/branches (so it happens only once the statement
+    is really being executed), and for a return statement it goes before the
+    statement (code after a return would never run).
 
     With release=False only the yield is inserted and the slot is not
     consumed; this keeps racing accesses of a data-race witness free of
@@ -246,16 +252,16 @@ def insert_schedule_point(ast, line, slot, threadid, release=True):
 
     Returns the slot the next schedule point should use.
     """
-    statement, parent = find_first_statement_on_line(ast, line)
+    statement, parent = find_first_statement_on_line(ast, line, target_file)
 
-    yield_func = make_schedule_call("yield", slot, threadid)
+    yield_func = make_schedule_call("__concurrentwit2test_yield", slot, threadid)
     first_index = parent.block_items.index(statement)
     parent.block_items.insert(first_index, yield_func)
 
     if not release:
         return slot
 
-    release_func = make_schedule_call("release", slot, threadid)
+    release_func = make_schedule_call("__concurrentwit2test_release", slot, threadid)
     if isinstance(statement, Return):
         parent.block_items.insert(first_index + 1, release_func)
     elif isinstance(statement, Compound):
@@ -287,7 +293,7 @@ def apply_witness(ast, c_file, witnessfile):
         usable_coords = coords and "startline" in coords
         if "assumption" in data and usable_coords:
             apply_assumption(
-                ast, coords["startline"], data["assumption"], anchored_after
+                ast, coords["startline"], data["assumption"], c_file, anchored_after
             )
 
         step_threadid = data["threadId"] if "threadId" in data else threadid
@@ -295,7 +301,7 @@ def apply_witness(ast, c_file, witnessfile):
             threadid = step_threadid
             release = not (witness.data_race and data.get("type") == "target")
             slot = insert_schedule_point(
-                ast, coords["startline"], slot, threadid, release
+                ast, coords["startline"], slot, threadid, c_file, release
             )
 
     return witness
