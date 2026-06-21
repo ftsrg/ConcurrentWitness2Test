@@ -81,6 +81,12 @@ def translate_to_c(filename, witness, mode, timeout):
     if data_race:
         print("Data race witness: compiling with ThreadSanitizer")
 
+    # For a no-overflow witness the violation is an integer overflow detected
+    # by UBSan at runtime.
+    no_overflow = parsed_witness.no_overflow
+    if no_overflow:
+        print("Overflow witness: compiling with UBSan")
+
     try:
         fix_inline(ast)
         fix_struct_def(ast)
@@ -101,6 +107,11 @@ def translate_to_c(filename, witness, mode, timeout):
                     "-pthread",
                 ]
                 + (["-fsanitize=thread", "-g"] if data_race else [])
+                + (
+                    ["-fsanitize=undefined", "-fno-sanitize-recover=all", "-g"]
+                    if no_overflow
+                    else []
+                )
                 + [
                     tmp.name,
                     os.path.dirname(os.path.abspath(sys.argv[0])) + os.sep + "svcomp.c",
@@ -123,6 +134,11 @@ def translate_to_c(filename, witness, mode, timeout):
                 # Stop at the first race and reuse the reach_error() exit
                 # code, so race detection follows the same path below.
                 env["TSAN_OPTIONS"] = "halt_on_error=1 exitcode=74"
+            if no_overflow:
+                # UBSan: halt on first overflow and exit with the same
+                # sentinel code 74 as reach_error(), so the verdict logic
+                # below is reused unchanged.
+                env["UBSAN_OPTIONS"] = "halt_on_error=1:exitcode=74:print_stacktrace=1"
             codes = {}
             for i in range(100):
                 try:
@@ -145,6 +161,13 @@ def translate_to_c(filename, witness, mode, timeout):
                         and data_race
                         and result.stderr
                         and "ThreadSanitizer: data race" in result.stderr
+                    ):
+                        reached_error = True
+                    if (
+                        not reached_error
+                        and no_overflow
+                        and result.stderr
+                        and "runtime error:" in result.stderr
                     ):
                         reached_error = True
                     if result.stdout:

@@ -1,0 +1,53 @@
+# Violation witness (format 2.2) for example/no-overflow.i.
+# Property: G ! overflow (no integer overflow allowed).
+# The witness pins x to INT_MAX so that x + 1 triggers a signed-integer-
+# overflow undefined-behaviour, detected at runtime by UBSan.
+
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.2"
+    uuid: "d4e5f6a7-b8c9-4012-cdef-01234567890a"
+    creation_time: "2026-06-20T12:00:00Z"
+    producer:
+      name: "Handcrafted"
+      version: "1.0"
+    task:
+      input_files:
+        - "example/no-overflow.i"
+      input_file_hashes:
+        "example/no-overflow.i": "ef35d6ca8c6a5f9104a6a601c8da82083dc54bd2aafa9f872b98691f0c92e680"
+      specification: "G ! overflow"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        # YAML assumption anchor: at the sequence point *before* line 10
+        # (first character of the statement), x == INT_MAX. The last nondet
+        # assignment to x before line 10 is line 9 (x = __VERIFIER_nondet_int()),
+        # which is wrapped to return INT_MAX when the segment counter and
+        # thread ID match.
+        type: assumption
+        action: follow
+        thread_id: 0
+        constraint:
+          value: "x == 2147483647"
+          format: c_expression
+        location:
+          file_name: "example/no-overflow.i"
+          line: 10
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        # The signed-integer overflow is in the evaluation of `x + 1`, whose
+        # containing statement is `int y = x + 1;` on line 10 -- the target
+        # location is its first character, per the Target waypoint rules.
+        type: target
+        action: follow
+        thread_id: 0
+        location:
+          file_name: "example/no-overflow.i"
+          line: 10
+          column: 5
+          function: "main"

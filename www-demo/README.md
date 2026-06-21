@@ -103,15 +103,16 @@ directory (user-editable via the "Branch/tag" field).
   approach itself — Wasmer's threading model targets the browser (Web
   Workers + `SharedArrayBuffer`), which is also this feature's actual
   runtime, not Node. This needs real-browser testing to confirm.
-- On the GitHub Pages deployment (`.github/workflows/gh-pages.yml`),
-  "Compile & Run" loses real multithreading: `SharedArrayBuffer` needs the
-  page to be cross-origin isolated, which needs the
-  `Cross-Origin-Opener-Policy`/`Cross-Origin-Embedder-Policy` response
-  headers `nginx.conf` sets for the Docker deployment -- and GitHub Pages
-  has no mechanism to set custom response headers at all (no `_headers`
-  file support like Netlify/Cloudflare Pages). Everything else (linting,
-  instrumentation) is unaffected, since it doesn't depend on
-  cross-origin isolation. Self-host via Docker for full Compile & Run.
+- "Compile & Run"'s cross-origin isolation requirement (COOP + COEP headers
+  for `SharedArrayBuffer`) is handled differently per deployment: `nginx.conf`
+  sets the headers directly for Docker; on GitHub Pages (which has no mechanism
+  to set custom response headers), `coi-serviceworker.js` (checked in at
+  `www-demo/coi-serviceworker.js`, v0.1.7 by Guido Zuidhof) installs a
+  Service Worker that injects those headers via the fetch event. On first visit
+  to the GH Pages deployment the Service Worker triggers a one-time reload
+  before activating; subsequent visits are seamless. The script auto-detects
+  when `crossOriginIsolated` is already `true` and is a no-op in that case
+  (Docker deployment).
 
 ## Deploying
 

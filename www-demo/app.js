@@ -46,6 +46,87 @@ async function getSpecificationText(property) {
   }
 }
 
+// ---------------------------------------------------------------------------
+// Local examples: bundled with ConcurrentWitness2Test (the example/
+// directory, copied verbatim into the image by the Dockerfile), fetched
+// from the same origin -- no network round-trip to GitLab, and no
+// duplication of the actual files into this script.  Each manifest entry
+// just names which example/ files to fetch and which spec property to
+// preselect.
+// ---------------------------------------------------------------------------
+
+const LOCAL_EXAMPLES = [
+  {
+    label: "concurrent-unreach (unreach-call, thread ordering)",
+    property: "unreach-call",
+    base: "concurrent-unreach",
+  },
+  {
+    label: "concurrent-data-race (no-data-race, racing writes)",
+    property: "no-data-race",
+    base: "concurrent-data-race",
+  },
+  {
+    label: "concurrent-nondet (unreach-call, nondet + thread-ID guard)",
+    property: "unreach-call",
+    base: "concurrent-nondet",
+  },
+  {
+    label: "function-return (unreach-call, function_return waypoint)",
+    property: "unreach-call",
+    base: "function-return",
+  },
+  {
+    label: "no-overflow (no-overflow, UBSan integer overflow)",
+    property: "no-overflow",
+    base: "no-overflow",
+  },
+];
+
+async function fetchExampleFile(name) {
+  const resp = await fetch(`example/${name}`);
+  if (!resp.ok) throw new Error(`HTTP ${resp.status} fetching example/${name}`);
+  return await resp.text();
+}
+
+function renderLocalExamples() {
+  const list = document.getElementById("local-examples");
+  list.innerHTML = "";
+  for (const ex of LOCAL_EXAMPLES) {
+    const li = document.createElement("li");
+    li.className = "file";
+    li.textContent = ex.label;
+    li.addEventListener("click", async () => {
+      if (!cEditor || !yamlEditor) return;
+      const filename = `${ex.base}.i`;
+      let c, witness;
+      try {
+        [c, witness] = await Promise.all([
+          fetchExampleFile(filename),
+          fetchExampleFile(`${ex.base}.witness-2.2.yml`),
+        ]);
+      } catch (err) {
+        logOutput("instrument", `Failed to load example "${ex.label}":\n${err}`);
+        return;
+      }
+      cEditor.setValue(c);
+      cFilename.textContent = filename;
+      // Set the spec selector to match the example's property
+      if (specSelect && ex.property) {
+        const option = Array.from(specSelect.options).find(
+          (o) => o.value === ex.property
+        );
+        if (option) {
+          specSelect.value = ex.property;
+          specSelect.dispatchEvent(new Event("change"));
+        }
+      }
+      yamlEditor.setValue(witness);
+    });
+    list.appendChild(li);
+  }
+}
+
 const outputPanels = {
   linter: document.getElementById("output-linter"),
   instrument: document.getElementById("output-instrument"),
@@ -275,6 +356,7 @@ async function initEditors() {
   });
 
   yamlEditor.onDidChangeModelContent(debounce(runLint, 400));
+  yamlEditor.onDidChangeCursorPosition(() => highlightCLocationForYamlCursor());
   addWaypointBtn.addEventListener("click", () => addWaypointAtCursor());
 
   yamlEditor.setValue(
@@ -319,6 +401,69 @@ function updateScheduleDecorations() {
     }
   }
   scheduleDecorations = model.deltaDecorations(scheduleDecorations, decorations);
+}
+
+// ---------------------------------------------------------------------------
+// YAML cursor -> C location highlight: clicking (or moving the cursor) into
+// a waypoint's body in the YAML editor highlights the C source location its
+// `location:` block points at.
+// ---------------------------------------------------------------------------
+
+// A line-based scan, not a real YAML parse (no YAML library is vendored,
+// and the witness schema's shape is fixed enough that this is reliable):
+// each `- waypoint:` line starts a new waypoint, owning every line up to
+// (not including) the next one, anywhere in the document.
+function parseWaypointLocations(yamlText) {
+  const lines = yamlText.split("\n");
+  const starts = [];
+  for (let i = 0; i < lines.length; i++) {
+    if (/^\s*-\s*waypoint:\s*$/.test(lines[i])) starts.push(i + 1); // 1-indexed
+  }
+  return starts.map((startLine, idx) => {
+    const endLine = idx + 1 < starts.length ? starts[idx + 1] - 1 : lines.length;
+    const block = lines.slice(startLine - 1, endLine).join("\n");
+    const lineMatch = block.match(/\bline:\s*(\d+)/);
+    const colMatch = block.match(/\bcolumn:\s*(\d+)/);
+    return {
+      startLine,
+      endLine,
+      cLine: lineMatch ? parseInt(lineMatch[1], 10) : null,
+      cColumn: colMatch ? parseInt(colMatch[1], 10) : 1,
+    };
+  });
+}
+
+let yamlCursorDecorations = [];
+
+function highlightCLocationForYamlCursor() {
+  if (!yamlEditor || !cEditor) return;
+  const model = cEditor.getModel();
+  if (!model) return;
+
+  const pos = yamlEditor.getPosition();
+  const waypoint = pos
+    ? parseWaypointLocations(yamlEditor.getValue()).find(
+        (wp) => pos.lineNumber >= wp.startLine && pos.lineNumber <= wp.endLine
+      )
+    : null;
+
+  if (!waypoint || !waypoint.cLine || waypoint.cLine > model.getLineCount()) {
+    yamlCursorDecorations = model.deltaDecorations(yamlCursorDecorations, []);
+    return;
+  }
+
+  const column = Math.min(waypoint.cColumn, model.getLineMaxColumn(waypoint.cLine));
+  cEditor.revealLineInCenterIfOutsideViewport(waypoint.cLine);
+  yamlCursorDecorations = model.deltaDecorations(yamlCursorDecorations, [
+    {
+      range: new monaco.Range(waypoint.cLine, 1, waypoint.cLine, 1),
+      options: { isWholeLine: true, className: "cwt-waypoint-location-line" },
+    },
+    {
+      range: new monaco.Range(waypoint.cLine, column, waypoint.cLine, column + 1),
+      options: { inlineClassName: "cwt-waypoint-location-col" },
+    },
+  ]);
 }
 
 // ---------------------------------------------------------------------------
@@ -485,16 +630,19 @@ async function runInstrumentPipeline() {
     logOutput("instrument", `Instrumentation failed to run:\n${response.error}`);
     return null;
   }
-  const { ok, source, error, log, data_race } = response.result;
+  const { ok, source, error, log, data_race, no_overflow } = response.result;
   if (!ok) {
     logOutput("instrument", `Instrumentation failed:\n${error}\n${log || ""}`);
     return null;
   }
+  const notes = [];
+  if (data_race) notes.push("data-race witness: compile with -fsanitize=thread");
+  if (no_overflow) notes.push("overflow witness: compile with -fsanitize=undefined -fno-sanitize-recover=all");
   logOutput(
     "instrument",
-    `Instrumented successfully${data_race ? " (data-race witness: compile with -fsanitize=thread)" : ""}.`
+    `Instrumented successfully${notes.length ? " (" + notes.join("; ") + ")" : ""}.`
   );
-  return { source, dataRace: !!data_race };
+  return { source, dataRace: !!data_race, noOverflow: !!no_overflow };
 }
 
 // ---------------------------------------------------------------------------
@@ -513,11 +661,17 @@ async function getSvcompSource() {
   return svcompSourceCache;
 }
 
-function buildMakefile(dataRace) {
-  const extraFlags = dataRace ? " -fsanitize=thread -g" : "";
-  const runCmd = dataRace
-    ? 'TSAN_OPTIONS="halt_on_error=1 exitcode=74" ./$(TARGET)'
-    : "./$(TARGET)";
+function buildMakefile(dataRace, noOverflow) {
+  let extraFlags = "";
+  let runCmd = "./$(TARGET)";
+  if (dataRace) {
+    extraFlags += " -fsanitize=thread -g";
+    runCmd = 'TSAN_OPTIONS="halt_on_error=1 exitcode=74" ./$(TARGET)';
+  }
+  if (noOverflow) {
+    extraFlags += " -fsanitize=undefined -fno-sanitize-recover=all -g";
+    runCmd = 'UBSAN_OPTIONS="halt_on_error=1:exitcode=74:print_stacktrace=1" ./$(TARGET)';
+  }
   return `CC ?= gcc
 CFLAGS ?= -w -Wno-implicit-function-declaration -pthread${extraFlags}
 TARGET ?= a.out
@@ -656,7 +810,7 @@ async function runInstrument(mode) {
       const zipBlob = makeZipFromTexts([
         { name: "instrumented.c", content: source },
         { name: "svcomp.c", content: svcompSource },
-        { name: "Makefile", content: buildMakefile(dataRace) },
+        { name: "Makefile", content: buildMakefile(dataRace, noOverflow) },
       ]);
       const name = (cFilename.textContent || "instrumented").replace(/\.[ci]$/, "") + "-bundle.zip";
       downloadBlob(name, zipBlob);
@@ -946,6 +1100,7 @@ function wireRefPicker(inputId, onChange) {
 wireRefPicker("sv-witnesses-ref", () => renderSvWitnessesExamples());
 wireRefPicker("sv-benchmarks-ref", () => renderSvBenchmarksCategories());
 
+renderLocalExamples();
 renderSvWitnessesExamples();
 renderSvBenchmarksCategories();
 initEditors();

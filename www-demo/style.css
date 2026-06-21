@@ -402,6 +402,16 @@ input[type="text"]:focus {
   border-radius: 2px;
 }
 
+/* The C location a waypoint's `location:` block points at, highlighted
+   while the cursor sits inside that waypoint's body in the YAML editor. */
+.cwt-waypoint-location-line {
+  background: rgba(14, 99, 156, 0.18);
+}
+.cwt-waypoint-location-col {
+  background: rgba(14, 99, 156, 0.55);
+  border-radius: 2px;
+}
+
 #output-panel {
   flex-shrink: 0;
   height: 220px;

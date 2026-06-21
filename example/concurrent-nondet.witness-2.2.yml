@@ -1,0 +1,76 @@
+# Violation witness (format 2.2) for example/concurrent-nondet.i.
+# Exercises runtime thread-ID-checked nondet: the assumption is guarded by
+# both the segment counter AND the writer thread's logical ID (1), so the
+# value 1 is only injected when the writer thread is in the right epoch.
+
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.2"
+    uuid: "f6a7b8c9-d0e1-4234-efab-234567890123"
+    creation_time: "2026-06-20T12:00:00Z"
+    producer:
+      name: "Handcrafted"
+      version: "1.0"
+    task:
+      input_files:
+        - "example/concurrent-nondet.i"
+      input_file_hashes:
+        "example/concurrent-nondet.i": "9df7b208cf189fbce8fa3fb1fca92652b9bbd1ed948e8da3334f335d4c428020"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        # Registers writer as thread 1 (1st thread-creating function_enter).
+        # Location is the right-after-name parenthesis of the pthread_create
+        # call (line 23, column 19) at which writer is spawned.
+        type: function_enter
+        action: follow
+        thread_id: 0
+        location:
+          file_name: "example/concurrent-nondet.i"
+          line: 23
+          column: 19
+          function: "main"
+  - segment:
+    - waypoint:
+        # writer's nondet: x = __VERIFIER_nondet_int() on line 17, guarded
+        # by slot==0 AND logical_tid==1.  Assumption anchored after line 18
+        # (the return) so the last nondet assignment to x at or before line 18
+        # is found (line 17).
+        type: assumption
+        action: follow
+        thread_id: 1
+        constraint:
+          value: "x == 1"
+          format: c_expression
+        location:
+          file_name: "example/concurrent-nondet.i"
+          line: 18
+          column: 5
+          function: "writer"
+  - segment:
+    - waypoint:
+        # main observes x == 1 and calls reach_error().
+        type: assumption
+        action: follow
+        thread_id: 0
+        constraint:
+          value: "x == 1"
+          format: c_expression
+        location:
+          file_name: "example/concurrent-nondet.i"
+          line: 24
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        type: target
+        action: follow
+        thread_id: 0
+        location:
+          file_name: "example/concurrent-nondet.i"
+          line: 25
+          column: 9
+          function: "main"

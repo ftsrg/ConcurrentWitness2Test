@@ -58,4 +58,4 @@ def instrument(c_path: str, witness_path: str, headers_dir: str) -> str:
     declare_schedule_functions(ast)
 
     generator = c_generator.CGenerator()
-    return generator.visit(ast), parsed_witness.data_race
+    return generator.visit(ast), parsed_witness.data_race, parsed_witness.no_overflow
