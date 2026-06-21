@@ -28,16 +28,36 @@ void __VERIFIER_atomic_begin() {
 void __VERIFIER_atomic_end(void) {
 
 }
-void reach_error() {
-    printf("Reached error!\n");
-    fflush( stdout );
-    exit(74);
-}
-
 atomic_int c2tt_global_counter = 0;
 mtx_t c2tt_mtx;
 cnd_t c2tt_cv;
 once_flag c2tt_once = ONCE_FLAG_INIT;
+
+/* The segment counter value the witness expects once every one of its
+ * segments has been passed, set once (before any thread is spawned, see
+ * witness2ast.inject_expected_final_slot) from the witness' last computed
+ * slot. -1 (the default, for any program svcomp.c is linked into that
+ * isn't actually witness-instrumented) means "no constraint": reach_error()
+ * always counts. */
+static int c2tt_expected_final_slot = -1;
+
+void __c2tt_set_expected_final_slot(int slot) {
+    c2tt_expected_final_slot = slot;
+}
+
+void reach_error() {
+    /* A reach_error() reached while the witness' schedule hasn't been
+     * fully played out yet -- some other, unrelated nondeterministic
+     * choice got the program here -- doesn't confirm the witness, so it
+     * doesn't count as the violation. */
+    if (c2tt_expected_final_slot >= 0
+        && atomic_load(&c2tt_global_counter) != c2tt_expected_final_slot) {
+        return;
+    }
+    printf("Reached error!\n");
+    fflush( stdout );
+    exit(74);
+}
 
 /* Thread-local logical thread ID: 0 = main thread, k = k-th spawned thread.
  * Spawned threads never set this themselves -- it is fixed before they run
@@ -66,6 +86,20 @@ static void c2tt_initialize(void) {
 int __c2tt_should_use_assumed(int slot, int logical_tid) {
     return atomic_load(&c2tt_global_counter) == slot
         && c2tt_logical_tid == logical_tid;
+}
+
+/* General assumption/branching guard: `matches` is the segment/thread
+ * check above (or 1, unconditionally, for formats with no segment counter);
+ * `holds` is whatever the witness claims should be true right now (an
+ * assumption's expression, or a branching statement's controlling
+ * expression compared against the witness' recorded direction). If the
+ * witness wanted this checked and it doesn't hold, this execution has
+ * diverged from the witness, so it exits cleanly instead of running on
+ * down a path the witness doesn't describe. */
+void __concurrentwit2test_assume(int matches, int holds) {
+    if (matches && !holds) {
+        exit(0);
+    }
 }
 
 /* Blob handed from pthread_create's caller to __c2tt_thread_proxy: the

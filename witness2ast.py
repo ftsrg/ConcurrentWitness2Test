@@ -56,15 +56,16 @@ instrumentation:
 * ``assumption`` waypoints that pin a ``__VERIFIER_nondet_*()`` assignment
   to a constant value (the common case) use the runtime guard above to
   substitute the value. Any other assumption (a general C expression, not
-  immediately following a matching nondet call) instead gets a guarded
-  ``if (!(EXPR)) exit(0);`` -- if the witness' assumption does not hold on
-  this particular execution, that execution is not a witness replay and
-  exits cleanly rather than running on down an unwitnessed path.
+  immediately following a matching nondet call) instead gets a single
+  ``__concurrentwit2test_assume(matches, EXPR)`` call inserted -- the
+  helper (see ``svcomp.c``) exits cleanly if ``matches`` (the segment/
+  thread check) holds but ``EXPR`` doesn't, since that execution has
+  diverged from the witness rather than replaying it.
 
 * ``branching`` waypoints re-check the branching statement's controlling
   expression against the witness' recorded direction (or, for ``switch``,
-  its integer constant) and ``exit(0)`` on a mismatch, under the same
-  segment/thread guard.
+  its integer constant) through the same ``__concurrentwit2test_assume``
+  call.
 
 For a ``no-data-race`` witness the racing accesses (the ``target``
 waypoints of the final multi-follow segment) are special: they must stay
@@ -84,6 +85,7 @@ from pycparser.c_ast import (
     For,
     Return,
     FuncCall,
+    FuncDef,
     NodeVisitor,
     ID,
     ExprList,
@@ -361,21 +363,26 @@ def _make_guarded_nondet(nondet_call, ret_type, value, slot, logical_tid):
     )
 
 
-def make_exit_call():
-    return FuncCall(ID("exit"), ExprList([Constant(type="int", value="0")]))
-
-
-def wrap_with_match_guard(stmt, slot, logical_tid):
-    """Wrap `stmt` in ``if (__c2tt_should_use_assumed(slot, tid)) { stmt }``
-    so it only runs in the exact segment/thread the witness means it for.
-    With slot/logical_tid unknown (GraphML) the statement runs unguarded.
+def make_match_expr(slot, logical_tid):
+    """An expression that's true exactly when the witness wants something
+    checked right now: unconditionally true (1) if slot/logical_tid are
+    unknown (GraphML has no segment counter), else the segment/thread
+    match check.
     """
     if slot is None or logical_tid is None:
-        return stmt
-    return If(
-        cond=make_segment_match_call(slot, logical_tid),
-        iftrue=Compound(block_items=[stmt]),
-        iffalse=None,
+        return Constant(type="int", value="1")
+    return make_segment_match_call(slot, logical_tid)
+
+
+def make_assume_call(slot, logical_tid, holds_expr):
+    """``__concurrentwit2test_assume(matches, holds)`` (see svcomp.c): a
+    single call standing in for ``if (matches && !holds) exit(0);``, so
+    general assumption/branching guards are one statement in the AST
+    instead of a constructed If/Compound/exit tree.
+    """
+    return FuncCall(
+        ID("__concurrentwit2test_assume"),
+        ExprList([make_match_expr(slot, logical_tid), holds_expr]),
     )
 
 
@@ -389,10 +396,10 @@ def parse_c_expression(expr_str, target_file):
 
 def insert_assumption_guard(ast, line, assumption, target_file, slot, logical_tid):
     """General fallback for assumption waypoints that don't pin a nondet
-    call: insert ``if (!(EXPR)) exit(0);`` (under the segment/thread guard)
-    right before the located statement. An execution that disagrees with
-    the witness' assumption is not a replay of it, so it exits cleanly
-    instead of running on down an unwitnessed path.
+    call: insert a ``__concurrentwit2test_assume(matches, EXPR)`` call right
+    before the located statement. An execution that disagrees with the
+    witness' assumption is not a replay of it, so it exits cleanly instead
+    of running on down an unwitnessed path.
     """
     statement, parent = find_first_statement_on_line(ast, line, target_file)
     if statement is None:
@@ -402,14 +409,9 @@ def insert_assumption_guard(ast, line, assumption, target_file, slot, logical_ti
     except Exception:
         return
 
-    check = If(
-        cond=UnaryOp("!", expr),
-        iftrue=Compound(block_items=[make_exit_call()]),
-        iffalse=None,
-    )
-    guard = wrap_with_match_guard(check, slot, logical_tid)
+    call = make_assume_call(slot, logical_tid, expr)
     idx = parent.block_items.index(statement)
-    parent.block_items.insert(idx, guard)
+    parent.block_items.insert(idx, call)
 
 
 def apply_assumption(
@@ -556,7 +558,8 @@ def apply_branching(
 ):
     """Branching waypoint: re-check the branching statement's (``if``,
     ``while``, ``do``, ``for``, or ``switch``) controlling expression
-    against the witness' recorded direction, ``exit(0)`` on a mismatch.
+    against the witness' recorded direction, via the same
+    ``__concurrentwit2test_assume`` helper as general assumptions.
 
     The controlling expression is duplicated rather than lifted into a
     temporary, so this -- like ``apply_assumption`` -- is unsound if it has
@@ -569,25 +572,41 @@ def apply_branching(
     cond = statement.cond
     if constraint_value in ("true", "false"):
         wanted_true = constraint_value == "true"
-        mismatch = UnaryOp("!", cond) if wanted_true else cond
+        holds = cond if wanted_true else UnaryOp("!", cond)
     else:
         try:
             int(constraint_value)
         except (TypeError, ValueError):
             # 'default' switch label or other unsupported constraint forms.
             return
-        mismatch = BinaryOp(
-            "!=", cond, Constant(type="int", value=str(constraint_value))
-        )
+        holds = BinaryOp("==", cond, Constant(type="int", value=str(constraint_value)))
 
-    check = If(
-        cond=mismatch,
-        iftrue=Compound(block_items=[make_exit_call()]),
-        iffalse=None,
-    )
-    guard = wrap_with_match_guard(check, slot, logical_tid)
+    call = make_assume_call(slot, logical_tid, holds)
     idx = parent.block_items.index(statement)
-    parent.block_items.insert(idx, guard)
+    parent.block_items.insert(idx, call)
+
+
+def inject_expected_final_slot(ast, final_slot):
+    """Prepend ``__c2tt_set_expected_final_slot(final_slot)`` to main()'s
+    body, so reach_error() (see svcomp.c) only counts as confirming the
+    witness once every one of its segments has actually been passed --
+    not merely whenever the program happens to reach it via some other,
+    unrelated nondeterministic choice. Must run before any thread is
+    spawned, hence prepended to main() itself rather than set some other
+    way.
+    """
+    for node in ast.ext:
+        if isinstance(node, FuncDef) and node.decl.name == "main":
+            call = FuncCall(
+                ID("__c2tt_set_expected_final_slot"),
+                ExprList([Constant(type="int", value=str(final_slot))]),
+            )
+            body = node.body
+            if body.block_items is None:
+                body.block_items = [call]
+            else:
+                body.block_items.insert(0, call)
+            return
 
 
 def apply_witness(ast, c_file, witnessfile):
@@ -662,4 +681,5 @@ def apply_witness(ast, c_file, witnessfile):
                 ast, coords["startline"], slot, threadid, c_file, release
             )
 
+    inject_expected_final_slot(ast, slot)
     return witness

@@ -9,9 +9,15 @@ which has been verified byte-for-byte equivalent on the bundled examples
 import io
 
 from pcpp.preprocessor import Preprocessor
-from pycparser import CParser, c_generator
+from pycparser import CParser
 
-from tweaks import reach_error, declare_schedule_functions, fix_inline, fix_struct_def
+from tweaks import (
+    reach_error,
+    declare_schedule_functions,
+    fix_inline,
+    fix_struct_def,
+    LineDirectiveCGenerator,
+)
 from witness2ast import apply_witness
 
 # Mirrors main.py's CPP_GNU_COMPAT_ARGS, expressed as pcpp #define bodies
@@ -57,5 +63,5 @@ def instrument(c_path: str, witness_path: str, headers_dir: str) -> str:
     reach_error(ast)
     declare_schedule_functions(ast)
 
-    generator = c_generator.CGenerator()
+    generator = LineDirectiveCGenerator()
     return generator.visit(ast), parsed_witness.data_race, parsed_witness.no_overflow
