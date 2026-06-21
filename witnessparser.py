@@ -194,13 +194,19 @@ def parse_graphml_witness(witnessfile, c_file):
 def _extract_constraint(waypoint):
     """Extract the assumption/constraint value from a YAML waypoint, or None.
 
-    ``branching`` waypoints omit ``format`` and carry a YAML bool (or, for
-    ``switch``, an integer/``default``) rather than a C expression string;
-    normalize all of these to plain strings so callers don't need to care
-    which waypoint type they came from.
+    ``assumption`` constraints use ``c_expression``; ``function_return``
+    constraints use ``ext_c_expression`` (the function-context grammar that
+    ``\\result`` belongs to); ``branching`` waypoints omit ``format``
+    entirely and carry a YAML bool (or, for ``switch``, an integer/
+    ``default``) rather than a C expression string. Normalize all of these
+    to plain strings so callers don't need to care which waypoint type they
+    came from.
     """
     constraint = waypoint.get("constraint", {})
-    if constraint.get("format", "c_expression") != "c_expression":
+    if constraint.get("format", "c_expression") not in (
+        "c_expression",
+        "ext_c_expression",
+    ):
         return None
     value = constraint.get("value")
     if value is None:

@@ -21,11 +21,17 @@ import tempfile
 import traceback
 import argparse
 
-from pycparser import preprocess_file, CParser, c_generator
+from pycparser import preprocess_file, CParser
 
 from Exceptions import KnownErrorVerdict
 from hacks import hacks
-from tweaks import reach_error, fix_inline, fix_struct_def, declare_schedule_functions
+from tweaks import (
+    reach_error,
+    fix_inline,
+    fix_struct_def,
+    declare_schedule_functions,
+    LineDirectiveCGenerator,
+)
 from witness2ast import apply_witness
 
 HEADERS_DIR = os.path.dirname(os.path.abspath(sys.argv[0])) + os.sep + "headers"
@@ -92,7 +98,7 @@ def translate_to_c(filename, witness, mode, timeout):
         fix_struct_def(ast)
         reach_error(ast)
         declare_schedule_functions(ast)
-        generator = c_generator.CGenerator()
+        generator = LineDirectiveCGenerator()
         with tempfile.NamedTemporaryFile(suffix=".c", delete=False) as tmp:
             tmp.write(generator.visit(ast).encode())
             tmp.flush()

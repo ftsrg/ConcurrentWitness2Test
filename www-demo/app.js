@@ -433,6 +433,53 @@ function parseWaypointLocations(yamlText) {
   });
 }
 
+// After "Instrument" the C editor shows LineDirectiveCGenerator's output
+// (see tweaks.py): the original source reformatted, with instrumentation
+// inserted, and `#line N "file"` comments ahead of each original-source
+// chunk so the *line numbers* survive the reformatting. A waypoint's
+// `location.line` is always in original-source terms, so it has to be
+// resolved through those directives to find the right physical Monaco
+// line -- forward-simulating the same line count gcc/UBSan/TSan would.
+//
+// The directives say nothing about *columns*: CGenerator's own
+// indentation/formatting means an original column number is meaningless
+// on the regenerated physical line, so column-precision highlighting is
+// only valid when there are no directives at all (untouched source, where
+// physical and original line numbers already coincide).
+function resolvePhysicalLine(model, originalLine) {
+  let curLine = null;
+  let sawDirective = false;
+  // A line reached by counting forward from the last directive (no fresh
+  // directive of its own) is only a best-effort guess -- synthetic
+  // instrumentation lines with no original-source line of their own can
+  // coincidentally drift onto the same number. A directive that names
+  // `originalLine` explicitly is always ground truth and wins outright;
+  // the counted-forward guess is kept only as a fallback for when no
+  // directive ever claims that line (e.g. a line whose statement never
+  // needed its own re-anchoring).
+  let fallback = null;
+  const lineCount = model.getLineCount();
+  for (let physicalLine = 1; physicalLine <= lineCount; physicalLine++) {
+    const m = /^\s*#line\s+(\d+)\s+"[^"]*"\s*$/.exec(model.getLineContent(physicalLine));
+    if (m) {
+      sawDirective = true;
+      curLine = parseInt(m[1], 10);
+      if (curLine === originalLine) {
+        return { line: physicalLine + 1, columnReliable: false };
+      }
+      continue;
+    }
+    if (curLine !== null) {
+      if (curLine === originalLine && fallback === null) {
+        fallback = { line: physicalLine, columnReliable: false };
+      }
+      curLine++;
+    }
+  }
+  if (sawDirective) return fallback;
+  return { line: originalLine, columnReliable: true };
+}
+
 let yamlCursorDecorations = [];
 
 function highlightCLocationForYamlCursor() {
@@ -447,23 +494,28 @@ function highlightCLocationForYamlCursor() {
       )
     : null;
 
-  if (!waypoint || !waypoint.cLine || waypoint.cLine > model.getLineCount()) {
+  const resolved = waypoint && waypoint.cLine ? resolvePhysicalLine(model, waypoint.cLine) : null;
+  if (!resolved || resolved.line > model.getLineCount()) {
     yamlCursorDecorations = model.deltaDecorations(yamlCursorDecorations, []);
     return;
   }
 
-  const column = Math.min(waypoint.cColumn, model.getLineMaxColumn(waypoint.cLine));
-  cEditor.revealLineInCenterIfOutsideViewport(waypoint.cLine);
-  yamlCursorDecorations = model.deltaDecorations(yamlCursorDecorations, [
+  const { line, columnReliable } = resolved;
+  cEditor.revealLineInCenterIfOutsideViewport(line);
+  const decorations = [
     {
-      range: new monaco.Range(waypoint.cLine, 1, waypoint.cLine, 1),
+      range: new monaco.Range(line, 1, line, 1),
       options: { isWholeLine: true, className: "cwt-waypoint-location-line" },
     },
-    {
-      range: new monaco.Range(waypoint.cLine, column, waypoint.cLine, column + 1),
+  ];
+  if (columnReliable) {
+    const column = Math.min(waypoint.cColumn, model.getLineMaxColumn(line));
+    decorations.push({
+      range: new monaco.Range(line, column, line, column + 1),
       options: { inlineClassName: "cwt-waypoint-location-col" },
-    },
-  ]);
+    });
+  }
+  yamlCursorDecorations = model.deltaDecorations(yamlCursorDecorations, decorations);
 }
 
 // ---------------------------------------------------------------------------
