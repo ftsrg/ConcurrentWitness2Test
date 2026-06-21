@@ -52,11 +52,12 @@ def instrument(c_path: str, witness_path: str) -> dict:
         with open(c_path, "w") as f:
             f.write(hacked)
 
-        source, data_race = run_instrument(c_path, witness_path, headers_dir)
+        source, data_race, no_overflow = run_instrument(c_path, witness_path, headers_dir)
         return {
             "ok": True,
             "source": source,
             "data_race": data_race,
+            "no_overflow": no_overflow,
             "log": buf.getvalue(),
         }
     except Exception as e:  # noqa: BLE001 - surfaced to the UI, not swallowed

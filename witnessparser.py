@@ -34,7 +34,10 @@ execution (happens-before) order -- so that the AST instrumentation in
 ``endline``, ``column``, ``length``, ``content``) or is ``None`` when the
 witness gives no usable location. ``metadata`` may contain:
 
-* ``assumption``: a C expression that holds at this step,
+* ``assumption``: a C expression that holds at this step (for assumption
+  and function_return waypoints), or the recorded branch direction/case
+  (for branching waypoints: ``"true"``/``"false"``, or an integer/``"default"``
+  for switch),
 * ``threadId``: the thread executing this step (``0`` = main thread),
 * ``type``: the waypoint type (YAML witnesses only, e.g. ``target``).
 """
@@ -60,6 +63,11 @@ class ParsedWitness:
     def data_race(self):
         """Whether the witness claims a data race (no-data-race property)."""
         return "data-race" in self.specification
+
+    @property
+    def no_overflow(self):
+        """Whether the witness claims an integer overflow (no-overflow property)."""
+        return "overflow" in self.specification
 
 
 def get_offset_of_line(c_file, line):
@@ -183,6 +191,25 @@ def parse_graphml_witness(witnessfile, c_file):
     return ParsedWitness(steps, specification, FORMAT_GRAPHML)
 
 
+def _extract_constraint(waypoint):
+    """Extract the assumption/constraint value from a YAML waypoint, or None.
+
+    ``branching`` waypoints omit ``format`` and carry a YAML bool (or, for
+    ``switch``, an integer/``default``) rather than a C expression string;
+    normalize all of these to plain strings so callers don't need to care
+    which waypoint type they came from.
+    """
+    constraint = waypoint.get("constraint", {})
+    if constraint.get("format", "c_expression") != "c_expression":
+        return None
+    value = constraint.get("value")
+    if value is None:
+        return None
+    if isinstance(value, bool):
+        return "true" if value else "false"
+    return str(value)
+
+
 def parse_yaml_witness(witnessfile, c_file):
     with open(witnessfile, "r") as f:
         entries = yaml.safe_load(f)
@@ -215,24 +242,26 @@ def parse_yaml_witness(witnessfile, c_file):
                 # them, so they are skipped.
                 continue
 
+            waypoint_type = waypoint.get("type")
             location = waypoint.get("location", {})
             line = location.get("line")
             coords = get_coords(c_file, startline=line) if line else None
 
             metadata = {
-                "type": waypoint.get("type"),
+                "type": waypoint_type,
                 # thread_id is the format-2.2 concurrency extension; its
                 # absence means the main thread (thread 0).
                 "threadId": int(waypoint.get("thread_id", 0)),
             }
 
-            constraint = waypoint.get("constraint", {})
-            if (
-                waypoint.get("type") == "assumption"
-                and constraint.get("format", "c_expression") == "c_expression"
-                and constraint.get("value") is not None
-            ):
-                metadata["assumption"] = constraint["value"]
+            # assumption/function_return constraints can pin a nondet call
+            # to a specific value; branching constraints record which way
+            # a branch was taken. All three are stored under the same
+            # "assumption" key since witness2ast dispatches on "type".
+            if waypoint_type in ("assumption", "function_return", "branching"):
+                value = _extract_constraint(waypoint)
+                if value is not None:
+                    metadata["assumption"] = value
 
             steps.append((coords, metadata))
 

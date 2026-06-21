@@ -19,7 +19,7 @@ from pycparser.c_ast import FuncDef, Decl, Struct, TypeDecl
 
 
 def declare_schedule_functions(ast):
-    """Add explicit prototypes for the schedule-point functions.
+    """Add explicit prototypes for the schedule-point and runtime-guard functions.
 
     They are otherwise called without ever being declared in the
     instrumented file (their definition only exists in svcomp.c, compiled
@@ -31,6 +31,10 @@ def declare_schedule_functions(ast):
         .parse(
             "void __concurrentwit2test_yield(int, int);\n"
             "void __concurrentwit2test_release(int, int);\n"
+            "int __c2tt_should_use_assumed(int, int);\n"
+            "void *__c2tt_thread_proxy(void *);\n"
+            "void *__c2tt_make_thread_arg(void *(*)(void *), void *, int);\n"
+            "void exit(int);\n"
         )
         .ext
     )

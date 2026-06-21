@@ -1,0 +1,45 @@
+# Violation witness (format 2.2) for example/function-return.i.
+# Property: G ! call(reach_error())
+# The function_return waypoint pins the return value of get_value() to 1
+# (positive), so the branch that calls reach_error() is taken.
+
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.2"
+    uuid: "e5f6a7b8-c9d0-4123-defa-123456789012"
+    creation_time: "2026-06-20T12:00:00Z"
+    producer:
+      name: "Handcrafted"
+      version: "1.0"
+    task:
+      input_files:
+        - "example/function-return.i"
+      input_file_hashes:
+        "example/function-return.i": "5a8d5665e66fa39bd2cbb439b2b47a3ca420a3cd30d1c596ba4a7b4f89fef070"
+      specification: "G ! call(reach_error())"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        type: function_return
+        action: follow
+        thread_id: 0
+        constraint:
+          value: "\\result == 1"
+          format: ext_c_expression
+        location:
+          file_name: "example/function-return.i"
+          line: 10
+          column: 34
+          function: "get_value"
+  - segment:
+    - waypoint:
+        type: target
+        action: follow
+        thread_id: 0
+        location:
+          file_name: "example/function-return.i"
+          line: 16
+          column: 9
+          function: "main"

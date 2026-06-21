@@ -56,6 +56,9 @@ FROM nginx:alpine
 COPY www-demo/nginx.conf /etc/nginx/conf.d/default.conf
 COPY www-demo/index.html www-demo/style.css www-demo/app.js www-demo/pyodide-worker.js www-demo/wasmer-run.js www-demo/coi-serviceworker.js /usr/share/nginx/html/
 COPY svcomp.c /usr/share/nginx/html/svcomp.c
+# Bundled examples, fetched by app.js's local-examples sidebar -- not
+# duplicated into app.js itself, so they can't drift from the real files.
+COPY example/ /usr/share/nginx/html/example/
 COPY --from=pytree /py.zip /usr/share/nginx/html/py.zip
 COPY --from=monaco /build/node_modules/monaco-editor/min/vs /usr/share/nginx/html/vendor/monaco/vs
 COPY --from=wasmersdk /build/node_modules/@wasmer/sdk/dist /usr/share/nginx/html/vendor/wasmer

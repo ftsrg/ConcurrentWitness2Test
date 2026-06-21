@@ -39,6 +39,18 @@ mtx_t c2tt_mtx;
 cnd_t c2tt_cv;
 once_flag c2tt_once = ONCE_FLAG_INIT;
 
+/* Thread-local logical thread ID: 0 = main thread, k = k-th spawned thread.
+ * Spawned threads never set this themselves -- it is fixed before they run
+ * a single line of program code, by __c2tt_thread_proxy below. The main
+ * thread is pre-initialized to 0 by the constructor below. */
+static _Thread_local int c2tt_logical_tid = -1;
+
+/* Pre-initialize the main thread's logical tid before main() runs. */
+__attribute__((constructor))
+static void c2tt_main_thread_init(void) {
+    c2tt_logical_tid = 0;
+}
+
 /* call_once keeps the initialization race-free: a plain initialized-flag
  * would itself be reported as a data race by the thread sanitizer. */
 static void c2tt_initialize(void) {
@@ -47,7 +59,57 @@ static void c2tt_initialize(void) {
     printf("Initialized variables\n");
 }
 
+/* Returns 1 iff the current segment counter equals `slot` and the current
+ * thread's logical witness ID equals `logical_tid`. Used by the runtime
+ * nondet/assumption/branching guards to decide whether the witness wants
+ * something to happen right here, right now, on this thread. */
+int __c2tt_should_use_assumed(int slot, int logical_tid) {
+    return atomic_load(&c2tt_global_counter) == slot
+        && c2tt_logical_tid == logical_tid;
+}
+
+/* Blob handed from pthread_create's caller to __c2tt_thread_proxy: the
+ * program's real start routine and argument, plus the logical witness ID
+ * the new thread should run as (or -1 if this particular pthread_create
+ * call is not the one the witness is pinning -- e.g. a different loop
+ * iteration spawning with the same start routine). Heap-allocated because
+ * pthread_create can return, unwinding the caller's stack, before the new
+ * thread gets around to reading it. */
+struct __c2tt_thread_arg {
+    void *real_arg;
+    void *(*real_func)(void *);
+    int logical_tid;
+};
+
+void *__c2tt_make_thread_arg(void *(*real_func)(void *), void *real_arg, int logical_tid) {
+    struct __c2tt_thread_arg *targ = malloc(sizeof(struct __c2tt_thread_arg));
+    targ->real_func = real_func;
+    targ->real_arg = real_arg;
+    targ->logical_tid = logical_tid;
+    return targ;
+}
+
+/* Passed to pthread_create in place of the program's real start routine.
+ * The real routine may be shared by several pthread_create call sites (or
+ * the same call site looped), so the logical ID lives on this per-call
+ * argument blob rather than on the routine itself. */
+void *__c2tt_thread_proxy(void *raw_arg) {
+    struct __c2tt_thread_arg *targ = (struct __c2tt_thread_arg *)raw_arg;
+    void *real_arg = targ->real_arg;
+    void *(*real_func)(void *) = targ->real_func;
+    c2tt_logical_tid = targ->logical_tid;
+    free(targ);
+    return real_func(real_arg);
+}
+
 void __concurrentwit2test_yield(int target_value, int threadid) {
+    /* Code shared by threads outside the witness' schedule (or a thread
+     * other than the one this particular schedule point targets) must run
+     * on without participating -- it has nothing to wait for and nothing
+     * to release. */
+    if (c2tt_logical_tid != threadid) {
+        return;
+    }
     call_once(&c2tt_once, c2tt_initialize);
     mtx_lock(&c2tt_mtx);
 
@@ -67,6 +129,10 @@ void __concurrentwit2test_yield(int target_value, int threadid) {
 }
 
 void __concurrentwit2test_release(int target_value, int threadid) {
+    /* Symmetric with yield: not the targeted thread, nothing to do. */
+    if (c2tt_logical_tid != threadid) {
+        return;
+    }
     call_once(&c2tt_once, c2tt_initialize);
     mtx_lock(&c2tt_mtx);
     if (atomic_load(&c2tt_global_counter) > target_value) {

@@ -19,14 +19,52 @@ The witness (of either format, see ``witnessparser``) is reduced to a
 sequence of steps; this module turns those steps into source-level
 instrumentation:
 
-* steps carrying an ``assumption`` over a ``__VERIFIER_nondet_*()``
-  assignment replace the nondeterministic call with the assumed constant;
-* steps where the executing thread changes become *schedule points*: a
+* Steps carrying an ``assumption`` over a ``__VERIFIER_nondet_*()``
+  assignment replace the nondeterministic call with a runtime guard:
+  ``__c2tt_should_use_assumed(slot, logical_tid) ? VALUE : __VERIFIER_nondet_*()``.
+  The guard checks both the global segment counter (``slot``) and the
+  calling thread's logical witness ID so that the assumed value is only
+  injected when the execution is in exactly the right scheduling epoch and
+  thread.
+
+* ``function_return`` waypoints work like assumptions but target the
+  ``return __VERIFIER_nondet_*()`` expression inside the indicated function.
+
+* Steps where the executing thread changes become *schedule points*: a
   ``__concurrentwit2test_yield(slot, tid)``/``__concurrentwit2test_release(slot, tid)``
   pair (implemented in ``svcomp.c``) that blocks the thread until all
   earlier schedule points have been passed, realizing the witness' cross-thread
   ordering. The functions are prefixed to avoid accidentally colliding with
-  identifiers in the instrumented program.
+  identifiers in the instrumented program. Both check internally that the
+  *calling* thread's logical ID matches the targeted ``tid`` before doing
+  anything, so code shared by several threads (or by the witnessed thread
+  and unrelated ones) only pauses/advances the schedule on the one thread
+  it is meant for.
+
+* ``function_enter`` waypoints at ``pthread_create`` call sites rewrite the
+  call to go through ``__c2tt_thread_proxy`` (see ``svcomp.c``), handing it
+  the program's real start routine/argument plus the logical thread ID the
+  new thread should run as. The ID is only assigned when the *call* happens
+  in the right segment and on the right calling thread (a runtime check,
+  since the same call site -- e.g. inside a loop -- may run many times,
+  only one of which is the one the witness pins); other invocations pass
+  ``-1``, i.e. "not a thread the witness tracks". This is deliberately not
+  done by injecting a registration call into the start routine's body,
+  since that routine may be shared by multiple ``pthread_create`` call
+  sites with different logical IDs.
+
+* ``assumption`` waypoints that pin a ``__VERIFIER_nondet_*()`` assignment
+  to a constant value (the common case) use the runtime guard above to
+  substitute the value. Any other assumption (a general C expression, not
+  immediately following a matching nondet call) instead gets a guarded
+  ``if (!(EXPR)) exit(0);`` -- if the witness' assumption does not hold on
+  this particular execution, that execution is not a witness replay and
+  exits cleanly rather than running on down an unwitnessed path.
+
+* ``branching`` waypoints re-check the branching statement's controlling
+  expression against the witness' recorded direction (or, for ``switch``,
+  its integer constant) and ``exit(0)`` on a mismatch, under the same
+  segment/thread guard.
 
 For a ``no-data-race`` witness the racing accesses (the ``target``
 waypoints of the final multi-follow segment) are special: they must stay
@@ -37,6 +75,7 @@ happens-before edge that hides the race from the thread sanitizer.
 
 import re
 
+from pycparser import CParser
 from pycparser.c_ast import (
     Compound,
     If,
@@ -50,6 +89,9 @@ from pycparser.c_ast import (
     ExprList,
     Constant,
     Assignment,
+    TernaryOp,
+    UnaryOp,
+    BinaryOp,
 )
 
 from Exceptions import KnownErrorVerdict
@@ -125,6 +167,32 @@ def find_last_nondet_assignment_before_line(ast, target_line, varnames, target_f
     return line_visitor.statement
 
 
+def find_return_nondet_on_line(ast, target_line, target_file):
+    """Find a ``return __VERIFIER_nondet_*()`` statement at or after target_line."""
+
+    class ReturnVisitor(NodeVisitor):
+        def __init__(self):
+            self.statement = None
+
+        def visit_Return(self, node):
+            if (
+                node.coord
+                and node.coord.file == target_file
+                and node.coord.line >= target_line
+                and node.expr is not None
+                and isinstance(node.expr, FuncCall)
+                and isinstance(node.expr.name, ID)
+                and "__VERIFIER_nondet" in node.expr.name.name
+                and self.statement is None
+            ):
+                self.statement = node
+            self.generic_visit(node)
+
+    v = ReturnVisitor()
+    v.visit(ast)
+    return v.statement
+
+
 def find_first_statement_on_line(ast, target_line, target_file):
     class LineVisitor(NodeVisitor):
         def __init__(self, target_line, target_file):
@@ -160,6 +228,91 @@ def find_first_statement_on_line(ast, target_line, target_file):
         return None, None
 
 
+def find_pthread_create_call(ast, target_line, target_file):
+    """Return the ``pthread_create(...)`` FuncCall node at target_line, or None."""
+
+    class Visitor(NodeVisitor):
+        def __init__(self):
+            self.call = None
+
+        def visit_FuncCall(self, node):
+            if (
+                self.call is None
+                and node.coord
+                and node.coord.file == target_file
+                and node.coord.line == target_line
+                and isinstance(node.name, ID)
+                and node.name.name == "pthread_create"
+                and node.args is not None
+                and len(node.args.exprs) >= 4
+            ):
+                self.call = node
+            self.generic_visit(node)
+
+    v = Visitor()
+    v.visit(ast)
+    return v.call
+
+
+def make_segment_match_call(slot, logical_tid):
+    return FuncCall(
+        ID("__c2tt_should_use_assumed"),
+        ExprList(
+            [
+                Constant(type="int", value=str(slot)),
+                Constant(type="int", value=str(logical_tid)),
+            ]
+        ),
+    )
+
+
+def instrument_pthread_create(
+    ast, line, target_file, slot, calling_threadid, logical_tid
+):
+    """Rewrite the ``pthread_create`` call at `line` to spawn through
+    ``__c2tt_thread_proxy``, so the new thread's logical witness ID is fixed
+    (to `logical_tid`, or -1 if this particular call turns out, at runtime,
+    not to be the one the witness pins) before it runs any program code.
+
+    If the call site was already rewritten -- the same source line can
+    spawn many real threads, e.g. inside a loop, with only one of them
+    being the one a given function_enter waypoint refers to -- the new
+    segment/thread check is chained onto the existing logical-tid ternary
+    instead of overwriting it.
+    """
+    call = find_pthread_create_call(ast, line, target_file)
+    if call is None:
+        return
+
+    match_call = make_segment_match_call(slot, calling_threadid)
+    already_instrumented = (
+        isinstance(call.args.exprs[2], ID)
+        and call.args.exprs[2].name == "__c2tt_thread_proxy"
+    )
+
+    if not already_instrumented:
+        real_func = call.args.exprs[2]
+        real_arg = call.args.exprs[3]
+        tid_expr = TernaryOp(
+            cond=match_call,
+            iftrue=Constant(type="int", value=str(logical_tid)),
+            iffalse=Constant(type="int", value="-1"),
+        )
+        call.args.exprs[2] = ID("__c2tt_thread_proxy")
+        call.args.exprs[3] = FuncCall(
+            ID("__c2tt_make_thread_arg"),
+            ExprList([real_func, real_arg, tid_expr]),
+        )
+    else:
+        make_thread_arg_call = call.args.exprs[3]
+        previous_tid_expr = make_thread_arg_call.args.exprs[2]
+        make_thread_arg_call.args.exprs[2] = TernaryOp(
+            cond=match_call,
+            iftrue=Constant(type="int", value=str(logical_tid)),
+            iffalse=previous_tid_expr,
+        )
+
+
 nondet_return_types = {
     "__VERIFIER_nondet_bool": "_Bool",
     "__VERIFIER_nondet_char": "char",
@@ -191,12 +344,97 @@ nondet_return_types = {
 assumption_pattern = r"([^\s]*)\s*==\s*([^\s]*)"
 
 
-def apply_assumption(ast, line, assumption, target_file, anchored_after=False):
-    """Fix the value of a __VERIFIER_nondet_*() assignment near `line`.
+def _make_guarded_nondet(nondet_call, ret_type, value, slot, logical_tid):
+    """Wrap a nondet call in a runtime guard:
+    ``__c2tt_should_use_assumed(slot, tid) ? VALUE : __VERIFIER_nondet_*()``.
+
+    When slot or logical_tid is None the guard is skipped and the constant
+    is substituted directly (GraphML path with no slot information, or any
+    context where the slot is unknown).
+    """
+    if slot is None or logical_tid is None:
+        return Constant(type=ret_type, value=value)
+    return TernaryOp(
+        cond=make_segment_match_call(slot, logical_tid),
+        iftrue=Constant(type=ret_type, value=value),
+        iffalse=nondet_call,
+    )
+
+
+def make_exit_call():
+    return FuncCall(ID("exit"), ExprList([Constant(type="int", value="0")]))
+
+
+def wrap_with_match_guard(stmt, slot, logical_tid):
+    """Wrap `stmt` in ``if (__c2tt_should_use_assumed(slot, tid)) { stmt }``
+    so it only runs in the exact segment/thread the witness means it for.
+    With slot/logical_tid unknown (GraphML) the statement runs unguarded.
+    """
+    if slot is None or logical_tid is None:
+        return stmt
+    return If(
+        cond=make_segment_match_call(slot, logical_tid),
+        iftrue=Compound(block_items=[stmt]),
+        iffalse=None,
+    )
+
+
+def parse_c_expression(expr_str, target_file):
+    """Parse a standalone C expression string into a pycparser expression node."""
+    wrapper_ast = CParser().parse(
+        f"void __c2tt_expr_wrapper(void) {{ ({expr_str}); }}", target_file
+    )
+    return wrapper_ast.ext[-1].body.block_items[0]
+
+
+def insert_assumption_guard(ast, line, assumption, target_file, slot, logical_tid):
+    """General fallback for assumption waypoints that don't pin a nondet
+    call: insert ``if (!(EXPR)) exit(0);`` (under the segment/thread guard)
+    right before the located statement. An execution that disagrees with
+    the witness' assumption is not a replay of it, so it exits cleanly
+    instead of running on down an unwitnessed path.
+    """
+    statement, parent = find_first_statement_on_line(ast, line, target_file)
+    if statement is None:
+        return
+    try:
+        expr = parse_c_expression(assumption, target_file)
+    except Exception:
+        return
+
+    check = If(
+        cond=UnaryOp("!", expr),
+        iftrue=Compound(block_items=[make_exit_call()]),
+        iffalse=None,
+    )
+    guard = wrap_with_match_guard(check, slot, logical_tid)
+    idx = parent.block_items.index(statement)
+    parent.block_items.insert(idx, guard)
+
+
+def apply_assumption(
+    ast,
+    line,
+    assumption,
+    target_file,
+    anchored_after=False,
+    slot=None,
+    logical_tid=None,
+):
+    """Fix the value of a __VERIFIER_nondet_*() assignment near `line`, or
+    fall back to a general runtime-checked assumption.
 
     If the assumption constrains the assigned variable to a constant
-    (`var == value`), the nondeterministic call is replaced by that
-    constant. Assumptions of any other shape are ignored.
+    (`var == value`) immediately after a matching nondet call, the
+    nondeterministic call is replaced by a runtime guard that returns the
+    assumed constant only when the global segment counter equals `slot`
+    and the calling thread's logical ID equals `logical_tid`.  When
+    slot/logical_tid are None (GraphML witnesses) the constant is
+    substituted unconditionally as before.
+
+    Otherwise (a general assumption, not the "easy" nondet-substitution
+    case) a guarded ``if (!(EXPR)) exit(0);`` is inserted instead -- see
+    ``insert_assumption_guard``.
 
     The two witness formats anchor assumptions differently: a GraphML edge
     carries the assumption on the assigning statement itself, while a YAML
@@ -211,16 +449,51 @@ def apply_assumption(ast, line, assumption, target_file, anchored_after=False):
         )
     else:
         nondet_assign_node, _ = find_nondet_assignment_on_line(ast, line, target_file)
-    if nondet_assign_node is None:
+
+    if nondet_assign_node is not None:
+        varname = nondet_assign_node.lvalue.name
+        if varname in assumptions:
+            nondet_name = getattr(nondet_assign_node.rvalue.name, "name", None)
+            if nondet_name in nondet_return_types:
+                ret_type = nondet_return_types[nondet_name]
+                original_call = nondet_assign_node.rvalue
+                nondet_assign_node.rvalue = _make_guarded_nondet(
+                    original_call, ret_type, assumptions[varname], slot, logical_tid
+                )
+                return
+
+    insert_assumption_guard(ast, line, assumption, target_file, slot, logical_tid)
+
+
+def apply_function_return(
+    ast, line, assumption, target_file, slot=None, logical_tid=None
+):
+    """Fix the return value of a __VERIFIER_nondet_*() return statement near `line`.
+
+    The constraint value is parsed with the same ``var == value`` pattern
+    as assumptions (``var`` is ignored for return statements -- only the
+    value matters).  The return expression is replaced by a runtime guard.
+    """
+    values = re.findall(assumption_pattern, assumption)
+    if values:
+        value = values[0][1]
+    else:
+        # Allow bare literal: "5" or "-1" etc.
+        value = assumption.strip()
+
+    ret_node = find_return_nondet_on_line(ast, line, target_file)
+    if ret_node is None:
         return
 
-    varname = nondet_assign_node.lvalue.name
-    if varname in assumptions:
-        if nondet_assign_node.rvalue.name.name in nondet_return_types:
-            ret_type = nondet_return_types[nondet_assign_node.rvalue.name.name]
-            nondet_assign_node.rvalue = Constant(
-                type=ret_type, value=assumptions[varname]
-            )
+    nondet_name = getattr(ret_node.expr.name, "name", None)
+    if nondet_name not in nondet_return_types:
+        return
+
+    ret_type = nondet_return_types[nondet_name]
+    original_call = ret_node.expr
+    ret_node.expr = _make_guarded_nondet(
+        original_call, ret_type, value, slot, logical_tid
+    )
 
 
 def make_schedule_call(name, slot, threadid):
@@ -278,6 +551,45 @@ def insert_schedule_point(ast, line, slot, threadid, target_file, release=True):
     return slot + 1
 
 
+def apply_branching(
+    ast, line, constraint_value, target_file, slot=None, logical_tid=None
+):
+    """Branching waypoint: re-check the branching statement's (``if``,
+    ``while``, ``do``, ``for``, or ``switch``) controlling expression
+    against the witness' recorded direction, ``exit(0)`` on a mismatch.
+
+    The controlling expression is duplicated rather than lifted into a
+    temporary, so this -- like ``apply_assumption`` -- is unsound if it has
+    side effects; the same known limitation applies here.
+    """
+    statement, parent = find_first_statement_on_line(ast, line, target_file)
+    if statement is None or getattr(statement, "cond", None) is None:
+        return
+
+    cond = statement.cond
+    if constraint_value in ("true", "false"):
+        wanted_true = constraint_value == "true"
+        mismatch = UnaryOp("!", cond) if wanted_true else cond
+    else:
+        try:
+            int(constraint_value)
+        except (TypeError, ValueError):
+            # 'default' switch label or other unsupported constraint forms.
+            return
+        mismatch = BinaryOp(
+            "!=", cond, Constant(type="int", value=str(constraint_value))
+        )
+
+    check = If(
+        cond=mismatch,
+        iftrue=Compound(block_items=[make_exit_call()]),
+        iffalse=None,
+    )
+    guard = wrap_with_match_guard(check, slot, logical_tid)
+    idx = parent.block_items.index(statement)
+    parent.block_items.insert(idx, guard)
+
+
 def apply_witness(ast, c_file, witnessfile):
     """Instrument `ast` according to the witness; returns the ParsedWitness."""
     witness = parse_witness(witnessfile, c_file)
@@ -289,14 +601,60 @@ def apply_witness(ast, c_file, witnessfile):
 
     slot = 0
     anchored_after = witness.format == FORMAT_YAML
+
+    # The k-th function_enter at a pthread_create call gets logical thread k.
+    next_created_thread = 1
+
     for coords, data in witness.steps:
         usable_coords = coords and "startline" in coords
-        if "assumption" in data and usable_coords:
-            apply_assumption(
-                ast, coords["startline"], data["assumption"], c_file, anchored_after
-            )
 
+        waypoint_type = data.get("type")
         step_threadid = data["threadId"] if "threadId" in data else threadid
+
+        # function_enter at a pthread_create: route the call through
+        # __c2tt_thread_proxy so the new thread's logical ID is fixed
+        # before it runs any program code (see instrument_pthread_create).
+        if waypoint_type == "function_enter" and usable_coords:
+            instrument_pthread_create(
+                ast,
+                coords["startline"],
+                c_file,
+                slot,
+                step_threadid,
+                next_created_thread,
+            )
+            next_created_thread += 1
+
+        if "assumption" in data and usable_coords:
+            if waypoint_type == "function_return":
+                apply_function_return(
+                    ast,
+                    coords["startline"],
+                    data["assumption"],
+                    c_file,
+                    slot=slot,
+                    logical_tid=step_threadid,
+                )
+            elif waypoint_type == "branching":
+                apply_branching(
+                    ast,
+                    coords["startline"],
+                    data["assumption"],
+                    c_file,
+                    slot=slot,
+                    logical_tid=step_threadid,
+                )
+            else:
+                apply_assumption(
+                    ast,
+                    coords["startline"],
+                    data["assumption"],
+                    c_file,
+                    anchored_after,
+                    slot=slot,
+                    logical_tid=step_threadid,
+                )
+
         if step_threadid != threadid and usable_coords:
             threadid = step_threadid
             release = not (witness.data_race and data.get("type") == "target")
