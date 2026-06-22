@@ -510,35 +510,45 @@ def make_schedule_call(name, slot, threadid):
     )
 
 
-def insert_schedule_point(ast, line, slot, threadid, target_file, release=True):
+def insert_schedule_point(
+    ast, line, slot, threadid, target_file, release=True, input_only=False
+):
     """Instrument the statement at (or first after) `line` as a schedule point.
 
     A __concurrentwit2test_yield(slot, threadid) call before the statement
     blocks the thread until all earlier schedule points have released their
     slot; a __concurrentwit2test_release(slot, threadid) call afterwards lets
-    the next schedule point proceed. For control statements the release goes
-    to the start of the body/branches (so it happens only once the statement
-    is really being executed), and for a return statement it goes before the
-    statement (code after a return would never run).
+    the next schedule point proceed by advancing the segment counter. For
+    control statements the release goes to the start of the body/branches (so
+    it happens only once the statement is really being executed), and for a
+    return statement it goes before the statement (code after a return would
+    never run).
 
     With release=False only the yield is inserted and the slot is not
     consumed; this keeps racing accesses of a data-race witness free of
     synchronization between one another.
 
+    With input_only=True the blocking yield is omitted, so the thread
+    schedule is left free, but the release is still inserted and the slot is
+    still advanced: the segment counter keeps tracking every passed segment
+    (so the per-segment input/assumption guards stay meaningful) without the
+    schedule being steered.
+
     Returns the slot the next schedule point should use.
     """
     statement, parent = find_first_statement_on_line(ast, line, target_file)
 
-    yield_func = make_schedule_call("__concurrentwit2test_yield", slot, threadid)
-    first_index = parent.block_items.index(statement)
-    parent.block_items.insert(first_index, yield_func)
+    if not input_only:
+        yield_func = make_schedule_call("__concurrentwit2test_yield", slot, threadid)
+        parent.block_items.insert(parent.block_items.index(statement), yield_func)
 
     if not release:
         return slot
 
     release_func = make_schedule_call("__concurrentwit2test_release", slot, threadid)
+    stmt_index = parent.block_items.index(statement)
     if isinstance(statement, Return):
-        parent.block_items.insert(first_index + 1, release_func)
+        parent.block_items.insert(stmt_index, release_func)
     elif isinstance(statement, Compound):
         statement.block_items = [release_func] + (statement.block_items or [])
     elif isinstance(statement, (While, DoWhile, For)):
@@ -549,7 +559,7 @@ def insert_schedule_point(ast, line, slot, threadid, target_file, release=True):
         if statement.iffalse:
             statement.iffalse = Compound(block_items=[release_func, statement.iffalse])
     else:
-        parent.block_items.insert(first_index + 2, release_func)
+        parent.block_items.insert(stmt_index + 1, release_func)
     return slot + 1
 
 
@@ -609,8 +619,18 @@ def inject_expected_final_slot(ast, final_slot):
             return
 
 
-def apply_witness(ast, c_file, witnessfile):
-    """Instrument `ast` according to the witness; returns the ParsedWitness."""
+def apply_witness(ast, c_file, witnessfile, input_only=False):
+    """Instrument `ast` according to the witness; returns the ParsedWitness.
+
+    With ``input_only`` set the blocking schedule yields
+    (``__concurrentwit2test_yield``) are not inserted, so the thread schedule
+    is left free; the rest of the instrumentation -- pinned nondet inputs,
+    assumption/branching guards, the pthread_create thread-ID proxy, and the
+    ``__concurrentwit2test_release`` calls that advance the segment counter --
+    still goes through. The segment counter therefore keeps advancing with
+    every passed segment in every mode, so the per-segment input/assumption
+    guards stay meaningful; only the schedule steering is dropped.
+    """
     witness = parse_witness(witnessfile, c_file)
     if not witness.steps:
         raise KnownErrorVerdict("Empty witness")
@@ -678,7 +698,7 @@ def apply_witness(ast, c_file, witnessfile):
             threadid = step_threadid
             release = not (witness.data_race and data.get("type") == "target")
             slot = insert_schedule_point(
-                ast, coords["startline"], slot, threadid, c_file, release
+                ast, coords["startline"], slot, threadid, c_file, release, input_only
             )
 
     inject_expected_final_slot(ast, slot)

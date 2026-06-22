@@ -72,7 +72,9 @@ def translate_to_c(filename, witness, mode, timeout):
         sys.exit(-1)
 
     try:
-        parsed_witness = apply_witness(ast, filename, witness)
+        parsed_witness = apply_witness(
+            ast, filename, witness, input_only=(mode == "INPUT_ONLY")
+        )
     except KnownErrorVerdict as e:
         print("Verdict: " + e.verdict)
         sys.exit(-1)
@@ -245,11 +247,14 @@ def parse_arguments():
     )
     parser.add_argument(
         "--mode",
-        choices=["strict", "normal", "permissive"],
+        choices=["strict", "normal", "permissive", "INPUT_ONLY"],
         default="normal",
         help="Mode (default: normal): strict stops at the first execution "
         "missing the error, permissive at the first one reaching it, "
-        "normal runs all repetitions",
+        "normal runs all repetitions, INPUT_ONLY pins the witness' inputs "
+        "(nondet values, assumptions) but leaves the thread schedule free "
+        "(no blocking schedule yields; the segment counter still advances "
+        "per passed segment)",
     )
     parser.add_argument(
         "--timeout",
