@@ -94,6 +94,7 @@ from pycparser.c_ast import (
     Assignment,
     Decl,
     TypeDecl,
+    IdentifierType,
     TernaryOp,
     UnaryOp,
     BinaryOp,
@@ -715,6 +716,59 @@ def apply_branching(
     parent.block_items.insert(idx, call)
 
 
+def _argc_argv_param_list():
+    """A fresh ``(int __c2tt_argc, char **__c2tt_argv)`` ParamList.
+
+    Built by parsing a throwaway declaration so the nodes match the installed
+    pycparser's exact shape; freshly parsed each call, so there is no aliasing
+    between successive uses.
+    """
+    template = CParser().parse(
+        "int __c2tt_argv_tmpl(int __c2tt_argc, char **__c2tt_argv);"
+    )
+    return template.ext[0].type.args
+
+
+def _real_params(func_decl):
+    """The function's real parameters, dropping a lone ``(void)`` marker."""
+    if func_decl.args is None or not func_decl.args.params:
+        return []
+    real = []
+    for p in func_decl.args.params:
+        t = getattr(p, "type", None)
+        if (
+            isinstance(t, TypeDecl)
+            and isinstance(t.type, IdentifierType)
+            and t.type.names == ["void"]
+        ):
+            continue
+        real.append(p)
+    return real
+
+
+def _ensure_argc_argv(func_decl):
+    """Give ``__c2tt_main`` an ``(int, char **)`` signature if it lacks one.
+
+    svcomp.c's real ``main`` always calls ``__c2tt_main(argc, argv)``. On
+    WASM/WASIX (the web demo runtime) a direct call whose argument signature
+    does not match the callee's *definition* traps -- wasm function types are
+    part of the type system, unlike a native ABI where extra register
+    arguments are simply ignored. A program whose ``main`` was ``int
+    main(void)`` therefore needs the two parameters added (its body never
+    references them, so synthetic names are safe); a ``main`` that already
+    takes ``argc``/``argv`` is left untouched so its body keeps resolving.
+    """
+    real = _real_params(func_decl)
+    if len(real) >= 2:
+        return
+    params = _argc_argv_param_list()
+    if len(real) == 1:
+        # Keep the program's own first parameter (its body refers to it by
+        # name); only append the missing second one.
+        params.params[0] = real[0]
+    func_decl.args = params
+
+
 def inject_expected_final_slot(ast, final_slot):
     """Rename the program's ``main`` to ``__c2tt_main`` and prepend
     ``__c2tt_set_expected_final_slot(final_slot)`` to its body.
@@ -741,6 +795,9 @@ def inject_expected_final_slot(ast, final_slot):
             while not isinstance(type_decl, TypeDecl):
                 type_decl = type_decl.type
             type_decl.declname = "__c2tt_main"
+            # svcomp.c always calls __c2tt_main(argc, argv); make sure it
+            # actually takes them so the signatures match (see _ensure_argc_argv).
+            _ensure_argc_argv(node.decl.type)
             call = FuncCall(
                 ID("__c2tt_set_expected_final_slot"),
                 ExprList([Constant(type="int", value=str(final_slot))]),
