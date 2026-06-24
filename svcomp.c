@@ -20,6 +20,7 @@
 #include <stddef.h>
 #include <stdatomic.h>
 #include <threads.h>
+#include <pthread.h>
 #include <stdlib.h>
 
 void __VERIFIER_atomic_begin() {
@@ -62,12 +63,13 @@ void reach_error() {
 /* Thread-local logical thread ID: 0 = main thread, k = k-th spawned thread.
  * Spawned threads never set this themselves -- it is fixed before they run
  * a single line of program code, by __c2tt_thread_proxy below. The main
- * thread is pre-initialized to 0 by the constructor below. */
+ * thread is pre-initialized to 0 by c2tt_init(), called from main() below. */
 static _Thread_local int c2tt_logical_tid = -1;
 
-/* Pre-initialize the main thread's logical tid before main() runs. */
-__attribute__((constructor))
-static void c2tt_main_thread_init(void) {
+/* Pre-initialize the main thread's logical tid. Called from main() (the
+ * real entry point, defined at the bottom of this file) before __c2tt_main
+ * -- the instrumented program's renamed main -- runs any program code. */
+static void c2tt_init(void) {
     c2tt_logical_tid = 0;
 }
 
@@ -133,6 +135,7 @@ void *__c2tt_thread_proxy(void *raw_arg) {
     void *(*real_func)(void *) = targ->real_func;
     c2tt_logical_tid = targ->logical_tid;
     free(targ);
+    printf("Thread %d starting\n", c2tt_logical_tid);
     return real_func(real_arg);
 }
 
@@ -205,3 +208,24 @@ unsigned __VERIFIER_nondet_unsigned(void) { return 0; }
 unsigned char __VERIFIER_nondet_unsigned_char(void) { return 0; }
 unsigned int __VERIFIER_nondet_unsigned_int(void) { return 0; }
 unsigned short __VERIFIER_nondet_ushort(void) { return 0; }
+
+/* witness2ast renames the instrumented program's main to __c2tt_main. Its
+ * signature may be int main(void) or int main(int, char **); declaring two
+ * parameters here and passing the real argc/argv forwards them when the
+ * program wants them, and is harmless (extra register arguments the callee
+ * ignores) when it doesn't. */
+extern int __c2tt_main(int argc, char **argv);
+
+/* We drive __c2tt_main from a real main here so the process can
+ * pthread_exit() rather than return. Returning from the original main would
+ * tear the process down the moment the main thread is done, even while
+ * spawned threads still have schedule segments -- or, for a data-race
+ * witness, the final racing access -- left to execute. Calling pthread_exit
+ * on the main thread instead keeps the process alive until every other
+ * thread has finished. */
+int main(int argc, char **argv) {
+    c2tt_init();
+    __c2tt_main(argc, argv);
+    pthread_exit(NULL);
+    return 0;
+}

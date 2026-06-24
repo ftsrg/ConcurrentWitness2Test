@@ -20,7 +20,8 @@ sequence of steps; this module turns those steps into source-level
 instrumentation:
 
 * Steps carrying an ``assumption`` over a ``__VERIFIER_nondet_*()``
-  assignment replace the nondeterministic call with a runtime guard:
+  assignment or declaration initializer (``int x = __VERIFIER_nondet_*()``)
+  replace the nondeterministic call with a runtime guard:
   ``__c2tt_should_use_assumed(slot, logical_tid) ? VALUE : __VERIFIER_nondet_*()``.
   The guard checks both the global segment counter (``slot``) and the
   calling thread's logical witness ID so that the assumed value is only
@@ -91,6 +92,8 @@ from pycparser.c_ast import (
     ExprList,
     Constant,
     Assignment,
+    Decl,
+    TypeDecl,
     TernaryOp,
     UnaryOp,
     BinaryOp,
@@ -98,6 +101,78 @@ from pycparser.c_ast import (
 
 from Exceptions import KnownErrorVerdict
 from witnessparser import parse_witness, FORMAT_YAML
+
+
+def _nondet_call_of(node):
+    """Return the ``__VERIFIER_nondet_*()`` call that `node` stores into a
+    variable, or ``None`` if `node` is not such a store.
+
+    Both forms count: an ``x = __VERIFIER_nondet_*()`` assignment and an
+    ``int x = __VERIFIER_nondet_*()`` declaration-with-initializer. The
+    latter is a pycparser ``Decl`` (not an ``Assignment``), which is the
+    common shape of a nondet read in SV-COMP tasks, so the pin logic has to
+    recognize it too.
+    """
+    if isinstance(node, Assignment):
+        expr = node.rvalue
+    elif isinstance(node, Decl):
+        expr = node.init
+    else:
+        return None
+    if (
+        isinstance(expr, FuncCall)
+        and isinstance(expr.name, ID)
+        and "__VERIFIER_nondet" in expr.name.name
+    ):
+        return expr
+    return None
+
+
+def _assigned_varname(node):
+    """Name of the variable an assignment/declaration writes, or ``None``."""
+    if isinstance(node, Assignment):
+        return getattr(node.lvalue, "name", None)
+    if isinstance(node, Decl):
+        return node.name
+    return None
+
+
+def _set_assigned_expr(node, expr):
+    """Replace the right-hand side / initializer of an assignment or decl."""
+    if isinstance(node, Assignment):
+        node.rvalue = expr
+    else:  # Decl
+        node.init = expr
+
+
+def _strip_enclosing_parens(expr):
+    """Strip whitespace and any parentheses that wrap the *whole* expression.
+
+    Producers such as CPAchecker emit assumption constraints fully
+    parenthesized (``(x == 3)``); without this the ``var == const`` pin
+    regex would read the variable as ``(x`` and the value as ``3)`` and miss
+    the pin. Only fully-enclosing balanced parens are removed: ``!(x == 3)``
+    and ``(x == 3) && (y == 4)`` are left untouched, so they keep falling
+    through to the safe full-expression guard rather than being mistaken for
+    a simple pin.
+    """
+    expr = expr.strip()
+    while len(expr) >= 2 and expr[0] == "(" and expr[-1] == ")":
+        depth = 0
+        closed_at = -1
+        for i, ch in enumerate(expr):
+            if ch == "(":
+                depth += 1
+            elif ch == ")":
+                depth -= 1
+                if depth == 0:
+                    closed_at = i
+                    break
+        if closed_at == len(expr) - 1:
+            expr = expr[1:-1].strip()
+        else:
+            break
+    return expr
 
 
 def find_nondet_assignment_on_line(ast, target_line, target_file):
@@ -122,9 +197,7 @@ def find_nondet_assignment_on_line(ast, target_line, target_file):
                     if (
                         line >= self.target_line
                         and stmt.coord.file == self.target_file
-                        and type(stmt) == Assignment
-                        and type(stmt.rvalue) == FuncCall
-                        and "__VERIFIER_nondet" in stmt.rvalue.name.name
+                        and _nondet_call_of(stmt) is not None
                     ):
                         self.statement = stmt
                         self.parent = node
@@ -142,26 +215,32 @@ def find_nondet_assignment_on_line(ast, target_line, target_file):
 
 
 def find_last_nondet_assignment_before_line(ast, target_line, varnames, target_file):
-    """Find the last `var = __VERIFIER_nondet_*()` with var in `varnames`
-    at or before `target_line`."""
+    """Find the last ``var = __VERIFIER_nondet_*()`` -- assignment or
+    declaration-with-initializer -- with var in `varnames` at or before
+    `target_line`."""
 
     class LineVisitor(NodeVisitor):
         def __init__(self):
             self.statement = None
             self.line = -1
 
-        def visit_Assignment(self, node):
+        def _consider(self, node):
             if (
                 node.coord
                 and node.coord.file == target_file
                 and self.line < node.coord.line <= target_line
-                and type(node.rvalue) == FuncCall
-                and type(node.rvalue.name) == ID
-                and "__VERIFIER_nondet" in node.rvalue.name.name
-                and getattr(node.lvalue, "name", None) in varnames
+                and _nondet_call_of(node) is not None
+                and _assigned_varname(node) in varnames
             ):
                 self.statement = node
                 self.line = node.coord.line
+
+        def visit_Assignment(self, node):
+            self._consider(node)
+            self.generic_visit(node)
+
+        def visit_Decl(self, node):
+            self._consider(node)
             self.generic_visit(node)
 
     line_visitor = LineVisitor()
@@ -444,7 +523,9 @@ def apply_assumption(
     i.e., it follows the assignment (anchored_after=True).
     """
     # TODO current implementation is limited: will not work if single assignment executes 1+ time (e.g., in a loop)
-    assumptions = dict(re.findall(assumption_pattern, assumption))
+    assumptions = dict(
+        re.findall(assumption_pattern, _strip_enclosing_parens(assumption))
+    )
     if anchored_after:
         nondet_assign_node = find_last_nondet_assignment_before_line(
             ast, line, set(assumptions), target_file
@@ -453,14 +534,21 @@ def apply_assumption(
         nondet_assign_node, _ = find_nondet_assignment_on_line(ast, line, target_file)
 
     if nondet_assign_node is not None:
-        varname = nondet_assign_node.lvalue.name
+        varname = _assigned_varname(nondet_assign_node)
         if varname in assumptions:
-            nondet_name = getattr(nondet_assign_node.rvalue.name, "name", None)
+            original_call = _nondet_call_of(nondet_assign_node)
+            nondet_name = getattr(original_call.name, "name", None)
             if nondet_name in nondet_return_types:
                 ret_type = nondet_return_types[nondet_name]
-                original_call = nondet_assign_node.rvalue
-                nondet_assign_node.rvalue = _make_guarded_nondet(
-                    original_call, ret_type, assumptions[varname], slot, logical_tid
+                _set_assigned_expr(
+                    nondet_assign_node,
+                    _make_guarded_nondet(
+                        original_call,
+                        ret_type,
+                        assumptions[varname],
+                        slot,
+                        logical_tid,
+                    ),
                 )
                 return
 
@@ -476,12 +564,13 @@ def apply_function_return(
     as assumptions (``var`` is ignored for return statements -- only the
     value matters).  The return expression is replaced by a runtime guard.
     """
-    values = re.findall(assumption_pattern, assumption)
+    stripped = _strip_enclosing_parens(assumption)
+    values = re.findall(assumption_pattern, stripped)
     if values:
         value = values[0][1]
     else:
         # Allow bare literal: "5" or "-1" etc.
-        value = assumption.strip()
+        value = stripped
 
     ret_node = find_return_nondet_on_line(ast, line, target_file)
     if ret_node is None:
@@ -510,6 +599,27 @@ def make_schedule_call(name, slot, threadid):
     )
 
 
+def _contains_func_call(node):
+    """True if `node`'s subtree contains a function call anywhere.
+
+    Used to decide where a schedule point's release goes: a statement that
+    (however deeply) calls a function may never return, or the next witness
+    segment may lie *inside* the call (e.g. ``__VERIFIER_assert(...)`` whose
+    failure path is the violation), so the release has to precede it.
+    """
+
+    class _Finder(NodeVisitor):
+        def __init__(self):
+            self.found = False
+
+        def visit_FuncCall(self, node):
+            self.found = True
+
+    finder = _Finder()
+    finder.visit(node)
+    return finder.found
+
+
 def insert_schedule_point(
     ast, line, slot, threadid, target_file, release=True, input_only=False
 ):
@@ -523,6 +633,13 @@ def insert_schedule_point(
     it happens only once the statement is really being executed), and for a
     return statement it goes before the statement (code after a return would
     never run).
+
+    When the statement (however deeply) contains a function call the release
+    is likewise inserted *before* it: the call may not return, or the next
+    witness segment may occur inside it (e.g. the violation is the
+    ``reach_error()`` reached within ``__VERIFIER_assert(...)``), so releasing
+    afterwards would advance the segment counter too late for that segment to
+    ever be recognized.
 
     With release=False only the yield is inserted and the slot is not
     consumed; this keeps racing accesses of a data-race witness free of
@@ -558,6 +675,8 @@ def insert_schedule_point(
             statement.iftrue = Compound(block_items=[release_func, statement.iftrue])
         if statement.iffalse:
             statement.iffalse = Compound(block_items=[release_func, statement.iffalse])
+    elif _contains_func_call(statement):
+        parent.block_items.insert(stmt_index, release_func)
     else:
         parent.block_items.insert(stmt_index + 1, release_func)
     return slot + 1
@@ -597,16 +716,31 @@ def apply_branching(
 
 
 def inject_expected_final_slot(ast, final_slot):
-    """Prepend ``__c2tt_set_expected_final_slot(final_slot)`` to main()'s
-    body, so reach_error() (see svcomp.c) only counts as confirming the
-    witness once every one of its segments has actually been passed --
-    not merely whenever the program happens to reach it via some other,
-    unrelated nondeterministic choice. Must run before any thread is
-    spawned, hence prepended to main() itself rather than set some other
-    way.
+    """Rename the program's ``main`` to ``__c2tt_main`` and prepend
+    ``__c2tt_set_expected_final_slot(final_slot)`` to its body.
+
+    The rename lets svcomp.c provide the real ``main``, which runs
+    ``__c2tt_main`` and then ``pthread_exit()``s instead of returning -- so
+    the process stays alive for spawned threads that still have schedule
+    segments (or, for a data-race witness, a final racing access) left to
+    run, rather than being torn down the moment the main thread is done.
+
+    The injected call makes reach_error() (see svcomp.c) only count as
+    confirming the witness once every one of its segments has actually been
+    passed -- not merely whenever the program happens to reach it via some
+    other, unrelated nondeterministic choice. It must run before any thread
+    is spawned, hence prepended to ``__c2tt_main`` itself rather than set
+    some other way.
     """
     for node in ast.ext:
         if isinstance(node, FuncDef) and node.decl.name == "main":
+            # The generated function name comes from the innermost
+            # TypeDecl's declname, not Decl.name, so rename both.
+            node.decl.name = "__c2tt_main"
+            type_decl = node.decl.type
+            while not isinstance(type_decl, TypeDecl):
+                type_decl = type_decl.type
+            type_decl.declname = "__c2tt_main"
             call = FuncCall(
                 ID("__c2tt_set_expected_final_slot"),
                 ExprList([Constant(type="int", value=str(final_slot))]),
