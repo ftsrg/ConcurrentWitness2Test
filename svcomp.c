@@ -209,11 +209,12 @@ unsigned char __VERIFIER_nondet_unsigned_char(void) { return 0; }
 unsigned int __VERIFIER_nondet_unsigned_int(void) { return 0; }
 unsigned short __VERIFIER_nondet_ushort(void) { return 0; }
 
-/* witness2ast renames the instrumented program's main to __c2tt_main. Its
- * signature may be int main(void) or int main(int, char **); declaring two
- * parameters here and passing the real argc/argv forwards them when the
- * program wants them, and is harmless (extra register arguments the callee
- * ignores) when it doesn't. */
+/* witness2ast renames the instrumented program's main to __c2tt_main and
+ * normalizes its signature to (int, char **) -- adding the two parameters
+ * even when the program's main took none -- so this call always matches the
+ * definition. The match is required on WASM/WASIX (the web demo runtime),
+ * where a direct call whose signature differs from the callee's definition
+ * traps, rather than ignoring the extra arguments as a native ABI does. */
 extern int __c2tt_main(int argc, char **argv);
 
 /* We drive __c2tt_main from a real main here so the process can
@@ -224,8 +225,11 @@ extern int __c2tt_main(int argc, char **argv);
  * on the main thread instead keeps the process alive until every other
  * thread has finished. */
 int main(int argc, char **argv) {
+    printf("Starting main\n");
     c2tt_init();
+    printf("Calling __c2tt_main\n");
     __c2tt_main(argc, argv);
+    printf("Main done, calling pthread_exit\n");
     pthread_exit(NULL);
     return 0;
 }
