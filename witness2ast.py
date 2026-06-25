@@ -280,34 +280,80 @@ def find_first_statement_on_line(ast, target_line, target_file):
         def __init__(self, target_line, target_file):
             self.target_line = target_line
             self.target_file = target_file
-            self.found = False
             self.statement = None
             self.parent = None
+            self.found = False
 
         def visit(self, node):
             if not self.found:
                 super().visit(node)
 
+        def _matches(self, stmt):
+            return (
+                hasattr(stmt, "coord")
+                and stmt.coord
+                and stmt.coord.file == self.target_file
+                and stmt.coord.line >= self.target_line
+            )
+
+        def _wrap_and_return(self, stmt_ref_owner, field_name, stmt):
+            compound = Compound(block_items=[stmt])
+            setattr(stmt_ref_owner, field_name, compound)
+
+            self.statement = stmt
+            self.parent = compound
+            self.found = True
+
         def visit_Compound(self, node):
             if self.found:
                 return
-            for stmt in node.block_items if node.block_items else [node]:
-                if hasattr(stmt, "coord") and stmt.coord:
-                    line = stmt.coord.line
-                    if line >= self.target_line and stmt.coord.file == self.target_file:
-                        self.statement = stmt
-                        self.parent = node
-                        self.found = True
+
+            for stmt in node.block_items or []:
+                if self.found:
+                    return
+
+                if self._matches(stmt):
+                    self.statement = stmt
+                    self.parent = node
+                    self.found = True
+                    return
+
+                # Check unbraced loop bodies
+                if isinstance(stmt, (While, DoWhile, For)):
+                    body = stmt.stmt
+
+                    if (
+                        body is not None
+                        and not isinstance(body, Compound)
+                        and self._matches(body)
+                    ):
+                        self._wrap_and_return(stmt, "stmt", body)
                         return
-                self.generic_visit(stmt)
 
-    line_visitor = LineVisitor(target_line, target_file)
-    line_visitor.visit(ast)
+                # Check unbraced if branches
+                elif isinstance(stmt, If):
+                    if (
+                        stmt.iftrue is not None
+                        and not isinstance(stmt.iftrue, Compound)
+                        and self._matches(stmt.iftrue)
+                    ):
+                        self._wrap_and_return(stmt, "iftrue", stmt.iftrue)
+                        return
 
-    if line_visitor.statement:
-        return line_visitor.statement, line_visitor.parent
-    else:
-        return None, None
+                    if (
+                        stmt.iffalse is not None
+                        and not isinstance(stmt.iffalse, Compound)
+                        and self._matches(stmt.iffalse)
+                    ):
+                        self._wrap_and_return(stmt, "iffalse", stmt.iffalse)
+                        return
+
+                self.visit(stmt)
+
+    visitor = LineVisitor(target_line, target_file)
+    visitor.visit(ast)
+
+    return visitor.statement, visitor.parent
 
 
 def find_pthread_create_call(ast, target_line, target_file):
