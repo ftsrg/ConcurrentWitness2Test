@@ -559,11 +559,14 @@ def apply_assumption(
 def apply_function_return(
     ast, line, assumption, target_file, slot=None, logical_tid=None
 ):
-    """Fix the return value of a __VERIFIER_nondet_*() return statement near `line`.
+    """Fix the result of a __VERIFIER_nondet_*() call near `line`.
 
     The constraint value is parsed with the same ``var == value`` pattern
-    as assumptions (``var`` is ignored for return statements -- only the
-    value matters).  The return expression is replaced by a runtime guard.
+    as assumptions (``var`` is ignored -- only the value matters).  The
+    nondeterministic call is replaced by a runtime guard whether its result
+    is returned (``return __VERIFIER_nondet_*()``) or stored by an assignment
+    or declaration initializer (``int x = __VERIFIER_nondet_*()``), the latter
+    being what producers emit for a plain nondet read.
     """
     stripped = _strip_enclosing_parens(assumption)
     values = re.findall(assumption_pattern, stripped)
@@ -574,18 +577,29 @@ def apply_function_return(
         value = stripped
 
     ret_node = find_return_nondet_on_line(ast, line, target_file)
-    if ret_node is None:
+    nondet_assign_node = None
+    if ret_node is not None:
+        original_call = ret_node.expr
+    else:
+        nondet_assign_node, _ = find_nondet_assignment_on_line(ast, line, target_file)
+        original_call = (
+            _nondet_call_of(nondet_assign_node) if nondet_assign_node else None
+        )
+
+    if original_call is None:
         return
 
-    nondet_name = getattr(ret_node.expr.name, "name", None)
+    nondet_name = getattr(original_call.name, "name", None)
     if nondet_name not in nondet_return_types:
         return
 
-    ret_type = nondet_return_types[nondet_name]
-    original_call = ret_node.expr
-    ret_node.expr = _make_guarded_nondet(
-        original_call, ret_type, value, slot, logical_tid
+    guarded = _make_guarded_nondet(
+        original_call, nondet_return_types[nondet_name], value, slot, logical_tid
     )
+    if ret_node is not None:
+        ret_node.expr = guarded
+    else:
+        _set_assigned_expr(nondet_assign_node, guarded)
 
 
 def make_schedule_call(name, slot, threadid):
