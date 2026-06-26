@@ -275,6 +275,61 @@ def find_return_nondet_on_line(ast, target_line, target_file):
     return v.statement
 
 
+def _is_nondet_call(node):
+    return (
+        isinstance(node, FuncCall)
+        and isinstance(node.name, ID)
+        and "__VERIFIER_nondet" in node.name.name
+    )
+
+
+def replace_bare_nondet_on_line(ast, target_line, target_file, make_replacement):
+    """Replace the first ``__VERIFIER_nondet_*()`` call used as a bare
+    sub-expression (e.g. ``if (__VERIFIER_nondet_int())``) at or after
+    ``target_line``, where it is neither returned nor stored into a variable.
+
+    ``make_replacement(call)`` produces the node to splice in. Returns the
+    original call on success, else ``None``.
+    """
+    found = {"call": None}
+
+    def walk(node):
+        if found["call"] is not None or node is None:
+            return
+        for attr in getattr(node, "__slots__", ()):
+            if attr in ("coord", "__weakref__"):
+                continue
+            child = getattr(node, attr, None)
+            if isinstance(child, list):
+                for i, item in enumerate(child):
+                    if _matches(item):
+                        child[i] = make_replacement(item)
+                        found["call"] = item
+                        return
+                    walk(item)
+                    if found["call"] is not None:
+                        return
+            else:
+                if _matches(child):
+                    setattr(node, attr, make_replacement(child))
+                    found["call"] = child
+                    return
+                walk(child)
+                if found["call"] is not None:
+                    return
+
+    def _matches(item):
+        return (
+            _is_nondet_call(item)
+            and item.coord
+            and item.coord.file == target_file
+            and item.coord.line >= target_line
+        )
+
+    walk(ast)
+    return found["call"]
+
+
 def find_first_statement_on_line(ast, target_line, target_file):
     class LineVisitor(NodeVisitor):
         def __init__(self, target_line, target_file):
@@ -633,6 +688,17 @@ def apply_function_return(
         )
 
     if original_call is None:
+        # nondet used as a bare sub-expression, e.g. ``if (__VERIFIER_nondet_int())``:
+        # splice the guard in place wherever the call sits.
+        def _replace(call):
+            name = getattr(call.name, "name", None)
+            if name not in nondet_return_types:
+                return call
+            return _make_guarded_nondet(
+                call, nondet_return_types[name], value, slot, logical_tid
+            )
+
+        replace_bare_nondet_on_line(ast, line, target_file, _replace)
         return
 
     nondet_name = getattr(original_call.name, "name", None)
