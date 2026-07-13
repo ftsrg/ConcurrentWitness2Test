@@ -1,0 +1,588 @@
+tool		ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-deagle	SV-COMP23_unreach-call.ConcurrencySafety-deagle	SV-COMP23_unreach-call.ConcurrencySafety-deagle	SV-COMP23_unreach-call.ConcurrencySafety-deagle
+../svcomp23-witness-benchmarks/tools/deagle/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_01-priv_nr_true.yml/deagle-13-privatized_01-priv_nr_true.yml	true	ERROR(ineffective witness)	2.275552	5.613953950999999	69.132288
+goblint-regression/13-privatized_18-first-reads_true.yml/deagle-13-privatized_18-first-reads_true.yml	true	ERROR(ineffective witness)	2.291199	5.401315450999995	89.624576
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/deagle-13-privatized_18-first-reads_unknown_1_neg.yml	false	TIMEOUT	2.972267	46.009706722000004	66.899968
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/deagle-13-privatized_18-first-reads_unknown_1_pos.yml	false	ERROR(ineffective witness)	2.26365	5.431959989000006	66.928640
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/deagle-13-privatized_18-first-reads_unknown_2_neg.yml	false	ERROR(ineffective witness)	2.271968	5.813977072	67.854336
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/deagle-13-privatized_18-first-reads_unknown_2_pos.yml	false	TIMEOUT	2.900652	46.029382217000006	67.715072
+goblint-regression/13-privatized_19-publish-precision_true.yml/deagle-13-privatized_19-publish-precision_true.yml	true	ERROR(ineffective witness)	2.2756	5.548978642000002	69.582848
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/deagle-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	2.233058	5.733862119999998	68.861952
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/deagle-13-privatized_19-publish-precision_unknown_1_pos.yml	false	TIMEOUT	2.074175	46.065985680000004	66.691072
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/deagle-13-privatized_19-publish-precision_unknown_2_neg.yml	false	TIMEOUT	2.081476	46.025295718	68.558848
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/deagle-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	2.247982	10.823846239000005	67.629056
+goblint-regression/13-privatized_20-publish-regression_true.yml/deagle-13-privatized_20-publish-regression_true.yml	true	ERROR(ineffective witness)	2.307946	10.929340014999994	67.420160
+goblint-regression/13-privatized_24-multiple-protecting_true.yml/deagle-13-privatized_24-multiple-protecting_true.yml	true	ERROR(ineffective witness)	2.420348	11.405509942999998	67.657728
+goblint-regression/13-privatized_25-struct_nr_true.yml/deagle-13-privatized_25-struct_nr_true.yml	true	ERROR(ineffective witness)	2.325569	11.249878174000003	66.580480
+goblint-regression/13-privatized_27-multiple-protecting2_true.yml/deagle-13-privatized_27-multiple-protecting2_true.yml	true	ERROR(ineffective witness)	2.449775	11.205764239000004	68.456448
+goblint-regression/13-privatized_29-multiple-protecting2-vesal_true.yml/deagle-13-privatized_29-multiple-protecting2-vesal_true.yml	true	ERROR(ineffective witness)	2.35358	11.199965232999993	68.812800
+goblint-regression/13-privatized_30-traces-oplus-vs-meet_true.yml/deagle-13-privatized_30-traces-oplus-vs-meet_true.yml	true	ERROR(ineffective witness)	2.32551	11.873972573000003	68.612096
+goblint-regression/13-privatized_31-traces-mine-vs-mutex_true.yml/deagle-13-privatized_31-traces-mine-vs-mutex_true.yml	true	ERROR(ineffective witness)	2.364356	11.670980052000004	68.767744
+goblint-regression/13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml/deagle-13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml	true	ERROR(ineffective witness)	2.38785	11.092421501999993	65.523712
+goblint-regression/13-privatized_33-traces-v-matters_true.yml/deagle-13-privatized_33-traces-v-matters_true.yml	true	TIMEOUT	2.153813	46.01529612600001	68.739072
+goblint-regression/13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml/deagle-13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml	true	TIMEOUT	2.16635	46.02975870799999	67.731456
+goblint-regression/13-privatized_35-traces-ex-2_true.yml/deagle-13-privatized_35-traces-ex-2_true.yml	true	ERROR(ineffective witness)	2.320981	11.154540314000002	68.632576
+goblint-regression/13-privatized_36-traces-ex-3_true.yml/deagle-13-privatized_36-traces-ex-3_true.yml	true	ERROR(ineffective witness)	2.254536	7.143756404000001	67.633152
+goblint-regression/13-privatized_37-traces-ex-4_true.yml/deagle-13-privatized_37-traces-ex-4_true.yml	true	ERROR(ineffective witness)	2.288658	7.568970494999988	66.830336
+goblint-regression/13-privatized_38-traces-ex-4-switch_true.yml/deagle-13-privatized_38-traces-ex-4-switch_true.yml	true	ERROR(ineffective witness)	2.281341	7.207315363999996	66.617344
+goblint-regression/13-privatized_40-traces-ex-6_true.yml/deagle-13-privatized_40-traces-ex-6_true.yml	true	TIMEOUT	2.031434	46.093520166000005	67.584000
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/deagle-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	false(unreach-call)	2.169497	4.79525684699999	67.538944
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/deagle-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	TIMEOUT	2.030187	46.117111331000004	67.645440
+goblint-regression/13-privatized_42-traces-ex-mini_true.yml/deagle-13-privatized_42-traces-ex-mini_true.yml	true	ERROR(ineffective witness)	2.2095	4.3806725820000025	66.514944
+goblint-regression/13-privatized_44-traces-mine2_true.yml/deagle-13-privatized_44-traces-mine2_true.yml	true	TIMEOUT	2.004338	46.014028814000014	67.706880
+goblint-regression/13-privatized_45-traces-per-global-and-current-lock-mine-incomparable_true.yml/deagle-13-privatized_45-traces-per-global-and-current-lock-mine-incomparable_true.yml	true	ERROR(ineffective witness)	2.163779	2.9759930569999966	68.440064
+goblint-regression/13-privatized_46-refine-protected1_true.yml/deagle-13-privatized_46-refine-protected1_true.yml	true	ERROR(ineffective witness)	2.134593	2.539561133999996	67.608576
+goblint-regression/13-privatized_47-refine-protected2_true.yml/deagle-13-privatized_47-refine-protected2_true.yml	true	ERROR(ineffective witness)	2.278397	6.264799425999996	68.509696
+goblint-regression/13-privatized_52-refine-protected-loop2-small_true.yml/deagle-13-privatized_52-refine-protected-loop2-small_true.yml	true	TIMEOUT	12.386324	46.300815735	65.568768
+goblint-regression/13-privatized_57-singlethreaded-unlock_true.yml/deagle-13-privatized_57-singlethreaded-unlock_true.yml	true	ERROR(ineffective witness)	2.212567	8.397320578000006	68.509696
+goblint-regression/13-privatized_58-singlethreaded-lock_true.yml/deagle-13-privatized_58-singlethreaded-lock_true.yml	true	ERROR(ineffective witness)	2.25851	6.903836028000001	68.759552
+goblint-regression/13-privatized_66-mine-W-init_true.yml/deagle-13-privatized_66-mine-W-init_true.yml	true	ERROR(ineffective witness)	2.284936	6.945002176999992	68.722688
+goblint-regression/28-race_reach_45-escape_racing.yml/deagle-28-race_reach_45-escape_racing.yml	false	TIMEOUT	2.021163	46.11982106799999	66.482176
+goblint-regression/28-race_reach_46-escape_racefree.yml/deagle-28-race_reach_46-escape_racefree.yml	true	ERROR(ineffective witness)	2.281109	6.5424490060000124	68.775936
+goblint-regression/36-apron_11-traces-max-simple_true.yml/deagle-36-apron_11-traces-max-simple_true.yml	true	ERROR(ineffective witness)	2.238847	6.931505655000009	68.718592
+goblint-regression/36-apron_16-traces-unprot2_true.yml/deagle-36-apron_16-traces-unprot2_true.yml	true	ERROR(ineffective witness)	2.242307	7.06130409699999	67.686400
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/deagle-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	false	ERROR(ineffective witness)	2.279325	7.88725771	66.543616
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/deagle-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	false(unreach-call)	2.175821	6.880298620999994	68.575232
+goblint-regression/36-apron_21-traces-cluster-based_true.yml/deagle-36-apron_21-traces-cluster-based_true.yml	true	ERROR(ineffective witness)	2.472301	14.594225849999987	68.599808
+goblint-regression/36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml/deagle-36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml	true	ERROR(ineffective witness)	2.503508	13.963348638	66.494464
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/deagle-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	ERROR(ineffective witness)	2.341365	14.268986094000013	67.633152
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/deagle-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	TIMEOUT	2.910903	46.384581499999996	67.805184
+ldv-races/race-1_1-join.yml/deagle-race-1_1-join.yml	true	ERROR(ineffective witness)	2.784004	17.471535997999993	66.723840
+ldv-races/race-1_2-join.yml/deagle-race-1_2-join.yml	false	ERROR(ineffective witness)	2.789263	18.233995714999992	67.702784
+ldv-races/race-1_3-join.yml/deagle-race-1_3-join.yml	false	ERROR(ineffective witness)	2.816742	18.782213525999992	67.756032
+ldv-races/race-4_1-thread_local_vars.yml/deagle-race-4_1-thread_local_vars.yml	true	ERROR(ineffective witness)	3.558527	24.520819190999987	68.710400
+pthread-C-DAC/pthread-demo-datarace-3.yml/deagle-pthread-demo-datarace-3.yml	false	TIMEOUT	4.640206	46.074936154	68.665344
+pthread-C-DAC/pthread-finding-k-matches.yml/deagle-pthread-finding-k-matches.yml	true	TIMEOUT	3.03324	46.87769507499999	68.272128
+pthread-C-DAC/pthread-numerical-integration.yml/deagle-pthread-numerical-integration.yml	true	TIMEOUT	2.986382	46.243722331000015	67.969024
+pthread-atomic/dekker.yml/deagle-dekker.yml	true	ERROR(ineffective witness)	2.67366	20.851961782000018	67.739648
+pthread-atomic/lamport.yml/deagle-lamport.yml	true	ERROR(ineffective witness)	2.953649	19.31974148500001	68.616192
+pthread-atomic/peterson.yml/deagle-peterson.yml	true	ERROR(ineffective witness)	2.511297	18.216046892999998	68.550656
+pthread-atomic/read_write_lock-1.yml/deagle-read_write_lock-1.yml	true	ERROR(ineffective witness)	2.533133	17.170719867000003	67.670016
+pthread-atomic/read_write_lock-2.yml/deagle-read_write_lock-2.yml	false	ERROR(ineffective witness)	2.643522	15.874269962	66.621440
+pthread-atomic/szymanski.yml/deagle-szymanski.yml	true	ERROR(ineffective witness)	2.651648	15.63783977	68.833280
+pthread-atomic/time_var_mutex.yml/deagle-time_var_mutex.yml	true	ERROR(ineffective witness)	2.472343	12.22650187299999	67.600384
+pthread-deagle/arithmetic_prog_bad.yml/deagle-arithmetic_prog_bad.yml	false	TIMEOUT	2.56447	46.90594740900002	67.543040
+pthread-deagle/arithmetic_prog_ok.yml/deagle-arithmetic_prog_ok.yml	true	ERROR(ineffective witness)	3.246018	18.620404314000012	67.620864
+pthread-deagle/circular_buffer_bad.yml/deagle-circular_buffer_bad.yml	false	ERROR(ineffective witness)	3.01785	20.235001123000018	67.506176
+pthread-deagle/circular_buffer_ok.yml/deagle-circular_buffer_ok.yml	true	ERROR(ineffective witness)	3.178899	20.324741453	67.555328
+pthread-driver-races/char_generic_nvram_nvram_unlocked_ioctl_write_nvram.yml/deagle-char_generic_nvram_nvram_unlocked_ioctl_write_nvram.yml	true	TIMEOUT	7.505662	45.97201394200002	66.101248
+pthread-driver-races/char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml/deagle-char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml	true	TIMEOUT	6.870668	46.361703345999985	65.994752
+pthread-driver-races/char_generic_nvram_read_nvram_write_nvram.yml/deagle-char_generic_nvram_read_nvram_write_nvram.yml	false	TIMEOUT	7.021646	46.477818557000006	65.937408
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_configure.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_configure.yml	true	TIMEOUT	6.475014	46.031504247000015	66.129920
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml	false	TIMEOUT	6.401597	46.35456123	65.789952
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_get.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_get.yml	true	TIMEOUT	5.750932	46.04971723	65.806336
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml	false	TIMEOUT	6.640166	46.165743545	65.847296
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_current.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_current.yml	true	TIMEOUT	6.008972	46.48899818300001	65.957888
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_get.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_get.yml	true	TIMEOUT	6.691567	46.067334819999985	66.072576
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_set.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_set.yml	true	TIMEOUT	11.099386	45.69613966699998	66.961408
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_get.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_get.yml	true	TIMEOUT	10.997767	45.56573673300002	65.908736
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml	false	TIMEOUT	11.517203	45.13272102000002	67.067904
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_get_pc8736x_gpio_set.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_get_pc8736x_gpio_set.yml	true	TIMEOUT	13.312622	46.26907033599997	66.269184
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_change.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_change.yml	true	TIMEOUT	14.723206	46.77652366099997	66.326528
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_configure.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_configure.yml	true	TIMEOUT	15.080898	46.065465114999995	66.650112
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_current.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_current.yml	true	TIMEOUT	15.710054	46.04175562099999	66.203648
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_get.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_get.yml	true	TIMEOUT	14.880743	46.09231950899999	65.994752
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.yml/deagle-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.yml	true	TIMEOUT	14.554771	46.023139485	66.465792
+pthread-ext/01b_inc.yml/deagle-01b_inc.yml	true	TIMEOUT	15.105654	46.027353034000015	671.780864
+pthread-ext/02_inc_cas.yml/deagle-02_inc_cas.yml	true	TIMEOUT	22.937609	46.03990494200002	1421.320192
+pthread-ext/03_incdec.yml/deagle-03_incdec.yml	true	TIMEOUT	10.377693	46.04680670299996	385.286144
+pthread-ext/04_incdec_cas.yml/deagle-04_incdec_cas.yml	true	TIMEOUT	24.944792	46.05191198599999	1230.049280
+pthread-ext/08_rand_cas.yml/deagle-08_rand_cas.yml	true	TIMEOUT	25.166029	49.98690505400003	86.671360
+pthread-ext/09_fmaxsym.yml/deagle-09_fmaxsym.yml	true	TIMEOUT	8.126316	46.050560523	541.884416
+pthread-ext/11_fmaxsymopt.yml/deagle-11_fmaxsymopt.yml	true	TIMEOUT	6.796555	46.055259173000024	307.654656
+pthread-ext/14_spin2003.yml/deagle-14_spin2003.yml	true	TIMEOUT	11.642158	45.26309932800001	875.388928
+pthread-ext/18_read_write_lock.yml/deagle-18_read_write_lock.yml	true	ERROR(ineffective witness)	2.428437	10.963547645000006	67.743744
+pthread-ext/25_stack.yml/deagle-25_stack.yml	true	TIMEOUT	3.352683	46.052305381999986	67.637248
+pthread-ext/25_stack_longer-1.yml/deagle-25_stack_longer-1.yml	false	TIMEOUT	2.893905	46.08093886400002	68.648960
+pthread-ext/25_stack_longer-2.yml/deagle-25_stack_longer-2.yml	true	TIMEOUT	3.564871	46.021805400000005	67.559424
+pthread-ext/25_stack_longest-1.yml/deagle-25_stack_longest-1.yml	true	TIMEOUT	3.319013	46.01992701800003	66.416640
+pthread-ext/25_stack_longest-2.yml/deagle-25_stack_longest-2.yml	false	TIMEOUT	2.701831	46.03698154199998	67.792896
+pthread-ext/26_stack_cas.yml/deagle-26_stack_cas.yml	true	TIMEOUT	3.518103	46.18313869899998	68.644864
+pthread-ext/26_stack_cas_longer-1.yml/deagle-26_stack_cas_longer-1.yml	false	TIMEOUT	2.763092	46.01721922600001	68.124672
+pthread-ext/26_stack_cas_longer-2.yml/deagle-26_stack_cas_longer-2.yml	true	TIMEOUT	3.48499	46.01777599600001	67.420160
+pthread-ext/26_stack_cas_longest-1.yml/deagle-26_stack_cas_longest-1.yml	false	TIMEOUT	2.663566	46.31131055499998	66.621440
+pthread-ext/26_stack_cas_longest-2.yml/deagle-26_stack_cas_longest-2.yml	true	TIMEOUT	3.367153	46.01210634800003	66.654208
+pthread-ext/28_buggy_simple_loop1_vf.yml/deagle-28_buggy_simple_loop1_vf.yml	false	TIMEOUT	45.14015	45.461839236	1803.919360
+pthread-ext/29_conditionals_vs.yml/deagle-29_conditionals_vs.yml	true	TIMEOUT	4.215792	46.023465988	109.711360
+pthread-ext/31_simple_loop5_vs.yml/deagle-31_simple_loop5_vs.yml	true	TIMEOUT	2.382198	46.04205363700004	67.715072
+pthread-ext/35_double_lock_p3_vs.yml/deagle-35_double_lock_p3_vs.yml	true	TIMEOUT	39.189064	46.01035880699999	1458.577408
+pthread-ext/36_stack_cas_p0_vs_concur.yml/deagle-36_stack_cas_p0_vs_concur.yml	true	TIMEOUT	2.637936	46.010544820999996	68.857856
+pthread-ext/37_stack_lock_p0_vs_concur.yml/deagle-37_stack_lock_p0_vs_concur.yml	true	TIMEOUT	2.50007	46.06036495400002	67.993600
+pthread-ext/39_rand_lock_p0_vs.yml/deagle-39_rand_lock_p0_vs.yml	true	TIMEOUT	2.224436	46.00982052399996	67.792896
+pthread-ext/40_barrier_vf.yml/deagle-40_barrier_vf.yml	false	TIMEOUT	2.427213	46.01025178399999	68.702208
+pthread-ext/43_NetBSD_sysmon_power_sliced.yml/deagle-43_NetBSD_sysmon_power_sliced.yml	true	TIMEOUT	2.983546	46.036895602000016	67.911680
+pthread-ext/45_monabsex1_vs.yml/deagle-45_monabsex1_vs.yml	true	TIMEOUT	32.308588	46.071184630000005	1690.955776
+pthread-ext/46_monabsex2_vs.yml/deagle-46_monabsex2_vs.yml	true	TIMEOUT	31.243455	46.02611351600001	1764.462592
+pthread-ext/48_ticket_lock_low_contention_vs.yml/deagle-48_ticket_lock_low_contention_vs.yml	true	ERROR(ineffective witness)	2.392776	6.661057419999963	67.477504
+pthread-lit/qw2004-2b.yml/deagle-qw2004-2b.yml	false	TIMEOUT	2.465972	46.169097556	68.849664
+pthread-wmm/mix000.oepc.yml/deagle-mix000.oepc.yml	false	TIMEOUT	3.022695	46.01802925100003	69.169152
+pthread-wmm/mix000.opt.yml/deagle-mix000.opt.yml	false	TIMEOUT	2.817597	46.015135359	68.100096
+pthread-wmm/mix001.oepc.yml/deagle-mix001.oepc.yml	false	TIMEOUT	3.040031	46.06200977200001	67.133440
+pthread-wmm/mix001.opt.yml/deagle-mix001.opt.yml	false	TIMEOUT	2.96466	46.099935598	67.821568
+pthread-wmm/mix002.oepc.yml/deagle-mix002.oepc.yml	false	TIMEOUT	2.985939	46.015037323	66.826240
+pthread-wmm/mix002.opt.yml/deagle-mix002.opt.yml	false	TIMEOUT	2.947904	46.011390430000006	68.190208
+pthread-wmm/mix003.oepc.yml/deagle-mix003.oepc.yml	false	TIMEOUT	2.788687	46.014949444000024	69.124096
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/deagle-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT	2.791005	46.029883856000026	67.846144
+pthread-wmm/mix004.oepc.yml/deagle-mix004.oepc.yml	false	TIMEOUT	2.888736	46.02295890100004	69.099520
+pthread-wmm/mix004.opt.yml/deagle-mix004.opt.yml	false	TIMEOUT	2.8914	46.011164483000016	68.096000
+pthread-wmm/mix005.opt.yml/deagle-mix005.opt.yml	false	TIMEOUT	2.897792	46.042712309000024	68.317184
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix005_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	3.025365	46.013690552000014	68.829184
+pthread-wmm/mix005_tso.oepc.yml/deagle-mix005_tso.oepc.yml	false	TIMEOUT	3.054898	46.018879442000014	69.033984
+pthread-wmm/mix006.opt.yml/deagle-mix006.opt.yml	false	TIMEOUT	1.856599	46.01624689799996	68.362240
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.708994	46.01242233300002	69.468160
+pthread-wmm/mix006_tso.oepc.yml/deagle-mix006_tso.oepc.yml	false	TIMEOUT	2.206513	46.01704196999998	68.136960
+pthread-wmm/mix007.oepc.yml/deagle-mix007.oepc.yml	false	TIMEOUT	1.7887	46.020119531000034	69.107712
+pthread-wmm/mix007.opt.yml/deagle-mix007.opt.yml	false	TIMEOUT	1.781221	46.01385613599996	69.283840
+pthread-wmm/mix008.opt.yml/deagle-mix008.opt.yml	false	TIMEOUT	1.767089	46.01667711599998	69.595136
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix008_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.786258	46.01677865100004	68.190208
+pthread-wmm/mix008_tso.oepc.yml/deagle-mix008_tso.oepc.yml	false	TIMEOUT	2.249639	46.01673592200001	69.009408
+pthread-wmm/mix009.oepc.yml/deagle-mix009.oepc.yml	false	TIMEOUT	1.634945	46.01389127099998	67.227648
+pthread-wmm/mix009.opt.yml/deagle-mix009.opt.yml	false	TIMEOUT	1.702369	46.02094695099993	69.292032
+pthread-wmm/mix010.oepc.yml/deagle-mix010.oepc.yml	false	TIMEOUT	1.699435	46.016904564000015	68.628480
+pthread-wmm/mix010.opt.yml/deagle-mix010.opt.yml	false	TIMEOUT	1.733713	46.01727560300003	67.121152
+pthread-wmm/mix011.opt.yml/deagle-mix011.opt.yml	false	TIMEOUT	1.726723	46.02140729400003	69.025792
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.724713	46.021139720000065	69.099520
+pthread-wmm/mix011_tso.oepc.yml/deagle-mix011_tso.oepc.yml	false	TIMEOUT	1.727139	46.01418585900001	68.575232
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/deagle-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT	1.606142	46.01320778799993	67.125248
+pthread-wmm/mix012_pso.opt_tso.opt.yml/deagle-mix012_pso.opt_tso.opt.yml	false	TIMEOUT	1.664317	46.01387267999996	68.882432
+pthread-wmm/mix013.oepc.yml/deagle-mix013.oepc.yml	false	TIMEOUT	1.781698	46.016725431000054	67.096576
+pthread-wmm/mix013.opt.yml/deagle-mix013.opt.yml	false	TIMEOUT	1.78949	46.01663275899989	67.313664
+pthread-wmm/mix014.opt.yml/deagle-mix014.opt.yml	false	TIMEOUT	1.780553	46.02014091700005	69.230592
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix014_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.779137	46.016280865	68.526080
+pthread-wmm/mix014_tso.oepc.yml/deagle-mix014_tso.oepc.yml	false	TIMEOUT	2.246579	46.01633363600001	68.886528
+pthread-wmm/mix015.oepc.yml/deagle-mix015.oepc.yml	false	TIMEOUT	1.713454	46.020113482000056	67.698688
+pthread-wmm/mix015.opt.yml/deagle-mix015.opt.yml	false	TIMEOUT	1.752014	46.01577738100002	66.908160
+pthread-wmm/mix016.oepc.yml/deagle-mix016.oepc.yml	false	TIMEOUT	1.707532	46.012303476000056	69.525504
+pthread-wmm/mix016_power.opt_rmo.opt.yml/deagle-mix016_power.opt_rmo.opt.yml	false	TIMEOUT	1.661127	46.01639309300003	69.124096
+pthread-wmm/mix016_pso.opt_tso.opt.yml/deagle-mix016_pso.opt_tso.opt.yml	false	TIMEOUT	1.703386	46.01591761399993	68.452352
+pthread-wmm/mix017.oepc.yml/deagle-mix017.oepc.yml	false	TIMEOUT	1.786767	46.013442814000086	69.066752
+pthread-wmm/mix017_power.opt_rmo.opt.yml/deagle-mix017_power.opt_rmo.opt.yml	false	TIMEOUT	1.735992	46.015991266000015	68.304896
+pthread-wmm/mix017_pso.opt_tso.opt.yml/deagle-mix017_pso.opt_tso.opt.yml	false	TIMEOUT	1.788606	46.01642873200001	69.496832
+pthread-wmm/mix018.opt.yml/deagle-mix018.opt.yml	false	TIMEOUT	1.762871	46.01612267200005	69.259264
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix018_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.78515	46.01639266300003	68.263936
+pthread-wmm/mix018_tso.oepc.yml/deagle-mix018_tso.oepc.yml	false	TIMEOUT	1.781359	46.01566337400004	68.722688
+pthread-wmm/mix019.opt.yml/deagle-mix019.opt.yml	false	TIMEOUT	1.729444	46.016193122999994	67.506176
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix019_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.698403	46.009522145000005	68.599808
+pthread-wmm/mix019_tso.oepc.yml/deagle-mix019_tso.oepc.yml	false	TIMEOUT	1.692717	46.016184083999974	69.328896
+pthread-wmm/mix020.oepc.yml/deagle-mix020.oepc.yml	false	TIMEOUT	1.783428	46.01083786899994	69.586944
+pthread-wmm/mix020.opt.yml/deagle-mix020.opt.yml	false	TIMEOUT	1.754445	46.01614511499997	69.529600
+pthread-wmm/mix021.opt.yml/deagle-mix021.opt.yml	false	TIMEOUT	1.770967	46.01419904399995	68.321280
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix021_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.786301	46.01413696700001	68.612096
+pthread-wmm/mix021_tso.oepc.yml/deagle-mix021_tso.oepc.yml	false	TIMEOUT	1.728158	46.010598363999975	68.562944
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.601718	46.01331811900002	68.382720
+pthread-wmm/mix022_tso.yml/deagle-mix022_tso.yml	false	TIMEOUT	1.703447	46.01264493300005	68.517888
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix023_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.817895	46.01633035000009	68.251648
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/deagle-mix023_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.724105	46.01261398099996	68.653056
+pthread-wmm/mix023_tso.yml/deagle-mix023_tso.yml	false	TIMEOUT	2.341488	46.016491816999974	68.907008
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/deagle-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT	1.700667	46.016667006000034	68.251648
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/deagle-mix024_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.668193	46.013370262999956	68.411392
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/deagle-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT	1.704956	46.01635378500009	68.157440
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/deagle-mix025_pso.opt_rmo.opt.yml	false	TIMEOUT	1.674838	46.01147011900002	68.190208
+pthread-wmm/mix026.oepc.yml/deagle-mix026.oepc.yml	false	TIMEOUT	1.771598	46.01640178399998	67.452928
+pthread-wmm/mix026_power.opt_tso.opt.yml/deagle-mix026_power.opt_tso.opt.yml	false	TIMEOUT	1.752653	46.01651032699999	68.038656
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/deagle-mix026_pso.opt_rmo.opt.yml	false	TIMEOUT	1.70998	46.019203833000006	68.313088
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix027_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.781186	46.01697660000002	69.246976
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/deagle-mix027_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.705879	46.00958656	69.505024
+pthread-wmm/mix027_tso.yml/deagle-mix027_tso.yml	false	TIMEOUT	1.775375	46.016266167000026	68.620288
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.681694	46.00840403500001	69.492736
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/deagle-mix028_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.703569	46.01694476	67.231744
+pthread-wmm/mix028_tso.yml/deagle-mix028_tso.yml	false	TIMEOUT	1.761436	46.01338267400001	69.251072
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/deagle-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT	1.78314	46.014549850000094	68.407296
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/deagle-mix029_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.738487	46.01383495499999	69.177344
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix030_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.774568	46.012314522	68.198400
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/deagle-mix030_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.742766	46.020825661	67.244032
+pthread-wmm/mix030_tso.yml/deagle-mix030_tso.yml	false	TIMEOUT	1.820529	46.01291647300002	69.267456
+pthread-wmm/mix031.oepc.yml/deagle-mix031.oepc.yml	false	TIMEOUT	1.649472	46.015425209	68.313088
+pthread-wmm/mix031.opt.yml/deagle-mix031.opt.yml	false	TIMEOUT	1.595147	46.016500252000014	68.485120
+pthread-wmm/mix032.oepc.yml/deagle-mix032.oepc.yml	false	TIMEOUT	1.714793	46.016681067000036	68.321280
+pthread-wmm/mix032.opt.yml/deagle-mix032.opt.yml	false	TIMEOUT	1.632718	46.01725430800002	68.280320
+pthread-wmm/mix033.opt.yml/deagle-mix033.opt.yml	false	TIMEOUT	1.670079	46.01649161800003	69.255168
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.730133	46.01310123300004	69.431296
+pthread-wmm/mix033_tso.oepc.yml/deagle-mix033_tso.oepc.yml	false	TIMEOUT	1.710025	46.01695754600007	68.743168
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/deagle-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT	1.621284	46.016408667000064	68.325376
+pthread-wmm/mix034_pso.opt_tso.opt.yml/deagle-mix034_pso.opt_tso.opt.yml	false	TIMEOUT	1.576821	46.015893286999926	68.792320
+pthread-wmm/mix035.oepc.yml/deagle-mix035.oepc.yml	false	TIMEOUT	1.745068	46.017453217000025	68.972544
+pthread-wmm/mix035_power.opt_rmo.opt.yml/deagle-mix035_power.opt_rmo.opt.yml	false	TIMEOUT	1.663914	46.01332249099994	69.230592
+pthread-wmm/mix035_pso.opt_tso.opt.yml/deagle-mix035_pso.opt_tso.opt.yml	false	TIMEOUT	1.606196	46.016197000000034	67.219456
+pthread-wmm/mix036.oepc.yml/deagle-mix036.oepc.yml	false	TIMEOUT	1.787164	46.01605863100008	69.193728
+pthread-wmm/mix036_power.opt_rmo.opt.yml/deagle-mix036_power.opt_rmo.opt.yml	false	TIMEOUT	1.704478	46.020939950999946	69.443584
+pthread-wmm/mix036_pso.opt_tso.opt.yml/deagle-mix036_pso.opt_tso.opt.yml	false	TIMEOUT	1.669682	46.01521739400005	67.887104
+pthread-wmm/mix037.opt.yml/deagle-mix037.opt.yml	false	TIMEOUT	1.671416	46.01649390400007	67.121152
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix037_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.788288	46.01622657600001	68.489216
+pthread-wmm/mix037_tso.oepc.yml/deagle-mix037_tso.oepc.yml	false	TIMEOUT	1.800125	46.016387689	67.198976
+pthread-wmm/mix038.opt.yml/deagle-mix038.opt.yml	false	TIMEOUT	1.623077	46.01532405399996	66.994176
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.714146	46.0092317509999	69.615616
+pthread-wmm/mix038_tso.oepc.yml/deagle-mix038_tso.oepc.yml	false	TIMEOUT	1.718978	46.01583201699998	67.661824
+pthread-wmm/mix039.oepc.yml/deagle-mix039.oepc.yml	false	TIMEOUT	1.784701	46.01355488400009	68.145152
+pthread-wmm/mix039.opt.yml/deagle-mix039.opt.yml	false	TIMEOUT	1.665232	46.016386362999924	69.013504
+pthread-wmm/mix040.opt.yml/deagle-mix040.opt.yml	false	TIMEOUT	1.67041	46.01652282000009	69.292032
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix040_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.816406	46.012338760000034	69.132288
+pthread-wmm/mix040_tso.oepc.yml/deagle-mix040_tso.oepc.yml	false	TIMEOUT	1.760824	46.01149348499996	68.370432
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.606613	46.016448844000024	68.370432
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/deagle-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.612353	46.012420760000055	68.034560
+pthread-wmm/mix042.oepc.yml/deagle-mix042.oepc.yml	false	TIMEOUT	1.700106	46.01717579700005	68.489216
+pthread-wmm/mix042.opt.yml/deagle-mix042.opt.yml	false	TIMEOUT	1.666688	46.014253686000075	68.038656
+pthread-wmm/mix043.oepc.yml/deagle-mix043.oepc.yml	false	TIMEOUT	1.78905	46.01381781500004	67.301376
+pthread-wmm/mix043.opt.yml/deagle-mix043.opt.yml	false	TIMEOUT	1.712664	46.01643052700001	67.162112
+pthread-wmm/mix044.opt.yml/deagle-mix044.opt.yml	false	TIMEOUT	1.711736	46.013723746000096	69.246976
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix044_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.778452	46.017133486000034	67.301376
+pthread-wmm/mix044_tso.oepc.yml/deagle-mix044_tso.oepc.yml	false	TIMEOUT	1.803357	46.01627803300005	68.714496
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.70782	46.015193441000065	69.242880
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/deagle-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.660989	46.01659353299999	68.337664
+pthread-wmm/mix046.oepc.yml/deagle-mix046.oepc.yml	false	TIMEOUT	1.805083	46.00922687100001	69.550080
+pthread-wmm/mix046.opt.yml/deagle-mix046.opt.yml	false	TIMEOUT	1.721823	46.01177922199997	69.160960
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix047_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.799862	46.016327052000065	67.489792
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/deagle-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.726026	46.015310227999976	69.451776
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/deagle-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.591305	46.01241549600002	68.071424
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/deagle-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.696886	46.01619905999996	67.252224
+pthread-wmm/mix050.yml/deagle-mix050.yml	false	TIMEOUT	1.772551	46.021603526000035	67.457024
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/deagle-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.767628	46.009412924	68.399104
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/deagle-mix051_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT	1.653445	46.02057798199996	69.029888
+pthread-wmm/mix051_tso.oepc.yml/deagle-mix051_tso.oepc.yml	false	TIMEOUT	1.77067	46.01235419400007	67.649536
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/deagle-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.69448	46.013581258000045	69.173248
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/deagle-mix052_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT	1.601792	46.01228008600003	69.447680
+pthread-wmm/mix052_tso.oepc.yml/deagle-mix052_tso.oepc.yml	false	TIMEOUT	1.695488	46.01674486200011	67.080192
+pthread-wmm/mix053.opt.yml/deagle-mix053.opt.yml	false	TIMEOUT	1.644946	46.013685392999946	68.337664
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix053_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.775085	46.0207496139999	69.312512
+pthread-wmm/mix053_tso.oepc.yml/deagle-mix053_tso.oepc.yml	false	TIMEOUT	1.760286	46.01649428299993	67.457024
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/deagle-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.622947	46.01368090100004	69.197824
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/deagle-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.605352	46.01311548599995	69.091328
+pthread-wmm/mix055.opt.yml/deagle-mix055.opt.yml	false	TIMEOUT	1.700383	46.021239403000095	69.312512
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix055_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.792324	46.016413862000036	67.309568
+pthread-wmm/mix055_tso.oepc.yml/deagle-mix055_tso.oepc.yml	false	TIMEOUT	1.78232	46.016969554999946	69.095424
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.687228	46.01368884500016	67.244032
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/deagle-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.675032	46.043837248000045	68.997120
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/deagle-mix057_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.811809	46.01422734399989	69.644288
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/deagle-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.696036	46.05348422600014	68.403200
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/deagle-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.836531	46.0161852870001	69.599232
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/deagle-rfi000_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.61431	46.019145406999996	67.481600
+pthread-wmm/rfi000_tso.yml/deagle-rfi000_tso.yml	true	TIMEOUT	3.357835	46.01580058700006	69.791744
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/deagle-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.08423	46.0175966889999	69.087232
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/deagle-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.606043	46.01201058399988	66.781184
+pthread-wmm/rfi002_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-rfi002_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	true	TIMEOUT	3.024679	46.009910149999996	67.354624
+pthread-wmm/rfi002_tso.yml/deagle-rfi002_tso.yml	true	TIMEOUT	3.315341	46.015039131999856	69.836800
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.527202	46.01150245100007	67.661824
+pthread-wmm/rfi003_tso.yml/deagle-rfi003_tso.yml	true	TIMEOUT	3.050245	46.027062333	68.616192
+pthread-wmm/rfi004.yml/deagle-rfi004.yml	false	TIMEOUT	2.568909	46.0773205779999	67.702784
+pthread-wmm/rfi005.yml/deagle-rfi005.yml	false	TIMEOUT	3.067797	46.01378436599998	69.353472
+pthread-wmm/rfi006_power.oepc.yml/deagle-rfi006_power.oepc.yml	false	TIMEOUT	2.74649	46.01872308899988	67.895296
+pthread-wmm/rfi006_power.opt.yml/deagle-rfi006_power.opt.yml	false	TIMEOUT	2.843114	46.01482825500011	67.850240
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.867177	46.01312181499998	67.969024
+pthread-wmm/rfi006_rmo.yml/deagle-rfi006_rmo.yml	false	TIMEOUT	2.727987	46.019822645999966	68.632576
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.568717	46.012886225999864	67.874816
+pthread-wmm/rfi007_tso.yml/deagle-rfi007_tso.yml	false	TIMEOUT	2.7575	46.01804968400006	68.325376
+pthread-wmm/rfi008.oepc.yml/deagle-rfi008.oepc.yml	false	TIMEOUT	2.870327	46.01393939299987	68.157440
+pthread-wmm/rfi008.opt.yml/deagle-rfi008.opt.yml	false	TIMEOUT	2.815568	46.01788089799993	68.100096
+pthread-wmm/rfi009_power.oepc.yml/deagle-rfi009_power.oepc.yml	false	TIMEOUT	2.755869	46.0136277109998	67.682304
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/deagle-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.787311	46.00917273599998	68.087808
+pthread-wmm/rfi009_rmo.oepc.yml/deagle-rfi009_rmo.oepc.yml	false	TIMEOUT	2.686029	46.104141319000064	67.895296
+pthread-wmm/rfi010.yml/deagle-rfi010.yml	false	TIMEOUT	2.785368	46.012005416999955	68.796416
+pthread-wmm/safe000_power.oepc.yml/deagle-safe000_power.oepc.yml	false	TIMEOUT	3.12368	46.09311518100003	68.112384
+pthread-wmm/safe000_power.opt.yml/deagle-safe000_power.opt.yml	false	TIMEOUT	2.812793	46.02512750599999	69.050368
+pthread-wmm/safe000_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe000_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	4.270236	46.01724899999999	67.715072
+pthread-wmm/safe000_rmo.yml/deagle-safe000_rmo.yml	false	TIMEOUT	3.024017	46.01311425200015	69.038080
+pthread-wmm/safe001_power.oepc.yml/deagle-safe001_power.oepc.yml	false	TIMEOUT	3.105749	46.020374532000005	67.219456
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/deagle-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT	2.816589	46.02437530800012	66.826240
+pthread-wmm/safe001_rmo.oepc.yml/deagle-safe001_rmo.oepc.yml	false	TIMEOUT	2.974692	46.01879242600012	68.165632
+pthread-wmm/safe001_tso.yml/deagle-safe001_tso.yml	true	TIMEOUT	3.550117	46.013470306000045	67.715072
+pthread-wmm/safe002_power.oepc.yml/deagle-safe002_power.oepc.yml	false	TIMEOUT	2.974947	46.02068043200006	69.050368
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/deagle-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT	2.740344	46.00756897400015	68.689920
+pthread-wmm/safe002_rmo.oepc.yml/deagle-safe002_rmo.oepc.yml	false	TIMEOUT	3.061539	46.015911524999865	68.313088
+pthread-wmm/safe002_tso.yml/deagle-safe002_tso.yml	true	TIMEOUT	2.869167	46.010948971999824	66.482176
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	3.170555	46.01465835599993	68.345856
+pthread-wmm/safe003_power.opt.yml/deagle-safe003_power.opt.yml	false	TIMEOUT	2.888769	46.02071789399997	69.058560
+pthread-wmm/safe003_tso.yml/deagle-safe003_tso.yml	true	TIMEOUT	2.932872	46.013388089000046	67.727360
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/deagle-safe004_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	3.096396	46.01720002700017	68.276224
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/deagle-safe004_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.694152	46.01269017899995	67.821568
+pthread-wmm/safe004_tso.yml/deagle-safe004_tso.yml	true	TIMEOUT	2.762799	46.17296756200017	67.530752
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.65592	46.079887706000136	68.026368
+pthread-wmm/safe005_tso.yml/deagle-safe005_tso.yml	true	TIMEOUT	2.943706	46.012804034000055	67.784704
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/deagle-safe006_power.oepc-thin000_power.oepc.yml	false	TIMEOUT	2.533803	46.02037758000006	67.960832
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/deagle-safe006_power.opt-thin000_power.opt.yml	false	TIMEOUT	2.629928	46.014678299000025	68.911104
+pthread-wmm/safe006_pso.oepc_pso.opt_tso.oepc_tso.opt-thin000_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe006_pso.oepc_pso.opt_tso.oepc_tso.opt-thin000_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	2.643196	46.014603923000095	68.849664
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/deagle-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.494352	46.16047990799984	68.698112
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/deagle-safe007_power.oepc-thin001_power.oepc.yml	false	TIMEOUT	2.536172	46.014028198999995	66.756608
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/deagle-safe007_power.opt-thin001_power.opt.yml	false	TIMEOUT	2.734553	46.02301853900008	66.891776
+pthread-wmm/safe007_pso.oepc_pso.opt_tso.oepc_tso.opt-thin001_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe007_pso.oepc_pso.opt_tso.oepc_tso.opt-thin001_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	2.882473	46.019955425000035	67.813376
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/deagle-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.521545	46.238878802000045	68.104192
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.695709	46.54829514500011	68.849664
+pthread-wmm/safe008_power.opt.yml/deagle-safe008_power.opt.yml	false	TIMEOUT	2.764981	46.01527643400004	67.919872
+pthread-wmm/safe008_tso.yml/deagle-safe008_tso.yml	true	TIMEOUT	2.837503	46.02533040499998	67.600384
+pthread-wmm/safe009_power.oepc.yml/deagle-safe009_power.oepc.yml	false	TIMEOUT	2.781892	46.02923224799997	69.373952
+pthread-wmm/safe009_power.opt.yml/deagle-safe009_power.opt.yml	false	TIMEOUT	2.787308	46.015453523999895	69.443584
+pthread-wmm/safe009_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe009_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	2.825558	46.03992383800005	67.792896
+pthread-wmm/safe009_rmo.oepc.yml/deagle-safe009_rmo.oepc.yml	false	TIMEOUT	2.870005	46.01334820499983	68.100096
+pthread-wmm/safe009_rmo.opt.yml/deagle-safe009_rmo.opt.yml	false	TIMEOUT	2.745407	46.043402502999925	68.308992
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.5713	46.01246489999994	68.894720
+pthread-wmm/safe010_tso.yml/deagle-safe010_tso.yml	true	TIMEOUT	2.339585	46.01859437000007	66.453504
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/deagle-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.70967	46.01895746900004	67.940352
+pthread-wmm/safe011_power.opt_pso.opt.yml/deagle-safe011_power.opt_pso.opt.yml	false	TIMEOUT	2.698003	46.01160288699998	68.091904
+pthread-wmm/safe011_tso.yml/deagle-safe011_tso.yml	true	TIMEOUT	2.991708	46.02006746500001	68.440064
+pthread-wmm/safe012_power.oepc.yml/deagle-safe012_power.oepc.yml	false	TIMEOUT	2.552326	46.01649811199991	66.658304
+pthread-wmm/safe012_power.opt.yml/deagle-safe012_power.opt.yml	false	TIMEOUT	2.689149	46.01364766400002	68.149248
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/deagle-safe012_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT	2.613091	46.11422574799985	68.849664
+pthread-wmm/safe012_rmo.oepc.yml/deagle-safe012_rmo.oepc.yml	false	TIMEOUT	2.610416	46.04075117299999	68.820992
+pthread-wmm/safe012_tso.yml/deagle-safe012_tso.yml	true	TIMEOUT	2.915112	46.02440164699988	67.547136
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.628743	46.01911039699985	68.747264
+pthread-wmm/safe013_tso.yml/deagle-safe013_tso.yml	true	TIMEOUT	3.034436	46.01250848399991	67.416064
+pthread-wmm/safe014_power.oepc.yml/deagle-safe014_power.oepc.yml	false	TIMEOUT	2.503088	46.00888421800005	69.025792
+pthread-wmm/safe014_power.opt.yml/deagle-safe014_power.opt.yml	false	TIMEOUT	2.645516	46.01436128	67.743744
+pthread-wmm/safe014_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe014_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	2.446681	46.215927901999976	67.907584
+pthread-wmm/safe014_rmo.oepc.yml/deagle-safe014_rmo.oepc.yml	false	TIMEOUT	2.479482	46.01914345199998	69.033984
+pthread-wmm/safe014_rmo.opt.yml/deagle-safe014_rmo.opt.yml	false	TIMEOUT	3.048238	46.02190890100019	68.349952
+pthread-wmm/safe015_power.oepc.yml/deagle-safe015_power.oepc.yml	false	TIMEOUT	3.418267	46.02246025299996	69.341184
+pthread-wmm/safe015_power.opt.yml/deagle-safe015_power.opt.yml	false	TIMEOUT	3.030482	46.011579885000174	69.275648
+pthread-wmm/safe015_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe015_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	2.721945	46.23828520899997	68.681728
+pthread-wmm/safe015_rmo.yml/deagle-safe015_rmo.yml	false	TIMEOUT	2.943021	46.02326301599987	68.026368
+pthread-wmm/safe016_power.oepc.yml/deagle-safe016_power.oepc.yml	false	TIMEOUT	2.783993	46.01286529699996	68.222976
+pthread-wmm/safe016_power.opt.yml/deagle-safe016_power.opt.yml	false	TIMEOUT	2.980073	46.02360448299987	68.464640
+pthread-wmm/safe016_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe016_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	3.098974	46.537084765000145	68.595712
+pthread-wmm/safe016_rmo.oepc.yml/deagle-safe016_rmo.oepc.yml	false	TIMEOUT	2.855049	46.02182973399999	69.308416
+pthread-wmm/safe016_rmo.opt.yml/deagle-safe016_rmo.opt.yml	false	TIMEOUT	2.956003	46.02136756200002	68.427776
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.683883	46.03043707400002	68.067328
+pthread-wmm/safe017_tso.yml/deagle-safe017_tso.yml	true	TIMEOUT	2.850376	46.16640194700017	66.650112
+pthread-wmm/safe018_power.oepc.yml/deagle-safe018_power.oepc.yml	false	TIMEOUT	2.491789	46.019119963000094	67.899392
+pthread-wmm/safe018_power.opt.yml/deagle-safe018_power.opt.yml	false	TIMEOUT	2.912209	46.027212498999916	68.243456
+pthread-wmm/safe018_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe018_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	2.680884	46.10085397800003	68.636672
+pthread-wmm/safe018_rmo.oepc.yml/deagle-safe018_rmo.oepc.yml	false	TIMEOUT	2.472437	46.020912084999964	68.657152
+pthread-wmm/safe018_rmo.opt.yml/deagle-safe018_rmo.opt.yml	false	TIMEOUT	2.764674	46.0217848530001	67.928064
+pthread-wmm/safe019_power.oepc.yml/deagle-safe019_power.oepc.yml	false	TIMEOUT	2.802265	46.01889740499996	66.957312
+pthread-wmm/safe019_power.opt.yml/deagle-safe019_power.opt.yml	false	TIMEOUT	3.010687	46.1626153709999	68.255744
+pthread-wmm/safe019_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe019_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	3.39712	46.06025863699983	68.419584
+pthread-wmm/safe019_rmo.oepc.yml/deagle-safe019_rmo.oepc.yml	false	TIMEOUT	2.837609	46.01783163699997	67.866624
+pthread-wmm/safe019_rmo.opt.yml/deagle-safe019_rmo.opt.yml	false	TIMEOUT	2.863474	46.071939990000146	68.259840
+pthread-wmm/safe020_power.yml/deagle-safe020_power.yml	false	TIMEOUT	3.017237	46.47506546699992	67.022848
+pthread-wmm/safe020_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe020_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	3.470583	46.022372226000016	68.419584
+pthread-wmm/safe020_rmo.yml/deagle-safe020_rmo.yml	false	TIMEOUT	2.712371	46.08808596600011	67.817472
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/deagle-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.695968	46.019843273000106	68.108288
+pthread-wmm/safe021_power.opt_pso.opt.yml/deagle-safe021_power.opt_pso.opt.yml	false	TIMEOUT	2.702921	46.01965826600008	66.867200
+pthread-wmm/safe021_tso.yml/deagle-safe021_tso.yml	true	TIMEOUT	2.559912	46.017818656000145	67.764224
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.550377	47.85228172699999	68.124672
+pthread-wmm/safe022_tso.yml/deagle-safe022_tso.yml	true	TIMEOUT	2.391666	46.02848427899994	68.734976
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	3.113078	46.016359486000056	69.500928
+pthread-wmm/safe023_tso.yml/deagle-safe023_tso.yml	true	TIMEOUT	2.604407	48.58886921199996	66.588672
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.628855	46.02108709700019	67.657728
+pthread-wmm/safe024_tso.yml/deagle-safe024_tso.yml	true	TIMEOUT	2.506895	46.04756712000017	68.833280
+pthread-wmm/safe025_power.yml/deagle-safe025_power.yml	false	TIMEOUT	2.974199	46.033716310000045	68.558848
+pthread-wmm/safe025_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe025_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	2.291999	46.580189623000024	66.568192
+pthread-wmm/safe025_rmo.yml/deagle-safe025_rmo.yml	false	TIMEOUT	3.004172	46.24264311100001	69.369856
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.67908	46.144460239999944	67.997696
+pthread-wmm/safe026_tso.yml/deagle-safe026_tso.yml	true	TIMEOUT	2.810168	46.01796269900001	67.563520
+pthread-wmm/safe027_power.oepc.yml/deagle-safe027_power.oepc.yml	false	TIMEOUT	2.780642	46.02359052399993	67.805184
+pthread-wmm/safe027_power.opt.yml/deagle-safe027_power.opt.yml	false	TIMEOUT	3.033241	47.332851957	68.173824
+pthread-wmm/safe027_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe027_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	2.861918	46.012065365000126	67.993600
+pthread-wmm/safe027_rmo.yml/deagle-safe027_rmo.yml	false	TIMEOUT	2.783833	46.02558508199991	68.263936
+pthread-wmm/safe028_power.yml/deagle-safe028_power.yml	false	TIMEOUT	2.860527	46.29846727600011	67.076096
+pthread-wmm/safe028_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-safe028_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	2.931641	46.02664745999982	67.674112
+pthread-wmm/safe028_rmo.yml/deagle-safe028_rmo.yml	false	TIMEOUT	2.76273	46.01934777700012	66.809856
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/deagle-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.567769	46.02336954599991	67.923968
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/deagle-safe029_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.568209	46.012244179999925	67.903488
+pthread-wmm/safe029_tso.yml/deagle-safe029_tso.yml	true	TIMEOUT	2.625792	46.01841444299998	66.564096
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/deagle-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.723904	46.01785721900001	68.861952
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/deagle-safe030_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.622753	46.018939133	68.775936
+pthread-wmm/safe030_tso.yml/deagle-safe030_tso.yml	true	TIMEOUT	2.679041	46.01551131699989	67.796992
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/deagle-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.641991	46.09967836999999	68.046848
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/deagle-safe031_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.625679	46.12344091099999	69.328896
+pthread-wmm/safe031_tso.yml/deagle-safe031_tso.yml	true	TIMEOUT	2.484954	46.01727124800004	67.776512
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	3.193868	46.01031362899994	69.468160
+pthread-wmm/safe032_tso.yml/deagle-safe032_tso.yml	true	TIMEOUT	2.749475	46.31155027799991	68.571136
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.473602	46.012696403000064	67.633152
+pthread-wmm/safe033_tso.yml/deagle-safe033_tso.yml	true	TIMEOUT	2.236336	46.031572675999996	67.457024
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/deagle-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.573222	46.0288266770001	67.784704
+pthread-wmm/safe034_tso.yml/deagle-safe034_tso.yml	true	TIMEOUT	2.302699	46.021126142000185	67.665920
+pthread-wmm/safe035_power.yml/deagle-safe035_power.yml	true	TIMEOUT	2.833454	46.02333200699991	67.350528
+pthread-wmm/safe035_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/deagle-safe035_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	2.518985	46.060920055	67.551232
+pthread-wmm/safe036.yml/deagle-safe036.yml	true	TIMEOUT	2.202206	46.20955336799989	68.423680
+pthread-wmm/safe037.yml/deagle-safe037.yml	true	TIMEOUT	2.439939	46.012708845999896	67.751936
+pthread-wmm/thin002_power.oepc.yml/deagle-thin002_power.oepc.yml	false	TIMEOUT	2.604897	46.0222243610001	66.887680
+pthread-wmm/thin002_power.opt.yml/deagle-thin002_power.opt.yml	false	TIMEOUT	2.727964	46.39296381400004	68.096000
+pthread-wmm/thin002_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/deagle-thin002_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	2.914321	48.82523201499998	67.690496
+pthread-wmm/thin002_rmo.yml/deagle-thin002_rmo.yml	false	TIMEOUT	2.65509	46.10317678399997	66.801664
+pthread/fib_safe-10.yml/deagle-fib_safe-10.yml	true	ERROR(ineffective witness)	3.278585	4.641369652000094	68.444160
+pthread/fib_safe-11.yml/deagle-fib_safe-11.yml	true	ERROR(ineffective witness)	3.393261	4.401527936999855	67.448832
+pthread/fib_safe-12.yml/deagle-fib_safe-12.yml	true	ERROR(ineffective witness)	3.457251	4.412476494999964	67.842048
+pthread/fib_safe-5.yml/deagle-fib_safe-5.yml	true	ERROR(ineffective witness)	2.846206	6.276425767000092	68.849664
+pthread/fib_safe-6.yml/deagle-fib_safe-6.yml	true	ERROR(ineffective witness)	2.954547	14.026608685999918	67.510272
+pthread/fib_safe-7.yml/deagle-fib_safe-7.yml	true	ERROR(ineffective witness)	3.128499	9.637323060999961	68.681728
+pthread/fib_unsafe-10.yml/deagle-fib_unsafe-10.yml	false	TIMEOUT	3.652597	46.03283145399996	67.690496
+pthread/fib_unsafe-11.yml/deagle-fib_unsafe-11.yml	false	TIMEOUT	3.877264	46.25569719300006	68.501504
+pthread/fib_unsafe-12.yml/deagle-fib_unsafe-12.yml	false	TIMEOUT	4.100173	48.23082172699992	66.854912
+pthread/fib_unsafe-5.yml/deagle-fib_unsafe-5.yml	false	TIMEOUT	2.972288	47.4135923849999	68.411392
+pthread/fib_unsafe-6.yml/deagle-fib_unsafe-6.yml	false	TIMEOUT	3.188008	46.03666721500008	67.837952
+pthread/fib_unsafe-7.yml/deagle-fib_unsafe-7.yml	false	TIMEOUT	3.239302	46.12120606600001	66.580480
+pthread/lazy01.yml/deagle-lazy01.yml	false	TIMEOUT	3.188927	46.05904717500016	67.649536
+pthread/reorder_2.yml/deagle-reorder_2.yml	false	ERROR(ineffective witness)	2.552672	8.086334926000063	67.887104
+pthread/reorder_5.yml/deagle-reorder_5.yml	false	ERROR(ineffective witness)	2.486132	3.009803207999994	67.739648
+pthread/stack-1.yml/deagle-stack-1.yml	true	ERROR(ineffective witness)	2.829648	3.2836966330000905	67.612672
+pthread/stack-2.yml/deagle-stack-2.yml	false	ERROR(ineffective witness)	3.21486	7.545341428000029	66.609152
+pthread/stack_longer-1.yml/deagle-stack_longer-1.yml	false	ERROR(ineffective witness)	2.567173	8.297796540999798	68.784128
+pthread/stack_longer-2.yml/deagle-stack_longer-2.yml	true	ERROR(ineffective witness)	2.471499	3.6155955249998897	67.727360
+pthread/stack_longest-1.yml/deagle-stack_longest-1.yml	false	ERROR(ineffective witness)	2.664211	13.740070027999991	67.641344
+pthread/stack_longest-2.yml/deagle-stack_longest-2.yml	true	ERROR(ineffective witness)	2.544575	3.3864645690000543	68.751360
+pthread/stateful01-1.yml/deagle-stateful01-1.yml	false	TIMEOUT	2.09603	46.01954816200009	68.665344
+pthread/stateful01-2.yml/deagle-stateful01-2.yml	true	ERROR(ineffective witness)	2.219561	3.285609524999927	67.391488
+pthread/sync01.yml/deagle-sync01.yml	true	ERROR(ineffective witness)	2.433272	5.691739095999992	67.719168
+pthread/triangular-1.yml/deagle-triangular-1.yml	true	ERROR(ineffective witness)	2.324248	5.167655974000127	68.395008
+pthread/triangular-2.yml/deagle-triangular-2.yml	false	TIMEOUT	2.416566	49.40939078699989	67.530752
+pthread/triangular-longer-1.yml/deagle-triangular-longer-1.yml	true	ERROR(ineffective witness)	2.540987	13.914415371000132	67.772416
+pthread/triangular-longer-2.yml/deagle-triangular-longer-2.yml	false	TIMEOUT	2.662208	46.023663651000106	67.534848
+pthread/twostage_3.yml/deagle-twostage_3.yml	false	ERROR(ineffective witness)	2.87301	14.718452539000054	68.018176
+weaver/array-eq-symm.wvr.yml/deagle-array-eq-symm.wvr.yml	true	TIMEOUT	2.295888	46.032108893999975	67.514368
+weaver/array-eq-trans.wvr.yml/deagle-array-eq-trans.wvr.yml	true	TIMEOUT	2.297179	46.13280755599999	68.370432
+weaver/bench-exp1x3.wvr.yml/deagle-bench-exp1x3.wvr.yml	true	TIMEOUT	2.04959	46.0492664599999	67.407872
+weaver/bench-exp2x3.wvr.yml/deagle-bench-exp2x3.wvr.yml	true	TIMEOUT	2.027739	46.17489430899991	68.468736
+weaver/bench-exp2x4.wvr.yml/deagle-bench-exp2x4.wvr.yml	true	TIMEOUT	1.979415	50.0348062500002	67.518464
+weaver/bench-exp2x6.wvr.yml/deagle-bench-exp2x6.wvr.yml	true	TIMEOUT	1.947148	46.135172611999906	67.506176
+weaver/bench-exp2x9.wvr.yml/deagle-bench-exp2x9.wvr.yml	true	TIMEOUT	1.965132	46.028341599999976	67.432448
+weaver/bench-exp3x3-opt.wvr.yml/deagle-bench-exp3x3-opt.wvr.yml	true	TIMEOUT	1.984487	46.011897868000005	66.646016
+weaver/bench-exp3x3.wvr.yml/deagle-bench-exp3x3.wvr.yml	true	TIMEOUT	2.001615	46.01546473500002	68.304896
+weaver/chl-array-int-subst.wvr.yml/deagle-chl-array-int-subst.wvr.yml	true	TIMEOUT	2.132489	46.1089005350002	68.550656
+weaver/chl-array-int-symm.wvr.yml/deagle-chl-array-int-symm.wvr.yml	true	TIMEOUT	2.16929	46.014862386000004	67.653632
+weaver/chl-array-int-trans.wvr.yml/deagle-chl-array-int-trans.wvr.yml	true	TIMEOUT	2.246374	46.07135252000012	67.448832
+weaver/chl-chromosome-opt-symm.wvr.yml/deagle-chl-chromosome-opt-symm.wvr.yml	true	TIMEOUT	2.026851	46.483739582	66.510848
+weaver/chl-chromosome-subst.wvr.yml/deagle-chl-chromosome-subst.wvr.yml	true	TIMEOUT	2.103019	46.086142380999945	68.632576
+weaver/chl-chromosome-symm.wvr.yml/deagle-chl-chromosome-symm.wvr.yml	true	TIMEOUT	1.97923	46.014696879999974	66.605056
+weaver/chl-chromosome-trans.wvr.yml/deagle-chl-chromosome-trans.wvr.yml	true	TIMEOUT	2.003201	46.02043035399993	67.407872
+weaver/chl-collitem-subst.wvr.yml/deagle-chl-collitem-subst.wvr.yml	true	TIMEOUT	2.086549	46.020776436000006	68.497408
+weaver/chl-collitem-symm.wvr.yml/deagle-chl-collitem-symm.wvr.yml	true	TIMEOUT	2.01977	46.0099718030001	67.731456
+weaver/chl-collitem-trans.wvr.yml/deagle-chl-collitem-trans.wvr.yml	true	TIMEOUT	2.172158	46.014488791000076	67.747840
+weaver/chl-exp-term-subst.wvr.yml/deagle-chl-exp-term-subst.wvr.yml	true	TIMEOUT	2.129602	46.018582257999924	68.427776
+weaver/chl-exp-term-symm.wvr.yml/deagle-chl-exp-term-symm.wvr.yml	true	TIMEOUT	2.165633	46.01431254099998	68.427776
+weaver/chl-file-item-subst.wvr.yml/deagle-chl-file-item-subst.wvr.yml	true	TIMEOUT	2.11425	46.08491580300006	68.517888
+weaver/chl-file-item-symm.wvr.yml/deagle-chl-file-item-symm.wvr.yml	true	TIMEOUT	2.018607	46.16176319700003	68.939776
+weaver/chl-file-item-trans.wvr.yml/deagle-chl-file-item-trans.wvr.yml	true	TIMEOUT	1.971358	46.02189410400001	68.374528
+weaver/chl-match-subst.wvr.yml/deagle-chl-match-subst.wvr.yml	true	TIMEOUT	2.028144	46.01374768200003	67.584000
+weaver/chl-match-symm.wvr.yml/deagle-chl-match-symm.wvr.yml	true	TIMEOUT	2.051703	46.023018843000045	67.608576
+weaver/chl-match-trans.wvr.yml/deagle-chl-match-trans.wvr.yml	true	TIMEOUT	2.018529	46.0217858850001	68.681728
+weaver/chl-name-comparator-subst.wvr.yml/deagle-chl-name-comparator-subst.wvr.yml	true	TIMEOUT	1.958119	46.013215087999924	67.301376
+weaver/chl-name-comparator-symm.wvr.yml/deagle-chl-name-comparator-symm.wvr.yml	true	TIMEOUT	2.116476	46.01618605999988	68.526080
+weaver/chl-name-comparator-trans.wvr.yml/deagle-chl-name-comparator-trans.wvr.yml	true	TIMEOUT	2.117309	46.04497190799998	68.399104
+weaver/chl-node-subst.wvr.yml/deagle-chl-node-subst.wvr.yml	true	TIMEOUT	2.300074	46.19388391999996	67.485696
+weaver/chl-node-symm.wvr.yml/deagle-chl-node-symm.wvr.yml	true	TIMEOUT	2.102617	46.44520749099979	68.513792
+weaver/chl-node-trans.wvr.yml/deagle-chl-node-trans.wvr.yml	true	TIMEOUT	2.225368	46.13522322199992	67.727360
+weaver/chl-nzb-file-subst.wvr.yml/deagle-chl-nzb-file-subst.wvr.yml	true	TIMEOUT	2.027505	46.02445108000006	67.641344
+weaver/chl-nzb-file-symm.wvr.yml/deagle-chl-nzb-file-symm.wvr.yml	true	TIMEOUT	2.098756	46.02092440899992	67.493888
+weaver/chl-nzb-file-trans.wvr.yml/deagle-chl-nzb-file-trans.wvr.yml	true	TIMEOUT	2.102488	46.01549588600005	68.681728
+weaver/chl-poker-hand-subst.wvr.yml/deagle-chl-poker-hand-subst.wvr.yml	true	TIMEOUT	2.114608	46.03010231400003	68.702208
+weaver/chl-poker-hand-symm.wvr.yml/deagle-chl-poker-hand-symm.wvr.yml	true	TIMEOUT	2.057977	46.01284229299995	69.414912
+weaver/chl-poker-hand-trans.wvr.yml/deagle-chl-poker-hand-trans.wvr.yml	true	TIMEOUT	2.231071	46.01409962299999	67.788800
+weaver/chl-simpl-str-subst.wvr.yml/deagle-chl-simpl-str-subst.wvr.yml	true	TIMEOUT	2.005764	46.02160698600005	67.485696
+weaver/chl-simpl-str-symm.wvr.yml/deagle-chl-simpl-str-symm.wvr.yml	true	TIMEOUT	2.077452	46.024385489	67.538944
+weaver/chl-simpl-str-trans.wvr.yml/deagle-chl-simpl-str-trans.wvr.yml	true	TIMEOUT	2.048337	46.027050031000044	68.481024
+weaver/chl-sre-subst.wvr.yml/deagle-chl-sre-subst.wvr.yml	true	TIMEOUT	1.988802	46.01648911500001	67.526656
+weaver/chl-sre-symm.wvr.yml/deagle-chl-sre-symm.wvr.yml	true	TIMEOUT	1.937166	46.014880490999985	67.559424
+weaver/chl-sre-trans.wvr.yml/deagle-chl-sre-trans.wvr.yml	true	TIMEOUT	2.088696	46.014447582	66.289664
+weaver/chl-time-subst.wvr.yml/deagle-chl-time-subst.wvr.yml	true	TIMEOUT	1.945437	46.01083909800013	66.441216
+weaver/chl-time-symm.wvr.yml/deagle-chl-time-symm.wvr.yml	true	TIMEOUT	1.942851	46.07794284800002	67.436544
+weaver/chl-time-trans.wvr.yml/deagle-chl-time-trans.wvr.yml	true	TIMEOUT	2.044468	46.0119371589999	67.411968
+weaver/chl-word-subst.wvr.yml/deagle-chl-word-subst.wvr.yml	true	TIMEOUT	2.121558	46.02004998699999	68.485120
+weaver/chl-word-symm.wvr.yml/deagle-chl-word-symm.wvr.yml	true	TIMEOUT	2.120252	46.02896194300001	68.268032
+weaver/chl-word-trans.wvr.yml/deagle-chl-word-trans.wvr.yml	true	TIMEOUT	2.131472	46.06001603200002	68.575232
+weaver/clever.wvr.yml/deagle-clever.wvr.yml	true	TIMEOUT	2.016786	46.030967249999776	67.379200
+weaver/fibonacci.wvr.yml/deagle-fibonacci.wvr.yml	true	TIMEOUT	2.117092	46.06283935700003	68.464640
+weaver/loop-tiling-eq.wvr.yml/deagle-loop-tiling-eq.wvr.yml	true	TIMEOUT	2.012817	46.02245803000005	68.481024
+weaver/mult-comm.wvr.yml/deagle-mult-comm.wvr.yml	true	TIMEOUT	1.990442	46.013252529000056	66.367488
+weaver/mult-dist.wvr.yml/deagle-mult-dist.wvr.yml	true	TIMEOUT	1.949352	46.014784008000106	67.571712
+weaver/mult-flipped-dist.wvr.yml/deagle-mult-flipped-dist.wvr.yml	true	TIMEOUT	1.973811	46.16748170499977	68.493312
+weaver/parallel-bakery-2.wvr.yml/deagle-parallel-bakery-2.wvr.yml	true	TIMEOUT	2.017671	46.013657559999956	66.469888
+weaver/parallel-bakery-3.wvr.yml/deagle-parallel-bakery-3.wvr.yml	true	TIMEOUT	2.000517	46.02045730999998	68.505600
+weaver/parallel-bakery-4.wvr.yml/deagle-parallel-bakery-4.wvr.yml	true	TIMEOUT	2.261863	46.0164787560002	68.558848
+weaver/parallel-barrier-loop.wvr.yml/deagle-parallel-barrier-loop.wvr.yml	false	TIMEOUT	2.184287	46.2185805590002	67.670016
+weaver/parallel-barrier.wvr.yml/deagle-parallel-barrier.wvr.yml	true	TIMEOUT	2.441663	46.04028346899986	68.505600
+weaver/parallel-bluetooth.wvr.yml/deagle-parallel-bluetooth.wvr.yml	true	TIMEOUT	1.848331	46.30268394899986	68.300800
+weaver/parallel-lamport.wvr.yml/deagle-parallel-lamport.wvr.yml	true	TIMEOUT	1.910095	46.804880727999716	68.714496
+weaver/parallel-min-max-1.wvr.yml/deagle-parallel-min-max-1.wvr.yml	true	TIMEOUT	1.87877	46.11313636599971	67.510272
+weaver/parallel-misc-1.wvr.yml/deagle-parallel-misc-1.wvr.yml	true	TIMEOUT	2.016508	47.357285948000026	66.658304
+weaver/parallel-misc-2-unrolled-atomic.wvr.yml/deagle-parallel-misc-2-unrolled-atomic.wvr.yml	true	TIMEOUT	1.957467	46.19631577000018	68.493312
+weaver/parallel-misc-2-unrolled.wvr.yml/deagle-parallel-misc-2-unrolled.wvr.yml	true	TIMEOUT	1.994467	46.02893406500016	67.448832
+weaver/parallel-misc-2.wvr.yml/deagle-parallel-misc-2.wvr.yml	true	TIMEOUT	2.047162	46.171852554	66.609152
+weaver/parallel-misc-3-extended.wvr.yml/deagle-parallel-misc-3-extended.wvr.yml	true	TIMEOUT	16.109843	46.062286832000154	67.624960
+weaver/parallel-misc-3.wvr.yml/deagle-parallel-misc-3.wvr.yml	true	TIMEOUT	16.894416	46.031708224999875	67.731456
+weaver/parallel-misc-4.wvr.yml/deagle-parallel-misc-4.wvr.yml	true	TIMEOUT	1.926637	46.020580184999744	66.400256
+weaver/parallel-misc-5.wvr.yml/deagle-parallel-misc-5.wvr.yml	true	TIMEOUT	1.994324	46.02252491600029	68.526080
+weaver/parallel-parallel-sum-1-dsl.wvr.yml/deagle-parallel-parallel-sum-1-dsl.wvr.yml	true	TIMEOUT	2.240691	46.1198642180002	67.543040
+weaver/parallel-parallel-sum-1.wvr.yml/deagle-parallel-parallel-sum-1.wvr.yml	true	TIMEOUT	2.24149	46.043847108000136	67.670016
+weaver/parallel-parallel-sum-2.wvr.yml/deagle-parallel-parallel-sum-2.wvr.yml	true	TIMEOUT	2.295994	46.035216935000335	66.506752
+weaver/parallel-parallel-sum-equiv.wvr.yml/deagle-parallel-parallel-sum-equiv.wvr.yml	true	TIMEOUT	2.208141	46.242692142000124	68.378624
+weaver/parallel-simple-equiv.wvr.yml/deagle-parallel-simple-equiv.wvr.yml	true	TIMEOUT	2.129271	46.021235356000034	67.608576
+weaver/parallel-ticket-2.wvr.yml/deagle-parallel-ticket-2.wvr.yml	true	TIMEOUT	2.004837	46.12853538100035	67.579904
+weaver/parallel-ticket-3.wvr.yml/deagle-parallel-ticket-3.wvr.yml	true	TIMEOUT	2.066176	46.027333670999724	68.542464
+weaver/parallel-ticket-4.wvr.yml/deagle-parallel-ticket-4.wvr.yml	true	TIMEOUT	2.197822	46.02618030299982	68.501504
+weaver/parallel-ticket-5.wvr.yml/deagle-parallel-ticket-5.wvr.yml	true	TIMEOUT	1.998918	46.13188794300004	67.502080
+weaver/parallel-ticket-6.wvr.yml/deagle-parallel-ticket-6.wvr.yml	true	TIMEOUT	2.067629	46.12366931299994	68.358144
+weaver/parallel-ticket-7.wvr.yml/deagle-parallel-ticket-7.wvr.yml	true	TIMEOUT	2.05875	46.16570193700045	66.379776
+weaver/popl20-bad-commit-1.wvr-bad.yml/deagle-popl20-bad-commit-1.wvr-bad.yml	true	TIMEOUT	2.103723	46.01186022000002	68.554752
+weaver/popl20-bad-commit-2.wvr-bad.yml/deagle-popl20-bad-commit-2.wvr-bad.yml	true	TIMEOUT	2.167914	46.04243642499978	66.527232
+weaver/popl20-bad-counter-queue.wvr.yml/deagle-popl20-bad-counter-queue.wvr.yml	false	TIMEOUT	1.918761	46.07964255600018	67.493888
+weaver/popl20-bad-counter-queue2.wvr.yml/deagle-popl20-bad-counter-queue2.wvr.yml	true	TIMEOUT	2.003271	46.01474161900023	67.547136
+weaver/popl20-bad-dot-product-alt.wvr.yml/deagle-popl20-bad-dot-product-alt.wvr.yml	true	TIMEOUT	2.052063	46.015939118999995	68.386816
+weaver/popl20-bad-dot-product.wvr.yml/deagle-popl20-bad-dot-product.wvr.yml	true	TIMEOUT	2.11957	46.07971827599977	68.485120
+weaver/popl20-bad-threaded-sum-2.wvr.yml/deagle-popl20-bad-threaded-sum-2.wvr.yml	true	TIMEOUT	1.898277	46.031716586999664	66.408448
+weaver/popl20-bad-three-array-sum-alt.wvr.yml/deagle-popl20-bad-three-array-sum-alt.wvr.yml	true	TIMEOUT	2.122504	46.032818856000176	67.616768
+weaver/popl20-channel-sum.wvr.yml/deagle-popl20-channel-sum.wvr.yml	true	TIMEOUT	2.033952	46.47394614899986	68.489216
+weaver/popl20-commit-1.wvr.yml/deagle-popl20-commit-1.wvr.yml	true	TIMEOUT	2.165903	46.01936390600031	67.485696
+weaver/popl20-commit-2.wvr.yml/deagle-popl20-commit-2.wvr.yml	true	TIMEOUT	2.194876	46.013341474999834	68.644864
+weaver/popl20-counter-determinism.wvr.yml/deagle-popl20-counter-determinism.wvr.yml	true	TIMEOUT	1.948107	46.08064794899974	68.562944
+weaver/popl20-counter-fun.wvr.yml/deagle-popl20-counter-fun.wvr.yml	true	TIMEOUT	2.031104	46.044502177999675	66.691072
+weaver/popl20-difference-det.wvr.yml/deagle-popl20-difference-det.wvr.yml	true	TIMEOUT	1.974182	46.016008347000025	68.587520
+weaver/popl20-figure1-alt.wvr.yml/deagle-popl20-figure1-alt.wvr.yml	true	TIMEOUT	2.036831	46.06051386099989	68.497408
+weaver/popl20-figure1.wvr.yml/deagle-popl20-figure1.wvr.yml	true	TIMEOUT	2.03138	46.22082519300011	68.546560
+weaver/popl20-figure3.wvr.yml/deagle-popl20-figure3.wvr.yml	true	TIMEOUT	1.927173	46.1226157860001	68.358144
+weaver/popl20-min-max-dec.wvr.yml/deagle-popl20-min-max-dec.wvr.yml	true	TIMEOUT	1.929247	46.96687872299981	67.448832
+weaver/popl20-min-max-inc-dec.wvr.yml/deagle-popl20-min-max-inc-dec.wvr.yml	true	TIMEOUT	1.903617	46.02060987899995	68.390912
+weaver/popl20-min-max-inc.wvr.yml/deagle-popl20-min-max-inc.wvr.yml	true	TIMEOUT	1.893428	46.02321215999973	67.420160
+weaver/popl20-more-array-sum-alt.wvr.yml/deagle-popl20-more-array-sum-alt.wvr.yml	false	TIMEOUT	1.984789	46.01771523299976	67.616768
+weaver/popl20-more-array-sum-alt2.wvr.yml/deagle-popl20-more-array-sum-alt2.wvr.yml	true	TIMEOUT	2.026267	46.03785015299991	66.551808
+weaver/popl20-more-array-sum.wvr.yml/deagle-popl20-more-array-sum.wvr.yml	false	TIMEOUT	2.105826	47.33984935299986	67.534848
+weaver/popl20-more-array-sum2.wvr.yml/deagle-popl20-more-array-sum2.wvr.yml	true	TIMEOUT	1.947604	46.01114174600025	66.326528
+weaver/popl20-more-dec-subseq.wvr.yml/deagle-popl20-more-dec-subseq.wvr.yml	true	TIMEOUT	1.933859	46.01184792699996	67.641344
+weaver/popl20-more-inc-subseq.wvr.yml/deagle-popl20-more-inc-subseq.wvr.yml	true	TIMEOUT	1.943067	46.07168843499994	67.571712
+weaver/popl20-more-max-array-hom.wvr.yml/deagle-popl20-more-max-array-hom.wvr.yml	true	TIMEOUT	1.956288	46.57894885699989	67.510272
+weaver/popl20-more-max-array.wvr.yml/deagle-popl20-more-max-array.wvr.yml	true	TIMEOUT	1.942538	46.026445173999946	68.395008
+weaver/popl20-more-min-array-hom.wvr.yml/deagle-popl20-more-min-array-hom.wvr.yml	true	TIMEOUT	1.891405	46.01184568100007	67.551232
+weaver/popl20-more-min-array.wvr.yml/deagle-popl20-more-min-array.wvr.yml	true	TIMEOUT	1.858933	46.01675627600025	67.518464
+weaver/popl20-more-min-le-max.wvr.yml/deagle-popl20-more-min-le-max.wvr.yml	true	TIMEOUT	1.858522	46.027560257000005	66.473984
+weaver/popl20-more-mts.wvr.yml/deagle-popl20-more-mts.wvr.yml	true	TIMEOUT	1.89188	46.01387920399975	67.665920
+weaver/popl20-more-multiply-verify.wvr.yml/deagle-popl20-more-multiply-verify.wvr.yml	true	TIMEOUT	2.189301	47.23200047299997	66.482176
+weaver/popl20-more-nonblocking-counter-alt2.wvr.yml/deagle-popl20-more-nonblocking-counter-alt2.wvr.yml	true	TIMEOUT	1.862468	46.05155921200003	67.432448
+weaver/popl20-more-queue-add-2-nl.wvr.yml/deagle-popl20-more-queue-add-2-nl.wvr.yml	true	TIMEOUT	1.961362	46.01342505100001	67.432448
+weaver/popl20-more-sorted.wvr.yml/deagle-popl20-more-sorted.wvr.yml	true	TIMEOUT	1.8632	46.03595956400022	67.379200
+weaver/popl20-more-sum-array-hom.wvr.yml/deagle-popl20-more-sum-array-hom.wvr.yml	true	TIMEOUT	1.999724	46.04983423299973	67.543040
+weaver/popl20-more-vector-add.wvr.yml/deagle-popl20-more-vector-add.wvr.yml	true	TIMEOUT	2.045956	46.12591403500028	68.399104
+weaver/popl20-mult-4.wvr.yml/deagle-popl20-mult-4.wvr.yml	true	TIMEOUT	1.866048	46.08779888300023	66.281472
+weaver/popl20-mult-equiv.wvr.yml/deagle-popl20-mult-equiv.wvr.yml	true	TIMEOUT	1.945721	46.03051763900021	66.510848
+weaver/popl20-nonblocking-cntr-alt.wvr.yml/deagle-popl20-nonblocking-cntr-alt.wvr.yml	true	TIMEOUT	1.84562	46.01808223700027	67.444736
+weaver/popl20-nonblocking-cntr.wvr.yml/deagle-popl20-nonblocking-cntr.wvr.yml	true	TIMEOUT	1.876429	46.012939666999955	67.686400
+weaver/popl20-prod-cons-eq.wvr.yml/deagle-popl20-prod-cons-eq.wvr.yml	true	TIMEOUT	2.194695	46.01065395700016	68.554752
+weaver/popl20-prod-cons.wvr.yml/deagle-popl20-prod-cons.wvr.yml	true	TIMEOUT	2.077663	46.015175679000095	67.477504
+weaver/popl20-prod-cons3.wvr.yml/deagle-popl20-prod-cons3.wvr.yml	true	TIMEOUT	2.155216	46.07629849799969	68.366336
+weaver/popl20-proofs-counter-add-4-semi-Q67.wvr.yml/deagle-popl20-proofs-counter-add-4-semi-Q67.wvr.yml	true	TIMEOUT	2.102781	46.09973051499992	67.497984
+weaver/popl20-queue-add-2.wvr.yml/deagle-popl20-queue-add-2.wvr.yml	true	TIMEOUT	1.978167	46.07554227199989	68.382720
+weaver/popl20-send-receive-alt.wvr.yml/deagle-popl20-send-receive-alt.wvr.yml	true	TIMEOUT	2.085548	46.021149028999844	67.674112
+weaver/popl20-send-receive.wvr.yml/deagle-popl20-send-receive.wvr.yml	true	TIMEOUT	2.200259	46.036409613999695	67.428352
+weaver/popl20-simple-array-sum.wvr.yml/deagle-popl20-simple-array-sum.wvr.yml	true	TIMEOUT	2.082089	46.031235213999935	67.538944
+weaver/popl20-simple-queue.wvr.yml/deagle-popl20-simple-queue.wvr.yml	true	TIMEOUT	1.982952	46.01168602000007	67.371008
+weaver/popl20-threaded-sum-3.wvr.yml/deagle-popl20-threaded-sum-3.wvr.yml	true	TIMEOUT	1.907335	46.08840852000003	67.579904
+weaver/popl20-three-array-max.wvr.yml/deagle-popl20-three-array-max.wvr.yml	true	TIMEOUT	1.952785	46.011272697000095	67.850240
+weaver/popl20-three-array-min.wvr.yml/deagle-popl20-three-array-min.wvr.yml	true	TIMEOUT	1.98391	46.015122889000395	67.452928
+weaver/popl20-three-array-sum.wvr.yml/deagle-popl20-three-array-sum.wvr.yml	true	TIMEOUT	2.045425	46.1111952440001	66.494464
+weaver/security.wvr.yml/deagle-security.wvr.yml	true	TIMEOUT	2.13139	46.10567707300015	67.686400
+weaver/spaghetti.wvr.yml/deagle-spaghetti.wvr.yml	true	TIMEOUT	2.09141	46.70348565200038	68.468736
+weaver/test-context1.wvr.yml/deagle-test-context1.wvr.yml	true	TIMEOUT	1.984509	46.01539484299974	68.816896
+weaver/test-easy1.wvr.yml/deagle-test-easy1.wvr.yml	true	TIMEOUT	2.038075	46.050218503999986	66.449408
+weaver/test-easy10.wvr.yml/deagle-test-easy10.wvr.yml	true	TIMEOUT	2.040248	46.032540487000006	67.543040
+weaver/test-easy11.wvr.yml/deagle-test-easy11.wvr.yml	true	TIMEOUT	2.068022	46.01319712099985	68.460544
+weaver/test-easy6.wvr.yml/deagle-test-easy6.wvr.yml	true	TIMEOUT	1.94039	46.01079587799995	68.456448
+weaver/test-easy7.wvr.yml/deagle-test-easy7.wvr.yml	true	TIMEOUT	1.993382	46.01382224700001	67.391488
+weaver/test-easy8.wvr.yml/deagle-test-easy8.wvr.yml	true	TIMEOUT	1.979423	46.01551616500001	68.644864
+weaver/test-hard1.wvr.yml/deagle-test-hard1.wvr.yml	true	TIMEOUT	1.952251	46.01257577100023	67.497984
+weaver/test-semi1.wvr.yml/deagle-test-semi1.wvr.yml	true	TIMEOUT	2.047876	47.65426145299989	68.444160
+weaver/unroll-2.wvr.yml/deagle-unroll-2.wvr.yml	true	TIMEOUT	1.95182	46.353257545999895	66.523136
+weaver/unroll-3.wvr.yml/deagle-unroll-3.wvr.yml	true	TIMEOUT	1.945044	46.35046486400006	68.608000
+weaver/unroll-4.wvr.yml/deagle-unroll-4.wvr.yml	true	TIMEOUT	1.950098	46.020744767	66.437120
+weaver/unroll-5.wvr.yml/deagle-unroll-5.wvr.yml	true	TIMEOUT	1.934056	46.02385442800005	67.375104
+weaver/unroll-cond-2.wvr.yml/deagle-unroll-cond-2.wvr.yml	true	TIMEOUT	1.865526	46.01369565300001	67.633152
+weaver/unroll-cond-3.wvr.yml/deagle-unroll-cond-3.wvr.yml	true	TIMEOUT	1.890538	46.02655400000003	67.629056
+weaver/unroll-cond-4.wvr.yml/deagle-unroll-cond-4.wvr.yml	true	TIMEOUT	1.907008	46.01403849799999	67.411968
+weaver/unroll-cond-5.wvr.yml/deagle-unroll-cond-5.wvr.yml	true	TIMEOUT	1.958418	46.01343408499997	67.575808

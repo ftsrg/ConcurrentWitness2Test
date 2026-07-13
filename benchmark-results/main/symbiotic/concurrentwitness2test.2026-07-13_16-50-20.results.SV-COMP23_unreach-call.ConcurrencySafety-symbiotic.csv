@@ -1,0 +1,115 @@
+tool		ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-symbiotic	SV-COMP23_unreach-call.ConcurrencySafety-symbiotic	SV-COMP23_unreach-call.ConcurrencySafety-symbiotic	SV-COMP23_unreach-call.ConcurrencySafety-symbiotic
+../svcomp23-witness-benchmarks/tools/symbiotic/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/symbiotic-13-privatized_18-first-reads_unknown_1_neg.yml	false	false(unreach-call)	2.18969	5.483525314000005	68.046848
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/symbiotic-13-privatized_18-first-reads_unknown_1_pos.yml	false	ERROR(ineffective witness)	2.234938	5.379900964000001	78.467072
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/symbiotic-13-privatized_18-first-reads_unknown_2_neg.yml	false	ERROR(ineffective witness)	2.223806	5.348985192000001	82.649088
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/symbiotic-13-privatized_18-first-reads_unknown_2_pos.yml	false	false(unreach-call)	2.188908	5.270717381999994	69.160960
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/symbiotic-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	2.223398	5.414680659000005	65.830912
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/symbiotic-13-privatized_19-publish-precision_unknown_1_pos.yml	false	TIMEOUT	2.063613	46.066228886999994	65.736704
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/symbiotic-13-privatized_19-publish-precision_unknown_2_neg.yml	false	TIMEOUT	2.066369	46.060133506999996	66.043904
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/symbiotic-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	2.206799	5.401134474999999	65.662976
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/symbiotic-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	TIMEOUT	2.067603	46.16451824200001	68.145152
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/symbiotic-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	TIMEOUT	2.054882	46.13012751	67.829760
+goblint-regression/28-race_reach_45-escape_racing.yml/symbiotic-28-race_reach_45-escape_racing.yml	false	ERROR(ineffective witness)	2.159697	3.0546920889999996	67.788800
+goblint-regression/28-race_reach_94-alloc_region_racing.yml/symbiotic-28-race_reach_94-alloc_region_racing.yml	false	false(unreach-call)	2.348177	3.4288192839999994	68.317184
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/symbiotic-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	false	ERROR(ineffective witness)	2.205819	3.317818490999997	68.837376
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/symbiotic-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	false(unreach-call)	2.164879	3.2504134899999997	69.324800
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/symbiotic-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	ERROR(ineffective witness)	2.198166	3.4767398869999937	67.936256
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/symbiotic-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	false(unreach-call)	2.162694	3.310154890000007	69.226496
+ldv-races/race-1_2-join.yml/symbiotic-race-1_2-join.yml	false	ERROR(ineffective witness)	2.405993	3.4809693260000074	68.931584
+ldv-races/race-1_3-join.yml/symbiotic-race-1_3-join.yml	false	ERROR(ineffective witness)	2.404238	3.4311520100000052	68.202496
+pthread-C-DAC/pthread-demo-datarace-3.yml/symbiotic-pthread-demo-datarace-3.yml	false	false(unreach-call)	2.310349	3.5644308859999967	68.972544
+pthread-deagle/circular_buffer_bad.yml/symbiotic-circular_buffer_bad.yml	false	ERROR(ineffective witness)	2.262706	3.560608680999991	68.321280
+pthread-ext/25_stack_longer-1.yml/symbiotic-25_stack_longer-1.yml	false	false(unreach-call)	2.210487	3.513096118000007	67.760128
+pthread-ext/25_stack_longest-2.yml/symbiotic-25_stack_longest-2.yml	false	false(unreach-call)	2.276528	3.731587128000001	68.722688
+pthread-ext/26_stack_cas_longer-1.yml/symbiotic-26_stack_cas_longer-1.yml	false	false(unreach-call)	2.225877	3.6065399930000126	66.990080
+pthread-ext/26_stack_cas_longest-1.yml/symbiotic-26_stack_cas_longest-1.yml	false	false(unreach-call)	2.214617	3.458748442000001	68.861952
+pthread-ext/28_buggy_simple_loop1_vf.yml/symbiotic-28_buggy_simple_loop1_vf.yml	false	TIMEOUT	46.559975	45.494637975	1800.359936
+pthread-ext/40_barrier_vf.yml/symbiotic-40_barrier_vf.yml	false	TIMEOUT	2.074525	46.02362463	67.641344
+pthread-lit/qw2004-2b.yml/symbiotic-qw2004-2b.yml	false	ERROR(ineffective witness)	2.248095	3.5759154120000005	68.177920
+pthread-wmm/mix000.oepc.yml/symbiotic-mix000.oepc.yml	false	TIMEOUT	2.843487	46.011731094	69.013504
+pthread-wmm/mix000.opt.yml/symbiotic-mix000.opt.yml	false	TIMEOUT	2.873939	46.02490713899999	68.952064
+pthread-wmm/mix009.oepc.yml/symbiotic-mix009.oepc.yml	false	TIMEOUT	2.694062	46.07078883300001	68.943872
+pthread-wmm/mix009.opt.yml/symbiotic-mix009.opt.yml	false	TIMEOUT	2.819089	46.13646092100001	68.227072
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/symbiotic-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT	2.333165	46.01806060400001	67.801088
+pthread-wmm/mix012_pso.opt_tso.opt.yml/symbiotic-mix012_pso.opt_tso.opt.yml	false	TIMEOUT	2.360497	46.04389878499998	68.079616
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/symbiotic-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.267766	46.045358367999995	68.038656
+pthread-wmm/mix022_tso.yml/symbiotic-mix022_tso.yml	false	TIMEOUT	2.417113	46.043951991	68.222976
+pthread-wmm/mix031.oepc.yml/symbiotic-mix031.oepc.yml	false	TIMEOUT	2.347742	46.011802175000014	67.698688
+pthread-wmm/mix031.opt.yml/symbiotic-mix031.opt.yml	false	TIMEOUT	2.207398	46.019091419000006	68.714496
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/symbiotic-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT	2.214596	46.02367825799999	66.867200
+pthread-wmm/mix034_pso.opt_tso.opt.yml/symbiotic-mix034_pso.opt_tso.opt.yml	false	TIMEOUT	2.228551	46.55030773099999	68.870144
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/symbiotic-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.268892	46.25208331500001	67.825664
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/symbiotic-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.398026	46.408770798000006	68.931584
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/symbiotic-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.232905	46.018014248999975	68.968448
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/symbiotic-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.41938	46.04165368699998	68.362240
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/symbiotic-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.399234	46.024906004	68.104192
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/symbiotic-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.304278	46.201976962	67.825664
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/symbiotic-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.315986	46.01484007399998	69.148672
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/symbiotic-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.351148	46.15068006300001	68.079616
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/symbiotic-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.224529	46.014377682	67.256320
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/symbiotic-rfi000_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.277719	46.797813770999994	66.756608
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/symbiotic-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.27204	46.24076327399999	68.972544
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/symbiotic-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.28553	46.162507146999985	67.981312
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/symbiotic-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.129352	46.044422655000005	67.629056
+pthread-wmm/rfi004.yml/symbiotic-rfi004.yml	false	TIMEOUT	2.180557	46.01284645199999	68.591616
+pthread-wmm/rfi005.yml/symbiotic-rfi005.yml	false	TIMEOUT	2.179452	46.01166186099999	67.022848
+pthread-wmm/rfi006_power.oepc.yml/symbiotic-rfi006_power.oepc.yml	false	TIMEOUT	2.375016	46.064465689	67.911680
+pthread-wmm/rfi006_power.opt.yml/symbiotic-rfi006_power.opt.yml	false	TIMEOUT	2.343553	46.01366982000002	67.952640
+pthread-wmm/rfi006_rmo.yml/symbiotic-rfi006_rmo.yml	false	TIMEOUT	2.371999	46.068560222	67.977216
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/symbiotic-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.19592	46.021631756999994	68.800512
+pthread-wmm/rfi007_tso.yml/symbiotic-rfi007_tso.yml	false	TIMEOUT	2.223224	46.026083919	68.128768
+pthread-wmm/rfi008.oepc.yml/symbiotic-rfi008.oepc.yml	false	TIMEOUT	2.246717	46.08049278499999	68.812800
+pthread-wmm/rfi008.opt.yml/symbiotic-rfi008.opt.yml	false	TIMEOUT	2.322587	46.13853634600002	68.935680
+pthread-wmm/rfi009_power.oepc.yml/symbiotic-rfi009_power.oepc.yml	false	TIMEOUT	2.24864	46.01289619300002	68.816896
+pthread-wmm/rfi009_rmo.oepc.yml/symbiotic-rfi009_rmo.oepc.yml	false	TIMEOUT	2.306692	46.010354414999995	66.523136
+pthread-wmm/rfi010.yml/symbiotic-rfi010.yml	false	TIMEOUT	2.301989	46.04092190099999	68.206592
+pthread-wmm/safe000_power.oepc.yml/symbiotic-safe000_power.oepc.yml	false	TIMEOUT	2.442488	46.01504492300003	69.300224
+pthread-wmm/safe000_rmo.yml/symbiotic-safe000_rmo.yml	false	TIMEOUT	2.173472	46.011307703	69.165056
+pthread-wmm/safe001_power.oepc.yml/symbiotic-safe001_power.oepc.yml	false	TIMEOUT	2.279559	46.015714412999955	67.018752
+pthread-wmm/safe001_rmo.oepc.yml/symbiotic-safe001_rmo.oepc.yml	false	TIMEOUT	2.182454	46.02378004899998	69.238784
+pthread-wmm/safe002_power.oepc.yml/symbiotic-safe002_power.oepc.yml	false	TIMEOUT	2.31858	46.019436705999965	69.033984
+pthread-wmm/safe002_rmo.oepc.yml/symbiotic-safe002_rmo.oepc.yml	false	TIMEOUT	2.427335	46.044512835000035	69.029888
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/symbiotic-safe006_power.oepc-thin000_power.oepc.yml	false	TIMEOUT	2.206404	46.36633495500001	66.711552
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/symbiotic-safe006_power.opt-thin000_power.opt.yml	false	TIMEOUT	2.364564	46.014613638000014	67.813376
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/symbiotic-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.220356	46.093649758000026	67.735552
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/symbiotic-safe007_power.oepc-thin001_power.oepc.yml	false	TIMEOUT	2.25956	46.287776054000005	68.956160
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/symbiotic-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.317012	46.05074671	67.649536
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/symbiotic-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.112044	46.01656837799999	66.777088
+pthread-wmm/safe009_power.oepc.yml/symbiotic-safe009_power.oepc.yml	false	TIMEOUT	2.257996	46.132123103000026	68.915200
+pthread-wmm/safe009_rmo.oepc.yml/symbiotic-safe009_rmo.oepc.yml	false	TIMEOUT	2.275661	46.13313412499997	66.838528
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/symbiotic-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.192835	46.023864239999966	67.829760
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/symbiotic-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.214864	46.01036936899999	67.915776
+pthread-wmm/safe012_power.oepc.yml/symbiotic-safe012_power.oepc.yml	false	TIMEOUT	2.126956	46.028777562000016	67.604480
+pthread-wmm/safe012_rmo.oepc.yml/symbiotic-safe012_rmo.oepc.yml	false	TIMEOUT	2.130619	46.009881029999974	67.862528
+pthread-wmm/safe014_power.oepc.yml/symbiotic-safe014_power.oepc.yml	false	TIMEOUT	2.209794	46.20743627799999	68.755456
+pthread-wmm/safe014_power.opt.yml/symbiotic-safe014_power.opt.yml	false	TIMEOUT	2.386916	46.14590833600005	66.809856
+pthread-wmm/safe014_rmo.oepc.yml/symbiotic-safe014_rmo.oepc.yml	false	TIMEOUT	2.164545	46.03367903499998	66.711552
+pthread-wmm/safe015_power.oepc.yml/symbiotic-safe015_power.oepc.yml	false	TIMEOUT	2.239726	46.01790577100002	68.083712
+pthread-wmm/safe016_power.oepc.yml/symbiotic-safe016_power.oepc.yml	false	TIMEOUT	2.412621	46.061059849	67.846144
+pthread-wmm/safe016_rmo.oepc.yml/symbiotic-safe016_rmo.oepc.yml	false	TIMEOUT	2.428884	46.016855222000004	69.038080
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/symbiotic-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.292893	46.01514536100001	66.801664
+pthread-wmm/safe018_power.oepc.yml/symbiotic-safe018_power.oepc.yml	false	TIMEOUT	2.441012	46.022308486999975	68.964352
+pthread-wmm/safe018_rmo.oepc.yml/symbiotic-safe018_rmo.oepc.yml	false	TIMEOUT	2.227869	46.16393870300004	68.644864
+pthread-wmm/safe019_power.oepc.yml/symbiotic-safe019_power.oepc.yml	false	TIMEOUT	2.456623	46.01445916200004	67.891200
+pthread-wmm/safe019_rmo.oepc.yml/symbiotic-safe019_rmo.oepc.yml	false	TIMEOUT	2.546019	46.10943588199996	67.874816
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/symbiotic-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.398385	46.15875578999999	68.038656
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/symbiotic-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.288795	46.143435606000025	68.067328
+pthread-wmm/safe025_power.yml/symbiotic-safe025_power.yml	false	TIMEOUT	2.379746	46.011848903999976	69.062656
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/symbiotic-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.21439	46.02126688999999	69.308416
+pthread-wmm/safe027_power.oepc.yml/symbiotic-safe027_power.oepc.yml	false	TIMEOUT	2.440521	46.209917742000016	68.878336
+pthread-wmm/safe027_rmo.yml/symbiotic-safe027_rmo.yml	false	TIMEOUT	2.335253	46.146548935	67.907584
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/symbiotic-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.230429	46.20202423999996	68.743168
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/symbiotic-safe029_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.206956	46.205108182000004	68.857856
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/symbiotic-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.441952	46.012054213	68.919296
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/symbiotic-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.232574	46.019373959999996	66.600960
+pthread-wmm/thin002_power.oepc.yml/symbiotic-thin002_power.oepc.yml	false	TIMEOUT	2.294437	46.026963299000045	68.784128
+pthread-wmm/thin002_rmo.yml/symbiotic-thin002_rmo.yml	false	TIMEOUT	2.302626	46.240501779	67.813376
+pthread/lazy01.yml/symbiotic-lazy01.yml	false	TIMEOUT	2.208212	46.01427623500001	66.560000
+pthread/queue.yml/symbiotic-queue.yml	false	ERROR(ineffective witness)	2.391008	3.9316983530000016	67.706880
+pthread/singleton.yml/symbiotic-singleton.yml	false	ERROR(ineffective witness)	2.483479	13.824404479999998	68.702208
+pthread/stateful01-1.yml/symbiotic-stateful01-1.yml	false	TIMEOUT	2.327114	46.013134666999974	67.411968
+pthread/triangular-2.yml/symbiotic-triangular-2.yml	false	ERROR(ineffective witness)	2.339022	6.203431206000005	66.502656
+weaver/chl-poker-hand-symm.wvr.yml/symbiotic-chl-poker-hand-symm.wvr.yml	true	TIMEOUT	2.466668	46.01861235400003	69.816320
+weaver/parallel-barrier-loop.wvr.yml/symbiotic-parallel-barrier-loop.wvr.yml	false	TIMEOUT	2.306633	46.05387757600005	68.497408

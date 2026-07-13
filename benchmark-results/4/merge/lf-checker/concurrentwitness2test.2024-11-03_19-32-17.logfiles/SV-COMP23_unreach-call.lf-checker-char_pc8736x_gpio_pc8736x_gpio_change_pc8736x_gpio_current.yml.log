@@ -1,0 +1,22 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/lf-checker/pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.i --graphml-witness svcomp23-witness-benchmarks/tools/lf-checker/pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 65, in translate_to_c
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1885, in _execute_child
+    self.pid = _fork_exec(
+               ^^^^^^^^^^^
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+/tmp/BenchExec_run_tid_68y3/tmp/tmp5h5z0_m3.c
+Compilation started
+Verdict: Unknown error

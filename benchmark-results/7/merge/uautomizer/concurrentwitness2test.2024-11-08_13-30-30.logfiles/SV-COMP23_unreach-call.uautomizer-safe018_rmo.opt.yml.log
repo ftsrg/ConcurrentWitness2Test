@@ -1,0 +1,64 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/uautomizer/pthread-wmm/safe018_rmo.opt.yml/safe018_rmo.opt.i --graphml-witness svcomp23-witness-benchmarks/tools/uautomizer/pthread-wmm/safe018_rmo.opt.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id programfile. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id programhash. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id sourcecodelang. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id producer. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id specification. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id creationtime. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id witness-type. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id architecture. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id entry. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id nodetype. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id violation. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id cyclehead. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id invariant. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id threadId. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id endline. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id enterLoopHead. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id createThread. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id enterFunction. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id startline. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id returnFrom. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id assumption. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id tokens. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id control. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id originfile. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id sourcecode. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 45, in translate_to_c
+    apply_witness(ast, filename, witness)
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/witness2ast.py", line 263, in apply_witness
+    type=ret_type, value=assumptions[varname]
+                         ~~~~~~~~~~~^^^^^^^^^
+KeyError: 'weak$$choice1'
+Verdict: Incompatible witness

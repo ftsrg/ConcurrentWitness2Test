@@ -1,0 +1,783 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/symbiotic/pthread/lazy01.yml/lazy01.i --graphml-witness svcomp23-witness-benchmarks/tools/symbiotic/pthread/lazy01.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/tmp/BenchExec_run_u044fo5n/tmp/tmpwm379cra.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Released 1
+Initialized variables
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Released 1
+Initialized variables
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Paused thread 3 at 0 until 1
+Initialized variables
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Released 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Initialized variables
+Paused thread 3 at 0 until 1
+Released 1
+Resumed thread 3 at 1
+Released 2
+Reached error!
+
+Execution ended (exit code 74)
+{-1: 98, 0: 2}
+Verdict: SOMETIMES

@@ -1,0 +1,53 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/rfi009_power.oepc.yml/rfi009_power.oepc.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/rfi009_power.oepc.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/__main__.py", line 146, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_zhggmc3w/tmp/tmpjgwgf4od.c
+Compilation started
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c: In function ‘P0’:
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c:763:56: error: ‘FALSE’ undeclared (first use in this function)
+  763 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                        ^    
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c:763:56: note: each undeclared identifier is reported only once for each function it appears in
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c:763:61: error: expected ‘)’ before ‘;’ token
+  763 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                             ^
+      |                                                             )
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c:764:61: error: expected ‘)’ before ‘;’ token
+  764 |   weak$$choice2 = __VERIFIER_nondet_bool();
+      |                                                             ^
+      |                                                             )
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c:767:61: error: expected ‘)’ before ‘;’ token
+  767 |   weak$$choice1 = __VERIFIER_nondet_bool();
+      |                                                             ^
+      |                                                             )
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c: In function ‘P1’:
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c:800:56: error: ‘FALSE’ undeclared (first use in this function)
+  800 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                        ^    
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c:800:61: error: expected ‘)’ before ‘;’ token
+  800 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                             ^
+      |                                                             )
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c:801:61: error: expected ‘)’ before ‘;’ token
+  801 |   weak$$choice2 = __VERIFIER_nondet_bool();
+      |                                                             ^
+      |                                                             )
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c: In function ‘__c2tt_main’:
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c:868:56: error: ‘TRUE’ undeclared (first use in this function)
+  868 |   weak$$choice1 = __VERIFIER_nondet_bool();
+      |                                                        ^   
+/tmp/BenchExec_run_zhggmc3w/tmp/tmp8lcbtvyp.c:868:60: error: expected ‘)’ before ‘;’ token
+  868 |   weak$$choice1 = __VERIFIER_nondet_bool();
+      |                                                            ^
+      |                                                            )
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

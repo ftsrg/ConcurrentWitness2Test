@@ -1,0 +1,259 @@
+tool	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-pesco	SV-COMP23_unreach-call.ConcurrencySafety-pesco	SV-COMP23_unreach-call.ConcurrencySafety-pesco	SV-COMP23_unreach-call.ConcurrencySafety-pesco
+../svcomp23-witness-benchmarks/tools/pesco/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/pesco-13-privatized_18-first-reads_unknown_1_neg.yml	false(unreach-call)	0.658557	2.672889469000012	59.871232
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/pesco-13-privatized_18-first-reads_unknown_1_pos.yml	ERROR(ineffective witness)	0.659244	2.6543211919999976	61.042688
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/pesco-13-privatized_18-first-reads_unknown_2_neg.yml	ERROR(ineffective witness)	0.668836	2.656463653000003	60.428288
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/pesco-13-privatized_18-first-reads_unknown_2_pos.yml	false(unreach-call)	0.655334	2.6471364820000076	61.095936
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/pesco-13-privatized_19-publish-precision_unknown_1_neg.yml	false(unreach-call)	0.637927	2.6187095700000214	59.756544
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/pesco-13-privatized_19-publish-precision_unknown_1_pos.yml	ERROR(ineffective witness)	0.668495	2.6674857659999986	60.989440
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/pesco-13-privatized_19-publish-precision_unknown_2_neg.yml	ERROR(ineffective witness)	0.583061	2.577398402	38.051840
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/pesco-13-privatized_19-publish-precision_unknown_2_pos.yml	false(unreach-call)	0.571361	2.6297667329999967	37.502976
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/pesco-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false(unreach-call)	0.567833	2.50285621499998	37.421056
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/pesco-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false(unreach-call)	0.595112	2.535487039000003	37.994496
+goblint-regression/28-race_reach_45-escape_racing.yml/pesco-28-race_reach_45-escape_racing.yml	ERROR(ineffective witness)	0.589074	1.6203592889999925	34.746368
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/pesco-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	ERROR(ineffective witness)	0.633123	1.7449533620000182	34.770944
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/pesco-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false(unreach-call)	0.614789	1.6816829480000024	34.734080
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/pesco-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	ERROR(ineffective witness)	0.568165	1.5600919269999736	34.660352
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/pesco-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false(unreach-call)	0.571378	1.6960824290000005	34.656256
+ldv-races/race-1_2-join.yml/pesco-race-1_2-join.yml	TIMEOUT	0.771614	46.03860333200001	36.204544
+ldv-races/race-1_3-join.yml/pesco-race-1_3-join.yml	TIMEOUT	0.820897	46.03402464299998	36.245504
+ldv-races/race-2_3-container_of.yml/pesco-race-2_3-container_of.yml	ERROR(ineffective witness)	1.6608	36.23980301999998	36.597760
+ldv-races/race-2_4-container_of.yml/pesco-race-2_4-container_of.yml	ERROR(ineffective witness)	1.656368	35.671368881999996	36.585472
+ldv-races/race-2_5-container_of.yml/pesco-race-2_5-container_of.yml	ERROR(ineffective witness)	1.65166	36.55124891	36.610048
+pthread-wmm/mix000.oepc.yml/pesco-mix000.oepc.yml	ERROR(ineffective witness)	0.761952	34.788257867	36.442112
+pthread-wmm/mix000.opt.yml/pesco-mix000.opt.yml	ERROR(ineffective witness)	0.739988	34.169472652999985	36.143104
+pthread-wmm/mix001.oepc.yml/pesco-mix001.oepc.yml	ERROR(ineffective witness)	0.76913	34.874606309	36.605952
+pthread-wmm/mix001.opt.yml/pesco-mix001.opt.yml	ERROR(ineffective witness)	0.770177	34.578802707999984	36.306944
+pthread-wmm/mix002.oepc.yml/pesco-mix002.oepc.yml	ERROR(ineffective witness)	0.762912	34.56773382200001	36.614144
+pthread-wmm/mix002.opt.yml/pesco-mix002.opt.yml	ERROR(ineffective witness)	0.778846	38.61504017300001	36.442112
+pthread-wmm/mix003.oepc.yml/pesco-mix003.oepc.yml	ERROR(ineffective witness)	0.768913	38.95185785999999	36.339712
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/pesco-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	ERROR(ineffective witness)	0.761514	40.156859502	36.356096
+pthread-wmm/mix004.oepc.yml/pesco-mix004.oepc.yml	ERROR(ineffective witness)	0.807293	41.461081244999974	36.556800
+pthread-wmm/mix004.opt.yml/pesco-mix004.opt.yml	ERROR(ineffective witness)	0.772071	40.374511146	36.573184
+pthread-wmm/mix005.opt.yml/pesco-mix005.opt.yml	ERROR(ineffective witness)	0.781453	40.64249889300001	36.560896
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix005_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.792042	41.296977932000004	36.904960
+pthread-wmm/mix005_tso.oepc.yml/pesco-mix005_tso.oepc.yml	ERROR(ineffective witness)	0.80369	41.59676288700001	36.646912
+pthread-wmm/mix006.opt.yml/pesco-mix006.opt.yml	ERROR(ineffective witness)	0.779791	43.14262401600001	36.274176
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix006_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.772372	42.183386473999974	36.593664
+pthread-wmm/mix006_tso.oepc.yml/pesco-mix006_tso.oepc.yml	ERROR(ineffective witness)	0.815034	41.05539510800003	37.736448
+pthread-wmm/mix007.oepc.yml/pesco-mix007.oepc.yml	ERROR(ineffective witness)	0.782264	43.439171560000005	36.835328
+pthread-wmm/mix007.opt.yml/pesco-mix007.opt.yml	ERROR(ineffective witness)	0.796025	42.25546631399999	36.556800
+pthread-wmm/mix008.opt.yml/pesco-mix008.opt.yml	ERROR(ineffective witness)	0.795867	43.43267846599997	36.503552
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix008_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.81912	44.452674479000024	36.716544
+pthread-wmm/mix009.oepc.yml/pesco-mix009.oepc.yml	ERROR(ineffective witness)	0.778061	44.76587333200001	36.057088
+pthread-wmm/mix009.opt.yml/pesco-mix009.opt.yml	ERROR(ineffective witness)	0.785908	44.61688731799998	36.229120
+pthread-wmm/mix010.oepc.yml/pesco-mix010.oepc.yml	ERROR(ineffective witness)	0.807106	44.94295000599999	36.331520
+pthread-wmm/mix010.opt.yml/pesco-mix010.opt.yml	ERROR(ineffective witness)	0.761714	43.815116649000004	36.278272
+pthread-wmm/mix011.opt.yml/pesco-mix011.opt.yml	ERROR(ineffective witness)	0.77331	43.296075504999976	36.388864
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix011_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.788056	43.90619491699999	36.388864
+pthread-wmm/mix011_tso.oepc.yml/pesco-mix011_tso.oepc.yml	ERROR(ineffective witness)	0.779875	42.992063718	36.360192
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/pesco-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	ERROR(ineffective witness)	0.759836	43.85425346300002	35.905536
+pthread-wmm/mix012_pso.opt_tso.opt.yml/pesco-mix012_pso.opt_tso.opt.yml	ERROR(ineffective witness)	0.759838	42.590734492000024	36.077568
+pthread-wmm/mix013.oepc.yml/pesco-mix013.oepc.yml	ERROR(ineffective witness)	0.791849	43.08664590400002	36.900864
+pthread-wmm/mix013.opt.yml/pesco-mix013.opt.yml	ERROR(ineffective witness)	0.783506	42.53933932699999	36.716544
+pthread-wmm/mix014.opt.yml/pesco-mix014.opt.yml	ERROR(ineffective witness)	0.820872	43.442451033	36.544512
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix014_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.809577	42.74046962400001	36.872192
+pthread-wmm/mix015.oepc.yml/pesco-mix015.oepc.yml	ERROR(ineffective witness)	0.780252	43.28585186799995	36.298752
+pthread-wmm/mix015.opt.yml/pesco-mix015.opt.yml	ERROR(ineffective witness)	0.771763	43.288941780000016	36.483072
+pthread-wmm/mix016.oepc.yml/pesco-mix016.oepc.yml	ERROR(ineffective witness)	0.751964	42.756955618999996	36.552704
+pthread-wmm/mix016_power.opt_rmo.opt.yml/pesco-mix016_power.opt_rmo.opt.yml	ERROR(ineffective witness)	0.762877	43.78334844400001	35.921920
+pthread-wmm/mix016_pso.opt_tso.opt.yml/pesco-mix016_pso.opt_tso.opt.yml	ERROR(ineffective witness)	0.773234	42.59078460200004	36.438016
+pthread-wmm/mix017.oepc.yml/pesco-mix017.oepc.yml	ERROR(ineffective witness)	0.809186	42.67382505400002	36.671488
+pthread-wmm/mix017_power.opt_rmo.opt.yml/pesco-mix017_power.opt_rmo.opt.yml	ERROR(ineffective witness)	0.785655	42.06828810800005	36.130816
+pthread-wmm/mix017_pso.opt_tso.opt.yml/pesco-mix017_pso.opt_tso.opt.yml	ERROR(ineffective witness)	0.809629	42.67183377499998	36.409344
+pthread-wmm/mix018.opt.yml/pesco-mix018.opt.yml	ERROR(ineffective witness)	0.808243	43.002001156999995	36.417536
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix018_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.801685	42.818194366	36.634624
+pthread-wmm/mix018_tso.oepc.yml/pesco-mix018_tso.oepc.yml	ERROR(ineffective witness)	0.77686	41.23884173899995	36.921344
+pthread-wmm/mix019.opt.yml/pesco-mix019.opt.yml	ERROR(ineffective witness)	0.772028	42.181903046	36.265984
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix019_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.760564	41.729802904999985	36.290560
+pthread-wmm/mix019_tso.oepc.yml/pesco-mix019_tso.oepc.yml	ERROR(ineffective witness)	0.791974	43.163169890000006	36.188160
+pthread-wmm/mix020.oepc.yml/pesco-mix020.oepc.yml	ERROR(ineffective witness)	0.813632	44.080817077000006	36.675584
+pthread-wmm/mix020.opt.yml/pesco-mix020.opt.yml	ERROR(ineffective witness)	0.813607	44.095265595	36.540416
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix021_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.809265	44.36466233200002	36.622336
+pthread-wmm/mix021_tso.oepc.yml/pesco-mix021_tso.oepc.yml	ERROR(ineffective witness)	0.817401	44.293746021000004	36.564992
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.768687	44.806118019999985	35.954688
+pthread-wmm/mix022_tso.yml/pesco-mix022_tso.yml	ERROR(ineffective witness)	0.793472	44.39346137199999	36.425728
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix023_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.788003	42.81213744600001	36.540416
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/pesco-mix023_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.78623	43.077118961	36.044800
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/pesco-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.757224	43.22946497199996	36.376576
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/pesco-mix024_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.760064	41.807930142999965	36.204544
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/pesco-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.778908	42.56770569300005	36.352000
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/pesco-mix025_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.757799	42.962349510000024	35.958784
+pthread-wmm/mix026.oepc.yml/pesco-mix026.oepc.yml	ERROR(ineffective witness)	0.778526	42.63387875000001	36.614144
+pthread-wmm/mix026_power.opt_tso.opt.yml/pesco-mix026_power.opt_tso.opt.yml	ERROR(ineffective witness)	0.795088	43.294265971000016	36.376576
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/pesco-mix026_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.766423	41.585494822000044	36.179968
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix027_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.792687	43.16671657899997	36.540416
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/pesco-mix027_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.777347	42.65744448800001	36.241408
+pthread-wmm/mix027_tso.yml/pesco-mix027_tso.yml	ERROR(ineffective witness)	0.786014	42.48887159399999	36.630528
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix028_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.771027	42.82278560499998	36.331520
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/pesco-mix028_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.763496	44.102386351999996	36.245504
+pthread-wmm/mix028_tso.yml/pesco-mix028_tso.yml	ERROR(ineffective witness)	0.788313	43.717785909999975	36.511744
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/pesco-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.814166	43.269234799	36.605952
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/pesco-mix029_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.790319	43.39705115800001	36.343808
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix030_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.798087	43.64101270499998	36.605952
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/pesco-mix030_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.798591	43.922415414	36.474880
+pthread-wmm/mix030_tso.yml/pesco-mix030_tso.yml	ERROR(ineffective witness)	0.790145	43.558146670999975	36.507648
+pthread-wmm/mix031.oepc.yml/pesco-mix031.oepc.yml	ERROR(ineffective witness)	0.754164	43.046727837999924	36.270080
+pthread-wmm/mix031.opt.yml/pesco-mix031.opt.yml	ERROR(ineffective witness)	0.746837	43.638646213000015	35.815424
+pthread-wmm/mix032.oepc.yml/pesco-mix032.oepc.yml	ERROR(ineffective witness)	0.77232	44.05742304299997	36.401152
+pthread-wmm/mix032.opt.yml/pesco-mix032.opt.yml	ERROR(ineffective witness)	0.760611	43.74122380000006	35.905536
+pthread-wmm/mix033.opt.yml/pesco-mix033.opt.yml	ERROR(ineffective witness)	0.78877	44.341266163	35.966976
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix033_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.780002	43.66720085100002	36.368384
+pthread-wmm/mix033_tso.oepc.yml/pesco-mix033_tso.oepc.yml	TIMEOUT (ERROR(ineffective witness))	0.786227	45.25376176100002	36.429824
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/pesco-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	TIMEOUT (ERROR(ineffective witness))	0.747365	45.474177967	35.889152
+pthread-wmm/mix034_pso.opt_tso.opt.yml/pesco-mix034_pso.opt_tso.opt.yml	ERROR(ineffective witness)	0.754049	44.011334428	35.614720
+pthread-wmm/mix035.oepc.yml/pesco-mix035.oepc.yml	ERROR(ineffective witness)	0.798644	44.18600617300001	36.274176
+pthread-wmm/mix035_power.opt_rmo.opt.yml/pesco-mix035_power.opt_rmo.opt.yml	ERROR(ineffective witness)	0.772504	43.353407927000035	36.184064
+pthread-wmm/mix035_pso.opt_tso.opt.yml/pesco-mix035_pso.opt_tso.opt.yml	ERROR(ineffective witness)	0.767346	43.8973876	35.831808
+pthread-wmm/mix036.oepc.yml/pesco-mix036.oepc.yml	ERROR(ineffective witness)	0.791913	42.87300936399993	36.732928
+pthread-wmm/mix036_power.opt_rmo.opt.yml/pesco-mix036_power.opt_rmo.opt.yml	ERROR(ineffective witness)	0.798364	44.55199272900006	36.409344
+pthread-wmm/mix036_pso.opt_tso.opt.yml/pesco-mix036_pso.opt_tso.opt.yml	ERROR(ineffective witness)	0.790903	44.25416326699997	36.139008
+pthread-wmm/mix037.opt.yml/pesco-mix037.opt.yml	ERROR(ineffective witness)	0.778753	44.16631516899997	36.147200
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix037_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.803755	43.495330355999954	36.802560
+pthread-wmm/mix037_tso.oepc.yml/pesco-mix037_tso.oepc.yml	ERROR(ineffective witness)	0.786254	44.05185696199999	36.773888
+pthread-wmm/mix038.opt.yml/pesco-mix038.opt.yml	TIMEOUT (ERROR(ineffective witness))	0.800104	45.554270379999934	35.782656
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix038_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.781637	44.418307303999995	36.380672
+pthread-wmm/mix038_tso.oepc.yml/pesco-mix038_tso.oepc.yml	ERROR(ineffective witness)	0.785529	43.12729466199994	36.298752
+pthread-wmm/mix039.oepc.yml/pesco-mix039.oepc.yml	ERROR(ineffective witness)	0.806272	44.07835220499999	36.925440
+pthread-wmm/mix039.opt.yml/pesco-mix039.opt.yml	ERROR(ineffective witness)	0.763383	43.191359734	36.139008
+pthread-wmm/mix040.opt.yml/pesco-mix040.opt.yml	ERROR(ineffective witness)	0.780913	42.90711206799995	35.917824
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix040_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.774997	43.178097415000025	36.806656
+pthread-wmm/mix040_tso.oepc.yml/pesco-mix040_tso.oepc.yml	ERROR(ineffective witness)	0.800548	43.30597937599998	36.413440
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix041_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.748759	42.11067937600001	35.971072
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.748947	43.064594123999996	36.151296
+pthread-wmm/mix042.oepc.yml/pesco-mix042.oepc.yml	ERROR(ineffective witness)	0.764662	42.46018847200003	36.368384
+pthread-wmm/mix042.opt.yml/pesco-mix042.opt.yml	ERROR(ineffective witness)	0.756137	41.56939258800003	36.192256
+pthread-wmm/mix043.oepc.yml/pesco-mix043.oepc.yml	ERROR(ineffective witness)	0.787061	41.672013210000046	36.622336
+pthread-wmm/mix043.opt.yml/pesco-mix043.opt.yml	ERROR(ineffective witness)	0.772419	42.065157457000055	36.216832
+pthread-wmm/mix044.opt.yml/pesco-mix044.opt.yml	ERROR(ineffective witness)	0.775982	43.57059147999996	36.548608
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix044_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.780136	42.72010332400009	36.814848
+pthread-wmm/mix044_tso.oepc.yml/pesco-mix044_tso.oepc.yml	ERROR(ineffective witness)	0.777843	42.297517814	36.450304
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix045_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.775792	43.57868874799999	36.155392
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.781208	42.95937097800004	36.253696
+pthread-wmm/mix046.oepc.yml/pesco-mix046.oepc.yml	ERROR(ineffective witness)	0.77804	41.901058722000016	36.839424
+pthread-wmm/mix046.opt.yml/pesco-mix046.opt.yml	ERROR(ineffective witness)	0.789882	42.63727476000008	36.392960
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix047_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.787067	42.127013241999975	36.618240
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.78641	42.54976079700009	36.274176
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.730758	42.350894309999944	36.044800
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.756473	41.62766568500001	36.274176
+pthread-wmm/mix050.yml/pesco-mix050.yml	ERROR(ineffective witness)	0.774592	42.06210036699997	36.691968
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/pesco-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.783924	42.502065894	36.691968
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/pesco-mix051_pso.opt_rmo.opt_tso.opt.yml	ERROR(ineffective witness)	0.773363	42.394979044000024	35.995648
+pthread-wmm/mix051_tso.oepc.yml/pesco-mix051_tso.oepc.yml	ERROR(ineffective witness)	0.783339	43.96490010299999	36.626432
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/pesco-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.775974	43.754013945	36.085760
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/pesco-mix052_pso.opt_rmo.opt_tso.opt.yml	ERROR(ineffective witness)	0.761051	42.7317547749999	36.007936
+pthread-wmm/mix052_tso.oepc.yml/pesco-mix052_tso.oepc.yml	ERROR(ineffective witness)	0.780218	43.663457249999965	36.024320
+pthread-wmm/mix053.opt.yml/pesco-mix053.opt.yml	ERROR(ineffective witness)	0.765418	42.31986748600002	36.122624
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix053_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.778195	41.555205374000025	36.577280
+pthread-wmm/mix053_tso.oepc.yml/pesco-mix053_tso.oepc.yml	ERROR(ineffective witness)	0.782845	43.060081848000095	36.458496
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/pesco-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.738599	42.33322634299998	35.844096
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.746449	40.84208172500007	35.815424
+pthread-wmm/mix055.opt.yml/pesco-mix055.opt.yml	ERROR(ineffective witness)	0.767469	41.684962828999915	36.286464
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix055_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.77738	42.945778153000106	36.622336
+pthread-wmm/mix055_tso.oepc.yml/pesco-mix055_tso.oepc.yml	ERROR(ineffective witness)	0.789469	42.06375673999992	36.515840
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix056_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.785835	44.13098144200001	36.155392
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.772592	42.14665117499999	36.007936
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/pesco-mix057_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.78077	43.487912112000004	36.626432
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.795293	43.120849421	36.261888
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/pesco-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.75638	42.715687892000005	37.027840
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/pesco-rfi000_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.73757	41.59097413999996	35.979264
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/pesco-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.749542	42.23565579499996	36.225024
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.734328	41.97936602200002	35.954688
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.736603	41.89813803900006	35.885056
+pthread-wmm/rfi004.yml/pesco-rfi004.yml	ERROR(ineffective witness)	0.747445	43.023752038	35.762176
+pthread-wmm/rfi005.yml/pesco-rfi005.yml	false(unreach-call)	1.084167	43.67493273800005	35.753984
+pthread-wmm/rfi006_power.oepc.yml/pesco-rfi006_power.oepc.yml	TIMEOUT (ERROR(ineffective witness))	1.469493	45.409847040000045	36.155392
+pthread-wmm/rfi006_power.opt.yml/pesco-rfi006_power.opt.yml	TIMEOUT (ERROR(ineffective witness))	1.505996	45.44458522299999	36.352000
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/pesco-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.781094	43.34821064699997	36.569088
+pthread-wmm/rfi006_rmo.yml/pesco-rfi006_rmo.yml	ERROR(ineffective witness)	1.427103	43.03806299799999	36.249600
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.742888	44.182738712999935	35.852288
+pthread-wmm/rfi007_tso.yml/pesco-rfi007_tso.yml	ERROR(ineffective witness)	0.752843	43.01905959199996	36.167680
+pthread-wmm/rfi008.oepc.yml/pesco-rfi008.oepc.yml	ERROR(ineffective witness)	0.760466	41.43186330000003	36.139008
+pthread-wmm/rfi008.opt.yml/pesco-rfi008.opt.yml	ERROR(ineffective witness)	0.745677	42.404383349	36.315136
+pthread-wmm/rfi009_power.oepc.yml/pesco-rfi009_power.oepc.yml	ERROR(ineffective witness)	1.44834	43.42247101700002	36.306944
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pesco-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	0.79939	41.87546355200004	36.286464
+pthread-wmm/rfi009_rmo.oepc.yml/pesco-rfi009_rmo.oepc.yml	ERROR(ineffective witness)	1.449601	41.99305830500009	36.118528
+pthread-wmm/rfi010.yml/pesco-rfi010.yml	ERROR(ineffective witness)	0.76759	40.97029649900003	36.208640
+pthread-wmm/safe000_power.oepc.yml/pesco-safe000_power.oepc.yml	ERROR(ineffective witness)	1.660279	42.04950508700006	36.937728
+pthread-wmm/safe000_power.opt.yml/pesco-safe000_power.opt.yml	ERROR(ineffective witness)	1.389938	6.3424210250000215	36.515840
+pthread-wmm/safe000_rmo.yml/pesco-safe000_rmo.yml	ERROR(ineffective witness)	1.613549	43.479449242999976	36.876288
+pthread-wmm/safe001_power.oepc.yml/pesco-safe001_power.oepc.yml	TIMEOUT	1.613401	46.02070592899997	36.982784
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/pesco-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.78069	41.89029279700003	36.204544
+pthread-wmm/safe001_rmo.oepc.yml/pesco-safe001_rmo.oepc.yml	TIMEOUT	1.595184	46.087212755999985	37.089280
+pthread-wmm/safe002_power.oepc.yml/pesco-safe002_power.oepc.yml	TIMEOUT	1.605881	46.051855245999946	36.855808
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/pesco-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.775167	41.33789435099993	35.942400
+pthread-wmm/safe002_rmo.oepc.yml/pesco-safe002_rmo.oepc.yml	TIMEOUT	1.592922	46.10141232400008	36.904960
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.795627	44.487413053999944	37.019648
+pthread-wmm/safe003_power.opt.yml/pesco-safe003_power.opt.yml	ERROR(ineffective witness)	1.401204	8.85806401800005	36.339712
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/pesco-safe004_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.797968	43.037057804999904	36.990976
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/pesco-safe004_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.749825	42.01417040600006	36.216832
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.752856	43.050052914999924	35.991552
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/pesco-safe006_power.oepc-thin000_power.oepc.yml	ERROR(ineffective witness)	1.248495	42.93847830599998	35.790848
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/pesco-safe006_power.opt-thin000_power.opt.yml	ERROR(ineffective witness)	1.206404	5.6004156909999665	36.208640
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/pesco-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	TIMEOUT (ERROR(ineffective witness))	1.228207	45.06417691900003	35.643392
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/pesco-safe007_power.oepc-thin001_power.oepc.yml	ERROR(ineffective witness)	1.34154	44.94459215899997	36.184064
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/pesco-safe007_power.opt-thin001_power.opt.yml	ERROR(ineffective witness)	0.781224	43.60957208499997	36.196352
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/pesco-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	1.330038	44.820624253000005	35.893248
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.775915	43.104901696999946	36.225024
+pthread-wmm/safe008_power.opt.yml/pesco-safe008_power.opt.yml	ERROR(ineffective witness)	1.396066	11.272338357999956	36.331520
+pthread-wmm/safe009_power.oepc.yml/pesco-safe009_power.oepc.yml	TIMEOUT (ERROR(ineffective witness))	1.495396	45.18484089700007	36.417536
+pthread-wmm/safe009_power.opt.yml/pesco-safe009_power.opt.yml	ERROR(ineffective witness)	1.38052	9.668566732000045	36.564992
+pthread-wmm/safe009_rmo.oepc.yml/pesco-safe009_rmo.oepc.yml	ERROR(ineffective witness)	1.48541	44.383926943000006	36.487168
+pthread-wmm/safe009_rmo.opt.yml/pesco-safe009_rmo.opt.yml	ERROR(ineffective witness)	1.310028	11.104035816999954	36.216832
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.735388	42.72083427399991	35.835904
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/pesco-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.76705	42.736275825999996	36.421632
+pthread-wmm/safe011_power.opt_pso.opt.yml/pesco-safe011_power.opt_pso.opt.yml	ERROR(ineffective witness)	0.747956	42.004591269	36.270080
+pthread-wmm/safe012_power.oepc.yml/pesco-safe012_power.oepc.yml	ERROR(ineffective witness)	1.327952	44.47104027199998	35.930112
+pthread-wmm/safe012_power.opt.yml/pesco-safe012_power.opt.yml	ERROR(ineffective witness)	0.766172	43.10546885100007	36.245504
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/pesco-safe012_pso.oepc_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.796973	44.299903714999914	35.889152
+pthread-wmm/safe012_rmo.oepc.yml/pesco-safe012_rmo.oepc.yml	ERROR(ineffective witness)	1.310263	43.317272323	35.983360
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.770251	42.333437290000006	36.032512
+pthread-wmm/safe014_power.oepc.yml/pesco-safe014_power.oepc.yml	ERROR(ineffective witness)	1.345688	41.24828609200006	35.811328
+pthread-wmm/safe014_power.opt.yml/pesco-safe014_power.opt.yml	ERROR(ineffective witness)	1.382928	40.10416453300002	36.020224
+pthread-wmm/safe014_rmo.oepc.yml/pesco-safe014_rmo.oepc.yml	ERROR(ineffective witness)	1.303531	36.343021111999974	35.917824
+pthread-wmm/safe014_rmo.opt.yml/pesco-safe014_rmo.opt.yml	ERROR(ineffective witness)	1.515518	8.000022315000024	36.847616
+pthread-wmm/safe015_power.oepc.yml/pesco-safe015_power.oepc.yml	false(unreach-call)	1.049612	21.997843523999904	35.934208
+pthread-wmm/safe015_power.opt.yml/pesco-safe015_power.opt.yml	ERROR(ineffective witness)	1.525027	9.386605544999952	36.966400
+pthread-wmm/safe015_rmo.yml/pesco-safe015_rmo.yml	ERROR(ineffective witness)	1.511002	9.202529411	36.917248
+pthread-wmm/safe016_power.oepc.yml/pesco-safe016_power.oepc.yml	TIMEOUT	1.543544	46.051603505	36.585472
+pthread-wmm/safe016_power.opt.yml/pesco-safe016_power.opt.yml	ERROR(ineffective witness)	1.590065	8.741896204	37.117952
+pthread-wmm/safe016_rmo.oepc.yml/pesco-safe016_rmo.oepc.yml	TIMEOUT (ERROR(ineffective witness))	1.584349	45.48707956700002	36.483072
+pthread-wmm/safe016_rmo.opt.yml/pesco-safe016_rmo.opt.yml	ERROR(ineffective witness)	1.605135	11.318529530999967	36.970496
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.770437	40.76018666899995	36.225024
+pthread-wmm/safe018_power.oepc.yml/pesco-safe018_power.oepc.yml	ERROR(ineffective witness)	1.327401	44.49713603400005	35.909632
+pthread-wmm/safe018_power.opt.yml/pesco-safe018_power.opt.yml	ERROR(ineffective witness)	1.438429	6.277286903000004	36.683776
+pthread-wmm/safe018_rmo.oepc.yml/pesco-safe018_rmo.oepc.yml	TIMEOUT (ERROR(ineffective witness))	1.323711	45.06984253900009	35.876864
+pthread-wmm/safe018_rmo.opt.yml/pesco-safe018_rmo.opt.yml	ERROR(ineffective witness)	1.378083	7.824668594000059	36.409344
+pthread-wmm/safe019_power.oepc.yml/pesco-safe019_power.oepc.yml	TIMEOUT	1.54751	46.05100552300007	36.823040
+pthread-wmm/safe019_rmo.oepc.yml/pesco-safe019_rmo.oepc.yml	TIMEOUT	1.541572	46.03355020299989	36.589568
+pthread-wmm/safe019_rmo.opt.yml/pesco-safe019_rmo.opt.yml	ERROR(ineffective witness)	1.544066	11.102374232999978	36.663296
+pthread-wmm/safe020_power.yml/pesco-safe020_power.yml	ERROR(ineffective witness)	1.44654	5.924435539000001	36.691968
+pthread-wmm/safe020_rmo.yml/pesco-safe020_rmo.yml	ERROR(ineffective witness)	1.38588	8.333932297000047	36.315136
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/pesco-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.784877	43.829439320999995	36.208640
+pthread-wmm/safe021_power.opt_pso.opt.yml/pesco-safe021_power.opt_pso.opt.yml	ERROR(ineffective witness)	0.783787	42.41773585400006	36.192256
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.741759	41.39116881699999	35.827712
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.791699	42.79425097300009	37.195776
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.752981	42.09325118400011	36.073472
+pthread-wmm/safe025_power.yml/pesco-safe025_power.yml	false(unreach-call)	1.033216	21.33808669999985	36.352000
+pthread-wmm/safe025_rmo.yml/pesco-safe025_rmo.yml	ERROR(ineffective witness)	1.504854	4.521921591999899	36.933632
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.763934	41.486909893000075	36.151296
+pthread-wmm/safe027_power.oepc.yml/pesco-safe027_power.oepc.yml	ERROR(ineffective witness)	1.535032	43.8783398380001	36.401152
+pthread-wmm/safe027_rmo.yml/pesco-safe027_rmo.yml	ERROR(ineffective witness)	1.508648	44.662411479000184	36.220928
+pthread-wmm/safe028_power.yml/pesco-safe028_power.yml	ERROR(ineffective witness)	1.442619	8.175548150000168	36.626432
+pthread-wmm/safe028_rmo.yml/pesco-safe028_rmo.yml	ERROR(ineffective witness)	1.375576	7.513174256999946	36.241408
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/pesco-safe029_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.751136	44.40297492599984	35.889152
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/pesco-safe029_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.769345	44.17971389799982	35.848192
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/pesco-safe030_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.783661	43.89130040700002	36.274176
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/pesco-safe030_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.756183	43.142278242999964	36.085760
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/pesco-safe031_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	0.772545	41.454452846000095	35.860480
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/pesco-safe031_power.opt_pso.opt_rmo.opt.yml	ERROR(ineffective witness)	0.751033	37.22842268300019	36.032512
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.789999	36.76948879099996	36.868096
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.74003	31.624064153000063	35.799040
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pesco-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	0.736093	28.921087279999938	36.311040
+pthread-wmm/thin002_power.oepc.yml/pesco-thin002_power.oepc.yml	ERROR(ineffective witness)	1.412428	27.362789002	36.175872
+pthread-wmm/thin002_rmo.yml/pesco-thin002_rmo.yml	ERROR(ineffective witness)	1.382451	20.58353939099993	36.110336
+pthread/lazy01.yml/pesco-lazy01.yml	TIMEOUT	0.519558	46.086384382000006	34.967552
+pthread/stateful01-1.yml/pesco-stateful01-1.yml	TIMEOUT	0.533617	46.09973852500002	34.881536
+pthread/triangular-2.yml/pesco-triangular-2.yml	ERROR(ineffective witness)	0.568609	1.4245734030000676	35.065856
+pthread/triangular-longer-2.yml/pesco-triangular-longer-2.yml	ERROR(ineffective witness)	0.565433	1.2713649510001233	35.524608

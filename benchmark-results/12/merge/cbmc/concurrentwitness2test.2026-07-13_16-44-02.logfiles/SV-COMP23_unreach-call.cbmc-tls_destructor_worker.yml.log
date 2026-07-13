@@ -1,0 +1,611 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cbmc/pthread-divine/tls_destructor_worker.yml/tls_destructor_worker.i --graphml-witness svcomp23-witness-benchmarks/tools/cbmc/pthread-divine/tls_destructor_worker.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/tmp/BenchExec_run_k01_aceg/tmp/tmpsvr503_j.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code 74)
+{-1: 100}
+Verdict: ALWAYS

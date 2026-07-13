@@ -1,0 +1,21 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/infer/pthread-lit/sssc12.yml/sssc12.i --graphml-witness svcomp23-witness-benchmarks/tools/infer/pthread-lit/sssc12.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.10/site-packages/networkx/readwrite/graphml.py:1032: UserWarning: No key type for id creationtime. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 84, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_9ei4yi4r/tmp/tmpf5mdas_3.c
+Compilation started
+/usr/bin/ld: /tmp/BenchExec_run_9ei4yi4r/tmp/ccUJQeGD.o: in function `release':
+svcomp.c:(.text+0x1a7): multiple definition of `release'; /tmp/BenchExec_run_9ei4yi4r/tmp/cccn25gq.o:tmpf5mdas_3.c:(.text+0xe0): first defined here
+collect2: error: ld returned 1 exit status
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

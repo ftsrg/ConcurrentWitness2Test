@@ -1,0 +1,14 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/deagle/pthread-wmm/safe004_tso.yml/safe004_tso.i --graphml-witness svcomp23-witness-benchmarks/tools/deagle/pthread-wmm/safe004_tso.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 57, in translate_to_c
+    reach_error(ast)
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/tweaks.py", line 24, in reach_error
+    extern_decl = Decl(
+                  ^^^^^
+TypeError: Decl.__init__() missing 1 required positional argument: 'align'
+Verdict: Unknown error

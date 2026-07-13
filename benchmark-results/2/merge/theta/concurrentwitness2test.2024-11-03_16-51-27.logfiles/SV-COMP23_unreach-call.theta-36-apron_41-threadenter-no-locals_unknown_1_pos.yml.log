@@ -1,0 +1,8 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/theta/goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/36-apron_41-threadenter-no-locals_unknown_1_pos.i --graphml-witness svcomp23-witness-benchmarks/tools/theta/goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+ConcurrentWitness2Test/venv/bin/python3: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.38' not found (required by ConcurrentWitness2Test/venv/bin/python3)
+ConcurrentWitness2Test/venv/bin/python3: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.38' not found (required by ConcurrentWitness2Test/venv/bin/python3)

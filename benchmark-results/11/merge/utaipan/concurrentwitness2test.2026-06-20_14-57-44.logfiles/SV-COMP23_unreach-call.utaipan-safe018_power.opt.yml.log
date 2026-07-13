@@ -1,0 +1,2020 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/utaipan/pthread-wmm/safe018_power.opt.yml/safe018_power.opt.i --graphml-witness svcomp23-witness-benchmarks/tools/utaipan/pthread-wmm/safe018_power.opt.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id programfile. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id programhash. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id sourcecodelang. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id producer. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id specification. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id creationtime. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id witness-type. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id architecture. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id entry. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id nodetype. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id violation. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id cyclehead. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id invariant. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id threadId. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id endline. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id enterLoopHead. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id createThread. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id enterFunction. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id startline. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id returnFrom. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id assumption. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id tokens. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id control. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id originfile. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id sourcecode. Using string
+/tmp/BenchExec_run_gzq0aw5b/tmp/tmpysih5ogr.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 1 at 1 until 3
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 0 at 0 until 1
+Paused thread 1 at 0 until 3
+Released 1
+Resumed thread 0 at 1
+Paused thread 2 at 1 until 4
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 1 at 1 until 3
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 1 at 1 until 3
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Resumed thread 3 at 2
+Released 3
+Paused thread 0 at 3 until 6
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Initialized variables
+Paused thread 0 at 0 until 1
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 0 at 0 until 1
+Paused thread 1 at 0 until 3
+Released 1
+Resumed thread 0 at 1
+Released 2
+Paused thread 2 at 2 until 4
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 1 at 1 until 3
+Paused thread 3 at 1 until 2
+Released 2
+Resumed thread 3 at 2
+Released 3
+Paused thread 0 at 3 until 6
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Paused thread 0 at 4 until 6
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 0 at 0 until 1
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 1 at 1 until 3
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Resumed thread 0 at 1
+Paused thread 2 at 1 until 4
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Resumed thread 3 at 2
+Released 3
+Paused thread 0 at 3 until 6
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Resumed thread 0 at 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Resumed thread 3 at 2
+Released 3
+Paused thread 0 at 3 until 6
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (timeout)
+Execution started
+Initialized variables
+Paused thread 0 at 0 until 1
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Released 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Paused thread 0 at 5 until 6
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 0 at 0 until 1
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Released 2
+Released 3
+Paused thread 0 at 3 until 6
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 1 at 1 until 3
+Paused thread 3 at 1 until 2
+Released 2
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 0 at 0 until 1
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 1 at 1 until 3
+Released 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Paused thread 0 at 5 until 6
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (timeout)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Paused thread 0 at 4 until 6
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 0 at 0 until 1
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Paused thread 0 at 4 until 6
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Resumed thread 3 at 2
+Released 3
+Paused thread 0 at 3 until 6
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Paused thread 2 at 2 until 4
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Resumed thread 3 at 2
+Released 3
+Paused thread 0 at 3 until 6
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 1 at 1 until 3
+Paused thread 3 at 1 until 2
+Released 2
+Resumed thread 3 at 2
+Released 3
+Paused thread 0 at 3 until 6
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 0 at 0 until 1
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Paused thread 0 at 2 until 6
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 1 at 1 until 3
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Resumed thread 3 at 2
+Released 3
+Paused thread 0 at 3 until 6
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Paused thread 0 at 0 until 1
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Initialized variables
+Paused thread 0 at 0 until 1
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Resumed thread 0 at 1
+Released 2
+Released 3
+Paused thread 0 at 3 until 6
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Paused thread 1 at 4 until 5
+Resumed thread 2 at 4
+Released 5
+Resumed thread 1 at 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 1 at 0 until 3
+Released 1
+Paused thread 2 at 1 until 4
+Paused thread 3 at 1 until 2
+Released 2
+Paused thread 0 at 2 until 6
+Resumed thread 3 at 2
+Released 3
+Resumed thread 1 at 3
+Released 4
+Resumed thread 2 at 4
+Released 5
+Released 6
+Resumed thread 0 at 6
+Released 7
+
+Execution ended (exit code 0)
+{0: 98}
+Verdict: NEVER

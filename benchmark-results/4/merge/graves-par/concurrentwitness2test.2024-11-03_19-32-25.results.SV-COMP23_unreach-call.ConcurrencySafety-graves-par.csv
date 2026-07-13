@@ -1,0 +1,36 @@
+tool	ConcurrentWitness2Test ConcurrentWitness2Test 1.0	ConcurrentWitness2Test ConcurrentWitness2Test 1.0	ConcurrentWitness2Test ConcurrentWitness2Test 1.0	ConcurrentWitness2Test ConcurrentWitness2Test 1.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-graves-par	SV-COMP23_unreach-call.ConcurrencySafety-graves-par	SV-COMP23_unreach-call.ConcurrencySafety-graves-par	SV-COMP23_unreach-call.ConcurrencySafety-graves-par
+../svcomp23-witness-benchmarks/tools/graves-par/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/graves-par-13-privatized_18-first-reads_unknown_1_neg.yml	false(unreach-call)	0.656584	2.8174586830000408	60.837888
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/graves-par-13-privatized_18-first-reads_unknown_1_pos.yml	true	0.585972	2.7834387069999593	38.150144
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/graves-par-13-privatized_18-first-reads_unknown_2_neg.yml	true	0.573925	2.811329119999982	37.687296
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/graves-par-13-privatized_18-first-reads_unknown_2_pos.yml	false(unreach-call)	0.569601	2.8040881519998493	36.462592
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/graves-par-13-privatized_19-publish-precision_unknown_1_neg.yml	false(unreach-call)	0.647076	2.7111629139999422	62.042112
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/graves-par-13-privatized_19-publish-precision_unknown_1_pos.yml	true	0.665798	2.806208166000033	59.731968
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/graves-par-13-privatized_19-publish-precision_unknown_2_neg.yml	true	0.584679	2.7994164540000384	37.109760
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/graves-par-13-privatized_19-publish-precision_unknown_2_pos.yml	false(unreach-call)	0.549577	2.72066932000007	37.142528
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/graves-par-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false(unreach-call)	0.569033	2.6816560920001393	37.404672
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/graves-par-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false(unreach-call)	0.599962	2.7239966120000645	36.704256
+goblint-regression/28-race_reach_45-escape_racing.yml/graves-par-28-race_reach_45-escape_racing.yml	true	0.582226	1.467254314999991	34.590720
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/graves-par-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	true	0.6294	2.2185720060001586	34.607104
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/graves-par-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false(unreach-call)	0.624721	1.8208783609998136	34.566144
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/graves-par-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false(unreach-call)	0.556377	1.956866319000028	34.508800
+ldv-races/race-1_2-join.yml/graves-par-race-1_2-join.yml	TIMEOUT	0.78445	46.01438707800003	36.028416
+ldv-races/race-1_3-join.yml/graves-par-race-1_3-join.yml	TIMEOUT	0.81935	46.03521401900002	36.118528
+ldv-races/race-2_2-container_of.yml/graves-par-race-2_2-container_of.yml	true	0.809897	34.27635637200001	35.897344
+ldv-races/race-2_3-container_of.yml/graves-par-race-2_3-container_of.yml	true	0.803081	33.569896152999945	35.926016
+ldv-races/race-2_4-container_of.yml/graves-par-race-2_4-container_of.yml	true	0.804011	33.08156258300005	35.905536
+ldv-races/race-2_5-container_of.yml/graves-par-race-2_5-container_of.yml	true	0.8148	34.148516535	35.885056
+ldv-races/race-3_2-container_of-global.yml/graves-par-race-3_2-container_of-global.yml	true	0.830493	33.56595070100002	35.889152
+pthread-wmm/rfi006_rmo.yml/graves-par-rfi006_rmo.yml	true	1.447337	36.036436701999946	36.175872
+pthread-wmm/rfi009_rmo.oepc.yml/graves-par-rfi009_rmo.oepc.yml	true	1.435267	35.03464977700014	36.192256
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/graves-par-safe007_power.opt-thin001_power.opt.yml	true	0.782968	33.890678204000096	36.319232
+pthread-wmm/safe009_rmo.opt.yml/graves-par-safe009_rmo.opt.yml	true	1.283622	7.318913464999923	36.278272
+pthread-wmm/safe012_power.opt.yml/graves-par-safe012_power.opt.yml	true	0.759096	25.762756251999917	36.069376
+pthread-wmm/safe014_power.opt.yml/graves-par-safe014_power.opt.yml	true	1.375429	28.49258625099992	36.093952
+pthread-wmm/safe016_rmo.oepc.yml/graves-par-safe016_rmo.oepc.yml	true	1.552612	28.334798999999975	36.597760
+pthread-wmm/safe019_rmo.oepc.yml/graves-par-safe019_rmo.oepc.yml	true	1.550116	28.05467397999996	36.511744
+pthread-wmm/safe027_power.oepc.yml/graves-par-safe027_power.oepc.yml	true	1.498617	27.330764563999992	36.466688
+pthread-wmm/safe027_rmo.yml/graves-par-safe027_rmo.yml	true	1.481011	26.347652056000015	36.388864
+pthread/lazy01.yml/graves-par-lazy01.yml	TIMEOUT	0.514129	46.03748902299981	34.779136
+pthread/stateful01-1.yml/graves-par-stateful01-1.yml	TIMEOUT	0.535318	46.03464125300002	34.951168

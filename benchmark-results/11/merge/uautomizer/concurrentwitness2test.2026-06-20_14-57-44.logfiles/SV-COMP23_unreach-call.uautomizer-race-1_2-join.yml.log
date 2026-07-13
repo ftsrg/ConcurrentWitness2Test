@@ -1,0 +1,31 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/uautomizer/ldv-races/race-1_2-join.yml/race-1_2-join.i --graphml-witness svcomp23-witness-benchmarks/tools/uautomizer/ldv-races/race-1_2-join.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id programfile. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id programhash. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id sourcecodelang. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id producer. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id specification. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id creationtime. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id witness-type. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id architecture. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id entry. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id nodetype. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id violation. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id cyclehead. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id invariant. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id threadId. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id endline. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id enterLoopHead. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id createThread. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id enterFunction. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id startline. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id returnFrom. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id assumption. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id tokens. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id control. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id originfile. Using string
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id sourcecode. Using string

@@ -1,0 +1,211 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/graves/ldv-races/race-2_4-container_of.yml/race-2_4-container_of.i --graphml-witness svcomp23-witness-benchmarks/tools/graves/ldv-races/race-2_4-container_of.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/tmp/BenchExec_run_k_ljpts7/tmp/tmp89caduxr.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+Execution started
+Execution ended (exit code -11)
+{0: 100}
+Verdict: NEVER

@@ -1,0 +1,7 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/goblint/ldv-races/race-1_1-join.yml/race-1_1-join.i --graphml-witness svcomp23-witness-benchmarks/tools/goblint/ldv-races/race-1_1-join.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Verdict: Correctness witness

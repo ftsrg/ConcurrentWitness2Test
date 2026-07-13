@@ -1,0 +1,40 @@
+tool	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-theta	SV-COMP23_unreach-call.ConcurrencySafety-theta	SV-COMP23_unreach-call.ConcurrencySafety-theta	SV-COMP23_unreach-call.ConcurrencySafety-theta
+../svcomp23-witness-benchmarks/tools/theta/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/theta-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	ERROR(ineffective witness)	2.185586	5.755160354999994	79.192064
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/theta-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false(unreach-call)	2.174221	5.935026037	69.812224
+pthread-atomic/read_write_lock-2.yml/theta-read_write_lock-2.yml	ERROR(ineffective witness)	2.281472	7.383319067000002	67.944448
+pthread-ext/28_buggy_simple_loop1_vf.yml/theta-28_buggy_simple_loop1_vf.yml	TIMEOUT	46.856265	43.02640769399999	1813.557248
+pthread-lit/qw2004-2b.yml/theta-qw2004-2b.yml	ERROR(ineffective witness)	2.190058	5.662636659999997	66.555904
+pthread-wmm/mix011_tso.oepc.yml/theta-mix011_tso.oepc.yml	TIMEOUT	2.512481	46.02931433300001	67.874816
+pthread-wmm/mix019_tso.oepc.yml/theta-mix019_tso.oepc.yml	TIMEOUT	2.585396	46.024125051999995	69.029888
+pthread-wmm/mix022_tso.yml/theta-mix022_tso.yml	TIMEOUT	2.477375	46.058794354	68.632576
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/theta-mix028_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.56626	46.063568864	67.661824
+pthread-wmm/mix028_tso.yml/theta-mix028_tso.yml	TIMEOUT	2.547863	46.023185543000004	68.411392
+pthread-wmm/mix033_tso.oepc.yml/theta-mix033_tso.oepc.yml	TIMEOUT	2.563597	46.22404837799999	66.805760
+pthread-wmm/mix038_tso.oepc.yml/theta-mix038_tso.oepc.yml	TIMEOUT	2.576121	46.10379317499999	67.837952
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.401843	46.120650278	66.727936
+pthread-wmm/mix042.opt.yml/theta-mix042.opt.yml	TIMEOUT	2.356956	46.060377439999996	69.832704
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.412841	46.011516576999995	68.812800
+pthread-wmm/mix052_tso.oepc.yml/theta-mix052_tso.oepc.yml	TIMEOUT	2.395773	46.017026607999995	68.788224
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.343947	46.007507915000005	67.629056
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.444583	46.01294025200001	68.857856
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/theta-rfi000_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.386613	46.198110591	68.853760
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/theta-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.437873	46.18035414900001	68.943872
+pthread-wmm/rfi005.yml/theta-rfi005.yml	TIMEOUT	2.319858	46.812238775	66.715648
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/theta-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.39015	46.698131375	68.702208
+pthread-wmm/rfi007_tso.yml/theta-rfi007_tso.yml	TIMEOUT	2.249731	46.633902676000005	67.727360
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/theta-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	TIMEOUT	2.32082	46.07958860599999	67.743744
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/theta-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.204922	46.050717417000016	67.883008
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/theta-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.261288	46.012810255999995	68.726784
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/theta-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	TIMEOUT	2.318977	46.024829907	68.825088
+pthread-wmm/safe011_power.opt_pso.opt.yml/theta-safe011_power.opt_pso.opt.yml	TIMEOUT	2.398907	46.031571203	68.661248
+pthread-wmm/safe015_power.oepc.yml/theta-safe015_power.oepc.yml	TIMEOUT	2.283438	46.079291837	67.051520
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/theta-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.287686	46.354304313	68.788224
+pthread-wmm/safe021_power.opt_pso.opt.yml/theta-safe021_power.opt_pso.opt.yml	TIMEOUT	2.511189	46.04133671299999	67.649536
+pthread-wmm/safe025_power.yml/theta-safe025_power.yml	TIMEOUT	2.292641	46.022564792	69.042176
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/theta-safe029_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.449152	46.840262292000006	69.054464
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/theta-safe029_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.341452	46.41989948400001	67.702784
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/theta-safe030_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.721497	46.012289744000014	67.792896
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/theta-safe030_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.700865	46.01729074799999	66.584576
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/theta-safe031_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.983006	46.013558251999996	68.698112

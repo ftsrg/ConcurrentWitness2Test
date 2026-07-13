@@ -1,0 +1,694 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/esbmc-incr/pthread-complex/elimination_backoff_stack.yml/elimination_backoff_stack.i --graphml-witness svcomp23-witness-benchmarks/tools/esbmc-incr/pthread-complex/elimination_backoff_stack.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/tmp/BenchExec_run_jca5udys/tmp/tmp1_w6jwor.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 2 at 0 until 1
+Paused thread 4 at 0 until 3
+Paused thread 4 at 0 until 3
+
+Execution ended (exit code 0)
+{0: 100}
+Verdict: NEVER

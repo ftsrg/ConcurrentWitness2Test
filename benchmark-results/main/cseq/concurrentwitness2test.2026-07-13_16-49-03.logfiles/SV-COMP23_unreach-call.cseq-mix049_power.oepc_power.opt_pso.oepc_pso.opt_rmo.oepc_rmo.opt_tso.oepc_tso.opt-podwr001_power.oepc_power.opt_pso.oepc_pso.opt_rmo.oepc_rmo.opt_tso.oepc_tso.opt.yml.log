@@ -1,0 +1,29 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/__main__.py", line 146, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_qp9bhm4h/tmp/tmp4kn2rhuo.c
+Compilation started
+/tmp/BenchExec_run_qp9bhm4h/tmp/tmp0sfbn7vt.c: In function ‘P2’:
+/tmp/BenchExec_run_qp9bhm4h/tmp/tmp0sfbn7vt.c:797:56: error: ‘FALSE’ undeclared (first use in this function)
+  797 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                        ^    
+/tmp/BenchExec_run_qp9bhm4h/tmp/tmp0sfbn7vt.c:797:56: note: each undeclared identifier is reported only once for each function it appears in
+/tmp/BenchExec_run_qp9bhm4h/tmp/tmp0sfbn7vt.c:797:61: error: expected ‘)’ before ‘;’ token
+  797 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                             ^
+      |                                                             )
+/tmp/BenchExec_run_qp9bhm4h/tmp/tmp0sfbn7vt.c:798:61: error: expected ‘)’ before ‘;’ token
+  798 |   weak$$choice2 = __VERIFIER_nondet_bool();
+      |                                                             ^
+      |                                                             )
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error
