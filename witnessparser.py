@@ -69,6 +69,15 @@ class ParsedWitness:
         """Whether the witness claims an integer overflow (no-overflow property)."""
         return "overflow" in self.specification
 
+    @property
+    def memory_safety(self):
+        """Whether the witness claims a memory-safety violation.
+
+        Covers the SV-COMP valid-free, valid-deref, and valid-memtrack
+        properties, whose specifications read ``G valid-free`` etc.
+        """
+        return "valid-" in self.specification
+
 
 def get_offset_of_line(c_file, line):
     with open(c_file, "r") as f:

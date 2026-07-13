@@ -95,6 +95,12 @@ def translate_to_c(filename, witness, mode, timeout):
     if no_overflow:
         print("Overflow witness: compiling with UBSan")
 
+    # For a memory-safety witness the violation is an invalid memory access
+    # (e.g. a use-after-free) detected by AddressSanitizer at runtime.
+    memory_safety = parsed_witness.memory_safety
+    if memory_safety:
+        print("Memory-safety witness: compiling with AddressSanitizer")
+
     try:
         fix_inline(ast)
         fix_struct_def(ast)
@@ -120,6 +126,7 @@ def translate_to_c(filename, witness, mode, timeout):
                     if no_overflow
                     else []
                 )
+                + (["-fsanitize=address", "-g"] if memory_safety else [])
                 + [
                     tmp.name,
                     os.path.dirname(os.path.abspath(sys.argv[0])) + os.sep + "svcomp.c",
@@ -147,6 +154,11 @@ def translate_to_c(filename, witness, mode, timeout):
                 # sentinel code 74 as reach_error(), so the verdict logic
                 # below is reused unchanged.
                 env["UBSAN_OPTIONS"] = "halt_on_error=1:exitcode=74:print_stacktrace=1"
+            if memory_safety:
+                # ASan: halt on the first invalid access and exit with the same
+                # sentinel code 74 as reach_error(), so the verdict logic below
+                # is reused unchanged.
+                env["ASAN_OPTIONS"] = "halt_on_error=1:exitcode=74"
             codes = {}
             for i in range(100):
                 try:
@@ -176,6 +188,13 @@ def translate_to_c(filename, witness, mode, timeout):
                         and no_overflow
                         and result.stderr
                         and "runtime error:" in result.stderr
+                    ):
+                        reached_error = True
+                    if (
+                        not reached_error
+                        and memory_safety
+                        and result.stderr
+                        and "AddressSanitizer:" in result.stderr
                     ):
                         reached_error = True
                     if result.stdout:
