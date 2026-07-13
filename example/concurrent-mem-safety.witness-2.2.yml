@@ -1,0 +1,73 @@
+# Violation witness (format 2.2) for example/concurrent-mem-safety.i.
+# Property: G valid-deref (no invalid pointer dereference allowed).
+# The freer thread frees p before main dereferences it, so `*p = 1` in main is
+# a use-after-free, detected at runtime by AddressSanitizer.
+
+- entry_type: violation_sequence
+  metadata:
+    format_version: "2.2"
+    uuid: "f5a6b7c8-d9e0-4012-ef01-3456789abcde"
+    creation_time: "2026-06-20T12:00:00Z"
+    producer:
+      name: "Handcrafted"
+      version: "1.0"
+    task:
+      input_files:
+        - "example/concurrent-mem-safety.i"
+      input_file_hashes:
+        "example/concurrent-mem-safety.i": "90cd9b8c8ede6046a0feeabb1af2cb7a6164a2893689d2ac81cd5702c68b879e"
+      specification: "G valid-deref"
+      data_model: "ILP32"
+      language: "C"
+  content:
+  - segment:
+    - waypoint:
+        # registers freer as thread 1 (1st function_enter'd pthread_create)
+        type: function_enter
+        action: follow
+        thread_id: 0
+        location:
+          file_name: "example/concurrent-mem-safety.i"
+          line: 28
+          column: 55
+          function: "main"
+  - segment:
+    - waypoint:
+        # thread 1 has freed p: at its return (after `free(p); freed = 1;`)
+        # freed is 1. Placing this in an earlier segment than main's
+        # dereference makes the free happen-before it.
+        type: assumption
+        action: follow
+        thread_id: 1
+        constraint:
+          value: "freed == 1"
+          format: c_expression
+        location:
+          file_name: "example/concurrent-mem-safety.i"
+          line: 22
+          column: 5
+          function: "freer"
+  - segment:
+    - waypoint:
+        # main observes freed == 1, so the branch is taken
+        type: branching
+        action: follow
+        thread_id: 0
+        constraint:
+          value: "true"
+        location:
+          file_name: "example/concurrent-mem-safety.i"
+          line: 29
+          column: 5
+          function: "main"
+  - segment:
+    - waypoint:
+        # the invalid dereference is the write through the freed pointer p
+        type: target
+        action: follow
+        thread_id: 0
+        location:
+          file_name: "example/concurrent-mem-safety.i"
+          line: 30
+          column: 9
+          function: "main"
