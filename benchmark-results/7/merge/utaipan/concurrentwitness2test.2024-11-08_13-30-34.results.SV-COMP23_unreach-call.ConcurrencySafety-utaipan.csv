@@ -1,0 +1,287 @@
+tool	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-utaipan	SV-COMP23_unreach-call.ConcurrencySafety-utaipan	SV-COMP23_unreach-call.ConcurrencySafety-utaipan	SV-COMP23_unreach-call.ConcurrencySafety-utaipan
+../svcomp23-witness-benchmarks/tools/utaipan/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/utaipan-13-privatized_18-first-reads_unknown_1_neg.yml	false(unreach-call)	0.564214	1.4340397010000174	36.462592
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/utaipan-13-privatized_18-first-reads_unknown_1_pos.yml	true	0.579167	1.4000447009999846	40.325120
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/utaipan-13-privatized_18-first-reads_unknown_2_neg.yml	true	0.570455	1.3845368690000157	36.659200
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/utaipan-13-privatized_18-first-reads_unknown_2_pos.yml	false(unreach-call)	0.576524	1.3982090510000091	40.275968
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/utaipan-13-privatized_19-publish-precision_unknown_1_neg.yml	false(unreach-call)	0.643034	1.3776725379999846	67.043328
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/utaipan-13-privatized_19-publish-precision_unknown_1_pos.yml	true	0.552843	1.4129660050000155	38.014976
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/utaipan-13-privatized_19-publish-precision_unknown_2_neg.yml	true	0.552361	1.3841334800000027	34.963456
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/utaipan-13-privatized_19-publish-precision_unknown_2_pos.yml	false(unreach-call)	0.550196	1.3317886859999817	35.921920
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/utaipan-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false(unreach-call)	0.542524	1.3246919610000134	34.742272
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/utaipan-13-privatized_41-traces-ex-7_unknown_1_pos.yml	TIMEOUT	0.425129	46.053571643	35.586048
+goblint-regression/13-privatized_67-pthread_cond_wait_true.yml/utaipan-13-privatized_67-pthread_cond_wait_true.yml	TIMEOUT	0.560519	46.011639512000016	35.655680
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_neg.yml/utaipan-13-privatized_67-pthread_cond_wait_unknown_1_neg.yml	TIMEOUT	0.585564	46.01528723200002	35.639296
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_pos.yml/utaipan-13-privatized_67-pthread_cond_wait_unknown_1_pos.yml	TIMEOUT	0.610178	46.01271447300002	35.414016
+goblint-regression/28-race_reach_45-escape_racing.yml/utaipan-28-race_reach_45-escape_racing.yml	true	0.587531	1.2976822210000023	34.791424
+goblint-regression/28-race_reach_94-alloc_region_racing.yml/utaipan-28-race_reach_94-alloc_region_racing.yml	false(unreach-call)	0.811037	1.3921233570000027	36.220928
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/utaipan-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	true	0.560707	1.336620479000004	34.746368
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/utaipan-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false(unreach-call)	0.564345	1.2499113310000212	34.770944
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/utaipan-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	true	0.534746	1.2284942520000186	34.734080
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/utaipan-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	true	0.54823	1.2354426880000062	34.729984
+ldv-races/race-1_2-join.yml/utaipan-race-1_2-join.yml	TIMEOUT	0.660739	46.01642069000002	36.057088
+ldv-races/race-1_3-join.yml/utaipan-race-1_3-join.yml	true	0.843885	1.3047238460000017	36.352000
+ldv-races/race-2_2-container_of.yml/utaipan-race-2_2-container_of.yml	TIMEOUT	1.026033	46.00627016999999	36.286464
+ldv-races/race-2_3-container_of.yml/utaipan-race-2_3-container_of.yml	true	0.956352	12.546137138000006	36.388864
+ldv-races/race-2_4-container_of.yml/utaipan-race-2_4-container_of.yml	true	1.003721	12.987843889000004	36.208640
+ldv-races/race-2_5-container_of.yml/utaipan-race-2_5-container_of.yml	TIMEOUT	0.949826	46.02741973099998	36.257792
+pthread-C-DAC/pthread-demo-datarace-3.yml/utaipan-pthread-demo-datarace-3.yml	TIMEOUT	1.729594	46.04356207699999	36.343808
+pthread-atomic/read_write_lock-2.yml/utaipan-read_write_lock-2.yml	TIMEOUT	0.377371	46.02024670200001	34.725888
+pthread-deagle/arithmetic_prog_bad.yml/utaipan-arithmetic_prog_bad.yml	TIMEOUT	0.472255	46.01857005300002	35.545088
+pthread-deagle/circular_buffer_bad.yml/utaipan-circular_buffer_bad.yml	true	0.476586	0.47515223599998535	35.012608
+pthread-ext/28_buggy_simple_loop1_vf.yml/utaipan-28_buggy_simple_loop1_vf.yml	TIMEOUT	22.036951	46.012949523	2312.495104
+pthread-lit/qw2004-2b.yml/utaipan-qw2004-2b.yml	true	0.87424	17.768839181000004	34.955264
+pthread-wmm/mix000.oepc.yml/utaipan-mix000.oepc.yml	ERROR(Incompatible witness)	0.826938	1.018981341	27.889664
+pthread-wmm/mix000.opt.yml/utaipan-mix000.opt.yml	ERROR(Incompatible witness)	0.794046	0.8891365919999998	27.844608
+pthread-wmm/mix001.oepc.yml/utaipan-mix001.oepc.yml	ERROR(Incompatible witness)	0.944472	1.5770175769999923	28.045312
+pthread-wmm/mix001.opt.yml/utaipan-mix001.opt.yml	ERROR(Incompatible witness)	0.900314	1.2952846089999923	28.200960
+pthread-wmm/mix002.oepc.yml/utaipan-mix002.oepc.yml	ERROR(Incompatible witness)	0.866489	1.7414732189999995	27.910144
+pthread-wmm/mix002.opt.yml/utaipan-mix002.opt.yml	ERROR(Incompatible witness)	0.899718	1.7913704430000053	27.955200
+pthread-wmm/mix003.oepc.yml/utaipan-mix003.oepc.yml	ERROR(Incompatible witness)	0.860331	1.7037855380000053	27.893760
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/utaipan-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	ERROR(Incompatible witness)	0.883919	2.0389688120000073	27.934720
+pthread-wmm/mix004.oepc.yml/utaipan-mix004.oepc.yml	ERROR(Incompatible witness)	0.927907	2.2379329080000048	28.020736
+pthread-wmm/mix004.opt.yml/utaipan-mix004.opt.yml	ERROR(Incompatible witness)	0.949658	2.0500768790000166	27.992064
+pthread-wmm/mix005.opt.yml/utaipan-mix005.opt.yml	ERROR(Incompatible witness)	0.927254	2.1128736329999924	28.008448
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix005_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.931554	2.111512175999991	28.041216
+pthread-wmm/mix005_tso.oepc.yml/utaipan-mix005_tso.oepc.yml	ERROR(Incompatible witness)	0.924086	1.8252538270000116	28.016640
+pthread-wmm/mix006.opt.yml/utaipan-mix006.opt.yml	ERROR(Incompatible witness)	0.886307	1.8196503769999879	27.897856
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix006_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.816687	1.9186821490000057	27.889664
+pthread-wmm/mix006_tso.oepc.yml/utaipan-mix006_tso.oepc.yml	ERROR(Incompatible witness)	1.264252	2.650254762000003	28.471296
+pthread-wmm/mix007.oepc.yml/utaipan-mix007.oepc.yml	ERROR(Incompatible witness)	0.939828	2.349941158000007	28.184576
+pthread-wmm/mix007.opt.yml/utaipan-mix007.opt.yml	ERROR(Incompatible witness)	0.953456	1.8963613299999906	28.012544
+pthread-wmm/mix008.opt.yml/utaipan-mix008.opt.yml	ERROR(Incompatible witness)	0.923281	2.0392593720000036	28.000256
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix008_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.952617	2.2493665890000045	28.012544
+pthread-wmm/mix008_tso.oepc.yml/utaipan-mix008_tso.oepc.yml	ERROR(Incompatible witness)	1.358643	2.929576026999996	28.536832
+pthread-wmm/mix009.oepc.yml/utaipan-mix009.oepc.yml	ERROR(Incompatible witness)	0.777742	1.3184823310000127	27.770880
+pthread-wmm/mix009.opt.yml/utaipan-mix009.opt.yml	ERROR(Incompatible witness)	0.794103	1.9049091200000134	27.860992
+pthread-wmm/mix010.oepc.yml/utaipan-mix010.oepc.yml	ERROR(Incompatible witness)	0.832355	2.006913267999977	27.889664
+pthread-wmm/mix010.opt.yml/utaipan-mix010.opt.yml	ERROR(Incompatible witness)	0.864571	2.067142106999995	27.930624
+pthread-wmm/mix011.opt.yml/utaipan-mix011.opt.yml	ERROR(Incompatible witness)	0.896457	1.5947461019999878	27.934720
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix011_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.852663	1.9906355050000002	27.918336
+pthread-wmm/mix011_tso.oepc.yml/utaipan-mix011_tso.oepc.yml	ERROR(Incompatible witness)	0.858791	1.5376787259999958	27.901952
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/utaipan-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	ERROR(Incompatible witness)	0.747583	1.5849219589999848	27.750400
+pthread-wmm/mix012_pso.opt_tso.opt.yml/utaipan-mix012_pso.opt_tso.opt.yml	ERROR(Incompatible witness)	0.800577	2.175764172000015	27.828224
+pthread-wmm/mix013.oepc.yml/utaipan-mix013.oepc.yml	ERROR(Incompatible witness)	0.949175	2.112003071999993	28.250112
+pthread-wmm/mix013.opt.yml/utaipan-mix013.opt.yml	ERROR(Incompatible witness)	0.953081	2.374537313000019	28.004352
+pthread-wmm/mix014.opt.yml/utaipan-mix014.opt.yml	ERROR(Incompatible witness)	0.950104	1.7738235939999925	28.012544
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix014_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.93513	1.879280375999997	28.024832
+pthread-wmm/mix014_tso.oepc.yml/utaipan-mix014_tso.oepc.yml	ERROR(Incompatible witness)	1.36216	3.0042684200000167	28.573696
+pthread-wmm/mix015.oepc.yml/utaipan-mix015.oepc.yml	ERROR(Incompatible witness)	0.876027	2.1060126149999974	27.906048
+pthread-wmm/mix015.opt.yml/utaipan-mix015.opt.yml	ERROR(Incompatible witness)	0.88745	2.0531533230000036	27.930624
+pthread-wmm/mix016.oepc.yml/utaipan-mix016.oepc.yml	ERROR(Incompatible witness)	0.845091	2.338952374999991	27.865088
+pthread-wmm/mix016_power.opt_rmo.opt.yml/utaipan-mix016_power.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.829301	2.2168483019999883	27.852800
+pthread-wmm/mix016_pso.opt_tso.opt.yml/utaipan-mix016_pso.opt_tso.opt.yml	ERROR(Incompatible witness)	0.852472	1.9644609409999987	27.906048
+pthread-wmm/mix017.oepc.yml/utaipan-mix017.oepc.yml	ERROR(Incompatible witness)	0.935624	2.9659535499999947	28.020736
+pthread-wmm/mix017_power.opt_rmo.opt.yml/utaipan-mix017_power.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.89069	2.9677962500000206	27.930624
+pthread-wmm/mix017_pso.opt_tso.opt.yml/utaipan-mix017_pso.opt_tso.opt.yml	ERROR(Incompatible witness)	0.950654	1.517706168000018	28.004352
+pthread-wmm/mix018.opt.yml/utaipan-mix018.opt.yml	ERROR(Incompatible witness)	0.917131	2.2563453589999938	27.983872
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix018_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.912262	2.9172964079999986	28.004352
+pthread-wmm/mix018_tso.oepc.yml/utaipan-mix018_tso.oepc.yml	ERROR(Incompatible witness)	0.927036	1.606350684000006	28.041216
+pthread-wmm/mix019.opt.yml/utaipan-mix019.opt.yml	ERROR(Incompatible witness)	0.847097	2.8750826250000046	27.873280
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix019_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.828607	2.1736778479999828	27.869184
+pthread-wmm/mix019_tso.oepc.yml/utaipan-mix019_tso.oepc.yml	ERROR(Incompatible witness)	0.829278	2.2952943979999816	27.873280
+pthread-wmm/mix020.oepc.yml/utaipan-mix020.oepc.yml	ERROR(Incompatible witness)	0.8953	2.112779138999997	27.975680
+pthread-wmm/mix020.opt.yml/utaipan-mix020.opt.yml	ERROR(Incompatible witness)	0.88677	2.432331378999976	27.971584
+pthread-wmm/mix021.opt.yml/utaipan-mix021.opt.yml	ERROR(Incompatible witness)	0.899396	2.496215675000002	27.975680
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix021_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.891234	1.9050992429999951	28.016640
+pthread-wmm/mix021_tso.oepc.yml/utaipan-mix021_tso.oepc.yml	ERROR(Incompatible witness)	0.841487	1.700262484999996	27.996160
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.71991	1.7482758890000127	27.738112
+pthread-wmm/mix022_tso.yml/utaipan-mix022_tso.yml	ERROR(Incompatible witness)	0.76624	1.6992834410000057	27.844608
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix023_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.900802	2.315524229999994	28.000256
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/utaipan-mix023_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.872819	2.313669997000005	27.926528
+pthread-wmm/mix023_tso.yml/utaipan-mix023_tso.yml	ERROR(Incompatible witness)	1.397583	3.5180673739999975	28.618752
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/utaipan-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.827075	1.8211716440000032	27.910144
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/utaipan-mix024_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.812414	1.9815610569999933	27.869184
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/utaipan-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.806124	2.094800890000016	28.090368
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/utaipan-mix025_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.789988	1.9155938090000006	27.840512
+pthread-wmm/mix026.oepc.yml/utaipan-mix026.oepc.yml	ERROR(Incompatible witness)	0.89343	2.2715305739999962	28.004352
+pthread-wmm/mix026_power.opt_tso.opt.yml/utaipan-mix026_power.opt_tso.opt.yml	ERROR(Incompatible witness)	0.905125	2.2587679160000107	27.971584
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/utaipan-mix026_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.86564	2.40339980600001	28.155904
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix027_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.892795	2.045574743000003	27.987968
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/utaipan-mix027_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.863706	2.1901700430000233	27.922432
+pthread-wmm/mix027_tso.yml/utaipan-mix027_tso.yml	ERROR(Incompatible witness)	0.890297	2.1531162429999995	28.188672
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix028_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.799989	2.104083320000001	27.865088
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/utaipan-mix028_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.798893	1.8957499240000004	27.865088
+pthread-wmm/mix028_tso.yml/utaipan-mix028_tso.yml	ERROR(Incompatible witness)	0.84844	2.3462494180000135	27.947008
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/utaipan-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.887216	2.0591187349999984	27.992064
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/utaipan-mix029_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.851913	1.989400896999996	27.934720
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix030_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.878672	1.5368538909999927	28.000256
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/utaipan-mix030_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.86302	2.0180536770000117	27.955200
+pthread-wmm/mix030_tso.yml/utaipan-mix030_tso.yml	ERROR(Incompatible witness)	0.906218	2.384718924000026	28.020736
+pthread-wmm/mix031.oepc.yml/utaipan-mix031.oepc.yml	ERROR(Incompatible witness)	0.758751	1.9598130800000035	27.774976
+pthread-wmm/mix031.opt.yml/utaipan-mix031.opt.yml	ERROR(Incompatible witness)	0.756016	2.32153635100002	27.754496
+pthread-wmm/mix032.oepc.yml/utaipan-mix032.oepc.yml	ERROR(Incompatible witness)	0.855091	2.553445489000012	27.906048
+pthread-wmm/mix032.opt.yml/utaipan-mix032.opt.yml	ERROR(Incompatible witness)	0.809092	2.2975677660000144	27.811840
+pthread-wmm/mix033.opt.yml/utaipan-mix033.opt.yml	ERROR(Incompatible witness)	0.785804	1.4227863399999876	27.824128
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix033_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.850071	1.8811851549999972	27.942912
+pthread-wmm/mix033_tso.oepc.yml/utaipan-mix033_tso.oepc.yml	ERROR(Incompatible witness)	0.834724	2.499414282999993	27.922432
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/utaipan-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	ERROR(Incompatible witness)	0.747941	1.9568844249999984	27.762688
+pthread-wmm/mix034_pso.opt_tso.opt.yml/utaipan-mix034_pso.opt_tso.opt.yml	ERROR(Incompatible witness)	0.714491	1.7760070530000007	27.713536
+pthread-wmm/mix035.oepc.yml/utaipan-mix035.oepc.yml	ERROR(Incompatible witness)	0.814298	2.234163738999996	27.865088
+pthread-wmm/mix035_power.opt_rmo.opt.yml/utaipan-mix035_power.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.832393	2.0649404750000144	27.873280
+pthread-wmm/mix035_pso.opt_tso.opt.yml/utaipan-mix035_pso.opt_tso.opt.yml	ERROR(Incompatible witness)	0.778509	1.8291011310000158	27.803648
+pthread-wmm/mix036.oepc.yml/utaipan-mix036.oepc.yml	ERROR(Incompatible witness)	0.911595	2.216214914999995	28.008448
+pthread-wmm/mix036_power.opt_rmo.opt.yml/utaipan-mix036_power.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.898453	2.06774111499999	27.955200
+pthread-wmm/mix036_pso.opt_tso.opt.yml/utaipan-mix036_pso.opt_tso.opt.yml	ERROR(Incompatible witness)	0.847803	1.9707139280000092	27.881472
+pthread-wmm/mix037.opt.yml/utaipan-mix037.opt.yml	ERROR(Incompatible witness)	0.838337	2.2764768809999794	27.869184
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix037_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.918019	2.112697892	28.008448
+pthread-wmm/mix037_tso.oepc.yml/utaipan-mix037_tso.oepc.yml	ERROR(Incompatible witness)	0.904062	2.1030003280000074	28.028928
+pthread-wmm/mix038.opt.yml/utaipan-mix038.opt.yml	ERROR(Incompatible witness)	0.778977	2.130340181000008	27.770880
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix038_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.815463	1.9242482970000196	27.881472
+pthread-wmm/mix038_tso.oepc.yml/utaipan-mix038_tso.oepc.yml	ERROR(Incompatible witness)	0.829922	2.128166510999989	27.873280
+pthread-wmm/mix039.oepc.yml/utaipan-mix039.oepc.yml	ERROR(Incompatible witness)	0.909304	2.3693562820000125	28.024832
+pthread-wmm/mix039.opt.yml/utaipan-mix039.opt.yml	ERROR(Incompatible witness)	0.826722	1.7801344840000013	27.885568
+pthread-wmm/mix040.opt.yml/utaipan-mix040.opt.yml	ERROR(Incompatible witness)	0.838194	1.9091876290000016	27.873280
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix040_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.906018	2.502597047000023	28.020736
+pthread-wmm/mix040_tso.oepc.yml/utaipan-mix040_tso.oepc.yml	ERROR(Incompatible witness)	0.863057	2.271456769999986	27.963392
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix041_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.73257	1.656907756999999	27.758592
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.729958	1.8500953179999726	27.770880
+pthread-wmm/mix042.oepc.yml/utaipan-mix042.oepc.yml	ERROR(Incompatible witness)	0.816155	1.9120125320000056	28.008448
+pthread-wmm/mix042.opt.yml/utaipan-mix042.opt.yml	ERROR(Incompatible witness)	0.791919	1.9007424739999976	27.836416
+pthread-wmm/mix043.oepc.yml/utaipan-mix043.oepc.yml	ERROR(Incompatible witness)	0.904135	2.2516561070000023	28.024832
+pthread-wmm/mix043.opt.yml/utaipan-mix043.opt.yml	ERROR(Incompatible witness)	0.849429	2.12016534	27.906048
+pthread-wmm/mix044.opt.yml/utaipan-mix044.opt.yml	ERROR(Incompatible witness)	0.844137	1.8489598529999967	27.918336
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix044_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.918153	2.2588519469999824	27.992064
+pthread-wmm/mix044_tso.oepc.yml/utaipan-mix044_tso.oepc.yml	ERROR(Incompatible witness)	0.901963	2.20928613800001	28.258304
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix045_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.811258	1.9382183409999811	27.869184
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.776444	1.97264078500001	27.844608
+pthread-wmm/mix046.oepc.yml/utaipan-mix046.oepc.yml	ERROR(Incompatible witness)	0.917109	2.507455331999978	28.012544
+pthread-wmm/mix046.opt.yml/utaipan-mix046.opt.yml	ERROR(Incompatible witness)	0.84467	1.9875191389999998	27.922432
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix047_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.888995	2.2754161579999845	28.020736
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.8536	1.9764903409999874	27.922432
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.713124	1.819006862000009	27.779072
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.819456	1.9514955549999797	27.910144
+pthread-wmm/mix050.yml/utaipan-mix050.yml	ERROR(Incompatible witness)	0.899084	2.2925354529999993	27.992064
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/utaipan-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.894021	2.291364458000004	28.028928
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/utaipan-mix051_pso.opt_rmo.opt_tso.opt.yml	ERROR(Incompatible witness)	0.818413	1.7895419870000069	27.856896
+pthread-wmm/mix051_tso.oepc.yml/utaipan-mix051_tso.oepc.yml	ERROR(Incompatible witness)	0.895782	2.225373014000013	27.992064
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/utaipan-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.789807	2.053067838000004	27.865088
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/utaipan-mix052_pso.opt_rmo.opt_tso.opt.yml	ERROR(Incompatible witness)	0.739251	1.8896994239999856	27.762688
+pthread-wmm/mix052_tso.oepc.yml/utaipan-mix052_tso.oepc.yml	ERROR(Incompatible witness)	0.77631	1.9217736029999912	27.865088
+pthread-wmm/mix053.opt.yml/utaipan-mix053.opt.yml	ERROR(Incompatible witness)	0.805356	1.7718001749999814	27.828224
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix053_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.884835	2.2179783340000085	28.241920
+pthread-wmm/mix053_tso.oepc.yml/utaipan-mix053_tso.oepc.yml	ERROR(Incompatible witness)	0.862685	2.1669217590000187	27.942912
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/utaipan-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.720441	1.780742905000011	27.729920
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.70704	1.7347806150000054	27.721728
+pthread-wmm/mix055.opt.yml/utaipan-mix055.opt.yml	ERROR(Incompatible witness)	0.830144	1.9281258389999891	27.881472
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix055_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.884807	2.2952494300000126	27.996160
+pthread-wmm/mix055_tso.oepc.yml/utaipan-mix055_tso.oepc.yml	ERROR(Incompatible witness)	0.894785	2.1898471990000132	27.992064
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix056_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.792392	2.1377248769999824	27.856896
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.763325	1.9068867740000144	27.811840
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix057_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.890039	2.1103855329999988	27.971584
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.830468	1.9958963109999956	27.906048
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.869745	1.707826702999995	27.992064
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/utaipan-rfi000_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.732957	1.8609659039999826	27.758592
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.735331	1.889935778999984	27.766784
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.734269	1.5946622999999818	27.766784
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.718797	1.9721149300000036	27.721728
+pthread-wmm/rfi004.yml/utaipan-rfi004.yml	ERROR(Incompatible witness)	0.728293	1.8536847100000102	27.799552
+pthread-wmm/rfi005.yml/utaipan-rfi005.yml	ERROR(Incompatible witness)	0.542999	1.27485998100002	27.570176
+pthread-wmm/rfi006_power.oepc.yml/utaipan-rfi006_power.oepc.yml	ERROR(Incompatible witness)	0.872671	2.251929753000013	27.971584
+pthread-wmm/rfi006_power.opt.yml/utaipan-rfi006_power.opt.yml	ERROR(Incompatible witness)	0.937076	2.4802002440000024	28.073984
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/utaipan-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.870853	2.2721267400000045	27.992064
+pthread-wmm/rfi006_rmo.yml/utaipan-rfi006_rmo.yml	ERROR(Incompatible witness)	0.854323	2.116681442999976	27.951104
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.716298	1.7981153880000136	27.750400
+pthread-wmm/rfi007_tso.yml/utaipan-rfi007_tso.yml	ERROR(Incompatible witness)	0.773538	2.0161457149999933	27.852800
+pthread-wmm/rfi008.oepc.yml/utaipan-rfi008.oepc.yml	ERROR(Incompatible witness)	0.791763	1.9756819269999824	27.885568
+pthread-wmm/rfi008.opt.yml/utaipan-rfi008.opt.yml	ERROR(Incompatible witness)	0.77161	1.7525530599999968	27.848704
+pthread-wmm/rfi009_power.oepc.yml/utaipan-rfi009_power.oepc.yml	ERROR(Incompatible witness)	0.871313	1.8706498589999967	28.012544
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(Incompatible witness)	0.853273	2.1241531919999943	27.951104
+pthread-wmm/rfi009_rmo.oepc.yml/utaipan-rfi009_rmo.oepc.yml	ERROR(Incompatible witness)	0.877411	2.0405732380000074	27.963392
+pthread-wmm/rfi010.yml/utaipan-rfi010.yml	ERROR(Incompatible witness)	0.774308	1.5817772720000107	27.803648
+pthread-wmm/safe000_power.oepc.yml/utaipan-safe000_power.oepc.yml	ERROR(Incompatible witness)	0.981058	2.3890693289999945	28.164096
+pthread-wmm/safe000_power.opt.yml/utaipan-safe000_power.opt.yml	ERROR(Incompatible witness)	0.895564	2.3212598139999727	28.024832
+pthread-wmm/safe000_rmo.yml/utaipan-safe000_rmo.yml	ERROR(Incompatible witness)	0.968955	2.6568716860000166	28.123136
+pthread-wmm/safe001_power.oepc.yml/utaipan-safe001_power.oepc.yml	ERROR(Incompatible witness)	0.968301	2.380202281999999	28.155904
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/utaipan-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.786746	1.9718853100000047	27.836416
+pthread-wmm/safe001_rmo.oepc.yml/utaipan-safe001_rmo.oepc.yml	ERROR(Incompatible witness)	0.954788	2.381508941999982	28.094464
+pthread-wmm/safe002_power.oepc.yml/utaipan-safe002_power.oepc.yml	ERROR(Incompatible witness)	0.978871	2.430891887999991	28.164096
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/utaipan-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.789824	2.118460435000003	27.820032
+pthread-wmm/safe002_rmo.oepc.yml/utaipan-safe002_rmo.oepc.yml	ERROR(Incompatible witness)	0.957151	2.0613927599999897	28.147712
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.935489	2.2343609769999944	28.188672
+pthread-wmm/safe003_power.opt.yml/utaipan-safe003_power.opt.yml	ERROR(Incompatible witness)	0.902299	2.3085248929999977	28.024832
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-safe004_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.935138	2.6703499059999842	28.086272
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/utaipan-safe004_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.77342	1.8317624009999918	27.856896
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.764825	1.6534701189999907	27.840512
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/utaipan-safe006_power.oepc-thin000_power.oepc.yml	ERROR(Incompatible witness)	0.71232	1.5441328910000038	27.852800
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/utaipan-safe006_power.opt-thin000_power.opt.yml	ERROR(Incompatible witness)	0.819347	2.041061577999983	27.881472
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/utaipan-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.741171	2.0029454379999834	27.766784
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/utaipan-safe007_power.oepc-thin001_power.oepc.yml	ERROR(Incompatible witness)	0.803616	1.5813669700000048	27.889664
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/utaipan-safe007_power.opt-thin001_power.opt.yml	ERROR(Incompatible witness)	0.887573	2.3043717449999974	28.004352
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/utaipan-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.810902	1.5080208370000037	27.836416
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.794777	1.9451942610000117	27.832320
+pthread-wmm/safe008_power.opt.yml/utaipan-safe008_power.opt.yml	ERROR(Incompatible witness)	0.923775	1.8895255550000059	28.041216
+pthread-wmm/safe009_power.oepc.yml/utaipan-safe009_power.oepc.yml	ERROR(Incompatible witness)	0.890355	2.0004708839999807	28.024832
+pthread-wmm/safe009_power.opt.yml/utaipan-safe009_power.opt.yml	ERROR(Incompatible witness)	0.885472	2.330318844000004	27.996160
+pthread-wmm/safe009_rmo.oepc.yml/utaipan-safe009_rmo.oepc.yml	ERROR(Incompatible witness)	0.880116	1.929130060999995	27.967488
+pthread-wmm/safe009_rmo.opt.yml/utaipan-safe009_rmo.opt.yml	ERROR(Incompatible witness)	0.824655	1.7059180190000234	27.910144
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.71151	1.931854283000007	27.709440
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/utaipan-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.795992	1.8921357810000075	27.832320
+pthread-wmm/safe011_power.opt_pso.opt.yml/utaipan-safe011_power.opt_pso.opt.yml	ERROR(Incompatible witness)	0.785624	1.560641000000004	27.852800
+pthread-wmm/safe012_power.oepc.yml/utaipan-safe012_power.oepc.yml	ERROR(Incompatible witness)	0.79909	2.1870031439999877	27.889664
+pthread-wmm/safe012_power.opt.yml/utaipan-safe012_power.opt.yml	ERROR(Incompatible witness)	0.884709	2.369136703999999	27.996160
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/utaipan-safe012_pso.oepc_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.79459	2.0811078060000057	27.832320
+pthread-wmm/safe012_rmo.oepc.yml/utaipan-safe012_rmo.oepc.yml	ERROR(Incompatible witness)	0.786514	1.8981438589999868	27.844608
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.796725	1.8187060099999997	27.820032
+pthread-wmm/safe014_power.oepc.yml/utaipan-safe014_power.oepc.yml	ERROR(Incompatible witness)	0.812592	2.0866723069999864	27.885568
+pthread-wmm/safe014_power.opt.yml/utaipan-safe014_power.opt.yml	ERROR(Incompatible witness)	0.860414	2.1450222279999878	27.938816
+pthread-wmm/safe014_rmo.oepc.yml/utaipan-safe014_rmo.oepc.yml	ERROR(Incompatible witness)	0.800545	1.7287059849999764	27.852800
+pthread-wmm/safe014_rmo.opt.yml/utaipan-safe014_rmo.opt.yml	ERROR(Incompatible witness)	0.967481	2.5105321489999994	28.098560
+pthread-wmm/safe015_power.oepc.yml/utaipan-safe015_power.oepc.yml	ERROR(Incompatible witness)	0.658506	1.604166480999993	27.791360
+pthread-wmm/safe015_power.opt.yml/utaipan-safe015_power.opt.yml	ERROR(Incompatible witness)	0.970094	2.3696542929999964	28.143616
+pthread-wmm/safe015_rmo.yml/utaipan-safe015_rmo.yml	ERROR(Incompatible witness)	0.970169	2.0028370980000147	28.119040
+pthread-wmm/safe016_power.oepc.yml/utaipan-safe016_power.oepc.yml	ERROR(Incompatible witness)	0.949164	2.200835913999981	28.098560
+pthread-wmm/safe016_power.opt.yml/utaipan-safe016_power.opt.yml	ERROR(Incompatible witness)	1.011365	2.549625066999994	28.172288
+pthread-wmm/safe016_rmo.oepc.yml/utaipan-safe016_rmo.oepc.yml	ERROR(Incompatible witness)	0.928855	2.199841231999983	28.061696
+pthread-wmm/safe016_rmo.opt.yml/utaipan-safe016_rmo.opt.yml	ERROR(Incompatible witness)	0.985289	2.25900958699998	28.131328
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.777693	1.8960946640000031	27.832320
+pthread-wmm/safe018_power.oepc.yml/utaipan-safe018_power.oepc.yml	ERROR(Incompatible witness)	0.787558	2.148920294999982	27.856896
+pthread-wmm/safe018_power.opt.yml/utaipan-safe018_power.opt.yml	ERROR(Incompatible witness)	0.95538	2.195892327999985	28.094464
+pthread-wmm/safe018_rmo.oepc.yml/utaipan-safe018_rmo.oepc.yml	ERROR(Incompatible witness)	0.794461	2.0129394740000066	28.082176
+pthread-wmm/safe018_rmo.opt.yml/utaipan-safe018_rmo.opt.yml	ERROR(Incompatible witness)	0.905608	2.3260517739999784	27.996160
+pthread-wmm/safe019_power.oepc.yml/utaipan-safe019_power.oepc.yml	ERROR(Incompatible witness)	0.950112	2.318348302000004	28.348416
+pthread-wmm/safe019_power.opt.yml/utaipan-safe019_power.opt.yml	ERROR(Incompatible witness)	1.030668	2.228735396000019	28.233728
+pthread-wmm/safe019_rmo.oepc.yml/utaipan-safe019_rmo.oepc.yml	ERROR(Incompatible witness)	0.949491	2.2729563790000213	28.078080
+pthread-wmm/safe019_rmo.opt.yml/utaipan-safe019_rmo.opt.yml	ERROR(Incompatible witness)	0.970253	2.52548346399999	28.102656
+pthread-wmm/safe020_power.yml/utaipan-safe020_power.yml	ERROR(Incompatible witness)	0.943714	2.318116468999989	28.082176
+pthread-wmm/safe020_rmo.yml/utaipan-safe020_rmo.yml	ERROR(Incompatible witness)	0.881279	2.1083755480000264	28.008448
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/utaipan-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.796235	1.9070872299999735	27.873280
+pthread-wmm/safe021_power.opt_pso.opt.yml/utaipan-safe021_power.opt_pso.opt.yml	ERROR(Incompatible witness)	0.786624	1.9651526340000203	27.860992
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.712842	1.393958439999949	27.717632
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.98092	2.2048975330000076	28.127232
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.80821	1.9118155319999914	27.844608
+pthread-wmm/safe025_power.yml/utaipan-safe025_power.yml	ERROR(Incompatible witness)	0.672186	1.6412704889999645	27.791360
+pthread-wmm/safe025_rmo.yml/utaipan-safe025_rmo.yml	ERROR(Incompatible witness)	0.975061	2.294099821999964	28.123136
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.784348	1.9711061369999925	27.844608
+pthread-wmm/safe027_power.oepc.yml/utaipan-safe027_power.oepc.yml	ERROR(Incompatible witness)	0.916611	2.10804727499999	28.049408
+pthread-wmm/safe027_power.opt.yml/utaipan-safe027_power.opt.yml	ERROR(Incompatible witness)	1.040896	2.731374293999977	28.233728
+pthread-wmm/safe027_rmo.yml/utaipan-safe027_rmo.yml	ERROR(Incompatible witness)	0.904876	2.154998541999987	28.037120
+pthread-wmm/safe028_power.yml/utaipan-safe028_power.yml	ERROR(Incompatible witness)	0.947902	2.471831887999997	28.106752
+pthread-wmm/safe028_rmo.yml/utaipan-safe028_rmo.yml	ERROR(Incompatible witness)	0.893286	2.2184773109999583	28.012544
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-safe029_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.707368	1.9817160700000045	27.693056
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/utaipan-safe029_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.715544	2.0589279700000134	27.713536
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-safe030_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.794104	1.8644248979999816	27.836416
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/utaipan-safe030_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.765071	1.6498858849999465	27.783168
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-safe031_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(Incompatible witness)	0.790371	1.7200764340000205	27.803648
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/utaipan-safe031_power.opt_pso.opt_rmo.opt.yml	ERROR(Incompatible witness)	0.765948	1.4327393369999868	27.811840
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.939631	2.4364720019999595	28.078080
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.680711	1.3870137119999981	27.676672
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	ERROR(Incompatible witness)	0.764944	1.62033706699998	27.779072
+pthread-wmm/thin002_power.oepc.yml/utaipan-thin002_power.oepc.yml	ERROR(Incompatible witness)	0.882595	2.095070208999971	27.996160
+pthread-wmm/thin002_power.opt.yml/utaipan-thin002_power.opt.yml	ERROR(Incompatible witness)	0.984344	2.1567526770000427	28.102656
+pthread-wmm/thin002_rmo.yml/utaipan-thin002_rmo.yml	ERROR(Incompatible witness)	0.868846	2.080962589999956	27.963392
+pthread/lazy01.yml/utaipan-lazy01.yml	TIMEOUT	0.468173	46.02177945699998	34.791424
+pthread/reorder_2.yml/utaipan-reorder_2.yml	true	0.847995	2.5288024650000125	36.139008
+pthread/reorder_5.yml/utaipan-reorder_5.yml	true	0.860481	2.5122021020000034	36.147200
+pthread/singleton.yml/utaipan-singleton.yml	TIMEOUT	0.724748	46.04454877400002	35.475456
+pthread/stack-2.yml/utaipan-stack-2.yml	ERROR(Incompatible witness)	0.714238	1.6840762329999848	27.860992
+pthread/stack_longer-1.yml/utaipan-stack_longer-1.yml	ERROR(Incompatible witness)	0.678604	1.2126114060000077	27.860992
+pthread/stack_longest-1.yml/utaipan-stack_longest-1.yml	false(unreach-call)	0.969193	1.8696035529999904	35.401728
+pthread/stateful01-1.yml/utaipan-stateful01-1.yml	TIMEOUT	0.514125	46.03652292800001	34.807808
+pthread/triangular-2.yml/utaipan-triangular-2.yml	TIMEOUT	0.61465	46.02491155500002	34.934784
+pthread/triangular-longer-2.yml/utaipan-triangular-longer-2.yml	TIMEOUT	0.751021	46.01689352599999	35.225600
+pthread/triangular-longest-2.yml/utaipan-triangular-longest-2.yml	TIMEOUT	0.967454	46.02553565699998	35.708928
+weaver/parallel-barrier-loop.wvr.yml/utaipan-parallel-barrier-loop.wvr.yml	ERROR(Incompatible witness)	0.352367	0.6268130839999912	26.943488
+weaver/popl20-bad-counter-queue.wvr.yml/utaipan-popl20-bad-counter-queue.wvr.yml	ERROR(Incompatible witness)	0.297952	0.3518585699999903	26.693632
+weaver/popl20-more-array-sum-alt.wvr.yml/utaipan-popl20-more-array-sum-alt.wvr.yml	ERROR(Incompatible witness)	0.308409	0.4089413569999465	26.935296

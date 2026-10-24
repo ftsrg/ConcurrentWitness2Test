@@ -1,0 +1,33 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/infer/pthread-driver-races/char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml/char_generic_nvram_read_nvram_nvram_unlocked_ioctl.i --graphml-witness svcomp23-witness-benchmarks/tools/infer/pthread-driver-races/char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/venv/lib/python3.12/site-packages/networkx/readwrite/graphml.py:1034: UserWarning: No key type for id creationtime. Using string
+  warnings.warn(f"No key type for id {attr_id}. Using string")
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 84, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_kuuq8l__/tmp/tmpbcw_h0np.c
+Compilation started
+/usr/bin/ld: /tmp/BenchExec_run_kuuq8l__/tmp/ccL1EikL.o: warning: relocation against `x86_platform' in read-only section `.text'
+/usr/bin/ld: /tmp/BenchExec_run_kuuq8l__/tmp/ccL1EikL.o: in function `get_max_mapped':
+tmpbcw_h0np.c:(.text+0xc1): undefined reference to `max_pfn_mapped'
+/usr/bin/ld: /tmp/BenchExec_run_kuuq8l__/tmp/ccL1EikL.o: in function `has_persistent_clock':
+tmpbcw_h0np.c:(.text+0x156a): undefined reference to `persistent_clock_exist'
+/usr/bin/ld: /tmp/BenchExec_run_kuuq8l__/tmp/ccL1EikL.o: in function `from_kuid_munged':
+tmpbcw_h0np.c:(.text+0x194a): undefined reference to `overflowuid'
+/usr/bin/ld: /tmp/BenchExec_run_kuuq8l__/tmp/ccL1EikL.o: in function `from_kgid_munged':
+tmpbcw_h0np.c:(.text+0x1985): undefined reference to `overflowgid'
+/usr/bin/ld: /tmp/BenchExec_run_kuuq8l__/tmp/ccL1EikL.o: in function `massage_pgprot':
+tmpbcw_h0np.c:(.text+0x3bcc): undefined reference to `__supported_pte_mask'
+/usr/bin/ld: /tmp/BenchExec_run_kuuq8l__/tmp/ccL1EikL.o: in function `is_new_memtype_allowed':
+tmpbcw_h0np.c:(.text+0x3d4c): undefined reference to `x86_platform'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

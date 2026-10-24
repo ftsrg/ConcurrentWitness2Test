@@ -1,0 +1,8 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/symbiotic/pthread-wmm/safe002_power.oepc.yml/safe002_power.oepc.i --graphml-witness svcomp23-witness-benchmarks/tools/symbiotic/pthread-wmm/safe002_power.oepc.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+ConcurrentWitness2Test/venv/bin/python3: /lib/x86_64-linux-gnu/libm.so.6: version `GLIBC_2.38' not found (required by ConcurrentWitness2Test/venv/bin/python3)
+ConcurrentWitness2Test/venv/bin/python3: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.38' not found (required by ConcurrentWitness2Test/venv/bin/python3)

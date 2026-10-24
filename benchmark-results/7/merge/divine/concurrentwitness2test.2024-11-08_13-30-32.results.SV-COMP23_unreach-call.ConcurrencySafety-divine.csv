@@ -1,0 +1,377 @@
+tool		ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-divine	SV-COMP23_unreach-call.ConcurrencySafety-divine	SV-COMP23_unreach-call.ConcurrencySafety-divine	SV-COMP23_unreach-call.ConcurrencySafety-divine
+../svcomp23-witness-benchmarks/tools/divine/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/divine-13-privatized_18-first-reads_unknown_1_neg.yml	false	false(unreach-call)	0.633165	1.6061831460000349	59.596800
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/divine-13-privatized_18-first-reads_unknown_1_pos.yml	false	true	0.624745	1.5160946390000163	64.819200
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/divine-13-privatized_18-first-reads_unknown_2_neg.yml	false	true	0.634855	1.5873350500000925	58.306560
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/divine-13-privatized_18-first-reads_unknown_2_pos.yml	false	false(unreach-call)	0.641146	1.6145759700000326	59.969536
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/divine-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	0.633991	1.5208826519999548	59.973632
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/divine-13-privatized_19-publish-precision_unknown_1_pos.yml	false	true	0.632909	1.5489852570000266	60.538880
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/divine-13-privatized_19-publish-precision_unknown_2_neg.yml	false	true	0.628722	1.5205964630000608	58.814464
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/divine-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	0.54484	1.4829203399999642	36.859904
+goblint-regression/13-privatized_30-traces-oplus-vs-meet_true.yml/divine-13-privatized_30-traces-oplus-vs-meet_true.yml	true	true	0.553055	1.5309393410000212	40.034304
+goblint-regression/13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml/divine-13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml	true	true	0.54958	1.5598841920000268	36.876288
+goblint-regression/13-privatized_33-traces-v-matters_true.yml/divine-13-privatized_33-traces-v-matters_true.yml	true	true	0.547557	1.3505584409999756	34.582528
+goblint-regression/13-privatized_35-traces-ex-2_true.yml/divine-13-privatized_35-traces-ex-2_true.yml	true	true	0.538461	1.375062694999997	34.586624
+goblint-regression/13-privatized_38-traces-ex-4-switch_true.yml/divine-13-privatized_38-traces-ex-4-switch_true.yml	true	true	0.554087	1.2990700550000156	34.381824
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/divine-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	false(unreach-call)	0.558095	1.2384231060000275	34.603008
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/divine-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	true	0.55723	1.3159776819999252	34.586624
+goblint-regression/13-privatized_45-traces-per-global-and-current-lock-mine-incomparable_true.yml/divine-13-privatized_45-traces-per-global-and-current-lock-mine-incomparable_true.yml	true	true	0.549124	1.2843371609999394	34.590720
+goblint-regression/13-privatized_67-pthread_cond_wait_true.yml/divine-13-privatized_67-pthread_cond_wait_true.yml	false	TIMEOUT	0.530561	46.03433434600004	35.508224
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_neg.yml/divine-13-privatized_67-pthread_cond_wait_unknown_1_neg.yml	false	TIMEOUT	0.546	46.03262294000001	35.532800
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_pos.yml/divine-13-privatized_67-pthread_cond_wait_unknown_1_pos.yml	false	TIMEOUT	0.564606	46.07457164300001	35.540992
+goblint-regression/28-race_reach_45-escape_racing.yml/divine-28-race_reach_45-escape_racing.yml	false	true	0.551092	1.2268256130000736	34.705408
+goblint-regression/28-race_reach_74-tricky_address1_racefree.yml/divine-28-race_reach_74-tricky_address1_racefree.yml	true	TIMEOUT	22.131908	46.03036827999995	203.677696
+goblint-regression/28-race_reach_75-tricky_address2_racefree.yml/divine-28-race_reach_75-tricky_address2_racefree.yml	true	TIMEOUT	22.219465	46.02286438099998	203.423744
+goblint-regression/28-race_reach_76-tricky_address3_racefree.yml/divine-28-race_reach_76-tricky_address3_racefree.yml	true	TIMEOUT	21.934793	46.01070197900003	203.362304
+goblint-regression/28-race_reach_77-tricky_address4_racing.yml/divine-28-race_reach_77-tricky_address4_racing.yml	false	TIMEOUT	21.871829	46.028079149000064	203.284480
+goblint-regression/28-race_reach_86-lists_racing.yml/divine-28-race_reach_86-lists_racing.yml	false	TIMEOUT	21.864315	46.05568177700002	378.273792
+goblint-regression/28-race_reach_87-lists_racefree.yml/divine-28-race_reach_87-lists_racefree.yml	true	TIMEOUT	22.014891	46.04083752500003	377.905152
+goblint-regression/28-race_reach_90-arrayloop2_racing.yml/divine-28-race_reach_90-arrayloop2_racing.yml	false	false(unreach-call)	0.684783	1.1792480560000058	35.282944
+goblint-regression/28-race_reach_91-arrayloop2_racefree.yml/divine-28-race_reach_91-arrayloop2_racefree.yml	true	false(unreach-call)	0.712427	1.232683851000047	35.172352
+goblint-regression/28-race_reach_92-evilcollapse_racing.yml/divine-28-race_reach_92-evilcollapse_racing.yml	false	false(unreach-call)	0.727	1.4258380850000094	35.188736
+goblint-regression/28-race_reach_93-evilcollapse_racefree.yml/divine-28-race_reach_93-evilcollapse_racefree.yml	true	false(unreach-call)	0.74884	1.3488400469999533	35.217408
+goblint-regression/28-race_reach_94-alloc_region_racing.yml/divine-28-race_reach_94-alloc_region_racing.yml	false	false(unreach-call)	0.727921	1.2559397489999355	35.708928
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/divine-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	false	true	0.565102	0.8838924149999912	34.586624
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/divine-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	false(unreach-call)	0.559647	0.9581034770000088	34.619392
+goblint-regression/36-apron_21-traces-cluster-based_true.yml/divine-36-apron_21-traces-cluster-based_true.yml	true	true	0.608194	1.2403092370000195	34.689024
+goblint-regression/36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml/divine-36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml	true	true	0.568869	0.9545886370000289	34.725888
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/divine-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	true	0.542898	0.8533172210001112	34.627584
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/divine-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	false(unreach-call)	0.56277	1.0490696279999838	34.619392
+ldv-linux-3.14-races/linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-1.yml/divine-linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-1.yml	true	ERROR(Parsing failed)	0.3083	0.4051962870000807	27.373568
+ldv-linux-3.14-races/linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-2.yml/divine-linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-2.yml	false	ERROR(Parsing failed)	0.297842	0.40264809499990406	27.361280
+ldv-linux-3.14-races/linux-3.14--drivers--net--irda--nsc-ircc.ko.cil.yml/divine-linux-3.14--drivers--net--irda--nsc-ircc.ko.cil.yml	false	ERROR(Parsing failed)	0.308854	0.4430448169999863	27.344896
+ldv-linux-3.14-races/linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.yml/divine-linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.yml	false	ERROR(Parsing failed)	0.308485	0.441336450000108	27.238400
+ldv-linux-3.14-races/linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.yml/divine-linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.yml	false	ERROR(Parsing failed)	0.310632	0.46497606799994173	27.070464
+ldv-linux-3.14-races/linux-3.14--drivers--usb--misc--adutux.ko.cil.yml/divine-linux-3.14--drivers--usb--misc--adutux.ko.cil.yml	false	ERROR(Parsing failed)	0.291286	0.3857148260000258	27.140096
+ldv-races/race-1_2-join.yml/divine-race-1_2-join.yml	false	true	0.696236	1.0616051050000124	36.081664
+ldv-races/race-1_3-join.yml/divine-race-1_3-join.yml	false	true	0.700881	1.2121713569999883	36.098048
+ldv-races/race-2_2-container_of.yml/divine-race-2_2-container_of.yml	false	true	0.845783	20.686316481000063	36.077568
+ldv-races/race-2_3-container_of.yml/divine-race-2_3-container_of.yml	false	true	0.887928	27.38166258299998	36.089856
+ldv-races/race-2_4-container_of.yml/divine-race-2_4-container_of.yml	false	true	0.884312	29.46458772599999	36.061184
+ldv-races/race-2_5-container_of.yml/divine-race-2_5-container_of.yml	false	true	0.890234	29.248461017000068	36.077568
+ldv-races/race-3_2-container_of-global.yml/divine-race-3_2-container_of-global.yml	false	true	0.844308	29.134035857999947	35.885056
+pthread-C-DAC/pthread-demo-datarace-3.yml/divine-pthread-demo-datarace-3.yml	false	false(unreach-call)	0.695777	3.1823101109999925	35.647488
+pthread-C-DAC/pthread-finding-k-matches.yml/divine-pthread-finding-k-matches.yml	true	true	0.875878	30.82423201200004	35.995648
+pthread-C-DAC/pthread-numerical-integration.yml/divine-pthread-numerical-integration.yml	true	ERROR(Parsing failed)	0.493841	2.888374982000073	28.446720
+pthread-atomic/read_write_lock-1.yml/divine-read_write_lock-1.yml	true	true	0.632552	3.5235536530000218	34.639872
+pthread-atomic/read_write_lock-2.yml/divine-read_write_lock-2.yml	false	true	0.661992	4.660313980000069	34.680832
+pthread-complex/elimination_backoff_stack.yml/divine-elimination_backoff_stack.yml	false	true	0.816948	9.070265038999992	35.921920
+pthread-deagle/arithmetic_prog_bad.yml/divine-arithmetic_prog_bad.yml	false	false(unreach-call)	0.624006	2.357936622000011	34.988032
+pthread-deagle/circular_buffer_bad.yml/divine-circular_buffer_bad.yml	false	true	0.600005	3.21309091899991	34.865152
+pthread-divine/tls_destructor_worker.yml/divine-tls_destructor_worker.yml	false	false(unreach-call)	0.589773	2.6478495730000304	34.607104
+pthread-driver-races/char_generic_nvram_nvram_unlocked_ioctl_write_nvram.yml/divine-char_generic_nvram_nvram_unlocked_ioctl_write_nvram.yml	true	ERROR(Compilation error)	1.861156	8.561330845999919	55.808000
+pthread-driver-races/char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml/divine-char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml	true	ERROR(Compilation error)	1.8544	8.017052463000027	55.250944
+pthread-driver-races/char_generic_nvram_read_nvram_write_nvram.yml/divine-char_generic_nvram_read_nvram_write_nvram.yml	false	ERROR(Compilation error)	1.89052	10.26496548199998	55.431168
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_configure.yml/divine-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_configure.yml	true	ERROR(Compilation error)	1.906019	8.64853063399994	57.802752
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml/divine-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml	false	ERROR(Compilation error)	1.981234	10.525668593999967	57.753600
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_get.yml/divine-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	1.952893	9.56310902100006	57.847808
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml/divine-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml	false	ERROR(Compilation error)	1.979992	9.9601172670001	57.827328
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_current.yml/divine-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_current.yml	true	ERROR(Compilation error)	1.969849	10.72806325800002	57.778176
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_get.yml/divine-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	1.967596	10.088400565999905	57.700352
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_set.yml/divine-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_set.yml	true	ERROR(Compilation error)	1.961052	8.319554175000007	57.683968
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_get.yml/divine-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	1.936824	8.25399774999994	57.761792
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml/divine-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml	false	ERROR(Compilation error)	1.948521	7.530467563999991	57.786368
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_get_pc8736x_gpio_set.yml/divine-char_pc8736x_gpio_pc8736x_gpio_get_pc8736x_gpio_set.yml	true	ERROR(Compilation error)	1.927322	7.517924697000012	57.815040
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_change.yml/divine-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_change.yml	true	ERROR(Compilation error)	1.893054	6.168731346000072	57.733120
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_configure.yml/divine-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_configure.yml	true	ERROR(Compilation error)	1.884453	5.711419554000031	57.765888
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_current.yml/divine-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_current.yml	true	ERROR(Compilation error)	1.833714	5.1387119910000365	57.819136
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_get.yml/divine-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	1.840212	4.755733143000043	57.868288
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.yml/divine-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.yml	true	ERROR(Compilation error)	1.833017	5.040695467999967	57.851904
+pthread-ext/02_inc_cas.yml/divine-02_inc_cas.yml	true	TIMEOUT	10.696967	46.05616102199997	2312.028160
+pthread-ext/03_incdec.yml/divine-03_incdec.yml	true	TIMEOUT	9.24504	45.068199521	1224.409088
+pthread-ext/04_incdec_cas.yml/divine-04_incdec_cas.yml	true	TIMEOUT	9.668086	45.226313222000044	2312.265728
+pthread-ext/08_rand_cas.yml/divine-08_rand_cas.yml	true	TIMEOUT	34.042686	49.15898337400006	86.900736
+pthread-ext/09_fmaxsym.yml/divine-09_fmaxsym.yml	true	TIMEOUT	8.813167	45.348106059999964	586.797056
+pthread-ext/11_fmaxsymopt.yml/divine-11_fmaxsymopt.yml	true	TIMEOUT	8.266624	45.68586760799997	525.164544
+pthread-ext/18_read_write_lock.yml/divine-18_read_write_lock.yml	true	true	0.588031	2.082710964000057	34.619392
+pthread-ext/25_stack_longer-1.yml/divine-25_stack_longer-1.yml	false	false(unreach-call)	0.736712	3.0305243039999823	34.652160
+pthread-ext/25_stack_longest-2.yml/divine-25_stack_longest-2.yml	false	false(unreach-call)	0.700638	2.264540807000003	34.701312
+pthread-ext/26_stack_cas_longer-1.yml/divine-26_stack_cas_longer-1.yml	false	false(unreach-call)	0.734977	2.4618673410000156	34.672640
+pthread-ext/26_stack_cas_longest-1.yml/divine-26_stack_cas_longest-1.yml	false	false(unreach-call)	0.71155	2.451220054000032	34.668544
+pthread-ext/28_buggy_simple_loop1_vf.yml/divine-28_buggy_simple_loop1_vf.yml	false	TIMEOUT	10.058664	45.52777824599991	2312.638464
+pthread-lit/qw2004-2b.yml/divine-qw2004-2b.yml	false	true	0.585672	1.572191791000023	34.648064
+pthread-lit/sssc12.yml/divine-sssc12.yml	true	ERROR(Compilation error)	0.51299	1.308881843999984	35.147776
+pthread-lit/sssc12_variant.yml/divine-sssc12_variant.yml	true	ERROR(Compilation error)	0.524934	1.2594230939999989	35.139584
+pthread-wmm/mix000.oepc.yml/divine-mix000.oepc.yml	false	true	0.8025	25.559183270999938	35.241984
+pthread-wmm/mix000.opt.yml/divine-mix000.opt.yml	false	true	0.7985	25.431015598000045	35.205120
+pthread-wmm/mix001.oepc.yml/divine-mix001.oepc.yml	false	true	0.835717	26.292227857000057	35.368960
+pthread-wmm/mix001.opt.yml/divine-mix001.opt.yml	false	true	0.809297	32.09675714899993	35.295232
+pthread-wmm/mix002.oepc.yml/divine-mix002.oepc.yml	false	true	0.788289	30.515271480000024	35.155968
+pthread-wmm/mix002.opt.yml/divine-mix002.opt.yml	false	true	0.813971	34.796823995999944	35.278848
+pthread-wmm/mix003.oepc.yml/divine-mix003.oepc.yml	false	true	0.808091	42.389738341	35.053568
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/divine-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	false	true	0.812398	43.86100838699997	35.155968
+pthread-wmm/mix006.opt.yml/divine-mix006.opt.yml	false	TIMEOUT	0.81062	46.045740921999936	35.258368
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.77761	46.12556900900006	35.192832
+pthread-wmm/mix009.oepc.yml/divine-mix009.oepc.yml	false	TIMEOUT (true)	0.810743	45.350793087000056	34.877440
+pthread-wmm/mix009.opt.yml/divine-mix009.opt.yml	false	TIMEOUT	0.77772	46.062259288000064	35.426304
+pthread-wmm/mix010.oepc.yml/divine-mix010.oepc.yml	false	TIMEOUT (true)	0.780715	45.38429650399996	35.184640
+pthread-wmm/mix010.opt.yml/divine-mix010.opt.yml	false	true	0.812059	44.70085888699998	35.184640
+pthread-wmm/mix011.opt.yml/divine-mix011.opt.yml	false	true	0.811165	44.308115807000036	35.225600
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.815493	45.12989211799993	35.000320
+pthread-wmm/mix011_tso.oepc.yml/divine-mix011_tso.oepc.yml	false	true	0.785993	43.91164900000001	35.082240
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/divine-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	true	0.753508	42.83377757200003	35.057664
+pthread-wmm/mix012_pso.opt_tso.opt.yml/divine-mix012_pso.opt_tso.opt.yml	false	true	0.785503	43.65976983200005	35.049472
+pthread-wmm/mix015.oepc.yml/divine-mix015.oepc.yml	false	true	0.779928	44.374023658000056	35.258368
+pthread-wmm/mix015.opt.yml/divine-mix015.opt.yml	false	true	0.817084	43.94632118599998	35.262464
+pthread-wmm/mix016.oepc.yml/divine-mix016.oepc.yml	false	true	0.790166	44.123324927	35.094528
+pthread-wmm/mix016_power.opt_rmo.opt.yml/divine-mix016_power.opt_rmo.opt.yml	false	true	0.78147	44.40773975100001	34.799616
+pthread-wmm/mix016_pso.opt_tso.opt.yml/divine-mix016_pso.opt_tso.opt.yml	false	true	0.789471	43.765966838000054	34.983936
+pthread-wmm/mix019.opt.yml/divine-mix019.opt.yml	false	true	0.808183	44.09456687900001	35.246080
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix019_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.78119	44.366864635999946	35.155968
+pthread-wmm/mix019_tso.oepc.yml/divine-mix019_tso.oepc.yml	false	true	0.786746	44.86210293800002	34.914304
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.755869	44.37900919799995	34.988032
+pthread-wmm/mix022_tso.yml/divine-mix022_tso.yml	false	true	0.785052	44.67891777600005	35.045376
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/divine-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	true	0.791524	44.87328174899994	35.127296
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/divine-mix024_power.opt_pso.opt_rmo.opt.yml	false	true	0.800237	44.864237798999966	34.992128
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/divine-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	true	0.800624	43.941006949999974	34.983936
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/divine-mix025_pso.opt_rmo.opt.yml	false	true	0.786999	44.25224537700001	34.979840
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.792995	44.45127860000002	35.278848
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/divine-mix028_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT (true)	0.791181	45.068645095999955	35.041280
+pthread-wmm/mix028_tso.yml/divine-mix028_tso.yml	false	TIMEOUT (true)	0.814828	45.41495694799994	35.409920
+pthread-wmm/mix031.oepc.yml/divine-mix031.oepc.yml	false	TIMEOUT (true)	0.777656	45.429642870000066	34.983936
+pthread-wmm/mix031.opt.yml/divine-mix031.opt.yml	false	TIMEOUT (true)	0.779959	45.63274327399995	34.877440
+pthread-wmm/mix032.oepc.yml/divine-mix032.oepc.yml	false	TIMEOUT (true)	0.809343	46.04474503899996	35.217408
+pthread-wmm/mix032.opt.yml/divine-mix032.opt.yml	false	TIMEOUT (true)	0.814038	46.02108093300001	34.852864
+pthread-wmm/mix033.opt.yml/divine-mix033.opt.yml	false	TIMEOUT (true)	0.810193	45.96439013999998	34.996224
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.824411	45.672364425999945	35.332096
+pthread-wmm/mix033_tso.oepc.yml/divine-mix033_tso.oepc.yml	false	true	0.838343	44.42641932799995	35.049472
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/divine-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT (true)	0.789387	45.53183560499997	35.115008
+pthread-wmm/mix034_pso.opt_tso.opt.yml/divine-mix034_pso.opt_tso.opt.yml	false	TIMEOUT (true)	0.76479	45.858095402000004	34.689024
+pthread-wmm/mix035.oepc.yml/divine-mix035.oepc.yml	false	TIMEOUT (true)	0.794781	45.53932993000001	35.110912
+pthread-wmm/mix035_power.opt_rmo.opt.yml/divine-mix035_power.opt_rmo.opt.yml	false	TIMEOUT (true)	0.79124	45.578524511999944	35.033088
+pthread-wmm/mix035_pso.opt_tso.opt.yml/divine-mix035_pso.opt_tso.opt.yml	false	TIMEOUT (true)	0.7835	45.14886592500011	34.852864
+pthread-wmm/mix038.opt.yml/divine-mix038.opt.yml	false	TIMEOUT (true)	0.796423	45.594278921999944	34.828288
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.81172	45.76515122600006	35.119104
+pthread-wmm/mix038_tso.oepc.yml/divine-mix038_tso.oepc.yml	false	TIMEOUT (true)	0.811009	45.97171145200002	35.225600
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	0.752666	46.12871402299993	35.270656
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/divine-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT (true)	0.805829	45.14591793799991	34.983936
+pthread-wmm/mix042.oepc.yml/divine-mix042.oepc.yml	false	TIMEOUT (true)	0.800083	45.57782243700001	35.287040
+pthread-wmm/mix042.opt.yml/divine-mix042.opt.yml	false	true	0.810541	44.358588134	35.209216
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.789677	44.56504234700003	35.090432
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/divine-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	true	0.785505	44.71169302399994	35.164160
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/divine-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT (true)	0.783741	45.30210401299996	35.237888
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/divine-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT (true)	0.795494	45.32602745500003	35.188736
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/divine-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.776632	45.04741711499992	35.102720
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/divine-mix052_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT (true)	0.79666	45.44426567400001	34.922496
+pthread-wmm/mix052_tso.oepc.yml/divine-mix052_tso.oepc.yml	false	TIMEOUT (true)	0.79897	45.95920820099991	35.045376
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/divine-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.787698	45.60963254399985	34.955264
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/divine-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT (true)	0.770837	45.79355317999989	34.938880
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/divine-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.800649	45.2340909269999	35.049472
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/divine-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	true	0.812801	44.98782132300016	35.192832
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/divine-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.808006	46.04253461600001	35.622912
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/divine-rfi000_power.opt_pso.opt_rmo.opt.yml	false	true	0.78683	44.815046492999954	34.988032
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/divine-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT (true)	0.787777	45.46390600899986	35.037184
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/divine-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT (true)	0.76735	45.77684262899993	35.053568
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.760419	44.77974581600006	34.717696
+pthread-wmm/rfi004.yml/divine-rfi004.yml	false	TIMEOUT (true)	0.777386	45.29060771700006	35.012608
+pthread-wmm/rfi005.yml/divine-rfi005.yml	false	TIMEOUT (true)	0.811711	45.320904116000065	35.422208
+pthread-wmm/rfi006_power.oepc.yml/divine-rfi006_power.oepc.yml	false	TIMEOUT (true)	0.838015	45.113220561999924	35.127296
+pthread-wmm/rfi006_power.opt.yml/divine-rfi006_power.opt.yml	false	TIMEOUT (true)	0.854659	45.93265479499996	35.123200
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/divine-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	false	TIMEOUT (true)	0.825432	45.10541557900001	35.188736
+pthread-wmm/rfi006_rmo.yml/divine-rfi006_rmo.yml	false	true	0.809718	44.40014427300002	35.078144
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (true)	0.787019	45.11124018500004	35.422208
+pthread-wmm/rfi007_tso.yml/divine-rfi007_tso.yml	false	TIMEOUT (true)	0.80683	45.344329775999995	35.405824
+pthread-wmm/rfi008.oepc.yml/divine-rfi008.oepc.yml	false	TIMEOUT (true)	0.781236	46.024401932000046	35.442688
+pthread-wmm/rfi008.opt.yml/divine-rfi008.opt.yml	false	true	0.79831	44.76987273999998	35.151872
+pthread-wmm/rfi009_power.oepc.yml/divine-rfi009_power.oepc.yml	false	TIMEOUT (true)	0.851966	45.63335660400003	35.229696
+pthread-wmm/rfi009_rmo.oepc.yml/divine-rfi009_rmo.oepc.yml	false	true	0.820512	44.75308057400002	35.127296
+pthread-wmm/rfi010.yml/divine-rfi010.yml	false	true	0.801892	44.53577503899987	35.155968
+pthread-wmm/safe000_power.oepc.yml/divine-safe000_power.oepc.yml	false	true	0.864171	44.52994218499998	35.446784
+pthread-wmm/safe000_power.opt.yml/divine-safe000_power.opt.yml	false	true	0.827329	44.72512186200015	35.356672
+pthread-wmm/safe000_rmo.yml/divine-safe000_rmo.yml	false	TIMEOUT (true)	0.84562	45.35428277400001	35.770368
+pthread-wmm/safe001_power.oepc.yml/divine-safe001_power.oepc.yml	false	true	0.837662	43.213251392000075	35.336192
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/divine-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	true	0.792234	44.69096134000006	35.012608
+pthread-wmm/safe001_rmo.oepc.yml/divine-safe001_rmo.oepc.yml	false	true	0.871046	44.53127802200015	35.454976
+pthread-wmm/safe002_power.oepc.yml/divine-safe002_power.oepc.yml	false	true	0.87552	44.85106952900014	35.454976
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/divine-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	true	0.789625	44.77130934799993	34.938880
+pthread-wmm/safe002_rmo.oepc.yml/divine-safe002_rmo.oepc.yml	false	true	0.888175	44.88437630599992	35.360768
+pthread-wmm/safe003_power.opt.yml/divine-safe003_power.opt.yml	false	true	0.829766	44.78874272300004	35.237888
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/divine-safe004_power.opt_pso.opt_rmo.opt.yml	false	true	0.795884	43.49775709299979	35.127296
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.779181	44.18181152200009	34.922496
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/divine-safe006_power.oepc-thin000_power.oepc.yml	false	TIMEOUT (true)	0.798175	45.51938023299999	35.024896
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/divine-safe006_power.opt-thin000_power.opt.yml	false	TIMEOUT (true)	0.810778	45.404103220000025	35.090432
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/divine-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	true	0.770686	44.649788141000045	34.893824
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/divine-safe007_power.oepc-thin001_power.oepc.yml	false	true	0.820204	44.650838355999895	34.885632
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/divine-safe007_power.opt-thin001_power.opt.yml	false	TIMEOUT (true)	0.822267	45.621999725999785	35.262464
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/divine-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	false	TIMEOUT (true)	0.810761	45.38845519400002	34.897920
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.791031	44.72770839299983	35.180544
+pthread-wmm/safe008_power.opt.yml/divine-safe008_power.opt.yml	false	true	0.806586	44.08799277799994	35.328000
+pthread-wmm/safe009_power.oepc.yml/divine-safe009_power.oepc.yml	false	TIMEOUT (true)	0.824683	45.13848107800004	35.295232
+pthread-wmm/safe009_power.opt.yml/divine-safe009_power.opt.yml	false	true	0.811235	43.92907197700015	35.176448
+pthread-wmm/safe009_rmo.oepc.yml/divine-safe009_rmo.oepc.yml	false	true	0.812418	44.85998614699997	35.393536
+pthread-wmm/safe009_rmo.opt.yml/divine-safe009_rmo.opt.yml	false	true	0.811541	44.91743648700003	34.963456
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.773662	43.64040786600003	34.873344
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/divine-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	true	0.79237	44.706029629999875	35.028992
+pthread-wmm/safe011_power.opt_pso.opt.yml/divine-safe011_power.opt_pso.opt.yml	false	true	0.80765	44.682148678999965	35.119104
+pthread-wmm/safe012_power.oepc.yml/divine-safe012_power.oepc.yml	false	TIMEOUT (true)	0.807351	45.11198891599997	34.803712
+pthread-wmm/safe012_power.opt.yml/divine-safe012_power.opt.yml	false	true	0.82571	44.79058512400002	35.422208
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/divine-safe012_pso.oepc_pso.opt_rmo.opt.yml	false	true	0.781209	42.32997923599987	34.869248
+pthread-wmm/safe012_rmo.oepc.yml/divine-safe012_rmo.oepc.yml	false	true	0.786866	43.41071650399999	34.930688
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.787476	44.082501613999966	34.881536
+pthread-wmm/safe014_power.oepc.yml/divine-safe014_power.oepc.yml	false	true	0.805827	43.98802624199993	35.020800
+pthread-wmm/safe014_power.opt.yml/divine-safe014_power.opt.yml	false	true	0.807053	44.21541878800008	35.311616
+pthread-wmm/safe014_rmo.oepc.yml/divine-safe014_rmo.oepc.yml	false	true	0.769104	43.835905314	35.041280
+pthread-wmm/safe014_rmo.opt.yml/divine-safe014_rmo.opt.yml	false	true	0.848265	43.965566999999965	35.405824
+pthread-wmm/safe015_power.oepc.yml/divine-safe015_power.oepc.yml	false	false(unreach-call)	0.796357	44.17961117599998	35.627008
+pthread-wmm/safe015_power.opt.yml/divine-safe015_power.opt.yml	false	true	0.87226	44.81652985899996	35.606528
+pthread-wmm/safe015_rmo.yml/divine-safe015_rmo.yml	false	true	0.885839	44.30131120500005	35.409920
+pthread-wmm/safe016_power.oepc.yml/divine-safe016_power.oepc.yml	false	true	0.838081	43.10997623800017	35.385344
+pthread-wmm/safe016_rmo.oepc.yml/divine-safe016_rmo.oepc.yml	false	true	0.81838	43.77240779099998	35.504128
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.781084	43.73834001699993	35.270656
+pthread-wmm/safe018_power.oepc.yml/divine-safe018_power.oepc.yml	false	true	0.785987	44.592585222000025	34.922496
+pthread-wmm/safe018_power.opt.yml/divine-safe018_power.opt.yml	false	true	0.824298	44.1221455110001	35.127296
+pthread-wmm/safe018_rmo.oepc.yml/divine-safe018_rmo.oepc.yml	false	true	0.773983	43.49093842399998	34.865152
+pthread-wmm/safe018_rmo.opt.yml/divine-safe018_rmo.opt.yml	false	true	0.806303	43.952552378000064	35.352576
+pthread-wmm/safe019_power.oepc.yml/divine-safe019_power.oepc.yml	false	true	0.86346	44.57640785100011	35.147776
+pthread-wmm/safe019_rmo.oepc.yml/divine-safe019_rmo.oepc.yml	false	true	0.835292	44.18571910900005	35.500032
+pthread-wmm/safe020_power.yml/divine-safe020_power.yml	false	TIMEOUT (true)	0.860474	45.26040669600002	35.307520
+pthread-wmm/safe020_rmo.yml/divine-safe020_rmo.yml	false	true	0.83571	44.25247329800004	35.123200
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/divine-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	true	0.774942	43.42133433599997	35.115008
+pthread-wmm/safe021_power.opt_pso.opt.yml/divine-safe021_power.opt_pso.opt.yml	false	true	0.786892	43.75546718700002	35.053568
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.759206	44.107943895999824	35.082240
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (true)	0.793855	45.44081705800022	35.192832
+pthread-wmm/safe025_power.yml/divine-safe025_power.yml	false	false(unreach-call)	0.793392	43.9394373680002	35.680256
+pthread-wmm/safe025_rmo.yml/divine-safe025_rmo.yml	false	true	0.855311	44.208586748000016	35.405824
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (true)	0.809509	45.64371431800009	35.094528
+pthread-wmm/safe027_power.oepc.yml/divine-safe027_power.oepc.yml	false	TIMEOUT (true)	0.860767	45.08862979799983	35.246080
+pthread-wmm/safe027_rmo.yml/divine-safe027_rmo.yml	false	true	0.845668	44.85752599600005	35.143680
+pthread-wmm/safe028_power.yml/divine-safe028_power.yml	false	true	0.840717	44.073564127000054	35.414016
+pthread-wmm/safe028_rmo.yml/divine-safe028_rmo.yml	false	true	0.812909	44.49225275700019	35.184640
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/divine-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.76033	42.87594840199995	35.143680
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/divine-safe029_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT (true)	0.761741	45.56070568899986	34.983936
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/divine-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.777817	44.381595565	35.217408
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/divine-safe030_power.opt_pso.opt_rmo.opt.yml	false	true	0.775927	44.539958066000054	35.012608
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/divine-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false	true	0.77581	44.26931020699999	34.807808
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/divine-safe031_power.opt_pso.opt_rmo.opt.yml	false	true	0.768682	44.91802588199994	34.955264
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.761935	43.41626019400019	34.832384
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/divine-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	true	0.781783	44.79580249700007	35.188736
+pthread-wmm/thin002_power.oepc.yml/divine-thin002_power.oepc.yml	false	true	0.794067	44.44479986800002	34.947072
+pthread-wmm/thin002_rmo.yml/divine-thin002_rmo.yml	false	true	0.797247	43.34152936099986	34.988032
+pthread/fib_unsafe-5.yml/divine-fib_unsafe-5.yml	false	true	0.57536	1.512237369000104	34.578432
+pthread/fib_unsafe-6.yml/divine-fib_unsafe-6.yml	false	true	0.563593	1.0721593700000085	34.406400
+pthread/fib_unsafe-7.yml/divine-fib_unsafe-7.yml	false	true	0.55299	0.9904955260001316	34.582528
+pthread/lazy01.yml/divine-lazy01.yml	false	false(unreach-call)	0.577045	1.0539394750001065	34.496512
+pthread/queue.yml/divine-queue.yml	false	true	0.636646	0.9862093429999277	35.295232
+pthread/queue_longer.yml/divine-queue_longer.yml	false	true	0.651217	1.4527933940000821	35.127296
+pthread/queue_longest.yml/divine-queue_longest.yml	false	true	0.652102	1.2375437570001395	35.102720
+pthread/queue_ok_longer.yml/divine-queue_ok_longer.yml	true	true	0.635491	1.1806993970001258	34.988032
+pthread/queue_ok_longest.yml/divine-queue_ok_longest.yml	true	true	0.626723	1.5879407600000377	35.164160
+pthread/reorder_2.yml/divine-reorder_2.yml	false	true	0.674455	1.4038869419998719	35.700736
+pthread/reorder_5.yml/divine-reorder_5.yml	false	true	0.689091	1.4927875619998758	35.532800
+pthread/singleton.yml/divine-singleton.yml	false	false(unreach-call)	0.687297	1.5203736759999629	35.491840
+pthread/stack-2.yml/divine-stack-2.yml	false	false(unreach-call)	0.628814	1.1992199889998574	35.180544
+pthread/stack_longer-1.yml/divine-stack_longer-1.yml	false	false(unreach-call)	0.641613	1.3156790830000773	35.151872
+pthread/stack_longest-1.yml/divine-stack_longest-1.yml	false	false(unreach-call)	0.625174	1.0316544629999953	35.155968
+pthread/stateful01-1.yml/divine-stateful01-1.yml	false	false(unreach-call)	0.576693	1.266655961999959	34.627584
+pthread/triangular-2.yml/divine-triangular-2.yml	false	true	0.566278	0.9854159530000288	34.783232
+pthread/triangular-longer-2.yml/divine-triangular-longer-2.yml	false	true	0.571814	1.187757862000126	34.742272
+pthread/triangular-longest-2.yml/divine-triangular-longest-2.yml	false	true	0.56871	1.6650680190000458	34.639872
+pthread/twostage_3.yml/divine-twostage_3.yml	false	true	0.711158	2.8448788139999124	35.905536
+weaver/array-eq-symm.wvr.yml/divine-array-eq-symm.wvr.yml	true	true	0.680933	44.55653307300008	33.832960
+weaver/array-eq-trans.wvr.yml/divine-array-eq-trans.wvr.yml	true	true	0.681108	44.67145172200003	33.935360
+weaver/chl-array-int-subst.wvr.yml/divine-chl-array-int-subst.wvr.yml	true	true	0.669707	44.349495912000066	33.751040
+weaver/chl-array-int-symm.wvr.yml/divine-chl-array-int-symm.wvr.yml	true	true	0.67188	43.94594485500011	33.955840
+weaver/chl-array-int-trans.wvr.yml/divine-chl-array-int-trans.wvr.yml	true	true	0.667668	44.45290487500006	33.964032
+weaver/chl-collitem-symm.wvr.yml/divine-chl-collitem-symm.wvr.yml	true	true	0.673323	43.728339732999984	33.972224
+weaver/chl-name-comparator-subst.wvr.yml/divine-chl-name-comparator-subst.wvr.yml	true	true	0.681032	44.384942926999884	33.951744
+weaver/chl-name-comparator-symm.wvr.yml/divine-chl-name-comparator-symm.wvr.yml	true	true	0.677598	44.89450631099999	34.107392
+weaver/chl-name-comparator-trans.wvr.yml/divine-chl-name-comparator-trans.wvr.yml	true	true	0.689089	44.53940159199988	34.017280
+weaver/chl-node-subst.wvr.yml/divine-chl-node-subst.wvr.yml	true	true	0.674143	44.0206154519999	34.029568
+weaver/chl-node-symm.wvr.yml/divine-chl-node-symm.wvr.yml	true	true	0.664827	44.05369419099998	33.865728
+weaver/chl-node-trans.wvr.yml/divine-chl-node-trans.wvr.yml	true	true	0.676394	43.21980059900011	33.972224
+weaver/chl-nzb-file-symm.wvr.yml/divine-chl-nzb-file-symm.wvr.yml	true	ERROR(Incompatible witness)	0.314894	0.5709740990000682	26.488832
+weaver/chl-poker-hand-subst.wvr.yml/divine-chl-poker-hand-subst.wvr.yml	true	true	0.831886	44.184862632999966	35.782656
+weaver/chl-poker-hand-trans.wvr.yml/divine-chl-poker-hand-trans.wvr.yml	true	true	0.834844	44.67087138900001	35.717120
+weaver/chl-time-subst.wvr.yml/divine-chl-time-subst.wvr.yml	true	true	0.679378	43.01602729599995	34.189312
+weaver/chl-time-symm.wvr.yml/divine-chl-time-symm.wvr.yml	true	true	0.654324	44.7340692570001	34.091008
+weaver/chl-time-trans.wvr.yml/divine-chl-time-trans.wvr.yml	true	true	0.666249	43.915734636000025	34.217984
+weaver/chl-word-subst.wvr.yml/divine-chl-word-subst.wvr.yml	true	true	0.685744	43.805625273999794	33.951744
+weaver/chl-word-symm.wvr.yml/divine-chl-word-symm.wvr.yml	true	true	0.656133	43.457715581	34.054144
+weaver/chl-word-trans.wvr.yml/divine-chl-word-trans.wvr.yml	true	true	0.681041	43.93599387099994	33.808384
+weaver/fibonacci.wvr.yml/divine-fibonacci.wvr.yml	true	true	0.656306	43.577570739000066	33.964032
+weaver/loop-tiling-eq.wvr.yml/divine-loop-tiling-eq.wvr.yml	true	true	0.655195	43.08424117799996	33.796096
+weaver/parallel-bakery-2.wvr.yml/divine-parallel-bakery-2.wvr.yml	true	true	0.667118	43.28781247699999	34.095104
+weaver/parallel-bakery-3.wvr.yml/divine-parallel-bakery-3.wvr.yml	true	true	0.702567	43.17495041300003	34.140160
+weaver/parallel-bakery-4.wvr.yml/divine-parallel-bakery-4.wvr.yml	true	true	0.725802	43.90199636400007	34.156544
+weaver/parallel-lamport.wvr.yml/divine-parallel-lamport.wvr.yml	true	true	0.548733	42.671118221999905	34.127872
+weaver/parallel-min-max-1.wvr.yml/divine-parallel-min-max-1.wvr.yml	true	true	0.530886	43.11157858399997	33.964032
+weaver/parallel-misc-1.wvr.yml/divine-parallel-misc-1.wvr.yml	true	true	0.65608	42.970355186999996	33.972224
+weaver/parallel-misc-4.wvr.yml/divine-parallel-misc-4.wvr.yml	true	true	0.529232	44.34861381099995	34.217984
+weaver/parallel-misc-5.wvr.yml/divine-parallel-misc-5.wvr.yml	true	true	0.552284	42.05587699600005	33.939456
+weaver/parallel-parallel-sum-1-dsl.wvr.yml/divine-parallel-parallel-sum-1-dsl.wvr.yml	true	true	0.616403	43.438530098	33.931264
+weaver/parallel-parallel-sum-1.wvr.yml/divine-parallel-parallel-sum-1.wvr.yml	true	true	0.696737	43.724694150999994	33.996800
+weaver/parallel-parallel-sum-2.wvr.yml/divine-parallel-parallel-sum-2.wvr.yml	true	true	0.626666	43.310407379000026	33.820672
+weaver/parallel-parallel-sum-equiv.wvr.yml/divine-parallel-parallel-sum-equiv.wvr.yml	true	true	0.598791	43.36521731499988	34.029568
+weaver/popl20-bad-buffer-mult-alt.wvr.yml/divine-popl20-bad-buffer-mult-alt.wvr.yml	false	true	0.554354	43.82350529099995	34.009088
+weaver/popl20-bad-buffer-mult-alt2.wvr.yml/divine-popl20-bad-buffer-mult-alt2.wvr.yml	true	true	0.553442	42.862047372999996	33.878016
+weaver/popl20-bad-commit-1.wvr-bad.yml/divine-popl20-bad-commit-1.wvr-bad.yml	true	true	0.680929	42.636925908999956	34.324480
+weaver/popl20-bad-commit-2.wvr-bad.yml/divine-popl20-bad-commit-2.wvr-bad.yml	true	true	0.705648	44.040550438999844	34.058240
+weaver/popl20-bad-counter-queue.wvr.yml/divine-popl20-bad-counter-queue.wvr.yml	false	true	0.660828	44.413646180999876	33.972224
+weaver/popl20-bad-counter-queue2.wvr.yml/divine-popl20-bad-counter-queue2.wvr.yml	true	true	0.66121	43.60898400199994	33.878016
+weaver/popl20-bad-dot-product-alt.wvr.yml/divine-popl20-bad-dot-product-alt.wvr.yml	true	true	0.541765	44.28408706100004	33.992704
+weaver/popl20-bad-dot-product.wvr.yml/divine-popl20-bad-dot-product.wvr.yml	true	true	0.557263	43.75638112799993	34.054144
+weaver/popl20-bad-ring-nondet.wvr.yml/divine-popl20-bad-ring-nondet.wvr.yml	true	true	0.683094	44.33393954500002	34.009088
+weaver/popl20-bad-ring.wvr.yml/divine-popl20-bad-ring.wvr.yml	true	true	0.682853	44.2602623140001	34.185216
+weaver/popl20-bad-threaded-sum-2.wvr.yml/divine-popl20-bad-threaded-sum-2.wvr.yml	true	ERROR(Incompatible witness)	0.311717	0.7522118239999145	26.394624
+weaver/popl20-bad-three-array-sum-alt.wvr.yml/divine-popl20-bad-three-array-sum-alt.wvr.yml	true	true	0.677099	44.265939462000006	33.742848
+weaver/popl20-channel-sum.wvr.yml/divine-popl20-channel-sum.wvr.yml	true	true	0.66272	44.399068899999975	34.000896
+weaver/popl20-commit-1.wvr.yml/divine-popl20-commit-1.wvr.yml	true	true	0.691919	43.90830289900009	34.066432
+weaver/popl20-commit-2.wvr.yml/divine-popl20-commit-2.wvr.yml	true	true	0.705316	43.03282011599981	34.062336
+weaver/popl20-counter-fun.wvr.yml/divine-popl20-counter-fun.wvr.yml	true	true	0.678331	44.57282641699999	33.738752
+weaver/popl20-figure1-alt.wvr.yml/divine-popl20-figure1-alt.wvr.yml	true	TIMEOUT (true)	0.660871	45.235092658999974	33.927168
+weaver/popl20-horseshoe.wvr.yml/divine-popl20-horseshoe.wvr.yml	true	TIMEOUT (true)	0.674636	45.75307893100012	33.787904
+weaver/popl20-min-max-dec.wvr.yml/divine-popl20-min-max-dec.wvr.yml	true	TIMEOUT (true)	0.549033	45.057285099999945	33.865728
+weaver/popl20-min-max-inc-dec.wvr.yml/divine-popl20-min-max-inc-dec.wvr.yml	true	true	0.546002	43.770464704000005	34.037760
+weaver/popl20-min-max-inc.wvr.yml/divine-popl20-min-max-inc.wvr.yml	true	true	0.54462	44.05693643900008	34.013184
+weaver/popl20-more-array-sum-alt.wvr.yml/divine-popl20-more-array-sum-alt.wvr.yml	false	true	0.679633	43.72848552200003	34.000896
+weaver/popl20-more-array-sum-alt2.wvr.yml/divine-popl20-more-array-sum-alt2.wvr.yml	true	true	0.661446	43.605323663000036	33.849344
+weaver/popl20-more-array-sum.wvr.yml/divine-popl20-more-array-sum.wvr.yml	false	true	0.55004	44.818472821000114	34.201600
+weaver/popl20-more-array-sum2.wvr.yml/divine-popl20-more-array-sum2.wvr.yml	true	true	0.535847	44.605760635000024	34.045952
+weaver/popl20-more-buffer-mult.wvr.yml/divine-popl20-more-buffer-mult.wvr.yml	false	true	0.700479	44.27786799299997	33.980416
+weaver/popl20-more-buffer-mult2.wvr.yml/divine-popl20-more-buffer-mult2.wvr.yml	true	true	0.710801	43.826400267000054	34.033664
+weaver/popl20-more-buffer-series.wvr.yml/divine-popl20-more-buffer-series.wvr.yml	false	true	0.710306	44.27787400700004	34.000896
+weaver/popl20-more-buffer-series2.wvr.yml/divine-popl20-more-buffer-series2.wvr.yml	true	true	0.691566	43.82707785899993	34.025472
+weaver/popl20-more-dec-subseq.wvr.yml/divine-popl20-more-dec-subseq.wvr.yml	true	true	0.550492	44.08775241000012	34.041856
+weaver/popl20-more-inc-subseq.wvr.yml/divine-popl20-more-inc-subseq.wvr.yml	true	true	0.552833	44.29551104500001	33.988608
+weaver/popl20-more-max-array-hom.wvr.yml/divine-popl20-more-max-array-hom.wvr.yml	true	true	0.55073	42.91053298299994	34.127872
+weaver/popl20-more-max-array.wvr.yml/divine-popl20-more-max-array.wvr.yml	true	true	0.544325	43.737782115999835	33.824768
+weaver/popl20-more-min-array-hom.wvr.yml/divine-popl20-more-min-array-hom.wvr.yml	true	true	0.536113	42.83952430399995	33.927168
+weaver/popl20-more-min-array.wvr.yml/divine-popl20-more-min-array.wvr.yml	true	true	0.538824	44.155136051	33.906688
+weaver/popl20-more-min-le-max.wvr.yml/divine-popl20-more-min-le-max.wvr.yml	true	true	0.545391	43.796680371999855	33.980416
+weaver/popl20-more-mts.wvr.yml/divine-popl20-more-mts.wvr.yml	true	true	0.553666	44.16401795699994	33.751040
+weaver/popl20-more-multiply-verify.wvr.yml/divine-popl20-more-multiply-verify.wvr.yml	true	true	0.664816	44.037184689000014	33.947648
+weaver/popl20-more-queue-add-2-nl.wvr.yml/divine-popl20-more-queue-add-2-nl.wvr.yml	true	true	0.673834	44.59815980500002	33.898496
+weaver/popl20-more-queue-add-3-nl.wvr.yml/divine-popl20-more-queue-add-3-nl.wvr.yml	true	true	0.678948	43.53945819900014	34.037760
+weaver/popl20-more-sorted.wvr.yml/divine-popl20-more-sorted.wvr.yml	true	true	0.557499	43.791202326000075	33.914880
+weaver/popl20-more-sum-array-hom.wvr.yml/divine-popl20-more-sum-array-hom.wvr.yml	true	true	0.661469	43.39511675300014	33.878016
+weaver/popl20-more-vector-add.wvr.yml/divine-popl20-more-vector-add.wvr.yml	true	true	0.660335	42.83315399799994	34.025472
+weaver/popl20-nonblocking-cntr-alt.wvr.yml/divine-popl20-nonblocking-cntr-alt.wvr.yml	true	true	0.535648	44.07441230199993	33.804288
+weaver/popl20-prod-cons-eq.wvr.yml/divine-popl20-prod-cons-eq.wvr.yml	true	true	0.683338	44.20969339800013	33.996800
+weaver/popl20-prod-cons.wvr.yml/divine-popl20-prod-cons.wvr.yml	true	true	0.665211	43.57107536000012	33.824768
+weaver/popl20-prod-cons3.wvr.yml/divine-popl20-prod-cons3.wvr.yml	true	true	0.682224	43.793677819000095	34.144256
+weaver/popl20-queue-add-2.wvr.yml/divine-popl20-queue-add-2.wvr.yml	true	true	0.655907	43.885773567000115	33.763328
+weaver/popl20-queue-add-3.wvr.yml/divine-popl20-queue-add-3.wvr.yml	true	true	0.678086	44.46606097100016	34.226176
+weaver/popl20-send-receive-alt.wvr.yml/divine-popl20-send-receive-alt.wvr.yml	true	true	0.656462	43.43278175599994	33.906688
+weaver/popl20-send-receive.wvr.yml/divine-popl20-send-receive.wvr.yml	true	true	0.658059	43.82552008999983	34.082816
+weaver/popl20-simple-array-sum.wvr.yml/divine-popl20-simple-array-sum.wvr.yml	true	true	0.662968	43.56200714800002	34.160640
+weaver/popl20-simple-queue.wvr.yml/divine-popl20-simple-queue.wvr.yml	true	true	0.643714	42.69047816000011	33.984512
+weaver/popl20-threaded-sum-3.wvr.yml/divine-popl20-threaded-sum-3.wvr.yml	true	true	0.529588	42.758169411999916	33.722368
+weaver/popl20-three-array-max.wvr.yml/divine-popl20-three-array-max.wvr.yml	true	true	0.537475	43.65498542399996	34.013184
+weaver/popl20-three-array-min.wvr.yml/divine-popl20-three-array-min.wvr.yml	true	true	0.53759	43.69536909399994	33.763328
+weaver/popl20-three-array-sum.wvr.yml/divine-popl20-three-array-sum.wvr.yml	true	true	0.664746	43.988952075999805	34.164736
+weaver/popl20-two-queue.wvr.yml/divine-popl20-two-queue.wvr.yml	true	true	0.677949	43.838498729999856	34.091008
+weaver/spaghetti.wvr.yml/divine-spaghetti.wvr.yml	true	true	0.678371	42.89944916200011	33.980416
+weaver/test-context1.wvr.yml/divine-test-context1.wvr.yml	true	true	0.649799	42.36935841400009	33.816576
+weaver/test-easy1.wvr.yml/divine-test-easy1.wvr.yml	true	true	0.67256	43.340990636000015	33.771520
+weaver/test-easy11.wvr.yml/divine-test-easy11.wvr.yml	true	true	0.653815	43.89916421199996	33.902592
+weaver/test-easy6.wvr.yml/divine-test-easy6.wvr.yml	true	true	0.667552	43.53679454400003	33.746944
+weaver/test-easy8.wvr.yml/divine-test-easy8.wvr.yml	true	true	0.648981	42.80101975999992	33.959936
+weaver/unroll-2.wvr.yml/divine-unroll-2.wvr.yml	true	true	0.52543	42.06127738999999	33.882112
+weaver/unroll-3.wvr.yml/divine-unroll-3.wvr.yml	true	true	0.530286	42.27559530899998	34.328576
+weaver/unroll-4.wvr.yml/divine-unroll-4.wvr.yml	true	true	0.540144	41.43075778100001	33.951744
+weaver/unroll-5.wvr.yml/divine-unroll-5.wvr.yml	true	true	0.521566	26.52502349899987	33.792000
+weaver/unroll-cond-2.wvr.yml/divine-unroll-cond-2.wvr.yml	true	true	0.541023	26.184691379999776	33.906688
+weaver/unroll-cond-3.wvr.yml/divine-unroll-cond-3.wvr.yml	true	true	0.531781	26.004507870999987	33.951744
+weaver/unroll-cond-4.wvr.yml/divine-unroll-cond-4.wvr.yml	true	true	0.525536	25.189780830000018	33.849344
+weaver/unroll-cond-5.wvr.yml/divine-unroll-cond-5.wvr.yml	true	true	0.522076	23.877722274000007	33.923072

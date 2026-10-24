@@ -1,0 +1,308 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cbmc/pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.i --graphml-witness svcomp23-witness-benchmarks/tools/cbmc/pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Witness property: unreach-call
+/tmp/BenchExec_run_hqbh4hc3/tmp/tmpp2zrfj4v.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Execution ended (exit code -6)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+{0: 100}
+Verdict: NEVER

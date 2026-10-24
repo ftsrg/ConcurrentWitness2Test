@@ -1,0 +1,22 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/pichecker/pthread/stack-2.yml/stack-2.i --graphml-witness svcomp23-witness-benchmarks/tools/pichecker/pthread/stack-2.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/__main__.py", line 149, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+Witness property: unreach-call
+/tmp/BenchExec_run_85jexwx7/tmp/tmpf84qg7og.c
+Compilation started
+/tmp/BenchExec_run_85jexwx7/tmp/tmpmuza4nv3.c: In function ‘t1’:
+/tmp/BenchExec_run_85jexwx7/tmp/tmpmuza4nv3.c:995:52: error: expected ‘)’ before ‘;’ token
+  995 |     tmp = __VERIFIER_nondet_uint();
+      |                                                    ^
+      |                                                    )
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

@@ -1,0 +1,211 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/esbmc-kind/goblint-regression/28-race_reach_45-escape_racing.yml/28-race_reach_45-escape_racing.i --graphml-witness svcomp23-witness-benchmarks/tools/esbmc-kind/goblint-regression/28-race_reach_45-escape_racing.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/tmp/BenchExec_run_8s9kjg_y/tmp/tmpxgs_81m2.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+Execution started
+Execution ended (exit code 0)
+{0: 100}
+Verdict: NEVER

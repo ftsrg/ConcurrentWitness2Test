@@ -1,0 +1,11 @@
+tool	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-algo-selection	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-algo-selection	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-algo-selection	SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-algo-selection
+../svcomp23-witness-benchmarks/tools/coveriteam-verifier-algo-selection/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/coveriteam-verifier-algo-selection-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	ERROR(ineffective witness)	2.194254	5.223229371000002	74.747904
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/coveriteam-verifier-algo-selection-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false(unreach-call)	2.1648	5.2069768289999985	70.225920
+ldv-races/race-2_2-container_of.yml/coveriteam-verifier-algo-selection-race-2_2-container_of.yml	TIMEOUT	2.854554	46.015470181	73.408512
+ldv-races/race-2_3-container_of.yml/coveriteam-verifier-algo-selection-race-2_3-container_of.yml	TIMEOUT	2.74844	46.028353412	69.386240
+ldv-races/race-2_4-container_of.yml/coveriteam-verifier-algo-selection-race-2_4-container_of.yml	TIMEOUT	2.890559	46.058753224	68.452352
+ldv-races/race-2_5-container_of.yml/coveriteam-verifier-algo-selection-race-2_5-container_of.yml	TIMEOUT	2.846475	46.04980557200001	68.558848
+ldv-races/race-3_2-container_of-global.yml/coveriteam-verifier-algo-selection-race-3_2-container_of-global.yml	TIMEOUT	2.983223	46.02734259100001	71.983104
+pthread-divine/tls_destructor_worker.yml/coveriteam-verifier-algo-selection-tls_destructor_worker.yml	false(unreach-call)	2.188751	5.087194366000006	70.348800

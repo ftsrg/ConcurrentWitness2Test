@@ -1,0 +1,287 @@
+tool	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-utaipan	SV-COMP23_unreach-call.ConcurrencySafety-utaipan	SV-COMP23_unreach-call.ConcurrencySafety-utaipan	SV-COMP23_unreach-call.ConcurrencySafety-utaipan
+../svcomp23-witness-benchmarks/tools/utaipan/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/utaipan-13-privatized_18-first-reads_unknown_1_neg.yml	false(unreach-call)	2.221187	5.93732593	68.247552
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/utaipan-13-privatized_18-first-reads_unknown_1_pos.yml	ERROR(ineffective witness)	2.234324	5.949226573000004	69.844992
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/utaipan-13-privatized_18-first-reads_unknown_2_neg.yml	ERROR(ineffective witness)	2.23282	5.938569402000013	67.153920
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/utaipan-13-privatized_18-first-reads_unknown_2_pos.yml	false(unreach-call)	2.224376	5.954707052999993	72.232960
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/utaipan-13-privatized_19-publish-precision_unknown_1_neg.yml	false(unreach-call)	2.213626	5.9259831360000135	71.479296
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/utaipan-13-privatized_19-publish-precision_unknown_1_pos.yml	TIMEOUT	2.048801	46.02742263099999	70.557696
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/utaipan-13-privatized_19-publish-precision_unknown_2_neg.yml	TIMEOUT	2.041062	46.06354834400001	69.988352
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/utaipan-13-privatized_19-publish-precision_unknown_2_pos.yml	false(unreach-call)	2.185665	5.841337600999992	67.960832
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/utaipan-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false(unreach-call)	2.178105	5.768551552999995	69.619712
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/utaipan-13-privatized_41-traces-ex-7_unknown_1_pos.yml	TIMEOUT	2.045064	46.027824205	72.007680
+goblint-regression/13-privatized_67-pthread_cond_wait_true.yml/utaipan-13-privatized_67-pthread_cond_wait_true.yml	TIMEOUT	2.325079	46.0160537	68.210688
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_neg.yml/utaipan-13-privatized_67-pthread_cond_wait_unknown_1_neg.yml	TIMEOUT	2.276009	46.01708778000001	67.543040
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_pos.yml/utaipan-13-privatized_67-pthread_cond_wait_unknown_1_pos.yml	TIMEOUT	2.260544	46.034524331	67.772416
+goblint-regression/28-race_reach_45-escape_racing.yml/utaipan-28-race_reach_45-escape_racing.yml	ERROR(ineffective witness)	2.206932	3.3235889679999957	69.259264
+goblint-regression/28-race_reach_94-alloc_region_racing.yml/utaipan-28-race_reach_94-alloc_region_racing.yml	false(unreach-call)	2.505424	4.156853864000013	69.165056
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/utaipan-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	ERROR(ineffective witness)	2.213061	4.028289211000001	69.009408
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/utaipan-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false(unreach-call)	2.218142	4.105222366999996	66.703360
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/utaipan-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	ERROR(ineffective witness)	2.091916	2.3740702599999963	67.862528
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/utaipan-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false(unreach-call)	2.115959	2.241968175999986	68.919296
+ldv-races/race-1_2-join.yml/utaipan-race-1_2-join.yml	TIMEOUT	2.24006	46.019502892999995	66.592768
+ldv-races/race-1_3-join.yml/utaipan-race-1_3-join.yml	ERROR(ineffective witness)	2.365194	2.4224047759999934	67.768320
+ldv-races/race-2_2-container_of.yml/utaipan-race-2_2-container_of.yml	TIMEOUT	2.611138	46.10514794699998	69.308416
+ldv-races/race-2_3-container_of.yml/utaipan-race-2_3-container_of.yml	TIMEOUT	3.560255	46.014031488	69.181440
+ldv-races/race-2_4-container_of.yml/utaipan-race-2_4-container_of.yml	TIMEOUT	4.143863	46.014087053	66.785280
+ldv-races/race-2_5-container_of.yml/utaipan-race-2_5-container_of.yml	TIMEOUT	2.629261	46.026626127000014	67.514368
+pthread-C-DAC/pthread-demo-datarace-3.yml/utaipan-pthread-demo-datarace-3.yml	TIMEOUT	3.379779	46.01992681500002	66.547712
+pthread-atomic/read_write_lock-2.yml/utaipan-read_write_lock-2.yml	TIMEOUT	2.214944	46.12878303000002	68.698112
+pthread-deagle/arithmetic_prog_bad.yml/utaipan-arithmetic_prog_bad.yml	TIMEOUT	2.386673	46.028600100999995	66.486272
+pthread-deagle/circular_buffer_bad.yml/utaipan-circular_buffer_bad.yml	ERROR(ineffective witness)	2.424623	6.299473955999986	67.866624
+pthread-ext/28_buggy_simple_loop1_vf.yml/utaipan-28_buggy_simple_loop1_vf.yml	TIMEOUT	38.219059	45.29456892800002	1797.488640
+pthread-lit/qw2004-2b.yml/utaipan-qw2004-2b.yml	TIMEOUT	2.439331	46.42172001099999	68.509696
+pthread-wmm/mix000.oepc.yml/utaipan-mix000.oepc.yml	TIMEOUT	2.877527	46.055264835	68.911104
+pthread-wmm/mix000.opt.yml/utaipan-mix000.opt.yml	TIMEOUT	2.917705	46.011993906000015	66.768896
+pthread-wmm/mix001.oepc.yml/utaipan-mix001.oepc.yml	ERROR(ineffective witness)	3.077682	24.046174474999987	69.898240
+pthread-wmm/mix001.opt.yml/utaipan-mix001.opt.yml	ERROR(ineffective witness)	3.09721	33.122622596999975	69.910528
+pthread-wmm/mix002.oepc.yml/utaipan-mix002.oepc.yml	false(unreach-call)	3.05235	33.670482427999985	66.826240
+pthread-wmm/mix002.opt.yml/utaipan-mix002.opt.yml	ERROR(ineffective witness)	3.014817	25.543882009000015	69.128192
+pthread-wmm/mix003.oepc.yml/utaipan-mix003.oepc.yml	false(unreach-call)	3.020254	28.305701599000002	66.785280
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/utaipan-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	ERROR(ineffective witness)	3.118372	26.209938230000006	67.727360
+pthread-wmm/mix004.oepc.yml/utaipan-mix004.oepc.yml	false(unreach-call)	3.090965	17.473947416000016	66.879488
+pthread-wmm/mix004.opt.yml/utaipan-mix004.opt.yml	ERROR(ineffective witness)	3.282197	34.65610687899999	67.977216
+pthread-wmm/mix005.opt.yml/utaipan-mix005.opt.yml	ERROR(ineffective witness)	3.260269	39.20477672199999	67.874816
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix005_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	3.173041	46.29444492000002	68.071424
+pthread-wmm/mix005_tso.oepc.yml/utaipan-mix005_tso.oepc.yml	false(unreach-call)	3.1011	23.57179438099999	67.768320
+pthread-wmm/mix006.opt.yml/utaipan-mix006.opt.yml	TIMEOUT	3.010818	46.202563055999974	66.748416
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.971588	22.19779601899998	67.883008
+pthread-wmm/mix006_tso.oepc.yml/utaipan-mix006_tso.oepc.yml	ERROR(ineffective witness)	3.623799	36.481875704999965	68.472832
+pthread-wmm/mix007.oepc.yml/utaipan-mix007.oepc.yml	TIMEOUT	3.184313	46.09937626600001	69.169152
+pthread-wmm/mix007.opt.yml/utaipan-mix007.opt.yml	ERROR(ineffective witness)	3.198945	36.94440576400001	67.776512
+pthread-wmm/mix008.opt.yml/utaipan-mix008.opt.yml	ERROR(ineffective witness)	3.038576	17.635936206000025	68.775936
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix008_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	3.333075	46.02166836399999	68.747264
+pthread-wmm/mix008_tso.oepc.yml/utaipan-mix008_tso.oepc.yml	TIMEOUT	3.487693	46.28966425400003	68.796416
+pthread-wmm/mix009.oepc.yml/utaipan-mix009.oepc.yml	false(unreach-call)	2.825371	36.221257811999976	68.739072
+pthread-wmm/mix009.opt.yml/utaipan-mix009.opt.yml	ERROR(ineffective witness)	2.831563	4.345170499000034	68.870144
+pthread-wmm/mix010.oepc.yml/utaipan-mix010.oepc.yml	false(unreach-call)	2.921854	3.810745284999996	68.747264
+pthread-wmm/mix010.opt.yml/utaipan-mix010.opt.yml	ERROR(ineffective witness)	3.113167	32.13703355000001	68.825088
+pthread-wmm/mix011.opt.yml/utaipan-mix011.opt.yml	ERROR(ineffective witness)	3.03232	41.31751905200002	68.866048
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.843383	6.65832358900002	67.850240
+pthread-wmm/mix011_tso.oepc.yml/utaipan-mix011_tso.oepc.yml	false(unreach-call)	3.085449	27.698899368000014	66.813952
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/utaipan-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	TIMEOUT	2.697222	46.34513956699999	66.949120
+pthread-wmm/mix012_pso.opt_tso.opt.yml/utaipan-mix012_pso.opt_tso.opt.yml	ERROR(ineffective witness)	2.721648	3.9586290579999854	68.001792
+pthread-wmm/mix013.oepc.yml/utaipan-mix013.oepc.yml	TIMEOUT	2.868296	46.010432794999986	66.777088
+pthread-wmm/mix013.opt.yml/utaipan-mix013.opt.yml	ERROR(ineffective witness)	2.882531	7.420893542999977	67.923968
+pthread-wmm/mix014.opt.yml/utaipan-mix014.opt.yml	ERROR(ineffective witness)	3.052863	41.47130214400005	66.805760
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix014_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.757405	46.01339518000003	67.887104
+pthread-wmm/mix014_tso.oepc.yml/utaipan-mix014_tso.oepc.yml	TIMEOUT	3.345425	46.013741466	68.501504
+pthread-wmm/mix015.oepc.yml/utaipan-mix015.oepc.yml	false(unreach-call)	2.88883	39.90070088599998	67.784704
+pthread-wmm/mix015.opt.yml/utaipan-mix015.opt.yml	ERROR(ineffective witness)	2.761443	17.789375777000032	67.891200
+pthread-wmm/mix016.oepc.yml/utaipan-mix016.oepc.yml	TIMEOUT (false(unreach-call))	3.010853	45.947619317999965	67.788800
+pthread-wmm/mix016_power.opt_rmo.opt.yml/utaipan-mix016_power.opt_rmo.opt.yml	false(unreach-call)	2.789902	35.84164860200002	68.538368
+pthread-wmm/mix016_pso.opt_tso.opt.yml/utaipan-mix016_pso.opt_tso.opt.yml	ERROR(ineffective witness)	2.793584	3.2307431330000327	68.014080
+pthread-wmm/mix017.oepc.yml/utaipan-mix017.oepc.yml	TIMEOUT	2.853564	46.010410278999984	66.748416
+pthread-wmm/mix017_power.opt_rmo.opt.yml/utaipan-mix017_power.opt_rmo.opt.yml	false(unreach-call)	2.841694	3.4296242549999647	67.756032
+pthread-wmm/mix017_pso.opt_tso.opt.yml/utaipan-mix017_pso.opt_tso.opt.yml	ERROR(ineffective witness)	2.883143	3.2966314580000358	68.096000
+pthread-wmm/mix018.opt.yml/utaipan-mix018.opt.yml	TIMEOUT	2.901531	46.040330831999995	68.775936
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix018_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.893051	46.04347927600003	69.017600
+pthread-wmm/mix018_tso.oepc.yml/utaipan-mix018_tso.oepc.yml	false(unreach-call)	3.071115	21.655898363000006	68.743168
+pthread-wmm/mix019.opt.yml/utaipan-mix019.opt.yml	ERROR(ineffective witness)	2.813287	15.415609052999969	67.829760
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix019_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.82169	46.01514574999999	69.120000
+pthread-wmm/mix019_tso.oepc.yml/utaipan-mix019_tso.oepc.yml	TIMEOUT	2.86083	46.020767014	68.734976
+pthread-wmm/mix020.oepc.yml/utaipan-mix020.oepc.yml	TIMEOUT	3.055257	46.04903492	66.613248
+pthread-wmm/mix020.opt.yml/utaipan-mix020.opt.yml	ERROR(ineffective witness)	3.136148	42.44677742699997	68.718592
+pthread-wmm/mix021.opt.yml/utaipan-mix021.opt.yml	TIMEOUT	3.08095	46.13469379900005	68.808704
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix021_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.086059	23.378304825000043	68.796416
+pthread-wmm/mix021_tso.oepc.yml/utaipan-mix021_tso.oepc.yml	false(unreach-call)	3.076216	36.63886804600003	68.784128
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.709602	13.03148407499998	69.009408
+pthread-wmm/mix022_tso.yml/utaipan-mix022_tso.yml	TIMEOUT	2.872682	46.01321435400001	67.784704
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix023_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	3.136929	46.016929378999976	67.878912
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/utaipan-mix023_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	3.042566	24.162660477999964	68.755456
+pthread-wmm/mix023_tso.yml/utaipan-mix023_tso.yml	ERROR(ineffective witness)	3.64509	40.734942639999986	67.624960
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/utaipan-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false(unreach-call)	2.87704	18.690805111999964	67.788800
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/utaipan-mix024_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.994269	17.776409978000004	68.816896
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/utaipan-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	TIMEOUT	2.939022	46.022254043999965	68.841472
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/utaipan-mix025_pso.opt_rmo.opt.yml	TIMEOUT	3.039243	46.033150378000016	67.547136
+pthread-wmm/mix026.oepc.yml/utaipan-mix026.oepc.yml	TIMEOUT	3.004286	46.10338342699998	68.866048
+pthread-wmm/mix026_power.opt_tso.opt.yml/utaipan-mix026_power.opt_tso.opt.yml	TIMEOUT	2.883152	46.06644172299997	69.251072
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/utaipan-mix026_pso.opt_rmo.opt.yml	false(unreach-call)	2.841334	23.962107233999973	68.984832
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix027_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.077774	24.323065842999995	67.756032
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/utaipan-mix027_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.786035	46.08213506299995	68.964352
+pthread-wmm/mix027_tso.yml/utaipan-mix027_tso.yml	false(unreach-call)	2.977017	29.89705537200001	66.736128
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.891536	4.187968269999999	68.665344
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/utaipan-mix028_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.872453	46.01294567299999	69.120000
+pthread-wmm/mix028_tso.yml/utaipan-mix028_tso.yml	TIMEOUT	2.838078	46.02738891000001	68.771840
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/utaipan-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false(unreach-call)	2.954312	23.889281005999976	66.703360
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/utaipan-mix029_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	3.103221	35.24023066199999	67.944448
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix030_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.069061	13.322244975000046	68.739072
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/utaipan-mix030_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	3.043866	47.542364564000025	67.895296
+pthread-wmm/mix030_tso.yml/utaipan-mix030_tso.yml	TIMEOUT	3.162461	46.04007518100002	68.014080
+pthread-wmm/mix031.oepc.yml/utaipan-mix031.oepc.yml	TIMEOUT	2.699878	46.014655850999986	68.775936
+pthread-wmm/mix031.opt.yml/utaipan-mix031.opt.yml	TIMEOUT	2.697676	48.21326218500002	68.542464
+pthread-wmm/mix032.oepc.yml/utaipan-mix032.oepc.yml	TIMEOUT	2.817573	46.16099384	67.878912
+pthread-wmm/mix032.opt.yml/utaipan-mix032.opt.yml	false(unreach-call)	3.035161	44.64579913	66.572288
+pthread-wmm/mix033.opt.yml/utaipan-mix033.opt.yml	false(unreach-call)	2.78539	3.719627141999979	66.715648
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix033_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.838791	46.13077425300003	68.648960
+pthread-wmm/mix033_tso.oepc.yml/utaipan-mix033_tso.oepc.yml	false(unreach-call)	2.969319	33.35568544400002	67.895296
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/utaipan-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false(unreach-call)	2.655899	3.9024364140000216	69.783552
+pthread-wmm/mix034_pso.opt_tso.opt.yml/utaipan-mix034_pso.opt_tso.opt.yml	TIMEOUT	2.606869	46.07054301599999	67.522560
+pthread-wmm/mix035.oepc.yml/utaipan-mix035.oepc.yml	false(unreach-call)	2.768507	3.307534444000055	67.883008
+pthread-wmm/mix035_power.opt_rmo.opt.yml/utaipan-mix035_power.opt_rmo.opt.yml	false(unreach-call)	2.872553	37.93265811200001	66.621440
+pthread-wmm/mix035_pso.opt_tso.opt.yml/utaipan-mix035_pso.opt_tso.opt.yml	TIMEOUT	2.79438	46.03762792699996	67.551232
+pthread-wmm/mix036.oepc.yml/utaipan-mix036.oepc.yml	false(unreach-call)	2.984726	25.808193084000038	66.797568
+pthread-wmm/mix036_power.opt_rmo.opt.yml/utaipan-mix036_power.opt_rmo.opt.yml	false(unreach-call)	2.850334	3.379734699999972	67.923968
+pthread-wmm/mix036_pso.opt_tso.opt.yml/utaipan-mix036_pso.opt_tso.opt.yml	false(unreach-call)	2.949352	4.797999542000014	67.817472
+pthread-wmm/mix037.opt.yml/utaipan-mix037.opt.yml	TIMEOUT	3.014409	46.08057292400002	67.657728
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix037_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	3.061029	46.018473728000004	67.858432
+pthread-wmm/mix037_tso.oepc.yml/utaipan-mix037_tso.oepc.yml	TIMEOUT	2.998725	46.033512809	68.890624
+pthread-wmm/mix038.opt.yml/utaipan-mix038.opt.yml	false(unreach-call)	2.956061	32.34052146100004	67.596288
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.936369	8.061008294999965	66.801664
+pthread-wmm/mix038_tso.oepc.yml/utaipan-mix038_tso.oepc.yml	TIMEOUT	2.863236	46.479144711000004	66.715648
+pthread-wmm/mix039.oepc.yml/utaipan-mix039.oepc.yml	false(unreach-call)	3.198382	29.065628033999985	68.788224
+pthread-wmm/mix039.opt.yml/utaipan-mix039.opt.yml	false(unreach-call)	2.822816	43.019739249999986	67.571712
+pthread-wmm/mix040.opt.yml/utaipan-mix040.opt.yml	false(unreach-call)	3.021631	25.688283652999985	66.527232
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix040_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.085013	33.70954870300005	66.809856
+pthread-wmm/mix040_tso.oepc.yml/utaipan-mix040_tso.oepc.yml	false(unreach-call)	3.005565	39.682460839999976	67.739648
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix041_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.65209	46.01205223299996	67.727360
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.593873	46.01377261499999	67.850240
+pthread-wmm/mix042.oepc.yml/utaipan-mix042.oepc.yml	false(unreach-call)	2.850297	3.9216776100000743	67.649536
+pthread-wmm/mix042.opt.yml/utaipan-mix042.opt.yml	false(unreach-call)	3.044912	30.764799272000005	68.825088
+pthread-wmm/mix043.oepc.yml/utaipan-mix043.oepc.yml	false(unreach-call)	3.097035	18.410380977000045	68.767744
+pthread-wmm/mix043.opt.yml/utaipan-mix043.opt.yml	false(unreach-call)	3.003649	6.160935967	67.067904
+pthread-wmm/mix044.opt.yml/utaipan-mix044.opt.yml	false(unreach-call)	2.924611	16.783003350000058	66.699264
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix044_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.075249	40.8773860739999	69.124096
+pthread-wmm/mix044_tso.oepc.yml/utaipan-mix044_tso.oepc.yml	false(unreach-call)	3.009791	18.526867132999996	66.916352
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.927222	18.474812154000006	66.850816
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	2.958921	43.42827562900004	69.312512
+pthread-wmm/mix046.oepc.yml/utaipan-mix046.oepc.yml	false(unreach-call)	2.890406	29.154678475999958	67.751936
+pthread-wmm/mix046.opt.yml/utaipan-mix046.opt.yml	false(unreach-call)	2.776844	3.482969795000031	68.894720
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix047_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.76587	47.771128489000034	66.732032
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	2.792428	25.193125749000046	68.788224
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.661346	46.02373320200002	68.722688
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	2.832004	7.147365135000086	68.747264
+pthread-wmm/mix050.yml/utaipan-mix050.yml	false(unreach-call)	2.976912	39.18744402200002	67.784704
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/utaipan-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	TIMEOUT	3.141761	46.017627626000035	69.144576
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/utaipan-mix051_pso.opt_rmo.opt_tso.opt.yml	false(unreach-call)	2.828988	3.7460383190000357	67.833856
+pthread-wmm/mix051_tso.oepc.yml/utaipan-mix051_tso.oepc.yml	false(unreach-call)	2.946882	13.793260583999995	66.703360
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/utaipan-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.774573	3.7721512029999076	67.801088
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/utaipan-mix052_pso.opt_rmo.opt_tso.opt.yml	false(unreach-call)	2.596228	3.1243995529999893	66.629632
+pthread-wmm/mix052_tso.oepc.yml/utaipan-mix052_tso.oepc.yml	TIMEOUT	2.810635	46.02045848199998	68.812800
+pthread-wmm/mix053.opt.yml/utaipan-mix053.opt.yml	false(unreach-call)	2.939258	41.589400445000024	66.609152
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix053_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.005996	28.31980609499999	66.990080
+pthread-wmm/mix053_tso.oepc.yml/utaipan-mix053_tso.oepc.yml	TIMEOUT	2.801967	46.114839387000075	67.739648
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/utaipan-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	TIMEOUT	2.725362	46.021931256000016	67.796992
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.674473	46.33613372700006	67.850240
+pthread-wmm/mix055.opt.yml/utaipan-mix055.opt.yml	TIMEOUT	2.806933	46.014379633999965	67.923968
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix055_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.922855	6.726794112999983	66.723840
+pthread-wmm/mix055_tso.oepc.yml/utaipan-mix055_tso.oepc.yml	false(unreach-call)	3.020973	43.468547564999994	68.018176
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.750668	22.53491270400002	68.640768
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	2.647263	3.4888343039999654	69.050368
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-mix057_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	3.017819	46.011640656000054	66.740224
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.801374	46.01125846900004	66.932736
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.743692	3.008679820999987	67.207168
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/utaipan-rfi000_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.612153	20.255353194999998	66.715648
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.509495	46.011426781999944	68.968448
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.648185	46.011262601	68.755456
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.507662	46.049765800000046	68.558848
+pthread-wmm/rfi004.yml/utaipan-rfi004.yml	false(unreach-call)	2.723575	25.636173015000054	67.526656
+pthread-wmm/rfi005.yml/utaipan-rfi005.yml	TIMEOUT	2.417992	46.03696832100002	69.193728
+pthread-wmm/rfi006_power.oepc.yml/utaipan-rfi006_power.oepc.yml	TIMEOUT	2.924387	46.01122462000001	67.792896
+pthread-wmm/rfi006_power.opt.yml/utaipan-rfi006_power.opt.yml	TIMEOUT	2.91455	46.31059798000001	67.883008
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/utaipan-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.804747	46.01113735800004	67.747840
+pthread-wmm/rfi006_rmo.yml/utaipan-rfi006_rmo.yml	TIMEOUT	2.918956	46.012475436000045	68.878336
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.588765	46.258383593000076	66.711552
+pthread-wmm/rfi007_tso.yml/utaipan-rfi007_tso.yml	TIMEOUT	2.717988	46.022344062	66.707456
+pthread-wmm/rfi008.oepc.yml/utaipan-rfi008.oepc.yml	TIMEOUT	2.768883	46.01117289700005	66.695168
+pthread-wmm/rfi008.opt.yml/utaipan-rfi008.opt.yml	TIMEOUT	2.74123	46.02419508700007	67.842048
+pthread-wmm/rfi009_power.oepc.yml/utaipan-rfi009_power.oepc.yml	TIMEOUT	2.864849	46.022295568000004	66.736128
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/utaipan-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	2.935764	44.94791173099998	67.702784
+pthread-wmm/rfi009_rmo.oepc.yml/utaipan-rfi009_rmo.oepc.yml	TIMEOUT	2.965201	46.01437510799997	66.732032
+pthread-wmm/rfi010.yml/utaipan-rfi010.yml	TIMEOUT	2.661369	46.020859202	69.095424
+pthread-wmm/safe000_power.oepc.yml/utaipan-safe000_power.oepc.yml	ERROR(ineffective witness)	3.122304	25.98125332799998	67.969024
+pthread-wmm/safe000_power.opt.yml/utaipan-safe000_power.opt.yml	TIMEOUT	2.875889	46.01129024199997	66.695168
+pthread-wmm/safe000_rmo.yml/utaipan-safe000_rmo.yml	ERROR(ineffective witness)	3.161266	42.74562693000007	68.157440
+pthread-wmm/safe001_power.oepc.yml/utaipan-safe001_power.oepc.yml	ERROR(ineffective witness)	3.009458	42.490439135999964	66.973696
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/utaipan-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	TIMEOUT	2.847741	46.01183217899995	70.176768
+pthread-wmm/safe001_rmo.oepc.yml/utaipan-safe001_rmo.oepc.yml	TIMEOUT	2.960684	46.01679364100005	68.853760
+pthread-wmm/safe002_power.oepc.yml/utaipan-safe002_power.oepc.yml	TIMEOUT	3.042893	47.146751113999926	70.021120
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/utaipan-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false(unreach-call)	3.030687	42.16287218900004	67.510272
+pthread-wmm/safe002_rmo.oepc.yml/utaipan-safe002_rmo.oepc.yml	ERROR(ineffective witness)	3.077598	25.231233592999956	70.299648
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.880137	4.155335767999986	68.116480
+pthread-wmm/safe003_power.opt.yml/utaipan-safe003_power.opt.yml	TIMEOUT	3.032155	46.01316778800003	67.899392
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-safe004_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.849676	46.02512626099997	68.161536
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/utaipan-safe004_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.82706	31.913250406999964	68.956160
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.770486	17.67716284000005	67.846144
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/utaipan-safe006_power.oepc-thin000_power.oepc.yml	TIMEOUT	2.572656	46.05287542099995	66.473984
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/utaipan-safe006_power.opt-thin000_power.opt.yml	ERROR(ineffective witness)	2.735231	25.447968449999962	69.021696
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/utaipan-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	TIMEOUT	2.580841	46.011212165000074	67.776512
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/utaipan-safe007_power.oepc-thin001_power.oepc.yml	TIMEOUT	2.839349	46.090447408000045	67.579904
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/utaipan-safe007_power.opt-thin001_power.opt.yml	TIMEOUT	2.826626	46.020396481000034	67.891200
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/utaipan-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	2.796114	38.628367309000055	67.588096
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.709544	11.089868604000003	66.658304
+pthread-wmm/safe008_power.opt.yml/utaipan-safe008_power.opt.yml	ERROR(ineffective witness)	3.017117	26.678581947999987	67.796992
+pthread-wmm/safe009_power.oepc.yml/utaipan-safe009_power.oepc.yml	ERROR(ineffective witness)	2.821951	21.049722185000064	68.009984
+pthread-wmm/safe009_power.opt.yml/utaipan-safe009_power.opt.yml	ERROR(ineffective witness)	2.795749	14.487215936999974	67.780608
+pthread-wmm/safe009_rmo.oepc.yml/utaipan-safe009_rmo.oepc.yml	ERROR(ineffective witness)	2.892545	36.60038697899995	69.025792
+pthread-wmm/safe009_rmo.opt.yml/utaipan-safe009_rmo.opt.yml	TIMEOUT	2.710722	46.017133657000045	66.719744
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.635297	46.00956413899996	67.747840
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/utaipan-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	TIMEOUT	2.74304	46.07029143	66.707456
+pthread-wmm/safe011_power.opt_pso.opt.yml/utaipan-safe011_power.opt_pso.opt.yml	TIMEOUT	2.703888	46.011565564999955	66.740224
+pthread-wmm/safe012_power.oepc.yml/utaipan-safe012_power.oepc.yml	TIMEOUT	2.627004	46.02367873999992	67.538944
+pthread-wmm/safe012_power.opt.yml/utaipan-safe012_power.opt.yml	TIMEOUT	2.72838	46.03195069499998	69.009408
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/utaipan-safe012_pso.oepc_pso.opt_rmo.opt.yml	false(unreach-call)	2.786418	37.01457195199998	68.775936
+pthread-wmm/safe012_rmo.oepc.yml/utaipan-safe012_rmo.oepc.yml	ERROR(ineffective witness)	2.754017	21.646538216999943	67.620864
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.717068	3.306530587999987	68.698112
+pthread-wmm/safe014_power.oepc.yml/utaipan-safe014_power.oepc.yml	ERROR(ineffective witness)	2.682548	3.0077780029999985	67.756032
+pthread-wmm/safe014_power.opt.yml/utaipan-safe014_power.opt.yml	TIMEOUT	2.750938	46.01625026199997	69.844992
+pthread-wmm/safe014_rmo.oepc.yml/utaipan-safe014_rmo.oepc.yml	ERROR(ineffective witness)	2.92155	13.157907987000044	66.523136
+pthread-wmm/safe014_rmo.opt.yml/utaipan-safe014_rmo.opt.yml	ERROR(ineffective witness)	3.054774	24.723308667000083	68.337664
+pthread-wmm/safe015_power.oepc.yml/utaipan-safe015_power.oepc.yml	TIMEOUT	2.627862	46.02144295699998	68.927488
+pthread-wmm/safe015_power.opt.yml/utaipan-safe015_power.opt.yml	ERROR(ineffective witness)	2.942915	21.707618122999975	69.103616
+pthread-wmm/safe015_rmo.yml/utaipan-safe015_rmo.yml	ERROR(ineffective witness)	2.973126	34.223361858999965	69.160960
+pthread-wmm/safe016_power.oepc.yml/utaipan-safe016_power.oepc.yml	ERROR(ineffective witness)	3.023586	25.593387472000018	68.980736
+pthread-wmm/safe016_power.opt.yml/utaipan-safe016_power.opt.yml	ERROR(ineffective witness)	2.939566	14.833597177000001	66.994176
+pthread-wmm/safe016_rmo.oepc.yml/utaipan-safe016_rmo.oepc.yml	ERROR(ineffective witness)	3.007855	16.62676882100004	67.776512
+pthread-wmm/safe016_rmo.opt.yml/utaipan-safe016_rmo.opt.yml	ERROR(ineffective witness)	2.984694	25.011960412000008	67.997696
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.707478	13.962470574999998	67.817472
+pthread-wmm/safe018_power.oepc.yml/utaipan-safe018_power.oepc.yml	ERROR(ineffective witness)	2.861471	23.34296202300004	66.682880
+pthread-wmm/safe018_power.opt.yml/utaipan-safe018_power.opt.yml	ERROR(ineffective witness)	3.001336	35.381082332000005	68.780032
+pthread-wmm/safe018_rmo.oepc.yml/utaipan-safe018_rmo.oepc.yml	TIMEOUT	2.741805	46.01535456600004	66.560000
+pthread-wmm/safe018_rmo.opt.yml/utaipan-safe018_rmo.opt.yml	ERROR(ineffective witness)	2.876851	15.738646473000017	67.903488
+pthread-wmm/safe019_power.oepc.yml/utaipan-safe019_power.oepc.yml	ERROR(ineffective witness)	2.997694	6.59895535499993	67.874816
+pthread-wmm/safe019_power.opt.yml/utaipan-safe019_power.opt.yml	TIMEOUT	3.14007	46.02764763899995	69.103616
+pthread-wmm/safe019_rmo.oepc.yml/utaipan-safe019_rmo.oepc.yml	ERROR(ineffective witness)	2.946641	6.705687587000057	69.038080
+pthread-wmm/safe019_rmo.opt.yml/utaipan-safe019_rmo.opt.yml	TIMEOUT	3.035137	46.10800888899996	66.830336
+pthread-wmm/safe020_power.yml/utaipan-safe020_power.yml	TIMEOUT	2.96984	46.16946012599999	67.878912
+pthread-wmm/safe020_rmo.yml/utaipan-safe020_rmo.yml	TIMEOUT (ERROR(ineffective witness))	3.224757	45.0133164450001	69.193728
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/utaipan-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.846704	27.522087135999982	69.152768
+pthread-wmm/safe021_power.opt_pso.opt.yml/utaipan-safe021_power.opt_pso.opt.yml	false(unreach-call)	2.906525	26.752639129000045	68.956160
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.642753	46.06403138600001	68.001792
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.931207	46.04106390900006	69.152768
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.744249	46.01447516999997	66.637824
+pthread-wmm/safe025_power.yml/utaipan-safe025_power.yml	TIMEOUT	2.536015	46.01395651300004	69.201920
+pthread-wmm/safe025_rmo.yml/utaipan-safe025_rmo.yml	TIMEOUT	3.027488	46.01474735900001	68.878336
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.72394	46.01637467900002	69.869568
+pthread-wmm/safe027_power.oepc.yml/utaipan-safe027_power.oepc.yml	TIMEOUT	2.813286	46.011181610999984	66.781184
+pthread-wmm/safe027_power.opt.yml/utaipan-safe027_power.opt.yml	TIMEOUT	3.063487	46.01044555499993	69.017600
+pthread-wmm/safe027_rmo.yml/utaipan-safe027_rmo.yml	TIMEOUT (ERROR(ineffective witness))	3.238635	45.33088360800002	68.542464
+pthread-wmm/safe028_power.yml/utaipan-safe028_power.yml	ERROR(ineffective witness)	2.877729	13.721722182999997	68.747264
+pthread-wmm/safe028_rmo.yml/utaipan-safe028_rmo.yml	TIMEOUT	2.797641	46.01361831700001	68.915200
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-safe029_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.54893	46.768604982000056	66.715648
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/utaipan-safe029_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.751367	33.19745171499994	67.751936
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.733437	3.277327477999961	68.034560
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/utaipan-safe030_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.537109	46.02351686899999	68.034560
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/utaipan-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.792515	34.269094898999924	68.550656
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/utaipan-safe031_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.726317	13.886667701000079	69.025792
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.934889	9.024485509999977	66.899968
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.631738	32.43025469300005	68.526080
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/utaipan-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.793475	10.990363650000063	68.931584
+pthread-wmm/thin002_power.oepc.yml/utaipan-thin002_power.oepc.yml	TIMEOUT	3.518202	46.017425366	66.719744
+pthread-wmm/thin002_power.opt.yml/utaipan-thin002_power.opt.yml	ERROR(ineffective witness)	3.257421	39.23072348799997	68.763648
+pthread-wmm/thin002_rmo.yml/utaipan-thin002_rmo.yml	TIMEOUT	3.61477	46.03140091699993	67.481600
+pthread/lazy01.yml/utaipan-lazy01.yml	TIMEOUT	2.161085	46.062001995999935	67.346432
+pthread/reorder_2.yml/utaipan-reorder_2.yml	ERROR(ineffective witness)	2.555709	4.074416447999965	67.657728
+pthread/reorder_5.yml/utaipan-reorder_5.yml	ERROR(ineffective witness)	2.538909	4.924270180999997	66.617344
+pthread/singleton.yml/utaipan-singleton.yml	TIMEOUT	2.388979	46.05423633599992	66.482176
+pthread/stack-2.yml/utaipan-stack-2.yml	false(unreach-call)	2.644569	6.041257559999963	67.543040
+pthread/stack_longer-1.yml/utaipan-stack_longer-1.yml	false(unreach-call)	2.609323	3.9746319820000053	67.616768
+pthread/stack_longest-1.yml/utaipan-stack_longest-1.yml	false(unreach-call)	2.725739	5.191142690999982	66.277376
+pthread/stateful01-1.yml/utaipan-stateful01-1.yml	TIMEOUT	2.146502	46.29642719399999	68.579328
+pthread/triangular-2.yml/utaipan-triangular-2.yml	TIMEOUT	2.243396	46.01968050100004	68.501504
+pthread/triangular-longer-2.yml/utaipan-triangular-longer-2.yml	TIMEOUT	2.327964	46.01365102800003	69.623808
+pthread/triangular-longest-2.yml/utaipan-triangular-longest-2.yml	TIMEOUT	2.65875	46.04409118100011	67.379200
+weaver/parallel-barrier-loop.wvr.yml/utaipan-parallel-barrier-loop.wvr.yml	TIMEOUT	2.025881	46.049469034000026	67.514368
+weaver/popl20-bad-counter-queue.wvr.yml/utaipan-popl20-bad-counter-queue.wvr.yml	TIMEOUT	1.93924	46.01257322299989	67.551232
+weaver/popl20-more-array-sum-alt.wvr.yml/utaipan-popl20-more-array-sum-alt.wvr.yml	TIMEOUT	1.973884	46.01304436499993	67.379200

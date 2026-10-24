@@ -1,0 +1,611 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cbmc/pthread-atomic/read_write_lock-2.yml/read_write_lock-2.i --graphml-witness svcomp23-witness-benchmarks/tools/cbmc/pthread-atomic/read_write_lock-2.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/tmp/BenchExec_run_bmb81d0a/tmp/tmpcc0z_64t.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Reached error!
+
+Execution ended (exit code -6)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+Execution started
+Starting main
+Calling __c2tt_main
+Main done, calling pthread_exit
+
+Execution ended (exit code 0)
+{0: 99, -1: 1}
+Verdict: SOMETIMES

@@ -1,0 +1,50 @@
+   BENCHMARK INFORMATION
+benchmark definition:    svcomp23-witness-benchmarks/concurrentwitness2test.xml
+name:                    concurrentwitness2test
+run sets:                SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-algo-selection
+date:                    Sun, 2024-11-03 16:51:23 UTC
+tool:                    ConcurrentWitness2Test
+tool executable:         ConcurrentWitness2Test/start.sh
+options:
+parallel runs:           10
+resource limits:
+- time:                  45 s
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    fv-az1426-986
+os:                      Linux-6.5.0-1025-azure-x86_64-with-glibc2.35
+cpu:                     AMD EPYC 7763 64-Core Processor
+- cores:                 4
+- max frequency:         3020.237 MHz
+ram:                     16757.338112 MB
+------------------------------------------------------------
+
+
+
+SV-COMP23_unreach-call.ConcurrencySafety-coveriteam-verifier-algo-selection
+Run set 1 of 1 with options '--graphml-witness ${taskdef_path}/witness.graphml' and propertyfile 'None'
+
+inputfile                                                                                                                                                        status                       cpu time   wall time        host
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/coveriteam-verifier-algo-selection-36-apron_41-threadenter-no-locals_unknown_1_neg.yml    unknown                          0.01        0.01        None
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/coveriteam-verifier-algo-selection-36-apron_41-threadenter-no-locals_unknown_1_pos.yml    unknown                          0.01        0.01        None
+ldv-races/race-2_2-container_of.yml/coveriteam-verifier-algo-selection-race-2_2-container_of.yml                                                                 unknown                          0.01        0.01        None
+ldv-races/race-2_3-container_of.yml/coveriteam-verifier-algo-selection-race-2_3-container_of.yml                                                                 unknown                          0.01        0.01        None
+ldv-races/race-2_4-container_of.yml/coveriteam-verifier-algo-selection-race-2_4-container_of.yml                                                                 unknown                          0.01        0.01        None
+ldv-races/race-2_5-container_of.yml/coveriteam-verifier-algo-selection-race-2_5-container_of.yml                                                                 unknown                          0.01        0.01        None
+ldv-races/race-3_2-container_of-global.yml/coveriteam-verifier-algo-selection-race-3_2-container_of-global.yml                                                   unknown                          0.01        0.01        None
+pthread-divine/tls_destructor_worker.yml/coveriteam-verifier-algo-selection-tls_destructor_worker.yml                                                            unknown                          0.01        0.01        None
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Run set 1                                                                                                                                                        done                             0.05        0.16           -
+
+Statistics:              8 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               8
+  Score:                 0 (max: 8)

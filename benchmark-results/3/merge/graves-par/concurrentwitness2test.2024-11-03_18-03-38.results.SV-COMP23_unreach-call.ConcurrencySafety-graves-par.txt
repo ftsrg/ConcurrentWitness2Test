@@ -1,0 +1,75 @@
+   BENCHMARK INFORMATION
+benchmark definition:    svcomp23-witness-benchmarks/concurrentwitness2test.xml
+name:                    concurrentwitness2test
+run sets:                SV-COMP23_unreach-call.ConcurrencySafety-graves-par
+date:                    Sun, 2024-11-03 18:03:38 UTC
+tool:                    ConcurrentWitness2Test ConcurrentWitness2Test 1.0
+tool executable:         ConcurrentWitness2Test/start.sh
+options:
+parallel runs:           10
+resource limits:
+- time:                  45 s
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    fv-az1341-176
+os:                      Linux-6.8.0-1015-azure-x86_64-with-glibc2.39
+cpu:                     AMD EPYC 7763 64-Core Processor
+- cores:                 4
+- max frequency:         2445.43 MHz
+ram:                     16766.783488 MB
+------------------------------------------------------------
+
+
+
+SV-COMP23_unreach-call.ConcurrencySafety-graves-par
+Run set 1 of 1 with options '--graphml-witness ${taskdef_path}/witness.graphml' and propertyfile 'None'
+
+inputfile                                                                                                                                  status                       cpu time   wall time        host
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/graves-par-13-privatized_18-first-reads_unknown_1_neg.yml                ERROR (255)                      0.48        1.10        None
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/graves-par-13-privatized_18-first-reads_unknown_1_pos.yml                ERROR (255)                      0.47        0.97        None
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/graves-par-13-privatized_18-first-reads_unknown_2_neg.yml                ERROR (255)                      0.38        1.25        None
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/graves-par-13-privatized_18-first-reads_unknown_2_pos.yml                ERROR (255)                      0.47        0.90        None
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/graves-par-13-privatized_19-publish-precision_unknown_1_neg.yml    ERROR (255)                      0.37        0.94        None
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/graves-par-13-privatized_19-publish-precision_unknown_1_pos.yml    ERROR (255)                      0.47        0.99        None
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/graves-par-13-privatized_19-publish-precision_unknown_2_neg.yml    ERROR (255)                      0.49        1.07        None
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/graves-par-13-privatized_19-publish-precision_unknown_2_pos.yml    ERROR (255)                      0.38        0.97        None
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/graves-par-13-privatized_41-traces-ex-7_unknown_1_neg.yml                ERROR (255)                      0.38        0.94        None
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/graves-par-13-privatized_41-traces-ex-7_unknown_1_pos.yml                ERROR (255)                      0.39        0.97        None
+goblint-regression/28-race_reach_45-escape_racing.yml/graves-par-28-race_reach_45-escape_racing.yml                                        ERROR (255)                      0.39        0.56        None
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/graves-par-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml              ERROR (255)                      0.43        0.90        None
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/graves-par-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml              ERROR (255)                      0.42        0.93        None
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/graves-par-36-apron_41-threadenter-no-locals_unknown_1_pos.yml      ERROR (255)                      0.37        1.11        None
+ldv-races/race-1_2-join.yml/graves-par-race-1_2-join.yml                                                                                   ERROR (255)                      0.74        1.57        None
+ldv-races/race-1_3-join.yml/graves-par-race-1_3-join.yml                                                                                   ERROR (255)                      0.79        2.01        None
+ldv-races/race-2_2-container_of.yml/graves-par-race-2_2-container_of.yml                                                                   ERROR (255)                      0.47        1.12        None
+ldv-races/race-2_3-container_of.yml/graves-par-race-2_3-container_of.yml                                                                   ERROR (255)                      0.46        1.20        None
+ldv-races/race-2_4-container_of.yml/graves-par-race-2_4-container_of.yml                                                                   ERROR (255)                      0.47        1.19        None
+ldv-races/race-2_5-container_of.yml/graves-par-race-2_5-container_of.yml                                                                   ERROR (255)                      0.46        1.06        None
+ldv-races/race-3_2-container_of-global.yml/graves-par-race-3_2-container_of-global.yml                                                     ERROR (255)                      0.45        0.89        None
+pthread-wmm/rfi006_rmo.yml/graves-par-rfi006_rmo.yml                                                                                       ERROR (255)                      1.03        2.70        None
+pthread-wmm/rfi009_rmo.oepc.yml/graves-par-rfi009_rmo.oepc.yml                                                                             ERROR (255)                      1.00        2.60        None
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/graves-par-safe007_power.opt-thin001_power.opt.yml                                     ERROR (255)                      0.38        1.05        None
+pthread-wmm/safe009_rmo.opt.yml/graves-par-safe009_rmo.opt.yml                                                                             ERROR (255)                      0.98        2.18        None
+pthread-wmm/safe012_power.opt.yml/graves-par-safe012_power.opt.yml                                                                         ERROR (255)                      0.37        0.82        None
+pthread-wmm/safe014_power.opt.yml/graves-par-safe014_power.opt.yml                                                                         ERROR (255)                      0.96        2.03        None
+pthread-wmm/safe016_rmo.oepc.yml/graves-par-safe016_rmo.oepc.yml                                                                           ERROR (255)                      1.03        2.42        None
+pthread-wmm/safe019_rmo.oepc.yml/graves-par-safe019_rmo.oepc.yml                                                                           ERROR (255)                      1.13        2.36        None
+pthread-wmm/safe027_power.oepc.yml/graves-par-safe027_power.oepc.yml                                                                       ERROR (255)                      1.03        2.14        None
+pthread-wmm/safe027_rmo.yml/graves-par-safe027_rmo.yml                                                                                     ERROR (255)                      1.05        1.79        None
+pthread/lazy01.yml/graves-par-lazy01.yml                                                                                                   ERROR (255)                      0.44        1.03        None
+pthread/stateful01-1.yml/graves-par-stateful01-1.yml                                                                                       ERROR (255)                      0.46        1.16        None
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Run set 1                                                                                                                                  done                            19.64        5.18           -
+
+Statistics:             33 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:              33
+  Score:                 0 (max: 33)

@@ -1,0 +1,264 @@
+tool		ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-graves	SV-COMP23_unreach-call.ConcurrencySafety-graves	SV-COMP23_unreach-call.ConcurrencySafety-graves	SV-COMP23_unreach-call.ConcurrencySafety-graves
+../svcomp23-witness-benchmarks/tools/graves/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/graves-13-privatized_18-first-reads_unknown_1_neg.yml	false	TIMEOUT	3.146071	46.011040333	69.574656
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/graves-13-privatized_18-first-reads_unknown_1_pos.yml	false	ERROR(ineffective witness)	2.352978	5.808041709999998	71.802880
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/graves-13-privatized_18-first-reads_unknown_2_neg.yml	false	ERROR(ineffective witness)	2.344077	5.786521033	77.115392
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/graves-13-privatized_18-first-reads_unknown_2_pos.yml	false	TIMEOUT	3.271136	46.04262381299999	69.156864
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/graves-13-privatized_19-publish-precision_unknown_1_neg.yml	false	TIMEOUT	2.146808	46.00611965400002	70.324224
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/graves-13-privatized_19-publish-precision_unknown_1_pos.yml	false	TIMEOUT	2.172184	46.00997812600001	72.155136
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/graves-13-privatized_19-publish-precision_unknown_2_neg.yml	false	TIMEOUT	2.154674	46.016409839999994	68.599808
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/graves-13-privatized_19-publish-precision_unknown_2_pos.yml	false	TIMEOUT	2.142658	46.023389783	67.624960
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/graves-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	TIMEOUT	2.148003	46.01490361299999	69.238784
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/graves-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	TIMEOUT	2.163781	46.01220702799999	68.427776
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_neg.yml/graves-13-privatized_67-pthread_cond_wait_unknown_1_neg.yml	false	TIMEOUT	2.245894	46.10492314599999	68.075520
+goblint-regression/28-race_reach_45-escape_racing.yml/graves-28-race_reach_45-escape_racing.yml	false	TIMEOUT	2.049694	46.038194007000016	68.546560
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/graves-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	false	TIMEOUT	2.255485	46.03616133600002	68.386816
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/graves-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	TIMEOUT	2.221369	46.01629813400001	67.780608
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/graves-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	ERROR(ineffective witness)	2.413123	17.381705083000014	68.603904
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/graves-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	TIMEOUT	2.344505	46.00740048700001	68.661248
+ldv-races/race-1_2-join.yml/graves-race-1_2-join.yml	false	ERROR(ineffective witness)	2.817605	18.99206307700001	68.837376
+ldv-races/race-1_3-join.yml/graves-race-1_3-join.yml	false	ERROR(ineffective witness)	2.870618	19.20584901000001	68.759552
+ldv-races/race-2_1-container_of.yml/graves-race-2_1-container_of.yml	true	TIMEOUT	3.086288	46.139971419000005	68.714496
+ldv-races/race-2_2-container_of.yml/graves-race-2_2-container_of.yml	false	TIMEOUT	3.02287	46.115806244	68.861952
+ldv-races/race-2_3-container_of.yml/graves-race-2_3-container_of.yml	false	TIMEOUT	3.217191	46.035943334999985	67.629056
+ldv-races/race-2_4-container_of.yml/graves-race-2_4-container_of.yml	false	TIMEOUT	3.188747	46.720209708	67.530752
+ldv-races/race-2_5-container_of.yml/graves-race-2_5-container_of.yml	false	TIMEOUT	3.115401	46.02947608400001	67.952640
+pthread-deagle/arithmetic_prog_bad.yml/graves-arithmetic_prog_bad.yml	false	false(unreach-call)	2.36186	6.79115696400001	68.489216
+pthread-wmm/mix000.oepc.yml/graves-mix000.oepc.yml	false	TIMEOUT	2.229211	46.01836426899999	68.915200
+pthread-wmm/mix000.opt.yml/graves-mix000.opt.yml	false	TIMEOUT	2.197759	46.015700081999995	68.268032
+pthread-wmm/mix001.oepc.yml/graves-mix001.oepc.yml	false	TIMEOUT	2.324267	47.592438571	68.038656
+pthread-wmm/mix001.opt.yml/graves-mix001.opt.yml	false	TIMEOUT	2.289882	47.609236458	67.854336
+pthread-wmm/mix002.oepc.yml/graves-mix002.oepc.yml	false	TIMEOUT	2.303336	46.330891388	67.985408
+pthread-wmm/mix002.opt.yml/graves-mix002.opt.yml	false	TIMEOUT	2.517247	46.97595391499999	67.911680
+pthread-wmm/mix003.oepc.yml/graves-mix003.oepc.yml	false	TIMEOUT	2.375826	46.56323276499998	67.932160
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/graves-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT	2.275314	46.04309476	67.907584
+pthread-wmm/mix004.oepc.yml/graves-mix004.oepc.yml	false	TIMEOUT	2.285346	46.157568559	69.013504
+pthread-wmm/mix004.opt.yml/graves-mix004.opt.yml	false	TIMEOUT	2.273183	46.016226316	67.813376
+pthread-wmm/mix005.opt.yml/graves-mix005.opt.yml	false	TIMEOUT	2.255535	46.03762833900001	69.005312
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix005_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.242292	46.014914936000025	68.952064
+pthread-wmm/mix005_tso.oepc.yml/graves-mix005_tso.oepc.yml	false	TIMEOUT	2.276653	46.024641032000034	69.181440
+pthread-wmm/mix006.opt.yml/graves-mix006.opt.yml	false	TIMEOUT	2.50617	46.01358087699998	68.935680
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.298929	46.09548164299997	68.714496
+pthread-wmm/mix006_tso.oepc.yml/graves-mix006_tso.oepc.yml	false	TIMEOUT	2.406635	46.02250138299999	68.628480
+pthread-wmm/mix007.oepc.yml/graves-mix007.oepc.yml	false	TIMEOUT	2.632693	46.11855250000002	67.932160
+pthread-wmm/mix007.opt.yml/graves-mix007.opt.yml	false	TIMEOUT	2.489829	46.49352455000002	69.148672
+pthread-wmm/mix008.opt.yml/graves-mix008.opt.yml	false	TIMEOUT	2.3248	46.25055621200002	68.022272
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix008_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.163073	46.90747651899997	67.903488
+pthread-wmm/mix009.oepc.yml/graves-mix009.oepc.yml	false	TIMEOUT	2.239516	46.04411402100001	68.857856
+pthread-wmm/mix009.opt.yml/graves-mix009.opt.yml	false	TIMEOUT	2.087961	46.012096758999974	68.997120
+pthread-wmm/mix010.oepc.yml/graves-mix010.oepc.yml	false	TIMEOUT	2.345394	46.012489501999994	68.075520
+pthread-wmm/mix010.opt.yml/graves-mix010.opt.yml	false	TIMEOUT	2.38487	46.15229315900001	67.969024
+pthread-wmm/mix011.opt.yml/graves-mix011.opt.yml	false	TIMEOUT	2.305462	46.017923112999995	69.177344
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.373498	46.13125458100001	68.120576
+pthread-wmm/mix011_tso.oepc.yml/graves-mix011_tso.oepc.yml	false	TIMEOUT	2.318617	46.11143016800003	68.022272
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/graves-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT	2.399309	46.077280892999966	67.805184
+pthread-wmm/mix012_pso.opt_tso.opt.yml/graves-mix012_pso.opt_tso.opt.yml	false	TIMEOUT	2.216093	46.711682240000016	67.977216
+pthread-wmm/mix013.oepc.yml/graves-mix013.oepc.yml	false	TIMEOUT	2.220246	46.013413678999996	67.788800
+pthread-wmm/mix013.opt.yml/graves-mix013.opt.yml	false	TIMEOUT	2.135782	46.05499402700002	68.763648
+pthread-wmm/mix014.opt.yml/graves-mix014.opt.yml	false	TIMEOUT	2.441328	46.06699394899999	67.981312
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix014_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.21704	46.013199603999965	68.911104
+pthread-wmm/mix015.oepc.yml/graves-mix015.oepc.yml	false	TIMEOUT	2.227596	46.442074798999954	67.973120
+pthread-wmm/mix015.opt.yml/graves-mix015.opt.yml	false	TIMEOUT	2.326998	46.03554218599999	68.837376
+pthread-wmm/mix016.oepc.yml/graves-mix016.oepc.yml	false	TIMEOUT	2.2817	46.03928884300001	68.755456
+pthread-wmm/mix016_power.opt_rmo.opt.yml/graves-mix016_power.opt_rmo.opt.yml	false	TIMEOUT	2.2723	46.273252532000015	67.497984
+pthread-wmm/mix016_pso.opt_tso.opt.yml/graves-mix016_pso.opt_tso.opt.yml	false	TIMEOUT	2.247506	46.421295676	68.820992
+pthread-wmm/mix017.oepc.yml/graves-mix017.oepc.yml	false	TIMEOUT	2.38719	46.16748513700003	67.809280
+pthread-wmm/mix017_power.opt_rmo.opt.yml/graves-mix017_power.opt_rmo.opt.yml	false	TIMEOUT	2.069793	46.01581695300001	68.882432
+pthread-wmm/mix017_pso.opt_tso.opt.yml/graves-mix017_pso.opt_tso.opt.yml	false	TIMEOUT	2.028294	46.628744364	68.034560
+pthread-wmm/mix018.opt.yml/graves-mix018.opt.yml	false	TIMEOUT	2.300766	46.277469473	69.021696
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix018_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.228793	46.01360182799999	68.882432
+pthread-wmm/mix018_tso.oepc.yml/graves-mix018_tso.oepc.yml	false	TIMEOUT	2.420939	46.01658920199998	68.956160
+pthread-wmm/mix019.opt.yml/graves-mix019.opt.yml	false	TIMEOUT	2.459849	46.05806315499996	68.079616
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix019_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.167291	46.07214366399995	67.743744
+pthread-wmm/mix019_tso.oepc.yml/graves-mix019_tso.oepc.yml	false	TIMEOUT	2.404142	46.08806490799998	68.947968
+pthread-wmm/mix020.oepc.yml/graves-mix020.oepc.yml	false	TIMEOUT	2.531153	46.096300176	69.136384
+pthread-wmm/mix020.opt.yml/graves-mix020.opt.yml	false	TIMEOUT	2.245017	46.13793626900002	67.751936
+pthread-wmm/mix021.opt.yml/graves-mix021.opt.yml	false	TIMEOUT	2.148485	46.009912531	68.984832
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix021_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.151405	46.35292723099997	68.993024
+pthread-wmm/mix021_tso.oepc.yml/graves-mix021_tso.oepc.yml	false	TIMEOUT	2.074763	46.01460128399998	68.943872
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.266274	46.01243551199997	67.731456
+pthread-wmm/mix022_tso.yml/graves-mix022_tso.yml	false	TIMEOUT	2.355976	46.24728023700004	68.116480
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix023_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.29112	46.015678211999955	68.923392
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/graves-mix023_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.543756	48.53828489	67.489792
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/graves-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT	2.290374	46.855609582	69.038080
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/graves-mix024_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.219332	46.51429197499999	68.194304
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/graves-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT	2.329201	46.03826297799998	67.952640
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/graves-mix025_pso.opt_rmo.opt.yml	false	TIMEOUT	2.096663	46.01545128099997	67.768320
+pthread-wmm/mix026.oepc.yml/graves-mix026.oepc.yml	false	TIMEOUT	2.199702	46.067920454000046	68.186112
+pthread-wmm/mix026_power.opt_tso.opt.yml/graves-mix026_power.opt_tso.opt.yml	false	TIMEOUT	2.370816	46.015514627000016	68.665344
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/graves-mix026_pso.opt_rmo.opt.yml	false	TIMEOUT	2.14859	46.014928837000014	67.477504
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix027_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.092961	46.052285552	68.911104
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/graves-mix027_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.170345	47.96695555300005	68.775936
+pthread-wmm/mix027_tso.yml/graves-mix027_tso.yml	false	TIMEOUT	2.353675	46.02636110599997	67.850240
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.236854	46.01884891699996	68.833280
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/graves-mix028_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.205704	49.09007148300003	68.046848
+pthread-wmm/mix028_tso.yml/graves-mix028_tso.yml	false	TIMEOUT	2.162086	46.03330709699998	67.989504
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/graves-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT	2.071938	46.13532166799996	68.075520
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/graves-mix029_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.195316	46.078602398999976	68.907008
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix030_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.319599	47.144150937000006	67.743744
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/graves-mix030_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.40335	46.014438197000004	68.046848
+pthread-wmm/mix030_tso.yml/graves-mix030_tso.yml	false	TIMEOUT	2.252496	46.02294756699996	68.005888
+pthread-wmm/mix031.oepc.yml/graves-mix031.oepc.yml	false	TIMEOUT	2.264896	46.266351353000005	67.993600
+pthread-wmm/mix031.opt.yml/graves-mix031.opt.yml	false	TIMEOUT	2.320135	46.13057114000003	68.722688
+pthread-wmm/mix032.oepc.yml/graves-mix032.oepc.yml	false	TIMEOUT	2.228802	46.016687773999934	67.702784
+pthread-wmm/mix032.opt.yml/graves-mix032.opt.yml	false	TIMEOUT	2.349047	46.081637709999995	68.677632
+pthread-wmm/mix033.opt.yml/graves-mix033.opt.yml	false	TIMEOUT	2.123412	46.01223565500004	68.677632
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.135497	46.01379715000007	68.919296
+pthread-wmm/mix033_tso.oepc.yml/graves-mix033_tso.oepc.yml	false	TIMEOUT	2.251727	46.01725107899995	69.197824
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/graves-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT	2.11171	46.01489002099993	68.890624
+pthread-wmm/mix034_pso.opt_tso.opt.yml/graves-mix034_pso.opt_tso.opt.yml	false	TIMEOUT	2.255961	46.189238519000014	67.555328
+pthread-wmm/mix035.oepc.yml/graves-mix035.oepc.yml	false	TIMEOUT	2.171002	46.13065520099997	69.083136
+pthread-wmm/mix035_power.opt_rmo.opt.yml/graves-mix035_power.opt_rmo.opt.yml	false	TIMEOUT	2.178038	46.10262911799998	67.670016
+pthread-wmm/mix035_pso.opt_tso.opt.yml/graves-mix035_pso.opt_tso.opt.yml	false	TIMEOUT	2.285673	46.17051733599999	67.551232
+pthread-wmm/mix036.oepc.yml/graves-mix036.oepc.yml	false	TIMEOUT	2.199419	46.06980919800003	68.919296
+pthread-wmm/mix036_power.opt_rmo.opt.yml/graves-mix036_power.opt_rmo.opt.yml	false	TIMEOUT	2.190423	46.072376376999955	67.944448
+pthread-wmm/mix036_pso.opt_tso.opt.yml/graves-mix036_pso.opt_tso.opt.yml	false	TIMEOUT	2.133825	46.153621649	67.534848
+pthread-wmm/mix037.opt.yml/graves-mix037.opt.yml	false	TIMEOUT	2.171632	46.01486800600003	69.058560
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix037_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.263366	46.01258548699991	68.866048
+pthread-wmm/mix037_tso.oepc.yml/graves-mix037_tso.oepc.yml	false	TIMEOUT	2.258132	46.01712854499999	68.911104
+pthread-wmm/mix038.opt.yml/graves-mix038.opt.yml	false	ERROR(ineffective witness)	2.477509	40.042323056999976	67.657728
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	2.416917	39.22909829599996	68.853760
+pthread-wmm/mix038_tso.oepc.yml/graves-mix038_tso.oepc.yml	false	ERROR(ineffective witness)	2.419434	21.837466118000066	67.977216
+pthread-wmm/mix039.oepc.yml/graves-mix039.oepc.yml	false	ERROR(ineffective witness)	2.571661	44.89470695	68.055040
+pthread-wmm/mix039.opt.yml/graves-mix039.opt.yml	false	TIMEOUT	2.381469	46.02382679599998	67.903488
+pthread-wmm/mix040.opt.yml/graves-mix040.opt.yml	false	TIMEOUT	2.337924	46.04991260600002	67.825664
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix040_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	2.380681	19.631785307000087	68.087808
+pthread-wmm/mix040_tso.oepc.yml/graves-mix040_tso.oepc.yml	false	TIMEOUT	2.125656	46.017346961000044	68.890624
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.254212	46.059726321000085	67.756032
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	2.428066	13.83772194300002	68.014080
+pthread-wmm/mix042.oepc.yml/graves-mix042.oepc.yml	false	TIMEOUT	2.256607	46.02750030000004	67.956736
+pthread-wmm/mix042.opt.yml/graves-mix042.opt.yml	false	TIMEOUT	2.249115	46.015215247000015	68.886528
+pthread-wmm/mix043.oepc.yml/graves-mix043.oepc.yml	false	TIMEOUT	2.327748	46.01776270300002	67.985408
+pthread-wmm/mix043.opt.yml/graves-mix043.opt.yml	false	TIMEOUT	2.268104	46.084843834000026	68.018176
+pthread-wmm/mix044.opt.yml/graves-mix044.opt.yml	false	TIMEOUT	2.500634	46.01967788000002	67.895296
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix044_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.413584	46.01155556599997	67.977216
+pthread-wmm/mix044_tso.oepc.yml/graves-mix044_tso.oepc.yml	false	TIMEOUT	2.307102	46.01456891099997	68.874240
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.205446	46.13438002999999	68.083712
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.285242	46.01671072900001	68.915200
+pthread-wmm/mix046.oepc.yml/graves-mix046.oepc.yml	false	ERROR(ineffective witness)	2.462672	26.796575892000078	68.792320
+pthread-wmm/mix046.opt.yml/graves-mix046.opt.yml	false	TIMEOUT	2.4591	46.01433323200001	67.911680
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix047_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.341262	46.01519580299998	68.308992
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	2.449935	42.43201731599993	67.756032
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/graves-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	2.428564	27.223806833000026	67.964928
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/graves-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.370388	46.03091091400006	67.985408
+pthread-wmm/mix050.yml/graves-mix050.yml	false	TIMEOUT	2.126157	46.01438804700001	68.096000
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/graves-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.395178	46.01715685900001	68.919296
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/graves-mix051_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(ineffective witness)	2.463178	18.504323105000026	68.763648
+pthread-wmm/mix051_tso.oepc.yml/graves-mix051_tso.oepc.yml	false	ERROR(ineffective witness)	2.422496	28.945334515000013	68.829184
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/graves-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	2.459041	41.45753473599996	68.292608
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/graves-mix052_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(ineffective witness)	2.522429	28.796601889000044	68.616192
+pthread-wmm/mix052_tso.oepc.yml/graves-mix052_tso.oepc.yml	false	TIMEOUT	2.211909	46.01501980900002	68.808704
+pthread-wmm/mix053.opt.yml/graves-mix053.opt.yml	false	TIMEOUT	2.103069	46.044141354999965	67.813376
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix053_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.293699	46.02468769699999	67.952640
+pthread-wmm/mix053_tso.oepc.yml/graves-mix053_tso.oepc.yml	false	ERROR(ineffective witness)	2.419179	9.600270919999957	69.038080
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/graves-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.30565	46.08950132799998	67.989504
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.23688	46.05757133199995	68.919296
+pthread-wmm/mix055.opt.yml/graves-mix055.opt.yml	false	TIMEOUT	2.34406	46.01445763800007	69.038080
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix055_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.185692	46.11409730399998	68.812800
+pthread-wmm/mix055_tso.oepc.yml/graves-mix055_tso.oepc.yml	false	TIMEOUT	2.329902	46.075926525	69.120000
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(ineffective witness)	2.391497	9.080933836999975	67.948544
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	2.506967	44.217641353999966	67.887104
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/graves-mix057_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.257866	46.02025442499996	68.038656
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.420469	46.012077301999966	68.808704
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/graves-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.21211	46.028075442000045	68.079616
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/graves-rfi000_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.226003	46.015127911000036	68.874240
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/graves-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.06977	46.14088175400002	68.788224
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.175484	46.01316893599994	67.895296
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.125701	46.01095800999997	68.665344
+pthread-wmm/rfi004.yml/graves-rfi004.yml	false	TIMEOUT	2.164352	46.01649790399995	68.730880
+pthread-wmm/rfi005.yml/graves-rfi005.yml	false	TIMEOUT	2.326638	46.017029545000014	69.349376
+pthread-wmm/rfi006_power.oepc.yml/graves-rfi006_power.oepc.yml	false	TIMEOUT	2.663052	46.06383282499996	68.931584
+pthread-wmm/rfi006_power.opt.yml/graves-rfi006_power.opt.yml	false	TIMEOUT	2.714086	46.014886692000005	69.054464
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/graves-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.282009	46.01482581100004	68.333568
+pthread-wmm/rfi006_rmo.yml/graves-rfi006_rmo.yml	false	TIMEOUT	2.651587	46.02267911900003	67.739648
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.137909	46.09873138499995	68.820992
+pthread-wmm/rfi007_tso.yml/graves-rfi007_tso.yml	false	TIMEOUT	2.20775	46.017121436000025	67.969024
+pthread-wmm/rfi008.oepc.yml/graves-rfi008.oepc.yml	false	TIMEOUT	2.251813	46.01211721499999	68.042752
+pthread-wmm/rfi008.opt.yml/graves-rfi008.opt.yml	false	TIMEOUT	2.06941	46.0140482139999	67.932160
+pthread-wmm/rfi009_power.oepc.yml/graves-rfi009_power.oepc.yml	false	TIMEOUT	2.701238	46.01855966699998	68.145152
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/graves-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	2.358956	47.00115371900006	68.923392
+pthread-wmm/rfi009_rmo.oepc.yml/graves-rfi009_rmo.oepc.yml	false	TIMEOUT	2.576207	46.07968878400004	68.009984
+pthread-wmm/rfi010.yml/graves-rfi010.yml	false	TIMEOUT	2.225951	46.01592386900006	67.768320
+pthread-wmm/safe000_power.oepc.yml/graves-safe000_power.oepc.yml	false	TIMEOUT	2.812009	46.01611914299997	68.227072
+pthread-wmm/safe000_power.opt.yml/graves-safe000_power.opt.yml	false	TIMEOUT	2.683085	46.41940189999991	68.837376
+pthread-wmm/safe000_rmo.yml/graves-safe000_rmo.yml	false	TIMEOUT	2.811486	46.01079599900004	69.120000
+pthread-wmm/safe001_power.oepc.yml/graves-safe001_power.oepc.yml	false	TIMEOUT	2.78218	46.160839013999976	68.132864
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/graves-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT	2.614225	46.015591904000075	68.792320
+pthread-wmm/safe001_rmo.oepc.yml/graves-safe001_rmo.oepc.yml	false	TIMEOUT	2.80206	46.01745550599992	69.103616
+pthread-wmm/safe002_power.oepc.yml/graves-safe002_power.oepc.yml	false	TIMEOUT	2.806616	46.02735613599998	68.214784
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/graves-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT	2.442064	46.01349432100005	67.784704
+pthread-wmm/safe002_rmo.oepc.yml/graves-safe002_rmo.oepc.yml	false	TIMEOUT	2.85157	47.40985192800008	68.026368
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.43502	46.05323940300002	68.341760
+pthread-wmm/safe003_power.opt.yml/graves-safe003_power.opt.yml	false	TIMEOUT	2.6946	46.01077778800004	68.284416
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/graves-safe004_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.361113	46.01247268399993	69.226496
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/graves-safe004_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.341519	46.0660576219999	69.132288
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.469329	46.01258591100009	68.759552
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/graves-safe006_power.oepc-thin000_power.oepc.yml	false	TIMEOUT	2.40861	46.011838316999956	68.653056
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/graves-safe006_power.opt-thin000_power.opt.yml	false	TIMEOUT	2.557221	46.01258034299997	67.960832
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/graves-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.435187	46.18255602699992	68.673536
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/graves-safe007_power.oepc-thin001_power.oepc.yml	false	TIMEOUT	2.496422	46.015047181	67.760128
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/graves-safe007_power.opt-thin001_power.opt.yml	false	TIMEOUT	2.79286	46.017406619999974	67.858432
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/graves-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.487858	46.092483388000005	68.591616
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.710246	46.01164761100006	67.903488
+pthread-wmm/safe008_power.opt.yml/graves-safe008_power.opt.yml	false	TIMEOUT	2.730699	46.015891619999934	68.222976
+pthread-wmm/safe009_power.oepc.yml/graves-safe009_power.oepc.yml	false	TIMEOUT	2.673571	46.015857276999895	68.067328
+pthread-wmm/safe009_power.opt.yml/graves-safe009_power.opt.yml	false	TIMEOUT	2.677798	46.01245079499995	67.719168
+pthread-wmm/safe009_rmo.oepc.yml/graves-safe009_rmo.oepc.yml	false	TIMEOUT	2.72992	46.01359702800005	68.108288
+pthread-wmm/safe009_rmo.opt.yml/graves-safe009_rmo.opt.yml	false	TIMEOUT	2.685656	46.01085706899994	67.883008
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.466352	46.023151199000154	68.747264
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/graves-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.535699	46.0154173090001	68.902912
+pthread-wmm/safe011_power.opt_pso.opt.yml/graves-safe011_power.opt_pso.opt.yml	false	TIMEOUT	2.380306	46.01141265499996	68.173824
+pthread-wmm/safe012_power.oepc.yml/graves-safe012_power.oepc.yml	false	TIMEOUT	2.562127	46.02671704499994	68.845568
+pthread-wmm/safe012_power.opt.yml/graves-safe012_power.opt.yml	false	TIMEOUT	2.540335	46.01733660799994	67.866624
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/graves-safe012_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT	2.334326	46.067949970000086	67.858432
+pthread-wmm/safe012_rmo.oepc.yml/graves-safe012_rmo.oepc.yml	false	TIMEOUT	2.513734	46.015891158000045	67.600384
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.559167	46.01760000999991	67.887104
+pthread-wmm/safe014_power.oepc.yml/graves-safe014_power.oepc.yml	false	TIMEOUT	2.53406	46.014381195000055	68.624384
+pthread-wmm/safe014_power.opt.yml/graves-safe014_power.opt.yml	false	TIMEOUT	2.676815	46.014193733999946	68.849664
+pthread-wmm/safe014_rmo.oepc.yml/graves-safe014_rmo.oepc.yml	false	TIMEOUT	2.57735	46.013765465999995	69.103616
+pthread-wmm/safe014_rmo.opt.yml/graves-safe014_rmo.opt.yml	false	TIMEOUT	2.831681	46.03627968600017	68.001792
+pthread-wmm/safe015_power.oepc.yml/graves-safe015_power.oepc.yml	false	TIMEOUT	2.408819	46.018451713000104	68.251648
+pthread-wmm/safe015_power.opt.yml/graves-safe015_power.opt.yml	false	TIMEOUT	2.83624	46.02025358700007	68.218880
+pthread-wmm/safe015_rmo.yml/graves-safe015_rmo.yml	false	TIMEOUT	2.800731	46.011237947999916	68.374528
+pthread-wmm/safe016_power.oepc.yml/graves-safe016_power.oepc.yml	false	TIMEOUT	2.731182	46.158668947000024	68.247552
+pthread-wmm/safe016_power.opt.yml/graves-safe016_power.opt.yml	false	TIMEOUT	2.882212	46.01763506999987	69.394432
+pthread-wmm/safe016_rmo.oepc.yml/graves-safe016_rmo.oepc.yml	false	TIMEOUT	2.745272	46.01437195099993	69.308416
+pthread-wmm/safe016_rmo.opt.yml/graves-safe016_rmo.opt.yml	false	TIMEOUT	2.859707	46.022809886999994	69.443584
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	4.033709	46.126951439000095	67.940352
+pthread-wmm/safe018_power.oepc.yml/graves-safe018_power.oepc.yml	false	TIMEOUT	2.542692	46.042734450000125	67.534848
+pthread-wmm/safe018_power.opt.yml/graves-safe018_power.opt.yml	false	TIMEOUT	2.762818	46.017160101999934	68.071424
+pthread-wmm/safe018_rmo.oepc.yml/graves-safe018_rmo.oepc.yml	false	TIMEOUT	2.491903	46.01442017599993	67.723264
+pthread-wmm/safe018_rmo.opt.yml/graves-safe018_rmo.opt.yml	false	TIMEOUT	2.69584	46.02559322299999	68.042752
+pthread-wmm/safe019_power.oepc.yml/graves-safe019_power.oepc.yml	false	TIMEOUT	2.726926	46.01369537200003	68.276224
+pthread-wmm/safe019_rmo.oepc.yml/graves-safe019_rmo.oepc.yml	false	TIMEOUT	2.782443	46.02121927300004	69.169152
+pthread-wmm/safe019_rmo.opt.yml/graves-safe019_rmo.opt.yml	false	TIMEOUT	2.796612	46.03016664699999	68.198400
+pthread-wmm/safe020_power.yml/graves-safe020_power.yml	false	TIMEOUT	2.782347	46.014264740000044	68.259840
+pthread-wmm/safe020_rmo.yml/graves-safe020_rmo.yml	false	TIMEOUT	2.691752	46.01794655100002	68.931584
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/graves-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.657136	46.01155580900013	68.808704
+pthread-wmm/safe021_power.opt_pso.opt.yml/graves-safe021_power.opt_pso.opt.yml	false	TIMEOUT	2.728604	46.019740803999866	68.329472
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.409622	46.016802019000124	68.870144
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.452964	46.01599335500009	68.235264
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.43969	46.08688228200003	67.788800
+pthread-wmm/safe025_power.yml/graves-safe025_power.yml	false	TIMEOUT	2.385919	46.01431784700003	69.263360
+pthread-wmm/safe025_rmo.yml/graves-safe025_rmo.yml	false	TIMEOUT	2.81839	46.03833125599999	69.242880
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.425516	46.01646643599997	68.968448
+pthread-wmm/safe027_power.oepc.yml/graves-safe027_power.oepc.yml	false	TIMEOUT	2.748075	46.01514851000002	67.977216
+pthread-wmm/safe027_rmo.yml/graves-safe027_rmo.yml	false	TIMEOUT	2.743653	46.01539032200003	67.833856
+pthread-wmm/safe028_power.yml/graves-safe028_power.yml	false	TIMEOUT	2.849917	46.01514245400017	68.284416
+pthread-wmm/safe028_rmo.yml/graves-safe028_rmo.yml	false	TIMEOUT	2.78596	46.01772408399984	67.862528
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/graves-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.284025	46.015785067000024	69.115904
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/graves-safe029_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.337272	46.01441627200006	67.952640
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/graves-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.414267	46.020394315999965	68.149248
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/graves-safe030_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.200248	46.01416923700003	68.841472
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/graves-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	2.30466	46.038221954999926	67.731456
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/graves-safe031_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	2.200603	46.01331119400015	68.067328
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.310493	46.011889196000084	69.304320
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.253673	46.01607053199996	68.661248
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/graves-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	2.61678	46.01276233699991	67.760128
+pthread-wmm/thin002_power.oepc.yml/graves-thin002_power.oepc.yml	false	TIMEOUT	2.601368	46.18754209000008	67.837952
+pthread-wmm/thin002_rmo.yml/graves-thin002_rmo.yml	false	TIMEOUT	2.675724	46.01385772899994	67.993600
+pthread/lazy01.yml/graves-lazy01.yml	false	TIMEOUT	2.116591	46.01717522700005	68.620288
+pthread/stateful01-1.yml/graves-stateful01-1.yml	false	TIMEOUT	2.167052	46.15057752300004	68.657152
+pthread/triangular-2.yml/graves-triangular-2.yml	false	ERROR(ineffective witness)	2.32299	3.1241483669998615	67.682304
+pthread/triangular-longer-2.yml/graves-triangular-longer-2.yml	false	ERROR(ineffective witness)	2.262443	2.5597300619999714	67.506176

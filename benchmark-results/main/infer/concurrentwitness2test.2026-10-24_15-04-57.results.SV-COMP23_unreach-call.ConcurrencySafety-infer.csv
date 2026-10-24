@@ -1,0 +1,661 @@
+tool		ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-infer	SV-COMP23_unreach-call.ConcurrencySafety-infer	SV-COMP23_unreach-call.ConcurrencySafety-infer	SV-COMP23_unreach-call.ConcurrencySafety-infer
+../svcomp23-witness-benchmarks/tools/infer/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_01-priv_nr_true.yml/infer-13-privatized_01-priv_nr_true.yml	true	ERROR(ineffective witness)	1.425116	3.531340782000001	80.601088
+goblint-regression/13-privatized_04-priv_multi_true.yml/infer-13-privatized_04-priv_multi_true.yml	true	TIMEOUT	1.277496	46.010037679999996	72.712192
+goblint-regression/13-privatized_18-first-reads_true.yml/infer-13-privatized_18-first-reads_true.yml	true	ERROR(ineffective witness)	1.408038	3.490774737999999	67.964928
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/infer-13-privatized_18-first-reads_unknown_1_neg.yml	false	false(unreach-call)	1.397336	3.413124148999998	71.708672
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/infer-13-privatized_18-first-reads_unknown_2_pos.yml	false	false(unreach-call)	1.393355	3.5126772030000097	68.681728
+goblint-regression/13-privatized_19-publish-precision_true.yml/infer-13-privatized_19-publish-precision_true.yml	true	ERROR(ineffective witness)	1.399313	3.4650602090000007	68.825088
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/infer-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	1.386533	3.405332479000009	72.294400
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/infer-13-privatized_19-publish-precision_unknown_1_pos.yml	false	ERROR(ineffective witness)	1.376448	3.5049593849999923	68.550656
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/infer-13-privatized_19-publish-precision_unknown_2_neg.yml	false	ERROR(ineffective witness)	1.403554	3.451273041999997	68.710400
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/infer-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	1.390196	3.386553719999995	67.903488
+goblint-regression/13-privatized_20-publish-regression_true.yml/infer-13-privatized_20-publish-regression_true.yml	true	ERROR(ineffective witness)	1.412938	3.043876408999992	67.874816
+goblint-regression/13-privatized_24-multiple-protecting_true.yml/infer-13-privatized_24-multiple-protecting_true.yml	true	ERROR(ineffective witness)	1.396302	3.0251795500000043	68.677632
+goblint-regression/13-privatized_25-struct_nr_true.yml/infer-13-privatized_25-struct_nr_true.yml	true	ERROR(ineffective witness)	1.42061	2.9503976499999993	67.862528
+goblint-regression/13-privatized_27-multiple-protecting2_true.yml/infer-13-privatized_27-multiple-protecting2_true.yml	true	ERROR(ineffective witness)	1.442689	3.2883695669999895	68.919296
+goblint-regression/13-privatized_29-multiple-protecting2-vesal_true.yml/infer-13-privatized_29-multiple-protecting2-vesal_true.yml	true	ERROR(ineffective witness)	1.439409	3.2626965819999896	68.595712
+goblint-regression/13-privatized_30-traces-oplus-vs-meet_true.yml/infer-13-privatized_30-traces-oplus-vs-meet_true.yml	true	ERROR(ineffective witness)	1.441505	3.235939567999992	67.620864
+goblint-regression/13-privatized_31-traces-mine-vs-mutex_true.yml/infer-13-privatized_31-traces-mine-vs-mutex_true.yml	true	ERROR(ineffective witness)	1.433687	3.2417810440000068	69.115904
+goblint-regression/13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml/infer-13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml	true	ERROR(ineffective witness)	1.391838	3.0214614459999893	67.809280
+goblint-regression/13-privatized_33-traces-v-matters_true.yml/infer-13-privatized_33-traces-v-matters_true.yml	true	TIMEOUT	1.236812	46.05184593600001	67.866624
+goblint-regression/13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml/infer-13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml	true	TIMEOUT	1.228047	46.01126284799999	67.633152
+goblint-regression/13-privatized_35-traces-ex-2_true.yml/infer-13-privatized_35-traces-ex-2_true.yml	true	ERROR(ineffective witness)	1.404965	2.6418170379999992	67.600384
+goblint-regression/13-privatized_36-traces-ex-3_true.yml/infer-13-privatized_36-traces-ex-3_true.yml	true	ERROR(ineffective witness)	1.393939	2.753642166000006	68.739072
+goblint-regression/13-privatized_37-traces-ex-4_true.yml/infer-13-privatized_37-traces-ex-4_true.yml	true	ERROR(ineffective witness)	1.396136	2.5149288490000004	67.727360
+goblint-regression/13-privatized_38-traces-ex-4-switch_true.yml/infer-13-privatized_38-traces-ex-4-switch_true.yml	true	ERROR(ineffective witness)	1.375454	2.5137709899999976	68.190208
+goblint-regression/13-privatized_40-traces-ex-6_true.yml/infer-13-privatized_40-traces-ex-6_true.yml	true	TIMEOUT	1.221397	46.01853289	67.694592
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/infer-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	false(unreach-call)	1.350414	2.472321598999997	68.726784
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/infer-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	TIMEOUT	1.236192	46.024287693999995	68.243456
+goblint-regression/13-privatized_42-traces-ex-mini_true.yml/infer-13-privatized_42-traces-ex-mini_true.yml	true	ERROR(ineffective witness)	1.271466	1.6218291729999947	69.050368
+goblint-regression/13-privatized_44-traces-mine2_true.yml/infer-13-privatized_44-traces-mine2_true.yml	true	TIMEOUT	1.129336	46.00937480600001	69.189632
+goblint-regression/13-privatized_45-traces-per-global-and-current-lock-mine-incomparable_true.yml/infer-13-privatized_45-traces-per-global-and-current-lock-mine-incomparable_true.yml	true	ERROR(ineffective witness)	1.281165	1.569134696000006	68.026368
+goblint-regression/13-privatized_46-refine-protected1_true.yml/infer-13-privatized_46-refine-protected1_true.yml	true	ERROR(ineffective witness)	1.294169	1.501137620999998	68.947968
+goblint-regression/13-privatized_47-refine-protected2_true.yml/infer-13-privatized_47-refine-protected2_true.yml	true	ERROR(ineffective witness)	1.242209	1.5513184619999976	67.891200
+goblint-regression/13-privatized_52-refine-protected-loop2-small_true.yml/infer-13-privatized_52-refine-protected-loop2-small_true.yml	true	TIMEOUT	44.507832	45.46268654699999	69.038080
+goblint-regression/13-privatized_57-singlethreaded-unlock_true.yml/infer-13-privatized_57-singlethreaded-unlock_true.yml	true	ERROR(ineffective witness)	1.257545	1.3365978669999947	67.760128
+goblint-regression/13-privatized_58-singlethreaded-lock_true.yml/infer-13-privatized_58-singlethreaded-lock_true.yml	true	ERROR(ineffective witness)	1.268095	1.3137133379999995	67.932160
+goblint-regression/13-privatized_66-mine-W-init_true.yml/infer-13-privatized_66-mine-W-init_true.yml	true	ERROR(ineffective witness)	1.249187	1.3109288260000085	68.034560
+goblint-regression/13-privatized_67-pthread_cond_wait_true.yml/infer-13-privatized_67-pthread_cond_wait_true.yml	false	TIMEOUT	1.238277	46.031927016	68.923392
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_neg.yml/infer-13-privatized_67-pthread_cond_wait_unknown_1_neg.yml	false	TIMEOUT	1.252897	46.01506581399998	69.124096
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_pos.yml/infer-13-privatized_67-pthread_cond_wait_unknown_1_pos.yml	false	TIMEOUT	1.154412	46.07153619499999	68.669440
+goblint-regression/13-privatized_68-pfscan_protected_loop_minimal_interval_true.yml/infer-13-privatized_68-pfscan_protected_loop_minimal_interval_true.yml	true	TIMEOUT	17.209246	46.084824825	67.948544
+goblint-regression/13-privatized_69-refine-protected-loop-interval_true.yml/infer-13-privatized_69-refine-protected-loop-interval_true.yml	true	TIMEOUT	13.353151	46.016145671000004	68.509696
+goblint-regression/28-race_reach_01-simple_racing.yml/infer-28-race_reach_01-simple_racing.yml	false	TIMEOUT	22.769595	46.01844345500001	202.817536
+goblint-regression/28-race_reach_02-simple_racefree.yml/infer-28-race_reach_02-simple_racefree.yml	true	TIMEOUT	20.652005	46.027637255	205.455360
+goblint-regression/28-race_reach_03-munge_racing.yml/infer-28-race_reach_03-munge_racing.yml	false	TIMEOUT	20.828885	46.025926736	333.950976
+goblint-regression/28-race_reach_04-munge_racefree.yml/infer-28-race_reach_04-munge_racefree.yml	true	TIMEOUT	19.434227	46.032712949	332.947456
+goblint-regression/28-race_reach_05-lockfuns_racefree.yml/infer-28-race_reach_05-lockfuns_racefree.yml	true	TIMEOUT	19.71123	46.02403801900002	200.060928
+goblint-regression/28-race_reach_06-cond_racing1.yml/infer-28-race_reach_06-cond_racing1.yml	false	TIMEOUT	18.62818	46.028446719000016	199.475200
+goblint-regression/28-race_reach_07-cond_racing2.yml/infer-28-race_reach_07-cond_racing2.yml	false	TIMEOUT	19.39339	46.037009342000005	201.859072
+goblint-regression/28-race_reach_08-cond_racefree.yml/infer-28-race_reach_08-cond_racefree.yml	true	TIMEOUT	18.358404	46.03112671599999	201.166848
+goblint-regression/28-race_reach_09-ptrmunge_racing.yml/infer-28-race_reach_09-ptrmunge_racing.yml	false	TIMEOUT	17.933344	46.056914645999996	338.104320
+goblint-regression/28-race_reach_10-ptrmunge_racefree.yml/infer-28-race_reach_10-ptrmunge_racefree.yml	true	TIMEOUT	16.566068	46.023839984000006	334.454784
+goblint-regression/28-race_reach_11-ptr_racing.yml/infer-28-race_reach_11-ptr_racing.yml	false	TIMEOUT	16.683391	46.02670200799997	201.650176
+goblint-regression/28-race_reach_12-ptr_racefree.yml/infer-28-race_reach_12-ptr_racefree.yml	true	TIMEOUT	16.509132	46.01434104699999	207.052800
+goblint-regression/28-race_reach_19-callback_racing.yml/infer-28-race_reach_19-callback_racing.yml	false	TIMEOUT	17.790211	46.05918483899998	202.502144
+goblint-regression/28-race_reach_20-callback_racefree.yml/infer-28-race_reach_20-callback_racefree.yml	true	TIMEOUT	17.006538	46.02467946799999	202.280960
+goblint-regression/28-race_reach_21-deref_read_racing.yml/infer-28-race_reach_21-deref_read_racing.yml	false	TIMEOUT	18.693801	46.02783433099998	199.176192
+goblint-regression/28-race_reach_22-deref_read_racefree.yml/infer-28-race_reach_22-deref_read_racefree.yml	true	TIMEOUT	18.726998	46.034943819999995	202.330112
+goblint-regression/28-race_reach_23-sound_unlock_racing.yml/infer-28-race_reach_23-sound_unlock_racing.yml	false	TIMEOUT	17.025372	46.03594024	201.027584
+goblint-regression/28-race_reach_24-sound_lock_racing.yml/infer-28-race_reach_24-sound_lock_racing.yml	false	TIMEOUT	16.490238	46.035604174000014	205.557760
+goblint-regression/28-race_reach_27-funptr_racing.yml/infer-28-race_reach_27-funptr_racing.yml	false	TIMEOUT	17.678713	46.071262485999966	200.769536
+goblint-regression/28-race_reach_28-funptr_racefree.yml/infer-28-race_reach_28-funptr_racefree.yml	true	TIMEOUT	18.280027	46.03495838699996	203.472896
+goblint-regression/28-race_reach_36-indirect_racefree.yml/infer-28-race_reach_36-indirect_racefree.yml	true	TIMEOUT	17.667053	46.041557998	200.912896
+goblint-regression/28-race_reach_37-indirect_racing.yml/infer-28-race_reach_37-indirect_racing.yml	false	TIMEOUT	17.702203	46.028315538000015	202.424320
+goblint-regression/28-race_reach_40-trylock_racing.yml/infer-28-race_reach_40-trylock_racing.yml	false	TIMEOUT	17.656779	46.088147177999986	198.332416
+goblint-regression/28-race_reach_41-trylock_racefree.yml/infer-28-race_reach_41-trylock_racefree.yml	true	TIMEOUT	18.108178	46.02481343699998	201.068544
+goblint-regression/28-race_reach_42-trylock2_racefree.yml/infer-28-race_reach_42-trylock2_racefree.yml	true	TIMEOUT	17.196615	46.05479272500003	201.748480
+goblint-regression/28-race_reach_45-escape_racing.yml/infer-28-race_reach_45-escape_racing.yml	false	ERROR(ineffective witness)	1.76264	7.659362469999991	67.854336
+goblint-regression/28-race_reach_46-escape_racefree.yml/infer-28-race_reach_46-escape_racefree.yml	true	ERROR(ineffective witness)	1.793479	8.565315277999986	68.620288
+goblint-regression/28-race_reach_51-mutexptr_racefree.yml/infer-28-race_reach_51-mutexptr_racefree.yml	true	TIMEOUT	16.858159	46.01312314100002	198.516736
+goblint-regression/28-race_reach_60-invariant_racefree.yml/infer-28-race_reach_60-invariant_racefree.yml	true	TIMEOUT	17.642851	46.023530096	201.777152
+goblint-regression/28-race_reach_61-invariant_racing.yml/infer-28-race_reach_61-invariant_racing.yml	false	TIMEOUT	17.482142	46.018830318	202.907648
+goblint-regression/28-race_reach_70-funloop_racefree.yml/infer-28-race_reach_70-funloop_racefree.yml	true	TIMEOUT	17.044854	46.117256532	197.574656
+goblint-regression/28-race_reach_71-funloop_racing.yml/infer-28-race_reach_71-funloop_racing.yml	false	TIMEOUT	17.488781	46.07824976400002	199.294976
+goblint-regression/28-race_reach_72-funloop_hard_racing.yml/infer-28-race_reach_72-funloop_hard_racing.yml	false	TIMEOUT	17.932204	46.039781011	201.093120
+goblint-regression/28-race_reach_73-funloop_hard_racefree.yml/infer-28-race_reach_73-funloop_hard_racefree.yml	true	TIMEOUT	16.874218	46.016803041	205.185024
+goblint-regression/28-race_reach_74-tricky_address1_racefree.yml/infer-28-race_reach_74-tricky_address1_racefree.yml	true	TIMEOUT	16.773669	46.030830353	200.654848
+goblint-regression/28-race_reach_75-tricky_address2_racefree.yml/infer-28-race_reach_75-tricky_address2_racefree.yml	true	TIMEOUT	17.551534	46.03442497200001	199.933952
+goblint-regression/28-race_reach_76-tricky_address3_racefree.yml/infer-28-race_reach_76-tricky_address3_racefree.yml	true	TIMEOUT	17.067606	46.028730679000034	200.196096
+goblint-regression/28-race_reach_77-tricky_address4_racing.yml/infer-28-race_reach_77-tricky_address4_racing.yml	false	TIMEOUT	17.603965	46.05011775700001	200.396800
+goblint-regression/28-race_reach_78-equ_racing.yml/infer-28-race_reach_78-equ_racing.yml	false	TIMEOUT	17.753233	46.023466901999996	206.700544
+goblint-regression/28-race_reach_79-equ_racefree.yml/infer-28-race_reach_79-equ_racefree.yml	true	TIMEOUT	17.87465	46.05273265999995	200.892416
+goblint-regression/28-race_reach_81-list_racing.yml/infer-28-race_reach_81-list_racing.yml	false	TIMEOUT	22.375124	46.169386989999964	341.979136
+goblint-regression/28-race_reach_82-list_racefree.yml/infer-28-race_reach_82-list_racefree.yml	false	TIMEOUT	21.273565	46.012569367000026	340.238336
+goblint-regression/28-race_reach_83-list2_racing1.yml/infer-28-race_reach_83-list2_racing1.yml	false	ERROR(Compilation error)	1.649027	6.644680207000022	68.186112
+goblint-regression/28-race_reach_84-list2_racing2.yml/infer-28-race_reach_84-list2_racing2.yml	false	ERROR(Compilation error)	1.646712	6.699893294000049	68.788224
+goblint-regression/28-race_reach_85-list2_racefree.yml/infer-28-race_reach_85-list2_racefree.yml	true	ERROR(Compilation error)	1.594409	5.476645499000028	68.775936
+goblint-regression/28-race_reach_86-lists_racing.yml/infer-28-race_reach_86-lists_racing.yml	false	TIMEOUT	22.760671	46.01145651999997	344.154112
+goblint-regression/28-race_reach_87-lists_racefree.yml/infer-28-race_reach_87-lists_racefree.yml	true	TIMEOUT	23.143199	46.026108626999985	363.339776
+goblint-regression/28-race_reach_90-arrayloop2_racing.yml/infer-28-race_reach_90-arrayloop2_racing.yml	false	false(unreach-call)	1.910228	6.860675727	68.845568
+goblint-regression/28-race_reach_91-arrayloop2_racefree.yml/infer-28-race_reach_91-arrayloop2_racefree.yml	true	false(unreach-call)	1.936366	7.255099944999984	80.646144
+goblint-regression/28-race_reach_92-evilcollapse_racing.yml/infer-28-race_reach_92-evilcollapse_racing.yml	false	false(unreach-call)	1.968565	8.422154535000004	83.636224
+goblint-regression/28-race_reach_93-evilcollapse_racefree.yml/infer-28-race_reach_93-evilcollapse_racefree.yml	true	false(unreach-call)	1.94316	7.450669435000009	71.507968
+goblint-regression/36-apron_11-traces-max-simple_true.yml/infer-36-apron_11-traces-max-simple_true.yml	true	ERROR(ineffective witness)	1.914385	6.3949820509999995	67.887104
+goblint-regression/36-apron_16-traces-unprot2_true.yml/infer-36-apron_16-traces-unprot2_true.yml	true	ERROR(ineffective witness)	1.928919	7.790519452000012	67.973120
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/infer-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	false(unreach-call)	1.897809	8.346687712000005	68.874240
+goblint-regression/36-apron_21-traces-cluster-based_true.yml/infer-36-apron_21-traces-cluster-based_true.yml	true	ERROR(ineffective witness)	1.918936	7.9449414780000325	68.661248
+goblint-regression/36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml/infer-36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml	true	ERROR(ineffective witness)	1.935616	6.550134818000004	67.448832
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/infer-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	ERROR(ineffective witness)	1.920639	7.924508342999957	67.948544
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/infer-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	false(unreach-call)	1.847784	6.904473795000001	68.972544
+ldv-linux-3.14-races/linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-1.yml/infer-linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-1.yml	true	ERROR(Parsing failed)	2.380211	7.593742937999991	66.211840
+ldv-linux-3.14-races/linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-2.yml/infer-linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-2.yml	false	ERROR(Parsing failed)	2.284239	8.222399526999993	66.334720
+ldv-linux-3.14-races/linux-3.14--drivers--net--irda--nsc-ircc.ko.cil.yml/infer-linux-3.14--drivers--net--irda--nsc-ircc.ko.cil.yml	false	ERROR(Parsing failed)	2.229988	9.533926033	66.478080
+ldv-linux-3.14-races/linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.yml/infer-linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.yml	false	ERROR(Parsing failed)	2.179407	6.404996208	66.072576
+ldv-linux-3.14-races/linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.yml/infer-linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.yml	false	ERROR(Parsing failed)	1.886539	6.442541967000011	66.162688
+ldv-races/race-1_1-join.yml/infer-race-1_1-join.yml	true	ERROR(ineffective witness)	2.069273	8.041582416999972	69.312512
+ldv-races/race-1_2-join.yml/infer-race-1_2-join.yml	false	ERROR(ineffective witness)	2.056774	7.96771288299999	68.177920
+ldv-races/race-1_3-join.yml/infer-race-1_3-join.yml	false	ERROR(ineffective witness)	2.043839	8.077105346999986	68.870144
+ldv-races/race-2_1-container_of.yml/infer-race-2_1-container_of.yml	true	TIMEOUT	2.156509	46.028014541000005	67.538944
+ldv-races/race-2_2-container_of.yml/infer-race-2_2-container_of.yml	false	TIMEOUT	2.171158	46.06471166	68.939776
+ldv-races/race-2_3-container_of.yml/infer-race-2_3-container_of.yml	false	TIMEOUT	1.942174	46.04390189500003	68.722688
+ldv-races/race-2_4-container_of.yml/infer-race-2_4-container_of.yml	false	TIMEOUT	1.982114	46.043128454	69.033984
+ldv-races/race-2_5-container_of.yml/infer-race-2_5-container_of.yml	false	TIMEOUT	1.983111	46.54095322499995	67.801088
+ldv-races/race-3_1-container_of-global.yml/infer-race-3_1-container_of-global.yml	true	TIMEOUT	1.979987	46.33708732600002	67.788800
+ldv-races/race-3_2-container_of-global.yml/infer-race-3_2-container_of-global.yml	false	TIMEOUT	1.727414	46.121423779000054	68.644864
+ldv-races/race-4_1-thread_local_vars.yml/infer-race-4_1-thread_local_vars.yml	true	ERROR(ineffective witness)	1.662744	3.0712164979999557	69.013504
+pthread-C-DAC/pthread-demo-datarace-1.yml/infer-pthread-demo-datarace-1.yml	true	ERROR(ineffective witness)	1.59995	2.806099353000036	67.678208
+pthread-C-DAC/pthread-demo-datarace-3.yml/infer-pthread-demo-datarace-3.yml	false	false(unreach-call)	1.551195	3.5623410219999982	67.735552
+pthread-C-DAC/pthread-finding-k-matches.yml/infer-pthread-finding-k-matches.yml	true	TIMEOUT	1.652497	46.17387797700002	68.853760
+pthread-C-DAC/pthread-numerical-integration.yml/infer-pthread-numerical-integration.yml	true	TIMEOUT	1.362079	46.247957439000004	67.743744
+pthread-complex/bounded_buffer.yml/infer-bounded_buffer.yml	false	false(unreach-call)	1.546744	2.161114672999986	68.730880
+pthread-complex/elimination_backoff_stack.yml/infer-elimination_backoff_stack.yml	false	TIMEOUT	1.964496	46.53464741099998	67.903488
+pthread-complex/safestack_relacy.yml/infer-safestack_relacy.yml	false	ERROR(ineffective witness)	1.537729	2.960936527000001	68.874240
+pthread-complex/workstealqueue_mutex-2.yml/infer-workstealqueue_mutex-2.yml	true	false(unreach-call)	1.559053	2.6907323460000043	67.878912
+pthread-deagle/arithmetic_prog_ok.yml/infer-arithmetic_prog_ok.yml	true	ERROR(ineffective witness)	1.436054	3.842629665000004	67.788800
+pthread-deagle/circular_buffer_bad.yml/infer-circular_buffer_bad.yml	false	false(unreach-call)	1.612034	6.386526314000037	67.805184
+pthread-deagle/circular_buffer_ok.yml/infer-circular_buffer_ok.yml	true	ERROR(ineffective witness)	1.630027	5.189553934000003	68.583424
+pthread-driver-races/char_generic_nvram_nvram_unlocked_ioctl_write_nvram.yml/infer-char_generic_nvram_nvram_unlocked_ioctl_write_nvram.yml	true	ERROR(Compilation error)	2.472435	10.50734988299996	83.722240
+pthread-driver-races/char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml/infer-char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml	true	ERROR(Compilation error)	2.470599	12.005816019999997	83.787776
+pthread-driver-races/char_generic_nvram_read_nvram_write_nvram.yml/infer-char_generic_nvram_read_nvram_write_nvram.yml	false	ERROR(Compilation error)	2.590706	18.727758537	83.607552
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_configure.yml/infer-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_configure.yml	true	ERROR(Compilation error)	2.550566	18.287513466999997	86.294528
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml/infer-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml	false	ERROR(Compilation error)	2.625238	17.415260079000006	86.196224
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_get.yml/infer-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	2.63348	23.385985543000004	86.065152
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml/infer-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml	false	ERROR(Compilation error)	2.671915	20.417417909999983	86.081536
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_current.yml/infer-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_current.yml	true	ERROR(Compilation error)	2.659057	20.584599318000016	86.343680
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_get.yml/infer-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	2.72485	19.46482359999999	86.081536
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_set.yml/infer-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_set.yml	true	ERROR(Compilation error)	2.69438	18.444589834999988	86.200320
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_get.yml/infer-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	2.66747	21.941104661999987	86.331392
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml/infer-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml	false	ERROR(Compilation error)	2.660691	17.205888768000023	86.183936
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_get_pc8736x_gpio_set.yml/infer-char_pc8736x_gpio_pc8736x_gpio_get_pc8736x_gpio_set.yml	true	ERROR(Compilation error)	2.641773	19.49498263999999	86.192128
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_change.yml/infer-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_change.yml	true	ERROR(Compilation error)	2.698906	17.58104780399998	86.265856
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_configure.yml/infer-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_configure.yml	true	ERROR(Compilation error)	2.64472	18.590312214999983	86.155264
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_current.yml/infer-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_current.yml	true	ERROR(Compilation error)	2.710848	18.513724897999964	86.110208
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_get.yml/infer-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	2.670525	20.500235824000015	86.265856
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.yml/infer-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.yml	true	ERROR(Compilation error)	2.67997	20.482741100999988	86.319104
+pthread-ext/01b_inc.yml/infer-01b_inc.yml	true	TIMEOUT	13.495296	45.481034602999955	1226.682368
+pthread-ext/02_inc_cas.yml/infer-02_inc_cas.yml	true	TIMEOUT	16.826704	46.19607580500002	1831.485440
+pthread-ext/03_incdec.yml/infer-03_incdec.yml	true	TIMEOUT	17.732873	47.319730375999995	1776.680960
+pthread-ext/04_incdec_cas.yml/infer-04_incdec_cas.yml	true	TIMEOUT	18.581374	46.35188875099999	1766.756352
+pthread-ext/08_rand_cas.yml/infer-08_rand_cas.yml	true	TIMEOUT	13.544654	47.977064794	91.525120
+pthread-ext/11_fmaxsymopt.yml/infer-11_fmaxsymopt.yml	true	TIMEOUT	14.678048	46.19580604599997	1814.921216
+pthread-ext/25_stack.yml/infer-25_stack.yml	true	TIMEOUT	1.76534	46.043709917	67.493888
+pthread-ext/25_stack_longer-1.yml/infer-25_stack_longer-1.yml	false	false(unreach-call)	1.735964	11.526341036999952	67.682304
+pthread-ext/25_stack_longer-2.yml/infer-25_stack_longer-2.yml	true	TIMEOUT	1.757764	46.78332950099997	67.653632
+pthread-ext/25_stack_longest-1.yml/infer-25_stack_longest-1.yml	true	TIMEOUT	2.050262	46.124824725999986	68.935680
+pthread-ext/25_stack_longest-2.yml/infer-25_stack_longest-2.yml	false	false(unreach-call)	1.686819	6.721734327000036	67.727360
+pthread-ext/26_stack_cas.yml/infer-26_stack_cas.yml	true	TIMEOUT	1.95683	46.01342091800001	69.009408
+pthread-ext/26_stack_cas_longer-1.yml/infer-26_stack_cas_longer-1.yml	false	false(unreach-call)	1.739437	10.959569116000011	67.334144
+pthread-ext/26_stack_cas_longer-2.yml/infer-26_stack_cas_longer-2.yml	true	TIMEOUT	2.054647	46.11623101999999	67.596288
+pthread-ext/26_stack_cas_longest-1.yml/infer-26_stack_cas_longest-1.yml	false	false(unreach-call)	1.785719	15.064815446000011	73.834496
+pthread-ext/26_stack_cas_longest-2.yml/infer-26_stack_cas_longest-2.yml	true	TIMEOUT	2.186685	46.04776161800004	68.468736
+pthread-ext/28_buggy_simple_loop1_vf.yml/infer-28_buggy_simple_loop1_vf.yml	false	TIMEOUT	30.469952	46.078452528000014	1835.425792
+pthread-ext/29_conditionals_vs.yml/infer-29_conditionals_vs.yml	true	TIMEOUT	16.996595	45.81467767800001	1806.962688
+pthread-ext/31_simple_loop5_vs.yml/infer-31_simple_loop5_vs.yml	true	TIMEOUT	1.770869	46.68551942900007	67.854336
+pthread-ext/36_stack_cas_p0_vs_concur.yml/infer-36_stack_cas_p0_vs_concur.yml	true	TIMEOUT	1.792011	46.070198656	68.542464
+pthread-ext/37_stack_lock_p0_vs_concur.yml/infer-37_stack_lock_p0_vs_concur.yml	true	TIMEOUT	1.731378	46.32687191800005	68.694016
+pthread-ext/39_rand_lock_p0_vs.yml/infer-39_rand_lock_p0_vs.yml	true	TIMEOUT	2.046627	46.31175444499996	67.502080
+pthread-ext/40_barrier_vf.yml/infer-40_barrier_vf.yml	false	TIMEOUT	1.443563	46.07997351200004	68.567040
+pthread-ext/43_NetBSD_sysmon_power_sliced.yml/infer-43_NetBSD_sysmon_power_sliced.yml	true	TIMEOUT	1.577865	46.047387921999984	67.682304
+pthread-ext/46_monabsex2_vs.yml/infer-46_monabsex2_vs.yml	true	TIMEOUT	42.690477	45.969507109000006	1811.726336
+pthread-lit/qw2004-2b.yml/infer-qw2004-2b.yml	false	ERROR(ineffective witness)	1.426702	5.88354941099999	67.817472
+pthread-lit/sssc12.yml/infer-sssc12.yml	true	TIMEOUT	1.237958	46.13281207099999	69.001216
+pthread-lit/sssc12_variant.yml/infer-sssc12_variant.yml	true	TIMEOUT	1.205924	46.07126618399991	67.788800
+pthread-wmm/mix000.oepc.yml/infer-mix000.oepc.yml	false	TIMEOUT	1.388646	46.15253485099993	68.939776
+pthread-wmm/mix000.opt.yml/infer-mix000.opt.yml	false	TIMEOUT	1.270562	46.214193507000005	67.899392
+pthread-wmm/mix001.oepc.yml/infer-mix001.oepc.yml	false	TIMEOUT	1.344991	46.184917509	68.026368
+pthread-wmm/mix001.opt.yml/infer-mix001.opt.yml	false	TIMEOUT	1.482569	46.024893150000025	69.218304
+pthread-wmm/mix002.oepc.yml/infer-mix002.oepc.yml	false	TIMEOUT	1.465678	46.074630243	68.866048
+pthread-wmm/mix002.opt.yml/infer-mix002.opt.yml	false	TIMEOUT	1.574773	46.02840102799996	67.919872
+pthread-wmm/mix003.oepc.yml/infer-mix003.oepc.yml	false	TIMEOUT	1.404651	46.06601583600002	68.145152
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/infer-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT	1.375316	46.011961067000016	68.120576
+pthread-wmm/mix004.oepc.yml/infer-mix004.oepc.yml	false	TIMEOUT	1.429867	46.01140236599997	67.850240
+pthread-wmm/mix004.opt.yml/infer-mix004.opt.yml	false	TIMEOUT	1.499343	46.023407939000094	68.894720
+pthread-wmm/mix005.opt.yml/infer-mix005.opt.yml	false	TIMEOUT	1.479182	46.01838403099998	67.956736
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix005_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.575046	46.029322004999926	68.083712
+pthread-wmm/mix005_tso.oepc.yml/infer-mix005_tso.oepc.yml	false	TIMEOUT	1.438458	46.061476803000005	69.152768
+pthread-wmm/mix006.opt.yml/infer-mix006.opt.yml	false	TIMEOUT	1.472772	46.00998579999998	68.915200
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.510111	46.419518133	68.931584
+pthread-wmm/mix006_tso.oepc.yml/infer-mix006_tso.oepc.yml	false	TIMEOUT	1.426526	46.01274537500001	68.386816
+pthread-wmm/mix007.oepc.yml/infer-mix007.oepc.yml	false	TIMEOUT	1.312959	46.00959101000001	68.116480
+pthread-wmm/mix007.opt.yml/infer-mix007.opt.yml	false	TIMEOUT	1.63243	46.01337404699996	69.185536
+pthread-wmm/mix008.opt.yml/infer-mix008.opt.yml	false	TIMEOUT	1.42222	46.01181399200004	68.141056
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix008_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.657551	46.14480387599997	67.735552
+pthread-wmm/mix008_tso.oepc.yml/infer-mix008_tso.oepc.yml	false	TIMEOUT	1.578411	46.01889172899996	69.763072
+pthread-wmm/mix009.oepc.yml/infer-mix009.oepc.yml	false	TIMEOUT	1.2848	46.025829595000005	67.960832
+pthread-wmm/mix009.opt.yml/infer-mix009.opt.yml	false	TIMEOUT	1.222368	46.140614224000046	68.321280
+pthread-wmm/mix010.oepc.yml/infer-mix010.oepc.yml	false	TIMEOUT	1.469604	48.60808648400007	68.870144
+pthread-wmm/mix010.opt.yml/infer-mix010.opt.yml	false	TIMEOUT	1.483965	46.02818427300008	69.394432
+pthread-wmm/mix011.opt.yml/infer-mix011.opt.yml	false	TIMEOUT	1.277188	46.015679836000004	68.972544
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.290269	46.01367183399998	67.960832
+pthread-wmm/mix011_tso.oepc.yml/infer-mix011_tso.oepc.yml	false	TIMEOUT	1.276537	46.02585269300005	69.107712
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/infer-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT	1.317444	46.017225897	67.780608
+pthread-wmm/mix012_pso.opt_tso.opt.yml/infer-mix012_pso.opt_tso.opt.yml	false	TIMEOUT	1.318805	46.049036167000054	68.759552
+pthread-wmm/mix013.oepc.yml/infer-mix013.oepc.yml	false	TIMEOUT	1.463852	46.06123766900009	68.235264
+pthread-wmm/mix013.opt.yml/infer-mix013.opt.yml	false	TIMEOUT	1.459651	46.140277075000085	67.846144
+pthread-wmm/mix014.opt.yml/infer-mix014.opt.yml	false	TIMEOUT	1.494494	46.12576951400001	68.145152
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix014_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.417539	46.01225764600008	69.050368
+pthread-wmm/mix014_tso.oepc.yml/infer-mix014_tso.oepc.yml	false	TIMEOUT	1.595317	46.041117876000044	69.718016
+pthread-wmm/mix015.oepc.yml/infer-mix015.oepc.yml	false	TIMEOUT	1.292346	48.25691567499996	69.025792
+pthread-wmm/mix015.opt.yml/infer-mix015.opt.yml	false	TIMEOUT	1.476228	46.01434972699997	68.026368
+pthread-wmm/mix016.oepc.yml/infer-mix016.oepc.yml	false	TIMEOUT	1.33066	46.012109506	68.251648
+pthread-wmm/mix016_power.opt_rmo.opt.yml/infer-mix016_power.opt_rmo.opt.yml	false	TIMEOUT	1.365752	46.01547326499997	68.685824
+pthread-wmm/mix016_pso.opt_tso.opt.yml/infer-mix016_pso.opt_tso.opt.yml	false	TIMEOUT	1.404529	46.11717600299994	67.850240
+pthread-wmm/mix017.oepc.yml/infer-mix017.oepc.yml	false	TIMEOUT	1.388276	46.092411486999936	68.993024
+pthread-wmm/mix017_power.opt_rmo.opt.yml/infer-mix017_power.opt_rmo.opt.yml	false	TIMEOUT	1.576797	46.164715157000046	67.870720
+pthread-wmm/mix017_pso.opt_tso.opt.yml/infer-mix017_pso.opt_tso.opt.yml	false	TIMEOUT	1.321788	46.057987647000004	68.018176
+pthread-wmm/mix018.opt.yml/infer-mix018.opt.yml	false	TIMEOUT	1.425994	46.01410918800002	67.710976
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix018_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.518553	46.150519060999954	68.022272
+pthread-wmm/mix018_tso.oepc.yml/infer-mix018_tso.oepc.yml	false	TIMEOUT	1.323134	46.02075542	67.706880
+pthread-wmm/mix019.opt.yml/infer-mix019.opt.yml	false	TIMEOUT	1.339603	46.015801416000045	68.268032
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix019_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.37951	46.00907536700004	68.849664
+pthread-wmm/mix019_tso.oepc.yml/infer-mix019_tso.oepc.yml	false	TIMEOUT	1.452906	46.01541961099997	68.833280
+pthread-wmm/mix020.oepc.yml/infer-mix020.oepc.yml	false	TIMEOUT	1.218138	46.013667380000015	67.883008
+pthread-wmm/mix020.opt.yml/infer-mix020.opt.yml	false	TIMEOUT	1.477007	46.02081455899997	69.033984
+pthread-wmm/mix021.opt.yml/infer-mix021.opt.yml	false	TIMEOUT	1.576484	46.020641594999915	68.923392
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix021_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.411746	46.0823820359999	68.972544
+pthread-wmm/mix021_tso.oepc.yml/infer-mix021_tso.oepc.yml	false	TIMEOUT	1.386601	46.017135977000066	69.009408
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.365991	46.05233893299999	68.026368
+pthread-wmm/mix022_tso.yml/infer-mix022_tso.yml	false	TIMEOUT	1.346036	46.01454788300009	69.038080
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix023_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.464201	46.01564290299996	68.116480
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/infer-mix023_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.266512	46.01542450699992	67.874816
+pthread-wmm/mix023_tso.yml/infer-mix023_tso.yml	false	TIMEOUT	1.511351	46.00734307100004	68.849664
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/infer-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT	1.412805	46.02337647699994	68.976640
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/infer-mix024_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.332129	46.13056807099997	69.066752
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/infer-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT	1.359593	47.90139069400004	68.911104
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/infer-mix025_pso.opt_rmo.opt.yml	false	TIMEOUT	1.288379	46.202618153	67.919872
+pthread-wmm/mix026.oepc.yml/infer-mix026.oepc.yml	false	TIMEOUT	1.529108	46.03086366599996	68.804608
+pthread-wmm/mix026_power.opt_tso.opt.yml/infer-mix026_power.opt_tso.opt.yml	false	TIMEOUT	1.427784	46.09353117499995	67.825664
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/infer-mix026_pso.opt_rmo.opt.yml	false	TIMEOUT	1.337894	46.011225326000044	67.584000
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix027_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.558804	46.04006998900002	69.091328
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/infer-mix027_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.459306	46.007752640000035	68.661248
+pthread-wmm/mix027_tso.yml/infer-mix027_tso.yml	false	TIMEOUT	1.432011	46.0138018990001	68.988928
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.289008	46.06368224000005	68.001792
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/infer-mix028_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.379982	46.257721282000034	68.857856
+pthread-wmm/mix028_tso.yml/infer-mix028_tso.yml	false	TIMEOUT	1.505832	46.19308412099997	68.907008
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/infer-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	TIMEOUT	1.498323	46.115289330999985	68.960256
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/infer-mix029_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.456132	46.010829005000005	68.923392
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix030_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.418529	46.023464107999985	67.878912
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/infer-mix030_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.370257	46.02067089299999	68.878336
+pthread-wmm/mix030_tso.yml/infer-mix030_tso.yml	false	TIMEOUT	1.340248	46.01596446000008	69.033984
+pthread-wmm/mix031.oepc.yml/infer-mix031.oepc.yml	false	TIMEOUT	1.388796	46.01422959599995	67.899392
+pthread-wmm/mix031.opt.yml/infer-mix031.opt.yml	false	TIMEOUT	1.319117	46.012535286	67.526656
+pthread-wmm/mix032.oepc.yml/infer-mix032.oepc.yml	false	TIMEOUT	1.322655	46.012995691000015	68.128768
+pthread-wmm/mix032.opt.yml/infer-mix032.opt.yml	false	TIMEOUT	1.250323	46.25801067799989	67.731456
+pthread-wmm/mix033.opt.yml/infer-mix033.opt.yml	false	TIMEOUT	1.353142	46.01560003000009	67.956736
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.359541	46.077907460000006	67.817472
+pthread-wmm/mix033_tso.oepc.yml/infer-mix033_tso.oepc.yml	false	TIMEOUT	1.344125	46.01702296799999	68.792320
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/infer-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	TIMEOUT	1.200322	46.01691825699993	68.771840
+pthread-wmm/mix034_pso.opt_tso.opt.yml/infer-mix034_pso.opt_tso.opt.yml	false	TIMEOUT	1.271967	46.012637552	68.902912
+pthread-wmm/mix035.oepc.yml/infer-mix035.oepc.yml	false	TIMEOUT	1.33845	46.059556402	68.894720
+pthread-wmm/mix035_power.opt_rmo.opt.yml/infer-mix035_power.opt_rmo.opt.yml	false	TIMEOUT	1.373451	46.01147404300002	67.661824
+pthread-wmm/mix035_pso.opt_tso.opt.yml/infer-mix035_pso.opt_tso.opt.yml	false	TIMEOUT	1.254202	46.01275148500008	67.842048
+pthread-wmm/mix036.oepc.yml/infer-mix036.oepc.yml	false	TIMEOUT	1.422349	46.04056407299993	69.128192
+pthread-wmm/mix036_power.opt_rmo.opt.yml/infer-mix036_power.opt_rmo.opt.yml	false	TIMEOUT	1.331204	46.01934240000003	67.944448
+pthread-wmm/mix036_pso.opt_tso.opt.yml/infer-mix036_pso.opt_tso.opt.yml	false	TIMEOUT	1.440519	46.01307149599995	68.780032
+pthread-wmm/mix037.opt.yml/infer-mix037.opt.yml	false	TIMEOUT	1.25874	46.32929056199998	67.788800
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix037_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.290801	46.01212176599995	68.820992
+pthread-wmm/mix037_tso.oepc.yml/infer-mix037_tso.oepc.yml	false	TIMEOUT	1.379306	46.0673948189999	69.140480
+pthread-wmm/mix038.opt.yml/infer-mix038.opt.yml	false	TIMEOUT	1.181624	46.01272608299996	68.632576
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.385972	46.01391031200001	67.694592
+pthread-wmm/mix038_tso.oepc.yml/infer-mix038_tso.oepc.yml	false	TIMEOUT	1.300209	46.01276579899991	68.997120
+pthread-wmm/mix039.oepc.yml/infer-mix039.oepc.yml	false	TIMEOUT	1.471324	46.010947858999884	68.874240
+pthread-wmm/mix039.opt.yml/infer-mix039.opt.yml	false	TIMEOUT	1.296551	46.02252161299998	67.801088
+pthread-wmm/mix040.opt.yml/infer-mix040.opt.yml	false	TIMEOUT	1.399154	46.07694399899992	67.600384
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix040_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.226818	46.01263487699998	68.153344
+pthread-wmm/mix040_tso.oepc.yml/infer-mix040_tso.oepc.yml	false	TIMEOUT	1.317946	46.03985368699989	68.866048
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.328251	46.07982820299992	67.788800
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/infer-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.333485	46.06965621800009	68.849664
+pthread-wmm/mix042.oepc.yml/infer-mix042.oepc.yml	false	TIMEOUT	1.264019	46.01201116099992	68.067328
+pthread-wmm/mix042.opt.yml/infer-mix042.opt.yml	false	TIMEOUT	1.3383	46.013771163	67.993600
+pthread-wmm/mix043.oepc.yml/infer-mix043.oepc.yml	false	TIMEOUT	1.507688	46.01241895999988	67.842048
+pthread-wmm/mix043.opt.yml/infer-mix043.opt.yml	false	TIMEOUT	1.371879	46.03314776499997	68.980736
+pthread-wmm/mix044.opt.yml/infer-mix044.opt.yml	false	TIMEOUT	1.384279	46.12924479700018	67.874816
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix044_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.320331	46.20935660600003	68.767744
+pthread-wmm/mix044_tso.oepc.yml/infer-mix044_tso.oepc.yml	false	TIMEOUT	1.291236	46.03252984000005	68.755456
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.41765	46.131660523000164	68.915200
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/infer-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.272868	46.008169154999905	68.997120
+pthread-wmm/mix046.oepc.yml/infer-mix046.oepc.yml	false	TIMEOUT	1.50626	46.10805276799988	68.833280
+pthread-wmm/mix046.opt.yml/infer-mix046.opt.yml	false	TIMEOUT	1.513543	46.01057216100003	69.136384
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix047_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.432816	46.014582984999834	69.017600
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/infer-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.237557	46.114468620000025	69.005312
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/infer-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.344644	46.06119475599985	68.734976
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/infer-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.40514	46.12572549599986	67.956736
+pthread-wmm/mix050.yml/infer-mix050.yml	false	TIMEOUT	1.371362	46.010414183999956	67.973120
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/infer-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.5195	46.018641433999846	68.919296
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/infer-mix051_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT	1.429575	46.02262073399993	69.066752
+pthread-wmm/mix051_tso.oepc.yml/infer-mix051_tso.oepc.yml	false	TIMEOUT	1.353673	46.03948104799997	68.820992
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/infer-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.237982	46.048027030000185	67.715072
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/infer-mix052_pso.opt_rmo.opt_tso.opt.yml	false	TIMEOUT	1.347091	46.03963698999996	68.780032
+pthread-wmm/mix052_tso.oepc.yml/infer-mix052_tso.oepc.yml	false	TIMEOUT	1.332709	46.01460470899997	69.042176
+pthread-wmm/mix053.opt.yml/infer-mix053.opt.yml	false	TIMEOUT	1.292836	46.127616825999894	68.698112
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix053_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.346182	46.16741424399993	68.894720
+pthread-wmm/mix053_tso.oepc.yml/infer-mix053_tso.oepc.yml	false	TIMEOUT	1.302941	46.017891299999974	68.308992
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/infer-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.258875	46.015816479999785	68.669440
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/infer-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.234852	46.1165308919999	68.755456
+pthread-wmm/mix055.opt.yml/infer-mix055.opt.yml	false	TIMEOUT	1.483747	46.04252241300014	67.903488
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix055_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.437843	46.01960608399986	68.362240
+pthread-wmm/mix055_tso.oepc.yml/infer-mix055_tso.oepc.yml	false	TIMEOUT	1.671743	46.40046462600003	68.980736
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.354305	46.0125984849999	67.854336
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/infer-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.259059	46.01424030200019	67.891200
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/infer-mix057_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.329437	46.040981599999895	68.870144
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/infer-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.369256	46.01892539200003	67.682304
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/infer-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.305272	46.01087560999986	68.210688
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/infer-rfi000_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.363374	46.01212379500021	67.629056
+pthread-wmm/rfi000_tso.yml/infer-rfi000_tso.yml	true	TIMEOUT	1.360142	46.01509178900005	68.546560
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/infer-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.358955	46.01231979999989	68.935680
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/infer-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.348996	46.030047331000105	68.820992
+pthread-wmm/rfi002_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-rfi002_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	true	TIMEOUT	1.244664	46.154684738000014	68.513792
+pthread-wmm/rfi002_tso.yml/infer-rfi002_tso.yml	true	TIMEOUT	1.285837	46.01522007099993	68.698112
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.262108	46.071977844	67.518464
+pthread-wmm/rfi003_tso.yml/infer-rfi003_tso.yml	true	TIMEOUT	1.243964	46.01153375900003	68.403200
+pthread-wmm/rfi004.yml/infer-rfi004.yml	false	TIMEOUT	1.230929	46.01303543500012	68.816896
+pthread-wmm/rfi005.yml/infer-rfi005.yml	false	TIMEOUT	1.268878	46.019202525999845	69.111808
+pthread-wmm/rfi006_power.oepc.yml/infer-rfi006_power.oepc.yml	false	TIMEOUT	1.353881	46.02386434599998	68.853760
+pthread-wmm/rfi006_power.opt.yml/infer-rfi006_power.opt.yml	false	TIMEOUT	1.424806	46.014593861999856	68.915200
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	false	TIMEOUT	1.198448	46.04272107199995	69.124096
+pthread-wmm/rfi006_rmo.yml/infer-rfi006_rmo.yml	false	TIMEOUT	1.202855	46.012145861000135	68.689920
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.290305	46.02052155699994	68.829184
+pthread-wmm/rfi007_tso.yml/infer-rfi007_tso.yml	false	TIMEOUT	1.413706	46.01362119999999	68.968448
+pthread-wmm/rfi008.oepc.yml/infer-rfi008.oepc.yml	false	ERROR(ineffective witness)	1.469022	41.875242128999844	69.115904
+pthread-wmm/rfi008.opt.yml/infer-rfi008.opt.yml	false	TIMEOUT	1.368578	46.01964314199995	68.804608
+pthread-wmm/rfi009_power.oepc.yml/infer-rfi009_power.oepc.yml	false	TIMEOUT	1.406985	46.01925270999982	67.919872
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/infer-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	1.526896	23.219449173000157	68.927488
+pthread-wmm/rfi009_rmo.oepc.yml/infer-rfi009_rmo.oepc.yml	false	ERROR(ineffective witness)	1.561833	25.144352965999815	68.620288
+pthread-wmm/rfi010.yml/infer-rfi010.yml	false	TIMEOUT	1.32837	46.0155649379999	67.829760
+pthread-wmm/safe000_power.oepc.yml/infer-safe000_power.oepc.yml	false	ERROR(ineffective witness)	1.461157	16.77904790599996	69.156864
+pthread-wmm/safe000_power.opt.yml/infer-safe000_power.opt.yml	false	TIMEOUT	1.318348	46.01695973100004	68.968448
+pthread-wmm/safe000_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe000_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	ERROR(ineffective witness)	1.382209	5.7662385749999885	67.330048
+pthread-wmm/safe000_rmo.yml/infer-safe000_rmo.yml	false	TIMEOUT	1.240037	46.0133753990001	69.062656
+pthread-wmm/safe001_power.oepc.yml/infer-safe001_power.oepc.yml	false	TIMEOUT	1.33011	46.03431036300003	68.124672
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/infer-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT	1.411488	46.01812139999993	68.878336
+pthread-wmm/safe001_rmo.oepc.yml/infer-safe001_rmo.oepc.yml	false	TIMEOUT	1.340008	46.01116101299999	69.251072
+pthread-wmm/safe001_tso.yml/infer-safe001_tso.yml	true	TIMEOUT	1.31446	46.222751018000054	67.682304
+pthread-wmm/safe002_power.oepc.yml/infer-safe002_power.oepc.yml	false	TIMEOUT	1.212299	46.108907619999854	68.370432
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/infer-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT	1.544017	46.01683213199999	68.677632
+pthread-wmm/safe002_rmo.oepc.yml/infer-safe002_rmo.oepc.yml	false	TIMEOUT	1.259704	46.0078721540001	68.030464
+pthread-wmm/safe002_tso.yml/infer-safe002_tso.yml	true	TIMEOUT	1.211799	46.01184878799995	67.616768
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.519193	46.01055241000017	68.100096
+pthread-wmm/safe003_power.opt.yml/infer-safe003_power.opt.yml	false	TIMEOUT	1.233556	46.01565568800015	67.977216
+pthread-wmm/safe003_tso.yml/infer-safe003_tso.yml	true	TIMEOUT	1.256045	46.01627181499998	68.464640
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/infer-safe004_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.503931	46.122131825999986	69.423104
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/infer-safe004_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.329033	46.01514791500017	68.268032
+pthread-wmm/safe004_tso.yml/infer-safe004_tso.yml	true	TIMEOUT	1.273838	46.014695918999905	67.727360
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.335432	46.01451404399995	67.952640
+pthread-wmm/safe005_tso.yml/infer-safe005_tso.yml	true	TIMEOUT	1.346168	46.01270666200003	68.587520
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/infer-safe006_power.oepc-thin000_power.oepc.yml	false	TIMEOUT	1.259144	46.01286432999996	67.784704
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/infer-safe006_power.opt-thin000_power.opt.yml	false	TIMEOUT	1.291021	46.01789434199986	68.898816
+pthread-wmm/safe006_pso.oepc_pso.opt_tso.oepc_tso.opt-thin000_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe006_pso.oepc_pso.opt_tso.oepc_tso.opt-thin000_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.359697	46.09770023400006	68.702208
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/infer-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.260481	46.014357263999955	67.768320
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/infer-safe007_power.oepc-thin001_power.oepc.yml	false	TIMEOUT	1.215538	46.15065008500005	68.091904
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/infer-safe007_power.opt-thin001_power.opt.yml	false	TIMEOUT	1.317163	48.05525425499991	68.308992
+pthread-wmm/safe007_pso.oepc_pso.opt_tso.oepc_tso.opt-thin001_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe007_pso.oepc_pso.opt_tso.oepc_tso.opt-thin001_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.319006	46.012017969	68.681728
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/infer-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.484452	46.01803817599989	67.776512
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.397152	46.087773308999886	68.870144
+pthread-wmm/safe008_power.opt.yml/infer-safe008_power.opt.yml	false	TIMEOUT	1.271926	46.010036149999905	69.042176
+pthread-wmm/safe008_tso.yml/infer-safe008_tso.yml	true	TIMEOUT	1.326269	46.01273466999987	68.587520
+pthread-wmm/safe009_power.oepc.yml/infer-safe009_power.oepc.yml	false	TIMEOUT	1.331072	46.013390114	67.964928
+pthread-wmm/safe009_power.opt.yml/infer-safe009_power.opt.yml	false	TIMEOUT	1.579121	46.01743287199997	67.829760
+pthread-wmm/safe009_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe009_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.252216	46.01317486999983	67.686400
+pthread-wmm/safe009_rmo.oepc.yml/infer-safe009_rmo.oepc.yml	false	TIMEOUT	1.318418	46.016316522000125	67.907584
+pthread-wmm/safe009_rmo.opt.yml/infer-safe009_rmo.opt.yml	false	TIMEOUT	1.30232	46.01697239600003	67.932160
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.301081	46.01390880100007	68.956160
+pthread-wmm/safe010_tso.yml/infer-safe010_tso.yml	true	TIMEOUT	1.326722	46.01555583700019	67.948544
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/infer-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.24453	46.02172894600017	68.870144
+pthread-wmm/safe011_power.opt_pso.opt.yml/infer-safe011_power.opt_pso.opt.yml	false	TIMEOUT	1.423997	46.01674617100002	69.066752
+pthread-wmm/safe011_tso.yml/infer-safe011_tso.yml	true	TIMEOUT	1.526976	46.021960231000094	68.714496
+pthread-wmm/safe012_power.oepc.yml/infer-safe012_power.oepc.yml	false	TIMEOUT	1.360756	46.018733855000164	67.960832
+pthread-wmm/safe012_power.opt.yml/infer-safe012_power.opt.yml	false	TIMEOUT	1.310013	46.01924547899989	67.977216
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/infer-safe012_pso.oepc_pso.opt_rmo.opt.yml	false	TIMEOUT	1.258646	46.0152794600001	67.813376
+pthread-wmm/safe012_rmo.oepc.yml/infer-safe012_rmo.oepc.yml	false	TIMEOUT	1.351285	46.010428506999915	68.644864
+pthread-wmm/safe012_tso.yml/infer-safe012_tso.yml	true	TIMEOUT	1.369293	46.02496542299991	67.543040
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.317956	46.01373006600011	68.956160
+pthread-wmm/safe013_tso.yml/infer-safe013_tso.yml	true	TIMEOUT	1.472283	46.016190339999866	69.038080
+pthread-wmm/safe014_power.oepc.yml/infer-safe014_power.oepc.yml	false	TIMEOUT	1.405501	46.021192505000045	68.931584
+pthread-wmm/safe014_power.opt.yml/infer-safe014_power.opt.yml	false	TIMEOUT	1.427161	46.00949051899988	67.829760
+pthread-wmm/safe014_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe014_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.460375	46.014764342000035	68.493312
+pthread-wmm/safe014_rmo.oepc.yml/infer-safe014_rmo.oepc.yml	false	TIMEOUT	1.45419	46.01243262599996	67.997696
+pthread-wmm/safe014_rmo.opt.yml/infer-safe014_rmo.opt.yml	false	TIMEOUT	1.305051	46.062558437999996	68.227072
+pthread-wmm/safe015_power.oepc.yml/infer-safe015_power.oepc.yml	false	TIMEOUT	1.377572	46.0157631080001	69.226496
+pthread-wmm/safe015_power.opt.yml/infer-safe015_power.opt.yml	false	TIMEOUT	1.490228	46.0799351820001	69.169152
+pthread-wmm/safe015_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe015_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.370429	46.03133034999996	68.595712
+pthread-wmm/safe015_rmo.yml/infer-safe015_rmo.yml	false	TIMEOUT	1.402836	46.0846809709999	69.201920
+pthread-wmm/safe016_power.oepc.yml/infer-safe016_power.oepc.yml	false	TIMEOUT	1.424365	46.01643244599995	68.927488
+pthread-wmm/safe016_power.opt.yml/infer-safe016_power.opt.yml	false	TIMEOUT	1.578991	46.015418157999875	69.271552
+pthread-wmm/safe016_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe016_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.352346	46.01348155400001	67.678208
+pthread-wmm/safe016_rmo.oepc.yml/infer-safe016_rmo.oepc.yml	false	TIMEOUT	1.429191	46.01403827399986	68.063232
+pthread-wmm/safe016_rmo.opt.yml/infer-safe016_rmo.opt.yml	false	TIMEOUT	1.497248	46.02631247099998	69.210112
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.43383	46.023413895999965	68.833280
+pthread-wmm/safe017_tso.yml/infer-safe017_tso.yml	true	TIMEOUT	1.387431	46.00888107000014	67.530752
+pthread-wmm/safe018_power.oepc.yml/infer-safe018_power.oepc.yml	false	TIMEOUT	1.430326	46.015516686999945	67.960832
+pthread-wmm/safe018_power.opt.yml/infer-safe018_power.opt.yml	false	TIMEOUT	1.450081	46.0175042689998	69.046272
+pthread-wmm/safe018_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe018_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.326046	46.01051425900005	68.800512
+pthread-wmm/safe018_rmo.oepc.yml/infer-safe018_rmo.oepc.yml	false	TIMEOUT	1.286532	46.028840489000004	68.907008
+pthread-wmm/safe018_rmo.opt.yml/infer-safe018_rmo.opt.yml	false	TIMEOUT	1.295328	46.027136531	67.932160
+pthread-wmm/safe019_power.oepc.yml/infer-safe019_power.oepc.yml	false	TIMEOUT	1.447099	46.012878752999995	68.272128
+pthread-wmm/safe019_power.opt.yml/infer-safe019_power.opt.yml	false	TIMEOUT	1.334172	46.035337087000016	69.099520
+pthread-wmm/safe019_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe019_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.297114	46.01575444199989	67.801088
+pthread-wmm/safe019_rmo.oepc.yml/infer-safe019_rmo.oepc.yml	false	TIMEOUT	1.511202	46.01604042299982	68.005888
+pthread-wmm/safe019_rmo.opt.yml/infer-safe019_rmo.opt.yml	false	TIMEOUT	1.532153	46.01541733099998	69.038080
+pthread-wmm/safe020_power.yml/infer-safe020_power.yml	false	TIMEOUT	1.403918	46.01497039100013	69.140480
+pthread-wmm/safe020_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe020_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.344739	46.01532268200003	68.493312
+pthread-wmm/safe020_rmo.yml/infer-safe020_rmo.yml	false	TIMEOUT	1.512269	46.013740349000045	67.940352
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/infer-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.30333	46.71743894999986	67.854336
+pthread-wmm/safe021_power.opt_pso.opt.yml/infer-safe021_power.opt_pso.opt.yml	false	TIMEOUT	1.310772	46.0156444549998	68.022272
+pthread-wmm/safe021_tso.yml/infer-safe021_tso.yml	true	TIMEOUT	1.382181	46.027712073999965	68.726784
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.359128	46.0365932090001	68.820992
+pthread-wmm/safe022_tso.yml/infer-safe022_tso.yml	true	TIMEOUT	1.303252	46.01291741299997	68.923392
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.693716	46.031983873999934	68.030464
+pthread-wmm/safe023_tso.yml/infer-safe023_tso.yml	true	TIMEOUT	1.431948	46.01474412799985	67.792896
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT (ERROR(ineffective witness))	1.685274	46.01708045999999	67.772416
+pthread-wmm/safe024_tso.yml/infer-safe024_tso.yml	true	TIMEOUT	1.46814	46.02624167399995	67.719168
+pthread-wmm/safe025_power.yml/infer-safe025_power.yml	false	false(unreach-call)	1.568026	37.75516424200009	68.476928
+pthread-wmm/safe025_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe025_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.398744	46.204639081000096	67.616768
+pthread-wmm/safe025_rmo.yml/infer-safe025_rmo.yml	false	TIMEOUT	1.628143	46.589160815000014	69.214208
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.30298	46.02523159400016	69.070848
+pthread-wmm/safe026_tso.yml/infer-safe026_tso.yml	true	TIMEOUT	1.269686	46.017273208000006	67.751936
+pthread-wmm/safe027_power.oepc.yml/infer-safe027_power.oepc.yml	false	TIMEOUT	1.487029	46.01122661299996	68.059136
+pthread-wmm/safe027_power.opt.yml/infer-safe027_power.opt.yml	false	TIMEOUT	1.471637	46.01269178100006	67.964928
+pthread-wmm/safe027_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe027_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.314573	46.01624221600014	68.599808
+pthread-wmm/safe027_rmo.yml/infer-safe027_rmo.yml	false	TIMEOUT	1.36649	46.02197800900012	67.784704
+pthread-wmm/safe028_power.yml/infer-safe028_power.yml	false	TIMEOUT	1.405047	47.60214530999997	68.206592
+pthread-wmm/safe028_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-safe028_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.35568	47.71692675899999	68.485120
+pthread-wmm/safe028_rmo.yml/infer-safe028_rmo.yml	false	TIMEOUT	1.396571	46.01600824399998	68.317184
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/infer-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.290656	46.014096093000035	67.764224
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/infer-safe029_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.261412	46.013604403000045	69.074944
+pthread-wmm/safe029_tso.yml/infer-safe029_tso.yml	true	TIMEOUT	1.42476	46.01655808600003	68.431872
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/infer-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.362523	46.07161526899995	68.943872
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/infer-safe030_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.414425	46.01424188100009	68.964352
+pthread-wmm/safe030_tso.yml/infer-safe030_tso.yml	true	TIMEOUT	1.354516	46.01281453299998	68.657152
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/infer-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false	TIMEOUT	1.361931	48.080555201999914	67.821568
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/infer-safe031_power.opt_pso.opt_rmo.opt.yml	false	TIMEOUT	1.406234	46.01299062500016	68.861952
+pthread-wmm/safe031_tso.yml/infer-safe031_tso.yml	true	TIMEOUT	1.341493	47.4984789680002	68.796416
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.491282	46.015152858999954	69.242880
+pthread-wmm/safe032_tso.yml/infer-safe032_tso.yml	true	TIMEOUT	1.431591	46.01718821999998	68.620288
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.475193	46.027517249000084	68.669440
+pthread-wmm/safe033_tso.yml/infer-safe033_tso.yml	true	TIMEOUT	1.248063	46.010730804000104	67.969024
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/infer-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	TIMEOUT	1.261715	46.2794133609998	68.608000
+pthread-wmm/safe034_tso.yml/infer-safe034_tso.yml	true	TIMEOUT	1.307225	46.015958157999876	67.805184
+pthread-wmm/safe035_power.yml/infer-safe035_power.yml	true	TIMEOUT	1.36697	46.56902034799987	68.235264
+pthread-wmm/safe035_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/infer-safe035_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	true	ERROR(ineffective witness)	1.550715	42.171995430999914	67.608576
+pthread-wmm/safe036.yml/infer-safe036.yml	true	TIMEOUT	1.309188	46.03283012299994	67.334144
+pthread-wmm/safe037.yml/infer-safe037.yml	true	TIMEOUT	1.325944	46.16541628799996	68.599808
+pthread-wmm/thin002_power.oepc.yml/infer-thin002_power.oepc.yml	false	TIMEOUT	1.489041	46.06692841900008	68.685824
+pthread-wmm/thin002_power.opt.yml/infer-thin002_power.opt.yml	false	TIMEOUT	1.423513	46.52278139500004	68.038656
+pthread-wmm/thin002_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/infer-thin002_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	1.364019	46.06587674299999	68.673536
+pthread-wmm/thin002_rmo.yml/infer-thin002_rmo.yml	false	ERROR(ineffective witness)	1.618025	12.783815468000057	68.751360
+pthread/bigshot_s.yml/infer-bigshot_s.yml	true	ERROR(ineffective witness)	1.426688	1.7877862150000965	68.681728
+pthread/bigshot_s2.yml/infer-bigshot_s2.yml	true	ERROR(ineffective witness)	1.416921	1.896980246999874	67.616768
+pthread/fib_safe-10.yml/infer-fib_safe-10.yml	true	ERROR(ineffective witness)	1.421558	5.508405234999827	67.502080
+pthread/fib_safe-11.yml/infer-fib_safe-11.yml	true	ERROR(ineffective witness)	1.42521	2.113862265999842	68.526080
+pthread/fib_safe-12.yml/infer-fib_safe-12.yml	true	ERROR(ineffective witness)	1.425888	7.205566814000122	68.673536
+pthread/fib_safe-5.yml/infer-fib_safe-5.yml	true	ERROR(ineffective witness)	1.359998	2.3150380530000803	68.640768
+pthread/fib_safe-6.yml/infer-fib_safe-6.yml	true	ERROR(ineffective witness)	1.524359	6.91595951100021	67.751936
+pthread/fib_safe-7.yml/infer-fib_safe-7.yml	true	ERROR(ineffective witness)	1.491255	5.6926752949998445	68.714496
+pthread/fib_unsafe-10.yml/infer-fib_unsafe-10.yml	false	ERROR(ineffective witness)	1.533092	5.633642839999993	67.723264
+pthread/fib_unsafe-11.yml/infer-fib_unsafe-11.yml	false	ERROR(ineffective witness)	1.479292	5.554344005000075	67.768320
+pthread/fib_unsafe-12.yml/infer-fib_unsafe-12.yml	false	ERROR(ineffective witness)	1.487779	6.9206211390001044	67.747840
+pthread/fib_unsafe-5.yml/infer-fib_unsafe-5.yml	false	ERROR(ineffective witness)	1.583602	10.47848547500007	67.665920
+pthread/fib_unsafe-6.yml/infer-fib_unsafe-6.yml	false	ERROR(ineffective witness)	1.59472	10.68082844599985	68.562944
+pthread/fib_unsafe-7.yml/infer-fib_unsafe-7.yml	false	ERROR(ineffective witness)	1.644628	13.066847559000053	68.419584
+pthread/lazy01.yml/infer-lazy01.yml	false	false(unreach-call)	1.646011	10.906325940999977	68.759552
+pthread/queue.yml/infer-queue.yml	false	ERROR(ineffective witness)	1.708728	11.709546991000025	67.661824
+pthread/queue_longer.yml/infer-queue_longer.yml	false	ERROR(ineffective witness)	1.666121	12.530178840999952	67.768320
+pthread/queue_longest.yml/infer-queue_longest.yml	false	ERROR(ineffective witness)	1.691743	13.21707924600014	67.633152
+pthread/queue_ok.yml/infer-queue_ok.yml	true	ERROR(ineffective witness)	1.631449	12.647014760000047	67.747840
+pthread/queue_ok_longer.yml/infer-queue_ok_longer.yml	true	ERROR(ineffective witness)	1.668892	10.629614981000032	68.685824
+pthread/queue_ok_longest.yml/infer-queue_ok_longest.yml	true	ERROR(ineffective witness)	1.631843	9.337328833000129	67.731456
+pthread/reorder_2.yml/infer-reorder_2.yml	false	ERROR(ineffective witness)	1.711866	9.928750832999867	68.657152
+pthread/reorder_5.yml/infer-reorder_5.yml	false	ERROR(ineffective witness)	1.703331	11.20900047799978	68.718592
+pthread/singleton.yml/infer-singleton.yml	false	false(unreach-call)	1.694241	9.391792469000166	69.009408
+pthread/singleton_with-uninit-problems.yml/infer-singleton_with-uninit-problems.yml	true	ERROR(ineffective witness)	1.745259	11.499642495999979	67.735552
+pthread/stack-1.yml/infer-stack-1.yml	true	ERROR(ineffective witness)	1.643602	7.840550377	68.833280
+pthread/stack-2.yml/infer-stack-2.yml	false	false(unreach-call)	1.542911	8.79996180000012	67.485696
+pthread/stack_longer-1.yml/infer-stack_longer-1.yml	false	false(unreach-call)	1.61399	8.590918099999953	68.624384
+pthread/stack_longer-2.yml/infer-stack_longer-2.yml	true	ERROR(ineffective witness)	1.68697	12.345579348000001	67.788800
+pthread/stack_longest-1.yml/infer-stack_longest-1.yml	false	false(unreach-call)	1.749568	12.024103831000048	68.689920
+pthread/stack_longest-2.yml/infer-stack_longest-2.yml	true	ERROR(ineffective witness)	1.714481	12.89843519100009	68.513792
+pthread/stateful01-2.yml/infer-stateful01-2.yml	true	ERROR(ineffective witness)	1.663651	11.829239647999884	67.694592
+pthread/triangular-1.yml/infer-triangular-1.yml	true	ERROR(ineffective witness)	1.604001	11.373344359999919	68.771840
+pthread/triangular-2.yml/infer-triangular-2.yml	false	ERROR(ineffective witness)	1.672349	12.242520155999955	67.538944
+pthread/triangular-longer-1.yml/infer-triangular-longer-1.yml	true	ERROR(ineffective witness)	1.681879	11.012693310000031	68.608000
+pthread/triangular-longer-2.yml/infer-triangular-longer-2.yml	false	ERROR(ineffective witness)	1.586413	7.482826436000096	67.661824
+pthread/triangular-longest-1.yml/infer-triangular-longest-1.yml	true	ERROR(ineffective witness)	1.614007	9.822055954000007	68.517888
+pthread/triangular-longest-2.yml/infer-triangular-longest-2.yml	false	ERROR(ineffective witness)	1.588833	11.643544241999962	67.969024
+pthread/twostage_3.yml/infer-twostage_3.yml	false	ERROR(ineffective witness)	1.74676	12.774684722999837	68.755456
+weaver/array-eq-symm.wvr.yml/infer-array-eq-symm.wvr.yml	true	TIMEOUT	1.601823	46.1077899500001	67.682304
+weaver/array-eq-trans.wvr.yml/infer-array-eq-trans.wvr.yml	true	TIMEOUT	1.610948	46.117255614999976	68.636672
+weaver/bench-exp1x3.wvr.yml/infer-bench-exp1x3.wvr.yml	true	TIMEOUT	1.413068	46.0685494249999	68.538368
+weaver/bench-exp2x3.wvr.yml/infer-bench-exp2x3.wvr.yml	true	TIMEOUT	1.450866	46.145009586000015	67.420160
+weaver/bench-exp2x4.wvr.yml/infer-bench-exp2x4.wvr.yml	true	TIMEOUT	1.445078	46.315182779	68.538368
+weaver/bench-exp2x6.wvr.yml/infer-bench-exp2x6.wvr.yml	true	TIMEOUT	1.424713	46.25943735599981	67.407872
+weaver/bench-exp2x9.wvr.yml/infer-bench-exp2x9.wvr.yml	true	TIMEOUT	1.452339	50.045209217999854	67.571712
+weaver/bench-exp3x3-opt.wvr.yml/infer-bench-exp3x3-opt.wvr.yml	true	TIMEOUT	1.510968	48.60295353999982	67.780608
+weaver/bench-exp3x3.wvr.yml/infer-bench-exp3x3.wvr.yml	true	TIMEOUT	1.309428	46.06636716699995	67.444736
+weaver/chl-array-int-subst.wvr.yml/infer-chl-array-int-subst.wvr.yml	true	TIMEOUT	1.344054	46.02446340400002	68.603904
+weaver/chl-array-int-symm.wvr.yml/infer-chl-array-int-symm.wvr.yml	true	TIMEOUT	1.658024	46.01411778800002	67.657728
+weaver/chl-array-int-trans.wvr.yml/infer-chl-array-int-trans.wvr.yml	true	TIMEOUT	1.693565	46.025260862000096	68.358144
+weaver/chl-chromosome-opt-symm.wvr.yml/infer-chl-chromosome-opt-symm.wvr.yml	true	TIMEOUT	1.634035	46.142777172000024	68.435968
+weaver/chl-chromosome-subst.wvr.yml/infer-chl-chromosome-subst.wvr.yml	true	TIMEOUT	1.765232	46.05537488799996	68.583424
+weaver/chl-chromosome-symm.wvr.yml/infer-chl-chromosome-symm.wvr.yml	true	TIMEOUT	1.654604	46.32834825600003	67.530752
+weaver/chl-chromosome-trans.wvr.yml/infer-chl-chromosome-trans.wvr.yml	true	TIMEOUT	1.534035	50.25916353799994	68.603904
+weaver/chl-collitem-subst.wvr.yml/infer-chl-collitem-subst.wvr.yml	true	TIMEOUT	1.342209	46.012740943999916	68.673536
+weaver/chl-collitem-symm.wvr.yml/infer-chl-collitem-symm.wvr.yml	true	TIMEOUT	1.413199	46.09424272299998	68.673536
+weaver/chl-collitem-trans.wvr.yml/infer-chl-collitem-trans.wvr.yml	true	TIMEOUT	1.400457	46.13899160699998	67.784704
+weaver/chl-exp-term-subst.wvr.yml/infer-chl-exp-term-subst.wvr.yml	true	TIMEOUT	1.414985	46.01592058699998	67.608576
+weaver/chl-exp-term-symm.wvr.yml/infer-chl-exp-term-symm.wvr.yml	true	TIMEOUT	1.344554	46.02745942199999	68.562944
+weaver/chl-file-item-subst.wvr.yml/infer-chl-file-item-subst.wvr.yml	true	TIMEOUT	1.402108	46.03888069599998	68.296704
+weaver/chl-file-item-symm.wvr.yml/infer-chl-file-item-symm.wvr.yml	true	TIMEOUT	1.528492	46.02370138099991	68.448256
+weaver/chl-file-item-trans.wvr.yml/infer-chl-file-item-trans.wvr.yml	true	TIMEOUT	1.323142	46.17485521100002	67.543040
+weaver/chl-match-subst.wvr.yml/infer-chl-match-subst.wvr.yml	true	TIMEOUT	1.273365	46.05310585500001	68.497408
+weaver/chl-match-symm.wvr.yml/infer-chl-match-symm.wvr.yml	true	TIMEOUT	1.263805	46.013173109000036	67.633152
+weaver/chl-match-trans.wvr.yml/infer-chl-match-trans.wvr.yml	true	TIMEOUT	1.28087	46.01900287100011	67.485696
+weaver/chl-name-comparator-subst.wvr.yml/infer-chl-name-comparator-subst.wvr.yml	true	TIMEOUT	1.270477	46.140197512999976	68.374528
+weaver/chl-name-comparator-symm.wvr.yml/infer-chl-name-comparator-symm.wvr.yml	true	TIMEOUT	1.3038	46.39404323900021	68.481024
+weaver/chl-name-comparator-trans.wvr.yml/infer-chl-name-comparator-trans.wvr.yml	true	TIMEOUT	1.234185	46.012017087000004	68.386816
+weaver/chl-node-subst.wvr.yml/infer-chl-node-subst.wvr.yml	true	TIMEOUT	1.281227	46.02088927999989	68.661248
+weaver/chl-node-symm.wvr.yml/infer-chl-node-symm.wvr.yml	true	TIMEOUT	1.333837	46.05072642799996	67.473408
+weaver/chl-node-trans.wvr.yml/infer-chl-node-trans.wvr.yml	true	TIMEOUT	1.306371	46.024982992000105	67.407872
+weaver/chl-nzb-file-subst.wvr.yml/infer-chl-nzb-file-subst.wvr.yml	true	TIMEOUT	1.298192	46.0232527669998	68.575232
+weaver/chl-nzb-file-symm.wvr.yml/infer-chl-nzb-file-symm.wvr.yml	true	TIMEOUT	1.26592	46.18954977600015	67.436544
+weaver/chl-nzb-file-trans.wvr.yml/infer-chl-nzb-file-trans.wvr.yml	true	TIMEOUT	1.322137	46.0167852579998	67.743744
+weaver/chl-poker-hand-subst.wvr.yml/infer-chl-poker-hand-subst.wvr.yml	true	TIMEOUT	1.443655	46.09306655099999	69.840896
+weaver/chl-poker-hand-symm.wvr.yml/infer-chl-poker-hand-symm.wvr.yml	true	TIMEOUT	1.372891	46.02810445200021	69.545984
+weaver/chl-poker-hand-trans.wvr.yml/infer-chl-poker-hand-trans.wvr.yml	true	TIMEOUT	1.483956	46.25068613099984	69.853184
+weaver/chl-simpl-str-subst.wvr.yml/infer-chl-simpl-str-subst.wvr.yml	true	TIMEOUT	1.152467	46.01195327700043	68.349952
+weaver/chl-simpl-str-symm.wvr.yml/infer-chl-simpl-str-symm.wvr.yml	true	TIMEOUT	1.25164	46.01395333900018	67.661824
+weaver/chl-simpl-str-trans.wvr.yml/infer-chl-simpl-str-trans.wvr.yml	true	TIMEOUT	1.353696	46.01464232199987	67.510272
+weaver/chl-sre-subst.wvr.yml/infer-chl-sre-subst.wvr.yml	true	TIMEOUT	1.429038	46.08634021399985	67.690496
+weaver/chl-sre-symm.wvr.yml/infer-chl-sre-symm.wvr.yml	true	TIMEOUT	1.455041	46.53507768199961	68.411392
+weaver/chl-sre-trans.wvr.yml/infer-chl-sre-trans.wvr.yml	true	TIMEOUT	1.237063	46.11223455699974	68.943872
+weaver/chl-time-subst.wvr.yml/infer-chl-time-subst.wvr.yml	true	TIMEOUT	1.199767	46.01707639699998	68.554752
+weaver/chl-time-symm.wvr.yml/infer-chl-time-symm.wvr.yml	true	TIMEOUT	1.283025	46.076904928000204	68.591616
+weaver/chl-time-trans.wvr.yml/infer-chl-time-trans.wvr.yml	true	TIMEOUT	1.275158	46.13191294299986	68.358144
+weaver/chl-word-subst.wvr.yml/infer-chl-word-subst.wvr.yml	true	TIMEOUT	1.209168	46.528592950000075	67.698688
+weaver/chl-word-symm.wvr.yml/infer-chl-word-symm.wvr.yml	true	TIMEOUT	1.233672	46.076796809999905	68.546560
+weaver/chl-word-trans.wvr.yml/infer-chl-word-trans.wvr.yml	true	TIMEOUT	1.319986	46.15766917100018	67.506176
+weaver/clever.wvr.yml/infer-clever.wvr.yml	true	TIMEOUT	1.423699	46.04773845600039	67.698688
+weaver/fibonacci.wvr.yml/infer-fibonacci.wvr.yml	true	TIMEOUT	1.380312	46.04051246000017	67.645440
+weaver/loop-tiling-eq.wvr.yml/infer-loop-tiling-eq.wvr.yml	true	TIMEOUT	1.391435	46.02388237000014	67.346432
+weaver/mult-comm.wvr.yml/infer-mult-comm.wvr.yml	true	TIMEOUT	1.347193	46.054422512999736	68.513792
+weaver/mult-dist.wvr.yml/infer-mult-dist.wvr.yml	true	TIMEOUT	1.252445	46.035655761999806	68.407296
+weaver/mult-flipped-dist.wvr.yml/infer-mult-flipped-dist.wvr.yml	true	TIMEOUT	1.26454	46.0285665880001	68.657152
+weaver/parallel-bakery-2.wvr.yml/infer-parallel-bakery-2.wvr.yml	true	TIMEOUT	1.308098	47.12482604399975	68.722688
+weaver/parallel-bakery-3.wvr.yml/infer-parallel-bakery-3.wvr.yml	true	TIMEOUT	1.275376	46.16474437199986	67.395584
+weaver/parallel-bakery-4.wvr.yml/infer-parallel-bakery-4.wvr.yml	true	TIMEOUT	1.306057	46.02660071199989	67.559424
+weaver/parallel-barrier-loop.wvr.yml/infer-parallel-barrier-loop.wvr.yml	false	TIMEOUT	1.226866	46.14989537199972	68.403200
+weaver/parallel-barrier.wvr.yml/infer-parallel-barrier.wvr.yml	true	TIMEOUT	1.419586	46.11172227499992	67.506176
+weaver/parallel-bluetooth.wvr.yml/infer-parallel-bluetooth.wvr.yml	true	TIMEOUT	1.230525	46.07101921100002	68.538368
+weaver/parallel-lamport.wvr.yml/infer-parallel-lamport.wvr.yml	true	TIMEOUT	1.343293	46.78514833400004	68.538368
+weaver/parallel-min-max-1.wvr.yml/infer-parallel-min-max-1.wvr.yml	true	TIMEOUT	1.242713	46.385497514000235	68.644864
+weaver/parallel-misc-1.wvr.yml/infer-parallel-misc-1.wvr.yml	true	TIMEOUT	1.221148	46.14766859500014	67.391488
+weaver/parallel-misc-2-unrolled-atomic.wvr.yml/infer-parallel-misc-2-unrolled-atomic.wvr.yml	true	TIMEOUT	1.325047	46.09478191399967	67.407872
+weaver/parallel-misc-2-unrolled.wvr.yml/infer-parallel-misc-2-unrolled.wvr.yml	true	TIMEOUT	1.185585	46.0846247479999	68.382720
+weaver/parallel-misc-2.wvr.yml/infer-parallel-misc-2.wvr.yml	true	TIMEOUT	1.221618	46.14751146000026	68.587520
+weaver/parallel-misc-3-extended.wvr.yml/infer-parallel-misc-3-extended.wvr.yml	true	TIMEOUT	45.598134	35.90465347899999	68.567040
+weaver/parallel-misc-3.wvr.yml/infer-parallel-misc-3.wvr.yml	true	TIMEOUT	45.760075	42.96422058300004	67.612672
+weaver/parallel-misc-4.wvr.yml/infer-parallel-misc-4.wvr.yml	true	TIMEOUT	1.255327	46.032368713000324	67.641344
+weaver/parallel-misc-5.wvr.yml/infer-parallel-misc-5.wvr.yml	true	TIMEOUT	1.246305	46.07227852300002	68.612096
+weaver/parallel-parallel-sum-1-dsl.wvr.yml/infer-parallel-parallel-sum-1-dsl.wvr.yml	true	TIMEOUT	1.36987	46.099238286999935	67.641344
+weaver/parallel-parallel-sum-1.wvr.yml/infer-parallel-parallel-sum-1.wvr.yml	true	TIMEOUT	1.464758	46.06034368900009	67.555328
+weaver/parallel-parallel-sum-2.wvr.yml/infer-parallel-parallel-sum-2.wvr.yml	true	TIMEOUT	1.427424	46.20156996700007	67.600384
+weaver/parallel-parallel-sum-equiv.wvr.yml/infer-parallel-parallel-sum-equiv.wvr.yml	true	TIMEOUT	1.248198	46.23754359500026	67.670016
+weaver/parallel-simple-equiv.wvr.yml/infer-parallel-simple-equiv.wvr.yml	true	TIMEOUT	1.36674	46.308691067999916	67.641344
+weaver/parallel-ticket-2.wvr.yml/infer-parallel-ticket-2.wvr.yml	true	TIMEOUT	1.319485	46.16785541499985	67.428352
+weaver/parallel-ticket-3.wvr.yml/infer-parallel-ticket-3.wvr.yml	true	TIMEOUT	1.29436	46.330562138999994	67.649536
+weaver/parallel-ticket-4.wvr.yml/infer-parallel-ticket-4.wvr.yml	true	TIMEOUT	1.256333	46.01398465600005	68.669440
+weaver/parallel-ticket-5.wvr.yml/infer-parallel-ticket-5.wvr.yml	true	TIMEOUT	1.411395	46.01688760699972	68.579328
+weaver/parallel-ticket-6.wvr.yml/infer-parallel-ticket-6.wvr.yml	true	TIMEOUT	1.47344	46.040863054000056	68.489216
+weaver/parallel-ticket-7.wvr.yml/infer-parallel-ticket-7.wvr.yml	true	TIMEOUT	1.380955	46.03998437700011	68.538368
+weaver/parallel-ticket-8.wvr.yml/infer-parallel-ticket-8.wvr.yml	true	TIMEOUT	1.476373	46.25562686600006	67.764224
+weaver/popl20-bad-commit-1.wvr-bad.yml/infer-popl20-bad-commit-1.wvr-bad.yml	true	TIMEOUT	1.450657	46.02532974499991	67.821568
+weaver/popl20-bad-commit-2.wvr-bad.yml/infer-popl20-bad-commit-2.wvr-bad.yml	true	TIMEOUT	1.377826	46.198674817999745	68.702208
+weaver/popl20-bad-counter-queue.wvr.yml/infer-popl20-bad-counter-queue.wvr.yml	false	TIMEOUT	1.369801	46.14156760900005	67.469312
+weaver/popl20-bad-counter-queue2.wvr.yml/infer-popl20-bad-counter-queue2.wvr.yml	true	TIMEOUT	1.516576	46.314403931000015	67.649536
+weaver/popl20-bad-dot-product-alt.wvr.yml/infer-popl20-bad-dot-product-alt.wvr.yml	true	TIMEOUT	1.29687	46.033727935000115	67.383296
+weaver/popl20-bad-dot-product.wvr.yml/infer-popl20-bad-dot-product.wvr.yml	true	TIMEOUT	1.228408	46.01845795600002	67.559424
+weaver/popl20-bad-ring-nondet.wvr.yml/infer-popl20-bad-ring-nondet.wvr.yml	true	TIMEOUT	1.349621	46.016479147000155	68.583424
+weaver/popl20-bad-ring.wvr.yml/infer-popl20-bad-ring.wvr.yml	true	TIMEOUT	1.351923	46.04843099500022	68.526080
+weaver/popl20-bad-threaded-sum-2.wvr.yml/infer-popl20-bad-threaded-sum-2.wvr.yml	true	TIMEOUT	1.31602	46.41260393000039	67.432448
+weaver/popl20-bad-three-array-sum-alt.wvr.yml/infer-popl20-bad-three-array-sum-alt.wvr.yml	true	TIMEOUT	1.522631	46.12117893300001	67.665920
+weaver/popl20-commit-1.wvr.yml/infer-popl20-commit-1.wvr.yml	true	TIMEOUT	1.358125	46.12949750200005	68.775936
+weaver/popl20-commit-2.wvr.yml/infer-popl20-commit-2.wvr.yml	true	TIMEOUT	1.329503	46.10665262700013	67.608576
+weaver/popl20-counter-determinism.wvr.yml/infer-popl20-counter-determinism.wvr.yml	true	TIMEOUT	1.324259	46.03259133099982	68.694016
+weaver/popl20-counter-fun.wvr.yml/infer-popl20-counter-fun.wvr.yml	true	TIMEOUT	1.343943	46.30340751799986	68.313088
+weaver/popl20-difference-det.wvr.yml/infer-popl20-difference-det.wvr.yml	true	TIMEOUT	1.220651	46.11546225899974	67.637248
+weaver/popl20-figure1-alt.wvr.yml/infer-popl20-figure1-alt.wvr.yml	true	ERROR(ineffective witness)	1.427251	33.1537232390001	68.501504
+weaver/popl20-figure1.wvr.yml/infer-popl20-figure1.wvr.yml	true	TIMEOUT	1.327429	46.01242925999986	67.686400
+weaver/popl20-figure3.wvr.yml/infer-popl20-figure3.wvr.yml	true	TIMEOUT	1.260257	46.02670447899982	67.424256
+weaver/popl20-horseshoe.wvr.yml/infer-popl20-horseshoe.wvr.yml	true	TIMEOUT	1.436878	46.034284797000055	68.521984
+weaver/popl20-min-max-dec.wvr.yml/infer-popl20-min-max-dec.wvr.yml	true	TIMEOUT	1.291196	46.050294916999974	67.657728
+weaver/popl20-min-max-inc-dec.wvr.yml/infer-popl20-min-max-inc-dec.wvr.yml	true	TIMEOUT	1.286188	46.1546670849998	67.502080
+weaver/popl20-min-max-inc.wvr.yml/infer-popl20-min-max-inc.wvr.yml	true	TIMEOUT	1.306772	46.03111663300024	68.481024
+weaver/popl20-more-array-sum-alt.wvr.yml/infer-popl20-more-array-sum-alt.wvr.yml	false	TIMEOUT	1.310371	46.028835595000146	67.555328
+weaver/popl20-more-array-sum-alt2.wvr.yml/infer-popl20-more-array-sum-alt2.wvr.yml	true	ERROR(ineffective witness)	1.534617	8.66190764799967	67.420160
+weaver/popl20-more-array-sum.wvr.yml/infer-popl20-more-array-sum.wvr.yml	false	TIMEOUT	1.230562	46.01923861799969	68.501504
+weaver/popl20-more-array-sum2.wvr.yml/infer-popl20-more-array-sum2.wvr.yml	true	TIMEOUT	1.271473	46.011627363000116	67.440640
+weaver/popl20-more-dec-subseq.wvr.yml/infer-popl20-more-dec-subseq.wvr.yml	true	TIMEOUT	1.180776	46.04757050499984	67.375104
+weaver/popl20-more-inc-subseq.wvr.yml/infer-popl20-more-inc-subseq.wvr.yml	true	TIMEOUT	1.1302	46.01724351299981	67.452928
+weaver/popl20-more-max-array-hom.wvr.yml/infer-popl20-more-max-array-hom.wvr.yml	true	TIMEOUT	1.246971	46.01713476399982	67.674112
+weaver/popl20-more-max-array.wvr.yml/infer-popl20-more-max-array.wvr.yml	true	TIMEOUT	1.219166	46.129248498999914	68.513792
+weaver/popl20-more-min-array-hom.wvr.yml/infer-popl20-more-min-array-hom.wvr.yml	true	TIMEOUT	1.30411	46.076584279000144	67.219456
+weaver/popl20-more-min-array.wvr.yml/infer-popl20-more-min-array.wvr.yml	true	TIMEOUT	1.298565	46.08376998799986	67.432448
+weaver/popl20-more-min-le-max.wvr.yml/infer-popl20-more-min-le-max.wvr.yml	true	TIMEOUT	1.087467	46.009930093000094	67.403776
+weaver/popl20-more-mts.wvr.yml/infer-popl20-more-mts.wvr.yml	true	TIMEOUT	1.086244	46.02886021099994	67.674112
+weaver/popl20-more-multiply-verify.wvr.yml/infer-popl20-more-multiply-verify.wvr.yml	true	TIMEOUT	1.146374	46.018878005999795	67.375104
+weaver/popl20-more-nonblocking-counter-alt2.wvr.yml/infer-popl20-more-nonblocking-counter-alt2.wvr.yml	true	TIMEOUT	1.106751	46.106743117000406	68.526080
+weaver/popl20-more-queue-add-2-nl.wvr.yml/infer-popl20-more-queue-add-2-nl.wvr.yml	true	TIMEOUT	1.144253	46.01936962800028	67.538944
+weaver/popl20-more-queue-add-3-nl.wvr.yml/infer-popl20-more-queue-add-3-nl.wvr.yml	true	TIMEOUT	1.21082	46.093395067000074	67.309568
+weaver/popl20-more-sorted.wvr.yml/infer-popl20-more-sorted.wvr.yml	true	TIMEOUT	1.205482	46.15446979699982	67.444736
+weaver/popl20-more-sum-array-hom.wvr.yml/infer-popl20-more-sum-array-hom.wvr.yml	true	TIMEOUT	1.334286	47.61224690000017	67.489792
+weaver/popl20-more-vector-add.wvr.yml/infer-popl20-more-vector-add.wvr.yml	true	TIMEOUT	1.306758	46.01663304400017	68.550656
+weaver/popl20-mult-4.wvr.yml/infer-popl20-mult-4.wvr.yml	true	TIMEOUT	1.187526	46.02116370299973	68.616192
+weaver/popl20-mult-equiv.wvr.yml/infer-popl20-mult-equiv.wvr.yml	true	TIMEOUT	1.129215	46.03756619400019	67.661824
+weaver/popl20-nonblocking-cntr-alt.wvr.yml/infer-popl20-nonblocking-cntr-alt.wvr.yml	true	TIMEOUT	1.181845	46.102192001000276	68.730880
+weaver/popl20-nonblocking-cntr.wvr.yml/infer-popl20-nonblocking-cntr.wvr.yml	true	TIMEOUT	1.199605	46.01166698099996	68.501504
+weaver/popl20-prod-cons-eq.wvr.yml/infer-popl20-prod-cons-eq.wvr.yml	true	TIMEOUT	1.274399	46.135119063000275	67.530752
+weaver/popl20-prod-cons.wvr.yml/infer-popl20-prod-cons.wvr.yml	true	TIMEOUT	1.363754	46.01459012699979	67.420160
+weaver/popl20-prod-cons3.wvr.yml/infer-popl20-prod-cons3.wvr.yml	true	TIMEOUT	1.241186	46.037392572000044	67.559424
+weaver/popl20-proofs-counter-add-4-semi-Q67.wvr.yml/infer-popl20-proofs-counter-add-4-semi-Q67.wvr.yml	true	TIMEOUT	1.259415	46.13206225999966	68.571136
+weaver/popl20-queue-add-2.wvr.yml/infer-popl20-queue-add-2.wvr.yml	true	TIMEOUT	1.329461	46.0336010230003	68.579328
+weaver/popl20-queue-add-3.wvr.yml/infer-popl20-queue-add-3.wvr.yml	true	TIMEOUT	1.223929	46.20056278099992	68.567040
+weaver/popl20-send-receive-alt.wvr.yml/infer-popl20-send-receive-alt.wvr.yml	true	TIMEOUT	1.315197	46.019985915000234	67.432448
+weaver/popl20-send-receive.wvr.yml/infer-popl20-send-receive.wvr.yml	true	TIMEOUT	1.134188	46.01280465800028	68.411392
+weaver/popl20-simple-array-sum.wvr.yml/infer-popl20-simple-array-sum.wvr.yml	true	TIMEOUT	1.205868	46.01615466800013	68.517888
+weaver/popl20-simple-queue.wvr.yml/infer-popl20-simple-queue.wvr.yml	true	TIMEOUT	1.287178	46.08597003499972	68.747264
+weaver/popl20-threaded-sum-3.wvr.yml/infer-popl20-threaded-sum-3.wvr.yml	true	TIMEOUT	1.104292	46.01551196499986	67.256320
+weaver/popl20-three-array-max.wvr.yml/infer-popl20-three-array-max.wvr.yml	true	TIMEOUT	1.103574	46.01865613100017	67.620864
+weaver/popl20-three-array-min.wvr.yml/infer-popl20-three-array-min.wvr.yml	true	TIMEOUT	1.127289	46.01469465199989	67.715072
+weaver/popl20-three-array-sum.wvr.yml/infer-popl20-three-array-sum.wvr.yml	true	TIMEOUT	1.288152	46.01338293800018	67.624960
+weaver/popl20-two-queue.wvr.yml/infer-popl20-two-queue.wvr.yml	true	TIMEOUT	1.353298	46.021130475000064	68.861952
+weaver/security.wvr.yml/infer-security.wvr.yml	true	TIMEOUT	1.380931	46.11151150700016	68.325376
+weaver/spaghetti.wvr.yml/infer-spaghetti.wvr.yml	true	TIMEOUT	1.278376	46.324847177000265	68.505600
+weaver/test-context1.wvr.yml/infer-test-context1.wvr.yml	true	TIMEOUT	1.21785	49.11794718800002	68.423680
+weaver/test-easy1.wvr.yml/infer-test-easy1.wvr.yml	true	TIMEOUT	1.15779	46.17072422399997	68.800512
+weaver/test-easy10.wvr.yml/infer-test-easy10.wvr.yml	true	TIMEOUT	1.275676	46.03312230699976	68.550656
+weaver/test-easy11.wvr.yml/infer-test-easy11.wvr.yml	true	TIMEOUT	1.207709	46.01328377300024	68.370432
+weaver/test-easy6.wvr.yml/infer-test-easy6.wvr.yml	true	TIMEOUT	1.252944	46.023774323	67.563520
+weaver/test-easy7.wvr.yml/infer-test-easy7.wvr.yml	true	TIMEOUT	1.2517	46.02380813799982	67.588096
+weaver/test-easy8.wvr.yml/infer-test-easy8.wvr.yml	true	TIMEOUT	1.282071	46.02391700899989	67.575808
+weaver/test-hard1.wvr.yml/infer-test-hard1.wvr.yml	true	TIMEOUT	1.348169	46.073260679000214	68.816896
+weaver/test-semi1.wvr.yml/infer-test-semi1.wvr.yml	true	TIMEOUT	1.261348	46.02283292799984	68.485120
+weaver/unroll-2.wvr.yml/infer-unroll-2.wvr.yml	true	TIMEOUT	1.175046	46.037517587000366	67.436544
+weaver/unroll-3.wvr.yml/infer-unroll-3.wvr.yml	true	TIMEOUT	1.103324	46.01984742900004	67.477504
+weaver/unroll-4.wvr.yml/infer-unroll-4.wvr.yml	true	TIMEOUT	1.10837	46.02329085800011	68.497408
+weaver/unroll-5.wvr.yml/infer-unroll-5.wvr.yml	true	TIMEOUT	1.137645	47.58462817999998	68.681728
+weaver/unroll-cond-2.wvr.yml/infer-unroll-cond-2.wvr.yml	true	TIMEOUT	1.118599	46.016235005	68.374528
+weaver/unroll-cond-3.wvr.yml/infer-unroll-cond-3.wvr.yml	true	TIMEOUT	1.117559	46.13046638000014	67.846144
+weaver/unroll-cond-4.wvr.yml/infer-unroll-cond-4.wvr.yml	true	TIMEOUT	1.201937	46.02068246299996	68.366336
+weaver/unroll-cond-5.wvr.yml/infer-unroll-cond-5.wvr.yml	true	TIMEOUT	1.187222	46.023509678999744	67.538944

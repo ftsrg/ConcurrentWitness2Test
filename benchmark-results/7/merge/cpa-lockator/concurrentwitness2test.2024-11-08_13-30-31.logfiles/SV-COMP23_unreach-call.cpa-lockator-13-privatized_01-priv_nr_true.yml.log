@@ -1,0 +1,617 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cpa-lockator/goblint-regression/13-privatized_01-priv_nr_true.yml/13-privatized_01-priv_nr_true.i --graphml-witness svcomp23-witness-benchmarks/tools/cpa-lockator/goblint-regression/13-privatized_01-priv_nr_true.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+/tmp/BenchExec_run_u8gxqpuu/tmp/tmp65b3gxnf.c
+Compilation started
+Compilation ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Released 1
+Resumed thread 2 at 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Released 1
+Resumed thread 2 at 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Paused thread 2 at 0 until 1
+Released 1
+Resumed thread 2 at 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+Execution started
+Initialized variables
+Released 1
+Released 2
+
+Execution ended (exit code 0)
+{0: 100}
+Verdict: NEVER

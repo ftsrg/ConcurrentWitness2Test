@@ -1,0 +1,36 @@
+tool	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-graves-par	SV-COMP23_unreach-call.ConcurrencySafety-graves-par	SV-COMP23_unreach-call.ConcurrencySafety-graves-par	SV-COMP23_unreach-call.ConcurrencySafety-graves-par
+../svcomp23-witness-benchmarks/tools/graves-par/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/graves-par-13-privatized_18-first-reads_unknown_1_neg.yml	TIMEOUT	3.247516	46.015595477999995	74.022912
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/graves-par-13-privatized_18-first-reads_unknown_1_pos.yml	ERROR(ineffective witness)	2.356205	6.566476320000021	69.095424
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/graves-par-13-privatized_18-first-reads_unknown_2_neg.yml	ERROR(ineffective witness)	2.345659	6.56745178700001	73.777152
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/graves-par-13-privatized_18-first-reads_unknown_2_pos.yml	TIMEOUT	3.279469	46.02220843500001	68.751360
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/graves-par-13-privatized_19-publish-precision_unknown_1_neg.yml	TIMEOUT	2.159222	46.02229624500001	65.708032
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/graves-par-13-privatized_19-publish-precision_unknown_1_pos.yml	TIMEOUT	2.167053	46.10850118299999	65.568768
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/graves-par-13-privatized_19-publish-precision_unknown_2_neg.yml	TIMEOUT	2.160064	46.024311917000006	65.798144
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/graves-par-13-privatized_19-publish-precision_unknown_2_pos.yml	TIMEOUT	2.161322	46.01883706799998	65.626112
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/graves-par-13-privatized_41-traces-ex-7_unknown_1_neg.yml	TIMEOUT	2.135241	46.009709826000005	70.340608
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/graves-par-13-privatized_41-traces-ex-7_unknown_1_pos.yml	TIMEOUT	2.141012	46.044098002	69.738496
+goblint-regression/28-race_reach_45-escape_racing.yml/graves-par-28-race_reach_45-escape_racing.yml	TIMEOUT	2.119654	46.02701291700001	65.658880
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/graves-par-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	TIMEOUT	2.124794	46.01769644000001	66.596864
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/graves-par-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	TIMEOUT	2.281943	46.009693080999995	68.644864
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/graves-par-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	TIMEOUT	2.425969	46.030806485	66.514944
+ldv-races/race-1_2-join.yml/graves-par-race-1_2-join.yml	ERROR(ineffective witness)	2.852184	14.484832302000001	68.767744
+ldv-races/race-1_3-join.yml/graves-par-race-1_3-join.yml	ERROR(ineffective witness)	2.935546	15.483671039	67.817472
+ldv-races/race-2_2-container_of.yml/graves-par-race-2_2-container_of.yml	TIMEOUT	2.577326	46.01479530900002	68.730880
+ldv-races/race-2_3-container_of.yml/graves-par-race-2_3-container_of.yml	TIMEOUT	2.625157	46.03914020299999	68.616192
+ldv-races/race-2_4-container_of.yml/graves-par-race-2_4-container_of.yml	TIMEOUT	2.72104	46.07970802600002	68.767744
+ldv-races/race-2_5-container_of.yml/graves-par-race-2_5-container_of.yml	TIMEOUT	2.576516	46.20113762700001	67.833856
+ldv-races/race-3_2-container_of-global.yml/graves-par-race-3_2-container_of-global.yml	TIMEOUT	2.627647	46.04934987799999	67.866624
+pthread-wmm/rfi006_rmo.yml/graves-par-rfi006_rmo.yml	TIMEOUT	2.842872	46.05726326500002	67.039232
+pthread-wmm/rfi009_rmo.oepc.yml/graves-par-rfi009_rmo.oepc.yml	TIMEOUT	2.647173	46.27743779900001	67.944448
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/graves-par-safe007_power.opt-thin001_power.opt.yml	TIMEOUT	2.432149	46.111546944	68.128768
+pthread-wmm/safe009_rmo.opt.yml/graves-par-safe009_rmo.opt.yml	TIMEOUT	2.885858	46.01234357100003	68.784128
+pthread-wmm/safe012_power.opt.yml/graves-par-safe012_power.opt.yml	TIMEOUT	4.090786	46.05352054299999	67.944448
+pthread-wmm/safe014_power.opt.yml/graves-par-safe014_power.opt.yml	TIMEOUT	2.865729	46.043428345000024	68.001792
+pthread-wmm/safe016_rmo.oepc.yml/graves-par-safe016_rmo.oepc.yml	TIMEOUT	3.024563	46.020336214000025	68.067328
+pthread-wmm/safe019_rmo.oepc.yml/graves-par-safe019_rmo.oepc.yml	TIMEOUT	3.006929	46.02819087400002	67.072000
+pthread-wmm/safe027_power.oepc.yml/graves-par-safe027_power.oepc.yml	TIMEOUT	2.948259	46.05762256899996	68.866048
+pthread-wmm/safe027_rmo.yml/graves-par-safe027_rmo.yml	TIMEOUT	3.029942	46.13357043799999	67.088384
+pthread/lazy01.yml/graves-par-lazy01.yml	TIMEOUT	2.281265	46.037932014000006	67.756032
+pthread/stateful01-1.yml/graves-par-stateful01-1.yml	TIMEOUT	2.222347	46.060868776999996	67.706880

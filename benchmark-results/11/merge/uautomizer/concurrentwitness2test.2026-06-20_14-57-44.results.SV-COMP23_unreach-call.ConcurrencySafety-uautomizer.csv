@@ -1,0 +1,287 @@
+tool	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-uautomizer	SV-COMP23_unreach-call.ConcurrencySafety-uautomizer	SV-COMP23_unreach-call.ConcurrencySafety-uautomizer	SV-COMP23_unreach-call.ConcurrencySafety-uautomizer
+../svcomp23-witness-benchmarks/tools/uautomizer/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/uautomizer-13-privatized_18-first-reads_unknown_1_neg.yml	false(unreach-call)	2.287579	5.5906514460000025	67.813376
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/uautomizer-13-privatized_18-first-reads_unknown_1_pos.yml	ERROR(ineffective witness)	2.316039	5.888995244	69.558272
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/uautomizer-13-privatized_18-first-reads_unknown_2_neg.yml	ERROR(ineffective witness)	2.336298	5.854966629000003	68.653056
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/uautomizer-13-privatized_18-first-reads_unknown_2_pos.yml	false(unreach-call)	2.311541	6.004596288999998	66.514944
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/uautomizer-13-privatized_19-publish-precision_unknown_1_neg.yml	false(unreach-call)	2.267999	5.469494119000004	68.841472
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/uautomizer-13-privatized_19-publish-precision_unknown_1_pos.yml	TIMEOUT	2.119106	46.010337613	68.583424
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/uautomizer-13-privatized_19-publish-precision_unknown_2_neg.yml	TIMEOUT	2.085298	46.012122815000005	84.606976
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/uautomizer-13-privatized_19-publish-precision_unknown_2_pos.yml	false(unreach-call)	2.302091	5.911899781999999	67.571712
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/uautomizer-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false(unreach-call)	2.284064	5.703403219999998	67.309568
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/uautomizer-13-privatized_41-traces-ex-7_unknown_1_pos.yml	TIMEOUT	2.071042	46.01240384100001	73.109504
+goblint-regression/13-privatized_67-pthread_cond_wait_true.yml/uautomizer-13-privatized_67-pthread_cond_wait_true.yml	TIMEOUT	2.262781	46.014831986999994	68.976640
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_neg.yml/uautomizer-13-privatized_67-pthread_cond_wait_unknown_1_neg.yml	TIMEOUT	2.246433	46.019566031000004	66.752512
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_pos.yml/uautomizer-13-privatized_67-pthread_cond_wait_unknown_1_pos.yml	TIMEOUT	2.272203	46.01870833	68.071424
+goblint-regression/28-race_reach_45-escape_racing.yml/uautomizer-28-race_reach_45-escape_racing.yml	ERROR(ineffective witness)	2.229208	3.8461842190000013	68.042752
+goblint-regression/28-race_reach_94-alloc_region_racing.yml/uautomizer-28-race_reach_94-alloc_region_racing.yml	false(unreach-call)	2.511618	4.415979722000003	69.316608
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/uautomizer-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	ERROR(ineffective witness)	2.236078	3.8078970230000024	69.062656
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/uautomizer-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false(unreach-call)	2.24536	3.457493484000004	67.964928
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/uautomizer-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	ERROR(ineffective witness)	2.073253	2.200467797999991	68.755456
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/uautomizer-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false(unreach-call)	2.092377	2.1962343779999998	68.984832
+ldv-races/race-1_2-join.yml/uautomizer-race-1_2-join.yml	TIMEOUT	2.125925	46.015964225000005	67.985408
+ldv-races/race-1_3-join.yml/uautomizer-race-1_3-join.yml	ERROR(ineffective witness)	2.388022	2.408994751999998	66.617344
+ldv-races/race-2_2-container_of.yml/uautomizer-race-2_2-container_of.yml	TIMEOUT	1.814461	46.138511999	68.964352
+ldv-races/race-2_3-container_of.yml/uautomizer-race-2_3-container_of.yml	TIMEOUT	3.476915	46.02196019099999	68.055040
+ldv-races/race-2_4-container_of.yml/uautomizer-race-2_4-container_of.yml	TIMEOUT	3.31936	46.181413926999994	66.772992
+ldv-races/race-2_5-container_of.yml/uautomizer-race-2_5-container_of.yml	TIMEOUT	2.478653	46.051971592	68.427776
+ldv-races/race-3_2-container_of-global.yml/uautomizer-race-3_2-container_of-global.yml	TIMEOUT	2.620973	46.014047713	66.543616
+pthread-C-DAC/pthread-demo-datarace-3.yml/uautomizer-pthread-demo-datarace-3.yml	false(unreach-call)	3.621823	6.649018798	68.911104
+pthread-atomic/read_write_lock-2.yml/uautomizer-read_write_lock-2.yml	TIMEOUT	2.26082	46.015193186000005	67.608576
+pthread-deagle/arithmetic_prog_bad.yml/uautomizer-arithmetic_prog_bad.yml	TIMEOUT	2.489704	46.03589619399999	66.473984
+pthread-deagle/circular_buffer_bad.yml/uautomizer-circular_buffer_bad.yml	ERROR(ineffective witness)	2.504333	10.681732319999995	68.845568
+pthread-ext/28_buggy_simple_loop1_vf.yml/uautomizer-28_buggy_simple_loop1_vf.yml	TIMEOUT	25.787277	46.05660231600001	1800.335360
+pthread-lit/qw2004-2b.yml/uautomizer-qw2004-2b.yml	TIMEOUT	2.536632	46.31457827300001	66.510848
+pthread-wmm/mix000.oepc.yml/uautomizer-mix000.oepc.yml	ERROR(ineffective witness)	2.878983	9.967256649999996	68.861952
+pthread-wmm/mix000.opt.yml/uautomizer-mix000.opt.yml	ERROR(ineffective witness)	3.005456	31.513830068999994	66.748416
+pthread-wmm/mix001.oepc.yml/uautomizer-mix001.oepc.yml	ERROR(ineffective witness)	3.030465	9.250223091999999	68.812800
+pthread-wmm/mix001.opt.yml/uautomizer-mix001.opt.yml	ERROR(ineffective witness)	2.970355	12.413443264999998	66.736128
+pthread-wmm/mix002.oepc.yml/uautomizer-mix002.oepc.yml	false(unreach-call)	2.982361	12.634060617999992	68.935680
+pthread-wmm/mix002.opt.yml/uautomizer-mix002.opt.yml	ERROR(ineffective witness)	2.930156	16.851684720999984	67.969024
+pthread-wmm/mix003.oepc.yml/uautomizer-mix003.oepc.yml	false(unreach-call)	2.785282	3.4736320260000184	68.767744
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/uautomizer-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	ERROR(ineffective witness)	2.808889	4.4401706490000095	66.666496
+pthread-wmm/mix004.oepc.yml/uautomizer-mix004.oepc.yml	false(unreach-call)	2.960083	4.9275793169999815	68.812800
+pthread-wmm/mix004.opt.yml/uautomizer-mix004.opt.yml	ERROR(ineffective witness)	3.097259	8.437356593999993	67.158016
+pthread-wmm/mix005.opt.yml/uautomizer-mix005.opt.yml	ERROR(ineffective witness)	3.093215	7.724071726000005	68.186112
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix005_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.106892	6.278993481000015	68.161536
+pthread-wmm/mix005_tso.oepc.yml/uautomizer-mix005_tso.oepc.yml	false(unreach-call)	3.012358	6.3397387249999895	68.964352
+pthread-wmm/mix006.opt.yml/uautomizer-mix006.opt.yml	ERROR(ineffective witness)	2.873952	11.992596695999993	67.952640
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.106828	20.982009565	66.854912
+pthread-wmm/mix006_tso.oepc.yml/uautomizer-mix006_tso.oepc.yml	ERROR(ineffective witness)	3.478563	18.097527189999994	68.608000
+pthread-wmm/mix007.oepc.yml/uautomizer-mix007.oepc.yml	false(unreach-call)	3.144237	17.685630152999977	66.904064
+pthread-wmm/mix007.opt.yml/uautomizer-mix007.opt.yml	ERROR(ineffective witness)	3.109202	17.143960531000005	69.025792
+pthread-wmm/mix008.opt.yml/uautomizer-mix008.opt.yml	ERROR(ineffective witness)	3.07421	16.332014758000014	69.029888
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix008_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.1899	22.153318402000025	69.177344
+pthread-wmm/mix008_tso.oepc.yml/uautomizer-mix008_tso.oepc.yml	ERROR(ineffective witness)	3.642626	24.497053276999992	68.521984
+pthread-wmm/mix009.oepc.yml/uautomizer-mix009.oepc.yml	false(unreach-call)	3.421181	38.946452050999994	67.825664
+pthread-wmm/mix009.opt.yml/uautomizer-mix009.opt.yml	TIMEOUT	2.979364	46.243979206999995	67.985408
+pthread-wmm/mix010.oepc.yml/uautomizer-mix010.oepc.yml	false(unreach-call)	3.070525	20.523208315000005	68.935680
+pthread-wmm/mix010.opt.yml/uautomizer-mix010.opt.yml	ERROR(ineffective witness)	3.234353	32.13534638300001	68.751360
+pthread-wmm/mix011.opt.yml/uautomizer-mix011.opt.yml	ERROR(ineffective witness)	3.159387	24.284806161000006	66.940928
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.068907	22.056395062999997	69.287936
+pthread-wmm/mix011_tso.oepc.yml/uautomizer-mix011_tso.oepc.yml	false(unreach-call)	3.051444	21.828934732999983	68.927488
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/uautomizer-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false(unreach-call)	2.983194	24.88030597299999	66.600960
+pthread-wmm/mix012_pso.opt_tso.opt.yml/uautomizer-mix012_pso.opt_tso.opt.yml	ERROR(ineffective witness)	3.109298	42.593219441	67.883008
+pthread-wmm/mix013.oepc.yml/uautomizer-mix013.oepc.yml	false(unreach-call)	3.299222	30.252611503999987	67.944448
+pthread-wmm/mix013.opt.yml/uautomizer-mix013.opt.yml	ERROR(ineffective witness)	3.317026	26.124128286	69.201920
+pthread-wmm/mix014.opt.yml/uautomizer-mix014.opt.yml	ERROR(ineffective witness)	3.134571	16.380754260000003	66.920448
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix014_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.15333	22.567384793000002	66.756608
+pthread-wmm/mix014_tso.oepc.yml/uautomizer-mix014_tso.oepc.yml	ERROR(ineffective witness)	3.555022	20.372245747999983	69.644288
+pthread-wmm/mix015.oepc.yml/uautomizer-mix015.oepc.yml	false(unreach-call)	2.981446	19.798720101000015	66.863104
+pthread-wmm/mix015.opt.yml/uautomizer-mix015.opt.yml	ERROR(ineffective witness)	3.072088	19.634989898999976	70.123520
+pthread-wmm/mix016.oepc.yml/uautomizer-mix016.oepc.yml	TIMEOUT (false(unreach-call))	3.494815	46.28347041800001	67.936256
+pthread-wmm/mix016_power.opt_rmo.opt.yml/uautomizer-mix016_power.opt_rmo.opt.yml	false(unreach-call)	3.211813	35.078480987999995	68.825088
+pthread-wmm/mix016_pso.opt_tso.opt.yml/uautomizer-mix016_pso.opt_tso.opt.yml	ERROR(ineffective witness)	3.036141	20.763828875	67.956736
+pthread-wmm/mix017.oepc.yml/uautomizer-mix017.oepc.yml	false(unreach-call)	3.144384	27.76101040399999	67.964928
+pthread-wmm/mix017_power.opt_rmo.opt.yml/uautomizer-mix017_power.opt_rmo.opt.yml	false(unreach-call)	3.103608	23.099484996	67.706880
+pthread-wmm/mix017_pso.opt_tso.opt.yml/uautomizer-mix017_pso.opt_tso.opt.yml	ERROR(ineffective witness)	3.282107	30.129601022999992	68.857856
+pthread-wmm/mix018.opt.yml/uautomizer-mix018.opt.yml	ERROR(ineffective witness)	3.05093	22.723989579999994	68.878336
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix018_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.117866	20.916941487000003	69.111808
+pthread-wmm/mix018_tso.oepc.yml/uautomizer-mix018_tso.oepc.yml	false(unreach-call)	3.146076	19.206649242000026	68.943872
+pthread-wmm/mix019.opt.yml/uautomizer-mix019.opt.yml	TIMEOUT	3.249065	46.25101881799998	67.833856
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix019_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.784024	9.036400458999992	69.185536
+pthread-wmm/mix019_tso.oepc.yml/uautomizer-mix019_tso.oepc.yml	TIMEOUT	3.141903	46.05359906999999	68.837376
+pthread-wmm/mix020.oepc.yml/uautomizer-mix020.oepc.yml	false(unreach-call)	3.068549	17.998098408000004	68.067328
+pthread-wmm/mix020.opt.yml/uautomizer-mix020.opt.yml	ERROR(ineffective witness)	3.09181	16.850756058	68.030464
+pthread-wmm/mix021.opt.yml/uautomizer-mix021.opt.yml	ERROR(ineffective witness)	3.056137	16.585896418999994	68.046848
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix021_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.083429	16.810084586000016	67.813376
+pthread-wmm/mix021_tso.oepc.yml/uautomizer-mix021_tso.oepc.yml	false(unreach-call)	3.202108	24.701370791000016	66.740224
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.933471	46.036111818999984	67.952640
+pthread-wmm/mix022_tso.yml/uautomizer-mix022_tso.yml	ERROR(ineffective witness)	3.07706	28.688339508000013	68.841472
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix023_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.246153	20.44481609799999	67.985408
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/uautomizer-mix023_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	3.154786	26.69295838000002	67.846144
+pthread-wmm/mix023_tso.yml/uautomizer-mix023_tso.yml	ERROR(ineffective witness)	3.710574	25.226835284000003	70.991872
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/uautomizer-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false(unreach-call)	3.010057	17.216621376000006	68.034560
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/uautomizer-mix024_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	3.003081	15.911958602000027	68.714496
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/uautomizer-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false(unreach-call)	3.10541	36.675499969999976	66.715648
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/uautomizer-mix025_pso.opt_rmo.opt.yml	false(unreach-call)	2.784049	10.529020000000003	67.682304
+pthread-wmm/mix026.oepc.yml/uautomizer-mix026.oepc.yml	false(unreach-call)	3.084388	18.933215838999956	66.920448
+pthread-wmm/mix026_power.opt_tso.opt.yml/uautomizer-mix026_power.opt_tso.opt.yml	false(unreach-call)	3.027025	10.639384145999998	66.740224
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/uautomizer-mix026_pso.opt_rmo.opt.yml	false(unreach-call)	3.027192	15.231753824000009	68.620288
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix027_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.052868	21.604071145000034	69.046272
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/uautomizer-mix027_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	3.012758	17.88723439200004	68.677632
+pthread-wmm/mix027_tso.yml/uautomizer-mix027_tso.yml	false(unreach-call)	3.137498	22.747038687999975	66.985984
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.461181	43.10587944800005	68.755456
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/uautomizer-mix028_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	3.062974	24.921274412999992	66.887680
+pthread-wmm/mix028_tso.yml/uautomizer-mix028_tso.yml	ERROR(ineffective witness)	3.262166	30.723832604999984	66.977792
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/uautomizer-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false(unreach-call)	3.17634	20.965226290000032	69.513216
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/uautomizer-mix029_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	3.231094	22.57351093799997	69.226496
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix030_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.199294	20.355301206999968	69.074944
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/uautomizer-mix030_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	3.062656	15.696917912999993	68.038656
+pthread-wmm/mix030_tso.yml/uautomizer-mix030_tso.yml	ERROR(ineffective witness)	3.180465	15.159211475999996	67.969024
+pthread-wmm/mix031.oepc.yml/uautomizer-mix031.oepc.yml	false(unreach-call)	2.904235	12.941507401000024	68.829184
+pthread-wmm/mix031.opt.yml/uautomizer-mix031.opt.yml	false(unreach-call)	2.996126	24.694672545999993	66.605056
+pthread-wmm/mix032.oepc.yml/uautomizer-mix032.oepc.yml	false(unreach-call)	3.016804	21.19551880199998	68.964352
+pthread-wmm/mix032.opt.yml/uautomizer-mix032.opt.yml	false(unreach-call)	2.990953	21.413286865999964	67.727360
+pthread-wmm/mix033.opt.yml/uautomizer-mix033.opt.yml	false(unreach-call)	3.203523	31.503415426000004	68.808704
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.113282	21.017875541000024	67.944448
+pthread-wmm/mix033_tso.oepc.yml/uautomizer-mix033_tso.oepc.yml	TIMEOUT	3.26339	46.058402801	66.695168
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/uautomizer-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false(unreach-call)	2.988086	21.08705334199999	66.715648
+pthread-wmm/mix034_pso.opt_tso.opt.yml/uautomizer-mix034_pso.opt_tso.opt.yml	TIMEOUT	2.959317	46.077900279000005	68.886528
+pthread-wmm/mix035.oepc.yml/uautomizer-mix035.oepc.yml	false(unreach-call)	3.068157	18.50758706900001	66.772992
+pthread-wmm/mix035_power.opt_rmo.opt.yml/uautomizer-mix035_power.opt_rmo.opt.yml	false(unreach-call)	3.107533	38.199814550999974	69.570560
+pthread-wmm/mix035_pso.opt_tso.opt.yml/uautomizer-mix035_pso.opt_tso.opt.yml	TIMEOUT	2.898288	46.117629077000004	67.612672
+pthread-wmm/mix036.oepc.yml/uautomizer-mix036.oepc.yml	false(unreach-call)	3.204453	20.572695595000027	68.747264
+pthread-wmm/mix036_power.opt_rmo.opt.yml/uautomizer-mix036_power.opt_rmo.opt.yml	false(unreach-call)	3.101393	16.48222415600003	68.931584
+pthread-wmm/mix036_pso.opt_tso.opt.yml/uautomizer-mix036_pso.opt_tso.opt.yml	false(unreach-call)	3.061433	16.072672094999973	66.789376
+pthread-wmm/mix037.opt.yml/uautomizer-mix037.opt.yml	false(unreach-call)	3.27927	29.80712403000001	67.858432
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix037_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.30775	40.14189647699999	67.780608
+pthread-wmm/mix037_tso.oepc.yml/uautomizer-mix037_tso.oepc.yml	false(unreach-call)	3.08862	9.775669030000017	67.948544
+pthread-wmm/mix038.opt.yml/uautomizer-mix038.opt.yml	false(unreach-call)	2.87806	6.840609755000003	68.661248
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.891651	7.921883972999979	69.058560
+pthread-wmm/mix038_tso.oepc.yml/uautomizer-mix038_tso.oepc.yml	TIMEOUT	3.155337	46.02276731500001	68.878336
+pthread-wmm/mix039.oepc.yml/uautomizer-mix039.oepc.yml	false(unreach-call)	2.998655	7.633849396000016	66.752512
+pthread-wmm/mix039.opt.yml/uautomizer-mix039.opt.yml	false(unreach-call)	2.888765	8.119824400000027	68.603904
+pthread-wmm/mix040.opt.yml/uautomizer-mix040.opt.yml	false(unreach-call)	2.863696	12.231740884000033	68.763648
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix040_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.280282	29.593876573999978	67.870720
+pthread-wmm/mix040_tso.oepc.yml/uautomizer-mix040_tso.oepc.yml	false(unreach-call)	3.078113	20.327044485999977	66.715648
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.914032	18.15366031000002	67.608576
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	3.032983	46.03584548200001	68.706304
+pthread-wmm/mix042.oepc.yml/uautomizer-mix042.oepc.yml	false(unreach-call)	3.117439	30.849020127000017	67.813376
+pthread-wmm/mix042.opt.yml/uautomizer-mix042.opt.yml	false(unreach-call)	3.027795	22.167834209999967	66.879488
+pthread-wmm/mix043.oepc.yml/uautomizer-mix043.oepc.yml	false(unreach-call)	3.107125	16.418778589999988	67.895296
+pthread-wmm/mix043.opt.yml/uautomizer-mix043.opt.yml	false(unreach-call)	3.002933	12.972458413000027	67.809280
+pthread-wmm/mix044.opt.yml/uautomizer-mix044.opt.yml	false(unreach-call)	3.025853	11.698264213999948	68.820992
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix044_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.171953	23.568734463	69.115904
+pthread-wmm/mix044_tso.oepc.yml/uautomizer-mix044_tso.oepc.yml	false(unreach-call)	3.08704	14.206375297000022	68.935680
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.218138	27.882364526999993	67.833856
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	2.996918	21.590775551000036	67.899392
+pthread-wmm/mix046.oepc.yml/uautomizer-mix046.oepc.yml	false(unreach-call)	3.201319	18.314075860999992	67.919872
+pthread-wmm/mix046.opt.yml/uautomizer-mix046.opt.yml	false(unreach-call)	3.125121	16.642938625	67.743744
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix047_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.199956	18.341113612000015	68.812800
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	3.140311	23.25978089099999	67.858432
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	3.235236	37.524476830000026	66.699264
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	3.014873	21.051343786000018	67.649536
+pthread-wmm/mix050.yml/uautomizer-mix050.yml	false(unreach-call)	3.082582	19.288717475	68.919296
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/uautomizer-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.135156	20.375856835000036	68.841472
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/uautomizer-mix051_pso.opt_rmo.opt_tso.opt.yml	false(unreach-call)	3.083578	20.10497112799999	67.739648
+pthread-wmm/mix051_tso.oepc.yml/uautomizer-mix051_tso.oepc.yml	false(unreach-call)	3.138476	20.16887768800001	66.699264
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/uautomizer-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.050105	21.546261754	67.776512
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/uautomizer-mix052_pso.opt_rmo.opt_tso.opt.yml	false(unreach-call)	2.931083	18.12697060299996	66.506752
+pthread-wmm/mix052_tso.oepc.yml/uautomizer-mix052_tso.oepc.yml	false(unreach-call)	3.01028	20.146310713000048	69.087232
+pthread-wmm/mix053.opt.yml/uautomizer-mix053.opt.yml	false(unreach-call)	3.032389	23.80825606899998	66.752512
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix053_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.090038	21.826777133999997	66.854912
+pthread-wmm/mix053_tso.oepc.yml/uautomizer-mix053_tso.oepc.yml	false(unreach-call)	3.034412	24.347202768000045	68.853760
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/uautomizer-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.907675	24.679306127000018	68.714496
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.934136	46.15594774800002	69.808128
+pthread-wmm/mix055.opt.yml/uautomizer-mix055.opt.yml	false(unreach-call)	3.210922	34.810340861999975	68.722688
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix055_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	3.30137	46.60901457700004	67.936256
+pthread-wmm/mix055_tso.oepc.yml/uautomizer-mix055_tso.oepc.yml	false(unreach-call)	3.183903	21.402210145000026	67.727360
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.166684	40.478279262	68.378624
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	2.973689	17.065656874000013	68.681728
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-mix057_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.079476	19.867925695999986	67.854336
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	3.075344	19.128491424999993	66.867200
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.987677	46.036808552000025	69.214208
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/uautomizer-rfi000_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.838639	46.03448466000003	67.837952
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.988324	40.99582267599999	67.837952
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.733583	46.257373164	68.694016
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.843625	22.919179815999996	68.714496
+pthread-wmm/rfi004.yml/uautomizer-rfi004.yml	false(unreach-call)	2.751586	18.57687400200001	69.828608
+pthread-wmm/rfi005.yml/uautomizer-rfi005.yml	TIMEOUT	2.332384	46.01785328599999	68.845568
+pthread-wmm/rfi006_power.oepc.yml/uautomizer-rfi006_power.oepc.yml	ERROR(ineffective witness)	2.722397	3.965577255000028	66.789376
+pthread-wmm/rfi006_power.opt.yml/uautomizer-rfi006_power.opt.yml	TIMEOUT	2.769727	46.03099992600005	68.734976
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/uautomizer-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	2.930802	6.7736263610000265	67.911680
+pthread-wmm/rfi006_rmo.yml/uautomizer-rfi006_rmo.yml	ERROR(ineffective witness)	2.847093	6.517880679000029	67.657728
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.654191	6.601326352000001	67.768320
+pthread-wmm/rfi007_tso.yml/uautomizer-rfi007_tso.yml	ERROR(ineffective witness)	2.955801	23.647364110000012	67.915776
+pthread-wmm/rfi008.oepc.yml/uautomizer-rfi008.oepc.yml	ERROR(ineffective witness)	2.964153	9.019595400999947	68.804608
+pthread-wmm/rfi008.opt.yml/uautomizer-rfi008.opt.yml	TIMEOUT (ERROR(ineffective witness))	2.852243	45.704298175000076	68.939776
+pthread-wmm/rfi009_power.oepc.yml/uautomizer-rfi009_power.oepc.yml	TIMEOUT	2.967084	46.10047496699997	67.878912
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/uautomizer-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	2.879687	20.50551686600005	67.883008
+pthread-wmm/rfi009_rmo.oepc.yml/uautomizer-rfi009_rmo.oepc.yml	TIMEOUT	2.885408	46.02320472800005	68.677632
+pthread-wmm/rfi010.yml/uautomizer-rfi010.yml	TIMEOUT	2.665079	46.133634469000015	69.021696
+pthread-wmm/safe000_power.oepc.yml/uautomizer-safe000_power.oepc.yml	ERROR(ineffective witness)	2.871912	5.676622590000022	67.923968
+pthread-wmm/safe000_power.opt.yml/uautomizer-safe000_power.opt.yml	ERROR(ineffective witness)	2.791943	4.2361008440000205	68.829184
+pthread-wmm/safe000_rmo.yml/uautomizer-safe000_rmo.yml	ERROR(ineffective witness)	2.923771	28.27731162500004	67.948544
+pthread-wmm/safe001_power.oepc.yml/uautomizer-safe001_power.oepc.yml	ERROR(ineffective witness)	2.819907	5.323444720999987	69.308416
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/uautomizer-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false(unreach-call)	2.727346	4.539549782999984	67.936256
+pthread-wmm/safe001_rmo.oepc.yml/uautomizer-safe001_rmo.oepc.yml	ERROR(ineffective witness)	2.923431	6.708914120999964	68.931584
+pthread-wmm/safe002_power.oepc.yml/uautomizer-safe002_power.oepc.yml	ERROR(ineffective witness)	2.959011	6.093330966000053	68.108288
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/uautomizer-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false(unreach-call)	2.825273	16.90188356899995	66.519040
+pthread-wmm/safe002_rmo.oepc.yml/uautomizer-safe002_rmo.oepc.yml	TIMEOUT	2.906083	46.42426010400004	66.932736
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.858819	5.2951708900000085	70.340608
+pthread-wmm/safe003_power.opt.yml/uautomizer-safe003_power.opt.yml	ERROR(ineffective witness)	2.955691	6.116849038000055	68.456448
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-safe004_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.982418	35.45854214499991	68.313088
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/uautomizer-safe004_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.793489	42.50497382200001	67.649536
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.710883	46.15218405799999	66.519040
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/uautomizer-safe006_power.oepc-thin000_power.oepc.yml	TIMEOUT	2.555944	46.06050626199999	67.641344
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/uautomizer-safe006_power.opt-thin000_power.opt.yml	ERROR(ineffective witness)	2.73425	4.9760423479999645	66.723840
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/uautomizer-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	2.691852	4.781276841000022	67.579904
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/uautomizer-safe007_power.oepc-thin001_power.oepc.yml	ERROR(ineffective witness)	2.689355	5.235695770999996	66.531328
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/uautomizer-safe007_power.opt-thin001_power.opt.yml	ERROR(ineffective witness)	2.771691	5.09278477700002	68.018176
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/uautomizer-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	2.785516	9.504808610000055	67.592192
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.745812	10.575437083999986	68.067328
+pthread-wmm/safe008_power.opt.yml/uautomizer-safe008_power.opt.yml	ERROR(ineffective witness)	3.073107	22.261257513999908	69.066752
+pthread-wmm/safe009_power.oepc.yml/uautomizer-safe009_power.oepc.yml	TIMEOUT	2.83532	46.169464018999975	67.780608
+pthread-wmm/safe009_power.opt.yml/uautomizer-safe009_power.opt.yml	ERROR(ineffective witness)	3.026339	10.494173508999893	70.361088
+pthread-wmm/safe009_rmo.oepc.yml/uautomizer-safe009_rmo.oepc.yml	ERROR(ineffective witness)	2.85935	9.382799922999993	68.755456
+pthread-wmm/safe009_rmo.opt.yml/uautomizer-safe009_rmo.opt.yml	ERROR(ineffective witness)	2.772657	5.044873959000029	66.723840
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.6734	46.205162080000036	69.005312
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/uautomizer-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.805699	7.896275763000062	68.837376
+pthread-wmm/safe011_power.opt_pso.opt.yml/uautomizer-safe011_power.opt_pso.opt.yml	false(unreach-call)	3.076239	34.07403470099996	68.145152
+pthread-wmm/safe012_power.oepc.yml/uautomizer-safe012_power.oepc.yml	ERROR(ineffective witness)	2.977081	8.518214797000041	67.776512
+pthread-wmm/safe012_power.opt.yml/uautomizer-safe012_power.opt.yml	ERROR(ineffective witness)	2.985028	29.407415517000004	69.308416
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/uautomizer-safe012_pso.oepc_pso.opt_rmo.opt.yml	false(unreach-call)	2.961291	19.692484377000028	68.784128
+pthread-wmm/safe012_rmo.oepc.yml/uautomizer-safe012_rmo.oepc.yml	ERROR(ineffective witness)	2.915786	10.977972695999938	66.719744
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.88349	10.40647849000004	67.678208
+pthread-wmm/safe014_power.oepc.yml/uautomizer-safe014_power.oepc.yml	ERROR(ineffective witness)	2.957597	13.01848923700004	68.706304
+pthread-wmm/safe014_power.opt.yml/uautomizer-safe014_power.opt.yml	ERROR(ineffective witness)	2.981526	27.802205828999945	67.649536
+pthread-wmm/safe014_rmo.oepc.yml/uautomizer-safe014_rmo.oepc.yml	ERROR(ineffective witness)	2.94535	9.089527727000018	67.502080
+pthread-wmm/safe014_rmo.opt.yml/uautomizer-safe014_rmo.opt.yml	ERROR(ineffective witness)	2.930951	11.042734726000049	69.148672
+pthread-wmm/safe015_power.oepc.yml/uautomizer-safe015_power.oepc.yml	TIMEOUT	2.99581	46.19277919700005	69.435392
+pthread-wmm/safe015_power.opt.yml/uautomizer-safe015_power.opt.yml	ERROR(ineffective witness)	3.167868	25.901117802000044	68.923392
+pthread-wmm/safe015_rmo.yml/uautomizer-safe015_rmo.yml	ERROR(ineffective witness)	3.060915	19.127558597000075	68.100096
+pthread-wmm/safe016_power.oepc.yml/uautomizer-safe016_power.oepc.yml	ERROR(ineffective witness)	2.990694	8.32299994799996	69.074944
+pthread-wmm/safe016_power.opt.yml/uautomizer-safe016_power.opt.yml	ERROR(ineffective witness)	3.040278	8.561462444999961	69.017600
+pthread-wmm/safe016_rmo.oepc.yml/uautomizer-safe016_rmo.oepc.yml	ERROR(ineffective witness)	3.008123	9.705452814000068	68.960256
+pthread-wmm/safe016_rmo.opt.yml/uautomizer-safe016_rmo.opt.yml	ERROR(ineffective witness)	3.185957	13.238005939000004	67.117056
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.978693	18.825318142000015	66.707456
+pthread-wmm/safe018_power.oepc.yml/uautomizer-safe018_power.oepc.yml	ERROR(ineffective witness)	2.92291	17.715108486999952	67.559424
+pthread-wmm/safe018_power.opt.yml/uautomizer-safe018_power.opt.yml	ERROR(ineffective witness)	3.254409	29.165823929	67.006464
+pthread-wmm/safe018_rmo.oepc.yml/uautomizer-safe018_rmo.oepc.yml	ERROR(ineffective witness)	2.987067	18.646625262000043	68.710400
+pthread-wmm/safe018_rmo.opt.yml/uautomizer-safe018_rmo.opt.yml	ERROR(ineffective witness)	3.151742	21.34396876900007	67.788800
+pthread-wmm/safe019_power.oepc.yml/uautomizer-safe019_power.oepc.yml	ERROR(ineffective witness)	3.258202	20.860573389000024	67.858432
+pthread-wmm/safe019_power.opt.yml/uautomizer-safe019_power.opt.yml	ERROR(ineffective witness)	3.376171	22.408278991999964	67.309568
+pthread-wmm/safe019_rmo.oepc.yml/uautomizer-safe019_rmo.oepc.yml	ERROR(ineffective witness)	3.151462	21.45536486499998	66.957312
+pthread-wmm/safe019_rmo.opt.yml/uautomizer-safe019_rmo.opt.yml	ERROR(ineffective witness)	3.326815	21.40570285700005	67.981312
+pthread-wmm/safe020_power.yml/uautomizer-safe020_power.yml	ERROR(ineffective witness)	3.169575	19.053583567999908	69.120000
+pthread-wmm/safe020_rmo.yml/uautomizer-safe020_rmo.yml	ERROR(ineffective witness)	3.153381	18.963824554999974	68.898816
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/uautomizer-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false(unreach-call)	3.066345	19.975977382999986	68.935680
+pthread-wmm/safe021_power.opt_pso.opt.yml/uautomizer-safe021_power.opt_pso.opt.yml	false(unreach-call)	3.309033	31.245475387000056	67.878912
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.905736	15.734866005000072	67.698688
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	3.20193	19.60468867999998	68.272128
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.986082	17.02803377200007	67.821568
+pthread-wmm/safe025_power.yml/uautomizer-safe025_power.yml	TIMEOUT	3.16485	46.03735816000005	68.210688
+pthread-wmm/safe025_rmo.yml/uautomizer-safe025_rmo.yml	ERROR(ineffective witness)	3.332912	26.655376348000004	68.120576
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	3.13249	23.43656696300002	67.895296
+pthread-wmm/safe027_power.oepc.yml/uautomizer-safe027_power.oepc.yml	ERROR(ineffective witness)	3.264538	21.926023069000053	67.911680
+pthread-wmm/safe027_power.opt.yml/uautomizer-safe027_power.opt.yml	ERROR(ineffective witness)	3.366916	20.514344299999948	69.304320
+pthread-wmm/safe027_rmo.yml/uautomizer-safe027_rmo.yml	ERROR(ineffective witness)	3.215094	21.023824542999932	67.760128
+pthread-wmm/safe028_power.yml/uautomizer-safe028_power.yml	ERROR(ineffective witness)	3.205872	20.42338997899992	66.871296
+pthread-wmm/safe028_rmo.yml/uautomizer-safe028_rmo.yml	ERROR(ineffective witness)	3.131188	16.198564454999996	66.850816
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-safe029_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.835265	46.03888631099994	67.764224
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/uautomizer-safe029_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.905954	26.137076323999963	67.756032
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.993492	16.438123210999947	67.866624
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/uautomizer-safe030_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.947756	15.973515055999997	69.144576
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/uautomizer-safe031_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT (false(unreach-call))	3.096516	46.05021683999996	67.719168
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/uautomizer-safe031_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	3.056841	27.89850274899993	68.857856
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	3.215685	33.427134927	68.030464
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.865104	37.08621367599994	67.649536
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/uautomizer-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	3.053969	41.347782548000055	66.490368
+pthread-wmm/thin002_power.oepc.yml/uautomizer-thin002_power.oepc.yml	ERROR(ineffective witness)	2.968103	7.184293394999941	68.816896
+pthread-wmm/thin002_power.opt.yml/uautomizer-thin002_power.opt.yml	ERROR(ineffective witness)	3.052807	7.066563202999987	69.009408
+pthread-wmm/thin002_rmo.yml/uautomizer-thin002_rmo.yml	ERROR(ineffective witness)	2.933329	6.718621882999969	66.527232
+pthread/lazy01.yml/uautomizer-lazy01.yml	TIMEOUT	2.154769	46.13835736600004	69.439488
+pthread/reorder_2.yml/uautomizer-reorder_2.yml	ERROR(ineffective witness)	2.619074	6.390838267000049	66.818048
+pthread/reorder_5.yml/uautomizer-reorder_5.yml	ERROR(ineffective witness)	2.644029	7.0222487510000065	66.547712
+pthread/singleton.yml/uautomizer-singleton.yml	TIMEOUT	2.423213	46.01831906999996	68.632576
+pthread/stack-2.yml/uautomizer-stack-2.yml	false(unreach-call)	2.770294	6.536394811999912	67.837952
+pthread/stack_longer-1.yml/uautomizer-stack_longer-1.yml	false(unreach-call)	2.688464	5.753276718000052	68.845568
+pthread/stack_longest-1.yml/uautomizer-stack_longest-1.yml	false(unreach-call)	2.691689	4.457373884000049	67.588096
+pthread/stateful01-1.yml/uautomizer-stateful01-1.yml	TIMEOUT	2.175058	46.022743626999954	68.419584
+pthread/triangular-2.yml/uautomizer-triangular-2.yml	TIMEOUT	2.322832	46.13078540799995	68.308992
+pthread/triangular-longer-2.yml/uautomizer-triangular-longer-2.yml	TIMEOUT	2.486789	46.02043958399997	68.452352
+pthread/triangular-longest-2.yml/uautomizer-triangular-longest-2.yml	TIMEOUT	2.920504	46.03102762200001	68.362240
+weaver/parallel-barrier-loop.wvr.yml/uautomizer-parallel-barrier-loop.wvr.yml	TIMEOUT	2.188518	46.11723099300002	68.448256
+weaver/popl20-bad-counter-queue.wvr.yml/uautomizer-popl20-bad-counter-queue.wvr.yml	TIMEOUT	2.010481	46.02945128900001	67.305472

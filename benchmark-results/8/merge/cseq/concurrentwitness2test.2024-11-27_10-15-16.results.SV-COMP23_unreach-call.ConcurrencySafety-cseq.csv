@@ -1,0 +1,659 @@
+tool		ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-cseq	SV-COMP23_unreach-call.ConcurrencySafety-cseq	SV-COMP23_unreach-call.ConcurrencySafety-cseq	SV-COMP23_unreach-call.ConcurrencySafety-cseq
+../svcomp23-witness-benchmarks/tools/cseq/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_01-priv_nr_true.yml/cseq-13-privatized_01-priv_nr_true.yml	true	ERROR(ineffective witness)	0.553934	1.4800409970000032	39.620608
+goblint-regression/13-privatized_04-priv_multi_true.yml/cseq-13-privatized_04-priv_multi_true.yml	true	TIMEOUT	0.528725	46.00600312799999	61.116416
+goblint-regression/13-privatized_18-first-reads_true.yml/cseq-13-privatized_18-first-reads_true.yml	true	ERROR(ineffective witness)	0.559579	1.4562676460000006	40.034304
+goblint-regression/13-privatized_19-publish-precision_true.yml/cseq-13-privatized_19-publish-precision_true.yml	true	ERROR(ineffective witness)	0.55227	1.4516925639999982	37.314560
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/cseq-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	0.581372	1.4178449919999991	38.113280
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/cseq-13-privatized_19-publish-precision_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.575993	1.4215637850000036	36.274176
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/cseq-13-privatized_19-publish-precision_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.552333	1.4148721500000079	35.164160
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/cseq-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	0.558302	1.3309277070000007	36.380672
+goblint-regression/13-privatized_20-publish-regression_true.yml/cseq-13-privatized_20-publish-regression_true.yml	true	ERROR(ineffective witness)	0.533522	1.369262328000005	35.643392
+goblint-regression/13-privatized_24-multiple-protecting_true.yml/cseq-13-privatized_24-multiple-protecting_true.yml	true	ERROR(ineffective witness)	0.546885	1.3675275160000098	38.764544
+goblint-regression/13-privatized_25-struct_nr_true.yml/cseq-13-privatized_25-struct_nr_true.yml	true	ERROR(ineffective witness)	0.534589	1.1655069490000045	34.643968
+goblint-regression/13-privatized_27-multiple-protecting2_true.yml/cseq-13-privatized_27-multiple-protecting2_true.yml	true	ERROR(ineffective witness)	0.559321	1.2091276969999996	34.680832
+goblint-regression/13-privatized_29-multiple-protecting2-vesal_true.yml/cseq-13-privatized_29-multiple-protecting2-vesal_true.yml	true	ERROR(ineffective witness)	0.550324	1.2645998619999972	34.598912
+goblint-regression/13-privatized_30-traces-oplus-vs-meet_true.yml/cseq-13-privatized_30-traces-oplus-vs-meet_true.yml	true	ERROR(ineffective witness)	0.545535	1.2593221949999958	34.656256
+goblint-regression/13-privatized_31-traces-mine-vs-mutex_true.yml/cseq-13-privatized_31-traces-mine-vs-mutex_true.yml	true	ERROR(ineffective witness)	0.541859	1.1729696040000022	34.623488
+goblint-regression/13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml/cseq-13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml	true	ERROR(ineffective witness)	0.540995	1.1947820920000112	34.639872
+goblint-regression/13-privatized_33-traces-v-matters_true.yml/cseq-13-privatized_33-traces-v-matters_true.yml	true	ERROR(ineffective witness)	0.535838	1.2233818600000035	34.590720
+goblint-regression/13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml/cseq-13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml	true	ERROR(ineffective witness)	0.547066	1.1723411760000033	34.594816
+goblint-regression/13-privatized_35-traces-ex-2_true.yml/cseq-13-privatized_35-traces-ex-2_true.yml	true	ERROR(ineffective witness)	0.538602	1.1457952709999972	34.635776
+goblint-regression/13-privatized_36-traces-ex-3_true.yml/cseq-13-privatized_36-traces-ex-3_true.yml	true	ERROR(ineffective witness)	0.516969	1.112589074000013	34.603008
+goblint-regression/13-privatized_37-traces-ex-4_true.yml/cseq-13-privatized_37-traces-ex-4_true.yml	true	ERROR(ineffective witness)	0.540538	1.1811346559999976	34.594816
+goblint-regression/13-privatized_38-traces-ex-4-switch_true.yml/cseq-13-privatized_38-traces-ex-4-switch_true.yml	true	ERROR(ineffective witness)	0.538639	1.143461208000005	34.631680
+goblint-regression/13-privatized_40-traces-ex-6_true.yml/cseq-13-privatized_40-traces-ex-6_true.yml	true	ERROR(ineffective witness)	0.548648	1.233561537	34.639872
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/cseq-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	false(unreach-call)	0.564271	1.197609999000008	34.631680
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/cseq-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.570995	1.203181236000006	34.635776
+goblint-regression/13-privatized_42-traces-ex-mini_true.yml/cseq-13-privatized_42-traces-ex-mini_true.yml	true	ERROR(ineffective witness)	0.54691	1.1639196720000058	34.623488
+goblint-regression/13-privatized_44-traces-mine2_true.yml/cseq-13-privatized_44-traces-mine2_true.yml	true	ERROR(ineffective witness)	0.538627	1.184223418000002	34.631680
+goblint-regression/13-privatized_45-traces-per-global-and-current-lock-mine-incomparable_true.yml/cseq-13-privatized_45-traces-per-global-and-current-lock-mine-incomparable_true.yml	true	ERROR(ineffective witness)	0.535795	1.0906362340000015	34.643968
+goblint-regression/13-privatized_46-refine-protected1_true.yml/cseq-13-privatized_46-refine-protected1_true.yml	true	ERROR(ineffective witness)	0.556582	1.2621972439999922	34.631680
+goblint-regression/13-privatized_47-refine-protected2_true.yml/cseq-13-privatized_47-refine-protected2_true.yml	true	ERROR(ineffective witness)	0.548946	1.2410467910000023	34.656256
+goblint-regression/13-privatized_52-refine-protected-loop2-small_true.yml/cseq-13-privatized_52-refine-protected-loop2-small_true.yml	true	ERROR(ineffective witness)	0.555137	1.1649337330000122	34.607104
+goblint-regression/13-privatized_57-singlethreaded-unlock_true.yml/cseq-13-privatized_57-singlethreaded-unlock_true.yml	true	ERROR(ineffective witness)	0.538567	1.2066194239999959	34.635776
+goblint-regression/13-privatized_58-singlethreaded-lock_true.yml/cseq-13-privatized_58-singlethreaded-lock_true.yml	true	ERROR(ineffective witness)	0.540528	1.1735959429999951	34.631680
+goblint-regression/13-privatized_66-mine-W-init_true.yml/cseq-13-privatized_66-mine-W-init_true.yml	true	ERROR(ineffective witness)	0.534936	1.146169687000011	34.598912
+goblint-regression/13-privatized_67-pthread_cond_wait_true.yml/cseq-13-privatized_67-pthread_cond_wait_true.yml	false	TIMEOUT	0.565345	46.03589768500001	35.573760
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_neg.yml/cseq-13-privatized_67-pthread_cond_wait_unknown_1_neg.yml	false	TIMEOUT	0.533539	46.02038787400001	35.569664
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_pos.yml/cseq-13-privatized_67-pthread_cond_wait_unknown_1_pos.yml	false	TIMEOUT	0.546194	46.040691114	35.606528
+goblint-regression/13-privatized_68-pfscan_protected_loop_minimal_interval_true.yml/cseq-13-privatized_68-pfscan_protected_loop_minimal_interval_true.yml	true	ERROR(ineffective witness)	0.516447	0.9164739219999944	34.660352
+goblint-regression/13-privatized_69-refine-protected-loop-interval_true.yml/cseq-13-privatized_69-refine-protected-loop-interval_true.yml	true	ERROR(ineffective witness)	0.529662	0.8587474089999887	34.476032
+goblint-regression/28-race_reach_01-simple_racing.yml/cseq-28-race_reach_01-simple_racing.yml	false	TIMEOUT	26.418235	45.78257327199999	203.337728
+goblint-regression/28-race_reach_02-simple_racefree.yml/cseq-28-race_reach_02-simple_racefree.yml	true	TIMEOUT	26.539489	45.721332449000016	203.317248
+goblint-regression/28-race_reach_03-munge_racing.yml/cseq-28-race_reach_03-munge_racing.yml	false	TIMEOUT	26.763229	45.58048537399999	377.901056
+goblint-regression/28-race_reach_04-munge_racefree.yml/cseq-28-race_reach_04-munge_racefree.yml	true	TIMEOUT	26.643915	45.735578688000004	377.741312
+goblint-regression/28-race_reach_05-lockfuns_racefree.yml/cseq-28-race_reach_05-lockfuns_racefree.yml	true	TIMEOUT	26.459892	45.72082678199999	202.833920
+goblint-regression/28-race_reach_06-cond_racing1.yml/cseq-28-race_reach_06-cond_racing1.yml	false	TIMEOUT	26.322881	45.760909432999995	203.755520
+goblint-regression/28-race_reach_07-cond_racing2.yml/cseq-28-race_reach_07-cond_racing2.yml	false	TIMEOUT	17.617328	46.02042264100001	203.415552
+goblint-regression/28-race_reach_08-cond_racefree.yml/cseq-28-race_reach_08-cond_racefree.yml	true	TIMEOUT	16.894126	46.03334035500001	203.341824
+goblint-regression/28-race_reach_09-ptrmunge_racing.yml/cseq-28-race_reach_09-ptrmunge_racing.yml	false	TIMEOUT	16.961857	46.02829151399999	377.044992
+goblint-regression/28-race_reach_10-ptrmunge_racefree.yml/cseq-28-race_reach_10-ptrmunge_racefree.yml	true	TIMEOUT	17.150892	46.033075279	377.352192
+goblint-regression/28-race_reach_11-ptr_racing.yml/cseq-28-race_reach_11-ptr_racing.yml	false	TIMEOUT	17.011282	46.029157501999975	202.678272
+goblint-regression/28-race_reach_12-ptr_racefree.yml/cseq-28-race_reach_12-ptr_racefree.yml	true	TIMEOUT	16.9133	46.025948191	203.005952
+goblint-regression/28-race_reach_19-callback_racing.yml/cseq-28-race_reach_19-callback_racing.yml	false	TIMEOUT	17.007753	46.019624069	202.575872
+goblint-regression/28-race_reach_20-callback_racefree.yml/cseq-28-race_reach_20-callback_racefree.yml	true	TIMEOUT	16.958035	46.02393310300002	202.665984
+goblint-regression/28-race_reach_21-deref_read_racing.yml/cseq-28-race_reach_21-deref_read_racing.yml	false	TIMEOUT	16.497293	46.02028220300002	203.182080
+goblint-regression/28-race_reach_22-deref_read_racefree.yml/cseq-28-race_reach_22-deref_read_racefree.yml	true	TIMEOUT	16.609218	46.03282047800002	202.964992
+goblint-regression/28-race_reach_23-sound_unlock_racing.yml/cseq-28-race_reach_23-sound_unlock_racing.yml	false	TIMEOUT	16.753224	46.025580753000014	203.091968
+goblint-regression/28-race_reach_24-sound_lock_racing.yml/cseq-28-race_reach_24-sound_lock_racing.yml	false	TIMEOUT	16.882015	46.01912654200001	203.669504
+goblint-regression/28-race_reach_27-funptr_racing.yml/cseq-28-race_reach_27-funptr_racing.yml	false	TIMEOUT	16.872814	46.021257163	203.857920
+goblint-regression/28-race_reach_28-funptr_racefree.yml/cseq-28-race_reach_28-funptr_racefree.yml	true	TIMEOUT	16.715116	46.04636502299999	203.345920
+goblint-regression/28-race_reach_36-indirect_racefree.yml/cseq-28-race_reach_36-indirect_racefree.yml	true	TIMEOUT	16.84235	46.019497556000005	202.768384
+goblint-regression/28-race_reach_37-indirect_racing.yml/cseq-28-race_reach_37-indirect_racing.yml	false	TIMEOUT	16.705046	46.022075763000004	203.059200
+goblint-regression/28-race_reach_46-escape_racefree.yml/cseq-28-race_reach_46-escape_racefree.yml	true	ERROR(ineffective witness)	0.560516	1.1307169099999896	34.639872
+goblint-regression/28-race_reach_51-mutexptr_racefree.yml/cseq-28-race_reach_51-mutexptr_racefree.yml	true	TIMEOUT	16.775933	46.03029465399999	202.911744
+goblint-regression/28-race_reach_60-invariant_racefree.yml/cseq-28-race_reach_60-invariant_racefree.yml	true	TIMEOUT	17.064525	46.01613599500001	202.838016
+goblint-regression/28-race_reach_61-invariant_racing.yml/cseq-28-race_reach_61-invariant_racing.yml	false	TIMEOUT	16.948473	46.02222095799999	203.038720
+goblint-regression/28-race_reach_70-funloop_racefree.yml/cseq-28-race_reach_70-funloop_racefree.yml	true	TIMEOUT	16.817895	46.022603433	203.407360
+goblint-regression/28-race_reach_71-funloop_racing.yml/cseq-28-race_reach_71-funloop_racing.yml	false	TIMEOUT	16.943876	46.02751417499999	203.378688
+goblint-regression/28-race_reach_72-funloop_hard_racing.yml/cseq-28-race_reach_72-funloop_hard_racing.yml	false	TIMEOUT	16.858044	46.01791724199998	204.185600
+goblint-regression/28-race_reach_73-funloop_hard_racefree.yml/cseq-28-race_reach_73-funloop_hard_racefree.yml	true	TIMEOUT	16.797191	46.02813136500001	203.612160
+goblint-regression/28-race_reach_74-tricky_address1_racefree.yml/cseq-28-race_reach_74-tricky_address1_racefree.yml	true	TIMEOUT	16.691695	46.022648172000004	203.460608
+goblint-regression/28-race_reach_75-tricky_address2_racefree.yml/cseq-28-race_reach_75-tricky_address2_racefree.yml	true	TIMEOUT	16.913003	46.02869481900001	203.440128
+goblint-regression/28-race_reach_76-tricky_address3_racefree.yml/cseq-28-race_reach_76-tricky_address3_racefree.yml	true	TIMEOUT	16.81264	46.025932917000006	203.419648
+goblint-regression/28-race_reach_77-tricky_address4_racing.yml/cseq-28-race_reach_77-tricky_address4_racing.yml	false	TIMEOUT	16.929835	46.03568262700003	203.104256
+goblint-regression/28-race_reach_78-equ_racing.yml/cseq-28-race_reach_78-equ_racing.yml	false	TIMEOUT	16.876578	46.01612151399999	203.259904
+goblint-regression/28-race_reach_79-equ_racefree.yml/cseq-28-race_reach_79-equ_racefree.yml	true	TIMEOUT	16.75723	46.027070401	203.427840
+goblint-regression/28-race_reach_81-list_racing.yml/cseq-28-race_reach_81-list_racing.yml	false	TIMEOUT	16.778612	46.02588935899999	378.347520
+goblint-regression/28-race_reach_82-list_racefree.yml/cseq-28-race_reach_82-list_racefree.yml	false	TIMEOUT	24.086778	46.017360596	382.222336
+goblint-regression/28-race_reach_83-list2_racing1.yml/cseq-28-race_reach_83-list2_racing1.yml	false	ERROR(Compilation error)	0.472191	0.7903225379999981	35.192832
+goblint-regression/28-race_reach_84-list2_racing2.yml/cseq-28-race_reach_84-list2_racing2.yml	false	ERROR(Compilation error)	0.46293	0.7280028580000248	35.254272
+goblint-regression/28-race_reach_85-list2_racefree.yml/cseq-28-race_reach_85-list2_racefree.yml	true	ERROR(Compilation error)	0.46695	0.7930003170000077	35.233792
+goblint-regression/28-race_reach_86-lists_racing.yml/cseq-28-race_reach_86-lists_racing.yml	false	TIMEOUT	25.503935	46.01992276699997	384.139264
+goblint-regression/28-race_reach_87-lists_racefree.yml/cseq-28-race_reach_87-lists_racefree.yml	true	TIMEOUT	26.284347	46.02239528900003	391.839744
+goblint-regression/28-race_reach_90-arrayloop2_racing.yml/cseq-28-race_reach_90-arrayloop2_racing.yml	false	false(unreach-call)	0.717903	1.7838205799999969	35.274752
+goblint-regression/28-race_reach_91-arrayloop2_racefree.yml/cseq-28-race_reach_91-arrayloop2_racefree.yml	true	false(unreach-call)	0.698512	1.7115717699999777	35.188736
+goblint-regression/28-race_reach_92-evilcollapse_racing.yml/cseq-28-race_reach_92-evilcollapse_racing.yml	false	false(unreach-call)	0.719007	1.6726105870000083	35.221504
+goblint-regression/28-race_reach_93-evilcollapse_racefree.yml/cseq-28-race_reach_93-evilcollapse_racefree.yml	true	false(unreach-call)	0.734134	1.8300928939999608	35.254272
+goblint-regression/28-race_reach_94-alloc_region_racing.yml/cseq-28-race_reach_94-alloc_region_racing.yml	false	TIMEOUT	0.564319	46.022665113000016	35.659776
+goblint-regression/36-apron_11-traces-max-simple_true.yml/cseq-36-apron_11-traces-max-simple_true.yml	true	ERROR(ineffective witness)	0.546499	1.0489635590000148	34.594816
+goblint-regression/36-apron_16-traces-unprot2_true.yml/cseq-36-apron_16-traces-unprot2_true.yml	true	ERROR(ineffective witness)	0.545418	1.2024412270000084	34.643968
+goblint-regression/36-apron_21-traces-cluster-based_true.yml/cseq-36-apron_21-traces-cluster-based_true.yml	true	ERROR(ineffective witness)	0.575938	1.234649117999993	34.689024
+goblint-regression/36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml/cseq-36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml	true	ERROR(ineffective witness)	0.551476	1.1488192389999767	34.758656
+ldv-races/race-1_1-join.yml/cseq-race-1_1-join.yml	true	ERROR(ineffective witness)	0.669101	1.4741379749999624	36.012032
+ldv-races/race-1_2-join.yml/cseq-race-1_2-join.yml	false	TIMEOUT	0.680186	46.027350658000046	36.134912
+ldv-races/race-1_3-join.yml/cseq-race-1_3-join.yml	false	TIMEOUT	0.705582	46.026609354000016	36.167680
+ldv-races/race-2_1-container_of.yml/cseq-race-2_1-container_of.yml	true	ERROR(ineffective witness)	0.854773	20.512676632000023	36.057088
+ldv-races/race-3_1-container_of-global.yml/cseq-race-3_1-container_of-global.yml	true	ERROR(ineffective witness)	0.851111	20.82766114399999	36.098048
+ldv-races/race-4_1-thread_local_vars.yml/cseq-race-4_1-thread_local_vars.yml	true	ERROR(ineffective witness)	0.690465	1.379672525999979	36.102144
+pthread-C-DAC/pthread-demo-datarace-1.yml/cseq-pthread-demo-datarace-1.yml	true	ERROR(ineffective witness)	0.653687	1.547603573999993	35.614720
+pthread-C-DAC/pthread-demo-datarace-3.yml/cseq-pthread-demo-datarace-3.yml	false	TIMEOUT	0.560249	46.03424112600004	35.676160
+pthread-C-DAC/pthread-finding-k-matches.yml/cseq-pthread-finding-k-matches.yml	true	ERROR(ineffective witness)	0.818273	20.089666161000025	36.016128
+pthread-C-DAC/pthread-numerical-integration.yml/cseq-pthread-numerical-integration.yml	true	ERROR(Parsing failed)	0.420342	0.5655037639999705	28.434432
+pthread-atomic/dekker.yml/cseq-dekker.yml	true	ERROR(ineffective witness)	0.576498	0.9701236849999759	34.709504
+pthread-atomic/lamport.yml/cseq-lamport.yml	true	ERROR(ineffective witness)	0.578858	0.8939103219999538	34.713600
+pthread-atomic/peterson.yml/cseq-peterson.yml	true	ERROR(ineffective witness)	0.574981	0.9091293500000006	34.648064
+pthread-atomic/read_write_lock-1.yml/cseq-read_write_lock-1.yml	true	ERROR(ineffective witness)	0.58417	0.9257115869999666	34.660352
+pthread-atomic/szymanski.yml/cseq-szymanski.yml	true	TIMEOUT	45.027635	34.689059436000036	34.713600
+pthread-atomic/time_var_mutex.yml/cseq-time_var_mutex.yml	true	ERROR(ineffective witness)	0.563533	1.0929240840000034	34.684928
+pthread-complex/bounded_buffer.yml/cseq-bounded_buffer.yml	false	TIMEOUT	1.208095	46.01837457900001	36.618240
+pthread-complex/safestack_relacy.yml/cseq-safestack_relacy.yml	false	ERROR(ineffective witness)	0.676534	1.0816188520000196	36.171776
+pthread-complex/workstealqueue_mutex-2.yml/cseq-workstealqueue_mutex-2.yml	true	false(unreach-call)	0.65785	0.9737881450000145	36.306944
+pthread-deagle/arithmetic_prog_bad.yml/cseq-arithmetic_prog_bad.yml	false	TIMEOUT	0.464075	46.020475756999986	35.065856
+pthread-deagle/arithmetic_prog_ok.yml/cseq-arithmetic_prog_ok.yml	true	ERROR(ineffective witness)	0.544593	0.8071122450000416	34.906112
+pthread-deagle/circular_buffer_bad.yml/cseq-circular_buffer_bad.yml	false	TIMEOUT	0.426538	46.01452261700001	34.754560
+pthread-deagle/circular_buffer_ok.yml/cseq-circular_buffer_ok.yml	true	ERROR(ineffective witness)	0.480037	0.49177159300000994	34.775040
+pthread-divine/tls_basic.yml/cseq-tls_basic.yml	true	ERROR(ineffective witness)	0.462761	0.4738738709999666	34.684928
+pthread-driver-races/char_generic_nvram_nvram_unlocked_ioctl_write_nvram.yml/cseq-char_generic_nvram_nvram_unlocked_ioctl_write_nvram.yml	true	ERROR(Compilation error)	1.455799	1.7910242080000103	55.267328
+pthread-driver-races/char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml/cseq-char_generic_nvram_read_nvram_nvram_unlocked_ioctl.yml	true	ERROR(Compilation error)	1.340889	1.541888383000014	55.484416
+pthread-driver-races/char_generic_nvram_read_nvram_write_nvram.yml/cseq-char_generic_nvram_read_nvram_write_nvram.yml	false	ERROR(Compilation error)	2.220168	2.928943595000021	55.250944
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_configure.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_configure.yml	true	ERROR(Compilation error)	1.550157	2.1147781729999906	57.663488
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml	false	ERROR(Compilation error)	2.368331	4.1264022499999555	57.696256
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_get.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	1.675938	2.773205104999988	57.966592
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml	false	ERROR(Compilation error)	2.332869	4.181160925999961	57.913344
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_current.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_current.yml	true	ERROR(Compilation error)	1.612555	3.0044453459999545	57.790464
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_get.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	1.622967	2.769566539999971	57.790464
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_set.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_configure_pc8736x_gpio_set.yml	true	ERROR(Compilation error)	1.631811	2.4700302360000137	57.819136
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_get.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	1.534192	2.812286694000022	57.765888
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml	false	ERROR(Compilation error)	2.269511	3.8079621310000107	57.946112
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_get_pc8736x_gpio_set.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_get_pc8736x_gpio_set.yml	true	ERROR(Compilation error)	1.658244	2.5955676919999746	57.712640
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_change.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_change.yml	true	ERROR(Compilation error)	1.669948	3.084202595000022	57.827328
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_configure.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_configure.yml	true	ERROR(Compilation error)	1.598775	2.9274526170000286	57.724928
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_current.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_current.yml	true	ERROR(Compilation error)	1.636924	2.845812539999997	57.753600
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_get.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_get.yml	true	ERROR(Compilation error)	1.584619	2.942920028000003	57.749504
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.yml/cseq-char_pc8736x_gpio_pc8736x_gpio_open_pc8736x_gpio_set.yml	true	ERROR(Compilation error)	1.598184	2.6925330169999597	57.737216
+pthread-ext/01b_inc.yml/cseq-01b_inc.yml	true	TIMEOUT	12.679012	46.01432443800002	420.782080
+pthread-ext/02_inc_cas.yml/cseq-02_inc_cas.yml	true	TIMEOUT	16.401054	46.035110025999984	2312.445952
+pthread-ext/03_incdec.yml/cseq-03_incdec.yml	true	TIMEOUT	12.932623	46.039055107000024	931.364864
+pthread-ext/04_incdec_cas.yml/cseq-04_incdec_cas.yml	true	TIMEOUT	15.032542	46.170060129000035	2312.126464
+pthread-ext/08_rand_cas.yml/cseq-08_rand_cas.yml	true	TIMEOUT	46.094418	47.66929048399999	93.782016
+pthread-ext/09_fmaxsym.yml/cseq-09_fmaxsym.yml	true	TIMEOUT	12.449901	46.022783387000004	632.852480
+pthread-ext/11_fmaxsymopt.yml/cseq-11_fmaxsymopt.yml	true	TIMEOUT	12.450657	46.02724970899999	511.426560
+pthread-ext/14_spin2003.yml/cseq-14_spin2003.yml	true	TIMEOUT	13.318504	46.08144099499998	697.405440
+pthread-ext/18_read_write_lock.yml/cseq-18_read_write_lock.yml	true	ERROR(ineffective witness)	0.568196	1.6373137900000074	34.652160
+pthread-ext/25_stack.yml/cseq-25_stack.yml	true	ERROR(ineffective witness)	1.023343	22.624532824000028	34.684928
+pthread-ext/25_stack_longer-1.yml/cseq-25_stack_longer-1.yml	false	false(unreach-call)	0.682289	2.252262255000005	34.738176
+pthread-ext/25_stack_longer-2.yml/cseq-25_stack_longer-2.yml	true	ERROR(ineffective witness)	1.159346	25.42682297800002	35.778560
+pthread-ext/25_stack_longest-1.yml/cseq-25_stack_longest-1.yml	true	ERROR(ineffective witness)	1.1434	26.373778243999993	34.697216
+pthread-ext/25_stack_longest-2.yml/cseq-25_stack_longest-2.yml	false	TIMEOUT	0.471327	46.12694293100003	34.779136
+pthread-ext/26_stack_cas.yml/cseq-26_stack_cas.yml	true	ERROR(ineffective witness)	1.169376	26.804919895000012	34.660352
+pthread-ext/26_stack_cas_longer-1.yml/cseq-26_stack_cas_longer-1.yml	false	TIMEOUT	0.489463	46.07619379900001	34.762752
+pthread-ext/26_stack_cas_longer-2.yml/cseq-26_stack_cas_longer-2.yml	true	ERROR(ineffective witness)	1.274766	26.95323259099996	39.866368
+pthread-ext/26_stack_cas_longest-1.yml/cseq-26_stack_cas_longest-1.yml	false	TIMEOUT	0.47999	46.05124972099998	34.770944
+pthread-ext/26_stack_cas_longest-2.yml/cseq-26_stack_cas_longest-2.yml	true	ERROR(ineffective witness)	1.285853	26.573722728999996	34.676736
+pthread-ext/28_buggy_simple_loop1_vf.yml/cseq-28_buggy_simple_loop1_vf.yml	false	TIMEOUT	0.449571	46.02090493399999	34.648064
+pthread-ext/29_conditionals_vs.yml/cseq-29_conditionals_vs.yml	true	TIMEOUT	15.667664	46.01600674299999	1378.619392
+pthread-ext/31_simple_loop5_vs.yml/cseq-31_simple_loop5_vs.yml	true	false(unreach-call)	1.004987	25.157648530000017	34.529280
+pthread-ext/35_double_lock_p3_vs.yml/cseq-35_double_lock_p3_vs.yml	true	TIMEOUT	24.655656	46.04603836199999	2286.895104
+pthread-ext/36_stack_cas_p0_vs_concur.yml/cseq-36_stack_cas_p0_vs_concur.yml	true	ERROR(ineffective witness)	0.777725	24.30293489799999	34.590720
+pthread-ext/37_stack_lock_p0_vs_concur.yml/cseq-37_stack_lock_p0_vs_concur.yml	true	ERROR(ineffective witness)	0.768315	24.607010755000033	34.672640
+pthread-ext/39_rand_lock_p0_vs.yml/cseq-39_rand_lock_p0_vs.yml	true	ERROR(ineffective witness)	0.92861	25.06412805499997	34.648064
+pthread-ext/40_barrier_vf.yml/cseq-40_barrier_vf.yml	false	TIMEOUT	0.494746	46.02171213999998	34.713600
+pthread-ext/45_monabsex1_vs.yml/cseq-45_monabsex1_vs.yml	true	TIMEOUT	16.262205	46.025759214999994	2313.871360
+pthread-ext/46_monabsex2_vs.yml/cseq-46_monabsex2_vs.yml	true	TIMEOUT	15.420403	46.05382241000001	2311.958528
+pthread-ext/48_ticket_lock_low_contention_vs.yml/cseq-48_ticket_lock_low_contention_vs.yml	true	ERROR(ineffective witness)	0.56987	1.2770823930000006	34.639872
+pthread-lit/sssc12.yml/cseq-sssc12.yml	true	ERROR(Compilation error)	0.544785	1.4932327789999817	35.082240
+pthread-lit/sssc12_variant.yml/cseq-sssc12_variant.yml	true	ERROR(Compilation error)	0.524414	1.5932857200000399	35.147776
+pthread-wmm/mix000.oepc.yml/cseq-mix000.oepc.yml	false	ERROR(Compilation error)	0.977106	2.397566275000031	35.098624
+pthread-wmm/mix000.opt.yml/cseq-mix000.opt.yml	false	ERROR(Compilation error)	0.916493	1.8067945729999906	35.131392
+pthread-wmm/mix001.oepc.yml/cseq-mix001.oepc.yml	false	ERROR(Compilation error)	1.073991	2.763357551000013	35.237888
+pthread-wmm/mix001.opt.yml/cseq-mix001.opt.yml	false	ERROR(Compilation error)	1.003095	1.9468485859999873	35.147776
+pthread-wmm/mix002.oepc.yml/cseq-mix002.oepc.yml	false	ERROR(Compilation error)	0.942248	1.8648493300000268	35.123200
+pthread-wmm/mix002.opt.yml/cseq-mix002.opt.yml	false	ERROR(Compilation error)	0.983655	2.60789428999999	35.172352
+pthread-wmm/mix003.oepc.yml/cseq-mix003.oepc.yml	false	ERROR(Compilation error)	0.938895	2.0467229029999885	35.090432
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/cseq-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(Compilation error)	0.988174	1.8725168470000426	35.123200
+pthread-wmm/mix004.oepc.yml/cseq-mix004.oepc.yml	false	ERROR(Compilation error)	1.048074	2.143712454000024	35.217408
+pthread-wmm/mix004.opt.yml/cseq-mix004.opt.yml	false	ERROR(Compilation error)	1.011033	2.0704531500000485	35.237888
+pthread-wmm/mix005.opt.yml/cseq-mix005.opt.yml	false	ERROR(Compilation error)	1.031627	2.299723843000038	35.188736
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix005_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.036822	2.501106753999977	35.201024
+pthread-wmm/mix005_tso.oepc.yml/cseq-mix005_tso.oepc.yml	false	ERROR(Compilation error)	1.043744	2.1779395460000046	35.217408
+pthread-wmm/mix006.opt.yml/cseq-mix006.opt.yml	false	ERROR(Compilation error)	0.932275	1.9559065610000061	35.127296
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.9111	1.7314434489999826	35.094528
+pthread-wmm/mix006_tso.oepc.yml/cseq-mix006_tso.oepc.yml	false	ERROR(Compilation error)	1.433589	2.637798645000032	35.598336
+pthread-wmm/mix007.oepc.yml/cseq-mix007.oepc.yml	false	ERROR(Compilation error)	1.034089	2.2595163089999915	35.188736
+pthread-wmm/mix007.opt.yml/cseq-mix007.opt.yml	false	ERROR(Compilation error)	1.02669	2.621520516999965	35.217408
+pthread-wmm/mix008.opt.yml/cseq-mix008.opt.yml	false	ERROR(Compilation error)	1.040721	2.883771365999962	35.213312
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix008_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.008759	2.4973326200000088	35.209216
+pthread-wmm/mix008_tso.oepc.yml/cseq-mix008_tso.oepc.yml	false	ERROR(Compilation error)	1.521758	2.667719358999989	35.627008
+pthread-wmm/mix009.oepc.yml/cseq-mix009.oepc.yml	false	ERROR(Compilation error)	0.823944	1.8157577970000034	35.053568
+pthread-wmm/mix009.opt.yml/cseq-mix009.opt.yml	false	ERROR(Compilation error)	0.922613	2.1207486270000118	35.082240
+pthread-wmm/mix010.oepc.yml/cseq-mix010.oepc.yml	false	ERROR(Compilation error)	0.948152	2.3362761150000324	35.143680
+pthread-wmm/mix010.opt.yml/cseq-mix010.opt.yml	false	ERROR(Compilation error)	0.969158	2.2192272839999987	35.147776
+pthread-wmm/mix011.opt.yml/cseq-mix011.opt.yml	false	ERROR(Compilation error)	0.952301	1.8728808019999974	35.192832
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.936538	2.045110607999959	35.127296
+pthread-wmm/mix011_tso.oepc.yml/cseq-mix011_tso.oepc.yml	false	ERROR(Compilation error)	0.891267	2.0583833199999617	35.090432
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/cseq-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	ERROR(Compilation error)	0.804161	1.5695805810000252	35.012608
+pthread-wmm/mix012_pso.opt_tso.opt.yml/cseq-mix012_pso.opt_tso.opt.yml	false	ERROR(Compilation error)	0.875197	1.835265934000006	35.102720
+pthread-wmm/mix013.oepc.yml/cseq-mix013.oepc.yml	false	ERROR(Compilation error)	1.048561	2.838643769999976	35.201024
+pthread-wmm/mix013.opt.yml/cseq-mix013.opt.yml	false	ERROR(Compilation error)	1.022964	2.565562438000029	35.225600
+pthread-wmm/mix014.opt.yml/cseq-mix014.opt.yml	false	ERROR(Compilation error)	1.009787	2.116683892000026	35.217408
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix014_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.042096	2.418174872999998	35.205120
+pthread-wmm/mix014_tso.oepc.yml/cseq-mix014_tso.oepc.yml	false	ERROR(Compilation error)	1.447931	3.0506256149999444	35.598336
+pthread-wmm/mix015.oepc.yml/cseq-mix015.oepc.yml	false	ERROR(Compilation error)	0.950325	2.133652665999989	35.110912
+pthread-wmm/mix015.opt.yml/cseq-mix015.opt.yml	false	ERROR(Compilation error)	0.943733	1.9873452850000035	35.147776
+pthread-wmm/mix016.oepc.yml/cseq-mix016.oepc.yml	false	ERROR(Compilation error)	0.926695	2.2808183140000438	35.102720
+pthread-wmm/mix016_power.opt_rmo.opt.yml/cseq-mix016_power.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.879745	2.1021734699999683	35.102720
+pthread-wmm/mix016_pso.opt_tso.opt.yml/cseq-mix016_pso.opt_tso.opt.yml	false	ERROR(Compilation error)	0.963336	2.292271776000007	35.139584
+pthread-wmm/mix017.oepc.yml/cseq-mix017.oepc.yml	false	ERROR(Compilation error)	0.968429	1.9640895359999604	35.205120
+pthread-wmm/mix017_power.opt_rmo.opt.yml/cseq-mix017_power.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.973256	2.467293749000021	35.139584
+pthread-wmm/mix017_pso.opt_tso.opt.yml/cseq-mix017_pso.opt_tso.opt.yml	false	ERROR(Compilation error)	1.046674	2.496422763000055	35.225600
+pthread-wmm/mix018.opt.yml/cseq-mix018.opt.yml	false	ERROR(Compilation error)	1.030017	2.197607677999997	35.176448
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix018_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.02762	2.2476288510000018	35.172352
+pthread-wmm/mix018_tso.oepc.yml/cseq-mix018_tso.oepc.yml	false	ERROR(Compilation error)	1.035059	2.043592564999983	35.209216
+pthread-wmm/mix019.opt.yml/cseq-mix019.opt.yml	false	ERROR(Compilation error)	0.955266	1.9475064169999996	35.160064
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix019_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.928919	1.6081236039999567	35.090432
+pthread-wmm/mix019_tso.oepc.yml/cseq-mix019_tso.oepc.yml	false	ERROR(Compilation error)	0.928469	1.699778666000043	35.110912
+pthread-wmm/mix020.oepc.yml/cseq-mix020.oepc.yml	false	ERROR(Compilation error)	1.053965	2.2738805810000144	35.205120
+pthread-wmm/mix020.opt.yml/cseq-mix020.opt.yml	false	ERROR(Compilation error)	1.043217	2.3395049299999755	35.201024
+pthread-wmm/mix021.opt.yml/cseq-mix021.opt.yml	false	ERROR(Compilation error)	1.026231	1.999049497000044	35.213312
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix021_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.032707	2.0360163299999954	35.196928
+pthread-wmm/mix021_tso.oepc.yml/cseq-mix021_tso.oepc.yml	false	ERROR(Compilation error)	0.984366	2.130222833000005	35.168256
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.805626	1.8752077629999917	34.963456
+pthread-wmm/mix022_tso.yml/cseq-mix022_tso.yml	false	ERROR(Compilation error)	0.928522	1.633039473999986	35.143680
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix023_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.04864	2.048689852999985	35.192832
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/cseq-mix023_power.opt_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.975871	2.551673681000011	35.135488
+pthread-wmm/mix023_tso.yml/cseq-mix023_tso.yml	false	ERROR(Compilation error)	1.675974	3.4631751520000194	35.692544
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/cseq-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	0.956394	2.201090772999976	35.160064
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/cseq-mix024_power.opt_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.890943	1.3482399839999744	34.885632
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/cseq-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	0.909623	1.4771355839999956	35.106816
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/cseq-mix025_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.87868	2.23853839100002	35.098624
+pthread-wmm/mix026.oepc.yml/cseq-mix026.oepc.yml	false	ERROR(Compilation error)	1.038142	2.0769710220000093	35.176448
+pthread-wmm/mix026_power.opt_tso.opt.yml/cseq-mix026_power.opt_tso.opt.yml	false	ERROR(Compilation error)	1.010205	1.8446282179999685	35.180544
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/cseq-mix026_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.9551	1.6303328279999505	35.147776
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix027_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.044435	2.590233350999995	35.180544
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/cseq-mix027_power.opt_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.941692	2.016700369999967	35.106816
+pthread-wmm/mix027_tso.yml/cseq-mix027_tso.yml	false	ERROR(Compilation error)	1.045644	2.3940732100000446	35.213312
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.922869	1.623751258000027	35.119104
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/cseq-mix028_power.opt_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.911842	1.8974219080000125	35.098624
+pthread-wmm/mix028_tso.yml/cseq-mix028_tso.yml	false	ERROR(Compilation error)	0.988313	2.239510182999993	35.151872
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/cseq-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	1.035592	2.0715904869999804	35.184640
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/cseq-mix029_power.opt_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.987873	2.0771975920000045	35.033088
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix030_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.04637	2.4673497269999984	35.196928
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/cseq-mix030_power.opt_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.991509	2.2488108870000474	34.906112
+pthread-wmm/mix030_tso.yml/cseq-mix030_tso.yml	false	ERROR(Compilation error)	1.051194	2.3734824460000254	35.192832
+pthread-wmm/mix031.oepc.yml/cseq-mix031.oepc.yml	false	ERROR(Compilation error)	0.833368	1.896634898000002	34.852864
+pthread-wmm/mix031.opt.yml/cseq-mix031.opt.yml	false	ERROR(Compilation error)	0.79523	1.7786852320000435	35.028992
+pthread-wmm/mix032.oepc.yml/cseq-mix032.oepc.yml	false	ERROR(Compilation error)	0.937881	2.2738948960000016	35.115008
+pthread-wmm/mix032.opt.yml/cseq-mix032.opt.yml	false	ERROR(Compilation error)	0.850266	1.852086422999946	35.295232
+pthread-wmm/mix033.opt.yml/cseq-mix033.opt.yml	false	ERROR(Compilation error)	0.855447	2.033263254000019	35.053568
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.936843	2.095331007000027	35.102720
+pthread-wmm/mix033_tso.oepc.yml/cseq-mix033_tso.oepc.yml	false	ERROR(Compilation error)	0.931559	1.9336477800000011	35.139584
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/cseq-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	ERROR(Compilation error)	0.792676	1.3423538920000055	34.906112
+pthread-wmm/mix034_pso.opt_tso.opt.yml/cseq-mix034_pso.opt_tso.opt.yml	false	ERROR(Compilation error)	0.775537	1.8087781830000154	35.024896
+pthread-wmm/mix035.oepc.yml/cseq-mix035.oepc.yml	false	ERROR(Compilation error)	0.930864	2.378055899000003	35.098624
+pthread-wmm/mix035_power.opt_rmo.opt.yml/cseq-mix035_power.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.877112	2.326997451000011	34.889728
+pthread-wmm/mix035_pso.opt_tso.opt.yml/cseq-mix035_pso.opt_tso.opt.yml	false	ERROR(Compilation error)	0.834478	1.7059664380000186	35.041280
+pthread-wmm/mix036.oepc.yml/cseq-mix036.oepc.yml	false	ERROR(Compilation error)	1.025249	2.135074765000013	35.180544
+pthread-wmm/mix036_power.opt_rmo.opt.yml/cseq-mix036_power.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.953066	2.0634359679999648	35.172352
+pthread-wmm/mix036_pso.opt_tso.opt.yml/cseq-mix036_pso.opt_tso.opt.yml	false	ERROR(Compilation error)	0.89918	2.1380923480000433	34.934784
+pthread-wmm/mix037.opt.yml/cseq-mix037.opt.yml	false	ERROR(Compilation error)	0.890739	1.9815017050000279	35.078144
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix037_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.041452	2.595334140000034	35.192832
+pthread-wmm/mix037_tso.oepc.yml/cseq-mix037_tso.oepc.yml	false	ERROR(Compilation error)	1.028417	2.5243986599999744	35.221504
+pthread-wmm/mix038.opt.yml/cseq-mix038.opt.yml	false	ERROR(Compilation error)	0.828755	1.573414439999965	35.012608
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.922004	2.5434199499999863	35.065856
+pthread-wmm/mix038_tso.oepc.yml/cseq-mix038_tso.oepc.yml	false	ERROR(Compilation error)	0.944572	2.5228582889999984	35.106816
+pthread-wmm/mix039.oepc.yml/cseq-mix039.oepc.yml	false	ERROR(Compilation error)	1.035057	2.601807650000012	35.188736
+pthread-wmm/mix039.opt.yml/cseq-mix039.opt.yml	false	ERROR(Compilation error)	0.920527	2.4513543959999993	34.852864
+pthread-wmm/mix040.opt.yml/cseq-mix040.opt.yml	false	ERROR(Compilation error)	0.912733	2.004235574000006	34.865152
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix040_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.034475	2.3876932850000117	35.168256
+pthread-wmm/mix040_tso.oepc.yml/cseq-mix040_tso.oepc.yml	false	ERROR(Compilation error)	0.978495	2.3310062109999876	35.016704
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.804803	1.8475799839999922	34.996224
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cseq-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	0.82206	2.4813585569999645	35.033088
+pthread-wmm/mix042.oepc.yml/cseq-mix042.oepc.yml	false	ERROR(Compilation error)	0.933984	2.505150815000036	35.078144
+pthread-wmm/mix042.opt.yml/cseq-mix042.opt.yml	false	ERROR(Compilation error)	0.884544	2.452363214000002	35.098624
+pthread-wmm/mix043.oepc.yml/cseq-mix043.oepc.yml	false	ERROR(Compilation error)	1.02392	2.319614501999979	35.192832
+pthread-wmm/mix043.opt.yml/cseq-mix043.opt.yml	false	ERROR(Compilation error)	0.938497	2.355712251	35.151872
+pthread-wmm/mix044.opt.yml/cseq-mix044.opt.yml	false	ERROR(Compilation error)	0.967573	2.578776892999997	35.160064
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix044_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.037219	2.7755297630000086	35.155968
+pthread-wmm/mix044_tso.oepc.yml/cseq-mix044_tso.oepc.yml	false	ERROR(Compilation error)	1.042185	3.2359827890000474	35.143680
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.940432	2.617006027000002	35.135488
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cseq-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	0.892491	2.6117846330000134	35.119104
+pthread-wmm/mix046.oepc.yml/cseq-mix046.oepc.yml	false	ERROR(Compilation error)	0.967149	2.0282534280000277	35.049472
+pthread-wmm/mix046.opt.yml/cseq-mix046.opt.yml	false	ERROR(Compilation error)	0.93079	2.3745893939999974	35.155968
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix047_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.056394	2.470191096999997	35.188736
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cseq-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	0.95415	2.3617745920000175	35.131392
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/cseq-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	0.82298	2.1932703470000092	34.951168
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/cseq-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	0.900288	2.0914253589999703	35.037184
+pthread-wmm/mix050.yml/cseq-mix050.yml	false	ERROR(Compilation error)	0.996037	2.074731827999983	35.262464
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/cseq-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.034017	2.6929456969999706	35.192832
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/cseq-mix051_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(Compilation error)	0.91167	2.244814885999972	35.078144
+pthread-wmm/mix051_tso.oepc.yml/cseq-mix051_tso.oepc.yml	false	ERROR(Compilation error)	1.02414	2.3027043329999515	35.209216
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/cseq-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.873893	1.8816459559999998	35.078144
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/cseq-mix052_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(Compilation error)	0.826098	2.152605178999977	34.811904
+pthread-wmm/mix052_tso.oepc.yml/cseq-mix052_tso.oepc.yml	false	ERROR(Compilation error)	0.927928	2.1380975309999712	35.069952
+pthread-wmm/mix053.opt.yml/cseq-mix053.opt.yml	false	ERROR(Compilation error)	0.915778	1.797147902000006	35.078144
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix053_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.028578	2.441906104999987	35.196928
+pthread-wmm/mix053_tso.oepc.yml/cseq-mix053_tso.oepc.yml	false	ERROR(Compilation error)	0.984823	2.4564763349999907	34.996224
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/cseq-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.810016	2.1172894620000307	34.988032
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cseq-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	0.79576	2.008897195999964	34.955264
+pthread-wmm/mix055.opt.yml/cseq-mix055.opt.yml	false	ERROR(Compilation error)	0.939153	2.266929125000047	35.115008
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix055_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.019508	2.4977084369999716	35.192832
+pthread-wmm/mix055_tso.oepc.yml/cseq-mix055_tso.oepc.yml	false	ERROR(Compilation error)	1.03514	2.707972218000009	35.004416
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.913048	2.1661502589999486	35.106816
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cseq-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	0.853778	1.8969459460000166	35.074048
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/cseq-mix057_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.01316	2.306752494999955	35.160064
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cseq-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	0.927922	2.100691470000015	35.090432
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/cseq-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.04958	2.211132415999998	35.196928
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/cseq-rfi000_power.opt_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.809518	1.9173034209999855	34.983936
+pthread-wmm/rfi000_tso.yml/cseq-rfi000_tso.yml	true	ERROR(ineffective witness)	0.75792	28.20803123600001	35.667968
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/cseq-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.841147	2.3491212360000304	35.028992
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cseq-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	0.852823	3.3761109019999935	35.037184
+pthread-wmm/rfi002_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-rfi002_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	true	ERROR(ineffective witness)	0.763679	29.117067617999965	35.717120
+pthread-wmm/rfi002_tso.yml/cseq-rfi002_tso.yml	true	ERROR(ineffective witness)	0.790538	28.996317121999994	36.032512
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.812101	3.1916043629999535	34.779136
+pthread-wmm/rfi003_tso.yml/cseq-rfi003_tso.yml	true	ERROR(ineffective witness)	0.771606	28.638818272000037	35.745792
+pthread-wmm/rfi004.yml/cseq-rfi004.yml	false	ERROR(Compilation error)	0.845023	3.911739663999981	34.975744
+pthread-wmm/rfi005.yml/cseq-rfi005.yml	false	TIMEOUT	0.600172	46.04244055700002	35.459072
+pthread-wmm/rfi006_power.oepc.yml/cseq-rfi006_power.oepc.yml	false	ERROR(Compilation error)	0.984836	5.150369699999999	35.188736
+pthread-wmm/rfi006_power.opt.yml/cseq-rfi006_power.opt.yml	false	ERROR(Compilation error)	1.052424	4.521826718999989	35.180544
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	1.081763	5.326849471000003	35.049472
+pthread-wmm/rfi006_rmo.yml/cseq-rfi006_rmo.yml	false	ERROR(Compilation error)	0.968059	4.749377321999987	35.147776
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.848165	3.1654814820000183	35.074048
+pthread-wmm/rfi007_tso.yml/cseq-rfi007_tso.yml	false	ERROR(Compilation error)	0.963597	3.3511482690000207	35.135488
+pthread-wmm/rfi008.oepc.yml/cseq-rfi008.oepc.yml	false	ERROR(Compilation error)	0.960181	3.4358789529999854	35.299328
+pthread-wmm/rfi008.opt.yml/cseq-rfi008.opt.yml	false	ERROR(Compilation error)	0.956313	3.525679475000004	35.110912
+pthread-wmm/rfi009_power.oepc.yml/cseq-rfi009_power.oepc.yml	false	ERROR(Compilation error)	0.96359	3.9450225740000064	35.115008
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/cseq-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(Compilation error)	1.029563	4.428494913999998	35.184640
+pthread-wmm/rfi009_rmo.oepc.yml/cseq-rfi009_rmo.oepc.yml	false	ERROR(Compilation error)	0.967418	4.103826745000049	35.151872
+pthread-wmm/rfi010.yml/cseq-rfi010.yml	false	ERROR(Compilation error)	0.912738	3.063358730999994	35.090432
+pthread-wmm/safe000_power.oepc.yml/cseq-safe000_power.oepc.yml	false	ERROR(Compilation error)	1.135385	4.700602465999964	35.364864
+pthread-wmm/safe000_power.opt.yml/cseq-safe000_power.opt.yml	false	ERROR(Compilation error)	1.008136	4.035492962000035	35.188736
+pthread-wmm/safe000_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe000_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	ERROR(ineffective witness)	0.734142	36.05083349300003	34.693120
+pthread-wmm/safe000_rmo.yml/cseq-safe000_rmo.yml	false	ERROR(Compilation error)	1.102378	4.4804162010000255	35.303424
+pthread-wmm/safe001_power.oepc.yml/cseq-safe001_power.oepc.yml	false	ERROR(Compilation error)	1.13967	4.055360726999993	35.262464
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/cseq-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.96653	4.643375738000032	35.332096
+pthread-wmm/safe001_rmo.oepc.yml/cseq-safe001_rmo.oepc.yml	false	ERROR(Compilation error)	1.146979	4.960344823000014	35.323904
+pthread-wmm/safe001_tso.yml/cseq-safe001_tso.yml	true	ERROR(ineffective witness)	0.749375	37.07723864600001	34.934784
+pthread-wmm/safe002_power.oepc.yml/cseq-safe002_power.oepc.yml	false	ERROR(Compilation error)	1.146176	4.152326866999999	35.176448
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/cseq-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.902951	3.2567754489999743	35.078144
+pthread-wmm/safe002_rmo.oepc.yml/cseq-safe002_rmo.oepc.yml	false	ERROR(Compilation error)	1.124928	3.690399270000057	35.278848
+pthread-wmm/safe002_tso.yml/cseq-safe002_tso.yml	true	ERROR(ineffective witness)	0.73269	39.09446501599996	34.816000
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	1.190133	3.2342066919999297	35.336192
+pthread-wmm/safe003_power.opt.yml/cseq-safe003_power.opt.yml	false	ERROR(Compilation error)	1.002115	3.1057473310000887	35.180544
+pthread-wmm/safe003_tso.yml/cseq-safe003_tso.yml	true	ERROR(ineffective witness)	0.736915	39.26625145600008	34.664448
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/cseq-safe004_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	1.191088	4.749774269999989	35.196928
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/cseq-safe004_power.opt_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.978808	4.889635433999956	35.102720
+pthread-wmm/safe004_tso.yml/cseq-safe004_tso.yml	true	ERROR(ineffective witness)	0.747075	42.52661951999994	34.701312
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.928905	4.585634900999935	35.065856
+pthread-wmm/safe005_tso.yml/cseq-safe005_tso.yml	true	ERROR(ineffective witness)	0.756252	42.27871459300002	34.537472
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/cseq-safe006_power.oepc-thin000_power.oepc.yml	false	ERROR(Compilation error)	0.782731	2.7744987089999995	34.996224
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/cseq-safe006_power.opt-thin000_power.opt.yml	false	ERROR(Compilation error)	0.87575	2.813535055999978	35.213312
+pthread-wmm/safe006_pso.oepc_pso.opt_tso.oepc_tso.opt-thin000_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe006_pso.oepc_pso.opt_tso.oepc_tso.opt-thin000_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	ERROR(ineffective witness)	0.719436	43.88716660600005	34.709504
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/cseq-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.766335	1.5898095170000488	35.000320
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/cseq-safe007_power.oepc-thin001_power.oepc.yml	false	ERROR(Compilation error)	0.829885	2.0868397660000255	35.041280
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/cseq-safe007_power.opt-thin001_power.opt.yml	false	ERROR(Compilation error)	0.981849	2.5222948430000542	34.934784
+pthread-wmm/safe007_pso.oepc_pso.opt_tso.oepc_tso.opt-thin001_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe007_pso.oepc_pso.opt_tso.oepc_tso.opt-thin001_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	ERROR(ineffective witness)	0.745138	42.895651294000004	34.463744
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/cseq-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.815493	1.3878316980000136	35.049472
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.929872	1.6610525779999534	35.225600
+pthread-wmm/safe008_power.opt.yml/cseq-safe008_power.opt.yml	false	ERROR(Compilation error)	0.982997	1.7713600470000301	35.106816
+pthread-wmm/safe008_tso.yml/cseq-safe008_tso.yml	true	ERROR(ineffective witness)	0.722383	43.012157172	34.701312
+pthread-wmm/safe009_power.oepc.yml/cseq-safe009_power.oepc.yml	false	ERROR(Compilation error)	0.981513	2.039624210999932	35.209216
+pthread-wmm/safe009_power.opt.yml/cseq-safe009_power.opt.yml	false	ERROR(Compilation error)	0.977455	2.340294596000035	34.918400
+pthread-wmm/safe009_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe009_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	ERROR(ineffective witness)	0.73894	44.57369985399998	34.680832
+pthread-wmm/safe009_rmo.oepc.yml/cseq-safe009_rmo.oepc.yml	false	ERROR(Compilation error)	0.960018	1.7591415839999627	35.135488
+pthread-wmm/safe009_rmo.opt.yml/cseq-safe009_rmo.opt.yml	false	ERROR(Compilation error)	0.883305	1.5040450490000694	35.024896
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.816366	2.1404527020000614	34.963456
+pthread-wmm/safe010_tso.yml/cseq-safe010_tso.yml	true	ERROR(ineffective witness)	0.720837	44.504103902	34.586624
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/cseq-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.929908	1.6361151319999863	35.033088
+pthread-wmm/safe011_power.opt_pso.opt.yml/cseq-safe011_power.opt_pso.opt.yml	false	ERROR(Compilation error)	0.913468	1.6645384610000065	35.110912
+pthread-wmm/safe011_tso.yml/cseq-safe011_tso.yml	true	TIMEOUT (ERROR(ineffective witness))	0.7228	45.275721178000026	34.668544
+pthread-wmm/safe012_power.oepc.yml/cseq-safe012_power.oepc.yml	false	ERROR(Compilation error)	0.812585	1.3591078659999312	35.336192
+pthread-wmm/safe012_power.opt.yml/cseq-safe012_power.opt.yml	false	ERROR(Compilation error)	0.953741	1.540372269000045	35.131392
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/cseq-safe012_pso.oepc_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.883703	1.7045995839999932	35.332096
+pthread-wmm/safe012_rmo.oepc.yml/cseq-safe012_rmo.oepc.yml	false	ERROR(Compilation error)	0.817818	2.2493304360000366	35.057664
+pthread-wmm/safe012_tso.yml/cseq-safe012_tso.yml	true	TIMEOUT (ERROR(ineffective witness))	0.743818	45.44145582700003	34.684928
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.886837	1.6488843309999766	34.930688
+pthread-wmm/safe013_tso.yml/cseq-safe013_tso.yml	true	TIMEOUT (ERROR(ineffective witness))	0.747813	45.22170405299994	34.738176
+pthread-wmm/safe014_power.oepc.yml/cseq-safe014_power.oepc.yml	false	ERROR(Compilation error)	0.821501	2.108142595000004	35.115008
+pthread-wmm/safe014_power.opt.yml/cseq-safe014_power.opt.yml	false	ERROR(Compilation error)	0.921028	3.070761392999998	35.237888
+pthread-wmm/safe014_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe014_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT (ERROR(ineffective witness))	0.737751	45.69097294599999	34.504704
+pthread-wmm/safe014_rmo.oepc.yml/cseq-safe014_rmo.oepc.yml	false	ERROR(Compilation error)	0.817501	1.5198712280000564	34.922496
+pthread-wmm/safe014_rmo.opt.yml/cseq-safe014_rmo.opt.yml	false	ERROR(Compilation error)	1.107055	2.4519164060000094	35.274752
+pthread-wmm/safe015_power.oepc.yml/cseq-safe015_power.oepc.yml	false	ERROR(Compilation error)	0.901335	2.157704061000004	35.319808
+pthread-wmm/safe015_power.opt.yml/cseq-safe015_power.opt.yml	false	ERROR(Compilation error)	1.110168	2.687512778000041	35.074048
+pthread-wmm/safe015_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe015_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	0.714103	46.06490208800005	34.725888
+pthread-wmm/safe015_rmo.yml/cseq-safe015_rmo.yml	false	ERROR(Compilation error)	1.126401	3.693679813000017	35.303424
+pthread-wmm/safe016_power.oepc.yml/cseq-safe016_power.oepc.yml	false	ERROR(Compilation error)	1.044341	2.978321017999974	35.102720
+pthread-wmm/safe016_power.opt.yml/cseq-safe016_power.opt.yml	false	ERROR(Compilation error)	1.128457	2.2124524619999875	35.581952
+pthread-wmm/safe016_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe016_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	0.710333	46.04205701600006	34.701312
+pthread-wmm/safe016_rmo.oepc.yml/cseq-safe016_rmo.oepc.yml	false	ERROR(Compilation error)	1.017998	1.5517258940000147	35.188736
+pthread-wmm/safe016_rmo.opt.yml/cseq-safe016_rmo.opt.yml	false	ERROR(Compilation error)	1.125826	2.7686617599999863	35.172352
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.937308	1.9912393590000192	34.930688
+pthread-wmm/safe017_tso.yml/cseq-safe017_tso.yml	true	TIMEOUT	0.695272	46.06636307400004	34.705408
+pthread-wmm/safe018_power.oepc.yml/cseq-safe018_power.oepc.yml	false	ERROR(Compilation error)	0.846897	1.8201393269999926	34.992128
+pthread-wmm/safe018_power.opt.yml/cseq-safe018_power.opt.yml	false	ERROR(Compilation error)	1.048208	1.6589128670000264	35.213312
+pthread-wmm/safe018_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe018_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT (ERROR(ineffective witness))	0.760571	45.85395729100003	34.689024
+pthread-wmm/safe018_rmo.oepc.yml/cseq-safe018_rmo.oepc.yml	false	ERROR(Compilation error)	0.811893	1.5878810089999433	34.934784
+pthread-wmm/safe018_rmo.opt.yml/cseq-safe018_rmo.opt.yml	false	ERROR(Compilation error)	0.9712	1.5918023599999742	35.143680
+pthread-wmm/safe019_power.oepc.yml/cseq-safe019_power.oepc.yml	false	ERROR(Compilation error)	1.024994	1.776662968000096	35.311616
+pthread-wmm/safe019_power.opt.yml/cseq-safe019_power.opt.yml	false	ERROR(Compilation error)	1.175864	2.790889997000022	35.127296
+pthread-wmm/safe019_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe019_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	0.722628	46.05347309500007	34.746368
+pthread-wmm/safe019_rmo.oepc.yml/cseq-safe019_rmo.oepc.yml	false	ERROR(Compilation error)	1.015912	1.849082586999998	35.270656
+pthread-wmm/safe019_rmo.opt.yml/cseq-safe019_rmo.opt.yml	false	ERROR(Compilation error)	1.060046	1.5778639530000191	35.516416
+pthread-wmm/safe020_power.yml/cseq-safe020_power.yml	false	ERROR(Compilation error)	1.05876	2.159392756999978	35.033088
+pthread-wmm/safe020_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe020_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	0.69907	46.06562033299997	34.562048
+pthread-wmm/safe020_rmo.yml/cseq-safe020_rmo.yml	false	ERROR(Compilation error)	0.964652	1.4769316839999647	35.405824
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/cseq-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.947527	1.7476916640000582	34.992128
+pthread-wmm/safe021_power.opt_pso.opt.yml/cseq-safe021_power.opt_pso.opt.yml	false	ERROR(Compilation error)	0.948403	1.9798233699999628	34.848768
+pthread-wmm/safe021_tso.yml/cseq-safe021_tso.yml	true	TIMEOUT	0.700704	46.07479682999997	34.807808
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.824207	1.198207760999935	35.078144
+pthread-wmm/safe022_tso.yml/cseq-safe022_tso.yml	true	TIMEOUT	0.697766	46.03201284199997	34.488320
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	1.228662	1.8904565980000143	35.098624
+pthread-wmm/safe023_tso.yml/cseq-safe023_tso.yml	true	TIMEOUT	0.702653	46.072906634000105	34.824192
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.888518	1.63252166999996	35.291136
+pthread-wmm/safe024_tso.yml/cseq-safe024_tso.yml	true	TIMEOUT	0.711134	46.04590797200001	34.701312
+pthread-wmm/safe025_power.yml/cseq-safe025_power.yml	false	ERROR(Compilation error)	0.962842	1.298209111999995	35.233792
+pthread-wmm/safe025_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe025_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	0.707061	46.03804553100008	34.521088
+pthread-wmm/safe025_rmo.yml/cseq-safe025_rmo.yml	false	ERROR(Compilation error)	1.128127	1.9600715249999894	35.151872
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.912344	1.2548453890000246	35.004416
+pthread-wmm/safe026_tso.yml/cseq-safe026_tso.yml	true	TIMEOUT (ERROR(ineffective witness))	0.767732	45.26373262699997	34.463744
+pthread-wmm/safe027_power.oepc.yml/cseq-safe027_power.oepc.yml	false	ERROR(Compilation error)	1.015331	1.6901377020000155	35.143680
+pthread-wmm/safe027_power.opt.yml/cseq-safe027_power.opt.yml	false	ERROR(Compilation error)	1.192547	2.656543903999932	35.577856
+pthread-wmm/safe027_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe027_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	0.712832	46.04372131900004	34.787328
+pthread-wmm/safe027_rmo.yml/cseq-safe027_rmo.yml	false	ERROR(Compilation error)	0.967692	1.7354686260000562	35.020800
+pthread-wmm/safe028_power.yml/cseq-safe028_power.yml	false	ERROR(Compilation error)	1.049246	1.9420890540000073	35.074048
+pthread-wmm/safe028_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-safe028_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	TIMEOUT	0.708816	46.04823365499999	34.684928
+pthread-wmm/safe028_rmo.yml/cseq-safe028_rmo.yml	false	ERROR(Compilation error)	0.989337	1.6979614829999718	35.246080
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/cseq-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.806705	1.1377357510000365	34.959360
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/cseq-safe029_power.opt_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.816829	1.2537463670000761	34.852864
+pthread-wmm/safe029_tso.yml/cseq-safe029_tso.yml	true	TIMEOUT (ERROR(ineffective witness))	0.731433	45.26621362399999	34.459648
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/cseq-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.936131	1.4574964060000184	35.094528
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/cseq-safe030_power.opt_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.886384	1.2404055179999887	35.016704
+pthread-wmm/safe030_tso.yml/cseq-safe030_tso.yml	true	TIMEOUT	0.7075	46.038308624000024	34.799616
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/cseq-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false	ERROR(Compilation error)	0.915534	1.8600457710000455	35.241984
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/cseq-safe031_power.opt_pso.opt_rmo.opt.yml	false	ERROR(Compilation error)	0.9265	2.174756873999968	34.988032
+pthread-wmm/safe031_tso.yml/cseq-safe031_tso.yml	true	TIMEOUT	0.70831	46.04042549199994	34.709504
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	1.160115	1.8311631659998966	35.143680
+pthread-wmm/safe032_tso.yml/cseq-safe032_tso.yml	true	TIMEOUT	0.714031	46.03746645199999	34.914304
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.781657	1.2407490470000084	34.885632
+pthread-wmm/safe033_tso.yml/cseq-safe033_tso.yml	true	TIMEOUT	0.687355	46.03415209499997	34.492416
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/cseq-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(Compilation error)	0.858253	1.2367279559999815	35.274752
+pthread-wmm/safe034_tso.yml/cseq-safe034_tso.yml	true	TIMEOUT (ERROR(ineffective witness))	0.781566	45.44876004399998	34.783232
+pthread-wmm/safe035_power.yml/cseq-safe035_power.yml	true	ERROR(ineffective witness)	0.828073	43.03119748500001	35.655680
+pthread-wmm/safe035_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/cseq-safe035_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	true	ERROR(ineffective witness)	0.766399	39.655121019000035	34.521088
+pthread-wmm/safe036.yml/cseq-safe036.yml	true	ERROR(ineffective witness)	0.731272	36.151142867999965	34.414592
+pthread-wmm/safe037.yml/cseq-safe037.yml	true	ERROR(ineffective witness)	0.731045	32.48233072400001	34.656256
+pthread-wmm/thin002_power.oepc.yml/cseq-thin002_power.oepc.yml	false	ERROR(Compilation error)	0.8938	1.3321736489999694	35.041280
+pthread-wmm/thin002_power.opt.yml/cseq-thin002_power.opt.yml	false	ERROR(Compilation error)	1.027857	1.606742648999898	35.348480
+pthread-wmm/thin002_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/cseq-thin002_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	true	ERROR(ineffective witness)	0.739851	26.824421703999974	34.660352
+pthread-wmm/thin002_rmo.yml/cseq-thin002_rmo.yml	false	ERROR(Compilation error)	0.876399	1.314389731999995	34.906112
+pthread/bigshot_s.yml/cseq-bigshot_s.yml	true	ERROR(ineffective witness)	0.650085	1.1340675650000094	35.196928
+pthread/bigshot_s2.yml/cseq-bigshot_s2.yml	true	ERROR(ineffective witness)	0.645013	1.2329881669999168	35.520512
+pthread/fib_safe-10.yml/cseq-fib_safe-10.yml	true	ERROR(ineffective witness)	0.589728	1.36082043600004	34.705408
+pthread/fib_safe-11.yml/cseq-fib_safe-11.yml	true	ERROR(ineffective witness)	0.613056	1.870789445000014	34.619392
+pthread/fib_safe-12.yml/cseq-fib_safe-12.yml	true	ERROR(ineffective witness)	0.589549	1.3256502529999352	34.619392
+pthread/fib_safe-5.yml/cseq-fib_safe-5.yml	true	ERROR(ineffective witness)	0.579593	1.4210484709999491	34.557952
+pthread/fib_safe-6.yml/cseq-fib_safe-6.yml	true	ERROR(ineffective witness)	0.604928	1.886943333999966	34.619392
+pthread/fib_safe-7.yml/cseq-fib_safe-7.yml	true	ERROR(ineffective witness)	0.615481	1.888241397999991	34.828288
+pthread/fib_unsafe-10.yml/cseq-fib_unsafe-10.yml	false	ERROR(ineffective witness)	0.6467	3.2316690549999976	34.541568
+pthread/fib_unsafe-11.yml/cseq-fib_unsafe-11.yml	false	ERROR(ineffective witness)	0.642856	3.072690591999958	34.443264
+pthread/fib_unsafe-12.yml/cseq-fib_unsafe-12.yml	false	ERROR(ineffective witness)	0.640476	2.5029431579999937	34.603008
+pthread/fib_unsafe-5.yml/cseq-fib_unsafe-5.yml	false	TIMEOUT	0.467349	46.02410876800002	34.684928
+pthread/fib_unsafe-6.yml/cseq-fib_unsafe-6.yml	false	TIMEOUT	0.463676	46.040811813999994	34.791424
+pthread/fib_unsafe-7.yml/cseq-fib_unsafe-7.yml	false	TIMEOUT	0.472265	46.02968113199995	34.549760
+pthread/lazy01.yml/cseq-lazy01.yml	false	TIMEOUT	0.507084	46.078739461000055	34.693120
+pthread/queue.yml/cseq-queue.yml	false	TIMEOUT	0.637049	46.03259866899998	35.278848
+pthread/queue_ok.yml/cseq-queue_ok.yml	true	ERROR(ineffective witness)	0.640928	1.033988571000009	35.102720
+pthread/queue_ok_longer.yml/cseq-queue_ok_longer.yml	true	ERROR(ineffective witness)	0.639301	0.9451969539999254	35.368960
+pthread/reorder_2.yml/cseq-reorder_2.yml	false	ERROR(ineffective witness)	0.696645	1.1676051440000492	35.684352
+pthread/reorder_5.yml/cseq-reorder_5.yml	false	ERROR(ineffective witness)	0.700705	1.0205153279999877	35.602432
+pthread/singleton.yml/cseq-singleton.yml	false	TIMEOUT	0.686225	46.01586678300009	35.475456
+pthread/singleton_with-uninit-problems.yml/cseq-singleton_with-uninit-problems.yml	true	ERROR(ineffective witness)	0.67784	0.9747730109999111	35.172352
+pthread/stack-1.yml/cseq-stack-1.yml	true	ERROR(ineffective witness)	0.61075	0.6261908630000335	35.094528
+pthread/stack-2.yml/cseq-stack-2.yml	false	TIMEOUT	0.548491	46.01606812199998	35.250176
+pthread/stack_longer-1.yml/cseq-stack_longer-1.yml	false	TIMEOUT	0.558546	46.011828009000055	35.229696
+pthread/stack_longer-2.yml/cseq-stack_longer-2.yml	true	ERROR(ineffective witness)	0.431984	0.4246740339999633	35.274752
+pthread/stack_longest-1.yml/cseq-stack_longest-1.yml	false	TIMEOUT	0.351412	46.0150165	35.180544
+pthread/stack_longest-2.yml/cseq-stack_longest-2.yml	true	ERROR(ineffective witness)	0.406306	0.4019507470000008	35.000320
+pthread/stateful01-1.yml/cseq-stateful01-1.yml	false	TIMEOUT	0.306144	46.01529693400005	34.922496
+pthread/stateful01-2.yml/cseq-stateful01-2.yml	true	ERROR(ineffective witness)	0.372843	0.37572031599995626	34.738176
+pthread/sync01.yml/cseq-sync01.yml	true	ERROR(ineffective witness)	0.394745	0.3959869909999725	35.291136
+pthread/triangular-1.yml/cseq-triangular-1.yml	true	ERROR(ineffective witness)	0.397482	0.39243037500000355	34.754560
+pthread/triangular-2.yml/cseq-triangular-2.yml	false	TIMEOUT	0.287441	46.021089738	34.689024
+pthread/triangular-longer-1.yml/cseq-triangular-longer-1.yml	true	ERROR(ineffective witness)	0.441689	0.435933799000054	34.750464
+pthread/triangular-longer-2.yml/cseq-triangular-longer-2.yml	false	TIMEOUT	0.328599	46.01461733899998	34.775040
+pthread/triangular-longest-1.yml/cseq-triangular-longest-1.yml	true	ERROR(ineffective witness)	0.41184	0.40040497600000435	34.766848
+pthread/triangular-longest-2.yml/cseq-triangular-longest-2.yml	false	TIMEOUT	0.293036	46.023117619999994	34.439168
+pthread/twostage_3.yml/cseq-twostage_3.yml	false	ERROR(ineffective witness)	0.463674	0.45649307700000463	35.885056
+weaver/array-eq-symm.wvr.yml/cseq-array-eq-symm.wvr.yml	true	ERROR(ineffective witness)	0.526722	18.655634187999908	33.812480
+weaver/array-eq-trans.wvr.yml/cseq-array-eq-trans.wvr.yml	true	ERROR(ineffective witness)	0.545068	19.19494205400008	34.078720
+weaver/bench-exp1x3.wvr.yml/cseq-bench-exp1x3.wvr.yml	true	ERROR(ineffective witness)	0.419843	27.41957740199996	33.767424
+weaver/bench-exp2x3.wvr.yml/cseq-bench-exp2x3.wvr.yml	true	ERROR(ineffective witness)	0.534767	30.06413223300001	34.222080
+weaver/bench-exp2x4.wvr.yml/cseq-bench-exp2x4.wvr.yml	true	ERROR(ineffective witness)	0.545951	30.678598195000063	33.984512
+weaver/bench-exp2x6.wvr.yml/cseq-bench-exp2x6.wvr.yml	true	ERROR(ineffective witness)	0.534071	30.440690474000007	33.980416
+weaver/bench-exp2x9.wvr.yml/cseq-bench-exp2x9.wvr.yml	true	ERROR(ineffective witness)	0.548595	30.016400384000008	33.878016
+weaver/bench-exp3x3-opt.wvr.yml/cseq-bench-exp3x3-opt.wvr.yml	true	ERROR(ineffective witness)	0.697153	32.03799196500006	33.980416
+weaver/bench-exp3x3.wvr.yml/cseq-bench-exp3x3.wvr.yml	true	ERROR(ineffective witness)	0.545546	33.364227913000036	33.869824
+weaver/chl-array-int-subst.wvr.yml/cseq-chl-array-int-subst.wvr.yml	true	ERROR(ineffective witness)	0.682215	39.52135494800007	34.238464
+weaver/chl-array-int-symm.wvr.yml/cseq-chl-array-int-symm.wvr.yml	true	ERROR(ineffective witness)	0.668434	40.954632081	33.869824
+weaver/chl-array-int-trans.wvr.yml/cseq-chl-array-int-trans.wvr.yml	true	ERROR(ineffective witness)	0.685483	41.52178568900001	34.148352
+weaver/chl-chromosome-opt-symm.wvr.yml/cseq-chl-chromosome-opt-symm.wvr.yml	true	ERROR(ineffective witness)	0.650639	42.37260473099991	34.406400
+weaver/chl-chromosome-subst.wvr.yml/cseq-chl-chromosome-subst.wvr.yml	true	ERROR(ineffective witness)	0.687745	43.351523170000064	34.009088
+weaver/chl-chromosome-symm.wvr.yml/cseq-chl-chromosome-symm.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.675475	45.18831330699993	33.959936
+weaver/chl-chromosome-trans.wvr.yml/cseq-chl-chromosome-trans.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.675993	45.12069755599998	34.017280
+weaver/chl-collitem-subst.wvr.yml/cseq-chl-collitem-subst.wvr.yml	true	ERROR(ineffective witness)	0.674295	44.850361034	33.918976
+weaver/chl-collitem-symm.wvr.yml/cseq-chl-collitem-symm.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.657336	45.412418926999976	33.832960
+weaver/chl-collitem-trans.wvr.yml/cseq-chl-collitem-trans.wvr.yml	true	ERROR(ineffective witness)	0.674268	44.414862195999945	33.964032
+weaver/chl-exp-term-subst.wvr.yml/cseq-chl-exp-term-subst.wvr.yml	true	TIMEOUT	0.631829	46.03076263599996	33.955840
+weaver/chl-exp-term-symm.wvr.yml/cseq-chl-exp-term-symm.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.667866	45.67898893400002	33.906688
+weaver/chl-file-item-subst.wvr.yml/cseq-chl-file-item-subst.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.670493	45.293459249999955	33.882112
+weaver/chl-file-item-symm.wvr.yml/cseq-chl-file-item-symm.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.658458	45.95697106200009	34.004992
+weaver/chl-file-item-trans.wvr.yml/cseq-chl-file-item-trans.wvr.yml	true	ERROR(ineffective witness)	0.681175	44.80858919400009	33.959936
+weaver/chl-match-subst.wvr.yml/cseq-chl-match-subst.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.677838	45.565282259000014	34.205696
+weaver/chl-match-symm.wvr.yml/cseq-chl-match-symm.wvr.yml	true	ERROR(ineffective witness)	0.667923	44.605871095	33.923072
+weaver/chl-match-trans.wvr.yml/cseq-chl-match-trans.wvr.yml	true	ERROR(ineffective witness)	0.694729	44.54399231000002	33.738752
+weaver/chl-name-comparator-subst.wvr.yml/cseq-chl-name-comparator-subst.wvr.yml	true	ERROR(ineffective witness)	0.689692	44.26279770499991	33.783808
+weaver/chl-name-comparator-symm.wvr.yml/cseq-chl-name-comparator-symm.wvr.yml	true	ERROR(ineffective witness)	0.676904	44.64765758699991	34.025472
+weaver/chl-name-comparator-trans.wvr.yml/cseq-chl-name-comparator-trans.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.678709	45.20840630299995	34.021376
+weaver/chl-node-subst.wvr.yml/cseq-chl-node-subst.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.698039	45.12224031100004	34.029568
+weaver/chl-node-symm.wvr.yml/cseq-chl-node-symm.wvr.yml	true	TIMEOUT	0.635449	46.05343620299993	33.902592
+weaver/chl-node-trans.wvr.yml/cseq-chl-node-trans.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.705953	45.301637088999996	34.009088
+weaver/chl-nzb-file-subst.wvr.yml/cseq-chl-nzb-file-subst.wvr.yml	true	ERROR(ineffective witness)	0.713965	44.901194734	34.312192
+weaver/chl-nzb-file-symm.wvr.yml/cseq-chl-nzb-file-symm.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.694199	45.786311684	34.033664
+weaver/chl-nzb-file-trans.wvr.yml/cseq-chl-nzb-file-trans.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.703854	45.51223187699998	34.193408
+weaver/chl-poker-hand-subst.wvr.yml/cseq-chl-poker-hand-subst.wvr.yml	true	TIMEOUT	0.770331	46.042719846999944	35.655680
+weaver/chl-poker-hand-symm.wvr.yml/cseq-chl-poker-hand-symm.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.743017	45.51300486599996	35.315712
+weaver/chl-poker-hand-trans.wvr.yml/cseq-chl-poker-hand-trans.wvr.yml	true	ERROR(ineffective witness)	0.799619	44.30583441700003	35.672064
+weaver/chl-simpl-str-subst.wvr.yml/cseq-chl-simpl-str-subst.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.677769	45.27919959299993	34.144256
+weaver/chl-simpl-str-symm.wvr.yml/cseq-chl-simpl-str-symm.wvr.yml	true	ERROR(ineffective witness)	0.656276	44.842997577000006	34.320384
+weaver/chl-simpl-str-trans.wvr.yml/cseq-chl-simpl-str-trans.wvr.yml	true	ERROR(ineffective witness)	0.674675	44.932442490000085	33.865728
+weaver/chl-sre-subst.wvr.yml/cseq-chl-sre-subst.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.69206	45.101233273999924	33.968128
+weaver/chl-sre-symm.wvr.yml/cseq-chl-sre-symm.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.678446	45.78148463299999	33.964032
+weaver/chl-sre-trans.wvr.yml/cseq-chl-sre-trans.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.676989	45.662453099000004	33.988608
+weaver/chl-time-subst.wvr.yml/cseq-chl-time-subst.wvr.yml	true	ERROR(ineffective witness)	0.690963	44.58968628000002	33.972224
+weaver/chl-time-symm.wvr.yml/cseq-chl-time-symm.wvr.yml	true	ERROR(ineffective witness)	0.687961	44.444813092000004	34.189312
+weaver/chl-time-trans.wvr.yml/cseq-chl-time-trans.wvr.yml	true	ERROR(ineffective witness)	0.657941	44.798306731000025	33.976320
+weaver/chl-word-subst.wvr.yml/cseq-chl-word-subst.wvr.yml	true	ERROR(ineffective witness)	0.68207	44.882029698	33.968128
+weaver/chl-word-symm.wvr.yml/cseq-chl-word-symm.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.676184	45.35065451599996	33.878016
+weaver/chl-word-trans.wvr.yml/cseq-chl-word-trans.wvr.yml	true	ERROR(ineffective witness)	0.672469	44.722604777000015	33.943552
+weaver/clever.wvr.yml/cseq-clever.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.667747	45.31925713099997	34.017280
+weaver/fibonacci.wvr.yml/cseq-fibonacci.wvr.yml	true	ERROR(ineffective witness)	0.666262	44.81413115800001	33.820672
+weaver/loop-tiling-eq.wvr.yml/cseq-loop-tiling-eq.wvr.yml	true	ERROR(ineffective witness)	0.678443	43.96928587499997	33.779712
+weaver/mult-comm.wvr.yml/cseq-mult-comm.wvr.yml	true	ERROR(ineffective witness)	0.669805	43.99265157399998	34.226176
+weaver/mult-dist.wvr.yml/cseq-mult-dist.wvr.yml	true	ERROR(ineffective witness)	0.670099	44.480905279000126	33.959936
+weaver/mult-flipped-dist.wvr.yml/cseq-mult-flipped-dist.wvr.yml	true	ERROR(ineffective witness)	0.672771	43.503009537000025	33.968128
+weaver/parallel-bakery-2.wvr.yml/cseq-parallel-bakery-2.wvr.yml	true	ERROR(ineffective witness)	0.667127	43.31757637099997	33.935360
+weaver/parallel-bakery-3.wvr.yml/cseq-parallel-bakery-3.wvr.yml	true	ERROR(ineffective witness)	0.7046	42.639272111999844	34.021376
+weaver/parallel-bakery-4.wvr.yml/cseq-parallel-bakery-4.wvr.yml	true	ERROR(ineffective witness)	0.707677	41.07594798599996	34.107392
+weaver/parallel-barrier-loop.wvr.yml/cseq-parallel-barrier-loop.wvr.yml	false	TIMEOUT	0.401409	46.08837626700006	34.103296
+weaver/parallel-barrier.wvr.yml/cseq-parallel-barrier.wvr.yml	true	ERROR(ineffective witness)	0.622642	41.061681785999895	34.009088
+weaver/parallel-bluetooth.wvr.yml/cseq-parallel-bluetooth.wvr.yml	true	ERROR(ineffective witness)	0.539345	41.08800097900007	34.263040
+weaver/parallel-lamport.wvr.yml/cseq-parallel-lamport.wvr.yml	true	ERROR(ineffective witness)	0.562664	41.00075556499996	33.890304
+weaver/parallel-min-max-1.wvr.yml/cseq-parallel-min-max-1.wvr.yml	true	ERROR(ineffective witness)	0.543585	40.97080772300012	33.976320
+weaver/parallel-misc-1.wvr.yml/cseq-parallel-misc-1.wvr.yml	true	ERROR(ineffective witness)	0.675342	40.277458243999945	34.078720
+weaver/parallel-misc-2-unrolled-atomic.wvr.yml/cseq-parallel-misc-2-unrolled-atomic.wvr.yml	true	ERROR(ineffective witness)	0.66754	40.793511495000075	33.828864
+weaver/parallel-misc-2-unrolled.wvr.yml/cseq-parallel-misc-2-unrolled.wvr.yml	true	ERROR(ineffective witness)	0.666481	40.51798880000001	34.111488
+weaver/parallel-misc-2.wvr.yml/cseq-parallel-misc-2.wvr.yml	true	ERROR(ineffective witness)	0.667094	40.338399970999944	33.787904
+weaver/parallel-misc-3-extended.wvr.yml/cseq-parallel-misc-3-extended.wvr.yml	true	TIMEOUT	21.266306	46.034859864000055	33.845248
+weaver/parallel-misc-3.wvr.yml/cseq-parallel-misc-3.wvr.yml	true	TIMEOUT	20.090059	46.05537079099986	34.213888
+weaver/parallel-misc-4.wvr.yml/cseq-parallel-misc-4.wvr.yml	true	ERROR(ineffective witness)	0.552257	42.72542371600002	34.013184
+weaver/parallel-misc-5.wvr.yml/cseq-parallel-misc-5.wvr.yml	true	ERROR(ineffective witness)	0.571612	43.14371196100001	34.213888
+weaver/parallel-parallel-sum-1-dsl.wvr.yml/cseq-parallel-parallel-sum-1-dsl.wvr.yml	true	ERROR(ineffective witness)	0.639063	43.72363961700012	34.091008
+weaver/parallel-parallel-sum-1.wvr.yml/cseq-parallel-parallel-sum-1.wvr.yml	true	ERROR(ineffective witness)	0.682368	43.88179718799984	33.812480
+weaver/parallel-parallel-sum-2.wvr.yml/cseq-parallel-parallel-sum-2.wvr.yml	true	ERROR(ineffective witness)	0.604215	44.561367174	34.000896
+weaver/parallel-parallel-sum-equiv.wvr.yml/cseq-parallel-parallel-sum-equiv.wvr.yml	true	ERROR(ineffective witness)	0.598856	44.100197781999896	34.082816
+weaver/parallel-simple-equiv.wvr.yml/cseq-parallel-simple-equiv.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.662278	45.35110322199989	33.935360
+weaver/parallel-ticket-2.wvr.yml/cseq-parallel-ticket-2.wvr.yml	true	TIMEOUT (ERROR(ineffective witness))	0.655154	45.272944930999984	33.927168
+weaver/parallel-ticket-3.wvr.yml/cseq-parallel-ticket-3.wvr.yml	true	ERROR(ineffective witness)	0.656532	44.1053550810002	33.972224
+weaver/parallel-ticket-4.wvr.yml/cseq-parallel-ticket-4.wvr.yml	true	ERROR(ineffective witness)	0.677764	43.8929044460001	33.939456
+weaver/parallel-ticket-5.wvr.yml/cseq-parallel-ticket-5.wvr.yml	true	ERROR(ineffective witness)	0.703866	43.39779375099988	33.914880
+weaver/parallel-ticket-6.wvr.yml/cseq-parallel-ticket-6.wvr.yml	true	false(unreach-call)	0.712097	42.86426045300004	33.943552
+weaver/parallel-ticket-7.wvr.yml/cseq-parallel-ticket-7.wvr.yml	true	ERROR(ineffective witness)	0.728292	43.14147041299998	33.882112
+weaver/parallel-ticket-8.wvr.yml/cseq-parallel-ticket-8.wvr.yml	true	ERROR(ineffective witness)	0.710464	41.64704921999987	33.828864
+weaver/popl20-bad-buffer-mult-alt.wvr.yml/cseq-popl20-bad-buffer-mult-alt.wvr.yml	false	ERROR(ineffective witness)	0.540892	42.30383762899987	33.878016
+weaver/popl20-bad-buffer-mult-alt2.wvr.yml/cseq-popl20-bad-buffer-mult-alt2.wvr.yml	true	ERROR(ineffective witness)	0.545257	41.59830717400018	34.058240
+weaver/popl20-bad-commit-1.wvr-bad.yml/cseq-popl20-bad-commit-1.wvr-bad.yml	true	ERROR(ineffective witness)	0.67318	41.457768306999924	34.144256
+weaver/popl20-bad-commit-2.wvr-bad.yml/cseq-popl20-bad-commit-2.wvr-bad.yml	true	ERROR(ineffective witness)	0.708968	42.39734665999981	34.025472
+weaver/popl20-bad-counter-queue.wvr.yml/cseq-popl20-bad-counter-queue.wvr.yml	false	TIMEOUT	0.37169	46.05387389899988	33.845248
+weaver/popl20-bad-counter-queue2.wvr.yml/cseq-popl20-bad-counter-queue2.wvr.yml	true	ERROR(ineffective witness)	0.652588	38.6473023609999	33.947648
+weaver/popl20-bad-dot-product-alt.wvr.yml/cseq-popl20-bad-dot-product-alt.wvr.yml	true	ERROR(ineffective witness)	0.546212	39.154413689999956	33.988608
+weaver/popl20-bad-dot-product.wvr.yml/cseq-popl20-bad-dot-product.wvr.yml	true	ERROR(ineffective witness)	0.549992	39.668296673999976	33.837056
+weaver/popl20-bad-ring-nondet.wvr.yml/cseq-popl20-bad-ring-nondet.wvr.yml	true	ERROR(ineffective witness)	0.677263	39.29198835600005	33.861632
+weaver/popl20-bad-ring.wvr.yml/cseq-popl20-bad-ring.wvr.yml	true	ERROR(ineffective witness)	0.66263	39.72250483700009	33.873920
+weaver/popl20-bad-threaded-sum-2.wvr.yml/cseq-popl20-bad-threaded-sum-2.wvr.yml	true	ERROR(ineffective witness)	0.524439	38.81007412400004	33.935360
+weaver/popl20-channel-sum.wvr.yml/cseq-popl20-channel-sum.wvr.yml	true	ERROR(ineffective witness)	0.661349	38.78723184899991	33.693696
+weaver/popl20-commit-1.wvr.yml/cseq-popl20-commit-1.wvr.yml	true	ERROR(ineffective witness)	0.674752	39.699273132999906	34.000896
+weaver/popl20-commit-2.wvr.yml/cseq-popl20-commit-2.wvr.yml	true	ERROR(ineffective witness)	0.684781	40.050657666999996	34.078720
+weaver/popl20-counter-determinism.wvr.yml/cseq-popl20-counter-determinism.wvr.yml	true	ERROR(ineffective witness)	0.667114	42.161237106000044	34.091008
+weaver/popl20-counter-fun.wvr.yml/cseq-popl20-counter-fun.wvr.yml	true	ERROR(ineffective witness)	0.658636	42.65891316300008	34.148352
+weaver/popl20-difference-det.wvr.yml/cseq-popl20-difference-det.wvr.yml	true	ERROR(ineffective witness)	0.676617	42.175372718999824	33.976320
+weaver/popl20-figure1-alt.wvr.yml/cseq-popl20-figure1-alt.wvr.yml	true	ERROR(ineffective witness)	0.652343	43.135150780000004	33.972224
+weaver/popl20-figure1.wvr.yml/cseq-popl20-figure1.wvr.yml	true	ERROR(ineffective witness)	0.641415	43.22926853800004	33.730560
+weaver/popl20-figure3.wvr.yml/cseq-popl20-figure3.wvr.yml	true	ERROR(ineffective witness)	0.522758	41.65067136400012	34.185216
+weaver/popl20-horseshoe.wvr.yml/cseq-popl20-horseshoe.wvr.yml	true	ERROR(ineffective witness)	0.653555	42.66677747000017	33.968128
+weaver/popl20-min-max-dec.wvr.yml/cseq-popl20-min-max-dec.wvr.yml	true	ERROR(ineffective witness)	0.538577	42.80284808800002	34.123776
+weaver/popl20-min-max-inc-dec.wvr.yml/cseq-popl20-min-max-inc-dec.wvr.yml	true	ERROR(ineffective witness)	0.523196	42.20162466000011	33.820672
+weaver/popl20-min-max-inc.wvr.yml/cseq-popl20-min-max-inc.wvr.yml	true	ERROR(ineffective witness)	0.525508	41.91483531800009	34.177024
+weaver/popl20-more-array-sum-alt.wvr.yml/cseq-popl20-more-array-sum-alt.wvr.yml	false	TIMEOUT	0.359015	46.078823074999946	34.091008
+weaver/popl20-more-array-sum-alt2.wvr.yml/cseq-popl20-more-array-sum-alt2.wvr.yml	true	ERROR(ineffective witness)	0.648725	38.32889830300019	33.980416
+weaver/popl20-more-array-sum.wvr.yml/cseq-popl20-more-array-sum.wvr.yml	false	ERROR(ineffective witness)	0.536484	39.01974346499992	33.890304
+weaver/popl20-more-array-sum2.wvr.yml/cseq-popl20-more-array-sum2.wvr.yml	true	ERROR(ineffective witness)	0.548939	38.86195428100018	33.992704
+weaver/popl20-more-buffer-mult.wvr.yml/cseq-popl20-more-buffer-mult.wvr.yml	false	ERROR(ineffective witness)	0.679391	38.38854000399988	33.972224
+weaver/popl20-more-buffer-mult2.wvr.yml/cseq-popl20-more-buffer-mult2.wvr.yml	true	ERROR(ineffective witness)	0.682921	38.35713113299994	33.972224
+weaver/popl20-more-buffer-series.wvr.yml/cseq-popl20-more-buffer-series.wvr.yml	false	ERROR(ineffective witness)	0.67309	38.189786367999886	33.964032
+weaver/popl20-more-buffer-series2.wvr.yml/cseq-popl20-more-buffer-series2.wvr.yml	true	ERROR(ineffective witness)	0.690614	38.54155076400002	34.529280
+weaver/popl20-more-dec-subseq.wvr.yml/cseq-popl20-more-dec-subseq.wvr.yml	true	ERROR(ineffective witness)	0.528749	38.93870005300005	34.148352
+weaver/popl20-more-inc-subseq.wvr.yml/cseq-popl20-more-inc-subseq.wvr.yml	true	ERROR(ineffective witness)	0.518768	38.63854083699994	34.226176
+weaver/popl20-more-max-array-hom.wvr.yml/cseq-popl20-more-max-array-hom.wvr.yml	true	ERROR(ineffective witness)	0.525691	41.115425578999975	33.964032
+weaver/popl20-more-max-array.wvr.yml/cseq-popl20-more-max-array.wvr.yml	true	ERROR(ineffective witness)	0.515077	41.3898366599999	33.943552
+weaver/popl20-more-min-array-hom.wvr.yml/cseq-popl20-more-min-array-hom.wvr.yml	true	ERROR(ineffective witness)	0.52309	41.83102337499986	33.800192
+weaver/popl20-more-min-array.wvr.yml/cseq-popl20-more-min-array.wvr.yml	true	ERROR(ineffective witness)	0.526667	43.57870871199998	33.972224
+weaver/popl20-more-min-le-max.wvr.yml/cseq-popl20-more-min-le-max.wvr.yml	true	ERROR(ineffective witness)	0.537449	42.49269191299982	34.406400
+weaver/popl20-more-mts.wvr.yml/cseq-popl20-more-mts.wvr.yml	true	ERROR(ineffective witness)	0.527228	43.42556230199989	33.959936
+weaver/popl20-more-multiply-verify.wvr.yml/cseq-popl20-more-multiply-verify.wvr.yml	true	ERROR(ineffective witness)	0.655347	43.549193908999996	34.029568
+weaver/popl20-more-nonblocking-counter-alt2.wvr.yml/cseq-popl20-more-nonblocking-counter-alt2.wvr.yml	true	ERROR(ineffective witness)	0.514491	43.183257896999976	34.136064
+weaver/popl20-more-queue-add-2-nl.wvr.yml/cseq-popl20-more-queue-add-2-nl.wvr.yml	true	ERROR(ineffective witness)	0.64554	43.334684270000025	34.181120
+weaver/popl20-more-queue-add-3-nl.wvr.yml/cseq-popl20-more-queue-add-3-nl.wvr.yml	true	ERROR(ineffective witness)	0.653183	43.10084789099983	33.910784
+weaver/popl20-more-sorted.wvr.yml/cseq-popl20-more-sorted.wvr.yml	true	ERROR(ineffective witness)	0.522467	43.994267774000036	33.935360
+weaver/popl20-more-sum-array-hom.wvr.yml/cseq-popl20-more-sum-array-hom.wvr.yml	true	ERROR(ineffective witness)	0.657197	43.743918716999815	33.988608
+weaver/popl20-more-vector-add.wvr.yml/cseq-popl20-more-vector-add.wvr.yml	true	ERROR(ineffective witness)	0.653147	42.552393976000076	34.144256
+weaver/popl20-mult-4.wvr.yml/cseq-popl20-mult-4.wvr.yml	true	ERROR(ineffective witness)	0.520108	43.27234034799994	33.865728
+weaver/popl20-mult-equiv.wvr.yml/cseq-popl20-mult-equiv.wvr.yml	true	ERROR(ineffective witness)	0.66366	43.19558089399993	33.796096
+weaver/popl20-nonblocking-cntr-alt.wvr.yml/cseq-popl20-nonblocking-cntr-alt.wvr.yml	true	ERROR(ineffective witness)	0.512251	44.01402050599995	33.775616
+weaver/popl20-nonblocking-cntr.wvr.yml/cseq-popl20-nonblocking-cntr.wvr.yml	true	ERROR(ineffective witness)	0.512711	43.12225816699993	33.849344
+weaver/popl20-prod-cons-eq.wvr.yml/cseq-popl20-prod-cons-eq.wvr.yml	true	ERROR(ineffective witness)	0.671106	43.49373936200004	33.976320
+weaver/popl20-prod-cons.wvr.yml/cseq-popl20-prod-cons.wvr.yml	true	ERROR(ineffective witness)	0.653769	42.78045386500003	33.927168
+weaver/popl20-prod-cons3.wvr.yml/cseq-popl20-prod-cons3.wvr.yml	true	ERROR(ineffective witness)	0.682265	42.777376573999845	34.025472
+weaver/popl20-proofs-counter-add-4-semi-Q67.wvr.yml/cseq-popl20-proofs-counter-add-4-semi-Q67.wvr.yml	true	ERROR(ineffective witness)	0.668961	42.19000436499982	33.935360
+weaver/popl20-queue-add-2.wvr.yml/cseq-popl20-queue-add-2.wvr.yml	true	ERROR(ineffective witness)	0.660401	43.333802761000015	33.828864
+weaver/popl20-queue-add-3.wvr.yml/cseq-popl20-queue-add-3.wvr.yml	true	ERROR(ineffective witness)	0.677113	43.47753770200006	33.828864
+weaver/popl20-send-receive-alt.wvr.yml/cseq-popl20-send-receive-alt.wvr.yml	true	ERROR(ineffective witness)	0.662763	43.302796899999976	33.787904
+weaver/popl20-send-receive.wvr.yml/cseq-popl20-send-receive.wvr.yml	true	ERROR(ineffective witness)	0.657659	43.62733944899992	33.816576
+weaver/popl20-simple-array-sum.wvr.yml/cseq-popl20-simple-array-sum.wvr.yml	true	ERROR(ineffective witness)	0.65877	44.008645458000046	33.947648
+weaver/popl20-simple-queue.wvr.yml/cseq-popl20-simple-queue.wvr.yml	true	ERROR(ineffective witness)	0.65339	42.651639896000006	33.968128
+weaver/popl20-threaded-sum-3.wvr.yml/cseq-popl20-threaded-sum-3.wvr.yml	true	ERROR(ineffective witness)	0.530057	43.24076907200015	34.197504
+weaver/popl20-three-array-max.wvr.yml/cseq-popl20-three-array-max.wvr.yml	true	ERROR(ineffective witness)	0.531526	43.265632439	33.804288
+weaver/popl20-three-array-min.wvr.yml/cseq-popl20-three-array-min.wvr.yml	true	ERROR(ineffective witness)	0.537992	42.83793979799998	33.873920
+weaver/popl20-three-array-sum.wvr.yml/cseq-popl20-three-array-sum.wvr.yml	true	ERROR(ineffective witness)	0.660386	43.501563652000186	33.796096
+weaver/popl20-two-queue.wvr.yml/cseq-popl20-two-queue.wvr.yml	true	ERROR(ineffective witness)	0.650288	43.41927590199998	34.246656
+weaver/security.wvr.yml/cseq-security.wvr.yml	true	ERROR(ineffective witness)	0.656354	43.705664567999975	34.148352
+weaver/spaghetti.wvr.yml/cseq-spaghetti.wvr.yml	true	ERROR(ineffective witness)	0.666525	43.59194271000001	33.984512
+weaver/test-context1.wvr.yml/cseq-test-context1.wvr.yml	true	ERROR(ineffective witness)	0.655947	43.29653611200001	33.894400
+weaver/test-easy1.wvr.yml/cseq-test-easy1.wvr.yml	true	ERROR(ineffective witness)	0.640761	43.72615810299999	33.906688
+weaver/test-easy10.wvr.yml/cseq-test-easy10.wvr.yml	true	ERROR(ineffective witness)	0.664583	43.274262163	33.910784
+weaver/test-easy11.wvr.yml/cseq-test-easy11.wvr.yml	true	false(unreach-call)	0.658163	43.31404230200019	33.767424
+weaver/test-easy6.wvr.yml/cseq-test-easy6.wvr.yml	true	ERROR(ineffective witness)	0.658974	44.13079143300001	34.148352
+weaver/test-easy7.wvr.yml/cseq-test-easy7.wvr.yml	true	ERROR(ineffective witness)	0.648445	42.81236066099996	33.902592
+weaver/test-easy8.wvr.yml/cseq-test-easy8.wvr.yml	true	ERROR(ineffective witness)	0.637909	42.390759907000074	33.869824
+weaver/test-hard1.wvr.yml/cseq-test-hard1.wvr.yml	true	ERROR(ineffective witness)	0.661191	42.63597731999994	33.841152
+weaver/test-semi1.wvr.yml/cseq-test-semi1.wvr.yml	true	ERROR(ineffective witness)	0.633489	42.484401854	34.066432
+weaver/unroll-2.wvr.yml/cseq-unroll-2.wvr.yml	true	ERROR(ineffective witness)	0.53	42.20346031700001	34.000896
+weaver/unroll-3.wvr.yml/cseq-unroll-3.wvr.yml	true	ERROR(ineffective witness)	0.520046	41.246302542999956	33.779712
+weaver/unroll-4.wvr.yml/cseq-unroll-4.wvr.yml	true	ERROR(ineffective witness)	0.529597	41.14752161699994	34.029568
+weaver/unroll-5.wvr.yml/cseq-unroll-5.wvr.yml	true	ERROR(ineffective witness)	0.526875	40.51028855599998	33.976320
+weaver/unroll-cond-2.wvr.yml/cseq-unroll-cond-2.wvr.yml	true	ERROR(ineffective witness)	0.523565	40.32585009700006	34.037760
+weaver/unroll-cond-3.wvr.yml/cseq-unroll-cond-3.wvr.yml	true	ERROR(ineffective witness)	0.516715	39.0335758560002	34.000896
+weaver/unroll-cond-4.wvr.yml/cseq-unroll-cond-4.wvr.yml	true	ERROR(ineffective witness)	0.517786	37.944924252999954	33.783808
+weaver/unroll-cond-5.wvr.yml/cseq-unroll-cond-5.wvr.yml	true	ERROR(ineffective witness)	0.486924	15.648717581000028	34.095104

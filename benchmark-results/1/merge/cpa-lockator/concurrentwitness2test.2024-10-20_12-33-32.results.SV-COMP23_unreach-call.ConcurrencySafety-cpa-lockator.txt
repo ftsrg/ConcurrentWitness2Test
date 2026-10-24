@@ -1,0 +1,132 @@
+   BENCHMARK INFORMATION
+benchmark definition:    svcomp23-witness-benchmarks/concurrentwitness2test.xml
+name:                    concurrentwitness2test
+run sets:                SV-COMP23_unreach-call.ConcurrencySafety-cpa-lockator
+date:                    Sun, 2024-10-20 12:33:32 UTC
+tool:                    ConcurrentWitness2Test ConcurrentWitness2Test 1.0
+tool executable:         ConcurrentWitness2Test/start.sh
+options:
+parallel runs:           10
+resource limits:
+- time:                  45 s
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    fv-az1215-275
+os:                      Linux-6.5.0-1025-azure-x86_64-with-glibc2.35
+cpu:                     AMD EPYC 7763 64-Core Processor
+- cores:                 4
+- max frequency:         2596.533 MHz
+ram:                     16757.342208000002 MB
+------------------------------------------------------------
+
+
+
+SV-COMP23_unreach-call.ConcurrencySafety-cpa-lockator
+Run set 1 of 1 with options '--graphml-witness ${taskdef_path}/witness.graphml' and propertyfile 'None'
+
+inputfile                                                                                                                                                                    status                       cpu time   wall time        host
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+goblint-regression/13-privatized_01-priv_nr_true.yml/cpa-lockator-13-privatized_01-priv_nr_true.yml                                                                          true                             0.67        1.57        None
+goblint-regression/13-privatized_04-priv_multi_true.yml/cpa-lockator-13-privatized_04-priv_multi_true.yml                                                                    TIMEOUT                          0.63       46.01        None
+goblint-regression/13-privatized_18-first-reads_true.yml/cpa-lockator-13-privatized_18-first-reads_true.yml                                                                  true                             0.66        1.53        None
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/cpa-lockator-13-privatized_18-first-reads_unknown_1_neg.yml                                                false(unreach-call)              0.65        1.51        None
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/cpa-lockator-13-privatized_18-first-reads_unknown_1_pos.yml                                                true                             0.66        1.57        None
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/cpa-lockator-13-privatized_18-first-reads_unknown_2_neg.yml                                                true                             0.60        1.52        None
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/cpa-lockator-13-privatized_18-first-reads_unknown_2_pos.yml                                                false(unreach-call)              0.58        1.55        None
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/cpa-lockator-13-privatized_19-publish-precision_unknown_1_neg.yml                                    false(unreach-call)              0.57        1.53        None
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/cpa-lockator-13-privatized_19-publish-precision_unknown_1_pos.yml                                    true                             0.59        1.49        None
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/cpa-lockator-13-privatized_19-publish-precision_unknown_2_neg.yml                                    true                             0.57        1.53        None
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/cpa-lockator-13-privatized_19-publish-precision_unknown_2_pos.yml                                    false(unreach-call)              0.58        1.33        None
+goblint-regression/13-privatized_20-publish-regression_true.yml/cpa-lockator-13-privatized_20-publish-regression_true.yml                                                    true                             0.60        1.29        None
+goblint-regression/13-privatized_24-multiple-protecting_true.yml/cpa-lockator-13-privatized_24-multiple-protecting_true.yml                                                  true                             0.59        1.32        None
+goblint-regression/13-privatized_25-struct_nr_true.yml/cpa-lockator-13-privatized_25-struct_nr_true.yml                                                                      true                             0.61        1.27        None
+goblint-regression/13-privatized_27-multiple-protecting2_true.yml/cpa-lockator-13-privatized_27-multiple-protecting2_true.yml                                                TIMEOUT                          0.43       46.01        None
+goblint-regression/13-privatized_29-multiple-protecting2-vesal_true.yml/cpa-lockator-13-privatized_29-multiple-protecting2-vesal_true.yml                                    true                             0.59        1.23        None
+goblint-regression/13-privatized_30-traces-oplus-vs-meet_true.yml/cpa-lockator-13-privatized_30-traces-oplus-vs-meet_true.yml                                                true                             0.59        1.29        None
+goblint-regression/13-privatized_31-traces-mine-vs-mutex_true.yml/cpa-lockator-13-privatized_31-traces-mine-vs-mutex_true.yml                                                true                             0.60        1.26        None
+goblint-regression/13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml/cpa-lockator-13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml                                true                             0.59        1.28        None
+goblint-regression/13-privatized_33-traces-v-matters_true.yml/cpa-lockator-13-privatized_33-traces-v-matters_true.yml                                                        true                             0.60        1.32        None
+goblint-regression/13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml/cpa-lockator-13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml                            true                             0.59        1.25        None
+goblint-regression/13-privatized_35-traces-ex-2_true.yml/cpa-lockator-13-privatized_35-traces-ex-2_true.yml                                                                  true                             0.58        1.32        None
+goblint-regression/13-privatized_36-traces-ex-3_true.yml/cpa-lockator-13-privatized_36-traces-ex-3_true.yml                                                                  true                             0.59        1.27        None
+goblint-regression/13-privatized_37-traces-ex-4_true.yml/cpa-lockator-13-privatized_37-traces-ex-4_true.yml                                                                  true                             0.58        1.24        None
+goblint-regression/13-privatized_38-traces-ex-4-switch_true.yml/cpa-lockator-13-privatized_38-traces-ex-4-switch_true.yml                                                    true                             0.58        1.24        None
+goblint-regression/13-privatized_40-traces-ex-6_true.yml/cpa-lockator-13-privatized_40-traces-ex-6_true.yml                                                                  true                             0.57        1.26        None
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/cpa-lockator-13-privatized_41-traces-ex-7_unknown_1_neg.yml                                                false(unreach-call)              0.57        1.26        None
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/cpa-lockator-13-privatized_41-traces-ex-7_unknown_1_pos.yml                                                true                             0.57        1.24        None
+goblint-regression/13-privatized_42-traces-ex-mini_true.yml/cpa-lockator-13-privatized_42-traces-ex-mini_true.yml                                                            true                             0.59        1.16        None
+goblint-regression/13-privatized_44-traces-mine2_true.yml/cpa-lockator-13-privatized_44-traces-mine2_true.yml                                                                true                             0.58        1.13        None
+goblint-regression/13-privatized_69-refine-protected-loop-interval_true.yml/cpa-lockator-13-privatized_69-refine-protected-loop-interval_true.yml                            true                             0.61        1.04        None
+goblint-regression/28-race_reach_45-escape_racing.yml/cpa-lockator-28-race_reach_45-escape_racing.yml                                                                        true                             0.60        1.19        None
+goblint-regression/28-race_reach_46-escape_racefree.yml/cpa-lockator-28-race_reach_46-escape_racefree.yml                                                                    true                             0.60        1.17        None
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/cpa-lockator-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml                                              true                             0.59        1.11        None
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/cpa-lockator-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml                                              false(unreach-call)              0.58        1.16        None
+goblint-regression/36-apron_21-traces-cluster-based_true.yml/cpa-lockator-36-apron_21-traces-cluster-based_true.yml                                                          TIMEOUT                          0.45       46.02        None
+goblint-regression/36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml/cpa-lockator-36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml    true                             0.62        1.60        None
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/cpa-lockator-36-apron_41-threadenter-no-locals_unknown_1_neg.yml                                      true                             0.57        1.75        None
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/cpa-lockator-36-apron_41-threadenter-no-locals_unknown_1_pos.yml                                      false(unreach-call)              0.58        1.69        None
+ldv-linux-3.14-races/linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.yml/cpa-lockator-linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.yml                              ERROR(Parsing failed)            0.25        0.57        None
+ldv-linux-3.14-races/linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.yml/cpa-lockator-linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.yml                              ERROR(Parsing failed)            0.24        0.40        None
+ldv-linux-3.14-races/linux-3.14--drivers--usb--misc--adutux.ko.cil.yml/cpa-lockator-linux-3.14--drivers--usb--misc--adutux.ko.cil.yml                                        ERROR(Parsing failed)            0.24        0.53        None
+ldv-races/race-2_1-container_of.yml/cpa-lockator-race-2_1-container_of.yml                                                                                                   true                             1.26       12.93        None
+ldv-races/race-3_1-container_of-global.yml/cpa-lockator-race-3_1-container_of-global.yml                                                                                     true                             1.24       12.27        None
+ldv-races/race-4_1-thread_local_vars.yml/cpa-lockator-race-4_1-thread_local_vars.yml                                                                                         true                             1.07        1.76        None
+pthread-C-DAC/pthread-demo-datarace-1.yml/cpa-lockator-pthread-demo-datarace-1.yml                                                                                           TIMEOUT                          1.40       46.01        None
+pthread-atomic/time_var_mutex.yml/cpa-lockator-time_var_mutex.yml                                                                                                            TIMEOUT                          0.47       46.06        None
+pthread-deagle/circular_buffer_bad.yml/cpa-lockator-circular_buffer_bad.yml                                                                                                  TIMEOUT                          0.52       46.05        None
+pthread-deagle/circular_buffer_ok.yml/cpa-lockator-circular_buffer_ok.yml                                                                                                    TIMEOUT                          0.53       46.01        None
+pthread-divine/ring_2w1r-1.yml/cpa-lockator-ring_2w1r-1.yml                                                                                                                  true                             0.83        0.91        None
+pthread-divine/tls_basic.yml/cpa-lockator-tls_basic.yml                                                                                                                      true                             0.56        0.57        None
+pthread-divine/tls_destructor_worker.yml/cpa-lockator-tls_destructor_worker.yml                                                                                              false(unreach-call)              0.50        0.52        None
+pthread-driver-races/char_generic_nvram_read_nvram_write_nvram.yml/cpa-lockator-char_generic_nvram_read_nvram_write_nvram.yml                                                ERROR(Compilation error)         3.22        3.25        None
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml/cpa-lockator-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml              ERROR(Compilation error)        12.21       12.24        None
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml/cpa-lockator-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml                      ERROR(Compilation error)         8.41        8.43        None
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml/cpa-lockator-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml                    ERROR(Compilation error)        13.16       13.23        None
+pthread-ext/03_incdec.yml/cpa-lockator-03_incdec.yml                                                                                                                         ERROR(Has branching)             0.31        0.33        None
+pthread-ext/04_incdec_cas.yml/cpa-lockator-04_incdec_cas.yml                                                                                                                 ERROR(Has branching)             0.31        0.33        None
+pthread-ext/08_rand_cas.yml/cpa-lockator-08_rand_cas.yml                                                                                                                     ERROR(Has branching)             0.35        0.39        None
+pthread-ext/09_fmaxsym.yml/cpa-lockator-09_fmaxsym.yml                                                                                                                       ERROR(Has branching)             0.20        0.21        None
+pthread-ext/11_fmaxsymopt.yml/cpa-lockator-11_fmaxsymopt.yml                                                                                                                 ERROR(Has branching)             0.21        0.24        None
+pthread-ext/14_spin2003.yml/cpa-lockator-14_spin2003.yml                                                                                                                     ERROR(Has branching)             0.35        0.38        None
+pthread-ext/25_stack.yml/cpa-lockator-25_stack.yml                                                                                                                           ERROR(Has branching)             0.35        0.37        None
+pthread-ext/25_stack_longer-1.yml/cpa-lockator-25_stack_longer-1.yml                                                                                                         ERROR(Has branching)             0.32        0.35        None
+pthread-ext/25_stack_longer-2.yml/cpa-lockator-25_stack_longer-2.yml                                                                                                         ERROR(Has branching)             0.53        0.56        None
+pthread-ext/25_stack_longest-1.yml/cpa-lockator-25_stack_longest-1.yml                                                                                                       ERROR(Has branching)             0.44        0.46        None
+pthread-ext/25_stack_longest-2.yml/cpa-lockator-25_stack_longest-2.yml                                                                                                       ERROR(Has branching)             0.33        0.35        None
+pthread-ext/26_stack_cas.yml/cpa-lockator-26_stack_cas.yml                                                                                                                   ERROR(Has branching)             0.54        0.59        None
+pthread-ext/26_stack_cas_longer-1.yml/cpa-lockator-26_stack_cas_longer-1.yml                                                                                                 ERROR(Has branching)             0.33        0.38        None
+pthread-ext/26_stack_cas_longer-2.yml/cpa-lockator-26_stack_cas_longer-2.yml                                                                                                 ERROR(Has branching)             0.40        0.42        None
+pthread-ext/26_stack_cas_longest-1.yml/cpa-lockator-26_stack_cas_longest-1.yml                                                                                               ERROR(Has branching)             0.37        0.40        None
+pthread-ext/26_stack_cas_longest-2.yml/cpa-lockator-26_stack_cas_longest-2.yml                                                                                               ERROR(Has branching)             0.34        0.36        None
+pthread-ext/28_buggy_simple_loop1_vf.yml/cpa-lockator-28_buggy_simple_loop1_vf.yml                                                                                           ERROR(Has branching)             0.31        0.31        None
+pthread-ext/31_simple_loop5_vs.yml/cpa-lockator-31_simple_loop5_vs.yml                                                                                                       ERROR(Has branching)             0.23        0.26        None
+pthread-ext/35_double_lock_p3_vs.yml/cpa-lockator-35_double_lock_p3_vs.yml                                                                                                   TIMEOUT                         45.53       27.73        None
+pthread-ext/36_stack_cas_p0_vs_concur.yml/cpa-lockator-36_stack_cas_p0_vs_concur.yml                                                                                         true                             1.30       13.16        None
+pthread-ext/37_stack_lock_p0_vs_concur.yml/cpa-lockator-37_stack_lock_p0_vs_concur.yml                                                                                       true                             1.36       13.23        None
+pthread-ext/43_NetBSD_sysmon_power_sliced.yml/cpa-lockator-43_NetBSD_sysmon_power_sliced.yml                                                                                 true                             1.91       13.20        None
+pthread/bigshot_s.yml/cpa-lockator-bigshot_s.yml                                                                                                                             ERROR(Has branching)             0.32        0.35        None
+pthread/bigshot_s2.yml/cpa-lockator-bigshot_s2.yml                                                                                                                           TIMEOUT                          0.53       46.03        None
+pthread/lazy01.yml/cpa-lockator-lazy01.yml                                                                                                                                   TIMEOUT                          0.44       46.03        None
+pthread/singleton.yml/cpa-lockator-singleton.yml                                                                                                                             false(unreach-call)              0.70        1.13        None
+pthread/stack-1.yml/cpa-lockator-stack-1.yml                                                                                                                                 TIMEOUT                          0.61       46.05        None
+pthread/stack-2.yml/cpa-lockator-stack-2.yml                                                                                                                                 TIMEOUT                          0.60       46.03        None
+pthread/stack_longer-1.yml/cpa-lockator-stack_longer-1.yml                                                                                                                   TIMEOUT                          0.60       46.09        None
+pthread/stack_longer-2.yml/cpa-lockator-stack_longer-2.yml                                                                                                                   TIMEOUT                          0.60       46.02        None
+pthread/stack_longest-1.yml/cpa-lockator-stack_longest-1.yml                                                                                                                 TIMEOUT                          0.61       46.07        None
+pthread/stack_longest-2.yml/cpa-lockator-stack_longest-2.yml                                                                                                                 TIMEOUT                          0.56       46.05        None
+pthread/stateful01-1.yml/cpa-lockator-stateful01-1.yml                                                                                                                       false(unreach-call)              0.48        0.48        None
+pthread/stateful01-2.yml/cpa-lockator-stateful01-2.yml                                                                                                                       true                             0.44        0.47        None
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Run set 1                                                                                                                                                                    done                            76.93      100.95           -
+
+Statistics:             90 Files
+  correct:              40
+    correct true:       30
+    correct false:      10
+  incorrect:             8
+    incorrect true:      8
+    incorrect false:     0
+  unknown:              42
+  Score:              -186 (max: 145)

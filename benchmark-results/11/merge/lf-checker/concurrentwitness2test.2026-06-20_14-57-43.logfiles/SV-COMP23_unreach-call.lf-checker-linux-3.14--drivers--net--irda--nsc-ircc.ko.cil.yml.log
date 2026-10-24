@@ -1,0 +1,28 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/lf-checker/ldv-linux-3.14-races/linux-3.14--drivers--net--irda--nsc-ircc.ko.cil.yml/linux-3.14--drivers--net--irda--nsc-ircc.ko.cil.i --graphml-witness svcomp23-witness-benchmarks/tools/lf-checker/ldv-linux-3.14-races/linux-3.14--drivers--net--irda--nsc-ircc.ko.cil.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/__main__.py", line 59, in translate_to_c
+    ast = CParser().parse(text, filename)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/pycparser/c_parser.py", line 147, in parse
+    return self.cparser.parse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/pycparser/ply/yacc.py", line 331, in parse
+    return self.parseopt_notrack(input, lexer, debug, tracking, tokenfunc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/pycparser/ply/yacc.py", line 1199, in parseopt_notrack
+    tok = call_errorfunc(self.errorfunc, errtoken, self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/pycparser/ply/yacc.py", line 193, in call_errorfunc
+    r = errorfunc(token)
+        ^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/pycparser/c_parser.py", line 1945, in p_error
+    self._parse_error(
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/pycparser/plyparser.py", line 67, in _parse_error
+    raise ParseError("%s: %s" % (coord, msg))
+pycparser.plyparser.ParseError: /tmp/BenchExec_run_h3hepne_/tmp/tmpytldsizv.c:5825:11: before: volatile
+Verdict: Parsing failed

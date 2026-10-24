@@ -1,0 +1,17 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/divine/weaver/chl-nzb-file-symm.wvr.yml/chl-nzb-file-symm.wvr.c --graphml-witness svcomp23-witness-benchmarks/tools/divine/weaver/chl-nzb-file-symm.wvr.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 45, in translate_to_c
+    apply_witness(ast, filename, witness)
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/witness2ast.py", line 256, in apply_witness
+    if any(varname in d for d in assumptions):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/witness2ast.py", line 256, in <genexpr>
+    if any(varname in d for d in assumptions):
+           ^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not ID
+Verdict: Incompatible witness

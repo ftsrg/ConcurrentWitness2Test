@@ -1,0 +1,29 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/mix026_pso.opt_rmo.opt.yml/mix026_pso.opt_rmo.opt.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/mix026_pso.opt_rmo.opt.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/__main__.py", line 146, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_59sukzle/tmp/tmpz0n1givg.c
+Compilation started
+/tmp/BenchExec_run_59sukzle/tmp/tmppbm5hv41.c: In function ‘P1’:
+/tmp/BenchExec_run_59sukzle/tmp/tmppbm5hv41.c:770:57: error: ‘FALSE’ undeclared (first use in this function)
+  770 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                         ^    
+/tmp/BenchExec_run_59sukzle/tmp/tmppbm5hv41.c:770:57: note: each undeclared identifier is reported only once for each function it appears in
+/tmp/BenchExec_run_59sukzle/tmp/tmppbm5hv41.c:770:62: error: expected ‘)’ before ‘;’ token
+  770 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                              ^
+      |                                                              )
+/tmp/BenchExec_run_59sukzle/tmp/tmppbm5hv41.c:771:62: error: expected ‘)’ before ‘;’ token
+  771 |   weak$$choice2 = __VERIFIER_nondet_bool();
+      |                                                              ^
+      |                                                              )
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

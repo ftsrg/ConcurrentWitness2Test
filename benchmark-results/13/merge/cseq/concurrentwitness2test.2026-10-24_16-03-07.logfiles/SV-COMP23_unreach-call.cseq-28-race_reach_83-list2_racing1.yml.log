@@ -1,0 +1,23 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/goblint-regression/28-race_reach_83-list2_racing1.yml/28-race_reach_83-list2_racing1.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/goblint-regression/28-race_reach_83-list2_racing1.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/__main__.py", line 149, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+Witness property: unreach-call
+/tmp/BenchExec_run_c1z4plrq/tmp/tmpz9xs32rx.c
+Compilation started
+/tmp/BenchExec_run_c1z4plrq/tmp/tmpj8kreiwm.c:1009:8: error: redefinition of ‘struct s’
+ 1009 | void init (struct s *p) {
+      |        ^
+/tmp/BenchExec_run_c1z4plrq/tmp/tmpj8kreiwm.c:1005:8: note: originally defined here
+ 1005 | struct s {
+      |        ^
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

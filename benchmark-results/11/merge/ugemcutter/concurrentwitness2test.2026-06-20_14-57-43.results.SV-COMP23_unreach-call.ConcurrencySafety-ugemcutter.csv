@@ -1,0 +1,297 @@
+tool	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-ugemcutter	SV-COMP23_unreach-call.ConcurrencySafety-ugemcutter	SV-COMP23_unreach-call.ConcurrencySafety-ugemcutter	SV-COMP23_unreach-call.ConcurrencySafety-ugemcutter
+../svcomp23-witness-benchmarks/tools/ugemcutter/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/ugemcutter-13-privatized_18-first-reads_unknown_1_neg.yml	false(unreach-call)	2.234267	5.409371815	74.080256
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/ugemcutter-13-privatized_18-first-reads_unknown_1_pos.yml	ERROR(ineffective witness)	2.233803	5.419962026	67.870720
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/ugemcutter-13-privatized_18-first-reads_unknown_2_neg.yml	ERROR(ineffective witness)	2.207017	5.495732736000001	66.846720
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/ugemcutter-13-privatized_18-first-reads_unknown_2_pos.yml	false(unreach-call)	2.223157	5.425025245999997	66.600960
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/ugemcutter-13-privatized_19-publish-precision_unknown_1_neg.yml	TIMEOUT	2.054189	46.02926937299999	66.928640
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/ugemcutter-13-privatized_19-publish-precision_unknown_1_pos.yml	TIMEOUT	2.053637	46.013307625	69.251072
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/ugemcutter-13-privatized_19-publish-precision_unknown_2_neg.yml	TIMEOUT	2.056695	46.028889303999996	78.925824
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/ugemcutter-13-privatized_19-publish-precision_unknown_2_pos.yml	TIMEOUT	2.061503	46.03678987	70.012928
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/ugemcutter-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false(unreach-call)	2.202145	5.298112965999998	73.170944
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/ugemcutter-13-privatized_41-traces-ex-7_unknown_1_pos.yml	TIMEOUT	2.059384	46.033627714	67.821568
+goblint-regression/13-privatized_67-pthread_cond_wait_true.yml/ugemcutter-13-privatized_67-pthread_cond_wait_true.yml	TIMEOUT	2.281812	46.015215457	69.058560
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_neg.yml/ugemcutter-13-privatized_67-pthread_cond_wait_unknown_1_neg.yml	TIMEOUT	2.24437	46.005489958999995	66.789376
+goblint-regression/13-privatized_67-pthread_cond_wait_unknown_1_pos.yml/ugemcutter-13-privatized_67-pthread_cond_wait_unknown_1_pos.yml	TIMEOUT	2.239961	46.020387563	67.710976
+goblint-regression/28-race_reach_45-escape_racing.yml/ugemcutter-28-race_reach_45-escape_racing.yml	ERROR(ineffective witness)	2.159374	3.0349301680000025	68.247552
+goblint-regression/28-race_reach_94-alloc_region_racing.yml/ugemcutter-28-race_reach_94-alloc_region_racing.yml	TIMEOUT	2.270817	46.022942992	69.480448
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/ugemcutter-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	TIMEOUT	1.258097	46.016967723	66.998272
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/ugemcutter-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	TIMEOUT	2.023358	46.01466338899999	68.517888
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/ugemcutter-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	ERROR(ineffective witness)	2.135836	2.603273999999999	70.066176
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/ugemcutter-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	ERROR(ineffective witness)	2.12032	2.694841287999992	66.850816
+ldv-races/race-1_2-join.yml/ugemcutter-race-1_2-join.yml	TIMEOUT	2.258018	46.010269933000004	68.624384
+ldv-races/race-1_3-join.yml/ugemcutter-race-1_3-join.yml	ERROR(ineffective witness)	2.3114	2.963057915999997	68.952064
+ldv-races/race-2_2-container_of.yml/ugemcutter-race-2_2-container_of.yml	TIMEOUT	2.321377	46.01495224200001	68.030464
+ldv-races/race-2_3-container_of.yml/ugemcutter-race-2_3-container_of.yml	TIMEOUT	1.777916	46.01060810999999	69.107712
+ldv-races/race-2_4-container_of.yml/ugemcutter-race-2_4-container_of.yml	TIMEOUT	2.204258	46.014434088	66.752512
+ldv-races/race-2_5-container_of.yml/ugemcutter-race-2_5-container_of.yml	TIMEOUT	2.677083	46.01437210099999	66.953216
+ldv-races/race-3_2-container_of-global.yml/ugemcutter-race-3_2-container_of-global.yml	TIMEOUT	2.709461	46.012648416999994	66.867200
+pthread-C-DAC/pthread-demo-datarace-3.yml/ugemcutter-pthread-demo-datarace-3.yml	TIMEOUT	3.534533	46.013601325999986	68.042752
+pthread-atomic/read_write_lock-2.yml/ugemcutter-read_write_lock-2.yml	TIMEOUT	2.176371	46.015920255	67.768320
+pthread-deagle/arithmetic_prog_bad.yml/ugemcutter-arithmetic_prog_bad.yml	TIMEOUT	1.533681	46.01686212499999	67.977216
+pthread-deagle/circular_buffer_bad.yml/ugemcutter-circular_buffer_bad.yml	TIMEOUT	1.560453	46.019273295999994	67.174400
+pthread-driver-races/char_generic_nvram_read_nvram_write_nvram.yml/ugemcutter-char_generic_nvram_read_nvram_write_nvram.yml	ERROR(Compilation error)	7.639929	11.200049326999988	83.238912
+pthread-ext/25_stack_longer-1.yml/ugemcutter-25_stack_longer-1.yml	false(unreach-call)	2.806654	4.541310627999991	70.021120
+pthread-ext/25_stack_longest-2.yml/ugemcutter-25_stack_longest-2.yml	false(unreach-call)	3.070875	6.73160823500001	66.629632
+pthread-ext/26_stack_cas_longer-1.yml/ugemcutter-26_stack_cas_longer-1.yml	TIMEOUT	2.376113	46.00978412400002	67.416064
+pthread-ext/26_stack_cas_longest-1.yml/ugemcutter-26_stack_cas_longest-1.yml	TIMEOUT	2.405256	46.06955884500002	68.538368
+pthread-ext/40_barrier_vf.yml/ugemcutter-40_barrier_vf.yml	TIMEOUT	2.34032	46.163825594	68.603904
+pthread-lit/qw2004-2b.yml/ugemcutter-qw2004-2b.yml	TIMEOUT	2.506409	46.009714126000006	67.989504
+pthread-wmm/mix000.oepc.yml/ugemcutter-mix000.oepc.yml	ERROR(ineffective witness)	3.367065	24.235137812000005	69.038080
+pthread-wmm/mix000.opt.yml/ugemcutter-mix000.opt.yml	ERROR(ineffective witness)	2.865396	9.23130987799999	68.759552
+pthread-wmm/mix001.oepc.yml/ugemcutter-mix001.oepc.yml	ERROR(ineffective witness)	3.232033	15.926522113999994	66.969600
+pthread-wmm/mix001.opt.yml/ugemcutter-mix001.opt.yml	ERROR(ineffective witness)	3.07135	11.243887134000005	67.006464
+pthread-wmm/mix002.oepc.yml/ugemcutter-mix002.oepc.yml	false(unreach-call)	3.248759	20.83196786299999	70.422528
+pthread-wmm/mix002.opt.yml/ugemcutter-mix002.opt.yml	ERROR(ineffective witness)	2.903209	6.2925526949999835	67.825664
+pthread-wmm/mix003.oepc.yml/ugemcutter-mix003.oepc.yml	false(unreach-call)	3.225547	34.168776495	68.026368
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/ugemcutter-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	ERROR(ineffective witness)	2.832106	5.530010324000017	67.928064
+pthread-wmm/mix004.oepc.yml/ugemcutter-mix004.oepc.yml	false(unreach-call)	3.329301	20.149732027	68.743168
+pthread-wmm/mix004.opt.yml/ugemcutter-mix004.opt.yml	ERROR(ineffective witness)	3.080032	8.078020713	68.964352
+pthread-wmm/mix005.opt.yml/ugemcutter-mix005.opt.yml	ERROR(ineffective witness)	3.105699	14.112770523999984	67.891200
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix005_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.374037	36.836996167999985	67.899392
+pthread-wmm/mix005_tso.oepc.yml/ugemcutter-mix005_tso.oepc.yml	false(unreach-call)	3.159531	18.770848424999997	67.088384
+pthread-wmm/mix006.opt.yml/ugemcutter-mix006.opt.yml	ERROR(ineffective witness)	2.794921	4.327785672999994	68.767744
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.042072	26.291676311999993	69.353472
+pthread-wmm/mix006_tso.oepc.yml/ugemcutter-mix006_tso.oepc.yml	ERROR(ineffective witness)	3.531877	29.566135912999982	68.542464
+pthread-wmm/mix007.oepc.yml/ugemcutter-mix007.oepc.yml	TIMEOUT	3.28651	46.02667279399998	66.748416
+pthread-wmm/mix007.opt.yml/ugemcutter-mix007.opt.yml	ERROR(ineffective witness)	3.061209	17.189536049000026	66.879488
+pthread-wmm/mix008.opt.yml/ugemcutter-mix008.opt.yml	TIMEOUT	3.158371	46.01928591699999	66.744320
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix008_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	3.201489	46.04087237799999	67.932160
+pthread-wmm/mix008_tso.oepc.yml/ugemcutter-mix008_tso.oepc.yml	ERROR(ineffective witness)	3.502768	15.02240076000001	67.420160
+pthread-wmm/mix009.oepc.yml/ugemcutter-mix009.oepc.yml	TIMEOUT	2.818256	46.080616195000005	68.747264
+pthread-wmm/mix009.opt.yml/ugemcutter-mix009.opt.yml	ERROR(ineffective witness)	2.935078	33.45491472200001	67.768320
+pthread-wmm/mix010.oepc.yml/ugemcutter-mix010.oepc.yml	TIMEOUT	2.881989	46.015284038999994	68.874240
+pthread-wmm/mix010.opt.yml/ugemcutter-mix010.opt.yml	ERROR(ineffective witness)	2.872231	8.677581279000009	67.895296
+pthread-wmm/mix011.opt.yml/ugemcutter-mix011.opt.yml	ERROR(ineffective witness)	2.899964	18.62967075900002	69.881856
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.897857	38.09315492099998	66.715648
+pthread-wmm/mix011_tso.oepc.yml/ugemcutter-mix011_tso.oepc.yml	false(unreach-call)	2.968951	22.404987893999987	67.702784
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/ugemcutter-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	TIMEOUT	2.720317	46.01799936900002	67.756032
+pthread-wmm/mix012_pso.opt_tso.opt.yml/ugemcutter-mix012_pso.opt_tso.opt.yml	ERROR(ineffective witness)	2.792775	33.09891864000002	69.038080
+pthread-wmm/mix013.oepc.yml/ugemcutter-mix013.oepc.yml	TIMEOUT	2.958335	46.098425917000014	66.797568
+pthread-wmm/mix013.opt.yml/ugemcutter-mix013.opt.yml	TIMEOUT	2.911106	46.01225177699999	67.837952
+pthread-wmm/mix014.opt.yml/ugemcutter-mix014.opt.yml	ERROR(ineffective witness)	3.02077	13.823205520000016	67.944448
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix014_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	3.041769	46.015477834999984	68.734976
+pthread-wmm/mix014_tso.oepc.yml/ugemcutter-mix014_tso.oepc.yml	ERROR(ineffective witness)	3.555378	37.10109449400002	70.934528
+pthread-wmm/mix015.oepc.yml/ugemcutter-mix015.oepc.yml	false(unreach-call)	2.972324	26.230002818999992	67.907584
+pthread-wmm/mix015.opt.yml/ugemcutter-mix015.opt.yml	ERROR(ineffective witness)	2.815429	6.536639490999988	68.972544
+pthread-wmm/mix016.oepc.yml/ugemcutter-mix016.oepc.yml	false(unreach-call)	2.966523	34.69524802500001	68.136960
+pthread-wmm/mix016_power.opt_rmo.opt.yml/ugemcutter-mix016_power.opt_rmo.opt.yml	false(unreach-call)	2.759145	3.7780241520000004	67.911680
+pthread-wmm/mix016_pso.opt_tso.opt.yml/ugemcutter-mix016_pso.opt_tso.opt.yml	ERROR(ineffective witness)	2.873028	37.385257577999994	67.895296
+pthread-wmm/mix017.oepc.yml/ugemcutter-mix017.oepc.yml	TIMEOUT	2.825918	46.025370229999965	66.854912
+pthread-wmm/mix017_power.opt_rmo.opt.yml/ugemcutter-mix017_power.opt_rmo.opt.yml	false(unreach-call)	3.021878	20.188088926999967	66.609152
+pthread-wmm/mix017_pso.opt_tso.opt.yml/ugemcutter-mix017_pso.opt_tso.opt.yml	TIMEOUT	2.95626	46.09532698300001	67.768320
+pthread-wmm/mix018.opt.yml/ugemcutter-mix018.opt.yml	ERROR(ineffective witness)	3.044959	29.796554680999975	68.976640
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix018_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.925343	46.01359279899998	68.710400
+pthread-wmm/mix018_tso.oepc.yml/ugemcutter-mix018_tso.oepc.yml	TIMEOUT	2.990985	46.012969199999986	67.932160
+pthread-wmm/mix019.opt.yml/ugemcutter-mix019.opt.yml	TIMEOUT	2.815926	46.069197479000024	66.719744
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix019_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.915799	46.04669213	67.846144
+pthread-wmm/mix019_tso.oepc.yml/ugemcutter-mix019_tso.oepc.yml	false(unreach-call)	2.908187	24.82943244500001	68.706304
+pthread-wmm/mix020.oepc.yml/ugemcutter-mix020.oepc.yml	TIMEOUT	3.073306	46.01390386500003	67.788800
+pthread-wmm/mix020.opt.yml/ugemcutter-mix020.opt.yml	ERROR(ineffective witness)	3.026955	22.55252555300001	68.874240
+pthread-wmm/mix021.opt.yml/ugemcutter-mix021.opt.yml	ERROR(ineffective witness)	2.993778	36.80851104300001	67.989504
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix021_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	3.08264	46.00985135500002	68.943872
+pthread-wmm/mix021_tso.oepc.yml/ugemcutter-mix021_tso.oepc.yml	false(unreach-call)	2.947215	37.539761474000045	66.785280
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.531119	46.09788022800001	66.617344
+pthread-wmm/mix022_tso.yml/ugemcutter-mix022_tso.yml	TIMEOUT	2.719454	46.014240121	67.100672
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix023_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	3.048094	46.006965562999994	66.822144
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/ugemcutter-mix023_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	3.184869	36.217173093999975	67.682304
+pthread-wmm/mix023_tso.yml/ugemcutter-mix023_tso.yml	TIMEOUT	3.501558	46.011377702000004	68.628480
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/ugemcutter-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false(unreach-call)	2.957368	27.64316619599998	69.017600
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/ugemcutter-mix024_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.894477	42.440711314	66.695168
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/ugemcutter-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false(unreach-call)	3.135516	33.93983633700003	67.936256
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/ugemcutter-mix025_pso.opt_rmo.opt.yml	TIMEOUT	2.841349	46.012318757	66.523136
+pthread-wmm/mix026.oepc.yml/ugemcutter-mix026.oepc.yml	TIMEOUT	2.901616	46.09812419899998	66.830336
+pthread-wmm/mix026_power.opt_tso.opt.yml/ugemcutter-mix026_power.opt_tso.opt.yml	false(unreach-call)	3.037434	37.12096869200002	67.698688
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/ugemcutter-mix026_pso.opt_rmo.opt.yml	false(unreach-call)	2.980945	42.35955030299999	66.699264
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix027_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.937954	46.07916142200003	68.743168
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/ugemcutter-mix027_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	3.103984	40.12409556800003	67.645440
+pthread-wmm/mix027_tso.yml/ugemcutter-mix027_tso.yml	TIMEOUT	2.935095	46.012430650000056	67.809280
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix028_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.81449	46.01660559300001	67.776512
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/ugemcutter-mix028_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.845718	9.724038540000038	68.898816
+pthread-wmm/mix028_tso.yml/ugemcutter-mix028_tso.yml	ERROR(ineffective witness)	2.858994	32.924799140000005	66.797568
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/ugemcutter-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	TIMEOUT	2.990099	46.01225742699995	68.796416
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/ugemcutter-mix029_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.907422	10.325861900000007	67.850240
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix030_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.762009	46.02258841899999	67.936256
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/ugemcutter-mix030_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.886201	27.309261655	68.755456
+pthread-wmm/mix030_tso.yml/ugemcutter-mix030_tso.yml	TIMEOUT	3.019252	46.012410251000006	67.252224
+pthread-wmm/mix031.oepc.yml/ugemcutter-mix031.oepc.yml	TIMEOUT	2.664527	46.01757743100001	66.740224
+pthread-wmm/mix031.opt.yml/ugemcutter-mix031.opt.yml	false(unreach-call)	2.659015	4.324951793000025	68.734976
+pthread-wmm/mix032.oepc.yml/ugemcutter-mix032.oepc.yml	TIMEOUT	2.666437	46.025796096999954	68.784128
+pthread-wmm/mix032.opt.yml/ugemcutter-mix032.opt.yml	false(unreach-call)	2.825811	21.740886714999988	66.490368
+pthread-wmm/mix033.opt.yml/ugemcutter-mix033.opt.yml	false(unreach-call)	2.856206	25.869703311000023	67.932160
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.968328	43.970939483999985	67.272704
+pthread-wmm/mix033_tso.oepc.yml/ugemcutter-mix033_tso.oepc.yml	false(unreach-call)	2.939964	30.620126362000008	68.784128
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/ugemcutter-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	TIMEOUT	2.607164	46.04666376100005	70.000640
+pthread-wmm/mix034_pso.opt_tso.opt.yml/ugemcutter-mix034_pso.opt_tso.opt.yml	false(unreach-call)	2.560515	3.0203114959999766	68.767744
+pthread-wmm/mix035.oepc.yml/ugemcutter-mix035.oepc.yml	TIMEOUT	2.683638	46.102265445	68.775936
+pthread-wmm/mix035_power.opt_rmo.opt.yml/ugemcutter-mix035_power.opt_rmo.opt.yml	false(unreach-call)	2.854849	44.719699874000014	66.609152
+pthread-wmm/mix035_pso.opt_tso.opt.yml/ugemcutter-mix035_pso.opt_tso.opt.yml	false(unreach-call)	2.658159	3.2618776940000203	67.563520
+pthread-wmm/mix036.oepc.yml/ugemcutter-mix036.oepc.yml	TIMEOUT	2.936632	46.17400581200002	68.968448
+pthread-wmm/mix036_power.opt_rmo.opt.yml/ugemcutter-mix036_power.opt_rmo.opt.yml	TIMEOUT	2.86493	46.03617983100003	67.690496
+pthread-wmm/mix036_pso.opt_tso.opt.yml/ugemcutter-mix036_pso.opt_tso.opt.yml	TIMEOUT	3.080727	46.13723676799998	67.796992
+pthread-wmm/mix037.opt.yml/ugemcutter-mix037.opt.yml	false(unreach-call)	3.097132	44.47446211800002	68.599808
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix037_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.994207	46.01490826899999	68.964352
+pthread-wmm/mix037_tso.oepc.yml/ugemcutter-mix037_tso.oepc.yml	TIMEOUT	2.969042	46.121049948999996	66.854912
+pthread-wmm/mix038.opt.yml/ugemcutter-mix038.opt.yml	false(unreach-call)	2.85733	32.57025605199999	69.779456
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix038_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.74522	46.02582391400006	67.735552
+pthread-wmm/mix038_tso.oepc.yml/ugemcutter-mix038_tso.oepc.yml	false(unreach-call)	2.917507	25.240381760000048	68.005888
+pthread-wmm/mix039.oepc.yml/ugemcutter-mix039.oepc.yml	TIMEOUT	3.038539	46.01159659899997	66.748416
+pthread-wmm/mix039.opt.yml/ugemcutter-mix039.opt.yml	TIMEOUT (false(unreach-call))	2.912964	46.013133323999966	66.678784
+pthread-wmm/mix040.opt.yml/ugemcutter-mix040.opt.yml	TIMEOUT (false(unreach-call))	3.113681	46.06565917400002	66.674688
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix040_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.939132	46.03846575700004	69.083136
+pthread-wmm/mix040_tso.oepc.yml/ugemcutter-mix040_tso.oepc.yml	false(unreach-call)	2.968289	41.51500383399997	68.820992
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix041_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.585629	46.221062716999995	66.715648
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ugemcutter-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.633048	46.10986604599998	68.792320
+pthread-wmm/mix042.oepc.yml/ugemcutter-mix042.oepc.yml	TIMEOUT	2.659745	46.01369002800004	69.070848
+pthread-wmm/mix042.opt.yml/ugemcutter-mix042.opt.yml	false(unreach-call)	2.770782	12.837486717000047	67.956736
+pthread-wmm/mix043.oepc.yml/ugemcutter-mix043.oepc.yml	false(unreach-call)	3.243179	41.621080796	69.160960
+pthread-wmm/mix043.opt.yml/ugemcutter-mix043.opt.yml	false(unreach-call)	3.060434	25.697523614000033	68.902912
+pthread-wmm/mix044.opt.yml/ugemcutter-mix044.opt.yml	false(unreach-call)	2.975481	24.32527600900005	68.837376
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix044_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.767664	46.013084866999975	68.755456
+pthread-wmm/mix044_tso.oepc.yml/ugemcutter-mix044_tso.oepc.yml	false(unreach-call)	3.107476	32.61177789399994	66.723840
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix045_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.888168	46.02362033299994	68.980736
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ugemcutter-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	2.682142	13.577273253000044	68.771840
+pthread-wmm/mix046.oepc.yml/ugemcutter-mix046.oepc.yml	TIMEOUT	3.07717	46.783606706	69.406720
+pthread-wmm/mix046.opt.yml/ugemcutter-mix046.opt.yml	false(unreach-call)	2.949024	25.978125428999988	66.723840
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix047_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.911201	46.01451493100001	66.818048
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ugemcutter-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	3.06214	36.76777976000005	69.165056
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/ugemcutter-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.683766	46.011872065000034	67.907584
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/ugemcutter-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	2.833976	21.068395650999946	67.764224
+pthread-wmm/mix050.yml/ugemcutter-mix050.yml	TIMEOUT	2.805189	46.013279022000006	68.706304
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/ugemcutter-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	TIMEOUT	2.796581	46.01153692499997	67.825664
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/ugemcutter-mix051_pso.opt_rmo.opt_tso.opt.yml	false(unreach-call)	2.953297	31.513704041999972	68.808704
+pthread-wmm/mix051_tso.oepc.yml/ugemcutter-mix051_tso.oepc.yml	TIMEOUT	2.86146	46.01273735500001	68.886528
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/ugemcutter-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false(unreach-call)	3.0001	32.08573255400006	67.756032
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/ugemcutter-mix052_pso.opt_rmo.opt_tso.opt.yml	false(unreach-call)	2.719115	26.95739168299997	67.883008
+pthread-wmm/mix052_tso.oepc.yml/ugemcutter-mix052_tso.oepc.yml	false(unreach-call)	2.795839	32.48758004699994	68.952064
+pthread-wmm/mix053.opt.yml/ugemcutter-mix053.opt.yml	false(unreach-call)	2.806244	43.78461150999999	66.617344
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix053_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.990607	46.01281161500003	67.796992
+pthread-wmm/mix053_tso.oepc.yml/ugemcutter-mix053_tso.oepc.yml	false(unreach-call)	3.010286	28.125673868000035	68.927488
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/ugemcutter-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	TIMEOUT	2.449042	46.010193542000025	68.833280
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ugemcutter-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.511727	46.01029552900002	69.038080
+pthread-wmm/mix055.opt.yml/ugemcutter-mix055.opt.yml	false(unreach-call)	2.942784	18.528984644000047	66.834432
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix055_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	3.171687	46.013981469999976	68.861952
+pthread-wmm/mix055_tso.oepc.yml/ugemcutter-mix055_tso.oepc.yml	TIMEOUT	2.904372	46.08480518399995	67.772416
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.805385	38.15610351099997	68.067328
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ugemcutter-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	2.698555	3.059860823000008	68.870144
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-mix057_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	3.043076	46.021802654	69.906432
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ugemcutter-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false(unreach-call)	2.938984	39.68669904800004	66.715648
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.659627	46.021244380999974	67.268608
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/ugemcutter-rfi000_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.572313	46.01557857	66.732032
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.465558	46.01288153199994	66.727936
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ugemcutter-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.556416	46.01796435699998	68.796416
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.697646	27.672180439000044	68.710400
+pthread-wmm/rfi004.yml/ugemcutter-rfi004.yml	false(unreach-call)	2.628659	3.346016445000032	67.538944
+pthread-wmm/rfi005.yml/ugemcutter-rfi005.yml	TIMEOUT	2.324691	46.01493428399999	68.739072
+pthread-wmm/rfi006_power.oepc.yml/ugemcutter-rfi006_power.oepc.yml	TIMEOUT	2.825022	46.23594725600003	66.699264
+pthread-wmm/rfi006_power.opt.yml/ugemcutter-rfi006_power.opt.yml	ERROR(ineffective witness)	2.924935	10.548712489999957	66.707456
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/ugemcutter-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	2.850329	19.542816010000024	66.834432
+pthread-wmm/rfi006_rmo.yml/ugemcutter-rfi006_rmo.yml	TIMEOUT	2.808686	46.013381767000055	66.650112
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.571313	46.11522198700004	66.707456
+pthread-wmm/rfi007_tso.yml/ugemcutter-rfi007_tso.yml	TIMEOUT	2.612524	46.01932855899997	67.760128
+pthread-wmm/rfi008.oepc.yml/ugemcutter-rfi008.oepc.yml	TIMEOUT	2.612529	46.08475368299992	68.780032
+pthread-wmm/rfi008.opt.yml/ugemcutter-rfi008.opt.yml	ERROR(ineffective witness)	2.787374	36.60574882099991	68.747264
+pthread-wmm/rfi009_power.oepc.yml/ugemcutter-rfi009_power.oepc.yml	ERROR(ineffective witness)	3.097499	36.21575797899993	67.772416
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/ugemcutter-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	ERROR(ineffective witness)	2.84506	14.217255749999936	68.808704
+pthread-wmm/rfi009_rmo.oepc.yml/ugemcutter-rfi009_rmo.oepc.yml	ERROR(ineffective witness)	2.867887	27.630205338999986	66.490368
+pthread-wmm/rfi010.yml/ugemcutter-rfi010.yml	ERROR(ineffective witness)	2.632741	13.383400581999922	67.731456
+pthread-wmm/safe000_power.oepc.yml/ugemcutter-safe000_power.oepc.yml	ERROR(ineffective witness)	3.022608	30.960352683999986	69.021696
+pthread-wmm/safe000_power.opt.yml/ugemcutter-safe000_power.opt.yml	TIMEOUT	2.767584	46.01233492699998	69.062656
+pthread-wmm/safe000_rmo.yml/ugemcutter-safe000_rmo.yml	TIMEOUT	2.941478	46.008618221000006	69.378048
+pthread-wmm/safe001_power.oepc.yml/ugemcutter-safe001_power.oepc.yml	ERROR(ineffective witness)	3.192183	44.686452395999936	67.031040
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/ugemcutter-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false(unreach-call)	2.881362	15.110926559999939	67.702784
+pthread-wmm/safe001_rmo.oepc.yml/ugemcutter-safe001_rmo.oepc.yml	TIMEOUT	3.079497	46.02163937600005	69.107712
+pthread-wmm/safe002_power.oepc.yml/ugemcutter-safe002_power.oepc.yml	ERROR(ineffective witness)	3.313556	34.066623364000066	69.226496
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/ugemcutter-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false(unreach-call)	2.920742	27.358947352000087	67.604480
+pthread-wmm/safe002_rmo.oepc.yml/ugemcutter-safe002_rmo.oepc.yml	TIMEOUT (ERROR(ineffective witness))	3.055081	45.10288300100001	68.988928
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.975988	46.12969788600003	69.128192
+pthread-wmm/safe003_power.opt.yml/ugemcutter-safe003_power.opt.yml	TIMEOUT	3.097592	46.06313218799994	68.825088
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-safe004_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.701813	46.019348788	67.272704
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/ugemcutter-safe004_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.754591	39.65258463199996	67.854336
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.772928	23.464004814999953	67.637248
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/ugemcutter-safe006_power.oepc-thin000_power.oepc.yml	ERROR(ineffective witness)	2.68753	13.090270624000027	69.033984
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/ugemcutter-safe006_power.opt-thin000_power.opt.yml	TIMEOUT	2.684173	46.01574376099995	66.727936
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/ugemcutter-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	ERROR(ineffective witness)	2.637835	17.083200283999986	67.604480
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/ugemcutter-safe007_power.oepc-thin001_power.oepc.yml	ERROR(ineffective witness)	2.931073	41.6202829529999	69.070848
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/ugemcutter-safe007_power.opt-thin001_power.opt.yml	ERROR(ineffective witness)	2.977806	10.564012822999985	66.830336
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/ugemcutter-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	TIMEOUT	2.800562	46.295292699000015	66.789376
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.672479	46.00850708500002	66.985984
+pthread-wmm/safe008_power.opt.yml/ugemcutter-safe008_power.opt.yml	TIMEOUT	2.889976	46.01545050499999	66.924544
+pthread-wmm/safe009_power.oepc.yml/ugemcutter-safe009_power.oepc.yml	TIMEOUT	2.740481	46.027236481000045	68.763648
+pthread-wmm/safe009_power.opt.yml/ugemcutter-safe009_power.opt.yml	TIMEOUT	2.889319	46.211124990999906	68.935680
+pthread-wmm/safe009_rmo.oepc.yml/ugemcutter-safe009_rmo.oepc.yml	ERROR(ineffective witness)	3.067258	34.06584669199992	68.784128
+pthread-wmm/safe009_rmo.opt.yml/ugemcutter-safe009_rmo.opt.yml	TIMEOUT	2.850871	46.03685058999997	68.685824
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.520494	46.01502278299995	66.736128
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/ugemcutter-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	TIMEOUT	2.684038	46.01414717499995	68.763648
+pthread-wmm/safe011_power.opt_pso.opt.yml/ugemcutter-safe011_power.opt_pso.opt.yml	false(unreach-call)	2.836075	23.903690331000007	66.670592
+pthread-wmm/safe012_power.oepc.yml/ugemcutter-safe012_power.oepc.yml	ERROR(ineffective witness)	2.884467	29.66982143200005	67.530752
+pthread-wmm/safe012_power.opt.yml/ugemcutter-safe012_power.opt.yml	TIMEOUT	2.760537	46.012693937999984	68.042752
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/ugemcutter-safe012_pso.oepc_pso.opt_rmo.opt.yml	false(unreach-call)	2.692421	3.119950349000078	67.584000
+pthread-wmm/safe012_rmo.oepc.yml/ugemcutter-safe012_rmo.oepc.yml	ERROR(ineffective witness)	2.775662	39.09814066599995	68.722688
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.711145	35.556339880999985	67.788800
+pthread-wmm/safe014_power.oepc.yml/ugemcutter-safe014_power.oepc.yml	TIMEOUT	2.689644	46.01827939499992	66.760704
+pthread-wmm/safe014_power.opt.yml/ugemcutter-safe014_power.opt.yml	ERROR(ineffective witness)	2.893808	16.290826915000025	68.784128
+pthread-wmm/safe014_rmo.oepc.yml/ugemcutter-safe014_rmo.oepc.yml	ERROR(ineffective witness)	2.745968	3.8890742649999765	66.416640
+pthread-wmm/safe014_rmo.opt.yml/ugemcutter-safe014_rmo.opt.yml	ERROR(ineffective witness)	3.033259	5.22650218299998	68.378624
+pthread-wmm/safe015_power.oepc.yml/ugemcutter-safe015_power.oepc.yml	false(unreach-call)	3.148838	6.128175222999971	69.525504
+pthread-wmm/safe015_power.opt.yml/ugemcutter-safe015_power.opt.yml	ERROR(ineffective witness)	3.063045	8.453995545999987	69.009408
+pthread-wmm/safe015_rmo.yml/ugemcutter-safe015_rmo.yml	ERROR(ineffective witness)	3.045323	18.957371736999903	67.940352
+pthread-wmm/safe016_power.oepc.yml/ugemcutter-safe016_power.oepc.yml	ERROR(ineffective witness)	3.358346	43.77004740699999	67.977216
+pthread-wmm/safe016_power.opt.yml/ugemcutter-safe016_power.opt.yml	TIMEOUT	3.330742	46.03323343599993	68.190208
+pthread-wmm/safe016_rmo.oepc.yml/ugemcutter-safe016_rmo.oepc.yml	TIMEOUT	3.056504	46.147575710999945	67.768320
+pthread-wmm/safe016_rmo.opt.yml/ugemcutter-safe016_rmo.opt.yml	ERROR(ineffective witness)	3.193777	44.540356738000014	68.046848
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.721907	46.01231132600003	69.132288
+pthread-wmm/safe018_power.oepc.yml/ugemcutter-safe018_power.oepc.yml	ERROR(ineffective witness)	2.894647	19.42110139500005	67.481600
+pthread-wmm/safe018_power.opt.yml/ugemcutter-safe018_power.opt.yml	ERROR(ineffective witness)	3.021725	37.41343557000005	68.005888
+pthread-wmm/safe018_rmo.oepc.yml/ugemcutter-safe018_rmo.oepc.yml	ERROR(ineffective witness)	2.885484	36.184341829999994	67.600384
+pthread-wmm/safe018_rmo.opt.yml/ugemcutter-safe018_rmo.opt.yml	ERROR(ineffective witness)	2.889184	37.78197394699998	68.984832
+pthread-wmm/safe019_power.oepc.yml/ugemcutter-safe019_power.oepc.yml	TIMEOUT	3.082328	46.01422167800001	67.907584
+pthread-wmm/safe019_power.opt.yml/ugemcutter-safe019_power.opt.yml	TIMEOUT	3.112829	46.16242695999995	68.272128
+pthread-wmm/safe019_rmo.oepc.yml/ugemcutter-safe019_rmo.oepc.yml	TIMEOUT	2.788477	46.01883548799992	67.973120
+pthread-wmm/safe019_rmo.opt.yml/ugemcutter-safe019_rmo.opt.yml	ERROR(ineffective witness)	3.237864	37.86189088200001	67.887104
+pthread-wmm/safe020_power.yml/ugemcutter-safe020_power.yml	ERROR(ineffective witness)	3.114746	29.603929151999978	66.707456
+pthread-wmm/safe020_rmo.yml/ugemcutter-safe020_rmo.yml	ERROR(ineffective witness)	2.982701	27.757895990000065	67.792896
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/ugemcutter-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	TIMEOUT	2.779125	46.02454633399998	66.936832
+pthread-wmm/safe021_power.opt_pso.opt.yml/ugemcutter-safe021_power.opt_pso.opt.yml	false(unreach-call)	3.01221	27.86216662000004	67.813376
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.662357	46.01916204400004	66.899968
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	3.145444	35.24816074099999	69.201920
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.904808	35.845479603999934	68.722688
+pthread-wmm/safe025_power.yml/ugemcutter-safe025_power.yml	TIMEOUT	2.690276	46.241294007999954	68.001792
+pthread-wmm/safe025_rmo.yml/ugemcutter-safe025_rmo.yml	ERROR(ineffective witness)	3.064511	24.28072874499992	67.051520
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.909589	46.05163514500009	66.646016
+pthread-wmm/safe027_power.oepc.yml/ugemcutter-safe027_power.oepc.yml	TIMEOUT	3.15823	46.30679411599999	66.891776
+pthread-wmm/safe027_power.opt.yml/ugemcutter-safe027_power.opt.yml	TIMEOUT	3.344766	46.35188588899996	68.988928
+pthread-wmm/safe027_rmo.yml/ugemcutter-safe027_rmo.yml	TIMEOUT	2.837585	46.15544924599999	67.760128
+pthread-wmm/safe028_power.yml/ugemcutter-safe028_power.yml	ERROR(ineffective witness)	2.888275	23.565974557000004	67.842048
+pthread-wmm/safe028_rmo.yml/ugemcutter-safe028_rmo.yml	ERROR(ineffective witness)	2.885673	3.9869799240000248	67.883008
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-safe029_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.554729	46.232313947999955	66.867200
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/ugemcutter-safe029_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.596494	46.07184978400005	68.689920
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-safe030_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.675409	46.28981994200001	68.640768
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/ugemcutter-safe030_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.787934	9.23109256500004	66.691072
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/ugemcutter-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false(unreach-call)	2.742794	25.526278528000034	68.673536
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/ugemcutter-safe031_power.opt_pso.opt_rmo.opt.yml	false(unreach-call)	2.685177	17.0985021219999	67.829760
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	3.035523	36.365268954000044	69.107712
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.553574	3.052543116000038	66.547712
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/ugemcutter-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false(unreach-call)	2.795841	24.164976906999982	66.478080
+pthread-wmm/thin002_power.oepc.yml/ugemcutter-thin002_power.oepc.yml	ERROR(ineffective witness)	3.348432	37.58833919599999	67.719168
+pthread-wmm/thin002_power.opt.yml/ugemcutter-thin002_power.opt.yml	ERROR(ineffective witness)	3.204943	26.994488093999962	66.727936
+pthread-wmm/thin002_rmo.yml/ugemcutter-thin002_rmo.yml	ERROR(ineffective witness)	3.000217	28.782152730999996	68.825088
+pthread/fib_unsafe-10.yml/ugemcutter-fib_unsafe-10.yml	TIMEOUT	3.081272	46.01319364999995	68.661248
+pthread/fib_unsafe-11.yml/ugemcutter-fib_unsafe-11.yml	TIMEOUT	3.221684	46.015209320000054	69.615616
+pthread/fib_unsafe-12.yml/ugemcutter-fib_unsafe-12.yml	TIMEOUT	3.331033	46.010073627	66.334720
+pthread/fib_unsafe-5.yml/ugemcutter-fib_unsafe-5.yml	TIMEOUT	2.671637	46.135040419000006	66.478080
+pthread/fib_unsafe-6.yml/ugemcutter-fib_unsafe-6.yml	TIMEOUT	2.739281	47.66459241600012	68.702208
+pthread/fib_unsafe-7.yml/ugemcutter-fib_unsafe-7.yml	TIMEOUT	2.848509	46.01302056400016	66.662400
+pthread/lazy01.yml/ugemcutter-lazy01.yml	false(unreach-call)	2.178635	3.4123399610000433	68.292608
+pthread/reorder_2.yml/ugemcutter-reorder_2.yml	ERROR(ineffective witness)	2.440345	3.097298087000013	68.681728
+pthread/reorder_5.yml/ugemcutter-reorder_5.yml	ERROR(ineffective witness)	2.545963	4.241376744000036	68.820992
+pthread/singleton.yml/ugemcutter-singleton.yml	TIMEOUT	2.300254	46.02654653600007	69.648384
+pthread/stack-2.yml/ugemcutter-stack-2.yml	TIMEOUT	3.149446	46.016863013000034	66.441216
+pthread/stateful01-1.yml/ugemcutter-stateful01-1.yml	false(unreach-call)	2.283065	4.189539592000074	66.551808
+pthread/triangular-2.yml/ugemcutter-triangular-2.yml	TIMEOUT	2.256486	46.03319897199992	68.505600
+pthread/triangular-longer-2.yml/ugemcutter-triangular-longer-2.yml	TIMEOUT	2.34895	46.12344986200003	68.620288
+pthread/triangular-longest-2.yml/ugemcutter-triangular-longest-2.yml	TIMEOUT	2.750865	46.014449259	66.568192
+pthread/twostage_3.yml/ugemcutter-twostage_3.yml	ERROR(ineffective witness)	2.636658	3.0668869889998405	68.759552
+weaver/parallel-barrier-loop.wvr.yml/ugemcutter-parallel-barrier-loop.wvr.yml	TIMEOUT	2.035158	46.01077375099999	66.428928
+weaver/popl20-bad-counter-queue.wvr.yml/ugemcutter-popl20-bad-counter-queue.wvr.yml	TIMEOUT	1.956908	46.015424950999886	66.277376

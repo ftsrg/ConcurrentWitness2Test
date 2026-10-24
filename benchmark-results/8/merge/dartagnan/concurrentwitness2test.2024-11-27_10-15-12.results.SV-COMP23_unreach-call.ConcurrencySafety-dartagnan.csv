@@ -1,0 +1,288 @@
+tool		ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0	ConcurrentWitness2Test 1.0
+run set		SV-COMP23_unreach-call.ConcurrencySafety-dartagnan	SV-COMP23_unreach-call.ConcurrencySafety-dartagnan	SV-COMP23_unreach-call.ConcurrencySafety-dartagnan	SV-COMP23_unreach-call.ConcurrencySafety-dartagnan
+../svcomp23-witness-benchmarks/tools/dartagnan/		status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/dartagnan-13-privatized_18-first-reads_unknown_1_neg.yml	false	false(unreach-call)	0.647221	1.493311736999999	63.279104
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/dartagnan-13-privatized_18-first-reads_unknown_1_pos.yml	false	ERROR(ineffective witness)	0.649531	1.4566194880000012	58.372096
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/dartagnan-13-privatized_18-first-reads_unknown_2_neg.yml	false	ERROR(ineffective witness)	0.646451	1.4799265809999866	58.789888
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/dartagnan-13-privatized_18-first-reads_unknown_2_pos.yml	false	false(unreach-call)	0.580878	1.4519224390000005	35.844096
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/dartagnan-13-privatized_19-publish-precision_unknown_1_neg.yml	false	false(unreach-call)	0.565529	1.4275484159999934	41.086976
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/dartagnan-13-privatized_19-publish-precision_unknown_1_pos.yml	false	TIMEOUT	0.499132	46.02078688	60.186624
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/dartagnan-13-privatized_19-publish-precision_unknown_2_neg.yml	false	TIMEOUT	0.496344	46.013557296	58.322944
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/dartagnan-13-privatized_19-publish-precision_unknown_2_pos.yml	false	false(unreach-call)	0.64198	1.3951439129999983	66.367488
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/dartagnan-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false	false(unreach-call)	0.650571	1.4607863979999962	59.236352
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/dartagnan-13-privatized_41-traces-ex-7_unknown_1_pos.yml	false	TIMEOUT	0.414267	46.05232649300001	35.442688
+goblint-regression/28-race_reach_45-escape_racing.yml/dartagnan-28-race_reach_45-escape_racing.yml	false	ERROR(ineffective witness)	0.591447	0.9167609379999959	34.684928
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/dartagnan-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	false	TIMEOUT	0.428509	46.01549349400001	34.652160
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/dartagnan-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false	false(unreach-call)	0.556014	1.0251690199999928	34.623488
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/dartagnan-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	false	ERROR(ineffective witness)	0.532663	1.0430639549999938	34.603008
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/dartagnan-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false	false(unreach-call)	0.561294	0.9564201089999926	34.738176
+ldv-races/race-1_2-join.yml/dartagnan-race-1_2-join.yml	false	TIMEOUT	0.599459	46.02315786700001	35.942400
+ldv-races/race-1_3-join.yml/dartagnan-race-1_3-join.yml	false	ERROR(ineffective witness)	0.741701	1.1983511119999974	35.905536
+ldv-races/race-2_2-container_of.yml/dartagnan-race-2_2-container_of.yml	false	TIMEOUT	0.718642	46.015493062999994	35.946496
+ldv-races/race-2_3-container_of.yml/dartagnan-race-2_3-container_of.yml	false	ERROR(ineffective witness)	0.960544	16.418145955	36.057088
+ldv-races/race-2_4-container_of.yml/dartagnan-race-2_4-container_of.yml	false	ERROR(ineffective witness)	0.940989	16.400145570999996	35.840000
+ldv-races/race-2_5-container_of.yml/dartagnan-race-2_5-container_of.yml	false	ERROR(ineffective witness)	0.962185	15.664936855999997	35.880960
+ldv-races/race-3_2-container_of-global.yml/dartagnan-race-3_2-container_of-global.yml	false	TIMEOUT	0.753745	46.02128052600001	35.897344
+pthread-C-DAC/pthread-demo-datarace-3.yml/dartagnan-pthread-demo-datarace-3.yml	false	TIMEOUT	0.749225	46.022988909000006	35.975168
+pthread-atomic/read_write_lock-2.yml/dartagnan-read_write_lock-2.yml	false	TIMEOUT	0.360744	46.01150332399999	34.779136
+pthread-deagle/arithmetic_prog_bad.yml/dartagnan-arithmetic_prog_bad.yml	false	TIMEOUT	0.393741	46.014587706	35.385344
+pthread-deagle/circular_buffer_bad.yml/dartagnan-circular_buffer_bad.yml	false	TIMEOUT	0.456795	46.03978195900001	34.680832
+pthread-ext/25_stack_longer-1.yml/dartagnan-25_stack_longer-1.yml	false	false(unreach-call)	0.468484	0.46098852400001533	35.090432
+pthread-ext/26_stack_cas_longer-1.yml/dartagnan-26_stack_cas_longer-1.yml	false	TIMEOUT	0.447507	46.011900104999995	34.865152
+pthread-ext/28_buggy_simple_loop1_vf.yml/dartagnan-28_buggy_simple_loop1_vf.yml	false	TIMEOUT	26.394611	46.01519609100001	2313.170944
+pthread-ext/40_barrier_vf.yml/dartagnan-40_barrier_vf.yml	false	TIMEOUT	22.778311	45.091345937	221.597696
+pthread-lit/qw2004-2b.yml/dartagnan-qw2004-2b.yml	false	TIMEOUT	0.482254	46.01679643200001	34.676736
+pthread-wmm/mix000.oepc.yml/dartagnan-mix000.oepc.yml	false	ERROR(ineffective witness)	0.903038	1.9471451199999876	35.577856
+pthread-wmm/mix000.opt.yml/dartagnan-mix000.opt.yml	false	ERROR(ineffective witness)	0.886574	2.6515154800000005	35.516416
+pthread-wmm/mix001.oepc.yml/dartagnan-mix001.oepc.yml	false	ERROR(ineffective witness)	1.00322	1.2937736580000205	35.786752
+pthread-wmm/mix001.opt.yml/dartagnan-mix001.opt.yml	false	ERROR(ineffective witness)	0.93802	1.0973165009999946	35.487744
+pthread-wmm/mix002.oepc.yml/dartagnan-mix002.oepc.yml	false	false(unreach-call)	0.967658	1.2385100699999896	35.614720
+pthread-wmm/mix002.opt.yml/dartagnan-mix002.opt.yml	false	ERROR(ineffective witness)	0.972063	1.8535188140000116	35.508224
+pthread-wmm/mix003.oepc.yml/dartagnan-mix003.oepc.yml	false	false(unreach-call)	0.932098	1.302143335000011	35.491840
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/dartagnan-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.906658	1.6090964980000138	35.561472
+pthread-wmm/mix004.oepc.yml/dartagnan-mix004.oepc.yml	false	false(unreach-call)	1.045193	1.4683309079999844	35.614720
+pthread-wmm/mix004.opt.yml/dartagnan-mix004.opt.yml	false	ERROR(ineffective witness)	0.993647	1.2392429949999837	35.655680
+pthread-wmm/mix005.opt.yml/dartagnan-mix005.opt.yml	false	ERROR(ineffective witness)	0.938732	1.1051350070000012	35.545088
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix005_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.023347	1.8548166630000082	35.700736
+pthread-wmm/mix005_tso.oepc.yml/dartagnan-mix005_tso.oepc.yml	false	false(unreach-call)	1.022051	1.3586885689999804	35.987456
+pthread-wmm/mix006.opt.yml/dartagnan-mix006.opt.yml	false	ERROR(ineffective witness)	0.913445	1.0748098120000122	35.512320
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix006_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	0.9025	1.370540057999989	35.479552
+pthread-wmm/mix006_tso.oepc.yml/dartagnan-mix006_tso.oepc.yml	false	ERROR(ineffective witness)	1.281604	1.8164439869999853	36.904960
+pthread-wmm/mix007.oepc.yml/dartagnan-mix007.oepc.yml	false	false(unreach-call)	0.994704	1.188868809000013	35.647488
+pthread-wmm/mix007.opt.yml/dartagnan-mix007.opt.yml	false	ERROR(ineffective witness)	0.935331	1.116158946000013	35.729408
+pthread-wmm/mix008.opt.yml/dartagnan-mix008.opt.yml	false	ERROR(ineffective witness)	0.98547	1.2275396590000014	35.598336
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix008_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.046114	1.306533029999997	35.528704
+pthread-wmm/mix008_tso.oepc.yml/dartagnan-mix008_tso.oepc.yml	false	ERROR(ineffective witness)	1.383897	1.9772974550000129	36.724736
+pthread-wmm/mix009.oepc.yml/dartagnan-mix009.oepc.yml	false	false(unreach-call)	0.849739	1.5367316109999933	35.405824
+pthread-wmm/mix009.opt.yml/dartagnan-mix009.opt.yml	false	ERROR(ineffective witness)	0.923614	2.9581299429999888	35.483648
+pthread-wmm/mix010.oepc.yml/dartagnan-mix010.oepc.yml	false	false(unreach-call)	0.950166	3.579181220999999	35.565568
+pthread-wmm/mix010.opt.yml/dartagnan-mix010.opt.yml	false	ERROR(ineffective witness)	0.980435	3.5519136199999934	35.639296
+pthread-wmm/mix011.opt.yml/dartagnan-mix011.opt.yml	false	ERROR(ineffective witness)	0.981133	2.7974245620000033	35.463168
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix011_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	0.996024	2.4447426730000075	35.401728
+pthread-wmm/mix011_tso.oepc.yml/dartagnan-mix011_tso.oepc.yml	false	false(unreach-call)	0.967042	2.2683173259999876	35.594240
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/dartagnan-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	false(unreach-call)	0.858833	2.5527871179999977	35.229696
+pthread-wmm/mix012_pso.opt_tso.opt.yml/dartagnan-mix012_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.896572	1.7810426679999978	35.434496
+pthread-wmm/mix013.oepc.yml/dartagnan-mix013.oepc.yml	false	false(unreach-call)	1.066196	3.2692398430000082	35.741696
+pthread-wmm/mix013.opt.yml/dartagnan-mix013.opt.yml	false	ERROR(ineffective witness)	1.037996	2.6009530320000067	35.688448
+pthread-wmm/mix014.opt.yml/dartagnan-mix014.opt.yml	false	ERROR(ineffective witness)	1.018026	2.7850630699999783	35.708928
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix014_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.065158	2.296188213999983	35.569664
+pthread-wmm/mix014_tso.oepc.yml/dartagnan-mix014_tso.oepc.yml	false	ERROR(ineffective witness)	1.416575	3.5688732630000004	36.765696
+pthread-wmm/mix015.oepc.yml/dartagnan-mix015.oepc.yml	false	false(unreach-call)	0.989713	2.9819724740000026	35.762176
+pthread-wmm/mix015.opt.yml/dartagnan-mix015.opt.yml	false	ERROR(ineffective witness)	0.991385	3.118860199000011	35.872768
+pthread-wmm/mix016.oepc.yml/dartagnan-mix016.oepc.yml	false	false(unreach-call)	0.929461	1.7230598650000104	35.483648
+pthread-wmm/mix016_power.opt_rmo.opt.yml/dartagnan-mix016_power.opt_rmo.opt.yml	false	false(unreach-call)	0.979413	3.0182263339999906	35.131392
+pthread-wmm/mix016_pso.opt_tso.opt.yml/dartagnan-mix016_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	0.974706	2.472274404000018	35.610624
+pthread-wmm/mix017.oepc.yml/dartagnan-mix017.oepc.yml	false	false(unreach-call)	1.029161	2.007167399999986	35.684352
+pthread-wmm/mix017_power.opt_rmo.opt.yml/dartagnan-mix017_power.opt_rmo.opt.yml	false	false(unreach-call)	0.97497	1.8941866220000065	35.409920
+pthread-wmm/mix017_pso.opt_tso.opt.yml/dartagnan-mix017_pso.opt_tso.opt.yml	false	ERROR(ineffective witness)	1.052055	1.8628348940000024	35.516416
+pthread-wmm/mix018.opt.yml/dartagnan-mix018.opt.yml	false	ERROR(ineffective witness)	1.034248	1.9824768790000178	35.733504
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix018_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.029461	2.005042900999996	35.561472
+pthread-wmm/mix018_tso.oepc.yml/dartagnan-mix018_tso.oepc.yml	false	ERROR(ineffective witness)	1.056848	2.120700551999988	35.594240
+pthread-wmm/mix019.opt.yml/dartagnan-mix019.opt.yml	false	ERROR(ineffective witness)	0.940627	2.059975043999998	35.631104
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix019_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	0.956071	1.7495173609999881	35.475456
+pthread-wmm/mix019_tso.oepc.yml/dartagnan-mix019_tso.oepc.yml	false	false(unreach-call)	0.969442	2.0752612889999966	35.438592
+pthread-wmm/mix020.oepc.yml/dartagnan-mix020.oepc.yml	false	false(unreach-call)	1.087349	2.0445772040000065	35.721216
+pthread-wmm/mix020.opt.yml/dartagnan-mix020.opt.yml	false	ERROR(ineffective witness)	1.013823	2.011985982999988	35.651584
+pthread-wmm/mix021.opt.yml/dartagnan-mix021.opt.yml	false	ERROR(ineffective witness)	1.025688	2.01334885	35.708928
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix021_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.062786	1.8814390020000076	35.520512
+pthread-wmm/mix021_tso.oepc.yml/dartagnan-mix021_tso.oepc.yml	false	ERROR(ineffective witness)	1.021736	3.4877839289999883	35.663872
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	0.870672	1.6598750360000167	35.315712
+pthread-wmm/mix022_tso.yml/dartagnan-mix022_tso.yml	false	ERROR(ineffective witness)	0.933567	3.5358137460000023	35.647488
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix023_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.049413	2.9130334430000175	35.713024
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/dartagnan-mix023_power.opt_pso.opt_rmo.opt.yml	false	false(unreach-call)	0.990334	2.0510575959999926	35.487744
+pthread-wmm/mix023_tso.yml/dartagnan-mix023_tso.yml	false	ERROR(ineffective witness)	1.484343	2.687297417999986	36.986880
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/dartagnan-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	false(unreach-call)	0.967293	2.29570412999999	35.590144
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/dartagnan-mix024_power.opt_pso.opt_rmo.opt.yml	false	false(unreach-call)	0.916148	1.5199874099999988	35.332096
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/dartagnan-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	false(unreach-call)	0.952073	1.7389425639999843	35.528704
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/dartagnan-mix025_pso.opt_rmo.opt.yml	false	false(unreach-call)	0.907702	1.5892910449999818	35.213312
+pthread-wmm/mix026.oepc.yml/dartagnan-mix026.oepc.yml	false	false(unreach-call)	1.037498	2.1767149069999903	35.729408
+pthread-wmm/mix026_power.opt_tso.opt.yml/dartagnan-mix026_power.opt_tso.opt.yml	false	false(unreach-call)	1.019258	2.295493435999987	35.516416
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/dartagnan-mix026_pso.opt_rmo.opt.yml	false	false(unreach-call)	0.989721	1.8743438930000025	35.397632
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix027_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.050026	2.578059010000004	35.659776
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/dartagnan-mix027_power.opt_pso.opt_rmo.opt.yml	false	false(unreach-call)	0.976381	2.8952926979999916	35.401728
+pthread-wmm/mix027_tso.yml/dartagnan-mix027_tso.yml	false	ERROR(ineffective witness)	1.067569	4.434026802999995	35.512320
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix028_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	0.958507	2.2187038599999767	35.442688
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/dartagnan-mix028_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.953527	3.1397616369999923	35.536896
+pthread-wmm/mix028_tso.yml/dartagnan-mix028_tso.yml	false	ERROR(ineffective witness)	1.000476	3.134338735	35.676160
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/dartagnan-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	false	false(unreach-call)	1.078756	2.6320087550000153	35.733504
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/dartagnan-mix029_power.opt_pso.opt_rmo.opt.yml	false	false(unreach-call)	1.024184	1.8609022289999757	35.450880
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix030_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.066341	2.570796616999985	35.643392
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/dartagnan-mix030_power.opt_pso.opt_rmo.opt.yml	false	false(unreach-call)	1.011877	1.9513356970000189	35.631104
+pthread-wmm/mix030_tso.yml/dartagnan-mix030_tso.yml	false	ERROR(ineffective witness)	1.075274	4.65754395099998	35.819520
+pthread-wmm/mix031.oepc.yml/dartagnan-mix031.oepc.yml	false	false(unreach-call)	0.90997	3.6572410199999865	35.340288
+pthread-wmm/mix031.opt.yml/dartagnan-mix031.opt.yml	false	false(unreach-call)	0.853176	3.5777491000000055	35.135488
+pthread-wmm/mix032.oepc.yml/dartagnan-mix032.oepc.yml	false	false(unreach-call)	0.979445	2.8954435130000036	35.504128
+pthread-wmm/mix032.opt.yml/dartagnan-mix032.opt.yml	false	false(unreach-call)	0.919465	3.5425478009999836	35.274752
+pthread-wmm/mix033.opt.yml/dartagnan-mix033.opt.yml	false	false(unreach-call)	0.896754	2.992549023999999	35.270656
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix033_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.04475	4.348520393999991	35.553280
+pthread-wmm/mix033_tso.oepc.yml/dartagnan-mix033_tso.oepc.yml	false	false(unreach-call)	1.024014	3.5351335949999907	35.598336
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/dartagnan-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	false	false(unreach-call)	0.911493	3.576809403999988	35.373056
+pthread-wmm/mix034_pso.opt_tso.opt.yml/dartagnan-mix034_pso.opt_tso.opt.yml	false	false(unreach-call)	0.874155	4.689054661	35.028992
+pthread-wmm/mix035.oepc.yml/dartagnan-mix035.oepc.yml	false	false(unreach-call)	1.035528	4.076420528999989	35.553280
+pthread-wmm/mix035_power.opt_rmo.opt.yml/dartagnan-mix035_power.opt_rmo.opt.yml	false	false(unreach-call)	0.974673	5.156794042000001	35.287040
+pthread-wmm/mix035_pso.opt_tso.opt.yml/dartagnan-mix035_pso.opt_tso.opt.yml	false	false(unreach-call)	0.956594	4.008669294999976	35.332096
+pthread-wmm/mix036.oepc.yml/dartagnan-mix036.oepc.yml	false	false(unreach-call)	1.122178	4.517865811999997	35.696640
+pthread-wmm/mix036_power.opt_rmo.opt.yml/dartagnan-mix036_power.opt_rmo.opt.yml	false	false(unreach-call)	1.013846	3.119926136999993	35.471360
+pthread-wmm/mix036_pso.opt_tso.opt.yml/dartagnan-mix036_pso.opt_tso.opt.yml	false	false(unreach-call)	0.983495	3.8075413950000154	35.364864
+pthread-wmm/mix037.opt.yml/dartagnan-mix037.opt.yml	false	false(unreach-call)	1.010736	3.484691008999988	35.356672
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix037_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.157296	7.004152041999987	35.737600
+pthread-wmm/mix037_tso.oepc.yml/dartagnan-mix037_tso.oepc.yml	false	false(unreach-call)	1.125191	3.5061030710000125	35.753984
+pthread-wmm/mix038.opt.yml/dartagnan-mix038.opt.yml	false	false(unreach-call)	0.941815	4.716779801000001	35.278848
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix038_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.020928	3.888938914000022	35.512320
+pthread-wmm/mix038_tso.oepc.yml/dartagnan-mix038_tso.oepc.yml	false	false(unreach-call)	1.022252	3.2883230370000263	35.561472
+pthread-wmm/mix039.oepc.yml/dartagnan-mix039.oepc.yml	false	false(unreach-call)	1.10927	4.142812880999998	35.717120
+pthread-wmm/mix039.opt.yml/dartagnan-mix039.opt.yml	false	false(unreach-call)	0.987534	3.3224301420000018	35.377152
+pthread-wmm/mix040.opt.yml/dartagnan-mix040.opt.yml	false	false(unreach-call)	1.00897	3.490920342999999	35.368960
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix040_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.128702	3.5703244919999975	35.688448
+pthread-wmm/mix040_tso.oepc.yml/dartagnan-mix040_tso.oepc.yml	false	ERROR(ineffective witness)	1.079658	3.1103316679999864	35.794944
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix041_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	0.920199	2.9033167730000002	35.360768
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/dartagnan-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	false(unreach-call)	0.896838	2.052791362999983	35.414016
+pthread-wmm/mix042.oepc.yml/dartagnan-mix042.oepc.yml	false	false(unreach-call)	1.001237	2.3067158350000057	35.454976
+pthread-wmm/mix042.opt.yml/dartagnan-mix042.opt.yml	false	false(unreach-call)	0.939548	2.772614649000019	35.500032
+pthread-wmm/mix043.oepc.yml/dartagnan-mix043.oepc.yml	false	false(unreach-call)	1.098039	3.9389526450000005	35.700736
+pthread-wmm/mix043.opt.yml/dartagnan-mix043.opt.yml	false	ERROR(ineffective witness)	1.030717	3.4152826069999946	35.418112
+pthread-wmm/mix044.opt.yml/dartagnan-mix044.opt.yml	false	false(unreach-call)	1.030972	5.018599842999976	35.627008
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix044_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.115039	3.8084181520000016	35.700736
+pthread-wmm/mix044_tso.oepc.yml/dartagnan-mix044_tso.oepc.yml	false	ERROR(ineffective witness)	1.10933	4.507949182000004	35.766272
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix045_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	0.970522	2.3676534370000013	35.483648
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/dartagnan-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.931425	2.6085139619999893	35.426304
+pthread-wmm/mix046.oepc.yml/dartagnan-mix046.oepc.yml	false	false(unreach-call)	1.097897	3.7602683139999726	35.737600
+pthread-wmm/mix046.opt.yml/dartagnan-mix046.opt.yml	false	false(unreach-call)	1.02427	2.959739773000024	35.586048
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix047_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.138505	3.1758517240000117	35.725312
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/dartagnan-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	false(unreach-call)	1.003291	3.207812227000005	35.811328
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/dartagnan-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	false(unreach-call)	0.897115	3.0446754929999997	35.340288
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/dartagnan-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	false	false(unreach-call)	0.979904	2.8350385939999967	35.467264
+pthread-wmm/mix050.yml/dartagnan-mix050.yml	false	false(unreach-call)	1.104101	3.9512840589999882	35.717120
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/dartagnan-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.104775	3.203817275000006	35.758080
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/dartagnan-mix051_pso.opt_rmo.opt_tso.opt.yml	false	false(unreach-call)	0.953931	2.7400223089999827	35.307520
+pthread-wmm/mix051_tso.oepc.yml/dartagnan-mix051_tso.oepc.yml	false	false(unreach-call)	1.102997	4.211713463999985	35.729408
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/dartagnan-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	0.977829	2.6420973449999963	35.454976
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/dartagnan-mix052_pso.opt_rmo.opt_tso.opt.yml	false	false(unreach-call)	0.906134	2.4337791120000247	35.241984
+pthread-wmm/mix052_tso.oepc.yml/dartagnan-mix052_tso.oepc.yml	false	false(unreach-call)	0.967081	3.076442813	35.491840
+pthread-wmm/mix053.opt.yml/dartagnan-mix053.opt.yml	false	false(unreach-call)	0.970819	2.734368426000003	35.270656
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix053_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.11544	3.0383504300000084	35.700736
+pthread-wmm/mix053_tso.oepc.yml/dartagnan-mix053_tso.oepc.yml	false	false(unreach-call)	1.028314	2.7272451050000086	35.631104
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/dartagnan-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	0.881156	3.2736906199999964	35.282944
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/dartagnan-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.899994	3.6150920110000015	35.385344
+pthread-wmm/mix055.opt.yml/dartagnan-mix055.opt.yml	false	false(unreach-call)	0.992703	3.570199534999972	35.540992
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix055_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.076989	3.294146175999998	35.684352
+pthread-wmm/mix055_tso.oepc.yml/dartagnan-mix055_tso.oepc.yml	false	false(unreach-call)	1.082377	3.9346371729999987	35.708928
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix056_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	0.98783	3.1332284329999993	35.471360
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/dartagnan-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	false(unreach-call)	0.938566	3.8794543829999952	35.393536
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-mix057_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.11319	4.64026634199999	35.708928
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/dartagnan-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	1.021313	4.345986446000012	35.569664
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.076248	4.206644326000003	36.036608
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/dartagnan-rfi000_power.opt_pso.opt_rmo.opt.yml	false	false(unreach-call)	0.914146	4.542468262	35.328000
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	0.91866	4.054100403000007	35.291136
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/dartagnan-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	0.90009	2.7766464899999903	35.737600
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	0.86481	4.356394664999982	35.164160
+pthread-wmm/rfi004.yml/dartagnan-rfi004.yml	false	false(unreach-call)	0.847748	4.336604577000003	35.192832
+pthread-wmm/rfi005.yml/dartagnan-rfi005.yml	false	ERROR(ineffective witness)	0.945879	22.604132061	35.426304
+pthread-wmm/rfi006_power.oepc.yml/dartagnan-rfi006_power.oepc.yml	false	ERROR(ineffective witness)	0.971008	3.0278266740000106	35.577856
+pthread-wmm/rfi006_power.opt.yml/dartagnan-rfi006_power.opt.yml	false	ERROR(ineffective witness)	1.070957	6.922091978999987	35.590144
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/dartagnan-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	1.095947	4.552633971999995	35.745792
+pthread-wmm/rfi006_rmo.yml/dartagnan-rfi006_rmo.yml	false	ERROR(ineffective witness)	0.993234	4.4918933269999854	35.352576
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	0.908723	4.435306045999994	35.373056
+pthread-wmm/rfi007_tso.yml/dartagnan-rfi007_tso.yml	false	ERROR(ineffective witness)	0.970199	3.259391878999992	35.614720
+pthread-wmm/rfi008.oepc.yml/dartagnan-rfi008.oepc.yml	false	ERROR(ineffective witness)	1.01809	4.482646523999989	35.704832
+pthread-wmm/rfi008.opt.yml/dartagnan-rfi008.opt.yml	false	ERROR(ineffective witness)	0.961299	4.783162144999977	35.315712
+pthread-wmm/rfi009_power.oepc.yml/dartagnan-rfi009_power.oepc.yml	false	ERROR(ineffective witness)	0.975348	3.943529586000011	35.667968
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/dartagnan-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	false	ERROR(ineffective witness)	1.071832	3.503819332000006	35.622912
+pthread-wmm/rfi009_rmo.oepc.yml/dartagnan-rfi009_rmo.oepc.yml	false	ERROR(ineffective witness)	1.02381	4.750047787	35.409920
+pthread-wmm/rfi010.yml/dartagnan-rfi010.yml	false	ERROR(ineffective witness)	0.952647	3.1450316959999896	35.528704
+pthread-wmm/safe000_power.oepc.yml/dartagnan-safe000_power.oepc.yml	false	ERROR(ineffective witness)	1.155578	4.6324185330000205	36.032512
+pthread-wmm/safe000_power.opt.yml/dartagnan-safe000_power.opt.yml	false	ERROR(ineffective witness)	1.04682	4.915524038000001	35.692544
+pthread-wmm/safe000_rmo.yml/dartagnan-safe000_rmo.yml	false	ERROR(ineffective witness)	1.091113	4.040730268000004	35.938304
+pthread-wmm/safe001_power.oepc.yml/dartagnan-safe001_power.oepc.yml	false	ERROR(ineffective witness)	1.136357	4.05622649899999	36.061184
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/dartagnan-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	1.009407	3.6954480299999943	35.336192
+pthread-wmm/safe001_rmo.oepc.yml/dartagnan-safe001_rmo.oepc.yml	false	ERROR(ineffective witness)	1.130715	3.9174023389999775	35.897344
+pthread-wmm/safe002_power.oepc.yml/dartagnan-safe002_power.oepc.yml	false	ERROR(ineffective witness)	1.121842	3.291117995999997	35.995648
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/dartagnan-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	false	false(unreach-call)	0.972999	2.6417058990000157	35.311616
+pthread-wmm/safe002_rmo.oepc.yml/dartagnan-safe002_rmo.oepc.yml	false	ERROR(ineffective witness)	1.120118	3.1185052120000023	35.958784
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	1.18777	3.3265528040000163	36.106240
+pthread-wmm/safe003_power.opt.yml/dartagnan-safe003_power.opt.yml	false	ERROR(ineffective witness)	1.041629	6.9767584500000055	35.622912
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-safe004_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.179524	6.2013019799999824	36.200448
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/dartagnan-safe004_power.opt_pso.opt_rmo.opt.yml	false	false(unreach-call)	1.014222	5.2436117949999925	35.479552
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	1.011817	5.119193701	35.303424
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/dartagnan-safe006_power.oepc-thin000_power.oepc.yml	false	ERROR(ineffective witness)	0.866601	3.2969900939999945	35.258368
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/dartagnan-safe006_power.opt-thin000_power.opt.yml	false	ERROR(ineffective witness)	0.912628	4.880623525000004	35.516416
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/dartagnan-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.85022	4.513987925999999	35.151872
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/dartagnan-safe007_power.oepc-thin001_power.oepc.yml	false	ERROR(ineffective witness)	0.933892	5.444268725000001	35.340288
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/dartagnan-safe007_power.opt-thin001_power.opt.yml	false	ERROR(ineffective witness)	1.014612	4.666122282999993	35.643392
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/dartagnan-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.922997	4.083567718000012	35.270656
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	1.003061	4.47387576700001	35.520512
+pthread-wmm/safe008_power.opt.yml/dartagnan-safe008_power.opt.yml	false	ERROR(ineffective witness)	1.051633	5.7949455229999955	35.663872
+pthread-wmm/safe009_power.oepc.yml/dartagnan-safe009_power.oepc.yml	false	ERROR(ineffective witness)	1.040682	4.282192603999988	35.713024
+pthread-wmm/safe009_power.opt.yml/dartagnan-safe009_power.opt.yml	false	ERROR(ineffective witness)	1.029052	3.4280428780000136	35.663872
+pthread-wmm/safe009_rmo.oepc.yml/dartagnan-safe009_rmo.oepc.yml	false	ERROR(ineffective witness)	1.03485	5.582772801000004	35.577856
+pthread-wmm/safe009_rmo.opt.yml/dartagnan-safe009_rmo.opt.yml	false	ERROR(ineffective witness)	0.959434	4.259736471999986	35.487744
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	0.905555	3.0102668270000095	35.328000
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/dartagnan-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	1.000427	3.4260058250000043	35.655680
+pthread-wmm/safe011_power.opt_pso.opt.yml/dartagnan-safe011_power.opt_pso.opt.yml	false	ERROR(ineffective witness)	0.996567	3.116735686999988	35.549184
+pthread-wmm/safe012_power.oepc.yml/dartagnan-safe012_power.oepc.yml	false	ERROR(ineffective witness)	0.909702	2.2869593860000066	35.336192
+pthread-wmm/safe012_power.opt.yml/dartagnan-safe012_power.opt.yml	false	ERROR(ineffective witness)	0.979356	3.211050204000003	35.700736
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/dartagnan-safe012_pso.oepc_pso.opt_rmo.opt.yml	false	false(unreach-call)	0.949233	3.266524809999993	35.069952
+pthread-wmm/safe012_rmo.oepc.yml/dartagnan-safe012_rmo.oepc.yml	false	ERROR(ineffective witness)	0.88592	4.432372515999987	35.241984
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	0.944198	3.0927421349999804	35.299328
+pthread-wmm/safe014_power.oepc.yml/dartagnan-safe014_power.oepc.yml	false	ERROR(ineffective witness)	0.910277	2.8678218619999996	35.348480
+pthread-wmm/safe014_power.opt.yml/dartagnan-safe014_power.opt.yml	false	ERROR(ineffective witness)	0.952045	3.4141404970000053	35.393536
+pthread-wmm/safe014_rmo.oepc.yml/dartagnan-safe014_rmo.oepc.yml	false	ERROR(ineffective witness)	0.913636	3.473211407000008	35.246080
+pthread-wmm/safe014_rmo.opt.yml/dartagnan-safe014_rmo.opt.yml	false	ERROR(ineffective witness)	1.096262	4.154828531999982	35.942400
+pthread-wmm/safe015_power.oepc.yml/dartagnan-safe015_power.oepc.yml	false	false(unreach-call)	1.211647	4.622995101000015	36.159488
+pthread-wmm/safe015_power.opt.yml/dartagnan-safe015_power.opt.yml	false	ERROR(ineffective witness)	1.112462	4.404630996000009	36.048896
+pthread-wmm/safe015_rmo.yml/dartagnan-safe015_rmo.yml	false	ERROR(ineffective witness)	1.098454	3.0485032160000003	35.966976
+pthread-wmm/safe016_power.oepc.yml/dartagnan-safe016_power.oepc.yml	false	ERROR(ineffective witness)	1.083849	3.7893481680000036	35.840000
+pthread-wmm/safe016_power.opt.yml/dartagnan-safe016_power.opt.yml	false	ERROR(ineffective witness)	1.14762	4.1551661519999925	36.089856
+pthread-wmm/safe016_rmo.oepc.yml/dartagnan-safe016_rmo.oepc.yml	false	ERROR(ineffective witness)	1.076047	3.4563043790000165	35.676160
+pthread-wmm/safe016_rmo.opt.yml/dartagnan-safe016_rmo.opt.yml	false	ERROR(ineffective witness)	1.116092	4.522593010999998	35.983360
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	ERROR(ineffective witness)	0.967076	3.7692410380000183	35.504128
+pthread-wmm/safe018_power.oepc.yml/dartagnan-safe018_power.oepc.yml	false	ERROR(ineffective witness)	0.882749	1.5219210319999945	35.233792
+pthread-wmm/safe018_power.opt.yml/dartagnan-safe018_power.opt.yml	false	ERROR(ineffective witness)	1.062992	4.355893251000026	35.868672
+pthread-wmm/safe018_rmo.oepc.yml/dartagnan-safe018_rmo.oepc.yml	false	ERROR(ineffective witness)	0.897353	3.2065849359999845	35.217408
+pthread-wmm/safe018_rmo.opt.yml/dartagnan-safe018_rmo.opt.yml	false	ERROR(ineffective witness)	0.999473	3.063881882000004	35.614720
+pthread-wmm/safe019_power.oepc.yml/dartagnan-safe019_power.oepc.yml	false	ERROR(ineffective witness)	1.081759	3.363494813000017	35.827712
+pthread-wmm/safe019_power.opt.yml/dartagnan-safe019_power.opt.yml	false	ERROR(ineffective witness)	1.169608	3.694335225000003	35.987456
+pthread-wmm/safe019_rmo.oepc.yml/dartagnan-safe019_rmo.oepc.yml	false	ERROR(ineffective witness)	1.081923	3.32336612200001	35.692544
+pthread-wmm/safe019_rmo.opt.yml/dartagnan-safe019_rmo.opt.yml	false	ERROR(ineffective witness)	1.104066	2.7939496890000157	35.733504
+pthread-wmm/safe020_power.yml/dartagnan-safe020_power.yml	false	ERROR(ineffective witness)	1.056109	3.889849714999997	35.811328
+pthread-wmm/safe020_rmo.yml/dartagnan-safe020_rmo.yml	false	ERROR(ineffective witness)	1.009904	2.700732742000014	35.647488
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/dartagnan-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	0.977867	2.7102018939999937	35.487744
+pthread-wmm/safe021_power.opt_pso.opt.yml/dartagnan-safe021_power.opt_pso.opt.yml	false	false(unreach-call)	0.95583	3.5451585410000064	35.479552
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	0.8676	2.3640774520000036	35.364864
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	1.181855	3.5473684709999986	36.171776
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	0.954861	3.3829270040000097	35.360768
+pthread-wmm/safe025_power.yml/dartagnan-safe025_power.yml	false	false(unreach-call)	1.203148	3.751617027000009	36.126720
+pthread-wmm/safe025_rmo.yml/dartagnan-safe025_rmo.yml	false	ERROR(ineffective witness)	1.082433	5.263495583000008	36.016128
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	0.986157	4.2160356130000025	35.491840
+pthread-wmm/safe027_power.oepc.yml/dartagnan-safe027_power.oepc.yml	false	ERROR(ineffective witness)	1.032162	4.637941355999999	35.500032
+pthread-wmm/safe027_power.opt.yml/dartagnan-safe027_power.opt.yml	false	ERROR(ineffective witness)	1.213119	9.029140262999988	35.979264
+pthread-wmm/safe027_rmo.yml/dartagnan-safe027_rmo.yml	false	ERROR(ineffective witness)	1.039467	5.7166372629999955	35.553280
+pthread-wmm/safe028_power.yml/dartagnan-safe028_power.yml	false	ERROR(ineffective witness)	1.091009	5.148761882000002	36.020224
+pthread-wmm/safe028_rmo.yml/dartagnan-safe028_rmo.yml	false	ERROR(ineffective witness)	1.025257	4.2390265020000015	35.631104
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-safe029_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	0.892939	3.119607079000019	35.397632
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/dartagnan-safe029_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.889433	3.3392579710000234	35.397632
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-safe030_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	1.013251	3.470176268999978	35.532800
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/dartagnan-safe030_power.opt_pso.opt_rmo.opt.yml	false	false(unreach-call)	0.954368	3.7748906639999973	35.422208
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/dartagnan-safe031_power.oepc_pso.oepc_rmo.oepc.yml	false	false(unreach-call)	0.95063	4.0956126840000024	35.368960
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/dartagnan-safe031_power.opt_pso.opt_rmo.opt.yml	false	ERROR(ineffective witness)	0.950723	2.897375860000011	35.409920
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	1.126404	6.236451886999959	36.016128
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	0.852345	4.411296472000004	35.393536
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/dartagnan-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	false	false(unreach-call)	0.917077	4.500889406999988	35.274752
+pthread-wmm/thin002_power.oepc.yml/dartagnan-thin002_power.oepc.yml	false	ERROR(ineffective witness)	1.006878	4.367370094999984	35.475456
+pthread-wmm/thin002_power.opt.yml/dartagnan-thin002_power.opt.yml	false	ERROR(ineffective witness)	1.048151	3.43619173700003	35.741696
+pthread-wmm/thin002_rmo.yml/dartagnan-thin002_rmo.yml	false	ERROR(ineffective witness)	0.983418	4.085132259999966	35.307520
+pthread/fib_unsafe-5.yml/dartagnan-fib_unsafe-5.yml	false	TIMEOUT	1.129916	46.09171333100002	35.315712
+pthread/fib_unsafe-6.yml/dartagnan-fib_unsafe-6.yml	false	TIMEOUT	1.243311	46.02373795700001	35.409920
+pthread/fib_unsafe-7.yml/dartagnan-fib_unsafe-7.yml	false	TIMEOUT	1.353884	46.029522626000016	35.471360
+pthread/lazy01.yml/dartagnan-lazy01.yml	false	TIMEOUT	0.446146	46.01671972400004	34.668544
+pthread/queue.yml/dartagnan-queue.yml	false	TIMEOUT	0.685721	46.072461626000006	35.172352
+pthread/queue_longer.yml/dartagnan-queue_longer.yml	false	TIMEOUT	0.690975	46.16815579300004	35.225600
+pthread/singleton.yml/dartagnan-singleton.yml	false	TIMEOUT	0.637361	46.06784935400003	35.295232
+pthread/stack-2.yml/dartagnan-stack-2.yml	false	false(unreach-call)	0.698779	1.1922643429999766	35.213312
+pthread/stack_longer-1.yml/dartagnan-stack_longer-1.yml	false	ERROR(ineffective witness)	0.683079	1.0679453650000141	35.127296
+pthread/stack_longest-1.yml/dartagnan-stack_longest-1.yml	false	false(unreach-call)	0.553069	0.56841682299995	35.311616
+pthread/stateful01-1.yml/dartagnan-stateful01-1.yml	false	TIMEOUT	0.387602	46.014524859999995	34.418688
+pthread/triangular-2.yml/dartagnan-triangular-2.yml	false	TIMEOUT	0.406954	46.010029589	34.754560
+pthread/triangular-longer-2.yml/dartagnan-triangular-longer-2.yml	false	TIMEOUT	0.365654	46.01344406300001	34.967552
+weaver/chl-sre-symm.wvr.yml/dartagnan-chl-sre-symm.wvr.yml	true	TIMEOUT	0.22732	46.01105994300002	34.373632
+weaver/chl-sre-trans.wvr.yml/dartagnan-chl-sre-trans.wvr.yml	true	TIMEOUT	0.234486	46.018031553000014	34.480128

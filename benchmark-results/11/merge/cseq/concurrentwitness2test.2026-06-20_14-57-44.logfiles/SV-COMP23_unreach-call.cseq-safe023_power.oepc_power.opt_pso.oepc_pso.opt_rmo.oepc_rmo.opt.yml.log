@@ -1,0 +1,29 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/__main__.py", line 120, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_hki6ldi5/tmp/tmpxrsdg3di.c
+Compilation started
+/tmp/BenchExec_run_hki6ldi5/tmp/tmpxrsdg3di.c: In function ‘P0’:
+/tmp/BenchExec_run_hki6ldi5/tmp/tmpxrsdg3di.c:576:19: error: ‘FALSE’ undeclared (first use in this function)
+  576 |   weak$$choice0 = FALSE;;
+      |                   ^~~~~
+/tmp/BenchExec_run_hki6ldi5/tmp/tmpxrsdg3di.c:576:19: note: each undeclared identifier is reported only once for each function it appears in
+/tmp/BenchExec_run_hki6ldi5/tmp/tmpxrsdg3di.c: In function ‘P2’:
+/tmp/BenchExec_run_hki6ldi5/tmp/tmpxrsdg3di.c:646:19: error: ‘FALSE’ undeclared (first use in this function)
+  646 |   weak$$choice0 = FALSE;;
+      |                   ^~~~~
+/tmp/BenchExec_run_hki6ldi5/tmp/tmpxrsdg3di.c: In function ‘main’:
+/tmp/BenchExec_run_hki6ldi5/tmp/tmpxrsdg3di.c:720:19: error: ‘FALSE’ undeclared (first use in this function)
+  720 |   weak$$choice0 = FALSE;;
+      |                   ^~~~~
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

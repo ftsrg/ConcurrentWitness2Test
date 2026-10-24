@@ -1,0 +1,14 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/divine/weaver/popl20-bad-threaded-sum-2.wvr.yml/popl20-bad-threaded-sum-2.wvr.c --graphml-witness svcomp23-witness-benchmarks/tools/divine/weaver/popl20-bad-threaded-sum-2.wvr.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/main.py", line 45, in translate_to_c
+    apply_witness(ast, filename, witness)
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/witness2ast.py", line 263, in apply_witness
+    type=ret_type, value=assumptions[varname]
+                         ~~~~~~~~~~~^^^^^^^^^
+KeyError: 's'
+Verdict: Incompatible witness

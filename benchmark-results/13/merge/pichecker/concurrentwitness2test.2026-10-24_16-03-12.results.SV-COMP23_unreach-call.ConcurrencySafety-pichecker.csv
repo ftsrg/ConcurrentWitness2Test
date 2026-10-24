@@ -1,0 +1,272 @@
+tool	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0	ConcurrentWitness2Test 2.0
+run set	SV-COMP23_unreach-call.ConcurrencySafety-pichecker	SV-COMP23_unreach-call.ConcurrencySafety-pichecker	SV-COMP23_unreach-call.ConcurrencySafety-pichecker	SV-COMP23_unreach-call.ConcurrencySafety-pichecker
+../svcomp23-witness-benchmarks/tools/pichecker/	status	cputime (s)	walltime (s)	memory (MB)
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/pichecker-13-privatized_18-first-reads_unknown_1_neg.yml	false(unreach-call)	2.251226	5.690942124000003	71.536640
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/pichecker-13-privatized_18-first-reads_unknown_1_pos.yml	ERROR(ineffective witness)	2.269414	5.794446264000001	68.694016
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/pichecker-13-privatized_18-first-reads_unknown_2_neg.yml	ERROR(ineffective witness)	2.26786	5.726834968999995	68.972544
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/pichecker-13-privatized_18-first-reads_unknown_2_pos.yml	false(unreach-call)	2.252096	5.792182245999996	67.624960
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/pichecker-13-privatized_19-publish-precision_unknown_1_neg.yml	false(unreach-call)	2.231427	5.562689997000007	67.522560
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/pichecker-13-privatized_19-publish-precision_unknown_1_pos.yml	ERROR(ineffective witness)	2.269376	5.737687719999997	81.616896
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/pichecker-13-privatized_19-publish-precision_unknown_2_neg.yml	ERROR(ineffective witness)	2.257447	5.691963477999991	69.476352
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/pichecker-13-privatized_19-publish-precision_unknown_2_pos.yml	false(unreach-call)	2.239655	5.599016434999996	70.672384
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/pichecker-13-privatized_41-traces-ex-7_unknown_1_neg.yml	false(unreach-call)	2.243517	5.671357150999995	73.121792
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/pichecker-13-privatized_41-traces-ex-7_unknown_1_pos.yml	TIMEOUT	2.07305	46.03407832799999	68.866048
+goblint-regression/28-race_reach_45-escape_racing.yml/pichecker-28-race_reach_45-escape_racing.yml	ERROR(ineffective witness)	2.297936	5.358124463999999	68.833280
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/pichecker-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml	ERROR(ineffective witness)	2.255824	5.177149542999999	68.857856
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/pichecker-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml	false(unreach-call)	2.246759	4.795966227000008	67.870720
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/pichecker-36-apron_41-threadenter-no-locals_unknown_1_neg.yml	ERROR(ineffective witness)	2.269928	5.500861016999991	68.595712
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/pichecker-36-apron_41-threadenter-no-locals_unknown_1_pos.yml	false(unreach-call)	2.268875	5.436069767999996	67.870720
+ldv-races/race-1_2-join.yml/pichecker-race-1_2-join.yml	ERROR(ineffective witness)	2.516804	5.772352030999997	68.042752
+ldv-races/race-1_3-join.yml/pichecker-race-1_3-join.yml	ERROR(ineffective witness)	2.510836	5.250851472000008	68.091904
+ldv-races/race-2_3-container_of.yml/pichecker-race-2_3-container_of.yml	TIMEOUT	2.992043	46.032567841	67.989504
+ldv-races/race-2_4-container_of.yml/pichecker-race-2_4-container_of.yml	TIMEOUT	2.983942	46.03351220100001	68.968448
+ldv-races/race-2_5-container_of.yml/pichecker-race-2_5-container_of.yml	TIMEOUT	2.758466	46.029638545	68.816896
+pthread-C-DAC/pthread-demo-datarace-3.yml/pichecker-pthread-demo-datarace-3.yml	false(unreach-call)	3.170478	15.04455396600001	68.014080
+pthread-atomic/read_write_lock-2.yml/pichecker-read_write_lock-2.yml	ERROR(ineffective witness)	2.452605	16.96819200099999	67.547136
+pthread-ext/28_buggy_simple_loop1_vf.yml/pichecker-28_buggy_simple_loop1_vf.yml	TIMEOUT	35.777069	46.043176112	1801.871360
+pthread-lit/qw2004-2b.yml/pichecker-qw2004-2b.yml	ERROR(ineffective witness)	2.478865	13.702854828	67.371008
+pthread-wmm/mix000.oepc.yml/pichecker-mix000.oepc.yml	TIMEOUT	2.43528	46.04788240799999	69.292032
+pthread-wmm/mix000.opt.yml/pichecker-mix000.opt.yml	TIMEOUT	2.391866	46.071110061	68.009984
+pthread-wmm/mix001.oepc.yml/pichecker-mix001.oepc.yml	TIMEOUT	2.327822	46.01450304699999	68.964352
+pthread-wmm/mix001.opt.yml/pichecker-mix001.opt.yml	TIMEOUT	2.304999	46.021160337	67.764224
+pthread-wmm/mix002.oepc.yml/pichecker-mix002.oepc.yml	TIMEOUT	2.446603	46.02884618900001	67.854336
+pthread-wmm/mix002.opt.yml/pichecker-mix002.opt.yml	TIMEOUT	2.181651	46.012244155999994	68.984832
+pthread-wmm/mix003.oepc.yml/pichecker-mix003.oepc.yml	TIMEOUT	2.33619	46.07445943500001	67.842048
+pthread-wmm/mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml/pichecker-mix003_power.opt_pso.opt_rmo.opt_tso.opt.yml	TIMEOUT	2.201902	46.068167743000004	69.017600
+pthread-wmm/mix004.oepc.yml/pichecker-mix004.oepc.yml	TIMEOUT	2.610688	46.01833663299999	68.145152
+pthread-wmm/mix004.opt.yml/pichecker-mix004.opt.yml	TIMEOUT	2.458458	46.02819719300001	67.907584
+pthread-wmm/mix005.opt.yml/pichecker-mix005.opt.yml	TIMEOUT	2.518478	46.02472557200001	69.025792
+pthread-wmm/mix005_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix005_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.471597	46.032385868999995	67.907584
+pthread-wmm/mix005_tso.oepc.yml/pichecker-mix005_tso.oepc.yml	TIMEOUT	2.410643	46.014964469000006	68.927488
+pthread-wmm/mix006.opt.yml/pichecker-mix006.opt.yml	TIMEOUT	2.269009	46.02175171600001	68.030464
+pthread-wmm/mix006_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix006_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.107442	46.67836124600001	68.214784
+pthread-wmm/mix006_tso.oepc.yml/pichecker-mix006_tso.oepc.yml	TIMEOUT	2.065918	46.068055093	69.570560
+pthread-wmm/mix007.oepc.yml/pichecker-mix007.oepc.yml	TIMEOUT	2.35692	46.02370994	68.837376
+pthread-wmm/mix007.opt.yml/pichecker-mix007.opt.yml	TIMEOUT	2.248414	46.029848817000016	69.136384
+pthread-wmm/mix008.opt.yml/pichecker-mix008.opt.yml	TIMEOUT	2.206993	46.047808032999995	68.128768
+pthread-wmm/mix008_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix008_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.225285	46.041458844000005	67.862528
+pthread-wmm/mix009.oepc.yml/pichecker-mix009.oepc.yml	TIMEOUT	2.197885	46.171723587	68.804608
+pthread-wmm/mix009.opt.yml/pichecker-mix009.opt.yml	TIMEOUT	2.130468	46.03432944599999	68.792320
+pthread-wmm/mix010.oepc.yml/pichecker-mix010.oepc.yml	TIMEOUT	2.381602	46.012077483999974	68.874240
+pthread-wmm/mix010.opt.yml/pichecker-mix010.opt.yml	TIMEOUT	2.146024	46.021129008	67.891200
+pthread-wmm/mix011.opt.yml/pichecker-mix011.opt.yml	TIMEOUT	2.171639	46.102060314	67.842048
+pthread-wmm/mix011_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix011_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.207671	46.01262828899999	68.005888
+pthread-wmm/mix011_tso.oepc.yml/pichecker-mix011_tso.oepc.yml	TIMEOUT	2.160688	46.011863403999996	67.948544
+pthread-wmm/mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/pichecker-mix012_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	TIMEOUT	2.040628	46.240556527000024	68.755456
+pthread-wmm/mix012_pso.opt_tso.opt.yml/pichecker-mix012_pso.opt_tso.opt.yml	TIMEOUT	2.195854	46.09361895899997	68.820992
+pthread-wmm/mix013.oepc.yml/pichecker-mix013.oepc.yml	TIMEOUT	2.240281	46.120753863999994	69.136384
+pthread-wmm/mix013.opt.yml/pichecker-mix013.opt.yml	TIMEOUT	2.280703	46.082629422	67.981312
+pthread-wmm/mix014.opt.yml/pichecker-mix014.opt.yml	TIMEOUT	2.207874	46.18762917800001	68.866048
+pthread-wmm/mix014_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix014_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.267928	46.011443610000015	68.792320
+pthread-wmm/mix014_tso.oepc.yml/pichecker-mix014_tso.oepc.yml	TIMEOUT	2.099719	46.21058894000004	69.345280
+pthread-wmm/mix015.oepc.yml/pichecker-mix015.oepc.yml	TIMEOUT	2.409592	46.016181483999986	67.985408
+pthread-wmm/mix015.opt.yml/pichecker-mix015.opt.yml	TIMEOUT	2.066478	46.016111291000016	67.993600
+pthread-wmm/mix016.oepc.yml/pichecker-mix016.oepc.yml	TIMEOUT	2.052968	46.01111965399997	68.833280
+pthread-wmm/mix016_power.opt_rmo.opt.yml/pichecker-mix016_power.opt_rmo.opt.yml	TIMEOUT	1.985804	46.018905374999974	67.727360
+pthread-wmm/mix016_pso.opt_tso.opt.yml/pichecker-mix016_pso.opt_tso.opt.yml	TIMEOUT	2.155024	46.08032897199996	68.988928
+pthread-wmm/mix017.oepc.yml/pichecker-mix017.oepc.yml	TIMEOUT	2.061631	46.00976869599998	68.767744
+pthread-wmm/mix017_power.opt_rmo.opt.yml/pichecker-mix017_power.opt_rmo.opt.yml	TIMEOUT	2.328902	46.55147667599999	67.547136
+pthread-wmm/mix017_pso.opt_tso.opt.yml/pichecker-mix017_pso.opt_tso.opt.yml	TIMEOUT	2.336656	46.01867842299998	68.857856
+pthread-wmm/mix018.opt.yml/pichecker-mix018.opt.yml	TIMEOUT	2.33466	46.037041112	68.075520
+pthread-wmm/mix018_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix018_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.133803	46.01360939600005	69.029888
+pthread-wmm/mix018_tso.oepc.yml/pichecker-mix018_tso.oepc.yml	TIMEOUT	2.238945	46.10685653300004	67.764224
+pthread-wmm/mix019.opt.yml/pichecker-mix019.opt.yml	TIMEOUT	2.072527	46.014168751	68.976640
+pthread-wmm/mix019_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix019_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.263628	46.015285432999974	67.887104
+pthread-wmm/mix019_tso.oepc.yml/pichecker-mix019_tso.oepc.yml	TIMEOUT	2.086496	46.028896737000025	68.911104
+pthread-wmm/mix020.oepc.yml/pichecker-mix020.oepc.yml	TIMEOUT	2.19342	46.01251644399997	67.825664
+pthread-wmm/mix020.opt.yml/pichecker-mix020.opt.yml	TIMEOUT	2.413764	46.02579118099999	69.054464
+pthread-wmm/mix021.opt.yml/pichecker-mix021.opt.yml	TIMEOUT	2.310107	46.017773584	68.993024
+pthread-wmm/mix021_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix021_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.289845	46.63691910199998	69.042176
+pthread-wmm/mix021_tso.oepc.yml/pichecker-mix021_tso.oepc.yml	TIMEOUT	2.216918	46.01307351899999	68.911104
+pthread-wmm/mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-mix022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.152147	46.0186248	68.857856
+pthread-wmm/mix022_tso.yml/pichecker-mix022_tso.yml	TIMEOUT	2.265409	46.05344574200001	67.907584
+pthread-wmm/mix023_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix023_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.063366	46.11037486700002	67.821568
+pthread-wmm/mix023_power.opt_pso.opt_rmo.opt.yml/pichecker-mix023_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.287203	46.017930928	67.973120
+pthread-wmm/mix023_tso.yml/pichecker-mix023_tso.yml	TIMEOUT	2.144009	46.023047109000004	68.763648
+pthread-wmm/mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/pichecker-mix024_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	TIMEOUT	2.285129	46.017097632	67.760128
+pthread-wmm/mix024_power.opt_pso.opt_rmo.opt.yml/pichecker-mix024_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.126276	46.101219774000015	69.087232
+pthread-wmm/mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/pichecker-mix025_power.oepc_power.opt_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	TIMEOUT	2.201139	46.11820294099999	68.083712
+pthread-wmm/mix025_pso.opt_rmo.opt.yml/pichecker-mix025_pso.opt_rmo.opt.yml	TIMEOUT	2.255701	46.028002028	67.903488
+pthread-wmm/mix026.oepc.yml/pichecker-mix026.oepc.yml	TIMEOUT	2.244851	46.01240205300002	67.784704
+pthread-wmm/mix026_power.opt_tso.opt.yml/pichecker-mix026_power.opt_tso.opt.yml	TIMEOUT	2.243091	46.02129565500002	68.608000
+pthread-wmm/mix026_pso.opt_rmo.opt.yml/pichecker-mix026_pso.opt_rmo.opt.yml	TIMEOUT	2.191393	46.048106829000005	68.820992
+pthread-wmm/mix027_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix027_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.066834	46.01440647999999	68.747264
+pthread-wmm/mix027_power.opt_pso.opt_rmo.opt.yml/pichecker-mix027_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.096095	46.01007239899997	67.731456
+pthread-wmm/mix027_tso.yml/pichecker-mix027_tso.yml	TIMEOUT	2.34775	46.020067853	68.853760
+pthread-wmm/mix028_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix028_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.234218	46.014302293000014	68.935680
+pthread-wmm/mix028_power.opt_pso.opt_rmo.opt.yml/pichecker-mix028_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.25898	46.03519934499997	67.796992
+pthread-wmm/mix028_tso.yml/pichecker-mix028_tso.yml	TIMEOUT	2.266918	46.02450589199998	68.079616
+pthread-wmm/mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml/pichecker-mix029_power.oepc_pso.oepc_rmo.oepc_tso.oepc_tso.opt.yml	TIMEOUT	2.17727	46.32750314000003	68.153344
+pthread-wmm/mix029_power.opt_pso.opt_rmo.opt.yml/pichecker-mix029_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.257607	46.01270894300001	67.911680
+pthread-wmm/mix030_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix030_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.23239	46.03091512999998	68.149248
+pthread-wmm/mix030_power.opt_pso.opt_rmo.opt.yml/pichecker-mix030_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.07119	46.139935063999985	68.063232
+pthread-wmm/mix030_tso.yml/pichecker-mix030_tso.yml	TIMEOUT	2.582334	46.01548344700001	68.132864
+pthread-wmm/mix031.oepc.yml/pichecker-mix031.oepc.yml	TIMEOUT	2.238266	46.01199957	68.800512
+pthread-wmm/mix031.opt.yml/pichecker-mix031.opt.yml	TIMEOUT	2.141232	46.12291183399998	68.620288
+pthread-wmm/mix032.oepc.yml/pichecker-mix032.oepc.yml	TIMEOUT	2.092884	46.01164944300001	67.743744
+pthread-wmm/mix032.opt.yml/pichecker-mix032.opt.yml	TIMEOUT	2.156296	46.015287418000014	67.710976
+pthread-wmm/mix033.opt.yml/pichecker-mix033.opt.yml	TIMEOUT	2.298486	46.02788898900002	68.726784
+pthread-wmm/mix033_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix033_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.146071	46.021792511	68.935680
+pthread-wmm/mix033_tso.oepc.yml/pichecker-mix033_tso.oepc.yml	TIMEOUT	1.981928	46.014693877999946	68.988928
+pthread-wmm/mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml/pichecker-mix034_power.oepc_power.opt_pso.oepc_rmo.oepc_rmo.opt_tso.oepc.yml	TIMEOUT	2.144371	46.55921627800001	67.809280
+pthread-wmm/mix034_pso.opt_tso.opt.yml/pichecker-mix034_pso.opt_tso.opt.yml	TIMEOUT	2.12642	46.019114564000006	67.706880
+pthread-wmm/mix035.oepc.yml/pichecker-mix035.oepc.yml	TIMEOUT	2.145313	46.01575182600004	68.018176
+pthread-wmm/mix035_power.opt_rmo.opt.yml/pichecker-mix035_power.opt_rmo.opt.yml	TIMEOUT	2.235334	46.01495500699997	67.612672
+pthread-wmm/mix035_pso.opt_tso.opt.yml/pichecker-mix035_pso.opt_tso.opt.yml	TIMEOUT	2.141552	46.20469981399998	67.710976
+pthread-wmm/mix036.oepc.yml/pichecker-mix036.oepc.yml	ERROR(ineffective witness)	2.368304	11.67594201899999	68.853760
+pthread-wmm/mix036_power.opt_rmo.opt.yml/pichecker-mix036_power.opt_rmo.opt.yml	TIMEOUT	2.245241	46.018147247	67.821568
+pthread-wmm/mix036_pso.opt_tso.opt.yml/pichecker-mix036_pso.opt_tso.opt.yml	TIMEOUT	2.266521	46.138490182000055	68.706304
+pthread-wmm/mix037.opt.yml/pichecker-mix037.opt.yml	TIMEOUT	2.343565	46.014997307000044	68.603904
+pthread-wmm/mix037_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix037_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.068019	46.01271130600003	69.074944
+pthread-wmm/mix037_tso.oepc.yml/pichecker-mix037_tso.oepc.yml	TIMEOUT	2.268291	46.016822994999984	68.874240
+pthread-wmm/mix038.opt.yml/pichecker-mix038.opt.yml	TIMEOUT	2.02919	46.00698227600003	67.870720
+pthread-wmm/mix038_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix038_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.288377	46.01444054800004	68.067328
+pthread-wmm/mix038_tso.oepc.yml/pichecker-mix038_tso.oepc.yml	TIMEOUT	2.143972	46.01414422899995	67.981312
+pthread-wmm/mix039.oepc.yml/pichecker-mix039.oepc.yml	TIMEOUT	2.176746	46.014325977	68.022272
+pthread-wmm/mix039.opt.yml/pichecker-mix039.opt.yml	TIMEOUT	2.146919	46.07679990700001	68.759552
+pthread-wmm/mix040.opt.yml/pichecker-mix040.opt.yml	TIMEOUT	2.272504	46.01029902099992	68.780032
+pthread-wmm/mix040_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix040_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.205918	46.12515776399994	68.894720
+pthread-wmm/mix040_tso.oepc.yml/pichecker-mix040_tso.oepc.yml	TIMEOUT	2.246113	46.02840748299991	68.009984
+pthread-wmm/mix041_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix041_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.189976	46.02492522	67.948544
+pthread-wmm/mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pichecker-mix041_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.182969	46.259586289000026	68.739072
+pthread-wmm/mix042.oepc.yml/pichecker-mix042.oepc.yml	TIMEOUT	2.10246	46.01148130799993	68.075520
+pthread-wmm/mix042.opt.yml/pichecker-mix042.opt.yml	TIMEOUT	2.381905	46.02823442499994	68.894720
+pthread-wmm/mix043.oepc.yml/pichecker-mix043.oepc.yml	TIMEOUT	2.31337	46.01648300800002	68.808704
+pthread-wmm/mix043.opt.yml/pichecker-mix043.opt.yml	TIMEOUT	2.216421	46.02738347900004	69.111808
+pthread-wmm/mix044.opt.yml/pichecker-mix044.opt.yml	TIMEOUT	2.360645	46.15180985299992	68.816896
+pthread-wmm/mix044_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix044_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.228145	46.01063196200005	68.112384
+pthread-wmm/mix044_tso.oepc.yml/pichecker-mix044_tso.oepc.yml	TIMEOUT	2.30812	46.173579224000036	67.952640
+pthread-wmm/mix045_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix045_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.176785	46.12656773900005	68.202496
+pthread-wmm/mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pichecker-mix045_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.330167	46.01353456000004	68.849664
+pthread-wmm/mix046.oepc.yml/pichecker-mix046.oepc.yml	TIMEOUT	2.062791	46.05585110699997	68.993024
+pthread-wmm/mix046.opt.yml/pichecker-mix046.opt.yml	TIMEOUT	2.314036	46.42784819399992	67.862528
+pthread-wmm/mix047_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix047_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.200424	46.231457239000065	68.046848
+pthread-wmm/mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pichecker-mix047_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.256165	46.03385709899999	68.829184
+pthread-wmm/mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/pichecker-mix048_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr000_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.086109	46.012708743000076	67.850240
+pthread-wmm/mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml/pichecker-mix049_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt-podwr001_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.050685	46.019254855999975	67.805184
+pthread-wmm/mix050.yml/pichecker-mix050.yml	TIMEOUT	2.203867	46.015936753999995	68.001792
+pthread-wmm/mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/pichecker-mix051_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	TIMEOUT	2.023508	46.199962056000004	68.960256
+pthread-wmm/mix051_pso.opt_rmo.opt_tso.opt.yml/pichecker-mix051_pso.opt_rmo.opt_tso.opt.yml	TIMEOUT	2.047528	46.158041647999994	67.801088
+pthread-wmm/mix051_tso.oepc.yml/pichecker-mix051_tso.oepc.yml	TIMEOUT	2.058256	46.0177399910001	67.944448
+pthread-wmm/mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/pichecker-mix052_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	TIMEOUT	2.048894	46.01788967999994	67.915776
+pthread-wmm/mix052_pso.opt_rmo.opt_tso.opt.yml/pichecker-mix052_pso.opt_rmo.opt_tso.opt.yml	TIMEOUT	2.238989	46.02434472999994	67.907584
+pthread-wmm/mix052_tso.oepc.yml/pichecker-mix052_tso.oepc.yml	TIMEOUT	2.038813	46.024300912999934	67.846144
+pthread-wmm/mix053.opt.yml/pichecker-mix053.opt.yml	TIMEOUT	2.224678	46.017289893	68.718592
+pthread-wmm/mix053_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix053_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.217101	46.01161221000007	68.993024
+pthread-wmm/mix053_tso.oepc.yml/pichecker-mix053_tso.oepc.yml	TIMEOUT	2.207958	46.08487922099994	68.968448
+pthread-wmm/mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml/pichecker-mix054_power.oepc_power.opt_pso.oepc_rmo.oepc.yml	TIMEOUT	2.266804	46.105497335999985	69.038080
+pthread-wmm/mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pichecker-mix054_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.23664	46.022438187000034	67.825664
+pthread-wmm/mix055.opt.yml/pichecker-mix055.opt.yml	TIMEOUT	2.541744	46.05633359199999	67.653632
+pthread-wmm/mix055_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix055_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.177134	46.012928246	68.358144
+pthread-wmm/mix055_tso.oepc.yml/pichecker-mix055_tso.oepc.yml	TIMEOUT	2.068355	46.02064312899995	68.792320
+pthread-wmm/mix056_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix056_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.387567	46.013105482000014	68.792320
+pthread-wmm/mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pichecker-mix056_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.251671	46.032624437000095	67.997696
+pthread-wmm/mix057_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-mix057_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	2.572482	39.622520798000096	67.936256
+pthread-wmm/mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pichecker-mix057_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.372188	46.01054574199998	67.801088
+pthread-wmm/rfi000_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-rfi000_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.257327	46.178942477999954	68.464640
+pthread-wmm/rfi000_power.opt_pso.opt_rmo.opt.yml/pichecker-rfi000_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.253664	46.011879502000056	68.898816
+pthread-wmm/rfi001_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-rfi001_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	2.376284	40.009220103000075	68.059136
+pthread-wmm/rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pichecker-rfi001_power.opt_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.24851	46.05382236000003	67.829760
+pthread-wmm/rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-rfi003_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.066006	46.01985295099996	68.018176
+pthread-wmm/rfi004.yml/pichecker-rfi004.yml	TIMEOUT	2.18866	46.03420061999998	67.760128
+pthread-wmm/rfi005.yml/pichecker-rfi005.yml	TIMEOUT	2.110495	46.06398570600004	69.124096
+pthread-wmm/rfi006_power.oepc.yml/pichecker-rfi006_power.oepc.yml	TIMEOUT	2.382997	46.040899782	67.751936
+pthread-wmm/rfi006_power.opt.yml/pichecker-rfi006_power.opt.yml	TIMEOUT	2.332455	46.01324861400008	67.813376
+pthread-wmm/rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml/pichecker-rfi006_pso.oepc_pso.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.130923	46.01459833800004	69.156864
+pthread-wmm/rfi006_rmo.yml/pichecker-rfi006_rmo.yml	TIMEOUT	2.428121	46.01677027300002	67.932160
+pthread-wmm/rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-rfi007_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.262287	46.08749536899995	67.809280
+pthread-wmm/rfi007_tso.yml/pichecker-rfi007_tso.yml	TIMEOUT	2.30627	46.33705106599996	68.022272
+pthread-wmm/rfi008.oepc.yml/pichecker-rfi008.oepc.yml	TIMEOUT	2.094883	46.1855223120001	69.062656
+pthread-wmm/rfi008.opt.yml/pichecker-rfi008.opt.yml	TIMEOUT	2.007519	46.01316510899994	68.939776
+pthread-wmm/rfi009_power.oepc.yml/pichecker-rfi009_power.oepc.yml	TIMEOUT	2.266302	46.11395351800002	68.952064
+pthread-wmm/rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml/pichecker-rfi009_power.opt_pso.oepc_pso.opt_rmo.opt_tso.oepc_tso.opt.yml	TIMEOUT	2.070739	46.02065247400003	68.833280
+pthread-wmm/rfi009_rmo.oepc.yml/pichecker-rfi009_rmo.oepc.yml	TIMEOUT	2.40905	46.02129525600003	67.952640
+pthread-wmm/rfi010.yml/pichecker-rfi010.yml	TIMEOUT	2.204641	46.00917699900003	67.813376
+pthread-wmm/safe000_power.oepc.yml/pichecker-safe000_power.oepc.yml	TIMEOUT	2.410476	46.031828749000056	69.308416
+pthread-wmm/safe000_power.opt.yml/pichecker-safe000_power.opt.yml	TIMEOUT	2.431374	46.10841029200003	67.956736
+pthread-wmm/safe000_rmo.yml/pichecker-safe000_rmo.yml	TIMEOUT	2.58796	46.11882845399998	68.317184
+pthread-wmm/safe001_power.oepc.yml/pichecker-safe001_power.oepc.yml	TIMEOUT	2.537026	46.0132741729999	69.230592
+pthread-wmm/safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml/pichecker-safe001_power.opt_pso.oepc_pso.opt_rmo.opt.yml	TIMEOUT	2.185684	46.01155893600003	68.141056
+pthread-wmm/safe001_rmo.oepc.yml/pichecker-safe001_rmo.oepc.yml	TIMEOUT	2.383991	46.24930138100001	69.132288
+pthread-wmm/safe002_power.oepc.yml/pichecker-safe002_power.oepc.yml	TIMEOUT	2.31053	46.01528564599994	69.177344
+pthread-wmm/safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml/pichecker-safe002_power.opt_pso.oepc_pso.opt_rmo.opt.yml	TIMEOUT	2.218613	46.18580029499992	67.829760
+pthread-wmm/safe002_rmo.oepc.yml/pichecker-safe002_rmo.oepc.yml	TIMEOUT	2.401682	46.01886738600001	67.989504
+pthread-wmm/safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe003_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.13228	46.015650745000016	69.464064
+pthread-wmm/safe003_power.opt.yml/pichecker-safe003_power.opt.yml	TIMEOUT	2.29437	46.011855008	69.165056
+pthread-wmm/safe004_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-safe004_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.059877	46.193710666000015	68.161536
+pthread-wmm/safe004_power.opt_pso.opt_rmo.opt.yml/pichecker-safe004_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.194035	46.06509219099996	68.919296
+pthread-wmm/safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe005_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.098832	46.0126473009999	68.800512
+pthread-wmm/safe006_power.oepc-thin000_power.oepc.yml/pichecker-safe006_power.oepc-thin000_power.oepc.yml	TIMEOUT	2.257504	48.49803064699995	67.710976
+pthread-wmm/safe006_power.opt-thin000_power.opt.yml/pichecker-safe006_power.opt-thin000_power.opt.yml	TIMEOUT	2.222177	46.013951973000076	68.149248
+pthread-wmm/safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml/pichecker-safe006_rmo.oepc_rmo.opt-thin000_rmo.oepc_rmo.opt.yml	TIMEOUT	2.239	48.062626335000004	67.661824
+pthread-wmm/safe007_power.oepc-thin001_power.oepc.yml/pichecker-safe007_power.oepc-thin001_power.oepc.yml	TIMEOUT	2.249811	46.247297476000085	69.070848
+pthread-wmm/safe007_power.opt-thin001_power.opt.yml/pichecker-safe007_power.opt-thin001_power.opt.yml	TIMEOUT	2.269347	46.20897217200002	68.952064
+pthread-wmm/safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml/pichecker-safe007_rmo.oepc_rmo.opt-thin001_rmo.oepc_rmo.opt.yml	TIMEOUT	2.354422	46.01207703599994	68.878336
+pthread-wmm/safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe008_power.oepc_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.22657	46.014431470999966	68.902912
+pthread-wmm/safe008_power.opt.yml/pichecker-safe008_power.opt.yml	TIMEOUT	2.371911	46.01354249799999	68.272128
+pthread-wmm/safe009_power.oepc.yml/pichecker-safe009_power.oepc.yml	TIMEOUT	2.507423	46.03063145099998	68.902912
+pthread-wmm/safe009_power.opt.yml/pichecker-safe009_power.opt.yml	TIMEOUT	2.300185	46.015186675999985	68.968448
+pthread-wmm/safe009_rmo.oepc.yml/pichecker-safe009_rmo.oepc.yml	TIMEOUT	2.432154	46.01264057800006	68.952064
+pthread-wmm/safe009_rmo.opt.yml/pichecker-safe009_rmo.opt.yml	TIMEOUT	2.373546	46.02168026100003	69.079040
+pthread-wmm/safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe010_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.316306	46.0531485570001	68.829184
+pthread-wmm/safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/pichecker-safe011_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	TIMEOUT	2.366742	46.18243028099994	68.194304
+pthread-wmm/safe011_power.opt_pso.opt.yml/pichecker-safe011_power.opt_pso.opt.yml	TIMEOUT	2.316124	46.37018951499999	68.141056
+pthread-wmm/safe012_power.oepc.yml/pichecker-safe012_power.oepc.yml	ERROR(ineffective witness)	2.546138	39.94090190700001	67.788800
+pthread-wmm/safe012_power.opt.yml/pichecker-safe012_power.opt.yml	TIMEOUT	2.392657	46.01610976399991	68.055040
+pthread-wmm/safe012_pso.oepc_pso.opt_rmo.opt.yml/pichecker-safe012_pso.oepc_pso.opt_rmo.opt.yml	TIMEOUT	2.208418	46.12404482199997	68.694016
+pthread-wmm/safe012_rmo.oepc.yml/pichecker-safe012_rmo.oepc.yml	TIMEOUT	2.490454	46.02794543300001	68.653056
+pthread-wmm/safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe013_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.039582	46.01635897799997	68.677632
+pthread-wmm/safe014_power.oepc.yml/pichecker-safe014_power.oepc.yml	TIMEOUT	2.226491	46.024196930000016	68.808704
+pthread-wmm/safe014_power.opt.yml/pichecker-safe014_power.opt.yml	ERROR(ineffective witness)	2.561498	37.30972250299999	67.973120
+pthread-wmm/safe014_rmo.oepc.yml/pichecker-safe014_rmo.oepc.yml	TIMEOUT	2.281128	46.014112570000066	67.723264
+pthread-wmm/safe014_rmo.opt.yml/pichecker-safe014_rmo.opt.yml	TIMEOUT	2.547022	46.06918381299988	69.079040
+pthread-wmm/safe015_power.oepc.yml/pichecker-safe015_power.oepc.yml	TIMEOUT	2.38441	46.023182185999985	69.300224
+pthread-wmm/safe015_power.opt.yml/pichecker-safe015_power.opt.yml	TIMEOUT	2.394781	46.02108741100005	69.189632
+pthread-wmm/safe015_rmo.yml/pichecker-safe015_rmo.yml	TIMEOUT	2.545244	46.036169023999946	68.284416
+pthread-wmm/safe016_power.oepc.yml/pichecker-safe016_power.oepc.yml	TIMEOUT	2.377	46.02072048399998	68.132864
+pthread-wmm/safe016_power.opt.yml/pichecker-safe016_power.opt.yml	TIMEOUT	2.44587	46.03191078300006	69.079040
+pthread-wmm/safe016_rmo.oepc.yml/pichecker-safe016_rmo.oepc.yml	TIMEOUT	2.445625	46.09281467099993	68.939776
+pthread-wmm/safe016_rmo.opt.yml/pichecker-safe016_rmo.opt.yml	TIMEOUT	2.540318	46.25199462100011	69.226496
+pthread-wmm/safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe017_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.019763	46.01316507699994	68.980736
+pthread-wmm/safe018_power.oepc.yml/pichecker-safe018_power.oepc.yml	TIMEOUT	2.291218	46.012853764000056	68.886528
+pthread-wmm/safe018_power.opt.yml/pichecker-safe018_power.opt.yml	TIMEOUT	2.203994	46.02665991499998	69.046272
+pthread-wmm/safe018_rmo.oepc.yml/pichecker-safe018_rmo.oepc.yml	TIMEOUT	2.210522	46.10916763599994	68.534272
+pthread-wmm/safe018_rmo.opt.yml/pichecker-safe018_rmo.opt.yml	TIMEOUT	2.388226	46.849150839	68.907008
+pthread-wmm/safe019_power.oepc.yml/pichecker-safe019_power.oepc.yml	ERROR(ineffective witness)	2.65796	44.07883091099984	69.115904
+pthread-wmm/safe019_power.opt.yml/pichecker-safe019_power.opt.yml	TIMEOUT	2.380012	46.02113115800012	68.071424
+pthread-wmm/safe019_rmo.oepc.yml/pichecker-safe019_rmo.oepc.yml	TIMEOUT	2.53601	46.02260988300009	67.756032
+pthread-wmm/safe019_rmo.opt.yml/pichecker-safe019_rmo.opt.yml	TIMEOUT	2.318406	46.63187718200015	68.997120
+pthread-wmm/safe020_power.yml/pichecker-safe020_power.yml	ERROR(ineffective witness)	2.384505	38.39165056599995	69.074944
+pthread-wmm/safe020_rmo.yml/pichecker-safe020_rmo.yml	TIMEOUT	2.479408	46.012529993999806	68.894720
+pthread-wmm/safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml/pichecker-safe021_power.oepc_pso.oepc_rmo.oepc_rmo.opt.yml	TIMEOUT	2.193966	46.01404553900011	67.985408
+pthread-wmm/safe021_power.opt_pso.opt.yml/pichecker-safe021_power.opt_pso.opt.yml	TIMEOUT	2.19305	46.14158819299996	67.727360
+pthread-wmm/safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe022_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.073978	46.01553050999996	69.144576
+pthread-wmm/safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe023_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.45008	46.01423681699998	69.136384
+pthread-wmm/safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe024_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.227393	46.014132522999944	67.575808
+pthread-wmm/safe025_power.yml/pichecker-safe025_power.yml	TIMEOUT	2.314374	46.14017263300002	68.354048
+pthread-wmm/safe025_rmo.yml/pichecker-safe025_rmo.yml	TIMEOUT	2.624918	46.11395646799997	68.231168
+pthread-wmm/safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe026_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.457126	46.53115152100008	68.698112
+pthread-wmm/safe027_power.oepc.yml/pichecker-safe027_power.oepc.yml	ERROR(ineffective witness)	2.566532	25.467507097999942	68.816896
+pthread-wmm/safe027_power.opt.yml/pichecker-safe027_power.opt.yml	TIMEOUT	2.257405	46.01297821200001	69.017600
+pthread-wmm/safe027_rmo.yml/pichecker-safe027_rmo.yml	TIMEOUT	2.307825	46.54028264400017	68.898816
+pthread-wmm/safe028_power.yml/pichecker-safe028_power.yml	TIMEOUT	2.438958	46.176734361999934	69.005312
+pthread-wmm/safe028_rmo.yml/pichecker-safe028_rmo.yml	TIMEOUT	2.472402	46.06320129699998	68.947968
+pthread-wmm/safe029_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-safe029_power.oepc_pso.oepc_rmo.oepc.yml	ERROR(ineffective witness)	2.298303	36.45191771400005	67.739648
+pthread-wmm/safe029_power.opt_pso.opt_rmo.opt.yml/pichecker-safe029_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.314483	46.01233900500006	67.813376
+pthread-wmm/safe030_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-safe030_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.25907	46.01549558099987	68.165632
+pthread-wmm/safe030_power.opt_pso.opt_rmo.opt.yml/pichecker-safe030_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.34616	46.04281282900001	67.911680
+pthread-wmm/safe031_power.oepc_pso.oepc_rmo.oepc.yml/pichecker-safe031_power.oepc_pso.oepc_rmo.oepc.yml	TIMEOUT	2.1653	46.03287245499996	67.813376
+pthread-wmm/safe031_power.opt_pso.opt_rmo.opt.yml/pichecker-safe031_power.opt_pso.opt_rmo.opt.yml	TIMEOUT	2.369167	46.029179571999975	67.674112
+pthread-wmm/safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe032_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.136375	46.014922566999985	69.292032
+pthread-wmm/safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe033_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.02339	46.01720151100017	67.932160
+pthread-wmm/safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml/pichecker-safe034_power.oepc_power.opt_pso.oepc_pso.opt_rmo.oepc_rmo.opt.yml	TIMEOUT	2.135102	46.01418789400009	68.694016
+pthread-wmm/thin002_power.oepc.yml/pichecker-thin002_power.oepc.yml	TIMEOUT	2.548862	46.033321989000115	68.894720
+pthread-wmm/thin002_power.opt.yml/pichecker-thin002_power.opt.yml	TIMEOUT	2.519863	46.019622047999974	68.018176
+pthread-wmm/thin002_rmo.yml/pichecker-thin002_rmo.yml	TIMEOUT	2.488976	46.10978742900011	67.907584
+pthread/lazy01.yml/pichecker-lazy01.yml	false(unreach-call)	2.235839	5.087517064000167	68.755456
+pthread/singleton.yml/pichecker-singleton.yml	false(unreach-call)	2.595946	5.128189490000068	67.694592
+pthread/stack-2.yml/pichecker-stack-2.yml	ERROR(Compilation error)	3.296705	11.443893553999942	68.517888
+pthread/stateful01-1.yml/pichecker-stateful01-1.yml	false(unreach-call)	2.305605	6.61372395300009	68.599808
+pthread/triangular-2.yml/pichecker-triangular-2.yml	ERROR(ineffective witness)	2.282013	6.733805342000096	68.587520
+pthread/triangular-longer-2.yml/pichecker-triangular-longer-2.yml	ERROR(ineffective witness)	2.247723	7.8149368159999995	68.390912
+pthread/triangular-longest-2.yml/pichecker-triangular-longest-2.yml	ERROR(ineffective witness)	2.209843	2.9244739349999236	67.743744

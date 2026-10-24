@@ -1,0 +1,132 @@
+   BENCHMARK INFORMATION
+benchmark definition:    svcomp23-witness-benchmarks/concurrentwitness2test.xml
+name:                    concurrentwitness2test
+run sets:                SV-COMP23_unreach-call.ConcurrencySafety-cpa-lockator
+date:                    Sun, 2024-11-03 16:51:29 UTC
+tool:                    ConcurrentWitness2Test
+tool executable:         ConcurrentWitness2Test/start.sh
+options:
+parallel runs:           10
+resource limits:
+- time:                  45 s
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    fv-az888-268
+os:                      Linux-6.5.0-1025-azure-x86_64-with-glibc2.35
+cpu:                     AMD EPYC 7763 64-Core Processor
+- cores:                 4
+- max frequency:         2594.327 MHz
+ram:                     16757.342208000002 MB
+------------------------------------------------------------
+
+
+
+SV-COMP23_unreach-call.ConcurrencySafety-cpa-lockator
+Run set 1 of 1 with options '--graphml-witness ${taskdef_path}/witness.graphml' and propertyfile 'None'
+
+inputfile                                                                                                                                                                    status                       cpu time   wall time        host
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+goblint-regression/13-privatized_01-priv_nr_true.yml/cpa-lockator-13-privatized_01-priv_nr_true.yml                                                                          unknown                          0.01        0.01        None
+goblint-regression/13-privatized_04-priv_multi_true.yml/cpa-lockator-13-privatized_04-priv_multi_true.yml                                                                    unknown                          0.01        0.01        None
+goblint-regression/13-privatized_18-first-reads_true.yml/cpa-lockator-13-privatized_18-first-reads_true.yml                                                                  unknown                          0.01        0.01        None
+goblint-regression/13-privatized_18-first-reads_unknown_1_neg.yml/cpa-lockator-13-privatized_18-first-reads_unknown_1_neg.yml                                                unknown                          0.01        0.01        None
+goblint-regression/13-privatized_18-first-reads_unknown_1_pos.yml/cpa-lockator-13-privatized_18-first-reads_unknown_1_pos.yml                                                unknown                          0.01        0.01        None
+goblint-regression/13-privatized_18-first-reads_unknown_2_neg.yml/cpa-lockator-13-privatized_18-first-reads_unknown_2_neg.yml                                                unknown                          0.01        0.01        None
+goblint-regression/13-privatized_18-first-reads_unknown_2_pos.yml/cpa-lockator-13-privatized_18-first-reads_unknown_2_pos.yml                                                unknown                          0.01        0.01        None
+goblint-regression/13-privatized_19-publish-precision_unknown_1_neg.yml/cpa-lockator-13-privatized_19-publish-precision_unknown_1_neg.yml                                    unknown                          0.01        0.01        None
+goblint-regression/13-privatized_19-publish-precision_unknown_1_pos.yml/cpa-lockator-13-privatized_19-publish-precision_unknown_1_pos.yml                                    unknown                          0.01        0.01        None
+goblint-regression/13-privatized_19-publish-precision_unknown_2_neg.yml/cpa-lockator-13-privatized_19-publish-precision_unknown_2_neg.yml                                    unknown                          0.01        0.01        None
+goblint-regression/13-privatized_19-publish-precision_unknown_2_pos.yml/cpa-lockator-13-privatized_19-publish-precision_unknown_2_pos.yml                                    unknown                          0.01        0.02        None
+goblint-regression/13-privatized_20-publish-regression_true.yml/cpa-lockator-13-privatized_20-publish-regression_true.yml                                                    unknown                          0.01        0.01        None
+goblint-regression/13-privatized_24-multiple-protecting_true.yml/cpa-lockator-13-privatized_24-multiple-protecting_true.yml                                                  unknown                          0.01        0.01        None
+goblint-regression/13-privatized_25-struct_nr_true.yml/cpa-lockator-13-privatized_25-struct_nr_true.yml                                                                      unknown                          0.01        0.01        None
+goblint-regression/13-privatized_27-multiple-protecting2_true.yml/cpa-lockator-13-privatized_27-multiple-protecting2_true.yml                                                unknown                          0.01        0.03        None
+goblint-regression/13-privatized_29-multiple-protecting2-vesal_true.yml/cpa-lockator-13-privatized_29-multiple-protecting2-vesal_true.yml                                    unknown                          0.01        0.02        None
+goblint-regression/13-privatized_30-traces-oplus-vs-meet_true.yml/cpa-lockator-13-privatized_30-traces-oplus-vs-meet_true.yml                                                unknown                          0.01        0.02        None
+goblint-regression/13-privatized_31-traces-mine-vs-mutex_true.yml/cpa-lockator-13-privatized_31-traces-mine-vs-mutex_true.yml                                                unknown                          0.01        0.02        None
+goblint-regression/13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml/cpa-lockator-13-privatized_32-traces-mine-vs-oplus-vs-meet_true.yml                                unknown                          0.01        0.01        None
+goblint-regression/13-privatized_33-traces-v-matters_true.yml/cpa-lockator-13-privatized_33-traces-v-matters_true.yml                                                        unknown                          0.01        0.01        None
+goblint-regression/13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml/cpa-lockator-13-privatized_34-traces-minepp-L-needs-to-be-um_true.yml                            unknown                          0.01        0.03        None
+goblint-regression/13-privatized_35-traces-ex-2_true.yml/cpa-lockator-13-privatized_35-traces-ex-2_true.yml                                                                  unknown                          0.01        0.01        None
+goblint-regression/13-privatized_36-traces-ex-3_true.yml/cpa-lockator-13-privatized_36-traces-ex-3_true.yml                                                                  unknown                          0.01        0.01        None
+goblint-regression/13-privatized_37-traces-ex-4_true.yml/cpa-lockator-13-privatized_37-traces-ex-4_true.yml                                                                  unknown                          0.01        0.02        None
+goblint-regression/13-privatized_38-traces-ex-4-switch_true.yml/cpa-lockator-13-privatized_38-traces-ex-4-switch_true.yml                                                    unknown                          0.01        0.04        None
+goblint-regression/13-privatized_40-traces-ex-6_true.yml/cpa-lockator-13-privatized_40-traces-ex-6_true.yml                                                                  unknown                          0.01        0.03        None
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_neg.yml/cpa-lockator-13-privatized_41-traces-ex-7_unknown_1_neg.yml                                                unknown                          0.01        0.02        None
+goblint-regression/13-privatized_41-traces-ex-7_unknown_1_pos.yml/cpa-lockator-13-privatized_41-traces-ex-7_unknown_1_pos.yml                                                unknown                          0.01        0.02        None
+goblint-regression/13-privatized_42-traces-ex-mini_true.yml/cpa-lockator-13-privatized_42-traces-ex-mini_true.yml                                                            unknown                          0.01        0.02        None
+goblint-regression/13-privatized_44-traces-mine2_true.yml/cpa-lockator-13-privatized_44-traces-mine2_true.yml                                                                unknown                          0.01        0.01        None
+goblint-regression/13-privatized_69-refine-protected-loop-interval_true.yml/cpa-lockator-13-privatized_69-refine-protected-loop-interval_true.yml                            unknown                          0.01        0.01        None
+goblint-regression/28-race_reach_45-escape_racing.yml/cpa-lockator-28-race_reach_45-escape_racing.yml                                                                        unknown                          0.01        0.01        None
+goblint-regression/28-race_reach_46-escape_racefree.yml/cpa-lockator-28-race_reach_46-escape_racefree.yml                                                                    unknown                          0.01        0.01        None
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_neg.yml/cpa-lockator-36-apron_17-traces-rpb-litmus_unknown_1_neg.yml                                              unknown                          0.01        0.01        None
+goblint-regression/36-apron_17-traces-rpb-litmus_unknown_1_pos.yml/cpa-lockator-36-apron_17-traces-rpb-litmus_unknown_1_pos.yml                                              unknown                          0.01        0.03        None
+goblint-regression/36-apron_21-traces-cluster-based_true.yml/cpa-lockator-36-apron_21-traces-cluster-based_true.yml                                                          unknown                          0.01        0.01        None
+goblint-regression/36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml/cpa-lockator-36-apron_22-traces-write-centered-vs-meet-mutex_true_no-overflow.yml    unknown                          0.01        0.01        None
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_neg.yml/cpa-lockator-36-apron_41-threadenter-no-locals_unknown_1_neg.yml                                      unknown                          0.01        0.01        None
+goblint-regression/36-apron_41-threadenter-no-locals_unknown_1_pos.yml/cpa-lockator-36-apron_41-threadenter-no-locals_unknown_1_pos.yml                                      unknown                          0.01        0.01        None
+ldv-linux-3.14-races/linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.yml/cpa-lockator-linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.yml                              unknown                          0.01        0.01        None
+ldv-linux-3.14-races/linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.yml/cpa-lockator-linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.yml                              unknown                          0.01        0.01        None
+ldv-linux-3.14-races/linux-3.14--drivers--usb--misc--adutux.ko.cil.yml/cpa-lockator-linux-3.14--drivers--usb--misc--adutux.ko.cil.yml                                        unknown                          0.01        0.01        None
+ldv-races/race-2_1-container_of.yml/cpa-lockator-race-2_1-container_of.yml                                                                                                   unknown                          0.01        0.01        None
+ldv-races/race-3_1-container_of-global.yml/cpa-lockator-race-3_1-container_of-global.yml                                                                                     unknown                          0.01        0.01        None
+ldv-races/race-4_1-thread_local_vars.yml/cpa-lockator-race-4_1-thread_local_vars.yml                                                                                         unknown                          0.01        0.02        None
+pthread-C-DAC/pthread-demo-datarace-1.yml/cpa-lockator-pthread-demo-datarace-1.yml                                                                                           unknown                          0.01        0.01        None
+pthread-atomic/time_var_mutex.yml/cpa-lockator-time_var_mutex.yml                                                                                                            unknown                          0.01        0.01        None
+pthread-deagle/circular_buffer_bad.yml/cpa-lockator-circular_buffer_bad.yml                                                                                                  unknown                          0.01        0.01        None
+pthread-deagle/circular_buffer_ok.yml/cpa-lockator-circular_buffer_ok.yml                                                                                                    unknown                          0.01        0.01        None
+pthread-divine/ring_2w1r-1.yml/cpa-lockator-ring_2w1r-1.yml                                                                                                                  unknown                          0.01        0.01        None
+pthread-divine/tls_basic.yml/cpa-lockator-tls_basic.yml                                                                                                                      unknown                          0.01        0.01        None
+pthread-divine/tls_destructor_worker.yml/cpa-lockator-tls_destructor_worker.yml                                                                                              unknown                          0.01        0.01        None
+pthread-driver-races/char_generic_nvram_read_nvram_write_nvram.yml/cpa-lockator-char_generic_nvram_read_nvram_write_nvram.yml                                                unknown                          0.01        0.01        None
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml/cpa-lockator-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_current.yml              unknown                          0.01        0.01        None
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml/cpa-lockator-char_pc8736x_gpio_pc8736x_gpio_change_pc8736x_gpio_set.yml                      unknown                          0.01        0.03        None
+pthread-driver-races/char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml/cpa-lockator-char_pc8736x_gpio_pc8736x_gpio_current_pc8736x_gpio_set.yml                    unknown                          0.01        0.01        None
+pthread-ext/03_incdec.yml/cpa-lockator-03_incdec.yml                                                                                                                         unknown                          0.01        0.01        None
+pthread-ext/04_incdec_cas.yml/cpa-lockator-04_incdec_cas.yml                                                                                                                 unknown                          0.01        0.01        None
+pthread-ext/08_rand_cas.yml/cpa-lockator-08_rand_cas.yml                                                                                                                     unknown                          0.01        0.01        None
+pthread-ext/09_fmaxsym.yml/cpa-lockator-09_fmaxsym.yml                                                                                                                       unknown                          0.01        0.01        None
+pthread-ext/11_fmaxsymopt.yml/cpa-lockator-11_fmaxsymopt.yml                                                                                                                 unknown                          0.01        0.03        None
+pthread-ext/14_spin2003.yml/cpa-lockator-14_spin2003.yml                                                                                                                     unknown                          0.01        0.03        None
+pthread-ext/25_stack.yml/cpa-lockator-25_stack.yml                                                                                                                           unknown                          0.01        0.01        None
+pthread-ext/25_stack_longer-1.yml/cpa-lockator-25_stack_longer-1.yml                                                                                                         unknown                          0.01        0.01        None
+pthread-ext/25_stack_longer-2.yml/cpa-lockator-25_stack_longer-2.yml                                                                                                         unknown                          0.01        0.03        None
+pthread-ext/25_stack_longest-1.yml/cpa-lockator-25_stack_longest-1.yml                                                                                                       unknown                          0.01        0.01        None
+pthread-ext/25_stack_longest-2.yml/cpa-lockator-25_stack_longest-2.yml                                                                                                       unknown                          0.01        0.01        None
+pthread-ext/26_stack_cas.yml/cpa-lockator-26_stack_cas.yml                                                                                                                   unknown                          0.01        0.01        None
+pthread-ext/26_stack_cas_longer-1.yml/cpa-lockator-26_stack_cas_longer-1.yml                                                                                                 unknown                          0.01        0.01        None
+pthread-ext/26_stack_cas_longer-2.yml/cpa-lockator-26_stack_cas_longer-2.yml                                                                                                 unknown                          0.01        0.01        None
+pthread-ext/26_stack_cas_longest-1.yml/cpa-lockator-26_stack_cas_longest-1.yml                                                                                               unknown                          0.01        0.03        None
+pthread-ext/26_stack_cas_longest-2.yml/cpa-lockator-26_stack_cas_longest-2.yml                                                                                               unknown                          0.01        0.02        None
+pthread-ext/28_buggy_simple_loop1_vf.yml/cpa-lockator-28_buggy_simple_loop1_vf.yml                                                                                           unknown                          0.01        0.02        None
+pthread-ext/31_simple_loop5_vs.yml/cpa-lockator-31_simple_loop5_vs.yml                                                                                                       unknown                          0.01        0.01        None
+pthread-ext/35_double_lock_p3_vs.yml/cpa-lockator-35_double_lock_p3_vs.yml                                                                                                   unknown                          0.01        0.01        None
+pthread-ext/36_stack_cas_p0_vs_concur.yml/cpa-lockator-36_stack_cas_p0_vs_concur.yml                                                                                         unknown                          0.01        0.01        None
+pthread-ext/37_stack_lock_p0_vs_concur.yml/cpa-lockator-37_stack_lock_p0_vs_concur.yml                                                                                       unknown                          0.01        0.03        None
+pthread-ext/43_NetBSD_sysmon_power_sliced.yml/cpa-lockator-43_NetBSD_sysmon_power_sliced.yml                                                                                 unknown                          0.01        0.02        None
+pthread/bigshot_s.yml/cpa-lockator-bigshot_s.yml                                                                                                                             unknown                          0.01        0.01        None
+pthread/bigshot_s2.yml/cpa-lockator-bigshot_s2.yml                                                                                                                           unknown                          0.01        0.01        None
+pthread/lazy01.yml/cpa-lockator-lazy01.yml                                                                                                                                   unknown                          0.01        0.04        None
+pthread/singleton.yml/cpa-lockator-singleton.yml                                                                                                                             unknown                          0.01        0.03        None
+pthread/stack-1.yml/cpa-lockator-stack-1.yml                                                                                                                                 unknown                          0.01        0.03        None
+pthread/stack-2.yml/cpa-lockator-stack-2.yml                                                                                                                                 unknown                          0.01        0.01        None
+pthread/stack_longer-1.yml/cpa-lockator-stack_longer-1.yml                                                                                                                   unknown                          0.01        0.01        None
+pthread/stack_longer-2.yml/cpa-lockator-stack_longer-2.yml                                                                                                                   unknown                          0.01        0.01        None
+pthread/stack_longest-1.yml/cpa-lockator-stack_longest-1.yml                                                                                                                 unknown                          0.01        0.03        None
+pthread/stack_longest-2.yml/cpa-lockator-stack_longest-2.yml                                                                                                                 unknown                          0.01        0.02        None
+pthread/stateful01-1.yml/cpa-lockator-stateful01-1.yml                                                                                                                       unknown                          0.01        0.01        None
+pthread/stateful01-2.yml/cpa-lockator-stateful01-2.yml                                                                                                                       unknown                          0.01        0.01        None
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Run set 1                                                                                                                                                                    done                             0.66        1.41           -
+
+Statistics:             90 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:              90
+  Score:                 0 (max: 145)

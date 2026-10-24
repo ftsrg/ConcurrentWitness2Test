@@ -1,0 +1,22 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/deagle/pthread-wmm/thin002_power.oepc.yml/thin002_power.oepc.i --graphml-witness svcomp23-witness-benchmarks/tools/deagle/pthread-wmm/thin002_power.oepc.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+cpp: fatal error: cannot execute ‘/usr/libexec/gcc/x86_64-linux-gnu/13/cc1’: vfork: Resource temporarily unavailable
+compilation terminated.
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/__main__.py", line 54, in translate_to_c
+    text = preprocess_file(
+           ^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/pycparser/__init__.py", line 42, in preprocess_file
+    text = check_output(path_list, universal_newlines=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['cpp', '-I/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/headers', '-D__attribute__(x)=', '-D__extension__=', '-D__restrict=', '-D__restrict__=', '-D__inline=inline', '-D__inline__=inline', '-D__const=const', '-D__signed__=signed', '-D__volatile__=volatile', '-D__typeof__(x)=void*', '-D__builtin_va_list=void*', '/tmp/BenchExec_run_ejv8eped/tmp/tmp4u4foxkl.c']' returned non-zero exit status 1.
+Verdict: Parsing failed

@@ -1,0 +1,64 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/mix006_tso.oepc.yml/mix006_tso.oepc.i --graphml-witness svcomp23-witness-benchmarks/tools/cseq/pthread-wmm/mix006_tso.oepc.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/__main__.py", line 146, in translate_to_c
+    sys.exit(-1)
+SystemExit: -1
+/tmp/BenchExec_run_srqs76x0/tmp/tmpsoekfz03.c
+Compilation started
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c: In function ‘P1’:
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:795:56: error: ‘FALSE’ undeclared (first use in this function)
+  795 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                        ^    
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:795:56: note: each undeclared identifier is reported only once for each function it appears in
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:795:61: error: expected ‘)’ before ‘;’ token
+  795 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                             ^
+      |                                                             )
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:796:61: error: expected ‘)’ before ‘;’ token
+  796 |   weak$$choice2 = __VERIFIER_nondet_bool();
+      |                                                             ^
+      |                                                             )
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:811:61: error: expected ‘)’ before ‘;’ token
+  811 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                             ^
+      |                                                             )
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:812:61: error: expected ‘)’ before ‘;’ token
+  812 |   weak$$choice2 = __VERIFIER_nondet_bool();
+      |                                                             ^
+      |                                                             )
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c: In function ‘P2’:
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:853:56: error: ‘FALSE’ undeclared (first use in this function)
+  853 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                        ^    
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:853:61: error: expected ‘)’ before ‘;’ token
+  853 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                             ^
+      |                                                             )
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:854:56: error: ‘TRUE’ undeclared (first use in this function)
+  854 |   weak$$choice2 = __VERIFIER_nondet_bool();
+      |                                                        ^   
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:854:60: error: expected ‘)’ before ‘;’ token
+  854 |   weak$$choice2 = __VERIFIER_nondet_bool();
+      |                                                            ^
+      |                                                            )
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c: In function ‘__c2tt_main’:
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:922:57: error: ‘FALSE’ undeclared (first use in this function)
+  922 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                         ^    
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:922:62: error: expected ‘)’ before ‘;’ token
+  922 |   weak$$choice0 = __VERIFIER_nondet_bool();
+      |                                                              ^
+      |                                                              )
+/tmp/BenchExec_run_srqs76x0/tmp/tmps5qxggov.c:923:62: error: expected ‘)’ before ‘;’ token
+  923 |   weak$$choice2 = __VERIFIER_nondet_bool();
+      |                                                              ^
+      |                                                              )
+
+Compilation ended (exit code 1)
+Verdict: Compilation error
+Verdict: Unknown error

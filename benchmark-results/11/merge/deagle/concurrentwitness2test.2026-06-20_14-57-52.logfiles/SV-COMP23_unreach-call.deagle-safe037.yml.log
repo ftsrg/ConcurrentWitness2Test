@@ -1,0 +1,34 @@
+ConcurrentWitness2Test/start.sh svcomp23-witness-benchmarks/tools/deagle/pthread-wmm/safe037.yml/safe037.i --graphml-witness svcomp23-witness-benchmarks/tools/deagle/pthread-wmm/safe037.yml/witness.graphml
+
+
+--------------------------------------------------------------------------------
+
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/pycparser/__init__.py", line 42, in preprocess_file
+    text = check_output(path_list, universal_newlines=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1885, in _execute_child
+    self.pid = _fork_exec(
+               ^^^^^^^^^^^
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/__main__.py", line 54, in translate_to_c
+    text = preprocess_file(
+           ^^^^^^^^^^^^^^^^
+  File "/home/runner/work/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test/ConcurrentWitness2Test.pyz/pycparser/__init__.py", line 44, in preprocess_file
+    raise RuntimeError("Unable to invoke 'cpp'.  " +
+RuntimeError: Unable to invoke 'cpp'.  Make sure its path was passed correctly
+Original error: [Errno 11] Resource temporarily unavailable
+Verdict: Parsing failed
