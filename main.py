@@ -83,6 +83,9 @@ def translate_to_c(filename, witness, mode, timeout):
         print("Verdict: Incompatible witness")
         sys.exit(-1)
 
+    if parsed_witness.property_name:
+        print(f"Witness property: {parsed_witness.property_name}")
+
     # For a no-data-race witness the violation is observed by the thread
     # sanitizer at runtime instead of a reach_error() call.
     data_race = parsed_witness.data_race

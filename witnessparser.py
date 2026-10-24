@@ -42,8 +42,10 @@ witness gives no usable location. ``metadata`` may contain:
 * ``type``: the waypoint type (YAML witnesses only, e.g. ``target``).
 """
 
-import yaml
+import re
+
 import networkx as nx
+import yaml
 
 from Exceptions import KnownErrorVerdict
 
@@ -60,14 +62,32 @@ class ParsedWitness:
         self.format = witness_format
 
     @property
+    def property_name(self):
+        """Return the property named by the witness specification, if supported."""
+        for name in (
+            "no-data-race",
+            "no-overflow",
+            "valid-deref",
+            "valid-free",
+            "valid-memtrack",
+            "valid-memcleanup",
+        ):
+            term = name.removeprefix("no-")
+            if re.search(r"\b" + re.escape(term) + r"\b", self.specification):
+                return name
+        if re.search(r"\b(?:reach_error|__VERIFIER_error)\s*\(\s*\)", self.specification):
+            return "unreach-call"
+        return None
+
+    @property
     def data_race(self):
         """Whether the witness claims a data race (no-data-race property)."""
-        return "data-race" in self.specification
+        return self.property_name == "no-data-race"
 
     @property
     def no_overflow(self):
         """Whether the witness claims an integer overflow (no-overflow property)."""
-        return "overflow" in self.specification
+        return self.property_name == "no-overflow"
 
     @property
     def memory_safety(self):
@@ -76,7 +96,12 @@ class ParsedWitness:
         Covers the SV-COMP valid-free, valid-deref, and valid-memtrack
         properties, whose specifications read ``G valid-free`` etc.
         """
-        return "valid-" in self.specification
+        return self.property_name in {
+            "valid-deref",
+            "valid-free",
+            "valid-memtrack",
+            "valid-memcleanup",
+        }
 
 
 def get_offset_of_line(c_file, line):
